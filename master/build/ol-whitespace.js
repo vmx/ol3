@@ -1499,7 +1499,7 @@ goog.addDependency("src/ol/control/dragboxcontrol.js", ["ol.control.DragBox"], [
 goog.addDependency("src/ol/control/mousepositioncontrol.js", ["ol.control.MousePosition"], ["goog.array", "goog.dom", "goog.events", "goog.events.EventType", "goog.style", "ol.Coordinate", "ol.CoordinateFormatType", "ol.MapEvent", "ol.MapEventType", "ol.Pixel", "ol.Projection", "ol.TransformFunction", "ol.control.Control", "ol.projection"]);
 goog.addDependency("src/ol/control/scalelinecontrol.js", ["ol.control.ScaleLine", "ol.control.ScaleLineUnits"], ["goog.dom", "goog.style", "ol", "ol.FrameState", "ol.MapEvent", "ol.MapEventType", "ol.ProjectionUnits", "ol.TransformFunction", "ol.control.Control", "ol.projection", "ol.sphere.NORMAL"]);
 goog.addDependency("src/ol/control/zoomcontrol.js", ["ol.control.Zoom"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "ol", "ol.control.Control"]);
-goog.addDependency("src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.fx.Dragger", "goog.style", "ol.MapEventType", "ol.control.Control"]);
+goog.addDependency("src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.fx.Dragger", "goog.style", "ol", "ol.MapEventType", "ol.control.Control"]);
 goog.addDependency("src/ol/coordinate.js", ["ol.Coordinate", "ol.CoordinateFormatType"], ["goog.math", "goog.math.Vec2"]);
 goog.addDependency("src/ol/dom/dom.js", ["ol.dom", "ol.dom.BrowserFeature"], ["goog.vec.Mat4"]);
 goog.addDependency("src/ol/easing.js", ["ol.easing"], ["goog.fx.easing"]);
@@ -11758,7 +11758,6 @@ goog.require("goog.functions");
 goog.require("ol.Attribution");
 goog.require("ol.Extent");
 goog.require("ol.projection");
-ol.source.SourceOptions;
 ol.source.Source = function(sourceOptions) {
   goog.base(this);
   this.projection_ = ol.projection.get(sourceOptions.projection);
@@ -13581,7 +13580,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var touchPan = goog.isDef(options.touchPan) ? options.touchPan : true;
   if(touchPan) {
-    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var touchRotate = goog.isDef(options.touchRotate) ? options.touchRotate : true;
   if(touchRotate) {
@@ -13593,7 +13592,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var dragPan = goog.isDef(options.dragPan) ? options.dragPan : true;
   if(dragPan) {
-    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var keyboard = goog.isDef(options.keyboard) ? options.keyboard : true;
   if(keyboard) {
@@ -19679,6 +19678,7 @@ goog.require("goog.dom.TagName");
 goog.require("goog.events");
 goog.require("goog.fx.Dragger");
 goog.require("goog.style");
+goog.require("ol");
 goog.require("ol.MapEventType");
 goog.require("ol.control.Control");
 ol.control.ZoomSlider = function(zoomSliderOptions) {
@@ -19783,7 +19783,7 @@ ol.control.ZoomSlider.prototype.createDraggable_ = function(elem) {
   return dragger
 };
 ol.control.ZoomSlider.prototype.createDom_ = function(opt_elem) {
-  var elem, sliderCssCls = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + " ol-unselectable", thumbCssCls = ol.control.ZoomSlider.CSS_CLASS_THUMB + " ol-unselectable";
+  var elem, sliderCssCls = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + " " + ol.CSS_CLASS_UNSELECTABLE, thumbCssCls = ol.control.ZoomSlider.CSS_CLASS_THUMB + " " + ol.CSS_CLASS_UNSELECTABLE;
   elem = goog.dom.createDom(goog.dom.TagName.DIV, sliderCssCls, goog.dom.createDom(goog.dom.TagName.DIV, thumbCssCls));
   return elem
 };

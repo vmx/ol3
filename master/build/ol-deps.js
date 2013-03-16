@@ -16,7 +16,7 @@ goog.addDependency('../../../ol/ol/control/dragboxcontrol.js', ['ol.control.Drag
 goog.addDependency('../../../ol/ol/control/mousepositioncontrol.js', ['ol.control.MousePosition'], ['goog.array', 'goog.dom', 'goog.events', 'goog.events.EventType', 'goog.style', 'ol.Coordinate', 'ol.CoordinateFormatType', 'ol.MapEvent', 'ol.MapEventType', 'ol.Pixel', 'ol.Projection', 'ol.TransformFunction', 'ol.control.Control', 'ol.projection']);
 goog.addDependency('../../../ol/ol/control/scalelinecontrol.js', ['ol.control.ScaleLine', 'ol.control.ScaleLineUnits'], ['goog.dom', 'goog.style', 'ol', 'ol.FrameState', 'ol.MapEvent', 'ol.MapEventType', 'ol.ProjectionUnits', 'ol.TransformFunction', 'ol.control.Control', 'ol.projection', 'ol.sphere.NORMAL']);
 goog.addDependency('../../../ol/ol/control/zoomcontrol.js', ['ol.control.Zoom'], ['goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'ol', 'ol.control.Control']);
-goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.fx.Dragger', 'goog.style', 'ol.MapEventType', 'ol.control.Control']);
+goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.fx.Dragger', 'goog.style', 'ol', 'ol.MapEventType', 'ol.control.Control']);
 goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.CoordinateFormatType'], ['goog.math', 'goog.math.Vec2']);
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.vec.Mat4']);
 goog.addDependency('../../../ol/ol/easing.js', ['ol.easing'], ['goog.fx.easing']);
