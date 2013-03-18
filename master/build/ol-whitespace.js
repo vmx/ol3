@@ -1481,8 +1481,8 @@ goog.addDependency("build/src/internal/src/requireall.js", [], ["ol", "ol.Anchor
 "ol.source.MapQuestOpenAerial", "ol.source.OpenStreetMap", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.LRUCache", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", 
 "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType"]);
 goog.addDependency("build/src/internal/src/types.js", ["ol.AnchoredElementOptionsType", "ol.MapOptionsType", "ol.Proj4jsProjectionOptionsType", "ol.ProjectionOptionsType", "ol.View2DOptionsType", "ol.animation.BounceOptionsType", "ol.animation.PanOptionsType", "ol.animation.RotateOptionsType", "ol.animation.ZoomOptionsType", "ol.control.AttributionOptionsType", "ol.control.DefaultsOptionsType", "ol.control.MousePositionOptionsType", "ol.control.ScaleLineOptionsType", "ol.control.ZoomOptionsType", 
-"ol.control.ZoomSliderOptionsType", "ol.interaction.DefaultOptionsType", "ol.interaction.KeyboardPanOptionsType", "ol.interaction.KeyboardZoomOptionsType", "ol.layer.LayerOptionsType", "ol.source.BingMapsOptionsType", "ol.source.DebugTileSourceOptionsType", "ol.source.SingleImageWMSOptionsType", "ol.source.SourceOptionsType", "ol.source.StamenOptionsType", "ol.source.StaticImageOptionsType", "ol.source.TileJSONOptionsType", "ol.source.TiledWMSOptionsType", "ol.source.WMTSOptionsType", "ol.style.IconOptionsType", 
-"ol.style.LineOptionsType", "ol.style.PolygonOptionsType", "ol.style.RuleOptionsType", "ol.style.ShapeOptionsType", "ol.style.StyleOptionsType", "ol.tilegrid.TileGridOptionsType", "ol.tilegrid.WMTSOptionsType", "ol.tilegrid.XYZOptionsType"], []);
+"ol.control.ZoomSliderOptionsType", "ol.interaction.DefaultOptionsType", "ol.interaction.KeyboardPanOptionsType", "ol.interaction.KeyboardZoomOptionsType", "ol.layer.LayerOptionsType", "ol.layer.VectorLayerOptionsType", "ol.source.BingMapsOptionsType", "ol.source.DebugTileSourceOptionsType", "ol.source.SingleImageWMSOptionsType", "ol.source.SourceOptionsType", "ol.source.StamenOptionsType", "ol.source.StaticImageOptionsType", "ol.source.TileJSONOptionsType", "ol.source.TiledWMSOptionsType", "ol.source.WMTSOptionsType", 
+"ol.style.IconOptionsType", "ol.style.LineOptionsType", "ol.style.PolygonOptionsType", "ol.style.RuleOptionsType", "ol.style.ShapeOptionsType", "ol.style.StyleOptionsType", "ol.tilegrid.TileGridOptionsType", "ol.tilegrid.WMTSOptionsType", "ol.tilegrid.XYZOptionsType"], []);
 goog.addDependency("src/ol/anchoredelement.js", ["ol.AnchoredElement", "ol.AnchoredElementPositioning", "ol.AnchoredElementProperty"], ["goog.dom", "goog.events", "goog.style", "ol.Coordinate", "ol.Map", "ol.MapEventType", "ol.Object"]);
 goog.addDependency("src/ol/animation.js", ["ol.animation"], ["ol.PreRenderFunction", "ol.ViewHint", "ol.easing"]);
 goog.addDependency("src/ol/array.js", ["ol.array"], ["goog.array"]);
@@ -13580,7 +13580,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var touchPan = goog.isDef(options.touchPan) ? options.touchPan : true;
   if(touchPan) {
-    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.0050, 0.05, 100)))
+    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.005, 0.05, 100)))
   }
   var touchRotate = goog.isDef(options.touchRotate) ? options.touchRotate : true;
   if(touchRotate) {
@@ -13592,7 +13592,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var dragPan = goog.isDef(options.dragPan) ? options.dragPan : true;
   if(dragPan) {
-    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.0050, 0.05, 100)))
+    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.005, 0.05, 100)))
   }
   var keyboard = goog.isDef(options.keyboard) ? options.keyboard : true;
   if(keyboard) {
@@ -14795,7 +14795,7 @@ ol.layer.FeatureCache.prototype.getFeaturesByIds_ = function(ids) {
   return features
 };
 ol.layer.Vector = function(layerOptions) {
-  goog.base(this, layerOptions);
+  goog.base(this, {opacity:layerOptions.opacity, source:layerOptions.source, visible:layerOptions.visible});
   this.style_ = goog.isDef(layerOptions.style) ? layerOptions.style : null;
   this.featureCache_ = new ol.layer.FeatureCache;
   this.pointVertices_ = new ol.geom.SharedVertices;
@@ -22609,6 +22609,7 @@ goog.provide("ol.interaction.DefaultOptionsType");
 goog.provide("ol.interaction.KeyboardPanOptionsType");
 goog.provide("ol.interaction.KeyboardZoomOptionsType");
 goog.provide("ol.layer.LayerOptionsType");
+goog.provide("ol.layer.VectorLayerOptionsType");
 goog.provide("ol.source.BingMapsOptionsType");
 goog.provide("ol.source.DebugTileSourceOptionsType");
 goog.provide("ol.source.SingleImageWMSOptionsType");
@@ -22646,6 +22647,7 @@ ol.interaction.DefaultOptions;
 ol.interaction.KeyboardPanOptions;
 ol.interaction.KeyboardZoomOptions;
 ol.layer.LayerOptions;
+ol.layer.VectorLayerOptions;
 ol.source.BingMapsOptions;
 ol.source.DebugTileSourceOptions;
 ol.source.SingleImageWMSOptions;
