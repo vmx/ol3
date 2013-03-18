@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpenLayers: Class: ol.Extent</title>
+    <title>OpenLayers: Class: ol.dom.Input</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Class: ol.Extent</h1>
+    <h1 class="page-title">Class: ol.dom.Input</h1>
     
     
 
@@ -27,7 +27,7 @@
     
 <header>
     <h2>
-    ol.Extent
+    ol.dom.Input
     </h2>
     
 </header>  
@@ -39,17 +39,12 @@
     
         
 <dt>
-    <h4 class="name" id="Extent"><span class="type-signature"></span>new Extent</h4>
+    <h4 class="name" id="Input"><span class="type-signature"></span>new Input</h4>
     
     
 </dt>
 <dd>
     
-    
-    <div class="description">
-        Rectangular extent which is not rotated. An extent does not know its
-projection.
-    </div>
     
 
     
@@ -82,13 +77,13 @@ projection.
 	
         <tr>
             
-                <td class="name"><code>minX</code></td>
+                <td class="name"><code>target</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">Element</span>
 
 
             
@@ -98,76 +93,7 @@ projection.
             
             
             
-            <td class="description last">Minimum X.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>minY</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Minimum Y.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>maxX</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Maximum X.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>maxY</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Maximum Y.</td>
+            <td class="description last">Target element.</td>
         </tr>
 	
 	
@@ -197,7 +123,7 @@ projection.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 20</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>input.js, line 22</li></ul></dd>
 	
     
     
@@ -224,7 +150,7 @@ projection.
         <h3 class="subsection-title">Extends</h3>
         
         <ul>
-            <li><a href="ol.Rectangle.html">ol.Rectangle</a></li>
+            <li><a href="ol.Object.html">ol.Object</a></li>
         </ul>
     
     
@@ -242,7 +168,7 @@ projection.
         <dl>
             
 <dt class="">
-    <h4 class="name" id="maxX"><span class="type-signature"></span>maxX<span class="type-signature"> :number</span></h4>
+    <h4 class="name" id="changed"><span class="type-signature"></span>changed<span class="type-signature"></span></h4>
     
     
 </dt>
@@ -260,7 +186,7 @@ projection.
 	
 	<dt class="inherited-from">Inherited From:</dt>
 	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#maxX">ol.Rectangle#maxX</a>
+		<a href="ol.Object.html#changed">ol.Object#changed</a>
 	</li></dd>
 	
 	
@@ -276,7 +202,7 @@ projection.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 34</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 166</li></ul></dd>
 	
     
     
@@ -293,7 +219,7 @@ projection.
         
             
 <dt class="">
-    <h4 class="name" id="maxY"><span class="type-signature"></span>maxY<span class="type-signature"> :number</span></h4>
+    <h4 class="name" id="setValues"><span class="type-signature"></span>setValues<span class="type-signature"></span></h4>
     
     
 </dt>
@@ -311,7 +237,7 @@ projection.
 	
 	<dt class="inherited-from">Inherited From:</dt>
 	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#maxY">ol.Rectangle#maxY</a>
+		<a href="ol.Object.html#setValues">ol.Object#setValues</a>
 	</li></dd>
 	
 	
@@ -327,109 +253,7 @@ projection.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 39</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-</dd>
-
-        
-            
-<dt class="">
-    <h4 class="name" id="minX"><span class="type-signature"></span>minX<span class="type-signature"> :number</span></h4>
-    
-    
-</dt>
-<dd class="">
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#minX">ol.Rectangle#minX</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 24</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-</dd>
-
-        
-            
-<dt class="">
-    <h4 class="name" id="minY"><span class="type-signature"></span>minY<span class="type-signature"> :number</span></h4>
-    
-    
-</dt>
-<dd class="">
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#minY">ol.Rectangle#minY</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 29</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 275</li></ul></dd>
 	
     
     
@@ -452,7 +276,436 @@ projection.
         <dl>
             
 <dt>
-    <h4 class="name" id="boundingExtent"><span class="type-signature">&lt;static> </span>boundingExtent</h4>
+    <h4 class="name" id="bindTo"><span class="type-signature"></span>bindTo</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">Key.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.Object.html">ol.Object</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">Target.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>targetKey</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string=</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) Target key.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>noNotify</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean=</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) No notify.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#bindTo">ol.Object#bindTo</a>
+	</li></dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 145</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="get"><span class="type-signature"></span>get</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Key.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#get">ol.Object#get</a>
+	</li></dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 173</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    Value.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">*</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getChecked"><span class="type-signature"></span>getChecked</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>input.js, line 47</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    checked.
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">undefined</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getKeys"><span class="type-signature"></span>getKeys</h4>
     
     
 </dt>
@@ -460,7 +713,7 @@ projection.
     
     
     <div class="description">
-        Builds an extent that includes all given coordinates.
+        Get a list of object property names.
     </div>
     
 
@@ -469,53 +722,91 @@ projection.
     
     
     
-        <h5>Parameters:</h5>
+    
+    
+<dl class="details">
+    
         
+	
+	
+	
 
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
 	
-	<tbody>
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#getKeys">ol.Object#getKeys</a>
+	</li></dd>
 	
 	
-        <tr>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 197</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
             
-                <td class="name"><code>var_args</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<div class="param-desc">
+    List of property names.
+</div>
 
 
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Array.&lt;string></span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
             
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Coordinates.</td>
-        </tr>
-	
-	
-	</tbody>
-</table>
+<dt>
+    <h4 class="name" id="getValue"><span class="type-signature"></span>getValue</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
     
     
     
@@ -540,7 +831,7 @@ projection.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 32</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>input.js, line 59</li></ul></dd>
 	
     
     
@@ -560,7 +851,7 @@ projection.
     
             
 <div class="param-desc">
-    Bounding extent.
+    input value.
 </div>
 
 
@@ -571,7 +862,10 @@ projection.
 	</dt>
 	<dd>
 		
-<span class="param-type">!ol.Extent</span>
+<span class="param-type">string</span>
+|
+
+<span class="param-type">undefined</span>
 
 
 	</dd>
@@ -585,7 +879,7 @@ projection.
         
             
 <dt>
-    <h4 class="name" id="getForView2DAndSize"><span class="type-signature">&lt;static> </span>getForView2DAndSize</h4>
+    <h4 class="name" id="notify"><span class="type-signature"></span>notify</h4>
     
     
 </dt>
@@ -623,13 +917,13 @@ projection.
 	
         <tr>
             
-                <td class="name"><code>center</code></td>
+                <td class="name"><code>key</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">string</span>
 
 
             
@@ -639,76 +933,7 @@ projection.
             
             
             
-            <td class="description last">Center.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>resolution</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Resolution.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>rotation</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Rotation.</td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>size</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Size.html">ol.Size</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Size.</td>
+            <td class="description last">Key.</td>
         </tr>
 	
 	
@@ -725,6 +950,11 @@ projection.
 	
 
 	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#notify">ol.Object#notify</a>
+	</li></dd>
+	
 	
 	
 	
@@ -738,7 +968,7 @@ projection.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 55</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 208</li></ul></dd>
 	
     
     
@@ -754,28 +984,6 @@ projection.
     
     
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Extent.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
-
-
-	</dd>
-</dl>
-
-        
     
     
 </dd>
@@ -783,17 +991,12 @@ projection.
         
             
 <dt>
-    <h4 class="name" id="containsCoordinate"><span class="type-signature"></span>containsCoordinate</h4>
+    <h4 class="name" id="set"><span class="type-signature"></span>set</h4>
     
     
 </dt>
 <dd>
     
-    
-    <div class="description">
-        Checks if the passed coordinate is contained or on the edge
-of the extent.
-    </div>
     
 
     
@@ -826,13 +1029,13 @@ of the extent.
 	
         <tr>
             
-                <td class="name"><code>coordinate</code></td>
+                <td class="name"><code>key</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">string</span>
 
 
             
@@ -842,7 +1045,30 @@ of the extent.
             
             
             
-            <td class="description last">Coordinate.</td>
+            <td class="description last">Key.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Value.</td>
         </tr>
 	
 	
@@ -859,6 +1085,11 @@ of the extent.
 	
 
 	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#set">ol.Object#set</a>
+	</li></dd>
+	
 	
 	
 	
@@ -872,7 +1103,7 @@ of the extent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 84</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 236</li></ul></dd>
 	
     
     
@@ -888,87 +1119,60 @@ of the extent.
     
     
     
-    <h5>Returns:</h5>
     
+    
+</dd>
+
+        
             
-<div class="param-desc">
-    Contains.
-</div>
+<dt>
+    <h4 class="name" id="setChecked"><span class="type-signature"></span>setChecked</h4>
+    
+    
+</dt>
+<dd>
+    
+    
 
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
 
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
+<table class="params">
+    <thead>
+	<tr>
 		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>checked</code></td>
+            
+            
+            <td class="type">
+            
+                
 <span class="param-type">boolean</span>
 
 
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="containsExtent"><span class="type-signature"></span>containsExtent</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Checks if the passed extent is contained or on the edge of the
-extent.
-    </div>
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>extent</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
-
-
             
             </td>
             
@@ -976,7 +1180,7 @@ extent.
             
             
             
-            <td class="description last">Extent.</td>
+            <td class="description last">Checked.</td>
         </tr>
 	
 	
@@ -1006,7 +1210,7 @@ extent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 97</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>input.js, line 83</li></ul></dd>
 	
     
     
@@ -1022,28 +1226,6 @@ extent.
     
     
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Contains.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">boolean</span>
-
-
-	</dd>
-</dl>
-
-        
     
     
 </dd>
@@ -1051,7 +1233,7 @@ extent.
         
             
 <dt>
-    <h4 class="name" id="equals"><span class="type-signature"></span>equals</h4>
+    <h4 class="name" id="setOptions"><span class="type-signature"></span>setOptions</h4>
     
     
 </dt>
@@ -1089,13 +1271,13 @@ extent.
 	
         <tr>
             
-                <td class="name"><code>rectangle</code></td>
+                <td class="name"><code>options</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.Rectangle.html">ol.Rectangle</a></span>
+<span class="param-type">Object.&lt;string, *></span>
 
 
             
@@ -1105,7 +1287,7 @@ extent.
             
             
             
-            <td class="description last">Rectangle.</td>
+            <td class="description last">Options.</td>
         </tr>
 	
 	
@@ -1124,7 +1306,7 @@ extent.
 	
 	<dt class="inherited-from">Inherited From:</dt>
 	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#equals">ol.Rectangle#equals</a>
+		<a href="ol.Object.html#setOptions">ol.Object#setOptions</a>
 	</li></dd>
 	
 	
@@ -1140,141 +1322,7 @@ extent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 48</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Equals.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">boolean</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="extend"><span class="type-signature"></span>extend</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>rectangle</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Rectangle.html">ol.Rectangle</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Rectangle.</td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#extend">ol.Rectangle#extend</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 57</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 258</li></ul></dd>
 	
     
     
@@ -1297,943 +1345,7 @@ extent.
         
             
 <dt>
-    <h4 class="name" id="getBottomLeft"><span class="type-signature"></span>getBottomLeft</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 106</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Bottom left coordinate.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getBottomRight"><span class="type-signature"></span>getBottomRight</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 114</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Bottom right coordinate.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getCenter"><span class="type-signature"></span>getCenter</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#getCenter">ol.Rectangle#getCenter</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 68</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Center.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getHeight"><span class="type-signature"></span>getHeight</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#getHeight">ol.Rectangle#getHeight</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 77</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Height.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">number</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getSize"><span class="type-signature"></span>getSize</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#getSize">ol.Rectangle#getSize</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 85</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Size.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Size.html">ol.Size</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getTopLeft"><span class="type-signature"></span>getTopLeft</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 122</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Top left coordinate.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getTopRight"><span class="type-signature"></span>getTopRight</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 130</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Top right coordinate.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="getWidth"><span class="type-signature"></span>getWidth</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#getWidth">ol.Rectangle#getWidth</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 93</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Width.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">number</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="intersects"><span class="type-signature"></span>intersects</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>rectangle</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Rectangle.html">ol.Rectangle</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Rectangle.</td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#intersects">ol.Rectangle#intersects</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 102</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Intersects.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">boolean</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="normalize"><span class="type-signature"></span>normalize</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>coordinate</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last">Coordinate.</td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#normalize">ol.Rectangle#normalize</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 114</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Coordinate.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="scaleFromCenter"><span class="type-signature"></span>scaleFromCenter</h4>
+    <h4 class="name" id="setValue"><span class="type-signature"></span>setValue</h4>
     
     
 </dt>
@@ -2277,7 +1389,7 @@ extent.
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
 
 
             
@@ -2304,11 +1416,6 @@ extent.
 	
 
 	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#scaleFromCenter">ol.Rectangle#scaleFromCenter</a>
-	</li></dd>
-	
 	
 	
 	
@@ -2322,7 +1429,7 @@ extent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 132</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>input.js, line 71</li></ul></dd>
 	
     
     
@@ -2345,93 +1452,7 @@ extent.
         
             
 <dt>
-    <h4 class="name" id="toString"><span class="type-signature"></span>toString</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	<dt class="inherited-from">Inherited From:</dt>
-	<dd class="inherited-from"><ul class="dummy"><li>
-		<a href="ol.Rectangle.html#toString">ol.Rectangle#toString</a>
-	</li></dd>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>rectangle.js, line 124</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    String.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">string</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="transform"><span class="type-signature"></span>transform</h4>
+    <h4 class="name" id="unbind"><span class="type-signature"></span>unbind</h4>
     
     
 </dt>
@@ -2469,13 +1490,13 @@ extent.
 	
         <tr>
             
-                <td class="name"><code>transformFn</code></td>
+                <td class="name"><code>key</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">ol.TransformFunction</span>
+<span class="param-type">string</span>
 
 
             
@@ -2485,7 +1506,7 @@ extent.
             
             
             
-            <td class="description last">Transform function.</td>
+            <td class="description last">Key.</td>
         </tr>
 	
 	
@@ -2502,6 +1523,11 @@ extent.
 	
 
 	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#unbind">ol.Object#unbind</a>
+	</li></dd>
+	
 	
 	
 	
@@ -2515,7 +1541,7 @@ extent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>extent.js, line 139</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 281</li></ul></dd>
 	
     
     
@@ -2531,28 +1557,74 @@ extent.
     
     
     
-    <h5>Returns:</h5>
     
-            
-<div class="param-desc">
-    Extent.
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
-
-
-	</dd>
-</dl>
+    
+</dd>
 
         
+            
+<dt>
+    <h4 class="name" id="unbindAll"><span class="type-signature"></span>unbindAll</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Removes all bindings.
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#unbindAll">ol.Object#unbindAll</a>
+	</li></dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 298</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
     
     
 </dd>
@@ -2581,7 +1653,7 @@ items from the cache is the responsibility of the user.</a></li><li><a href="ol.
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Mon Mar 18 2013 17:21:30 GMT+0100 (CET)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Mon Mar 18 2013 17:21:29 GMT+0100 (CET)
 </footer>
 
 <script> prettyPrint(); </script>

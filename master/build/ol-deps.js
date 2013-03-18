@@ -19,6 +19,7 @@ goog.addDependency('../../../ol/ol/control/zoomcontrol.js', ['ol.control.Zoom'],
 goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.fx.Dragger', 'goog.style', 'ol', 'ol.MapEventType', 'ol.control.Control']);
 goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.CoordinateFormatType'], ['goog.math', 'goog.math.Vec2']);
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.vec.Mat4']);
+goog.addDependency('../../../ol/ol/dom/input.js', ['ol.dom.Input', 'ol.dom.InputProperty'], ['ol.Object']);
 goog.addDependency('../../../ol/ol/easing.js', ['ol.easing'], ['goog.fx.easing']);
 goog.addDependency('../../../ol/ol/ellipsoid.js', ['ol.Ellipsoid'], ['goog.math', 'ol.Coordinate']);
 goog.addDependency('../../../ol/ol/ellipsoid/wgs84.js', ['ol.ellipsoid.WGS84'], ['ol.Ellipsoid']);

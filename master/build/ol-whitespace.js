@@ -1472,14 +1472,14 @@ goog.addDependency("/third_party/closure/goog/silverlight/supporteduseragent.js"
 goog.addDependency("build/src/internal/src/requireall.js", [], ["ol", "ol.AnchoredElement", "ol.AnchoredElementPositioning", "ol.AnchoredElementProperty", "ol.Attribution", "ol.BrowserFeature", "ol.Collection", "ol.CollectionEvent", "ol.CollectionEventType", "ol.Color", "ol.Constraints", "ol.Coordinate", "ol.CoordinateFormatType", "ol.Ellipsoid", "ol.Expression", "ol.ExpressionLiteral", "ol.Extent", "ol.Feature", "ol.FrameState", "ol.Geolocation", "ol.GeolocationProperty", "ol.IView", "ol.IView2D", 
 "ol.IView3D", "ol.Image", "ol.ImageState", "ol.ImageTile", "ol.ImageUrlFunction", "ol.ImageUrlFunctionType", "ol.Kinetic", "ol.Map", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler", "ol.MapEvent", "ol.MapEventType", "ol.MapProperty", "ol.Object", "ol.ObjectEventType", "ol.Pixel", "ol.PixelBounds", "ol.PostRenderFunction", "ol.PreRenderFunction", "ol.Projection", "ol.ProjectionLike", "ol.ProjectionUnits", "ol.Rectangle", "ol.RendererHint", "ol.RendererHints", "ol.ResolutionConstraint", 
 "ol.ResolutionConstraintType", "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.Sphere", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TilePriorityFunction", "ol.TileQueue", "ol.TileRange", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.TransformFunction", "ol.View", "ol.View2D", "ol.View2DProperty", "ol.View2DState", "ol.ViewHint", "ol.animation", "ol.array", "ol.canvas", "ol.control.Attribution", "ol.control.Control", "ol.control.ControlOptions", "ol.control.DragBox", 
-"ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.dom", "ol.dom.BrowserFeature", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.geom.AbstractCollection", "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", 
-"ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", "ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", 
-"ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", 
-"ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", 
-"ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.FragmentShader", 
-"ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.VertexShader", "ol.renderer.webgl.map.shader", "ol.renderer.webgl.tilelayerrenderer", "ol.renderer.webgl.tilelayerrenderer.shader.Fragment", "ol.renderer.webgl.tilelayerrenderer.shader.Vertex", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.ImageTileSourceOptions", "ol.source.MapQuestOSM", 
-"ol.source.MapQuestOpenAerial", "ol.source.OpenStreetMap", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.LRUCache", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", 
-"ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType"]);
+"ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.geom.AbstractCollection", "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", 
+"ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", "ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", 
+"ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", 
+"ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", 
+"ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", 
+"ol.renderer.webgl.FragmentShader", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.VertexShader", "ol.renderer.webgl.map.shader", "ol.renderer.webgl.tilelayerrenderer", "ol.renderer.webgl.tilelayerrenderer.shader.Fragment", "ol.renderer.webgl.tilelayerrenderer.shader.Vertex", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.ImageTileSourceOptions", 
+"ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", "ol.source.OpenStreetMap", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.LRUCache", "ol.structs.RTree", "ol.style.Icon", 
+"ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType"]);
 goog.addDependency("build/src/internal/src/types.js", ["ol.AnchoredElementOptionsType", "ol.MapOptionsType", "ol.Proj4jsProjectionOptionsType", "ol.ProjectionOptionsType", "ol.View2DOptionsType", "ol.animation.BounceOptionsType", "ol.animation.PanOptionsType", "ol.animation.RotateOptionsType", "ol.animation.ZoomOptionsType", "ol.control.AttributionOptionsType", "ol.control.DefaultsOptionsType", "ol.control.MousePositionOptionsType", "ol.control.ScaleLineOptionsType", "ol.control.ZoomOptionsType", 
 "ol.control.ZoomSliderOptionsType", "ol.interaction.DefaultOptionsType", "ol.interaction.KeyboardPanOptionsType", "ol.interaction.KeyboardZoomOptionsType", "ol.layer.LayerOptionsType", "ol.layer.VectorLayerOptionsType", "ol.source.BingMapsOptionsType", "ol.source.DebugTileSourceOptionsType", "ol.source.SingleImageWMSOptionsType", "ol.source.SourceOptionsType", "ol.source.StamenOptionsType", "ol.source.StaticImageOptionsType", "ol.source.TileJSONOptionsType", "ol.source.TiledWMSOptionsType", "ol.source.WMTSOptionsType", 
 "ol.style.IconOptionsType", "ol.style.LineOptionsType", "ol.style.PolygonOptionsType", "ol.style.RuleOptionsType", "ol.style.ShapeOptionsType", "ol.style.StyleOptionsType", "ol.tilegrid.TileGridOptionsType", "ol.tilegrid.WMTSOptionsType", "ol.tilegrid.XYZOptionsType"], []);
@@ -1502,6 +1502,7 @@ goog.addDependency("src/ol/control/zoomcontrol.js", ["ol.control.Zoom"], ["goog.
 goog.addDependency("src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.fx.Dragger", "goog.style", "ol", "ol.MapEventType", "ol.control.Control"]);
 goog.addDependency("src/ol/coordinate.js", ["ol.Coordinate", "ol.CoordinateFormatType"], ["goog.math", "goog.math.Vec2"]);
 goog.addDependency("src/ol/dom/dom.js", ["ol.dom", "ol.dom.BrowserFeature"], ["goog.vec.Mat4"]);
+goog.addDependency("src/ol/dom/input.js", ["ol.dom.Input", "ol.dom.InputProperty"], ["ol.Object"]);
 goog.addDependency("src/ol/easing.js", ["ol.easing"], ["goog.fx.easing"]);
 goog.addDependency("src/ol/ellipsoid.js", ["ol.Ellipsoid"], ["goog.math", "ol.Coordinate"]);
 goog.addDependency("src/ol/ellipsoid/wgs84.js", ["ol.ellipsoid.WGS84"], ["ol.Ellipsoid"]);
@@ -19787,6 +19788,47 @@ ol.control.ZoomSlider.prototype.createDom_ = function(opt_elem) {
   elem = goog.dom.createDom(goog.dom.TagName.DIV, sliderCssCls, goog.dom.createDom(goog.dom.TagName.DIV, thumbCssCls));
   return elem
 };
+goog.provide("ol.dom.Input");
+goog.provide("ol.dom.InputProperty");
+goog.require("ol.Object");
+ol.dom.InputProperty = {VALUE:"value", CHECKED:"checked"};
+ol.dom.Input = function(target) {
+  goog.base(this);
+  this.target_ = target;
+  goog.events.listen(this.target_, goog.events.EventType.CHANGE, this.handleInputChanged_, false, this);
+  goog.events.listen(this, ol.Object.getChangedEventType(ol.dom.InputProperty.VALUE), this.handleValueChanged_, false, this);
+  goog.events.listen(this, ol.Object.getChangedEventType(ol.dom.InputProperty.CHECKED), this.handleCheckedChanged_, false, this)
+};
+goog.inherits(ol.dom.Input, ol.Object);
+ol.dom.Input.prototype.getChecked = function() {
+  return this.get(ol.dom.InputProperty.CHECKED)
+};
+goog.exportProperty(ol.dom.Input.prototype, "getChecked", ol.dom.Input.prototype.getChecked);
+ol.dom.Input.prototype.getValue = function() {
+  return this.get(ol.dom.InputProperty.VALUE)
+};
+goog.exportProperty(ol.dom.Input.prototype, "getValue", ol.dom.Input.prototype.getValue);
+ol.dom.Input.prototype.setValue = function(value) {
+  this.set(ol.dom.InputProperty.VALUE, value)
+};
+goog.exportProperty(ol.dom.Input.prototype, "setValue", ol.dom.Input.prototype.setValue);
+ol.dom.Input.prototype.setChecked = function(checked) {
+  this.set(ol.dom.InputProperty.CHECKED, checked)
+};
+goog.exportProperty(ol.dom.Input.prototype, "setChecked", ol.dom.Input.prototype.setChecked);
+ol.dom.Input.prototype.handleInputChanged_ = function() {
+  if(this.target_.type === "checkbox" || this.target_.type === "radio") {
+    this.setChecked(this.target_.checked)
+  }else {
+    this.setValue(this.target_.value)
+  }
+};
+ol.dom.Input.prototype.handleCheckedChanged_ = function() {
+  this.target_.checked = this.getChecked() ? "checked" : undefined
+};
+ol.dom.Input.prototype.handleValueChanged_ = function() {
+  this.target_.value = this.getValue()
+};
 goog.provide("ol.ellipsoid.WGS84");
 goog.require("ol.Ellipsoid");
 ol.ellipsoid.WGS84 = new ol.Ellipsoid(6378137, 1 / 298.257223563);
@@ -22443,6 +22485,8 @@ goog.require("ol.control.ZoomSlider");
 goog.require("ol.control.defaults");
 goog.require("ol.dom");
 goog.require("ol.dom.BrowserFeature");
+goog.require("ol.dom.Input");
+goog.require("ol.dom.InputProperty");
 goog.require("ol.easing");
 goog.require("ol.ellipsoid.WGS84");
 goog.require("ol.filter.Extent");
