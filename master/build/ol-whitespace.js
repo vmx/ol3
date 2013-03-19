@@ -13581,7 +13581,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var touchPan = goog.isDef(options.touchPan) ? options.touchPan : true;
   if(touchPan) {
-    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var touchRotate = goog.isDef(options.touchRotate) ? options.touchRotate : true;
   if(touchRotate) {
@@ -13593,7 +13593,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var dragPan = goog.isDef(options.dragPan) ? options.dragPan : true;
   if(dragPan) {
-    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var keyboard = goog.isDef(options.keyboard) ? options.keyboard : true;
   if(keyboard) {
@@ -18173,7 +18173,7 @@ ol.Map = function(mapOptions) {
   this.viewport_.style.msTouchAction = "none";
   goog.dom.appendChild(this.target_, this.viewport_);
   this.overlayContainer_ = goog.dom.createDom(goog.dom.TagName.DIV, "ol-overlaycontainer");
-  goog.events.listen(this.overlayContainer_, [goog.events.EventType.CLICK, ol.BrowserFeature.HAS_TOUCH ? goog.events.EventType.TOUCHSTART : goog.events.EventType.MOUSEDOWN], goog.events.Event.stopPropagation);
+  goog.events.listen(this.overlayContainer_, [goog.events.EventType.CLICK, goog.events.EventType.DBLCLICK, ol.BrowserFeature.HAS_TOUCH ? goog.events.EventType.TOUCHSTART : goog.events.EventType.MOUSEDOWN], goog.events.Event.stopPropagation);
   goog.dom.appendChild(this.viewport_, this.overlayContainer_);
   var mapBrowserEventHandler = new ol.MapBrowserEventHandler(this);
   goog.events.listen(mapBrowserEventHandler, goog.object.getValues(ol.MapBrowserEvent.EventType), this.handleMapBrowserEvent, false, this);
