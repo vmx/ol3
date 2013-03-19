@@ -10,7 +10,7 @@ var vector = new ol.layer.Vector({
     new ol.style.Rule({
       symbolizers: [
         new ol.style.Polygon({
-          strokeColor: '#696969'
+          strokeColor: '#bada55'
         })
       ]
     })
