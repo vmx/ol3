@@ -21,7 +21,7 @@ goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.Coordin
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.vec.Mat4']);
 goog.addDependency('../../../ol/ol/dom/input.js', ['ol.dom.Input', 'ol.dom.InputProperty'], ['ol.Object']);
 goog.addDependency('../../../ol/ol/easing.js', ['ol.easing'], ['goog.fx.easing']);
-goog.addDependency('../../../ol/ol/ellipsoid.js', ['ol.Ellipsoid'], ['goog.math', 'ol.Coordinate']);
+goog.addDependency('../../../ol/ol/ellipsoid/ellipsoid.js', ['ol.Ellipsoid'], ['goog.math', 'ol.Coordinate']);
 goog.addDependency('../../../ol/ol/ellipsoid/wgs84.js', ['ol.ellipsoid.WGS84'], ['ol.Ellipsoid']);
 goog.addDependency('../../../ol/ol/expression.js', ['ol.Expression', 'ol.ExpressionLiteral'], []);
 goog.addDependency('../../../ol/ol/extent.js', ['ol.Extent'], ['ol.Coordinate', 'ol.Rectangle', 'ol.TransformFunction']);
@@ -99,10 +99,10 @@ goog.addDependency('../../../ol/ol/parser/polyline.js', ['ol.parser.polyline'], 
 goog.addDependency('../../../ol/ol/parser/xml.js', ['ol.parser.XML'], ['ol.parser.Parser']);
 goog.addDependency('../../../ol/ol/pixel.js', ['ol.Pixel'], ['goog.math.Coordinate']);
 goog.addDependency('../../../ol/ol/pixelbounds.js', ['ol.PixelBounds'], ['ol.Rectangle']);
-goog.addDependency('../../../ol/ol/projection.js', ['ol.Projection', 'ol.ProjectionLike', 'ol.ProjectionUnits', 'ol.projection'], ['goog.array', 'goog.asserts', 'goog.object', 'ol.Coordinate', 'ol.Extent', 'ol.TransformFunction', 'ol.sphere.NORMAL']);
 goog.addDependency('../../../ol/ol/projection/common.js', ['ol.projection.addCommonProjections'], ['ol.projection', 'ol.projection.EPSG3857', 'ol.projection.EPSG4326']);
 goog.addDependency('../../../ol/ol/projection/epsg3857.js', ['ol.projection.EPSG3857'], ['goog.array', 'ol.Extent', 'ol.Projection', 'ol.ProjectionUnits', 'ol.math', 'ol.projection']);
 goog.addDependency('../../../ol/ol/projection/epsg4326.js', ['ol.projection.EPSG4326'], ['ol.Extent', 'ol.Projection', 'ol.ProjectionUnits', 'ol.projection']);
+goog.addDependency('../../../ol/ol/projection/projection.js', ['ol.Projection', 'ol.ProjectionLike', 'ol.ProjectionUnits', 'ol.projection'], ['goog.array', 'goog.asserts', 'goog.object', 'ol.Coordinate', 'ol.Extent', 'ol.TransformFunction', 'ol.sphere.NORMAL']);
 goog.addDependency('../../../ol/ol/rectangle.js', ['ol.Rectangle'], ['goog.asserts', 'ol.Coordinate', 'ol.Size']);
 goog.addDependency('../../../ol/ol/renderer/canvas/canvasimagelayerrenderer.js', ['ol.renderer.canvas.ImageLayer'], ['goog.vec.Mat4', 'ol.Image', 'ol.ImageState', 'ol.ViewHint', 'ol.layer.ImageLayer', 'ol.renderer.Map', 'ol.renderer.canvas.Layer']);
 goog.addDependency('../../../ol/ol/renderer/canvas/canvaslayerrenderer.js', ['ol.renderer.canvas.Layer'], ['ol.layer.Layer', 'ol.renderer.Layer']);
@@ -144,8 +144,8 @@ goog.addDependency('../../../ol/ol/source/vectorsource.js', ['ol.source.Vector']
 goog.addDependency('../../../ol/ol/source/wms.js', ['ol.source.wms'], []);
 goog.addDependency('../../../ol/ol/source/wmtssource.js', ['ol.source.WMTS', 'ol.source.WMTSRequestEncoding'], ['ol.Attribution', 'ol.TileCoord', 'ol.TileUrlFunction', 'ol.TileUrlFunctionType', 'ol.projection', 'ol.source.ImageTileSource', 'ol.tilegrid.WMTS']);
 goog.addDependency('../../../ol/ol/source/xyzsource.js', ['ol.source.XYZ', 'ol.source.XYZOptions'], ['goog.math', 'ol.Attribution', 'ol.Extent', 'ol.Projection', 'ol.TileCoord', 'ol.TileUrlFunction', 'ol.TileUrlFunctionType', 'ol.projection', 'ol.source.ImageTileSource', 'ol.tilegrid.XYZ']);
-goog.addDependency('../../../ol/ol/sphere.js', ['ol.Sphere'], ['goog.math', 'ol.Coordinate']);
 goog.addDependency('../../../ol/ol/sphere/normal.js', ['ol.sphere.NORMAL'], ['ol.Sphere']);
+goog.addDependency('../../../ol/ol/sphere/sphere.js', ['ol.Sphere'], ['goog.math', 'ol.Coordinate']);
 goog.addDependency('../../../ol/ol/sphere/wgs84.js', ['ol.sphere.WGS84'], ['ol.Sphere']);
 goog.addDependency('../../../ol/ol/structs/lrucache.js', ['ol.structs.LRUCache'], ['goog.asserts', 'goog.object']);
 goog.addDependency('../../../ol/ol/structs/rtree.js', ['ol.structs.RTree'], ['ol.Rectangle']);
