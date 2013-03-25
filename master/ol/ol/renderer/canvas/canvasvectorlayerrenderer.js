@@ -81,9 +81,9 @@ ol.renderer.canvas.VectorLayer = function(mapRenderer, layer) {
 
   /**
    * Geometry filters in rendering order.
+   * TODO: these will go away shortly (in favor of one call per symbolizer type)
    * @private
    * @type {Array.<ol.filter.Geometry>}
-   * TODO: these will go away shortly (in favor of one call per symbolizer type)
    */
   this.geometryFilters_ = [
     new ol.filter.Geometry(ol.geom.GeometryType.POINT),
@@ -341,6 +341,7 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
     }
   }
 
+  renderByGeometryType:
   for (type in featuresToRender) {
     groups = layer.groupFeaturesBySymbolizerLiteral(featuresToRender[type]);
     numGroups = groups.length;
@@ -350,12 +351,13 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
           /** @type {ol.geom.GeometryType} */ (type),
           group[0], group[1]);
       if (deferred) {
-        break;
+        break renderByGeometryType;
       }
     }
-    if (!deferred) {
-      goog.object.extend(tilesToRender, tilesOnSketchCanvas);
-    }
+  }
+
+  if (!deferred) {
+    goog.object.extend(tilesToRender, tilesOnSketchCanvas);
   }
 
   for (key in tilesToRender) {

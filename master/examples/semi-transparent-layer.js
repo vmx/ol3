@@ -5,7 +5,8 @@ var map = new ol.Map({
     }),
     new ol.layer.TileLayer({
       source: new ol.source.TileJSON({
-        uri: 'http://api.tiles.mapbox.com/v3/mapbox.va-quake-aug.jsonp'
+        url: 'http://api.tiles.mapbox.com/v3/mapbox.va-quake-aug.jsonp',
+        crossOrigin: 'anonymous'
       })
     })
   ],

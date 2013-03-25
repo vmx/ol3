@@ -1,7 +1,6 @@
 // FIXME check against gl.getParameter(webgl.MAX_TEXTURE_SIZE)
 
 goog.provide('ol.renderer.webgl.Map');
-goog.provide('ol.renderer.webgl.map.shader');
 
 goog.require('goog.array');
 goog.require('goog.debug.Logger');
@@ -18,13 +17,15 @@ goog.require('ol.Tile');
 goog.require('ol.layer.ImageLayer');
 goog.require('ol.layer.TileLayer');
 goog.require('ol.renderer.Map');
-goog.require('ol.renderer.webgl.FragmentShader');
 goog.require('ol.renderer.webgl.ImageLayer');
 goog.require('ol.renderer.webgl.TileLayer');
-goog.require('ol.renderer.webgl.VertexShader');
+goog.require('ol.renderer.webgl.map.shader');
+goog.require('ol.structs.Buffer');
+goog.require('ol.structs.IntegerSet');
 goog.require('ol.structs.LRUCache');
 goog.require('ol.webgl');
 goog.require('ol.webgl.WebGLContextEventType');
+goog.require('ol.webgl.shader');
 
 
 /**
@@ -34,67 +35,17 @@ ol.WEBGL_TEXTURE_CACHE_HIGH_WATER_MARK = 1024;
 
 
 /**
+ * @typedef {{buf: ol.structs.Buffer,
+ *            buffer: WebGLBuffer,
+ *            dirtySet: ol.structs.IntegerSet}}
+ */
+ol.renderer.webgl.BufferCacheEntry;
+
+
+/**
  * @typedef {{magFilter: number, minFilter: number, texture: WebGLTexture}}
  */
 ol.renderer.webgl.TextureCacheEntry;
-
-
-
-/**
- * @constructor
- * @extends {ol.renderer.webgl.FragmentShader}
- * @see https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/platform/graphics/filters/skia/SkiaImageFilterBuilder.cpp
- */
-ol.renderer.webgl.map.shader.Fragment = function() {
-  goog.base(this, [
-    'precision mediump float;',
-    '',
-    'uniform mat4 u_colorMatrix;',
-    'uniform float u_opacity;',
-    'uniform sampler2D u_texture;',
-    '',
-    'varying vec2 v_texCoord;',
-    '',
-    'void main(void) {',
-    '',
-    '  vec4 texColor = texture2D(u_texture, v_texCoord);',
-    '  vec4 color = u_colorMatrix * vec4(texColor.rgb, 1.);',
-    '  color.a = texColor.a * u_opacity;',
-    '',
-    '  gl_FragColor = color;',
-    '',
-    '}'
-  ].join('\n'));
-};
-goog.inherits(
-    ol.renderer.webgl.map.shader.Fragment, ol.renderer.webgl.FragmentShader);
-goog.addSingletonGetter(ol.renderer.webgl.map.shader.Fragment);
-
-
-
-/**
- * @constructor
- * @extends {ol.renderer.webgl.VertexShader}
- */
-ol.renderer.webgl.map.shader.Vertex = function() {
-  goog.base(this, [
-    'attribute vec2 a_position;',
-    'attribute vec2 a_texCoord;',
-    '',
-    'uniform mat4 u_texCoordMatrix;',
-    'uniform mat4 u_projectionMatrix;',
-    '',
-    'varying vec2 v_texCoord;',
-    '',
-    'void main(void) {',
-    '  gl_Position = u_projectionMatrix * vec4(a_position, 0., 1.);',
-    '  v_texCoord = (u_texCoordMatrix * vec4(a_texCoord, 0., 1.)).st;',
-    '}'
-  ].join('\n'));
-};
-goog.inherits(
-    ol.renderer.webgl.map.shader.Vertex, ol.renderer.webgl.VertexShader);
-goog.addSingletonGetter(ol.renderer.webgl.map.shader.Vertex);
 
 
 
@@ -170,9 +121,20 @@ ol.renderer.webgl.Map = function(container, map) {
 
   /**
    * @private
-   * @type {WebGLBuffer}
+   * @type {ol.structs.Buffer}
    */
-  this.arrayBuffer_ = null;
+  this.arrayBuffer_ = new ol.structs.Buffer([
+    -1, -1, 0, 0,
+    1, -1, 1, 0,
+    -1, 1, 0, 1,
+    1, 1, 1, 1
+  ]);
+
+  /**
+   * @private
+   * @type {Object.<number, ol.renderer.webgl.BufferCacheEntry>}
+   */
+  this.bufferCache_ = {};
 
   /**
    * @private
@@ -200,13 +162,13 @@ ol.renderer.webgl.Map = function(container, map) {
 
   /**
    * @private
-   * @type {ol.renderer.webgl.FragmentShader}
+   * @type {ol.webgl.shader.Fragment}
    */
   this.fragmentShader_ = ol.renderer.webgl.map.shader.Fragment.getInstance();
 
   /**
    * @private
-   * @type {ol.renderer.webgl.VertexShader}
+   * @type {ol.webgl.shader.Vertex}
    */
   this.vertexShader_ = ol.renderer.webgl.map.shader.Vertex.getInstance();
 
@@ -214,6 +176,47 @@ ol.renderer.webgl.Map = function(container, map) {
 
 };
 goog.inherits(ol.renderer.webgl.Map, ol.renderer.Map);
+
+
+/**
+ * @param {number} target Target.
+ * @param {ol.structs.Buffer} buf Buffer.
+ */
+ol.renderer.webgl.Map.prototype.bindBuffer = function(target, buf) {
+  var gl = this.getGL();
+  var arr = buf.getArray();
+  var bufferKey = goog.getUid(buf);
+  if (bufferKey in this.bufferCache_) {
+    var bufferCacheEntry = this.bufferCache_[bufferKey];
+    gl.bindBuffer(target, bufferCacheEntry.buffer);
+    bufferCacheEntry.dirtySet.forEachRange(function(start, stop) {
+      // FIXME check if slice is really efficient here
+      var slice = arr.slice(start, stop);
+      gl.bufferSubData(
+          target,
+          start,
+          target == goog.webgl.ARRAY_BUFFER ?
+          new Float32Array(slice) :
+          new Uint16Array(slice));
+    });
+    bufferCacheEntry.dirtySet.clear();
+  } else {
+    var buffer = gl.createBuffer();
+    gl.bindBuffer(target, buffer);
+    gl.bufferData(
+        target,
+        target == goog.webgl.ARRAY_BUFFER ?
+        new Float32Array(arr) : new Uint16Array(arr),
+        buf.getUsage());
+    var dirtySet = new ol.structs.IntegerSet();
+    buf.addDirtySet(dirtySet);
+    this.bufferCache_[bufferKey] = {
+      buf: buf,
+      buffer: buffer,
+      dirtySet: dirtySet
+    };
+  }
+};
 
 
 /**
@@ -277,11 +280,34 @@ ol.renderer.webgl.Map.prototype.createLayerRenderer = function(layer) {
 
 
 /**
+ * @param {ol.structs.Buffer} buf Buffer.
+ */
+ol.renderer.webgl.Map.prototype.deleteBuffer = function(buf) {
+  var gl = this.getGL();
+  var arr = buf.getArray();
+  var bufferKey = goog.getUid(buf);
+  goog.asserts.assert(bufferKey in this.bufferCache_);
+  var bufferCacheEntry = this.bufferCache_[bufferKey];
+  bufferCacheEntry.buf.removeDirtySet(bufferCacheEntry.dirtySet);
+  if (!gl.isContextLost()) {
+    gl.deleteBuffer(bufferCacheEntry.buffer);
+  }
+  delete this.bufferCache_[bufferKey];
+};
+
+
+/**
  * @inheritDoc
  */
 ol.renderer.webgl.Map.prototype.disposeInternal = function() {
   var gl = this.getGL();
+  goog.object.forEach(this.bufferCache_, function(bufferCacheEntry) {
+    bufferCacheEntry.buf.removeDirtySet(bufferCacheEntry.dirtySet);
+  });
   if (!gl.isContextLost()) {
+    goog.object.forEach(this.bufferCache_, function(bufferCacheEntry) {
+      gl.deleteBuffer(bufferCacheEntry.buffer);
+    });
     goog.object.forEach(this.programCache_, function(program) {
       gl.deleteProgram(program);
     });
@@ -341,9 +367,8 @@ ol.renderer.webgl.Map.prototype.getGL = function() {
 
 
 /**
- * @param {ol.renderer.webgl.FragmentShader} fragmentShaderObject
- *     Fragment shader.
- * @param {ol.renderer.webgl.VertexShader} vertexShaderObject Vertex shader.
+ * @param {ol.webgl.shader.Fragment} fragmentShaderObject Fragment shader.
+ * @param {ol.webgl.shader.Vertex} vertexShaderObject Vertex shader.
  * @return {WebGLProgram} Program.
  */
 ol.renderer.webgl.Map.prototype.getProgram = function(
@@ -373,7 +398,7 @@ ol.renderer.webgl.Map.prototype.getProgram = function(
 
 
 /**
- * @param {ol.renderer.webgl.Shader} shaderObject Shader object.
+ * @param {ol.webgl.Shader} shaderObject Shader object.
  * @return {WebGLShader} Shader.
  */
 ol.renderer.webgl.Map.prototype.getShader = function(shaderObject) {
@@ -409,7 +434,7 @@ ol.renderer.webgl.Map.prototype.handleWebGLContextLost = function(event) {
   }
   event.preventDefault();
   this.locations_ = null;
-  this.arrayBuffer_ = null;
+  this.bufferCache_ = {};
   this.shaderCache_ = {};
   this.programCache_ = {};
   this.textureCache_.clear();
@@ -501,29 +526,24 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
   gl.useProgram(program);
   if (goog.isNull(this.locations_)) {
     this.locations_ = {
-      a_position: gl.getAttribLocation(program, 'a_position'),
-      a_texCoord: gl.getAttribLocation(program, 'a_texCoord'),
-      u_colorMatrix: gl.getUniformLocation(program, 'u_colorMatrix'),
-      u_texCoordMatrix: gl.getUniformLocation(program, 'u_texCoordMatrix'),
-      u_projectionMatrix: gl.getUniformLocation(program, 'u_projectionMatrix'),
-      u_opacity: gl.getUniformLocation(program, 'u_opacity'),
-      u_texture: gl.getUniformLocation(program, 'u_texture')
+      a_position: gl.getAttribLocation(
+          program, ol.renderer.webgl.map.shader.attribute.a_position),
+      a_texCoord: gl.getAttribLocation(
+          program, ol.renderer.webgl.map.shader.attribute.a_texCoord),
+      u_colorMatrix: gl.getUniformLocation(
+          program, ol.renderer.webgl.map.shader.uniform.u_colorMatrix),
+      u_texCoordMatrix: gl.getUniformLocation(
+          program, ol.renderer.webgl.map.shader.uniform.u_texCoordMatrix),
+      u_projectionMatrix: gl.getUniformLocation(
+          program, ol.renderer.webgl.map.shader.uniform.u_projectionMatrix),
+      u_opacity: gl.getUniformLocation(
+          program, ol.renderer.webgl.map.shader.uniform.u_opacity),
+      u_texture: gl.getUniformLocation(
+          program, ol.renderer.webgl.map.shader.uniform.u_texture)
     };
   }
 
-  if (goog.isNull(this.arrayBuffer_)) {
-    var arrayBuffer = gl.createBuffer();
-    gl.bindBuffer(goog.webgl.ARRAY_BUFFER, arrayBuffer);
-    gl.bufferData(goog.webgl.ARRAY_BUFFER, new Float32Array([
-      -1, -1, 0, 0,
-      1, -1, 1, 0,
-      -1, 1, 0, 1,
-      1, 1, 1, 1
-    ]), goog.webgl.STATIC_DRAW);
-    this.arrayBuffer_ = arrayBuffer;
-  } else {
-    gl.bindBuffer(goog.webgl.ARRAY_BUFFER, this.arrayBuffer_);
-  }
+  this.bindBuffer(goog.webgl.ARRAY_BUFFER, this.arrayBuffer_);
 
   gl.enableVertexAttribArray(this.locations_.a_position);
   gl.vertexAttribPointer(

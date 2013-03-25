@@ -271,7 +271,8 @@ ol.Map = function(mapOptions) {
    * @private
    * @type {ol.TileQueue}
    */
-  this.tileQueue_ = new ol.TileQueue(goog.bind(this.getTilePriority, this));
+  this.tileQueue_ = new ol.TileQueue(goog.bind(this.getTilePriority, this),
+      goog.bind(this.handleTileChange_, this));
 
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.VIEW),
       this.handleViewChanged_, false, this);
@@ -483,9 +484,13 @@ ol.Map.prototype.getOverlayContainer = function() {
  * @param {ol.Tile} tile Tile.
  * @param {string} tileSourceKey Tile source key.
  * @param {ol.Coordinate} tileCenter Tile center.
+ * @param {number} tileResolution Tile resolution.
  * @return {number} Tile priority.
  */
-ol.Map.prototype.getTilePriority = function(tile, tileSourceKey, tileCenter) {
+ol.Map.prototype.getTilePriority =
+    function(tile, tileSourceKey, tileCenter, tileResolution) {
+  // Filter out tiles at higher zoom levels than the current zoom level, or that
+  // are outside the visible extent.
   var frameState = this.frameState_;
   if (goog.isNull(frameState) || !(tileSourceKey in frameState.wantedTiles)) {
     return ol.TileQueue.DROP;
@@ -494,11 +499,14 @@ ol.Map.prototype.getTilePriority = function(tile, tileSourceKey, tileCenter) {
   if (!frameState.wantedTiles[tileSourceKey][coordKey]) {
     return ol.TileQueue.DROP;
   }
+  // Prioritize tiles closest to the focus or center.  The + 1 helps to
+  // prioritize tiles at higher zoom levels over tiles at lower zoom levels,
+  // even if the tile's center is close to the focus.
   var focus = goog.isNull(this.focus_) ?
       frameState.view2DState.center : this.focus_;
   var deltaX = tileCenter.x - focus.x;
   var deltaY = tileCenter.y - focus.y;
-  return deltaX * deltaX + deltaY * deltaY;
+  return tileResolution * (deltaX * deltaX + deltaY * deltaY + 1);
 };
 
 
@@ -543,13 +551,7 @@ ol.Map.prototype.handleMapBrowserEvent = function(mapBrowserEvent) {
  */
 ol.Map.prototype.handlePostRender = function() {
   this.tileQueue_.reprioritize(); // FIXME only call if needed
-  var moreLoadingTiles = this.tileQueue_.loadMoreTiles();
-  if (moreLoadingTiles) {
-    // The tile layer renderers need to know when tiles change
-    // to the LOADING state (to register the change listener
-    // on the tile).
-    this.requestRenderFrame();
-  }
+  this.tileQueue_.loadMoreTiles();
 
   var postRenderFunctions = this.postRenderFunctions_;
   var i;
@@ -582,6 +584,14 @@ ol.Map.prototype.handleBrowserWindowResize = function() {
  */
 ol.Map.prototype.handleSizeChanged_ = function() {
   this.render();
+};
+
+
+/**
+ * @private
+ */
+ol.Map.prototype.handleTileChange_ = function() {
+  this.requestRenderFrame();
 };
 
 

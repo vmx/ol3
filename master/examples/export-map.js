@@ -16,3 +16,8 @@ var exportJPEGElement = document.getElementById('export-jpeg');
 exportJPEGElement.addEventListener('click', function(e) {
   e.target.href = map.getRenderer().getCanvas().toDataURL('image/jpeg');
 }, false);
+
+var exportPNGElement = document.getElementById('export-png');
+exportPNGElement.addEventListener('click', function(e) {
+  e.target.href = map.getRenderer().getCanvas().toDataURL('image/png');
+}, false);

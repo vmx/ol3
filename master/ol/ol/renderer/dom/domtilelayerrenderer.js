@@ -83,7 +83,6 @@ ol.renderer.dom.TileLayer.prototype.renderFrame =
 
   var tileLayer = this.getTileLayer();
   var tileSource = tileLayer.getTileSource();
-  var tileSourceKey = goog.getUid(tileSource).toString();
   var tileGrid = tileSource.getTileGrid();
   if (goog.isNull(tileGrid)) {
     tileGrid = ol.tilegrid.getForProjection(projection);
@@ -113,21 +112,14 @@ ol.renderer.dom.TileLayer.prototype.renderFrame =
       tilesToDrawByZ, getTileIfLoaded);
 
   var allTilesLoaded = true;
-  var tile, tileCenter, tileCoord, tileState, x, y;
+  var tile, tileState, x, y;
   for (x = tileRange.minX; x <= tileRange.maxX; ++x) {
     for (y = tileRange.minY; y <= tileRange.maxY; ++y) {
 
-      tileCoord = new ol.TileCoord(z, x, y);
-      tile = tileSource.getTile(tileCoord, tileGrid, projection);
+      tile = tileSource.getTile(z, x, y, tileGrid, projection);
       tileState = tile.getState();
-      if (tileState == ol.TileState.IDLE) {
-        this.updateWantedTiles(frameState.wantedTiles, tileSource, tileCoord);
-        tileCenter = tileGrid.getTileCoordCenter(tileCoord);
-        frameState.tileQueue.enqueue(tile, tileSourceKey, tileCenter);
-      } else if (tileState == ol.TileState.LOADING) {
-        this.listenToTileChange(tile);
-      } else if (tileState == ol.TileState.LOADED) {
-        tilesToDrawByZ[z][tileCoord.toString()] = tile;
+      if (tileState == ol.TileState.LOADED) {
+        tilesToDrawByZ[z][tile.tileCoord.toString()] = tile;
         continue;
       } else if (tileState == ol.TileState.ERROR ||
                  tileState == ol.TileState.EMPTY) {
@@ -135,7 +127,7 @@ ol.renderer.dom.TileLayer.prototype.renderFrame =
       }
 
       allTilesLoaded = false;
-      tileGrid.forEachTileCoordParentTileRange(tileCoord, findLoadedTiles);
+      tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles);
 
     }
 
@@ -226,7 +218,8 @@ ol.renderer.dom.TileLayer.prototype.renderFrame =
   }
 
   this.updateUsedTiles(frameState.usedTiles, tileSource, z, tileRange);
-  tileSource.useLowResolutionTiles(z, extent, tileGrid);
+  this.manageTilePyramid(
+      frameState, tileSource, tileGrid, projection, extent, z);
   this.scheduleExpireCache(frameState, tileSource);
 
 };

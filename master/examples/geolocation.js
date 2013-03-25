@@ -15,7 +15,7 @@ var map = new ol.Map({
 var geolocation = new ol.Geolocation();
 geolocation.bindTo('projection', map.getView());
 
-var marker = new ol.AnchoredElement({
+var marker = new ol.Overlay({
   map: map,
   element: /** @type {Element} */ ($('<i/>').addClass('icon-flag').get(0))
 });

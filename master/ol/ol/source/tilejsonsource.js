@@ -46,6 +46,7 @@ goog.exportSymbol('grid', grid);
 ol.source.TileJSON = function(tileJsonOptions) {
 
   goog.base(this, {
+    crossOrigin: tileJsonOptions.crossOrigin,
     projection: ol.projection.get('EPSG:3857')
   });
 
@@ -60,7 +61,7 @@ ol.source.TileJSON = function(tileJsonOptions) {
    * @type {!goog.async.Deferred}
    */
   this.deferred_ =
-      goog.net.jsloader.load(tileJsonOptions.uri, {cleanupWhenDone: true});
+      goog.net.jsloader.load(tileJsonOptions.url, {cleanupWhenDone: true});
   this.deferred_.addCallback(this.handleTileJSONResponse, this);
 
 };
