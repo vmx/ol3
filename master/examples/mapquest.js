@@ -8,7 +8,7 @@ var map = new ol.Map({
   target: 'map',
   view: new ol.View2D({
     center: ol.projection.transform(
-        new ol.Coordinate(139.6917, 35.689506), 'EPSG:4326', 'EPSG:3857'),
+        [139.6917, 35.689506], 'EPSG:4326', 'EPSG:3857'),
     zoom: 9
   })
 });

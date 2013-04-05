@@ -1,13 +1,13 @@
 var london = ol.projection.transform(
-    new ol.Coordinate(-0.12755, 51.507222), 'EPSG:4326', 'EPSG:3857');
+    [-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');
 var moscow = ol.projection.transform(
-    new ol.Coordinate(37.6178, 55.7517), 'EPSG:4326', 'EPSG:3857');
-var instanbul = ol.projection.transform(
-    new ol.Coordinate(28.9744, 41.0128), 'EPSG:4326', 'EPSG:3857');
+    [37.6178, 55.7517], 'EPSG:4326', 'EPSG:3857');
+var istanbul = ol.projection.transform(
+    [28.9744, 41.0128], 'EPSG:4326', 'EPSG:3857');
 var rome = ol.projection.transform(
-    new ol.Coordinate(12.5, 41.9), 'EPSG:4326', 'EPSG:3857');
+    [12.5, 41.9], 'EPSG:4326', 'EPSG:3857');
 var bern = ol.projection.transform(
-    new ol.Coordinate(7.4458, 46.95), 'EPSG:4326', 'EPSG:3857');
+    [7.4458, 46.95], 'EPSG:4326', 'EPSG:3857');
 
 var map = new ol.Map({
   layers: [
@@ -19,7 +19,7 @@ var map = new ol.Map({
   renderers: ol.RendererHints.createFromQueryData(),
   target: 'map',
   view: new ol.View2D({
-    center: instanbul,
+    center: istanbul,
     zoom: 6
   })
 });
@@ -64,15 +64,15 @@ elasticToMoscow.addEventListener('click', function() {
   map.getView().getView2D().setCenter(moscow);
 }, false);
 
-var bounceToInstanbul = document.getElementById('bounce-to-instanbul');
-bounceToInstanbul.addEventListener('click', function() {
+var bounceToIstanbul = document.getElementById('bounce-to-istanbul');
+bounceToIstanbul.addEventListener('click', function() {
   var pan = ol.animation.pan({
     duration: 2000,
     easing: ol.easing.bounce,
     source: map.getView().getView2D().getCenter()
   });
   map.addPreRenderFunction(pan);
-  map.getView().getView2D().setCenter(instanbul);
+  map.getView().getView2D().setCenter(istanbul);
 }, false);
 
 var spinToRome = document.getElementById('spin-to-rome');

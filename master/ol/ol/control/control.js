@@ -5,11 +5,9 @@ goog.require('goog.Disposable');
 
 
 /**
- * Common options for controls.
- * @typedef {{
- *     element: (Element|undefined),
- *     map: (ol.Map|undefined),
- *     target: (Element|undefined)}}
+ * @typedef {{element: (Element|undefined),
+ *            map: (ol.Map|undefined),
+ *            target: (Element|undefined)}}
  */
 ol.control.ControlOptions;
 

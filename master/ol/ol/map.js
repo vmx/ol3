@@ -9,6 +9,7 @@ goog.provide('ol.RendererHints');
 
 goog.require('goog.Uri.QueryData');
 goog.require('goog.async.AnimationDelay');
+goog.require('goog.async.Delay');
 goog.require('goog.debug.Logger');
 goog.require('goog.dom');
 goog.require('goog.dom.ViewportSizeMonitor');
@@ -24,7 +25,6 @@ goog.require('goog.style');
 goog.require('ol.BrowserFeature');
 goog.require('ol.Collection');
 goog.require('ol.Color');
-goog.require('ol.Coordinate');
 goog.require('ol.Extent');
 goog.require('ol.FrameState');
 goog.require('ol.IView');
@@ -56,6 +56,7 @@ goog.require('ol.renderer.dom.SUPPORTED');
 goog.require('ol.renderer.webgl.Map');
 goog.require('ol.renderer.webgl.SUPPORTED');
 goog.require('ol.structs.PriorityQueue');
+goog.require('ol.vec.Mat4');
 
 
 /**
@@ -109,26 +110,6 @@ ol.MapProperty = {
 
 
 /**
- * @class
- * The map is the core component of OpenLayers. In its minimal configuration it
- * needs a view, one or more layers, and a target container:
- *
- *     var map = new ol.Map({
- *       view: new ol.View2D({
- *         center: new ol.Coordinate(0, 0),
- *         zoom: 1
- *       }),
- *       layers: [
- *         new ol.layer.TileLayer({
- *           source: new ol.source.MapQuestOSM()
- *         })
- *       ],
- *       target: 'map'
- *     });
- *
- * The above snippet creates a map with a MapQuest OSM layer on a 2D view and
- * renders it to a DOM element with the id 'map'.
- *
  * @constructor
  * @extends {ol.Object}
  * @param {ol.MapOptions} mapOptions Map options.
@@ -284,9 +265,9 @@ ol.Map = function(mapOptions) {
 
   /**
    * @private
-   * @type {function(this: ol.Map)}
+   * @type {goog.async.Delay}
    */
-  this.handlePostRender_ = goog.bind(this.handlePostRender, this);
+  this.postRenderDelay_ = new goog.async.Delay(this.handlePostRender, 0, this);
 
   /**
    * @private
@@ -366,6 +347,7 @@ ol.Map.prototype.removePreRenderFunction = function(preRenderFunction) {
  */
 ol.Map.prototype.disposeInternal = function() {
   goog.dom.removeNode(this.viewport_);
+  goog.dispose(this.postRenderDelay_);
   goog.base(this, 'disposeInternal');
 };
 
@@ -416,9 +398,8 @@ ol.Map.prototype.getCoordinateFromPixel = function(pixel) {
   if (goog.isNull(frameState)) {
     return null;
   } else {
-    var vec3 = [pixel.x, pixel.y, 0];
-    goog.vec.Mat4.multVec3(frameState.pixelToCoordinateMatrix, vec3, vec3);
-    return new ol.Coordinate(vec3[0], vec3[1]);
+    var vec2 = [pixel.x, pixel.y];
+    return ol.vec.Mat4.multVec2(frameState.pixelToCoordinateMatrix, vec2, vec2);
   }
 };
 
@@ -452,9 +433,9 @@ ol.Map.prototype.getPixelFromCoordinate = function(coordinate) {
   if (goog.isNull(frameState)) {
     return null;
   } else {
-    var vec3 = [coordinate.x, coordinate.y, 0];
-    goog.vec.Mat4.multVec3(frameState.coordinateToPixelMatrix, vec3, vec3);
-    return new ol.Pixel(vec3[0], vec3[1]);
+    var vec2 = coordinate.slice(0, 2);
+    ol.vec.Mat4.multVec2(frameState.coordinateToPixelMatrix, vec2, vec2);
+    return new ol.Pixel(vec2[0], vec2[1]);
   }
 };
 
@@ -526,8 +507,8 @@ ol.Map.prototype.getTilePriority =
   // between the center of the tile and the focus.  The factor of 65536 means
   // that the prioritization should behave as desired for tiles up to
   // 65536 * Math.log(2) = 45426 pixels from the focus.
-  var deltaX = tileCenter.x - frameState.focus.x;
-  var deltaY = tileCenter.y - frameState.focus.y;
+  var deltaX = tileCenter[0] - frameState.focus[0];
+  var deltaY = tileCenter[1] - frameState.focus[1];
   return 65536 * Math.log(tileResolution) +
       Math.sqrt(deltaX * deltaX + deltaY * deltaY) / tileResolution;
 };
@@ -782,7 +763,9 @@ ol.Map.prototype.renderFrame_ = function(time) {
   this.dispatchEvent(
       new ol.MapEvent(ol.MapEventType.POSTRENDER, this, frameState));
 
-  goog.global.setTimeout(this.handlePostRender_, 0);
+  if (!this.postRenderDelay_.isActive()) {
+    this.postRenderDelay_.start();
+  }
 
 };
 

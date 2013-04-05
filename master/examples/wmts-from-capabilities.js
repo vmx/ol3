@@ -31,7 +31,7 @@ xhr.onload = function() {
       renderer: ol.RendererHint.CANVAS,
       target: 'map',
       view: new ol.View2D({
-        center: new ol.Coordinate(1823849, 6143760),
+        center: [1823849, 6143760],
         projection: 'EPSG:3857',
         zoom: 11
       })

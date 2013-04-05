@@ -8,7 +8,7 @@ var map = new ol.Map({
   renderers: ol.RendererHints.createFromQueryData(),
   target: 'map',
   view: new ol.View2D({
-    center: new ol.Coordinate(-25860000, 4130000),
+    center: [-25860000, 4130000],
     rotation: Math.PI / 6,
     zoom: 10
   })

@@ -11,7 +11,7 @@ var map1 = new ol.Map({
   renderers: ol.RendererHints.createFromQueryData(),
   target: 'map1',
   view: new ol.View2D({
-    center: new ol.Coordinate(-4808600, -2620936),
+    center: [-4808600, -2620936],
     zoom: 8
   })
 });

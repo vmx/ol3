@@ -7,7 +7,7 @@ var domMap = new ol.Map({
   renderer: ol.RendererHint.DOM,
   target: 'domMap',
   view: new ol.View2D({
-    center: new ol.Coordinate(0, 0),
+    center: [0, 0],
     zoom: 1
   })
 });

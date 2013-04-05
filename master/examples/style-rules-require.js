@@ -1,5 +1,4 @@
 goog.require('ol.Collection');
-goog.require('ol.Coordinate');
 goog.require('ol.Expression');
 goog.require('ol.Map');
 goog.require('ol.RendererHint');

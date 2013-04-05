@@ -127,8 +127,6 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame =
   }
   var tileRange = tileGrid.getTileRangeForExtentAndResolution(
       extent, tileResolution);
-  var tileRangeWidth = tileRange.getWidth();
-  var tileRangeHeight = tileRange.getHeight();
 
   var canvasWidth = tileSize.width * tileRange.getWidth();
   var canvasHeight = tileSize.height * tileRange.getHeight();
@@ -195,7 +193,7 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame =
 
   var getTileIfLoaded = this.createGetTileIfLoadedFunction(function(tile) {
     return !goog.isNull(tile) && tile.getState() == ol.TileState.LOADED;
-  }, tileSource, tileGrid, projection);
+  }, tileSource, projection);
   var findLoadedTiles = goog.bind(tileSource.findLoadedTiles, tileSource,
       tilesToDrawByZ, getTileIfLoaded);
 
@@ -204,7 +202,7 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame =
   for (x = tileRange.minX; x <= tileRange.maxX; ++x) {
     for (y = tileRange.minY; y <= tileRange.maxY; ++y) {
 
-      tile = tileSource.getTile(z, x, y, tileGrid, projection);
+      tile = tileSource.getTile(z, x, y, projection);
       tileState = tile.getState();
       if (tileState == ol.TileState.LOADED || tileState == ol.TileState.EMPTY) {
         tilesToDrawByZ[z][tile.tileCoord.toString()] = tile;
@@ -256,8 +254,8 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame =
       for (tileCoordKey in tilesToDraw) {
         tile = tilesToDraw[tileCoordKey];
         tileExtent = tileGrid.getTileCoordExtent(tile.tileCoord);
-        x = (tileExtent.minX - origin.x) / tileResolution;
-        y = (origin.y - tileExtent.maxY) / tileResolution;
+        x = (tileExtent.minX - origin[0]) / tileResolution;
+        y = (origin[1] - tileExtent.maxY) / tileResolution;
         width = scale * tileSize.width;
         height = scale * tileSize.height;
         tileState = tile.getState();
@@ -301,8 +299,8 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame =
       1);
   goog.vec.Mat4.translate(
       transform,
-      (origin.x - center.x) / tileResolution,
-      (center.y - origin.y) / tileResolution,
+      (origin[0] - center[0]) / tileResolution,
+      (center[1] - origin[1]) / tileResolution,
       0);
 
 };

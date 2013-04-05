@@ -1,4 +1,3 @@
-goog.require('ol.Coordinate');
 goog.require('ol.Geolocation');
 goog.require('ol.Map');
 goog.require('ol.Overlay');
