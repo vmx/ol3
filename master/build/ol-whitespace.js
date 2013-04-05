@@ -8067,14 +8067,14 @@ goog.require("ol.Coordinate");
 goog.require("ol.Tile");
 goog.require("ol.structs.PriorityQueue");
 ol.TilePriorityFunction;
-ol.TileQueue = function(tilePriorityFunction, tileChangeCallback) {
+ol.TileQueue = function(maxTilesLoading, tilePriorityFunction, tileChangeCallback) {
   goog.base(this, function(element) {
     return tilePriorityFunction.apply(null, element)
   }, function(element) {
     return element[0].getKey()
   });
   this.tileChangeCallback_ = tileChangeCallback;
-  this.maxTilesLoading_ = 8;
+  this.maxTilesLoading_ = maxTilesLoading;
   this.tilesLoading_ = 0
 };
 goog.inherits(ol.TileQueue, ol.structs.PriorityQueue);
@@ -8082,13 +8082,14 @@ ol.TileQueue.prototype.handleTileChange = function() {
   --this.tilesLoading_;
   this.tileChangeCallback_()
 };
-ol.TileQueue.prototype.loadMoreTiles = function() {
+ol.TileQueue.prototype.loadMoreTiles = function(limit) {
   var tile;
-  while(!this.isEmpty() && this.tilesLoading_ < this.maxTilesLoading_) {
+  while(limit > 0 && !this.isEmpty() && this.tilesLoading_ < this.maxTilesLoading_) {
     tile = this.dequeue()[0];
     goog.events.listenOnce(tile, goog.events.EventType.CHANGE, this.handleTileChange, false, this);
     tile.load();
-    ++this.tilesLoading_
+    ++this.tilesLoading_;
+    --limit
   }
 };
 /*
@@ -18628,6 +18629,8 @@ goog.require("ol.vec.Mat4");
 ol.ENABLE_CANVAS = true;
 ol.ENABLE_DOM = true;
 ol.ENABLE_WEBGL = true;
+ol.MAXIMUM_TILES_LOADING = 8;
+ol.MAXIMUM_NEW_TILE_LOADS_PER_FRAME = 2;
 ol.RendererHint = {CANVAS:"canvas", DOM:"dom", WEBGL:"webgl"};
 ol.DEFAULT_RENDERER_HINTS = [ol.RendererHint.WEBGL, ol.RendererHint.CANVAS, ol.RendererHint.DOM];
 ol.MapProperty = {BACKGROUND_COLOR:"backgroundColor", LAYERS:"layers", SIZE:"size", VIEW:"view"};
@@ -18674,7 +18677,7 @@ ol.Map = function(mapOptions) {
   this.preRenderFunctions_ = [];
   this.postRenderFunctions_ = [];
   this.postRenderDelay_ = new goog.async.Delay(this.handlePostRender, 0, this);
-  this.tileQueue_ = new ol.TileQueue(goog.bind(this.getTilePriority, this), goog.bind(this.handleTileChange_, this));
+  this.tileQueue_ = new ol.TileQueue(ol.MAXIMUM_TILES_LOADING, goog.bind(this.getTilePriority, this), goog.bind(this.handleTileChange_, this));
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.VIEW), this.handleViewChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.SIZE), this.handleSizeChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.BACKGROUND_COLOR), this.handleBackgroundColorChanged_, false, this);
@@ -18800,7 +18803,7 @@ ol.Map.prototype.handleMapBrowserEvent = function(mapBrowserEvent) {
 };
 ol.Map.prototype.handlePostRender = function() {
   this.tileQueue_.reprioritize();
-  this.tileQueue_.loadMoreTiles();
+  this.tileQueue_.loadMoreTiles(ol.MAXIMUM_NEW_TILE_LOADS_PER_FRAME);
   var postRenderFunctions = this.postRenderFunctions_;
   var i;
   for(i = 0;i < postRenderFunctions.length;++i) {
