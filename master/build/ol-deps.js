@@ -168,7 +168,7 @@ goog.addDependency('../../../ol/ol/tilecoord.js', ['ol.TileCoord'], ['goog.array
 goog.addDependency('../../../ol/ol/tilegrid/tilegrid.js', ['ol.tilegrid.TileGrid'], ['goog.array', 'goog.asserts', 'ol.Coordinate', 'ol.Extent', 'ol.PixelBounds', 'ol.Projection', 'ol.Size', 'ol.TileCoord', 'ol.TileRange', 'ol.array']);
 goog.addDependency('../../../ol/ol/tilegrid/wmtstilegrid.js', ['ol.tilegrid.WMTS'], ['goog.array', 'goog.asserts', 'ol.Size', 'ol.projection', 'ol.tilegrid.TileGrid']);
 goog.addDependency('../../../ol/ol/tilegrid/xyztilegrid.js', ['ol.tilegrid.XYZ'], ['ol.Size', 'ol.TileRange', 'ol.projection', 'ol.projection.EPSG3857', 'ol.tilegrid.TileGrid']);
-goog.addDependency('../../../ol/ol/tilequeue.js', ['ol.TilePriorityFunction', 'ol.TileQueue'], ['goog.events', 'goog.events.EventType', 'ol.Coordinate', 'ol.Tile', 'ol.structs.PriorityQueue']);
+goog.addDependency('../../../ol/ol/tilequeue.js', ['ol.TilePriorityFunction', 'ol.TileQueue'], ['goog.asserts', 'goog.events', 'goog.events.EventType', 'ol.Coordinate', 'ol.Tile', 'ol.structs.PriorityQueue']);
 goog.addDependency('../../../ol/ol/tilerange.js', ['ol.TileRange'], ['goog.asserts', 'ol.Rectangle', 'ol.TileCoord']);
 goog.addDependency('../../../ol/ol/tileurlfunction.js', ['ol.TileUrlFunction', 'ol.TileUrlFunctionType'], ['goog.array', 'goog.math', 'ol.TileCoord']);
 goog.addDependency('../../../ol/ol/transformfunction.js', ['ol.TransformFunction'], []);

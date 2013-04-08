@@ -688,7 +688,7 @@ goog.addDependency("../src/ol/tilecoord.js", ["ol.TileCoord"], ["goog.array"]);
 goog.addDependency("../src/ol/tilegrid/tilegrid.js", ["ol.tilegrid.TileGrid"], ["goog.array", "goog.asserts", "ol.Coordinate", "ol.Extent", "ol.PixelBounds", "ol.Projection", "ol.Size", "ol.TileCoord", "ol.TileRange", "ol.array"]);
 goog.addDependency("../src/ol/tilegrid/wmtstilegrid.js", ["ol.tilegrid.WMTS"], ["goog.array", "goog.asserts", "ol.Size", "ol.projection", "ol.tilegrid.TileGrid"]);
 goog.addDependency("../src/ol/tilegrid/xyztilegrid.js", ["ol.tilegrid.XYZ"], ["ol.Size", "ol.TileRange", "ol.projection", "ol.projection.EPSG3857", "ol.tilegrid.TileGrid"]);
-goog.addDependency("../src/ol/tilequeue.js", ["ol.TilePriorityFunction", "ol.TileQueue"], ["goog.events", "goog.events.EventType", "ol.Coordinate", "ol.Tile", "ol.structs.PriorityQueue"]);
+goog.addDependency("../src/ol/tilequeue.js", ["ol.TilePriorityFunction", "ol.TileQueue"], ["goog.asserts", "goog.events", "goog.events.EventType", "ol.Coordinate", "ol.Tile", "ol.structs.PriorityQueue"]);
 goog.addDependency("../src/ol/tilerange.js", ["ol.TileRange"], ["goog.asserts", "ol.Rectangle", "ol.TileCoord"]);
 goog.addDependency("../src/ol/tileurlfunction.js", ["ol.TileUrlFunction", "ol.TileUrlFunctionType"], ["goog.array", "goog.math", "ol.TileCoord"]);
 goog.addDependency("../src/ol/transformfunction.js", ["ol.TransformFunction"], []);
@@ -6613,36 +6613,40 @@ ol.structs.PriorityQueue.prototype.reprioritize = function() {
 };
 goog.provide("ol.TilePriorityFunction");
 goog.provide("ol.TileQueue");
+goog.require("goog.asserts");
 goog.require("goog.events");
 goog.require("goog.events.EventType");
 goog.require("ol.Coordinate");
 goog.require("ol.Tile");
 goog.require("ol.structs.PriorityQueue");
 ol.TilePriorityFunction;
-ol.TileQueue = function(maxTilesLoading, tilePriorityFunction, tileChangeCallback) {
+ol.TileQueue = function(tilePriorityFunction, tileChangeCallback) {
   goog.base(this, function(element) {
     return tilePriorityFunction.apply(null, element)
   }, function(element) {
     return element[0].getKey()
   });
   this.tileChangeCallback_ = tileChangeCallback;
-  this.maxTilesLoading_ = maxTilesLoading;
   this.tilesLoading_ = 0
 };
 goog.inherits(ol.TileQueue, ol.structs.PriorityQueue);
+ol.TileQueue.prototype.getTilesLoading = function() {
+  return this.tilesLoading_
+};
 ol.TileQueue.prototype.handleTileChange = function() {
   --this.tilesLoading_;
   this.tileChangeCallback_()
 };
-ol.TileQueue.prototype.loadMoreTiles = function(limit) {
-  var tile;
-  while(limit > 0 && !this.isEmpty() && this.tilesLoading_ < this.maxTilesLoading_) {
+ol.TileQueue.prototype.loadMoreTiles = function(maxTotalLoading, maxNewLoads) {
+  var newLoads = Math.min(maxTotalLoading - this.getTilesLoading(), maxNewLoads, this.getCount());
+  goog.asserts.assert(newLoads > 0);
+  var i, tile;
+  for(i = 0;i < newLoads;++i) {
     tile = this.dequeue()[0];
     goog.events.listenOnce(tile, goog.events.EventType.CHANGE, this.handleTileChange, false, this);
-    tile.load();
-    ++this.tilesLoading_;
-    --limit
+    tile.load()
   }
+  this.tilesLoading_ += newLoads
 };
 /*
 
@@ -18020,8 +18024,6 @@ goog.require("ol.vec.Mat4");
 ol.ENABLE_CANVAS = true;
 ol.ENABLE_DOM = true;
 ol.ENABLE_WEBGL = true;
-ol.MAXIMUM_TILES_LOADING = 8;
-ol.MAXIMUM_NEW_TILE_LOADS_PER_FRAME = 2;
 ol.RendererHint = {CANVAS:"canvas", DOM:"dom", WEBGL:"webgl"};
 ol.DEFAULT_RENDERER_HINTS = [ol.RendererHint.WEBGL, ol.RendererHint.CANVAS, ol.RendererHint.DOM];
 ol.MapProperty = {BACKGROUND_COLOR:"backgroundColor", LAYERS:"layers", SIZE:"size", VIEW:"view"};
@@ -18065,7 +18067,7 @@ ol.Map = function(options) {
   this.preRenderFunctions_ = [];
   this.postRenderFunctions_ = [];
   this.postRenderDelay_ = new goog.async.Delay(this.handlePostRender, 0, this);
-  this.tileQueue_ = new ol.TileQueue(ol.MAXIMUM_TILES_LOADING, goog.bind(this.getTilePriority, this), goog.bind(this.handleTileChange_, this));
+  this.tileQueue_ = new ol.TileQueue(goog.bind(this.getTilePriority, this), goog.bind(this.handleTileChange_, this));
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.VIEW), this.handleViewChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.SIZE), this.handleSizeChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.BACKGROUND_COLOR), this.handleBackgroundColorChanged_, false, this);
@@ -18190,20 +18192,27 @@ ol.Map.prototype.handleMapBrowserEvent = function(mapBrowserEvent) {
   }
 };
 ol.Map.prototype.handlePostRender = function() {
-  var limit = (1 << 30) - 1;
   var frameState = this.frameState_;
-  if(!goog.isNull(frameState)) {
-    var hints = frameState.viewHints;
-    if(hints[ol.ViewHint.ANIMATING] || hints[ol.ViewHint.INTERACTING]) {
-      limit = ol.MAXIMUM_NEW_TILE_LOADS_PER_FRAME
+  var tileQueue = this.tileQueue_;
+  if(!tileQueue.isEmpty()) {
+    var maxTotalLoading = 16;
+    var maxNewLoads = maxTotalLoading;
+    if(!goog.isNull(frameState)) {
+      var hints = frameState.viewHints;
+      if(hints[ol.ViewHint.ANIMATING] || hints[ol.ViewHint.INTERACTING]) {
+        maxTotalLoading = 8;
+        maxNewLoads = 2
+      }
+    }
+    if(tileQueue.getTilesLoading() < maxTotalLoading) {
+      tileQueue.reprioritize();
+      tileQueue.loadMoreTiles(maxTotalLoading, maxNewLoads)
     }
   }
-  this.tileQueue_.reprioritize();
-  this.tileQueue_.loadMoreTiles(limit);
   var postRenderFunctions = this.postRenderFunctions_;
   var i;
   for(i = 0;i < postRenderFunctions.length;++i) {
-    postRenderFunctions[i](this, this.frameState_)
+    postRenderFunctions[i](this, frameState)
   }
   postRenderFunctions.length = 0
 };
