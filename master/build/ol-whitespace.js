@@ -532,7 +532,7 @@ goog.addDependency("../src/ol/control/logocontrol.js", ["ol.control.Logo"], ["go
 goog.addDependency("../src/ol/control/mousepositioncontrol.js", ["ol.control.MousePosition"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.style", "ol.CoordinateFormatType", "ol.Pixel", "ol.Projection", "ol.TransformFunction", "ol.control.Control", "ol.projection"]);
 goog.addDependency("../src/ol/control/scalelinecontrol.js", ["ol.control.ScaleLine", "ol.control.ScaleLineUnits"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.math", "goog.style", "ol.FrameState", "ol.ProjectionUnits", "ol.TransformFunction", "ol.control.Control", "ol.css", "ol.projection", "ol.sphere.NORMAL"]);
 goog.addDependency("../src/ol/control/zoomcontrol.js", ["ol.control.Zoom"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "ol.control.Control", "ol.css"]);
-goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
+goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
 goog.addDependency("../src/ol/coordinate.js", ["ol.Coordinate", "ol.CoordinateFormatType", "ol.coordinate"], ["goog.math"]);
 goog.addDependency("../src/ol/css.js", ["ol.css"], []);
 goog.addDependency("../src/ol/dom/dom.js", ["ol.dom", "ol.dom.BrowserFeature"], ["goog.asserts", "goog.vec.Mat4"]);
@@ -653,11 +653,11 @@ goog.addDependency("../src/ol/source/bingmapssource.js", ["ol.source.BingMaps"],
 goog.addDependency("../src/ol/source/debugtilesource.js", ["ol.source.DebugTileSource"], ["goog.dom", "goog.dom.TagName", "ol.Size", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TileState", "ol.source.TileSource", "ol.tilegrid.TileGrid"]);
 goog.addDependency("../src/ol/source/imagesource.js", ["ol.source.ImageSource"], ["goog.array", "goog.asserts", "ol.Attribution", "ol.Extent", "ol.Image", "ol.ImageUrlFunction", "ol.ImageUrlFunctionType", "ol.Projection", "ol.Size", "ol.array", "ol.source.Source"]);
 goog.addDependency("../src/ol/source/imagetilesource.js", ["ol.source.ImageTileSource"], ["goog.asserts", "ol.Attribution", "ol.Extent", "ol.ImageTile", "ol.Projection", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.source.TileSource", "ol.tilegrid.TileGrid"]);
-goog.addDependency("../src/ol/source/mapquestsource.js", ["ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial"], ["ol.Attribution", "ol.source.XYZ"]);
+goog.addDependency("../src/ol/source/mapquestsource.js", ["ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial"], ["ol.Attribution", "ol.source.OpenStreetMap", "ol.source.XYZ"]);
 goog.addDependency("../src/ol/source/openstreetmapsource.js", ["ol.source.OpenStreetMap"], ["ol.Attribution", "ol.source.XYZ"]);
 goog.addDependency("../src/ol/source/singleimagewmssource.js", ["ol.source.SingleImageWMS"], ["ol.Extent", "ol.Image", "ol.ImageUrlFunction", "ol.Size", "ol.source.ImageSource", "ol.source.wms"]);
 goog.addDependency("../src/ol/source/source.js", ["ol.source.Source"], ["goog.events.EventTarget", "goog.events.EventType", "goog.functions", "ol.Attribution", "ol.Extent", "ol.projection"]);
-goog.addDependency("../src/ol/source/stamensource.js", ["ol.source.Stamen"], ["goog.asserts", "ol.Attribution", "ol.source.XYZ"]);
+goog.addDependency("../src/ol/source/stamensource.js", ["ol.source.Stamen"], ["goog.asserts", "ol.Attribution", "ol.source.OpenStreetMap", "ol.source.XYZ"]);
 goog.addDependency("../src/ol/source/staticimagesource.js", ["ol.source.StaticImage"], ["ol.Image", "ol.ImageUrlFunctionType", "ol.projection", "ol.source.ImageSource"]);
 goog.addDependency("../src/ol/source/tiledwmssource.js", ["ol.source.TiledWMS"], ["goog.array", "goog.math", "ol.Extent", "ol.TileCoord", "ol.TileUrlFunction", "ol.source.ImageTileSource", "ol.source.wms"]);
 goog.addDependency("../src/ol/source/tilejsonsource.js", ["ol.source.TileJSON", "ol.tilejson"], ["goog.asserts", "goog.math", "goog.net.jsloader", "ol.Attribution", "ol.Extent", "ol.TileCoord", "ol.TileRange", "ol.TileUrlFunction", "ol.projection", "ol.source.ImageTileSource", "ol.tilegrid.XYZ"]);
@@ -694,7 +694,7 @@ goog.addDependency("../src/ol/tileurlfunction.js", ["ol.TileUrlFunction", "ol.Ti
 goog.addDependency("../src/ol/transformfunction.js", ["ol.TransformFunction"], []);
 goog.addDependency("../src/ol/vec/mat4.js", ["ol.vec.Mat4"], ["goog.vec.Mat4"]);
 goog.addDependency("../src/ol/view.js", ["ol.View", "ol.ViewHint"], ["goog.array", "goog.asserts", "ol.IView", "ol.Object"]);
-goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
+goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
 goog.addDependency("../src/ol/webgl/shader.js", ["ol.webgl.shader"], ["goog.functions", "goog.webgl", "ol.webgl"]);
 goog.addDependency("../src/ol/webgl/webgl.js", ["ol.webgl", "ol.webgl.WebGLContextEventType"], ["goog.dom", "goog.dom.TagName"]);
 goog.addDependency("/closure/goog/array/array.js", ["goog.array", "goog.array.ArrayLike"], ["goog.asserts"]);
@@ -12282,6 +12282,7 @@ goog.require("ol.IView3D");
 goog.require("ol.Projection");
 goog.require("ol.ResolutionConstraint");
 goog.require("ol.RotationConstraint");
+goog.require("ol.RotationConstraintType");
 goog.require("ol.Size");
 goog.require("ol.View");
 goog.require("ol.animation");
@@ -12306,7 +12307,12 @@ ol.View2D = function(opt_options) {
   }
   values[ol.View2DProperty.ROTATION] = options.rotation;
   this.setValues(values);
-  this.constraints_ = ol.View2D.createConstraints_(options)
+  var parts = ol.View2D.createResolutionConstraint_(options);
+  this.maxResolution_ = parts[1];
+  this.minResolution_ = parts[2];
+  var resolutionConstraint = parts[0];
+  var rotationConstraint = ol.View2D.createRotationConstraint_(options);
+  this.constraints_ = new ol.Constraints(resolutionConstraint, rotationConstraint)
 };
 goog.inherits(ol.View2D, ol.View);
 ol.View2D.prototype.getCenter = function() {
@@ -12336,10 +12342,32 @@ ol.View2D.prototype.getResolutionForExtent = function(extent, size) {
   var yResolution = (extent.maxY - extent.minY) / size.height;
   return Math.max(xResolution, yResolution)
 };
+ol.View2D.prototype.getResolutionForValueFunction = function(opt_power) {
+  var power = opt_power || 2;
+  var maxResolution = this.maxResolution_;
+  var minResolution = this.minResolution_;
+  var max = Math.log(maxResolution / minResolution) / Math.log(power);
+  return function(value) {
+    var resolution = maxResolution / Math.pow(power, value * max);
+    goog.asserts.assert(resolution >= minResolution && resolution <= maxResolution);
+    return resolution
+  }
+};
 ol.View2D.prototype.getRotation = function() {
   return this.get(ol.View2DProperty.ROTATION) || 0
 };
 goog.exportProperty(ol.View2D.prototype, "getRotation", ol.View2D.prototype.getRotation);
+ol.View2D.prototype.getValueForResolutionFunction = function(opt_power) {
+  var power = opt_power || 2;
+  var maxResolution = this.maxResolution_;
+  var minResolution = this.minResolution_;
+  var max = Math.log(maxResolution / minResolution) / Math.log(power);
+  return function(resolution) {
+    var value = Math.log(maxResolution / resolution) / Math.log(power) / max;
+    goog.asserts.assert(value >= 0 && value <= 1);
+    return value
+  }
+};
 ol.View2D.prototype.getView2D = function() {
   return this
 };
@@ -12455,12 +12483,17 @@ ol.View2D.prototype.zoomWithoutConstraints = function(map, resolution, opt_ancho
     }
   }
 };
-ol.View2D.createConstraints_ = function(options) {
+ol.View2D.createResolutionConstraint_ = function(options) {
   var resolutionConstraint;
+  var maxResolution;
+  var minResolution;
   if(goog.isDef(options.resolutions)) {
-    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(options.resolutions)
+    var resolutions = options.resolutions;
+    maxResolution = resolutions[0];
+    minResolution = resolutions[resolutions.length - 1];
+    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(resolutions)
   }else {
-    var maxResolution, numZoomLevels, zoomFactor;
+    var numZoomLevels, zoomFactor;
     if(goog.isDef(options.maxResolution) && goog.isDef(options.numZoomLevels) && goog.isDef(options.zoomFactor)) {
       maxResolution = options.maxResolution;
       numZoomLevels = options.numZoomLevels;
@@ -12471,10 +12504,13 @@ ol.View2D.createConstraints_ = function(options) {
       numZoomLevels = 29;
       zoomFactor = 2
     }
+    minResolution = maxResolution / Math.pow(zoomFactor, numZoomLevels - 1);
     resolutionConstraint = ol.ResolutionConstraint.createSnapToPower(zoomFactor, maxResolution, numZoomLevels - 1)
   }
-  var rotationConstraint = ol.RotationConstraint.createSnapToZero();
-  return new ol.Constraints(resolutionConstraint, rotationConstraint)
+  return[resolutionConstraint, maxResolution, minResolution]
+};
+ol.View2D.createRotationConstraint_ = function(options) {
+  return ol.RotationConstraint.createSnapToZero()
 };
 goog.provide("ol.control.Control");
 goog.provide("ol.control.ControlOptions");
@@ -19294,7 +19330,6 @@ goog.fx.DragEvent = function(type, dragobj, clientX, clientY, browserEvent, opt_
 goog.inherits(goog.fx.DragEvent, goog.events.Event);
 goog.provide("ol.control.ZoomSlider");
 goog.require("goog.array");
-goog.require("goog.asserts");
 goog.require("goog.dom");
 goog.require("goog.dom.TagName");
 goog.require("goog.events");
@@ -19306,11 +19341,8 @@ goog.require("goog.math.Rect");
 goog.require("goog.style");
 goog.require("ol.control.Control");
 goog.require("ol.css");
+ol.control.ZOOMSLIDER_ANIMATION_DURATION = 200;
 ol.control.ZoomSlider = function(options) {
-  this.maxResolution_ = goog.isDef(options.maxResolution) ? options.maxResolution : ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
-  this.minResolution_ = goog.isDef(options.minResolution) ? options.minResolution : ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
-  goog.asserts.assert(this.minResolution_ < this.maxResolution_, "minResolution must be smaller than maxResolution.");
-  this.range_ = this.maxResolution_ - this.minResolution_;
   this.currentResolution_;
   this.direction_ = ol.control.ZoomSlider.direction.VERTICAL;
   this.draggerListenerKeys_ = null;
@@ -19323,13 +19355,14 @@ goog.inherits(ol.control.ZoomSlider, ol.control.Control);
 ol.control.ZoomSlider.direction = {VERTICAL:0, HORIZONTAL:1};
 ol.control.ZoomSlider.CSS_CLASS_CONTAINER = "ol-zoomslider";
 ol.control.ZoomSlider.CSS_CLASS_THUMB = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + "-thumb";
-ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION = 0.5971642833948135;
-ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION = 156543.0339;
 ol.control.ZoomSlider.prototype.setMap = function(map) {
   goog.base(this, "setMap", map);
-  this.currentResolution_ = map.getView().getResolution();
   this.initSlider_();
-  this.positionThumbForResolution_(this.currentResolution_)
+  var resolution = map.getView().getView2D().getResolution();
+  if(goog.isDef(resolution)) {
+    this.currentResolution_ = resolution;
+    this.positionThumbForResolution_(resolution)
+  }
 };
 ol.control.ZoomSlider.prototype.initSlider_ = function() {
   var container = this.element, thumb = goog.dom.getFirstElementChild(container), elemSize = goog.style.getContentBoxSize(container), thumbBounds = goog.style.getBounds(thumb), thumbMargins = goog.style.getMarginBox(thumb), thumbBorderBox = goog.style.getBorderBox(thumb), w = elemSize.width - thumbMargins.left - thumbMargins.right - thumbBorderBox.left - thumbBorderBox.right - thumbBounds.width, h = elemSize.height - thumbMargins.top - thumbMargins.bottom - thumbBorderBox.top - thumbBorderBox.bottom - 
@@ -19372,19 +19405,24 @@ ol.control.ZoomSlider.prototype.amountDragged_ = function(e) {
   return amount
 };
 ol.control.ZoomSlider.prototype.resolutionForAmount_ = function(amount) {
-  var saneAmount = goog.math.clamp(amount, 0, 1);
-  return this.minResolution_ + this.range_ * saneAmount
+  amount = (goog.math.clamp(amount, 0, 1) - 1) * -1;
+  var fn = this.getMap().getView().getView2D().getResolutionForValueFunction();
+  return fn(amount)
 };
 ol.control.ZoomSlider.prototype.amountForResolution_ = function(res) {
-  var saneRes = goog.math.clamp(res, this.minResolution_, this.maxResolution_);
-  return(saneRes - this.minResolution_) / this.range_
+  var fn = this.getMap().getView().getView2D().getValueForResolutionFunction();
+  var value = fn(res);
+  return(value - 1) * -1
 };
 ol.control.ZoomSlider.prototype.handleSliderChange_ = function(e) {
   var map = this.getMap(), amountDragged = this.amountDragged_(e), res = this.resolutionForAmount_(amountDragged);
-  goog.asserts.assert(res >= this.minResolution_ && res <= this.maxResolution_, "calculated new resolution is in allowed bounds.");
-  if(res !== this.currentResolution_) {
-    this.currentResolution_ = res;
-    map.getView().setResolution(res)
+  if(e.type === goog.fx.Dragger.EventType.DRAG) {
+    if(res !== this.currentResolution_) {
+      this.currentResolution_ = res;
+      map.getView().getView2D().zoomWithoutConstraints(map, res)
+    }
+  }else {
+    map.getView().getView2D().zoom(map, this.currentResolution_, undefined, ol.control.ZOOMSLIDER_ANIMATION_DURATION)
   }
 };
 ol.control.ZoomSlider.prototype.createDraggable_ = function(elem) {
@@ -21723,24 +21761,9 @@ ol.source.XYZ = function(options) {
   goog.base(this, {attributions:options.attributions, crossOrigin:options.crossOrigin, extent:options.extent, logo:options.logo, projection:projection, tileGrid:tileGrid, tileUrlFunction:tileUrlFunction})
 };
 goog.inherits(ol.source.XYZ, ol.source.ImageTileSource);
-goog.provide("ol.source.MapQuestOSM");
-goog.provide("ol.source.MapQuestOpenAerial");
-goog.require("ol.Attribution");
-goog.require("ol.source.XYZ");
-ol.source.MapQuestOSM = function() {
-  var attributions = [new ol.Attribution("Tiles Courtesy of " + '<a href="http://www.mapquest.com/" target="_blank">MapQuest</a>'), new ol.Attribution("Data &copy; " + '<a href="http://www.openstreetmap.org">OpenStreetMap</a> ' + "contributors, " + '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>')];
-  goog.base(this, {attributions:attributions, crossOrigin:"anonymous", logo:"http://developer.mapquest.com/content/osm/mq_logo.png", opaque:true, maxZoom:28, url:"http://otile{1-4}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg"})
-};
-goog.inherits(ol.source.MapQuestOSM, ol.source.XYZ);
-ol.source.MapQuestOpenAerial = function() {
-  var attributions = [new ol.Attribution("Tiles Courtesy of " + '<a href="http://www.mapquest.com/" target="_blank">MapQuest</a>'), new ol.Attribution("Portions Courtesy NASA/JPL-Caltech and " + "U.S. Depart. of Agriculture, Farm Service Agency")];
-  goog.base(this, {attributions:attributions, crossOrigin:"anonymous", logo:"http://developer.mapquest.com/content/osm/mq_logo.png", maxZoom:18, opaque:true, url:"http://oatile{1-4}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg"})
-};
-goog.inherits(ol.source.MapQuestOpenAerial, ol.source.XYZ);
 goog.provide("ol.source.OpenStreetMap");
 goog.require("ol.Attribution");
 goog.require("ol.source.XYZ");
-ol.source.OPENSTREETMAP_ATTRIBUTIONS = [new ol.Attribution('&copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> ' + "contributors, " + '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>')];
 ol.source.OpenStreetMap = function(opt_options) {
   var options = goog.isDef(opt_options) ? opt_options : {};
   var attributions;
@@ -21750,7 +21773,7 @@ ol.source.OpenStreetMap = function(opt_options) {
     if(goog.isDef(options.attribution)) {
       attributions = [options.attribution]
     }else {
-      attributions = ol.source.OPENSTREETMAP_ATTRIBUTIONS
+      attributions = ol.source.OpenStreetMap.ATTRIBUTIONS
     }
   }
   var maxZoom = goog.isDef(options.maxZoom) ? options.maxZoom : 18;
@@ -21758,6 +21781,24 @@ ol.source.OpenStreetMap = function(opt_options) {
   goog.base(this, {attributions:attributions, crossOrigin:"anonymous", opaque:true, maxZoom:maxZoom, url:url})
 };
 goog.inherits(ol.source.OpenStreetMap, ol.source.XYZ);
+ol.source.OpenStreetMap.DATA_ATTRIBUTION = new ol.Attribution('Data &copy; <a href="http://www.openstreetmap.org/">OpenStreetMap</a> ' + "contributors, " + '<a href="http://www.openstreetmap.org/copyright">ODbL</a>');
+ol.source.OpenStreetMap.TILE_ATTRIBUTION = new ol.Attribution("Tiles &copy; " + '<a href="http://www.openstreetmap.org/">OpenStreetMap</a> ' + "contributors, " + '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>');
+ol.source.OpenStreetMap.ATTRIBUTIONS = [ol.source.OpenStreetMap.TILE_ATTRIBUTION, ol.source.OpenStreetMap.DATA_ATTRIBUTION];
+goog.provide("ol.source.MapQuestOSM");
+goog.provide("ol.source.MapQuestOpenAerial");
+goog.require("ol.Attribution");
+goog.require("ol.source.OpenStreetMap");
+goog.require("ol.source.XYZ");
+ol.source.MapQuestOSM = function() {
+  var attributions = [new ol.Attribution("Tiles Courtesy of " + '<a href="http://www.mapquest.com/" target="_blank">MapQuest</a>'), ol.source.OpenStreetMap.DATA_ATTRIBUTION];
+  goog.base(this, {attributions:attributions, crossOrigin:"anonymous", logo:"http://developer.mapquest.com/content/osm/mq_logo.png", opaque:true, maxZoom:28, url:"http://otile{1-4}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg"})
+};
+goog.inherits(ol.source.MapQuestOSM, ol.source.XYZ);
+ol.source.MapQuestOpenAerial = function() {
+  var attributions = [new ol.Attribution("Tiles Courtesy of " + '<a href="http://www.mapquest.com/" target="_blank">MapQuest</a>'), new ol.Attribution("Portions Courtesy NASA/JPL-Caltech and " + "U.S. Depart. of Agriculture, Farm Service Agency")];
+  goog.base(this, {attributions:attributions, crossOrigin:"anonymous", logo:"http://developer.mapquest.com/content/osm/mq_logo.png", maxZoom:18, opaque:true, url:"http://oatile{1-4}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg"})
+};
+goog.inherits(ol.source.MapQuestOpenAerial, ol.source.XYZ);
 goog.provide("ol.source.wms");
 goog.require("goog.object");
 goog.require("goog.uri.utils");
@@ -21804,11 +21845,12 @@ ol.source.SingleImageWMS.prototype.getImage = function(extent, resolution, proje
 goog.provide("ol.source.Stamen");
 goog.require("goog.asserts");
 goog.require("ol.Attribution");
+goog.require("ol.source.OpenStreetMap");
 goog.require("ol.source.XYZ");
 ol.source.StamenLayerConfig = {"terrain":{extension:"jpg", opaque:true}, "terrain-background":{extension:"jpg", opaque:true}, "terrain-labels":{extension:"png", opaque:false}, "terrain-lines":{extension:"png", opaque:false}, "toner-background":{extension:"png", opaque:true}, "toner":{extension:"png", opaque:true}, "toner-hybrid":{extension:"png", opaque:false}, "toner-labels":{extension:"png", opaque:false}, "toner-lines":{extension:"png", opaque:false}, "toner-lite":{extension:"png", opaque:true}, 
 "watercolor":{extension:"jpg", opaque:true}};
 ol.source.StamenProviderConfig = {"terrain":{minZoom:4, maxZoom:18}, "toner":{minZoom:0, maxZoom:20}, "watercolor":{minZoom:3, maxZoom:16}};
-ol.source.STAMEN_ATTRIBUTIONS = [new ol.Attribution('Map tiles by <a href="http://stamen.com">Stamen Design</a>, under ' + '<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ' + 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ' + '<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.')];
+ol.source.STAMEN_ATTRIBUTIONS = [new ol.Attribution('Map tiles by <a href="http://stamen.com/">Stamen Design</a>, under ' + '<a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.'), ol.source.OpenStreetMap.DATA_ATTRIBUTION];
 ol.source.Stamen = function(options) {
   var i = options.layer.indexOf("-");
   var provider = i == -1 ? options.layer : options.layer.slice(0, i);

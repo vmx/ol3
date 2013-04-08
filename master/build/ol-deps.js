@@ -16,7 +16,7 @@ goog.addDependency('../../../ol/ol/control/logocontrol.js', ['ol.control.Logo'],
 goog.addDependency('../../../ol/ol/control/mousepositioncontrol.js', ['ol.control.MousePosition'], ['goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.style', 'ol.CoordinateFormatType', 'ol.Pixel', 'ol.Projection', 'ol.TransformFunction', 'ol.control.Control', 'ol.projection']);
 goog.addDependency('../../../ol/ol/control/scalelinecontrol.js', ['ol.control.ScaleLine', 'ol.control.ScaleLineUnits'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.math', 'goog.style', 'ol.FrameState', 'ol.ProjectionUnits', 'ol.TransformFunction', 'ol.control.Control', 'ol.css', 'ol.projection', 'ol.sphere.NORMAL']);
 goog.addDependency('../../../ol/ol/control/zoomcontrol.js', ['ol.control.Zoom'], ['goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'ol.control.Control', 'ol.css']);
-goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.fx.Dragger', 'goog.fx.Dragger.EventType', 'goog.math', 'goog.math.Rect', 'goog.style', 'ol.control.Control', 'ol.css']);
+goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.fx.Dragger', 'goog.fx.Dragger.EventType', 'goog.math', 'goog.math.Rect', 'goog.style', 'ol.control.Control', 'ol.css']);
 goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.CoordinateFormatType', 'ol.coordinate'], ['goog.math']);
 goog.addDependency('../../../ol/ol/css.js', ['ol.css'], []);
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.asserts', 'goog.vec.Mat4']);
@@ -133,11 +133,11 @@ goog.addDependency('../../../ol/ol/source/bingmapssource.js', ['ol.source.BingMa
 goog.addDependency('../../../ol/ol/source/debugtilesource.js', ['ol.source.DebugTileSource'], ['goog.dom', 'goog.dom.TagName', 'ol.Size', 'ol.Tile', 'ol.TileCache', 'ol.TileCoord', 'ol.TileState', 'ol.source.TileSource', 'ol.tilegrid.TileGrid']);
 goog.addDependency('../../../ol/ol/source/imagesource.js', ['ol.source.ImageSource'], ['goog.array', 'goog.asserts', 'ol.Attribution', 'ol.Extent', 'ol.Image', 'ol.ImageUrlFunction', 'ol.ImageUrlFunctionType', 'ol.Projection', 'ol.Size', 'ol.array', 'ol.source.Source']);
 goog.addDependency('../../../ol/ol/source/imagetilesource.js', ['ol.source.ImageTileSource'], ['goog.asserts', 'ol.Attribution', 'ol.Extent', 'ol.ImageTile', 'ol.Projection', 'ol.Tile', 'ol.TileCache', 'ol.TileCoord', 'ol.TileState', 'ol.TileUrlFunction', 'ol.TileUrlFunctionType', 'ol.source.TileSource', 'ol.tilegrid.TileGrid']);
-goog.addDependency('../../../ol/ol/source/mapquestsource.js', ['ol.source.MapQuestOSM', 'ol.source.MapQuestOpenAerial'], ['ol.Attribution', 'ol.source.XYZ']);
+goog.addDependency('../../../ol/ol/source/mapquestsource.js', ['ol.source.MapQuestOSM', 'ol.source.MapQuestOpenAerial'], ['ol.Attribution', 'ol.source.OpenStreetMap', 'ol.source.XYZ']);
 goog.addDependency('../../../ol/ol/source/openstreetmapsource.js', ['ol.source.OpenStreetMap'], ['ol.Attribution', 'ol.source.XYZ']);
 goog.addDependency('../../../ol/ol/source/singleimagewmssource.js', ['ol.source.SingleImageWMS'], ['ol.Extent', 'ol.Image', 'ol.ImageUrlFunction', 'ol.Size', 'ol.source.ImageSource', 'ol.source.wms']);
 goog.addDependency('../../../ol/ol/source/source.js', ['ol.source.Source'], ['goog.events.EventTarget', 'goog.events.EventType', 'goog.functions', 'ol.Attribution', 'ol.Extent', 'ol.projection']);
-goog.addDependency('../../../ol/ol/source/stamensource.js', ['ol.source.Stamen'], ['goog.asserts', 'ol.Attribution', 'ol.source.XYZ']);
+goog.addDependency('../../../ol/ol/source/stamensource.js', ['ol.source.Stamen'], ['goog.asserts', 'ol.Attribution', 'ol.source.OpenStreetMap', 'ol.source.XYZ']);
 goog.addDependency('../../../ol/ol/source/staticimagesource.js', ['ol.source.StaticImage'], ['ol.Image', 'ol.ImageUrlFunctionType', 'ol.projection', 'ol.source.ImageSource']);
 goog.addDependency('../../../ol/ol/source/tiledwmssource.js', ['ol.source.TiledWMS'], ['goog.array', 'goog.math', 'ol.Extent', 'ol.TileCoord', 'ol.TileUrlFunction', 'ol.source.ImageTileSource', 'ol.source.wms']);
 goog.addDependency('../../../ol/ol/source/tilejsonsource.js', ['ol.source.TileJSON', 'ol.tilejson'], ['goog.asserts', 'goog.math', 'goog.net.jsloader', 'ol.Attribution', 'ol.Extent', 'ol.TileCoord', 'ol.TileRange', 'ol.TileUrlFunction', 'ol.projection', 'ol.source.ImageTileSource', 'ol.tilegrid.XYZ']);
@@ -174,7 +174,7 @@ goog.addDependency('../../../ol/ol/tileurlfunction.js', ['ol.TileUrlFunction', '
 goog.addDependency('../../../ol/ol/transformfunction.js', ['ol.TransformFunction'], []);
 goog.addDependency('../../../ol/ol/vec/mat4.js', ['ol.vec.Mat4'], ['goog.vec.Mat4']);
 goog.addDependency('../../../ol/ol/view.js', ['ol.View', 'ol.ViewHint'], ['goog.array', 'goog.asserts', 'ol.IView', 'ol.Object']);
-goog.addDependency('../../../ol/ol/view2d.js', ['ol.View2D', 'ol.View2DProperty'], ['goog.asserts', 'ol.Constraints', 'ol.Extent', 'ol.IView2D', 'ol.IView3D', 'ol.Projection', 'ol.ResolutionConstraint', 'ol.RotationConstraint', 'ol.Size', 'ol.View', 'ol.animation', 'ol.coordinate', 'ol.easing', 'ol.projection']);
+goog.addDependency('../../../ol/ol/view2d.js', ['ol.View2D', 'ol.View2DProperty'], ['goog.asserts', 'ol.Constraints', 'ol.Extent', 'ol.IView2D', 'ol.IView3D', 'ol.Projection', 'ol.ResolutionConstraint', 'ol.RotationConstraint', 'ol.RotationConstraintType', 'ol.Size', 'ol.View', 'ol.animation', 'ol.coordinate', 'ol.easing', 'ol.projection']);
 goog.addDependency('../../../ol/ol/webgl/shader.js', ['ol.webgl.shader'], ['goog.functions', 'goog.webgl', 'ol.webgl']);
 goog.addDependency('../../../ol/ol/webgl/webgl.js', ['ol.webgl', 'ol.webgl.WebGLContextEventType'], ['goog.dom', 'goog.dom.TagName']);
 goog.addDependency('../../third_party/closure/goog/caja/string/html/htmlparser.js', ['goog.string.html.HtmlParser', 'goog.string.html.HtmlParser.EFlags', 'goog.string.html.HtmlParser.Elements', 'goog.string.html.HtmlParser.Entities', 'goog.string.html.HtmlSaxHandler'], []);
