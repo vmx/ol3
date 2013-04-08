@@ -25,7 +25,8 @@ ol.HAVE_PROJ4JS = ol.ENABLE_PROJ4JS && typeof Proj4js == 'object';
 
 
 /**
- * @typedef {ol.Projection|string|undefined}
+ * A projection as {@link ol.Projection}, SRS identifier string or undefined.
+ * @typedef {ol.Projection|string|undefined} ol.ProjectionLike
  */
 ol.ProjectionLike;
 
@@ -53,7 +54,7 @@ ol.METERS_PER_UNIT[ol.ProjectionUnits.METERS] = 1;
 
 /**
  * @constructor
- * @param {ol.ProjectionOptions} options Options object.
+ * @param {ol.ProjectionOptions} options Projection options.
  */
 ol.Projection = function(options) {
 
@@ -175,7 +176,7 @@ ol.Projection.prototype.setDefaultTileGrid = function(tileGrid) {
  * @constructor
  * @extends {ol.Projection}
  * @param {Proj4js.Proj} proj4jsProj Proj4js projection.
- * @param {ol.Proj4jsProjectionOptions} options Projection config options.
+ * @param {ol.Proj4jsProjectionOptions} options Proj4js projection options.
  * @private
  */
 ol.Proj4jsProjection_ = function(proj4jsProj, options) {
@@ -454,7 +455,7 @@ ol.projection.get = function(projectionLike) {
 
 
 /**
- * @param {ol.Proj4jsProjectionOptions} options Projection config options.
+ * @param {ol.Proj4jsProjectionOptions} options Proj4js projection options.
  * @private
  * @return {ol.Proj4jsProjection_} Proj4js projection.
  */
@@ -669,7 +670,7 @@ ol.projection.transformWithProjections =
 
 
 /**
- * @param {ol.Proj4jsProjectionOptions} options Projection config options.
+ * @param {ol.Proj4jsProjectionOptions} options Proj4js projection options.
  * @return {ol.Proj4jsProjection_} Proj4js projection.
  */
 ol.projection.configureProj4jsProjection = function(options) {

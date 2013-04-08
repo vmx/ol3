@@ -3,17 +3,18 @@
 goog.provide('ol.renderer.webgl.Map');
 
 goog.require('goog.array');
-goog.require('goog.debug.Logger');
+goog.require('goog.asserts');
 goog.require('goog.dom');
 goog.require('goog.dom.TagName');
 goog.require('goog.events');
 goog.require('goog.events.Event');
+goog.require('goog.object');
 goog.require('goog.style');
 goog.require('goog.webgl');
-goog.require('ol');
 goog.require('ol.FrameState');
 goog.require('ol.Size');
 goog.require('ol.Tile');
+goog.require('ol.css');
 goog.require('ol.layer.ImageLayer');
 goog.require('ol.layer.TileLayer');
 goog.require('ol.renderer.Map');
@@ -60,14 +61,6 @@ ol.renderer.webgl.Map = function(container, map) {
 
   goog.base(this, container, map);
 
-  if (goog.DEBUG) {
-    /**
-     * @inheritDoc
-     */
-    this.logger = goog.debug.Logger.getLogger(
-        'ol.renderer.webgl.maprenderer.' + goog.getUid(this));
-  }
-
   /**
    * @private
    * @type {Element}
@@ -75,7 +68,7 @@ ol.renderer.webgl.Map = function(container, map) {
   this.canvas_ = goog.dom.createElement(goog.dom.TagName.CANVAS);
   this.canvas_.height = container.clientHeight;
   this.canvas_.width = container.clientWidth;
-  this.canvas_.className = ol.CSS_CLASS_UNSELECTABLE;
+  this.canvas_.className = ol.css.CLASS_UNSELECTABLE;
   goog.dom.insertChildAt(container, this.canvas_, 0);
 
   /**
@@ -430,14 +423,9 @@ ol.renderer.webgl.Map.prototype.getProgram = function(
     gl.attachShader(program, this.getShader(fragmentShaderObject));
     gl.attachShader(program, this.getShader(vertexShaderObject));
     gl.linkProgram(program);
-    if (goog.DEBUG) {
-      if (!gl.getProgramParameter(program, goog.webgl.LINK_STATUS) &&
-          !gl.isContextLost()) {
-        this.logger.severe(gl.getProgramInfoLog(program));
-        goog.asserts.assert(
-            gl.getProgramParameter(program, goog.webgl.LINK_STATUS));
-      }
-    }
+    goog.asserts.assert(
+        gl.getProgramParameter(program, goog.webgl.LINK_STATUS) ||
+        gl.isContextLost());
     this.programCache_[programKey] = program;
     return program;
   }
@@ -457,14 +445,9 @@ ol.renderer.webgl.Map.prototype.getShader = function(shaderObject) {
     var shader = gl.createShader(shaderObject.getType());
     gl.shaderSource(shader, shaderObject.getSource());
     gl.compileShader(shader);
-    if (goog.DEBUG) {
-      if (!gl.getShaderParameter(shader, goog.webgl.COMPILE_STATUS) &&
-          !gl.isContextLost()) {
-        this.logger.severe(gl.getShaderInfoLog(shader));
-        goog.asserts.assert(
-            gl.getShaderParameter(shader, goog.webgl.COMPILE_STATUS));
-      }
-    }
+    goog.asserts.assert(
+        gl.getShaderParameter(shader, goog.webgl.COMPILE_STATUS) ||
+        gl.isContextLost());
     this.shaderCache_[shaderKey] = shader;
     return shader;
   }
@@ -484,9 +467,6 @@ ol.renderer.webgl.Map.prototype.getTileTextureQueue = function() {
  * @protected
  */
 ol.renderer.webgl.Map.prototype.handleWebGLContextLost = function(event) {
-  if (goog.DEBUG) {
-    this.logger.info('WebGLContextLost');
-  }
   event.preventDefault();
   this.locations_ = null;
   this.bufferCache_ = {};
@@ -504,9 +484,6 @@ ol.renderer.webgl.Map.prototype.handleWebGLContextLost = function(event) {
  * @protected
  */
 ol.renderer.webgl.Map.prototype.handleWebGLContextRestored = function() {
-  if (goog.DEBUG) {
-    this.logger.info('WebGLContextRestored');
-  }
   this.initializeGL_();
   this.getMap().render();
 };

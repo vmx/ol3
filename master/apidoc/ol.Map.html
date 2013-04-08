@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpenLayers: Class: ol.Map</title>
+    <title>OpenLayers 3 API Documentation - Class: ol.Map</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -11,14 +11,29 @@
     <![endif]-->
     <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../resources/layout.css" type="text/css">
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
 </head>
 
 <body>
 
-<div id="main">
-    
-    <h1 class="page-title">Class: ol.Map</h1>
-    
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.Map</a>
+      <ul class="nav pull-right">
+        <li><iframe class="github-watch-button" src="http://ghbtns.com/github-btn.html?user=openlayers&repo=ol3&type=watch&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></iframe></li>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-hashtags="openlayers">&nbsp;</a></li>
+        <li><div class="g-plusone-wrapper"><div class="g-plusone" data-size="medium" data-annotation="none"></div></div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="container-fluid">
+<div id="main">    
     
 
 
@@ -27,8 +42,30 @@
     
 <header>
     <h2>
+        <span class="ancestors"><a href="ol.html">ol</a>.</span>
+    
     ol.Map
     </h2>
+    
+        <div class="class-description"><p>The map is the core component of OpenLayers. In its minimal configuration it
+needs a view, one or more layers, and a target container:</p>
+
+<pre><code>var map = new ol.Map({
+  view: new ol.View2D({
+    center: [0, 0],
+    zoom: 1
+  }),
+  layers: [
+    new ol.layer.TileLayer({
+      source: new ol.source.MapQuestOSM()
+    })
+  ],
+  target: 'map'
+});
+</code></pre>
+
+<p>The above snippet creates a map with a MapQuest OSM layer on a 2D view and
+renders it to a DOM element with the id 'map'.</p></div>
     
 </header>  
 
@@ -77,13 +114,13 @@
 	
         <tr>
             
-                <td class="name"><code>mapOptions</code></td>
+                <td class="name"><code>options</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">ol.MapOptions</span>
+<span class="param-type"><a href="ol.html#MapOptions">ol.MapOptions</a></span>
 
 
             
@@ -93,7 +130,7 @@
             
             
             
-            <td class="description last">Map options.</td>
+            <td class="description last"><p>Map options.</p></td>
         </tr>
 	
 	
@@ -123,7 +160,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 129</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 155</li></ul></dd>
 	
     
     
@@ -203,52 +240,6 @@
 	
 	<dt class="tag-source">Source:</dt>
 	<dd class="tag-source"><ul class="dummy"><li>object.js, line 166</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-</dd>
-
-        
-            
-<dt class="protected">
-    <h4 class="name" id="logger"><span class="type-signature">&lt;protected> </span>logger<span class="type-signature"> :goog.debug.Logger</span></h4>
-    
-    
-</dt>
-<dd class="protected">
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 138</li></ul></dd>
 	
     
     
@@ -360,13 +351,13 @@
 	
         <tr>
             
-                <td class="name"><code>mapOptions</code></td>
+                <td class="name"><code>options</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">ol.MapOptions</span>
+<span class="param-type"><a href="ol.html#MapOptions">ol.MapOptions</a></span>
 
 
             
@@ -376,7 +367,7 @@
             
             
             
-            <td class="description last">Map options.</td>
+            <td class="description last"><p>Map options.</p></td>
         </tr>
 	
 	
@@ -406,7 +397,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 876</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 902</li></ul></dd>
 	
     
     
@@ -426,7 +417,7 @@
     
             
 <div class="param-desc">
-    Map options.
+    <p>Internal map options.</p>
 </div>
 
 
@@ -505,7 +496,7 @@
             
             
             
-            <td class="description last">Layer.</td>
+            <td class="description last"><p>Layer.</p></td>
         </tr>
 	
 	
@@ -535,7 +526,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 322</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 340</li></ul></dd>
 	
     
     
@@ -612,7 +603,7 @@
             
             
             
-            <td class="description last">Pre-render function.</td>
+            <td class="description last"><p>Pre-render function.</p></td>
         </tr>
 	
 	
@@ -642,7 +633,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 332</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 350</li></ul></dd>
 	
     
     
@@ -719,7 +710,7 @@
             
             
             
-            <td class="description last">Pre-render functions.</td>
+            <td class="description last"><p>Pre-render functions.</p></td>
         </tr>
 	
 	
@@ -749,7 +740,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 342</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 360</li></ul></dd>
 	
     
     
@@ -834,7 +825,7 @@
             
             
             
-            <td class="description last">Key.</td>
+            <td class="description last"><p>Key.</p></td>
         </tr>
 	
 	
@@ -863,7 +854,7 @@
             
             
             
-            <td class="description last">Target.</td>
+            <td class="description last"><p>Target.</p></td>
         </tr>
 	
 	
@@ -894,7 +885,7 @@
             
             
             
-            <td class="description last">(Optional) Target key.</td>
+            <td class="description last">(Optional) <p>Target key.</p></td>
         </tr>
 	
 	
@@ -925,7 +916,7 @@
             
             
             
-            <td class="description last">(Optional) No notify.</td>
+            <td class="description last">(Optional) <p>No notify.</p></td>
         </tr>
 	
 	
@@ -1019,7 +1010,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 362</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 380</li></ul></dd>
 	
     
     
@@ -1050,7 +1041,7 @@
     
     
     <div class="description">
-        Freeze rendering.
+        <p>Freeze rendering.</p>
     </div>
     
 
@@ -1082,7 +1073,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 372</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 390</li></ul></dd>
 	
     
     
@@ -1159,7 +1150,7 @@
             
             
             
-            <td class="description last">Key.</td>
+            <td class="description last"><p>Key.</p></td>
         </tr>
 	
 	
@@ -1214,7 +1205,7 @@
     
             
 <div class="param-desc">
-    Value.
+    <p>Value.</p>
 </div>
 
 
@@ -1275,7 +1266,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 380</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 398</li></ul></dd>
 	
     
     
@@ -1295,7 +1286,7 @@
     
             
 <div class="param-desc">
-    Background color.
+    <p>Background color.</p>
 </div>
 
 
@@ -1377,7 +1368,7 @@
             
             
             
-            <td class="description last">Pixel.</td>
+            <td class="description last"><p>Pixel.</p></td>
         </tr>
 	
 	
@@ -1407,7 +1398,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 410</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 428</li></ul></dd>
 	
     
     
@@ -1427,7 +1418,7 @@
     
             
 <div class="param-desc">
-    Coordinate.
+    <p>Coordinate.</p>
 </div>
 
 
@@ -1488,7 +1479,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 424</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 442</li></ul></dd>
 	
     
     
@@ -1508,7 +1499,7 @@
     
             
 <div class="param-desc">
-    Interactions.
+    <p>Interactions.</p>
 </div>
 
 
@@ -1541,7 +1532,7 @@
     
     
     <div class="description">
-        Get a list of object property names.
+        <p>Get a list of object property names.</p>
     </div>
     
 
@@ -1598,7 +1589,7 @@
     
             
 <div class="param-desc">
-    List of property names.
+    <p>List of property names.</p>
 </div>
 
 
@@ -1659,7 +1650,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 432</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 450</li></ul></dd>
 	
     
     
@@ -1679,7 +1670,7 @@
     
             
 <div class="param-desc">
-    Layers.
+    <p>Layers.</p>
 </div>
 
 
@@ -1740,7 +1731,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 494</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 512</li></ul></dd>
 	
     
     
@@ -1760,9 +1751,9 @@
     
             
 <div class="param-desc">
-    The map's overlay container. Elements added to this
+    <p>The map's overlay container. Elements added to this
 container won't let mousedown and touchstart events through to the map, so
-clicks and gestures on an overlay don't trigger any MapBrowserEvent.
+clicks and gestures on an overlay don't trigger any MapBrowserEvent.</p>
 </div>
 
 
@@ -1841,7 +1832,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Coordinate.</td>
+            <td class="description last"><p>Coordinate.</p></td>
         </tr>
 	
 	
@@ -1871,7 +1862,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 445</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 463</li></ul></dd>
 	
     
     
@@ -1891,7 +1882,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Pixel.
+    <p>Pixel.</p>
 </div>
 
 
@@ -1952,7 +1943,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 393</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 411</li></ul></dd>
 	
     
     
@@ -1972,7 +1963,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Renderer.
+    <p>Renderer.</p>
 </div>
 
 
@@ -2033,7 +2024,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 460</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 478</li></ul></dd>
 	
     
     
@@ -2053,7 +2044,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Size.
+    <p>Size.</p>
 </div>
 
 
@@ -2117,7 +2108,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 401</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 419</li></ul></dd>
 	
     
     
@@ -2137,7 +2128,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Container.
+    <p>Container.</p>
 </div>
 
 
@@ -2216,7 +2207,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Tile.</td>
+            <td class="description last"><p>Tile.</p></td>
         </tr>
 	
 	
@@ -2239,7 +2230,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Tile source key.</td>
+            <td class="description last"><p>Tile source key.</p></td>
         </tr>
 	
 	
@@ -2262,7 +2253,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Tile center.</td>
+            <td class="description last"><p>Tile center.</p></td>
         </tr>
 	
 	
@@ -2285,7 +2276,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Tile resolution.</td>
+            <td class="description last"><p>Tile resolution.</p></td>
         </tr>
 	
 	
@@ -2315,7 +2306,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 506</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 524</li></ul></dd>
 	
     
     
@@ -2335,7 +2326,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Tile priority.
+    <p>Tile priority.</p>
 </div>
 
 
@@ -2396,7 +2387,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 472</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 490</li></ul></dd>
 	
     
     
@@ -2416,7 +2407,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    View.
+    <p>View.</p>
 </div>
 
 
@@ -2477,7 +2468,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 484</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 502</li></ul></dd>
 	
     
     
@@ -2497,7 +2488,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Viewport.
+    <p>Viewport.</p>
 </div>
 
 
@@ -2584,7 +2575,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Browser event.</td>
+            <td class="description last"><p>Browser event.</p></td>
         </tr>
 	
 	
@@ -2615,7 +2606,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">(Optional) Type.</td>
+            <td class="description last">(Optional) <p>Type.</p></td>
         </tr>
 	
 	
@@ -2645,7 +2636,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 535</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 553</li></ul></dd>
 	
     
     
@@ -2704,7 +2695,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 594</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 623</li></ul></dd>
 	
     
     
@@ -2781,7 +2772,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">The event to handle.</td>
+            <td class="description last"><p>The event to handle.</p></td>
         </tr>
 	
 	
@@ -2811,7 +2802,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 550</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 568</li></ul></dd>
 	
     
     
@@ -2870,7 +2861,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 570</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 588</li></ul></dd>
 	
     
     
@@ -2929,7 +2920,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 645</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 674</li></ul></dd>
 	
     
     
@@ -2949,7 +2940,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Is defined.
+    <p>Is defined.</p>
 </div>
 
 
@@ -3028,7 +3019,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Key.</td>
+            <td class="description last"><p>Key.</p></td>
         </tr>
 	
 	
@@ -3148,7 +3139,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">The event type.</td>
+            <td class="description last"><p>The event type.</p></td>
         </tr>
 	
 	
@@ -3177,7 +3168,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">The listener function.</td>
+            <td class="description last"><p>The listener function.</p></td>
         </tr>
 	
 	
@@ -3208,8 +3199,8 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">(Optional) Object is whose scope to call
-    the listener.</td>
+            <td class="description last">(Optional) <p>Object is whose scope to call
+    the listener.</p></td>
         </tr>
 	
 	
@@ -3321,7 +3312,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Layer.</td>
+            <td class="description last"><p>Layer.</p></td>
         </tr>
 	
 	
@@ -3351,7 +3342,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 685</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 714</li></ul></dd>
 	
     
     
@@ -3371,8 +3362,8 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    The removed layer or undefined if the
-    layer was not found.
+    <p>The removed layer or undefined if the
+    layer was not found.</p>
 </div>
 
 
@@ -3454,7 +3445,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Pre-render function.</td>
+            <td class="description last"><p>Pre-render function.</p></td>
         </tr>
 	
 	
@@ -3484,7 +3475,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 353</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 371</li></ul></dd>
 	
     
     
@@ -3504,7 +3495,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
             
 <div class="param-desc">
-    Whether the preRenderFunction has been found and removed.
+    <p>Whether the preRenderFunction has been found and removed.</p>
 </div>
 
 
@@ -3537,7 +3528,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
     
     <div class="description">
-        Render.
+        <p>Render.</p>
     </div>
     
 
@@ -3569,7 +3560,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 655</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 684</li></ul></dd>
 	
     
     
@@ -3600,7 +3591,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
     
     <div class="description">
-        Request that renderFrame_ be called some time in the future.
+        <p>Request that renderFrame_ be called some time in the future.</p>
     </div>
     
 
@@ -3632,7 +3623,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 669</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 698</li></ul></dd>
 	
     
     
@@ -3709,7 +3700,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Key.</td>
+            <td class="description last"><p>Key.</p></td>
         </tr>
 	
 	
@@ -3732,7 +3723,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Value.</td>
+            <td class="description last"><p>Value.</p></td>
         </tr>
 	
 	
@@ -3844,7 +3835,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Background color.</td>
+            <td class="description last"><p>Background color.</p></td>
         </tr>
 	
 	
@@ -3874,7 +3865,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 790</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 816</li></ul></dd>
 	
     
     
@@ -3951,7 +3942,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Layers.</td>
+            <td class="description last"><p>Layers.</p></td>
         </tr>
 	
 	
@@ -3981,7 +3972,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 802</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 828</li></ul></dd>
 	
     
     
@@ -4058,7 +4049,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Options.</td>
+            <td class="description last"><p>Options.</p></td>
         </tr>
 	
 	
@@ -4170,7 +4161,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Size.</td>
+            <td class="description last"><p>Size.</p></td>
         </tr>
 	
 	
@@ -4200,7 +4191,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 814</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 840</li></ul></dd>
 	
     
     
@@ -4277,7 +4268,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">View.</td>
+            <td class="description last"><p>View.</p></td>
         </tr>
 	
 	
@@ -4307,7 +4298,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 826</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 852</li></ul></dd>
 	
     
     
@@ -4392,7 +4383,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">The event type.</td>
+            <td class="description last"><p>The event type.</p></td>
         </tr>
 	
 	
@@ -4421,7 +4412,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">The listener function.</td>
+            <td class="description last"><p>The listener function.</p></td>
         </tr>
 	
 	
@@ -4452,8 +4443,8 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">(Optional) Object is whose scope to call
-    the listener.</td>
+            <td class="description last">(Optional) <p>Object is whose scope to call
+    the listener.</p></td>
         </tr>
 	
 	
@@ -4565,7 +4556,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Key.</td>
+            <td class="description last"><p>Key.</p></td>
         </tr>
 	
 	
@@ -4631,7 +4622,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
     
     <div class="description">
-        Removes all bindings.
+        <p>Removes all bindings.</p>
     </div>
     
 
@@ -4699,7 +4690,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
     
     
     <div class="description">
-        Unfreeze rendering.
+        <p>Unfreeze rendering.</p>
     </div>
     
 
@@ -4731,7 +4722,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 838</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 864</li></ul></dd>
 	
     
     
@@ -4816,7 +4807,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">Function.</td>
+            <td class="description last"><p>Function.</p></td>
         </tr>
 	
 	
@@ -4847,7 +4838,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
             
             
             
-            <td class="description last">(Optional) Object.</td>
+            <td class="description last">(Optional) <p>Object.</p></td>
         </tr>
 	
 	
@@ -4877,7 +4868,7 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 851</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 877</li></ul></dd>
 	
     
     
@@ -4913,15 +4904,17 @@ clicks and gestures on an overlay don't trigger any MapBrowserEvent.
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="ol.Attribution.html">ol.Attribution</a></li><li><a href="ol.Collection.html">ol.Collection</a></li><li><a href="ol.CollectionEvent.html">ol.CollectionEvent</a></li><li><a href="ol.Color.html">ol.Color</a></li><li><a href="ol.Constraints.html">ol.Constraints</a></li><li><a href="ol.Ellipsoid.html">ol.Ellipsoid</a></li><li><a href="ol.Expression.html">ol.Expression</a></li><li><a href="ol.ExpressionLiteral.html">ol.ExpressionLiteral</a></li><li><a href="ol.Extent.html">ol.Extent</a></li><li><a href="ol.Feature.html">ol.Feature</a></li><li><a href="ol.Geolocation.html">ol.Geolocation</a></li><li><a href="ol.Image.html">ol.Image</a></li><li><a href="ol.ImageTile.html">ol.ImageTile</a></li><li><a href="ol.Kinetic.html">ol.Kinetic</a></li><li><a href="ol.Map.html">ol.Map</a></li><li><a href="ol.MapBrowserEvent.html">ol.MapBrowserEvent</a></li><li><a href="ol.MapBrowserEventHandler.html">ol.MapBrowserEventHandler</a></li><li><a href="ol.MapEvent.html">ol.MapEvent</a></li><li><a href="ol.Object.html">ol.Object</a></li><li><a href="ol.Overlay.html">ol.Overlay</a></li><li><a href="ol.Pixel.html">ol.Pixel</a></li><li><a href="ol.PixelBounds.html">ol.PixelBounds</a></li><li><a href="ol.Projection.html">ol.Projection</a></li><li><a href="ol.Rectangle.html">ol.Rectangle</a></li><li><a href="ol.Size.html">ol.Size</a></li><li><a href="ol.Sphere.html">ol.Sphere</a></li><li><a href="ol.Tile.html">ol.Tile</a></li><li><a href="ol.TileCache.html">ol.TileCache</a></li><li><a href="ol.TileCoord.html">ol.TileCoord</a></li><li><a href="ol.TileQueue.html">ol.TileQueue</a></li><li><a href="ol.TileRange.html">ol.TileRange</a></li><li><a href="ol.View.html">ol.View</a></li><li><a href="ol.View2D.html">ol.View2D</a></li><li><a href="ol.control.Attribution.html">ol.control.Attribution</a></li><li><a href="ol.control.Control.html">ol.control.Control</a></li><li><a href="ol.control.DragBox.html">ol.control.DragBox</a></li><li><a href="ol.control.MousePosition.html">ol.control.MousePosition</a></li><li><a href="ol.control.ScaleLine.html">ol.control.ScaleLine</a></li><li><a href="ol.control.Zoom.html">ol.control.Zoom</a></li><li><a href="ol.control.ZoomSlider.html">ol.control.ZoomSlider</a></li><li><a href="ol.dom.Input.html">ol.dom.Input</a></li><li><a href="ol.filter.Extent.html">ol.filter.Extent</a></li><li><a href="ol.filter.Filter.html">ol.filter.Filter</a></li><li><a href="ol.filter.Geometry.html">ol.filter.Geometry</a></li><li><a href="ol.filter.Logical.html">ol.filter.Logical</a></li><li><a href="ol.geom.AbstractCollection.html">ol.geom.AbstractCollection</a></li><li><a href="ol.geom.Geometry.html">ol.geom.Geometry</a></li><li><a href="ol.geom.GeometryCollection.html">ol.geom.GeometryCollection</a></li><li><a href="ol.geom.LineString.html">ol.geom.LineString</a></li><li><a href="ol.geom.LinearRing.html">ol.geom.LinearRing</a></li><li><a href="ol.geom.MultiLineString.html">ol.geom.MultiLineString</a></li><li><a href="ol.geom.MultiPoint.html">ol.geom.MultiPoint</a></li><li><a href="ol.geom.MultiPolygon.html">ol.geom.MultiPolygon</a></li><li><a href="ol.geom.Point.html">ol.geom.Point</a></li><li><a href="ol.geom.Polygon.html">ol.geom.Polygon</a></li><li><a href="ol.geom.SharedVertices.html">ol.geom.SharedVertices</a></li><li><a href="ol.interaction.DblClickZoom.html">ol.interaction.DblClickZoom</a></li><li><a href="ol.interaction.Drag.html">ol.interaction.Drag</a></li><li><a href="ol.interaction.DragPan.html">ol.interaction.DragPan</a></li><li><a href="ol.interaction.DragRotate.html">ol.interaction.DragRotate</a></li><li><a href="ol.interaction.DragRotateAndZoom.html">ol.interaction.DragRotateAndZoom</a></li><li><a href="ol.interaction.DragZoom.html">ol.interaction.DragZoom</a></li><li><a href="ol.interaction.Interaction.html">ol.interaction.Interaction</a></li><li><a href="ol.interaction.Keyboard.html">ol.interaction.Keyboard</a></li><li><a href="ol.interaction.KeyboardPan.html">ol.interaction.KeyboardPan</a></li><li><a href="ol.interaction.KeyboardZoom.html">ol.interaction.KeyboardZoom</a></li><li><a href="ol.interaction.MouseWheelZoom.html">ol.interaction.MouseWheelZoom</a></li><li><a href="ol.interaction.Touch.html">ol.interaction.Touch</a></li><li><a href="ol.interaction.TouchPan.html">ol.interaction.TouchPan</a></li><li><a href="ol.interaction.TouchRotate.html">ol.interaction.TouchRotate</a></li><li><a href="ol.interaction.TouchZoom.html">ol.interaction.TouchZoom</a></li><li><a href="ol.layer.FeatureCache.html">ol.layer.FeatureCache</a></li><li><a href="ol.layer.ImageLayer.html">ol.layer.ImageLayer</a></li><li><a href="ol.layer.Layer.html">ol.layer.Layer</a></li><li><a href="ol.layer.TileLayer.html">ol.layer.TileLayer</a></li><li><a href="ol.layer.Vector.html">ol.layer.Vector</a></li><li><a href="ol.parser.GeoJSON.html">ol.parser.GeoJSON</a></li><li><a href="ol.parser.Parser.html">ol.parser.Parser</a></li><li><a href="ol.parser.XML.html">ol.parser.XML</a></li><li><a href="ol.parser.ogc.ExceptionReport.html">ol.parser.ogc.ExceptionReport</a></li><li><a href="ol.parser.ogc.OWSCommon_v1.html">ol.parser.ogc.OWSCommon_v1</a></li><li><a href="ol.parser.ogc.OWSCommon_v1_1_0.html">ol.parser.ogc.OWSCommon_v1_1_0</a></li><li><a href="ol.parser.ogc.Versioned.html">ol.parser.ogc.Versioned</a></li><li><a href="ol.parser.ogc.WMSCapabilities.html">ol.parser.ogc.WMSCapabilities</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1.html">ol.parser.ogc.WMSCapabilities_v1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_0_0.html">ol.parser.ogc.WMSCapabilities_v1_0_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1.html">ol.parser.ogc.WMSCapabilities_v1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_0.html">ol.parser.ogc.WMSCapabilities_v1_1_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1.html">ol.parser.ogc.WMSCapabilities_v1_1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC.html">ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_3_0.html">ol.parser.ogc.WMSCapabilities_v1_3_0</a></li><li><a href="ol.parser.ogc.WMTSCapabilities.html">ol.parser.ogc.WMTSCapabilities</a></li><li><a href="ol.parser.ogc.WMTSCapabilities_v1_0_0.html">ol.parser.ogc.WMTSCapabilities_v1_0_0</a></li><li><a href="ol.projection.EPSG3857.html">ol.projection.EPSG3857</a></li><li><a href="ol.projection.EPSG4326.html">ol.projection.EPSG4326</a></li><li><a href="ol.renderer.Layer.html">ol.renderer.Layer</a></li><li><a href="ol.renderer.Map.html">ol.renderer.Map</a></li><li><a href="ol.renderer.canvas.ImageLayer.html">ol.renderer.canvas.ImageLayer</a></li><li><a href="ol.renderer.canvas.Layer.html">ol.renderer.canvas.Layer</a></li><li><a href="ol.renderer.canvas.Map.html">ol.renderer.canvas.Map</a></li><li><a href="ol.renderer.canvas.TileLayer.html">ol.renderer.canvas.TileLayer</a></li><li><a href="ol.renderer.canvas.VectorLayer.html">ol.renderer.canvas.VectorLayer</a></li><li><a href="ol.renderer.canvas.VectorRenderer.html">ol.renderer.canvas.VectorRenderer</a></li><li><a href="ol.renderer.dom.ImageLayer.html">ol.renderer.dom.ImageLayer</a></li><li><a href="ol.renderer.dom.Layer.html">ol.renderer.dom.Layer</a></li><li><a href="ol.renderer.dom.Map.html">ol.renderer.dom.Map</a></li><li><a href="ol.renderer.dom.TileLayer.html">ol.renderer.dom.TileLayer</a></li><li><a href="ol.renderer.webgl.ImageLayer.html">ol.renderer.webgl.ImageLayer</a></li><li><a href="ol.renderer.webgl.Layer.html">ol.renderer.webgl.Layer</a></li><li><a href="ol.renderer.webgl.Map.html">ol.renderer.webgl.Map</a></li><li><a href="ol.renderer.webgl.TileLayer.html">ol.renderer.webgl.TileLayer</a></li><li><a href="ol.renderer.webgl.map.shader.Fragment.html">ol.renderer.webgl.map.shader.Fragment</a></li><li><a href="ol.renderer.webgl.map.shader.Vertex.html">ol.renderer.webgl.map.shader.Vertex</a></li><li><a href="ol.renderer.webgl.map.shader.attribute.html">ol.renderer.webgl.map.shader.attribute</a></li><li><a href="ol.renderer.webgl.map.shader.uniform.html">ol.renderer.webgl.map.shader.uniform</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Fragment.html">ol.renderer.webgl.tilelayer.shader.Fragment</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Vertex.html">ol.renderer.webgl.tilelayer.shader.Vertex</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.attribute.html">ol.renderer.webgl.tilelayer.shader.attribute</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.uniform.html">ol.renderer.webgl.tilelayer.shader.uniform</a></li><li><a href="ol.source.BingMaps.html">ol.source.BingMaps</a></li><li><a href="ol.source.DebugTileSource.html">ol.source.DebugTileSource</a></li><li><a href="ol.source.ImageSource.html">ol.source.ImageSource</a></li><li><a href="ol.source.ImageTileSource.html">ol.source.ImageTileSource</a></li><li><a href="ol.source.MapQuestOSM.html">ol.source.MapQuestOSM</a></li><li><a href="ol.source.MapQuestOpenAerial.html">ol.source.MapQuestOpenAerial</a></li><li><a href="ol.source.OpenStreetMap.html">ol.source.OpenStreetMap</a></li><li><a href="ol.source.SingleImageWMS.html">ol.source.SingleImageWMS</a></li><li><a href="ol.source.Source.html">ol.source.Source</a></li><li><a href="ol.source.Stamen.html">ol.source.Stamen</a></li><li><a href="ol.source.StaticImage.html">ol.source.StaticImage</a></li><li><a href="ol.source.TileJSON.html">ol.source.TileJSON</a></li><li><a href="ol.source.TileSource.html">ol.source.TileSource</a></li><li><a href="ol.source.TiledWMS.html">ol.source.TiledWMS</a></li><li><a href="ol.source.Vector.html">ol.source.Vector</a></li><li><a href="ol.source.WMTS.html">ol.source.WMTS</a></li><li><a href="ol.source.XYZ.html">ol.source.XYZ</a></li><li><a href="ol.structs.Buffer.html">ol.structs.Buffer</a></li><li><a href="ol.structs.IntegerSet.html">ol.structs.IntegerSet</a></li><li><a href="ol.structs.LRUCache.html">ol.structs.LRUCache</a></li><li><a href="ol.structs.PriorityQueue.html">ol.structs.PriorityQueue</a></li><li><a href="ol.structs.RTree.html">ol.structs.RTree</a></li><li><a href="ol.style.Icon.html">ol.style.Icon</a></li><li><a href="ol.style.IconLiteral.html">ol.style.IconLiteral</a></li><li><a href="ol.style.Line.html">ol.style.Line</a></li><li><a href="ol.style.LineLiteral.html">ol.style.LineLiteral</a></li><li><a href="ol.style.Point.html">ol.style.Point</a></li><li><a href="ol.style.PointLiteral.html">ol.style.PointLiteral</a></li><li><a href="ol.style.Polygon.html">ol.style.Polygon</a></li><li><a href="ol.style.PolygonLiteral.html">ol.style.PolygonLiteral</a></li><li><a href="ol.style.Rule.html">ol.style.Rule</a></li><li><a href="ol.style.Shape.html">ol.style.Shape</a></li><li><a href="ol.style.ShapeLiteral.html">ol.style.ShapeLiteral</a></li><li><a href="ol.style.Style.html">ol.style.Style</a></li><li><a href="ol.style.Symbolizer.html">ol.style.Symbolizer</a></li><li><a href="ol.style.SymbolizerLiteral.html">ol.style.SymbolizerLiteral</a></li><li><a href="ol.tilegrid.TileGrid.html">ol.tilegrid.TileGrid</a></li><li><a href="ol.tilegrid.WMTS.html">ol.tilegrid.WMTS</a></li><li><a href="ol.tilegrid.XYZ.html">ol.tilegrid.XYZ</a></li><li><a href="ol.webgl.Shader.html">ol.webgl.Shader</a></li><li><a href="ol.webgl.shader.Fragment.html">ol.webgl.shader.Fragment</a></li><li><a href="ol.webgl.shader.Vertex.html">ol.webgl.shader.Vertex</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Meters per unit lookup table.">Meters per unit lookup table.</a></li><li><a href="global.html#grid">grid</a></li><li>{boolean}</li><li>{number}</li><li>{string}</li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="ol.Attribution.html">ol.Attribution</a></li><li><a href="ol.Collection.html">ol.Collection</a></li><li><a href="ol.CollectionEvent.html">ol.CollectionEvent</a></li><li><a href="ol.Color.html">ol.Color</a></li><li><a href="ol.Constraints.html">ol.Constraints</a></li><li><a href="ol.Ellipsoid.html">ol.Ellipsoid</a></li><li><a href="ol.Expression.html">ol.Expression</a></li><li><a href="ol.ExpressionLiteral.html">ol.ExpressionLiteral</a></li><li><a href="ol.Extent.html">ol.Extent</a></li><li><a href="ol.Feature.html">ol.Feature</a></li><li><a href="ol.Geolocation.html">ol.Geolocation</a></li><li><a href="ol.Image.html">ol.Image</a></li><li><a href="ol.ImageTile.html">ol.ImageTile</a></li><li><a href="ol.Kinetic.html">ol.Kinetic</a></li><li><a href="ol.Map.html">ol.Map</a></li><li><a href="ol.MapBrowserEvent.html">ol.MapBrowserEvent</a></li><li><a href="ol.MapBrowserEventHandler.html">ol.MapBrowserEventHandler</a></li><li><a href="ol.MapEvent.html">ol.MapEvent</a></li><li><a href="ol.Object.html">ol.Object</a></li><li><a href="ol.Overlay.html">ol.Overlay</a></li><li><a href="ol.Pixel.html">ol.Pixel</a></li><li><a href="ol.PixelBounds.html">ol.PixelBounds</a></li><li><a href="ol.Projection.html">ol.Projection</a></li><li><a href="ol.Rectangle.html">ol.Rectangle</a></li><li><a href="ol.Size.html">ol.Size</a></li><li><a href="ol.Sphere.html">ol.Sphere</a></li><li><a href="ol.Tile.html">ol.Tile</a></li><li><a href="ol.TileCache.html">ol.TileCache</a></li><li><a href="ol.TileCoord.html">ol.TileCoord</a></li><li><a href="ol.TileQueue.html">ol.TileQueue</a></li><li><a href="ol.TileRange.html">ol.TileRange</a></li><li><a href="ol.View.html">ol.View</a></li><li><a href="ol.View2D.html">ol.View2D</a></li><li><a href="ol.control.Attribution.html">ol.control.Attribution</a></li><li><a href="ol.control.Control.html">ol.control.Control</a></li><li><a href="ol.control.DragBox.html">ol.control.DragBox</a></li><li><a href="ol.control.Logo.html">ol.control.Logo</a></li><li><a href="ol.control.MousePosition.html">ol.control.MousePosition</a></li><li><a href="ol.control.ScaleLine.html">ol.control.ScaleLine</a></li><li><a href="ol.control.Zoom.html">ol.control.Zoom</a></li><li><a href="ol.control.ZoomSlider.html">ol.control.ZoomSlider</a></li><li><a href="ol.dom.Input.html">ol.dom.Input</a></li><li><a href="ol.filter.Extent.html">ol.filter.Extent</a></li><li><a href="ol.filter.Filter.html">ol.filter.Filter</a></li><li><a href="ol.filter.Geometry.html">ol.filter.Geometry</a></li><li><a href="ol.filter.Logical.html">ol.filter.Logical</a></li><li><a href="ol.geom.AbstractCollection.html">ol.geom.AbstractCollection</a></li><li><a href="ol.geom.Geometry.html">ol.geom.Geometry</a></li><li><a href="ol.geom.GeometryCollection.html">ol.geom.GeometryCollection</a></li><li><a href="ol.geom.LineString.html">ol.geom.LineString</a></li><li><a href="ol.geom.LinearRing.html">ol.geom.LinearRing</a></li><li><a href="ol.geom.MultiLineString.html">ol.geom.MultiLineString</a></li><li><a href="ol.geom.MultiPoint.html">ol.geom.MultiPoint</a></li><li><a href="ol.geom.MultiPolygon.html">ol.geom.MultiPolygon</a></li><li><a href="ol.geom.Point.html">ol.geom.Point</a></li><li><a href="ol.geom.Polygon.html">ol.geom.Polygon</a></li><li><a href="ol.geom.SharedVertices.html">ol.geom.SharedVertices</a></li><li><a href="ol.interaction.DblClickZoom.html">ol.interaction.DblClickZoom</a></li><li><a href="ol.interaction.Drag.html">ol.interaction.Drag</a></li><li><a href="ol.interaction.DragPan.html">ol.interaction.DragPan</a></li><li><a href="ol.interaction.DragRotate.html">ol.interaction.DragRotate</a></li><li><a href="ol.interaction.DragRotateAndZoom.html">ol.interaction.DragRotateAndZoom</a></li><li><a href="ol.interaction.DragZoom.html">ol.interaction.DragZoom</a></li><li><a href="ol.interaction.Interaction.html">ol.interaction.Interaction</a></li><li><a href="ol.interaction.Keyboard.html">ol.interaction.Keyboard</a></li><li><a href="ol.interaction.KeyboardPan.html">ol.interaction.KeyboardPan</a></li><li><a href="ol.interaction.KeyboardZoom.html">ol.interaction.KeyboardZoom</a></li><li><a href="ol.interaction.MouseWheelZoom.html">ol.interaction.MouseWheelZoom</a></li><li><a href="ol.interaction.Touch.html">ol.interaction.Touch</a></li><li><a href="ol.interaction.TouchPan.html">ol.interaction.TouchPan</a></li><li><a href="ol.interaction.TouchRotate.html">ol.interaction.TouchRotate</a></li><li><a href="ol.interaction.TouchZoom.html">ol.interaction.TouchZoom</a></li><li><a href="ol.layer.FeatureCache.html">ol.layer.FeatureCache</a></li><li><a href="ol.layer.ImageLayer.html">ol.layer.ImageLayer</a></li><li><a href="ol.layer.Layer.html">ol.layer.Layer</a></li><li><a href="ol.layer.TileLayer.html">ol.layer.TileLayer</a></li><li><a href="ol.layer.Vector.html">ol.layer.Vector</a></li><li><a href="ol.parser.GeoJSON.html">ol.parser.GeoJSON</a></li><li><a href="ol.parser.Parser.html">ol.parser.Parser</a></li><li><a href="ol.parser.XML.html">ol.parser.XML</a></li><li><a href="ol.parser.ogc.ExceptionReport.html">ol.parser.ogc.ExceptionReport</a></li><li><a href="ol.parser.ogc.OWSCommon_v1.html">ol.parser.ogc.OWSCommon_v1</a></li><li><a href="ol.parser.ogc.OWSCommon_v1_1_0.html">ol.parser.ogc.OWSCommon_v1_1_0</a></li><li><a href="ol.parser.ogc.Versioned.html">ol.parser.ogc.Versioned</a></li><li><a href="ol.parser.ogc.WMSCapabilities.html">ol.parser.ogc.WMSCapabilities</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1.html">ol.parser.ogc.WMSCapabilities_v1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_0_0.html">ol.parser.ogc.WMSCapabilities_v1_0_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1.html">ol.parser.ogc.WMSCapabilities_v1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_0.html">ol.parser.ogc.WMSCapabilities_v1_1_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1.html">ol.parser.ogc.WMSCapabilities_v1_1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC.html">ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_3_0.html">ol.parser.ogc.WMSCapabilities_v1_3_0</a></li><li><a href="ol.parser.ogc.WMTSCapabilities.html">ol.parser.ogc.WMTSCapabilities</a></li><li><a href="ol.parser.ogc.WMTSCapabilities_v1_0_0.html">ol.parser.ogc.WMTSCapabilities_v1_0_0</a></li><li><a href="ol.projection.EPSG3857.html">ol.projection.EPSG3857</a></li><li><a href="ol.projection.EPSG4326.html">ol.projection.EPSG4326</a></li><li><a href="ol.renderer.Layer.html">ol.renderer.Layer</a></li><li><a href="ol.renderer.Map.html">ol.renderer.Map</a></li><li><a href="ol.renderer.canvas.ImageLayer.html">ol.renderer.canvas.ImageLayer</a></li><li><a href="ol.renderer.canvas.Layer.html">ol.renderer.canvas.Layer</a></li><li><a href="ol.renderer.canvas.Map.html">ol.renderer.canvas.Map</a></li><li><a href="ol.renderer.canvas.TileLayer.html">ol.renderer.canvas.TileLayer</a></li><li><a href="ol.renderer.canvas.VectorLayer.html">ol.renderer.canvas.VectorLayer</a></li><li><a href="ol.renderer.canvas.VectorRenderer.html">ol.renderer.canvas.VectorRenderer</a></li><li><a href="ol.renderer.dom.ImageLayer.html">ol.renderer.dom.ImageLayer</a></li><li><a href="ol.renderer.dom.Layer.html">ol.renderer.dom.Layer</a></li><li><a href="ol.renderer.dom.Map.html">ol.renderer.dom.Map</a></li><li><a href="ol.renderer.dom.TileLayer.html">ol.renderer.dom.TileLayer</a></li><li><a href="ol.renderer.webgl.ImageLayer.html">ol.renderer.webgl.ImageLayer</a></li><li><a href="ol.renderer.webgl.Layer.html">ol.renderer.webgl.Layer</a></li><li><a href="ol.renderer.webgl.Map.html">ol.renderer.webgl.Map</a></li><li><a href="ol.renderer.webgl.TileLayer.html">ol.renderer.webgl.TileLayer</a></li><li><a href="ol.renderer.webgl.map.shader.Fragment.html">ol.renderer.webgl.map.shader.Fragment</a></li><li><a href="ol.renderer.webgl.map.shader.Vertex.html">ol.renderer.webgl.map.shader.Vertex</a></li><li><a href="ol.renderer.webgl.map.shader.attribute.html">ol.renderer.webgl.map.shader.attribute</a></li><li><a href="ol.renderer.webgl.map.shader.uniform.html">ol.renderer.webgl.map.shader.uniform</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Fragment.html">ol.renderer.webgl.tilelayer.shader.Fragment</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Vertex.html">ol.renderer.webgl.tilelayer.shader.Vertex</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.attribute.html">ol.renderer.webgl.tilelayer.shader.attribute</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.uniform.html">ol.renderer.webgl.tilelayer.shader.uniform</a></li><li><a href="ol.source.BingMaps.html">ol.source.BingMaps</a></li><li><a href="ol.source.DebugTileSource.html">ol.source.DebugTileSource</a></li><li><a href="ol.source.ImageSource.html">ol.source.ImageSource</a></li><li><a href="ol.source.ImageTileSource.html">ol.source.ImageTileSource</a></li><li><a href="ol.source.MapQuestOSM.html">ol.source.MapQuestOSM</a></li><li><a href="ol.source.MapQuestOpenAerial.html">ol.source.MapQuestOpenAerial</a></li><li><a href="ol.source.OpenStreetMap.html">ol.source.OpenStreetMap</a></li><li><a href="ol.source.SingleImageWMS.html">ol.source.SingleImageWMS</a></li><li><a href="ol.source.Source.html">ol.source.Source</a></li><li><a href="ol.source.Stamen.html">ol.source.Stamen</a></li><li><a href="ol.source.StaticImage.html">ol.source.StaticImage</a></li><li><a href="ol.source.TileJSON.html">ol.source.TileJSON</a></li><li><a href="ol.source.TileSource.html">ol.source.TileSource</a></li><li><a href="ol.source.TiledWMS.html">ol.source.TiledWMS</a></li><li><a href="ol.source.Vector.html">ol.source.Vector</a></li><li><a href="ol.source.WMTS.html">ol.source.WMTS</a></li><li><a href="ol.source.XYZ.html">ol.source.XYZ</a></li><li><a href="ol.structs.Buffer.html">ol.structs.Buffer</a></li><li><a href="ol.structs.IntegerSet.html">ol.structs.IntegerSet</a></li><li><a href="ol.structs.LRUCache.html">ol.structs.LRUCache</a></li><li><a href="ol.structs.PriorityQueue.html">ol.structs.PriorityQueue</a></li><li><a href="ol.structs.RTree.html">ol.structs.RTree</a></li><li><a href="ol.style.Icon.html">ol.style.Icon</a></li><li><a href="ol.style.IconLiteral.html">ol.style.IconLiteral</a></li><li><a href="ol.style.Line.html">ol.style.Line</a></li><li><a href="ol.style.LineLiteral.html">ol.style.LineLiteral</a></li><li><a href="ol.style.Point.html">ol.style.Point</a></li><li><a href="ol.style.PointLiteral.html">ol.style.PointLiteral</a></li><li><a href="ol.style.Polygon.html">ol.style.Polygon</a></li><li><a href="ol.style.PolygonLiteral.html">ol.style.PolygonLiteral</a></li><li><a href="ol.style.Rule.html">ol.style.Rule</a></li><li><a href="ol.style.Shape.html">ol.style.Shape</a></li><li><a href="ol.style.ShapeLiteral.html">ol.style.ShapeLiteral</a></li><li><a href="ol.style.Style.html">ol.style.Style</a></li><li><a href="ol.style.Symbolizer.html">ol.style.Symbolizer</a></li><li><a href="ol.style.SymbolizerLiteral.html">ol.style.SymbolizerLiteral</a></li><li><a href="ol.tilegrid.TileGrid.html">ol.tilegrid.TileGrid</a></li><li><a href="ol.tilegrid.WMTS.html">ol.tilegrid.WMTS</a></li><li><a href="ol.tilegrid.XYZ.html">ol.tilegrid.XYZ</a></li><li><a href="ol.webgl.Shader.html">ol.webgl.Shader</a></li><li><a href="ol.webgl.shader.Fragment.html">ol.webgl.shader.Fragment</a></li><li><a href="ol.webgl.shader.Vertex.html">ol.webgl.shader.Vertex</a></li></ul><h3>Namespaces</h3><ul><li><a href="ol.html">ol</a></li><li><a href="ol.animation.html">ol.animation</a></li><li><a href="ol.control.html">ol.control</a></li><li><a href="ol.layer.html">ol.layer</a></li><li><a href="ol.source.html">ol.source</a></li><li><a href="ol.style.html">ol.style</a></li><li><a href="ol.tilegrid.html">ol.tilegrid</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-ol3.html">OpenLayers 3 Architecture</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Meters per unit lookup table.">Meters per unit lookup table.</a></li><li><a href="global.html#grid">grid</a></li><li>{boolean}</li><li>{number}</li><li>{string}</li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Fri Apr 05 2013 16:45:30 GMT+0200 (CEST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Mon Apr 08 2013 08:56:08 GMT+0200 (CEST)
 </footer>
+</div>
 
 <script> prettyPrint(); </script>
+<script src="../resources/social-links.js" type="text/javascript"></script>
 </body>
 </html>

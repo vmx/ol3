@@ -4,24 +4,28 @@
 
 goog.provide('ol.control.ZoomSlider');
 
+goog.require('goog.array');
 goog.require('goog.asserts');
 goog.require('goog.dom');
 goog.require('goog.dom.TagName');
 goog.require('goog.events');
+goog.require('goog.events.EventType');
 goog.require('goog.fx.Dragger');
+goog.require('goog.fx.Dragger.EventType');
+goog.require('goog.math');
+goog.require('goog.math.Rect');
 goog.require('goog.style');
-goog.require('ol');
-goog.require('ol.MapEventType');
 goog.require('ol.control.Control');
+goog.require('ol.css');
 
 
 
 /**
  * @constructor
  * @extends {ol.control.Control}
- * @param {ol.control.ZoomSliderOptions} zoomSliderOptions Zoom options.
+ * @param {ol.control.ZoomSliderOptions} options Zoom slider options.
  */
-ol.control.ZoomSlider = function(zoomSliderOptions) {
+ol.control.ZoomSlider = function(options) {
   // FIXME these should be read out from a map if not given, and only then
   //       fallback to the constants if they weren't defined on the map.
   /**
@@ -30,9 +34,8 @@ ol.control.ZoomSlider = function(zoomSliderOptions) {
    * @type {number}
    * @private
    */
-  this.maxResolution_ = goog.isDef(zoomSliderOptions.maxResolution) ?
-      zoomSliderOptions.maxResolution :
-      ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
+  this.maxResolution_ = goog.isDef(options.maxResolution) ?
+      options.maxResolution : ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
 
   /**
    * The maximum resolution that one can set with this control.
@@ -40,9 +43,8 @@ ol.control.ZoomSlider = function(zoomSliderOptions) {
    * @type {number}
    * @private
    */
-  this.minResolution_ = goog.isDef(zoomSliderOptions.minResolution) ?
-      zoomSliderOptions.minResolution :
-      ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
+  this.minResolution_ = goog.isDef(options.minResolution) ?
+      options.minResolution : ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
 
   goog.asserts.assert(
       this.minResolution_ < this.maxResolution_,
@@ -78,12 +80,6 @@ ol.control.ZoomSlider = function(zoomSliderOptions) {
    * @private
    * @type {Array.<?number>}
    */
-  this.mapListenerKeys_ = null;
-
-  /**
-   * @private
-   * @type {Array.<?number>}
-   */
   this.draggerListenerKeys_ = null;
 
   var elem = this.createDom_();
@@ -97,7 +93,7 @@ ol.control.ZoomSlider = function(zoomSliderOptions) {
 
   goog.base(this, {
     element: elem,
-    map: zoomSliderOptions.map
+    map: options.map
   });
 };
 goog.inherits(ol.control.ZoomSlider, ol.control.Control);
@@ -157,28 +153,8 @@ ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION = 156543.0339;
 ol.control.ZoomSlider.prototype.setMap = function(map) {
   goog.base(this, 'setMap', map);
   this.currentResolution_ = map.getView().getResolution();
-  this.initMapEventListeners_();
   this.initSlider_();
   this.positionThumbForResolution_(this.currentResolution_);
-};
-
-
-/**
- * Initializes the event listeners for map events.
- *
- * @private
- */
-ol.control.ZoomSlider.prototype.initMapEventListeners_ = function() {
-  if (!goog.isNull(this.mapListenerKeys_)) {
-    goog.array.forEach(this.mapListenerKeys_, goog.events.unlistenByKey);
-    this.mapListenerKeys_ = null;
-  }
-  if (!goog.isNull(this.getMap())) {
-    this.mapListenerKeys_ = [
-      goog.events.listen(this.getMap(), ol.MapEventType.POSTRENDER,
-          this.handleMapPostRender_, undefined, this)
-    ];
-  }
 };
 
 
@@ -217,11 +193,10 @@ ol.control.ZoomSlider.prototype.initSlider_ = function() {
 
 
 /**
- * @param {ol.MapEvent} mapEvtObj The ol.MapEvent object.
- * @private
+ * @inheritDoc
  */
-ol.control.ZoomSlider.prototype.handleMapPostRender_ = function(mapEvtObj) {
-  var res = mapEvtObj.frameState.view2DState.resolution;
+ol.control.ZoomSlider.prototype.handleMapPostrender = function(mapEvent) {
+  var res = mapEvent.frameState.view2DState.resolution;
   if (res !== this.currentResolution_) {
     this.currentResolution_ = res;
     this.positionThumbForResolution_(res);
@@ -363,9 +338,9 @@ ol.control.ZoomSlider.prototype.createDraggable_ = function(elem) {
 ol.control.ZoomSlider.prototype.createDom_ = function(opt_elem) {
   var elem,
       sliderCssCls = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + ' ' +
-          ol.CSS_CLASS_UNSELECTABLE,
+          ol.css.CLASS_UNSELECTABLE,
       thumbCssCls = ol.control.ZoomSlider.CSS_CLASS_THUMB + ' ' +
-          ol.CSS_CLASS_UNSELECTABLE;
+          ol.css.CLASS_UNSELECTABLE;
 
   elem = goog.dom.createDom(goog.dom.TagName.DIV, sliderCssCls,
       goog.dom.createDom(goog.dom.TagName.DIV, thumbCssCls));

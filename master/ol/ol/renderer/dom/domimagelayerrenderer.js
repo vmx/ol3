@@ -1,6 +1,9 @@
 goog.provide('ol.renderer.dom.ImageLayer');
 
 goog.require('goog.dom');
+goog.require('goog.dom.TagName');
+goog.require('goog.events');
+goog.require('goog.events.EventType');
 goog.require('goog.vec.Mat4');
 goog.require('ol.Image');
 goog.require('ol.ImageState');
@@ -109,6 +112,7 @@ ol.renderer.dom.ImageLayer.prototype.renderFrame =
     this.setTransform(transform);
 
     this.updateAttributions(frameState.attributions, image.getAttributions());
+    this.updateLogos(frameState, imageSource);
   }
 
 };

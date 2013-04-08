@@ -4,6 +4,7 @@
 goog.provide('ol.Geolocation');
 goog.provide('ol.GeolocationProperty');
 
+goog.require('goog.events');
 goog.require('goog.functions');
 goog.require('goog.math');
 goog.require('ol.Coordinate');
@@ -255,7 +256,7 @@ goog.exportProperty(
 
 
 /**
- * @return {GeolocationPositionOptions|undefined} tracking options.
+ * @return {GeolocationPositionOptions|undefined} Tracking options.
  */
 ol.Geolocation.prototype.getTrackingOptions = function() {
   return /** @type {GeolocationPositionOptions} */ (
