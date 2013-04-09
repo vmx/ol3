@@ -30,7 +30,7 @@ goog.addDependency('../../../ol/ol/feature.js', ['ol.Feature'], ['ol.Object', 'o
 goog.addDependency('../../../ol/ol/filter/extentfilter.js', ['ol.filter.Extent'], ['ol.Extent', 'ol.filter.Filter']);
 goog.addDependency('../../../ol/ol/filter/filter.js', ['ol.filter.Filter'], ['ol.Feature']);
 goog.addDependency('../../../ol/ol/filter/geometryfilter.js', ['ol.filter.Geometry', 'ol.filter.GeometryType'], ['ol.filter.Filter', 'ol.geom.GeometryType']);
-goog.addDependency('../../../ol/ol/filter/logicalfilter.js', ['ol.filter.Logical', 'ol.filter.LogicalOperator'], ['ol.filter.Filter']);
+goog.addDependency('../../../ol/ol/filter/logicalfilter.js', ['ol.filter.Logical', 'ol.filter.LogicalOperator', 'ol.filter.and', 'ol.filter.not', 'ol.filter.or'], ['goog.asserts', 'ol.filter.Filter']);
 goog.addDependency('../../../ol/ol/framestate.js', ['ol.FrameState', 'ol.PostRenderFunction', 'ol.PreRenderFunction'], ['goog.vec.Mat4', 'ol.Attribution', 'ol.Color', 'ol.Extent', 'ol.Size', 'ol.TileQueue', 'ol.TileRange', 'ol.View2DState', 'ol.layer.Layer', 'ol.layer.LayerState']);
 goog.addDependency('../../../ol/ol/geolocation.js', ['ol.Geolocation', 'ol.GeolocationProperty'], ['goog.events', 'goog.functions', 'goog.math', 'ol.Coordinate', 'ol.Object', 'ol.Projection', 'ol.projection']);
 goog.addDependency('../../../ol/ol/geom/abstractcollection.js', ['ol.geom.AbstractCollection'], ['ol.Extent', 'ol.geom.Geometry']);

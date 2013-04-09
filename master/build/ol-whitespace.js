@@ -505,10 +505,10 @@ goog.scope = function(fn) {
 goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol.Attribution", "ol.BrowserFeature", "ol.Collection", "ol.CollectionEvent", "ol.CollectionEventType", "ol.Color", "ol.Constraints", "ol.Coordinate", "ol.CoordinateFormatType", "ol.Ellipsoid", "ol.Expression", "ol.ExpressionLiteral", "ol.Extent", "ol.Feature", "ol.FrameState", "ol.Geolocation", "ol.GeolocationProperty", "ol.IView", "ol.IView2D", "ol.IView3D", "ol.Image", "ol.ImageState", "ol.ImageTile", "ol.ImageUrlFunction", "ol.ImageUrlFunctionType", 
 "ol.Kinetic", "ol.Map", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler", "ol.MapEvent", "ol.MapEventType", "ol.MapProperty", "ol.Object", "ol.ObjectEventType", "ol.Overlay", "ol.OverlayPositioning", "ol.OverlayProperty", "ol.Pixel", "ol.PixelBounds", "ol.PostRenderFunction", "ol.PreRenderFunction", "ol.Projection", "ol.ProjectionLike", "ol.ProjectionUnits", "ol.Rectangle", "ol.RendererHint", "ol.RendererHints", "ol.ResolutionConstraint", "ol.ResolutionConstraintType", 
 "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.Sphere", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TilePriorityFunction", "ol.TileQueue", "ol.TileRange", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.TransformFunction", "ol.View", "ol.View2D", "ol.View2DProperty", "ol.View2DState", "ol.ViewHint", "ol.animation", "ol.array", "ol.canvas", "ol.control.Attribution", "ol.control.Control", "ol.control.ControlOptions", "ol.control.DragBox", "ol.control.Logo", 
-"ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.geom.AbstractCollection", "ol.geom.Geometry", "ol.geom.GeometryCollection", 
-"ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", "ol.interaction.Keyboard", 
-"ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", 
-"ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", 
+"ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or", "ol.geom.AbstractCollection", 
+"ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", 
+"ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", 
+"ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", 
 "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", 
 "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", 
 "ol.source.OpenStreetMap", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", 
@@ -546,7 +546,7 @@ goog.addDependency("../src/ol/feature.js", ["ol.Feature"], ["ol.Object", "ol.geo
 goog.addDependency("../src/ol/filter/extentfilter.js", ["ol.filter.Extent"], ["ol.Extent", "ol.filter.Filter"]);
 goog.addDependency("../src/ol/filter/filter.js", ["ol.filter.Filter"], ["ol.Feature"]);
 goog.addDependency("../src/ol/filter/geometryfilter.js", ["ol.filter.Geometry", "ol.filter.GeometryType"], ["ol.filter.Filter", "ol.geom.GeometryType"]);
-goog.addDependency("../src/ol/filter/logicalfilter.js", ["ol.filter.Logical", "ol.filter.LogicalOperator"], ["ol.filter.Filter"]);
+goog.addDependency("../src/ol/filter/logicalfilter.js", ["ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or"], ["goog.asserts", "ol.filter.Filter"]);
 goog.addDependency("../src/ol/framestate.js", ["ol.FrameState", "ol.PostRenderFunction", "ol.PreRenderFunction"], ["goog.vec.Mat4", "ol.Attribution", "ol.Color", "ol.Extent", "ol.Size", "ol.TileQueue", "ol.TileRange", "ol.View2DState", "ol.layer.Layer", "ol.layer.LayerState"]);
 goog.addDependency("../src/ol/geolocation.js", ["ol.Geolocation", "ol.GeolocationProperty"], ["goog.events", "goog.functions", "goog.math", "ol.Coordinate", "ol.Object", "ol.Projection", "ol.projection"]);
 goog.addDependency("../src/ol/geom/abstractcollection.js", ["ol.geom.AbstractCollection"], ["ol.Extent", "ol.geom.Geometry"]);
@@ -13511,7 +13511,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var touchPan = goog.isDef(options.touchPan) ? options.touchPan : true;
   if(touchPan) {
-    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.TouchPan(new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var touchRotate = goog.isDef(options.touchRotate) ? options.touchRotate : true;
   if(touchRotate) {
@@ -13523,7 +13523,7 @@ ol.interaction.defaults = function(opt_options, opt_interactions) {
   }
   var dragPan = goog.isDef(options.dragPan) ? options.dragPan : true;
   if(dragPan) {
-    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.005, 0.05, 100)))
+    interactions.push(new ol.interaction.DragPan(ol.interaction.condition.noModifierKeys, new ol.Kinetic(-0.0050, 0.05, 100)))
   }
   var keyboard = goog.isDef(options.keyboard) ? options.keyboard : true;
   if(keyboard) {
@@ -13691,10 +13691,11 @@ ol.tilegrid.TileGrid.prototype.forEachTileCoordParentTileRange = function(tileCo
   var z = tileCoord.z - 1;
   while(z >= 0) {
     if(callback.call(opt_obj, z, this.getTileRangeForExtentAndZ(tileCoordExtent, z))) {
-      return
+      return true
     }
     --z
   }
+  return false
 };
 ol.tilegrid.TileGrid.prototype.getOrigin = function(z) {
   if(!goog.isNull(this.origin_)) {
@@ -13722,6 +13723,14 @@ ol.tilegrid.TileGrid.prototype.getResolution = function(z) {
 };
 ol.tilegrid.TileGrid.prototype.getResolutions = function() {
   return this.resolutions_
+};
+ol.tilegrid.TileGrid.prototype.getTileCoordChildTileRange = function(tileCoord) {
+  if(tileCoord.z < this.resolutions_.length) {
+    var tileCoordExtent = this.getTileCoordExtent(tileCoord);
+    return this.getTileRangeForExtentAndZ(tileCoordExtent, tileCoord.z + 1)
+  }else {
+    return null
+  }
 };
 ol.tilegrid.TileGrid.prototype.getTileRangeExtent = function(z, tileRange) {
   var origin = this.getOrigin(z);
@@ -14401,29 +14410,58 @@ ol.filter.Geometry.prototype.getType = function() {
 };
 goog.provide("ol.filter.Logical");
 goog.provide("ol.filter.LogicalOperator");
+goog.provide("ol.filter.and");
+goog.provide("ol.filter.not");
+goog.provide("ol.filter.or");
+goog.require("goog.asserts");
 goog.require("ol.filter.Filter");
 ol.filter.Logical = function(filters, operator) {
   goog.base(this);
   this.filters_ = filters;
+  goog.asserts.assert(filters.length > 0, "Must supply at least one filter");
   this.operator = operator
 };
 goog.inherits(ol.filter.Logical, ol.filter.Filter);
 ol.filter.Logical.prototype.applies = function(feature) {
-  var filters = this.filters_, i = 0, ii = filters.length, operator = this.operator, start = operator(true, false), result = start;
-  while(result === start && i < ii) {
-    result = operator(result, filters[i].applies(feature));
-    ++i
+  var filters = this.filters_, i = 0, ii = filters.length, result;
+  switch(this.operator) {
+    case ol.filter.LogicalOperator.AND:
+      result = true;
+      while(result && i < ii) {
+        result = result && filters[i].applies(feature);
+        ++i
+      }
+      break;
+    case ol.filter.LogicalOperator.OR:
+      result = false;
+      while(!result && i < ii) {
+        result = result || filters[i].applies(feature);
+        ++i
+      }
+      break;
+    case ol.filter.LogicalOperator.NOT:
+      result = !filters[i].applies(feature);
+      break;
+    default:
+      goog.asserts.assert(false, "Unsupported operation: " + this.operator)
   }
-  return result
+  return!!result
 };
 ol.filter.Logical.prototype.getFilters = function() {
   return this.filters_
 };
-ol.filter.LogicalOperator = {AND:function(a, b) {
-  return a && b
-}, OR:function(a, b) {
-  return a || b
-}};
+ol.filter.LogicalOperator = {AND:"&&", OR:"||", NOT:"!"};
+ol.filter.and = function(var_filters) {
+  var filters = Array.prototype.slice.call(arguments);
+  return new ol.filter.Logical(filters, ol.filter.LogicalOperator.AND)
+};
+ol.filter.not = function(filter) {
+  return new ol.filter.Logical([filter], ol.filter.LogicalOperator.NOT)
+};
+ol.filter.or = function(var_filters) {
+  var filters = Array.prototype.slice.call(arguments);
+  return new ol.filter.Logical(filters, ol.filter.LogicalOperator.OR)
+};
 goog.provide("ol.layer.Vector");
 goog.require("goog.asserts");
 goog.require("goog.events.EventType");
@@ -14785,7 +14823,7 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame = function(frameState, layerS
   }, tileSource, projection);
   var findLoadedTiles = goog.bind(tileSource.findLoadedTiles, tileSource, tilesToDrawByZ, getTileIfLoaded);
   var allTilesLoaded = true;
-  var tile, tileState, x, y;
+  var childTileRange, fullyLoaded, tile, tileState, x, y;
   for(x = tileRange.minX;x <= tileRange.maxX;++x) {
     for(y = tileRange.minY;y <= tileRange.maxY;++y) {
       tile = tileSource.getTile(z, x, y, projection);
@@ -14799,7 +14837,13 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame = function(frameState, layerS
         }
       }
       allTilesLoaded = false;
-      tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles)
+      fullyLoaded = tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles);
+      if(!fullyLoaded) {
+        childTileRange = tileGrid.getTileCoordChildTileRange(tile.tileCoord);
+        if(!goog.isNull(childTileRange)) {
+          findLoadedTiles(z + 1, childTileRange)
+        }
+      }
     }
   }
   var zs = goog.array.map(goog.object.getKeys(tilesToDrawByZ), Number);
@@ -16315,7 +16359,7 @@ ol.renderer.dom.TileLayer.prototype.renderFrame = function(frameState, layerStat
   }, tileSource, projection);
   var findLoadedTiles = goog.bind(tileSource.findLoadedTiles, tileSource, tilesToDrawByZ, getTileIfLoaded);
   var allTilesLoaded = true;
-  var tile, tileState, x, y;
+  var childTileRange, fullyLoaded, tile, tileState, x, y;
   for(x = tileRange.minX;x <= tileRange.maxX;++x) {
     for(y = tileRange.minY;y <= tileRange.maxY;++y) {
       tile = tileSource.getTile(z, x, y, projection);
@@ -16329,7 +16373,13 @@ ol.renderer.dom.TileLayer.prototype.renderFrame = function(frameState, layerStat
         }
       }
       allTilesLoaded = false;
-      tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles)
+      fullyLoaded = tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles);
+      if(!fullyLoaded) {
+        childTileRange = tileGrid.getTileCoordChildTileRange(tile.tileCoord);
+        if(!goog.isNull(childTileRange)) {
+          findLoadedTiles(z + 1, childTileRange)
+        }
+      }
     }
   }
   var zs = goog.array.map(goog.object.getKeys(tilesToDrawByZ), Number);
@@ -17576,7 +17626,7 @@ ol.renderer.webgl.TileLayer.prototype.renderFrame = function(frameState, layerSt
     }, tileSource, projection);
     var findLoadedTiles = goog.bind(tileSource.findLoadedTiles, tileSource, tilesToDrawByZ, getTileIfLoaded);
     var allTilesLoaded = true;
-    var tile, tileState, x, y;
+    var childTileRange, fullyLoaded, tile, tileState, x, y;
     for(x = tileRange.minX;x <= tileRange.maxX;++x) {
       for(y = tileRange.minY;y <= tileRange.maxY;++y) {
         tile = tileSource.getTile(z, x, y, projection);
@@ -17592,7 +17642,13 @@ ol.renderer.webgl.TileLayer.prototype.renderFrame = function(frameState, layerSt
           }
         }
         allTilesLoaded = false;
-        tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles)
+        fullyLoaded = tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles);
+        if(!fullyLoaded) {
+          childTileRange = tileGrid.getTileCoordChildTileRange(tile.tileCoord);
+          if(!goog.isNull(childTileRange)) {
+            findLoadedTiles(z + 1, childTileRange)
+          }
+        }
       }
     }
     var zs = goog.array.map(goog.object.getKeys(tilesToDrawByZ), Number);
@@ -21569,15 +21625,23 @@ goog.require("ol.projection");
 goog.require("ol.projection.EPSG3857");
 goog.require("ol.tilegrid.TileGrid");
 ol.tilegrid.XYZ = function(options) {
-  var resolutions = new Array(options.maxZoom + 1);
+  this.maxZoom_ = options.maxZoom;
+  var resolutions = new Array(this.maxZoom_ + 1);
   var z;
   var size = 2 * ol.projection.EPSG3857.HALF_SIZE / ol.DEFAULT_TILE_SIZE;
-  for(z = 0;z <= options.maxZoom;++z) {
+  for(z = 0;z <= this.maxZoom_;++z) {
     resolutions[z] = size / Math.pow(2, z)
   }
   goog.base(this, {origin:[-ol.projection.EPSG3857.HALF_SIZE, ol.projection.EPSG3857.HALF_SIZE], resolutions:resolutions, tileSize:new ol.Size(ol.DEFAULT_TILE_SIZE, ol.DEFAULT_TILE_SIZE)})
 };
 goog.inherits(ol.tilegrid.XYZ, ol.tilegrid.TileGrid);
+ol.tilegrid.XYZ.prototype.getTileCoordChildTileRange = function(tileCoord) {
+  if(tileCoord.z < this.maxZoom_) {
+    return new ol.TileRange(tileCoord.x << 1, tileCoord.y << 1, tileCoord.x + 1 << 1, tileCoord.y + 1 << 1)
+  }else {
+    return null
+  }
+};
 ol.tilegrid.XYZ.prototype.forEachTileCoordParentTileRange = function(tileCoord, callback, opt_obj) {
   var tileRange = new ol.TileRange(0, 0, tileCoord.x, tileCoord.y);
   var z;
@@ -21585,9 +21649,10 @@ ol.tilegrid.XYZ.prototype.forEachTileCoordParentTileRange = function(tileCoord, 
     tileRange.minX = tileRange.maxX >>= 1;
     tileRange.minY = tileRange.maxY >>= 1;
     if(callback.call(opt_obj, z, tileRange)) {
-      break
+      return true
     }
   }
+  return false
 };
 goog.provide("ol.source.BingMaps");
 goog.require("goog.Uri");
@@ -22342,6 +22407,9 @@ goog.require("ol.filter.Geometry");
 goog.require("ol.filter.GeometryType");
 goog.require("ol.filter.Logical");
 goog.require("ol.filter.LogicalOperator");
+goog.require("ol.filter.and");
+goog.require("ol.filter.not");
+goog.require("ol.filter.or");
 goog.require("ol.geom.AbstractCollection");
 goog.require("ol.geom.Geometry");
 goog.require("ol.geom.GeometryCollection");
