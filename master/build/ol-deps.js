@@ -16,7 +16,7 @@ goog.addDependency('../../../ol/ol/control/logocontrol.js', ['ol.control.Logo'],
 goog.addDependency('../../../ol/ol/control/mousepositioncontrol.js', ['ol.control.MousePosition'], ['goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.style', 'ol.CoordinateFormatType', 'ol.Pixel', 'ol.Projection', 'ol.TransformFunction', 'ol.control.Control', 'ol.projection']);
 goog.addDependency('../../../ol/ol/control/scalelinecontrol.js', ['ol.control.ScaleLine', 'ol.control.ScaleLineUnits'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.math', 'goog.style', 'ol.FrameState', 'ol.ProjectionUnits', 'ol.TransformFunction', 'ol.control.Control', 'ol.css', 'ol.projection', 'ol.sphere.NORMAL']);
 goog.addDependency('../../../ol/ol/control/zoomcontrol.js', ['ol.control.Zoom'], ['goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'ol.control.Control', 'ol.css']);
-goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.fx.Dragger', 'goog.fx.Dragger.EventType', 'goog.math', 'goog.math.Rect', 'goog.style', 'ol.control.Control', 'ol.css']);
+goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.fx.Dragger', 'goog.fx.Dragger.EventType', 'goog.math', 'goog.math.Rect', 'goog.style', 'ol.control.Control', 'ol.css']);
 goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.CoordinateFormatType', 'ol.coordinate'], ['goog.math']);
 goog.addDependency('../../../ol/ol/css.js', ['ol.css'], []);
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.asserts', 'goog.vec.Mat4']);
@@ -174,7 +174,7 @@ goog.addDependency('../../../ol/ol/tileurlfunction.js', ['ol.TileUrlFunction', '
 goog.addDependency('../../../ol/ol/transformfunction.js', ['ol.TransformFunction'], []);
 goog.addDependency('../../../ol/ol/vec/mat4.js', ['ol.vec.Mat4'], ['goog.vec.Mat4']);
 goog.addDependency('../../../ol/ol/view.js', ['ol.View', 'ol.ViewHint'], ['goog.array', 'goog.asserts', 'ol.IView', 'ol.Object']);
-goog.addDependency('../../../ol/ol/view2d.js', ['ol.View2D', 'ol.View2DProperty'], ['goog.asserts', 'ol.Constraints', 'ol.Extent', 'ol.IView2D', 'ol.IView3D', 'ol.Projection', 'ol.ResolutionConstraint', 'ol.RotationConstraint', 'ol.RotationConstraintType', 'ol.Size', 'ol.View', 'ol.animation', 'ol.coordinate', 'ol.easing', 'ol.projection']);
+goog.addDependency('../../../ol/ol/view2d.js', ['ol.View2D', 'ol.View2DProperty'], ['goog.asserts', 'ol.Constraints', 'ol.Extent', 'ol.IView2D', 'ol.IView3D', 'ol.Projection', 'ol.ResolutionConstraint', 'ol.RotationConstraint', 'ol.Size', 'ol.View', 'ol.animation', 'ol.coordinate', 'ol.easing', 'ol.projection']);
 goog.addDependency('../../../ol/ol/webgl/shader.js', ['ol.webgl.shader'], ['goog.functions', 'goog.webgl', 'ol.webgl']);
 goog.addDependency('../../../ol/ol/webgl/webgl.js', ['ol.webgl', 'ol.webgl.WebGLContextEventType'], ['goog.dom', 'goog.dom.TagName']);
 goog.addDependency('../../third_party/closure/goog/caja/string/html/htmlparser.js', ['goog.string.html.HtmlParser', 'goog.string.html.HtmlParser.EFlags', 'goog.string.html.HtmlParser.Elements', 'goog.string.html.HtmlParser.Entities', 'goog.string.html.HtmlSaxHandler'], []);

@@ -532,7 +532,7 @@ goog.addDependency("../src/ol/control/logocontrol.js", ["ol.control.Logo"], ["go
 goog.addDependency("../src/ol/control/mousepositioncontrol.js", ["ol.control.MousePosition"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.style", "ol.CoordinateFormatType", "ol.Pixel", "ol.Projection", "ol.TransformFunction", "ol.control.Control", "ol.projection"]);
 goog.addDependency("../src/ol/control/scalelinecontrol.js", ["ol.control.ScaleLine", "ol.control.ScaleLineUnits"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.math", "goog.style", "ol.FrameState", "ol.ProjectionUnits", "ol.TransformFunction", "ol.control.Control", "ol.css", "ol.projection", "ol.sphere.NORMAL"]);
 goog.addDependency("../src/ol/control/zoomcontrol.js", ["ol.control.Zoom"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "ol.control.Control", "ol.css"]);
-goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
+goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
 goog.addDependency("../src/ol/coordinate.js", ["ol.Coordinate", "ol.CoordinateFormatType", "ol.coordinate"], ["goog.math"]);
 goog.addDependency("../src/ol/css.js", ["ol.css"], []);
 goog.addDependency("../src/ol/dom/dom.js", ["ol.dom", "ol.dom.BrowserFeature"], ["goog.asserts", "goog.vec.Mat4"]);
@@ -694,7 +694,7 @@ goog.addDependency("../src/ol/tileurlfunction.js", ["ol.TileUrlFunction", "ol.Ti
 goog.addDependency("../src/ol/transformfunction.js", ["ol.TransformFunction"], []);
 goog.addDependency("../src/ol/vec/mat4.js", ["ol.vec.Mat4"], ["goog.vec.Mat4"]);
 goog.addDependency("../src/ol/view.js", ["ol.View", "ol.ViewHint"], ["goog.array", "goog.asserts", "ol.IView", "ol.Object"]);
-goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
+goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
 goog.addDependency("../src/ol/webgl/shader.js", ["ol.webgl.shader"], ["goog.functions", "goog.webgl", "ol.webgl"]);
 goog.addDependency("../src/ol/webgl/webgl.js", ["ol.webgl", "ol.webgl.WebGLContextEventType"], ["goog.dom", "goog.dom.TagName"]);
 goog.addDependency("/closure/goog/array/array.js", ["goog.array", "goog.array.ArrayLike"], ["goog.asserts"]);
@@ -2951,7 +2951,7 @@ ol.Attribution.prototype.intersectsAnyTileRange = function(tileRanges) {
 };
 goog.provide("ol.BrowserFeature");
 ol.ASSUME_TOUCH = false;
-ol.BrowserFeature = {HAS_TOUCH:ol.ASSUME_TOUCH || document && "ontouchstart" in document.documentElement || !!window.navigator.msPointerEnabled};
+ol.BrowserFeature = {HAS_TOUCH:ol.ASSUME_TOUCH || goog.global.document && "ontouchstart" in document.documentElement || !!goog.global.navigator.msPointerEnabled};
 goog.provide("goog.disposable.IDisposable");
 goog.disposable.IDisposable = function() {
 };
@@ -7347,7 +7347,7 @@ ol.Geolocation.prototype.handleTrackingChanged_ = function() {
     }
   }
 };
-ol.Geolocation.SUPPORTED = "geolocation" in navigator;
+ol.Geolocation.SUPPORTED = "geolocation" in goog.global.navigator;
 ol.Geolocation.prototype.positionChange_ = function(position) {
   var coords = position.coords;
   this.set(ol.GeolocationProperty.ACCURACY, coords.accuracy);
@@ -12282,7 +12282,6 @@ goog.require("ol.IView3D");
 goog.require("ol.Projection");
 goog.require("ol.ResolutionConstraint");
 goog.require("ol.RotationConstraint");
-goog.require("ol.RotationConstraintType");
 goog.require("ol.Size");
 goog.require("ol.View");
 goog.require("ol.animation");
@@ -12307,12 +12306,7 @@ ol.View2D = function(opt_options) {
   }
   values[ol.View2DProperty.ROTATION] = options.rotation;
   this.setValues(values);
-  var parts = ol.View2D.createResolutionConstraint_(options);
-  this.maxResolution_ = parts[1];
-  this.minResolution_ = parts[2];
-  var resolutionConstraint = parts[0];
-  var rotationConstraint = ol.View2D.createRotationConstraint_(options);
-  this.constraints_ = new ol.Constraints(resolutionConstraint, rotationConstraint)
+  this.constraints_ = ol.View2D.createConstraints_(options)
 };
 goog.inherits(ol.View2D, ol.View);
 ol.View2D.prototype.getCenter = function() {
@@ -12342,32 +12336,10 @@ ol.View2D.prototype.getResolutionForExtent = function(extent, size) {
   var yResolution = (extent.maxY - extent.minY) / size.height;
   return Math.max(xResolution, yResolution)
 };
-ol.View2D.prototype.getResolutionForValueFunction = function(opt_power) {
-  var power = opt_power || 2;
-  var maxResolution = this.maxResolution_;
-  var minResolution = this.minResolution_;
-  var max = Math.log(maxResolution / minResolution) / Math.log(power);
-  return function(value) {
-    var resolution = maxResolution / Math.pow(power, value * max);
-    goog.asserts.assert(resolution >= minResolution && resolution <= maxResolution);
-    return resolution
-  }
-};
 ol.View2D.prototype.getRotation = function() {
   return this.get(ol.View2DProperty.ROTATION) || 0
 };
 goog.exportProperty(ol.View2D.prototype, "getRotation", ol.View2D.prototype.getRotation);
-ol.View2D.prototype.getValueForResolutionFunction = function(opt_power) {
-  var power = opt_power || 2;
-  var maxResolution = this.maxResolution_;
-  var minResolution = this.minResolution_;
-  var max = Math.log(maxResolution / minResolution) / Math.log(power);
-  return function(resolution) {
-    var value = Math.log(maxResolution / resolution) / Math.log(power) / max;
-    goog.asserts.assert(value >= 0 && value <= 1);
-    return value
-  }
-};
 ol.View2D.prototype.getView2D = function() {
   return this
 };
@@ -12483,17 +12455,12 @@ ol.View2D.prototype.zoomWithoutConstraints = function(map, resolution, opt_ancho
     }
   }
 };
-ol.View2D.createResolutionConstraint_ = function(options) {
+ol.View2D.createConstraints_ = function(options) {
   var resolutionConstraint;
-  var maxResolution;
-  var minResolution;
   if(goog.isDef(options.resolutions)) {
-    var resolutions = options.resolutions;
-    maxResolution = resolutions[0];
-    minResolution = resolutions[resolutions.length - 1];
-    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(resolutions)
+    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(options.resolutions)
   }else {
-    var numZoomLevels, zoomFactor;
+    var maxResolution, numZoomLevels, zoomFactor;
     if(goog.isDef(options.maxResolution) && goog.isDef(options.numZoomLevels) && goog.isDef(options.zoomFactor)) {
       maxResolution = options.maxResolution;
       numZoomLevels = options.numZoomLevels;
@@ -12504,13 +12471,10 @@ ol.View2D.createResolutionConstraint_ = function(options) {
       numZoomLevels = 29;
       zoomFactor = 2
     }
-    minResolution = maxResolution / Math.pow(zoomFactor, numZoomLevels - 1);
     resolutionConstraint = ol.ResolutionConstraint.createSnapToPower(zoomFactor, maxResolution, numZoomLevels - 1)
   }
-  return[resolutionConstraint, maxResolution, minResolution]
-};
-ol.View2D.createRotationConstraint_ = function(options) {
-  return ol.RotationConstraint.createSnapToZero()
+  var rotationConstraint = ol.RotationConstraint.createSnapToZero();
+  return new ol.Constraints(resolutionConstraint, rotationConstraint)
 };
 goog.provide("ol.control.Control");
 goog.provide("ol.control.ControlOptions");
@@ -19330,6 +19294,7 @@ goog.fx.DragEvent = function(type, dragobj, clientX, clientY, browserEvent, opt_
 goog.inherits(goog.fx.DragEvent, goog.events.Event);
 goog.provide("ol.control.ZoomSlider");
 goog.require("goog.array");
+goog.require("goog.asserts");
 goog.require("goog.dom");
 goog.require("goog.dom.TagName");
 goog.require("goog.events");
@@ -19341,8 +19306,11 @@ goog.require("goog.math.Rect");
 goog.require("goog.style");
 goog.require("ol.control.Control");
 goog.require("ol.css");
-ol.control.ZOOMSLIDER_ANIMATION_DURATION = 200;
 ol.control.ZoomSlider = function(options) {
+  this.maxResolution_ = goog.isDef(options.maxResolution) ? options.maxResolution : ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
+  this.minResolution_ = goog.isDef(options.minResolution) ? options.minResolution : ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
+  goog.asserts.assert(this.minResolution_ < this.maxResolution_, "minResolution must be smaller than maxResolution.");
+  this.range_ = this.maxResolution_ - this.minResolution_;
   this.currentResolution_;
   this.direction_ = ol.control.ZoomSlider.direction.VERTICAL;
   this.draggerListenerKeys_ = null;
@@ -19355,14 +19323,13 @@ goog.inherits(ol.control.ZoomSlider, ol.control.Control);
 ol.control.ZoomSlider.direction = {VERTICAL:0, HORIZONTAL:1};
 ol.control.ZoomSlider.CSS_CLASS_CONTAINER = "ol-zoomslider";
 ol.control.ZoomSlider.CSS_CLASS_THUMB = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + "-thumb";
+ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION = 0.5971642833948135;
+ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION = 156543.0339;
 ol.control.ZoomSlider.prototype.setMap = function(map) {
   goog.base(this, "setMap", map);
+  this.currentResolution_ = map.getView().getResolution();
   this.initSlider_();
-  var resolution = map.getView().getView2D().getResolution();
-  if(goog.isDef(resolution)) {
-    this.currentResolution_ = resolution;
-    this.positionThumbForResolution_(resolution)
-  }
+  this.positionThumbForResolution_(this.currentResolution_)
 };
 ol.control.ZoomSlider.prototype.initSlider_ = function() {
   var container = this.element, thumb = goog.dom.getFirstElementChild(container), elemSize = goog.style.getContentBoxSize(container), thumbBounds = goog.style.getBounds(thumb), thumbMargins = goog.style.getMarginBox(thumb), thumbBorderBox = goog.style.getBorderBox(thumb), w = elemSize.width - thumbMargins.left - thumbMargins.right - thumbBorderBox.left - thumbBorderBox.right - thumbBounds.width, h = elemSize.height - thumbMargins.top - thumbMargins.bottom - thumbBorderBox.top - thumbBorderBox.bottom - 
@@ -19405,24 +19372,19 @@ ol.control.ZoomSlider.prototype.amountDragged_ = function(e) {
   return amount
 };
 ol.control.ZoomSlider.prototype.resolutionForAmount_ = function(amount) {
-  amount = (goog.math.clamp(amount, 0, 1) - 1) * -1;
-  var fn = this.getMap().getView().getView2D().getResolutionForValueFunction();
-  return fn(amount)
+  var saneAmount = goog.math.clamp(amount, 0, 1);
+  return this.minResolution_ + this.range_ * saneAmount
 };
 ol.control.ZoomSlider.prototype.amountForResolution_ = function(res) {
-  var fn = this.getMap().getView().getView2D().getValueForResolutionFunction();
-  var value = fn(res);
-  return(value - 1) * -1
+  var saneRes = goog.math.clamp(res, this.minResolution_, this.maxResolution_);
+  return(saneRes - this.minResolution_) / this.range_
 };
 ol.control.ZoomSlider.prototype.handleSliderChange_ = function(e) {
   var map = this.getMap(), amountDragged = this.amountDragged_(e), res = this.resolutionForAmount_(amountDragged);
-  if(e.type === goog.fx.Dragger.EventType.DRAG) {
-    if(res !== this.currentResolution_) {
-      this.currentResolution_ = res;
-      map.getView().getView2D().zoomWithoutConstraints(map, res)
-    }
-  }else {
-    map.getView().getView2D().zoom(map, this.currentResolution_, undefined, ol.control.ZOOMSLIDER_ANIMATION_DURATION)
+  goog.asserts.assert(res >= this.minResolution_ && res <= this.maxResolution_, "calculated new resolution is in allowed bounds.");
+  if(res !== this.currentResolution_) {
+    this.currentResolution_ = res;
+    map.getView().setResolution(res)
   }
 };
 ol.control.ZoomSlider.prototype.createDraggable_ = function(elem) {

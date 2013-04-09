@@ -5,9 +5,12 @@
  * @return {ol.Map} The ol.Map instance.
  */
 var createMap = function(divId) {
-  var source, layer, map, zoomslider, resolutions;
+  var source, layer, map, zoomslider, resolutions, minRes, maxRes;
 
   source = new ol.source.MapQuestOpenAerial();
+  // These are the min and max resolutions of MapQuestOpenAerial
+  minRes = 0.5971642834779395;
+  maxRes = 156543.03392804097;
   layer = new ol.layer.TileLayer({
     source: source
   });
@@ -20,6 +23,8 @@ var createMap = function(divId) {
     })
   });
   zoomslider = new ol.control.ZoomSlider({
+    minResolution: minRes,
+    maxResolution: maxRes,
     map: map
   });
   return map;

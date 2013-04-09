@@ -5,6 +5,7 @@
 goog.provide('ol.control.ZoomSlider');
 
 goog.require('goog.array');
+goog.require('goog.asserts');
 goog.require('goog.dom');
 goog.require('goog.dom.TagName');
 goog.require('goog.events');
@@ -18,12 +19,6 @@ goog.require('ol.control.Control');
 goog.require('ol.css');
 
 
-/**
- * @define {number} Animation duration.
- */
-ol.control.ZOOMSLIDER_ANIMATION_DURATION = 200;
-
-
 
 /**
  * @constructor
@@ -31,6 +26,38 @@ ol.control.ZOOMSLIDER_ANIMATION_DURATION = 200;
  * @param {ol.control.ZoomSliderOptions} options Zoom slider options.
  */
 ol.control.ZoomSlider = function(options) {
+  // FIXME these should be read out from a map if not given, and only then
+  //       fallback to the constants if they weren't defined on the map.
+  /**
+   * The minimum resolution that one can set with this control.
+   *
+   * @type {number}
+   * @private
+   */
+  this.maxResolution_ = goog.isDef(options.maxResolution) ?
+      options.maxResolution : ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
+
+  /**
+   * The maximum resolution that one can set with this control.
+   *
+   * @type {number}
+   * @private
+   */
+  this.minResolution_ = goog.isDef(options.minResolution) ?
+      options.minResolution : ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
+
+  goog.asserts.assert(
+      this.minResolution_ < this.maxResolution_,
+      'minResolution must be smaller than maxResolution.'
+  );
+
+  /**
+   * The range of resolutions we are handling in this slider.
+   *
+   * @type {number}
+   * @private
+   */
+  this.range_ = this.maxResolution_ - this.minResolution_;
 
   /**
    * Will hold the current resolution of the view.
@@ -101,16 +128,33 @@ ol.control.ZoomSlider.CSS_CLASS_THUMB =
 
 
 /**
+ * The default value for minResolution_ when the control isn't instanciated with
+ * an explicit value. The default value is the resolution of the standard OSM
+ * tiles at zoomlevel 18.
+ *
+ * @const {number}
+ */
+ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION = 0.5971642833948135;
+
+
+/**
+ * The default value for maxResolution_ when the control isn't instanciated with
+ * an explicit value.  The default value is the resolution of the standard OSM
+ * tiles at zoomlevel 0.
+ *
+ * @const {number}
+ */
+ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION = 156543.0339;
+
+
+/**
  * @inheritDoc
  */
 ol.control.ZoomSlider.prototype.setMap = function(map) {
   goog.base(this, 'setMap', map);
+  this.currentResolution_ = map.getView().getResolution();
   this.initSlider_();
-  var resolution = map.getView().getView2D().getResolution();
-  if (goog.isDef(resolution)) {
-    this.currentResolution_ = resolution;
-    this.positionThumbForResolution_(resolution);
-  }
+  this.positionThumbForResolution_(this.currentResolution_);
 };
 
 
@@ -215,14 +259,13 @@ ol.control.ZoomSlider.prototype.amountDragged_ = function(e) {
  * been dragged from its minimum.
  *
  * @param {number} amount The amount the thumb has been dragged.
- * @return {number} The corresponding resolution.
+ * @return {number} a resolution between this.minResolution_ and
+ *     this.maxResolution_.
  * @private
  */
 ol.control.ZoomSlider.prototype.resolutionForAmount_ = function(amount) {
-  // FIXME do we really need this affine transform?
-  amount = (goog.math.clamp(amount, 0, 1) - 1) * -1;
-  var fn = this.getMap().getView().getView2D().getResolutionForValueFunction();
-  return fn(amount);
+  var saneAmount = goog.math.clamp(amount, 0, 1);
+  return this.minResolution_ + this.range_ * saneAmount;
 };
 
 
@@ -231,14 +274,12 @@ ol.control.ZoomSlider.prototype.resolutionForAmount_ = function(amount) {
  * given resolution.
  *
  * @param {number} res The resolution to get the amount for.
- * @return {number} The corresponding value (between 0 and 1).
+ * @return {number} an amount between 0 and 1.
  * @private
  */
 ol.control.ZoomSlider.prototype.amountForResolution_ = function(res) {
-  var fn = this.getMap().getView().getView2D().getValueForResolutionFunction();
-  var value = fn(res);
-  // FIXME do we really need this affine transform?
-  return (value - 1) * -1;
+  var saneRes = goog.math.clamp(res, this.minResolution_, this.maxResolution_);
+  return (saneRes - this.minResolution_) / this.range_;
 };
 
 
@@ -254,14 +295,11 @@ ol.control.ZoomSlider.prototype.handleSliderChange_ = function(e) {
   var map = this.getMap(),
       amountDragged = this.amountDragged_(e),
       res = this.resolutionForAmount_(amountDragged);
-  if (e.type === goog.fx.Dragger.EventType.DRAG) {
-    if (res !== this.currentResolution_) {
-      this.currentResolution_ = res;
-      map.getView().getView2D().zoomWithoutConstraints(map, res);
-    }
-  } else {
-    map.getView().getView2D().zoom(map, this.currentResolution_, undefined,
-        ol.control.ZOOMSLIDER_ANIMATION_DURATION);
+  goog.asserts.assert(res >= this.minResolution_ && res <= this.maxResolution_,
+      'calculated new resolution is in allowed bounds.');
+  if (res !== this.currentResolution_) {
+    this.currentResolution_ = res;
+    map.getView().setResolution(res);
   }
 };
 
