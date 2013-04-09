@@ -510,9 +510,9 @@ goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol.Attributi
 "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", 
 "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", 
 "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", 
-"ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", "ol.source.OpenStreetMap", "ol.source.SingleImageWMS", 
-"ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", "ol.style.IconType", 
-"ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
+"ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", 
+"ol.source.OpenStreetMap", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", 
+"ol.style.Icon", "ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
 goog.addDependency("../build/src/internal/src/types.js", ["ol.MapOptions", "ol.OverlayOptions", "ol.Proj4jsProjectionOptions", "ol.ProjectionOptions", "ol.View2DOptions", "ol.animation.BounceOptions", "ol.animation.PanOptions", "ol.animation.RotateOptions", "ol.animation.ZoomOptions", "ol.control.AttributionOptions", "ol.control.DefaultsOptions", "ol.control.LogoOptions", "ol.control.MousePositionOptions", "ol.control.ScaleLineOptions", "ol.control.ZoomOptions", "ol.control.ZoomSliderOptions", "ol.interaction.DefaultsOptions", 
 "ol.interaction.KeyboardPanOptions", "ol.interaction.KeyboardZoomOptions", "ol.layer.LayerOptions", "ol.layer.TileLayerOptions", "ol.layer.VectorLayerOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OpenStreetMapOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", "ol.style.LineOptions", 
 "ol.style.PolygonOptions", "ol.style.RuleOptions", "ol.style.ShapeOptions", "ol.style.StyleOptions", "ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
@@ -532,7 +532,7 @@ goog.addDependency("../src/ol/control/logocontrol.js", ["ol.control.Logo"], ["go
 goog.addDependency("../src/ol/control/mousepositioncontrol.js", ["ol.control.MousePosition"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.style", "ol.CoordinateFormatType", "ol.Pixel", "ol.Projection", "ol.TransformFunction", "ol.control.Control", "ol.projection"]);
 goog.addDependency("../src/ol/control/scalelinecontrol.js", ["ol.control.ScaleLine", "ol.control.ScaleLineUnits"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.math", "goog.style", "ol.FrameState", "ol.ProjectionUnits", "ol.TransformFunction", "ol.control.Control", "ol.css", "ol.projection", "ol.sphere.NORMAL"]);
 goog.addDependency("../src/ol/control/zoomcontrol.js", ["ol.control.Zoom"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "ol.control.Control", "ol.css"]);
-goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
+goog.addDependency("../src/ol/control/zoomslidercontrol.js", ["ol.control.ZoomSlider"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.fx.Dragger", "goog.fx.Dragger.EventType", "goog.math", "goog.math.Rect", "goog.style", "ol.control.Control", "ol.css"]);
 goog.addDependency("../src/ol/coordinate.js", ["ol.Coordinate", "ol.CoordinateFormatType", "ol.coordinate"], ["goog.math"]);
 goog.addDependency("../src/ol/css.js", ["ol.css"], []);
 goog.addDependency("../src/ol/dom/dom.js", ["ol.dom", "ol.dom.BrowserFeature"], ["goog.asserts", "goog.vec.Mat4"]);
@@ -640,9 +640,10 @@ goog.addDependency("../src/ol/renderer/layerrenderer.js", ["ol.renderer.Layer"],
 goog.addDependency("../src/ol/renderer/maprenderer.js", ["ol.renderer.Map"], ["goog.Disposable", "goog.array", "goog.asserts", "goog.dispose", "goog.events", "goog.events.EventType", "goog.functions", "goog.object", "goog.vec.Mat4", "ol.CollectionEvent", "ol.CollectionEventType", "ol.FrameState", "ol.Object", "ol.layer.Layer", "ol.renderer.Layer"]);
 goog.addDependency("../src/ol/renderer/webgl/webglimagelayerrenderer.js", ["ol.renderer.webgl.ImageLayer"], ["goog.asserts", "goog.events", "goog.events.EventType", "goog.vec.Mat4", "goog.webgl", "ol.Coordinate", "ol.Extent", "ol.Image", "ol.ImageState", "ol.ViewHint", "ol.layer.ImageLayer", "ol.renderer.webgl.Layer"]);
 goog.addDependency("../src/ol/renderer/webgl/webgllayerrenderer.js", ["ol.renderer.webgl.Layer"], ["goog.vec.Mat4", "goog.webgl", "ol.FrameState", "ol.layer.Layer", "ol.renderer.Layer", "ol.vec.Mat4"]);
-goog.addDependency("../src/ol/renderer/webgl/webglmaprenderer.js", ["ol.renderer.webgl.Map"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.Event", "goog.object", "goog.style", "goog.webgl", "ol.FrameState", "ol.Size", "ol.Tile", "ol.css", "ol.layer.ImageLayer", "ol.layer.TileLayer", "ol.renderer.Map", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", 
-"ol.structs.PriorityQueue", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
-goog.addDependency("../src/ol/renderer/webgl/webglmapshader.js", ["ol.renderer.webgl.map.shader"], ["ol.webgl.shader"]);
+goog.addDependency("../src/ol/renderer/webgl/webglmapcolorshader.js", ["ol.renderer.webgl.map.shader.Color"], ["ol.webgl.shader"]);
+goog.addDependency("../src/ol/renderer/webgl/webglmapdefaultshader.js", ["ol.renderer.webgl.map.shader.Default"], ["ol.webgl.shader"]);
+goog.addDependency("../src/ol/renderer/webgl/webglmaprenderer.js", ["ol.renderer.webgl.Map"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.Event", "goog.object", "goog.style", "goog.webgl", "ol.FrameState", "ol.Size", "ol.Tile", "ol.css", "ol.layer.ImageLayer", "ol.layer.TileLayer", "ol.renderer.Map", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.structs.Buffer", 
+"ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
 goog.addDependency("../src/ol/renderer/webgl/webglrenderer.js", ["ol.renderer.webgl.SUPPORTED"], ["ol.webgl"]);
 goog.addDependency("../src/ol/renderer/webgl/webgltilelayerrenderer.js", ["ol.renderer.webgl.TileLayer"], ["goog.array", "goog.object", "goog.vec.Mat4", "goog.vec.Vec4", "goog.webgl", "ol.Extent", "ol.Size", "ol.Tile", "ol.TileRange", "ol.TileState", "ol.layer.TileLayer", "ol.math", "ol.renderer.webgl.Layer", "ol.renderer.webgl.tilelayer.shader", "ol.structs.Buffer"]);
 goog.addDependency("../src/ol/renderer/webgl/webgltilelayershader.js", ["ol.renderer.webgl.tilelayer.shader"], ["ol.webgl.shader"]);
@@ -688,13 +689,13 @@ goog.addDependency("../src/ol/tilecoord.js", ["ol.TileCoord"], ["goog.array"]);
 goog.addDependency("../src/ol/tilegrid/tilegrid.js", ["ol.tilegrid.TileGrid"], ["goog.array", "goog.asserts", "ol.Coordinate", "ol.Extent", "ol.PixelBounds", "ol.Projection", "ol.Size", "ol.TileCoord", "ol.TileRange", "ol.array"]);
 goog.addDependency("../src/ol/tilegrid/wmtstilegrid.js", ["ol.tilegrid.WMTS"], ["goog.array", "goog.asserts", "ol.Size", "ol.projection", "ol.tilegrid.TileGrid"]);
 goog.addDependency("../src/ol/tilegrid/xyztilegrid.js", ["ol.tilegrid.XYZ"], ["ol.Size", "ol.TileRange", "ol.projection", "ol.projection.EPSG3857", "ol.tilegrid.TileGrid"]);
-goog.addDependency("../src/ol/tilequeue.js", ["ol.TilePriorityFunction", "ol.TileQueue"], ["goog.asserts", "goog.events", "goog.events.EventType", "ol.Coordinate", "ol.Tile", "ol.structs.PriorityQueue"]);
+goog.addDependency("../src/ol/tilequeue.js", ["ol.TilePriorityFunction", "ol.TileQueue"], ["goog.events", "goog.events.EventType", "ol.Coordinate", "ol.Tile", "ol.structs.PriorityQueue"]);
 goog.addDependency("../src/ol/tilerange.js", ["ol.TileRange"], ["goog.asserts", "ol.Rectangle", "ol.TileCoord"]);
 goog.addDependency("../src/ol/tileurlfunction.js", ["ol.TileUrlFunction", "ol.TileUrlFunctionType"], ["goog.array", "goog.math", "ol.TileCoord"]);
 goog.addDependency("../src/ol/transformfunction.js", ["ol.TransformFunction"], []);
 goog.addDependency("../src/ol/vec/mat4.js", ["ol.vec.Mat4"], ["goog.vec.Mat4"]);
 goog.addDependency("../src/ol/view.js", ["ol.View", "ol.ViewHint"], ["goog.array", "goog.asserts", "ol.IView", "ol.Object"]);
-goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
+goog.addDependency("../src/ol/view2d.js", ["ol.View2D", "ol.View2DProperty"], ["goog.asserts", "ol.Constraints", "ol.Extent", "ol.IView2D", "ol.IView3D", "ol.Projection", "ol.ResolutionConstraint", "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.View", "ol.animation", "ol.coordinate", "ol.easing", "ol.projection"]);
 goog.addDependency("../src/ol/webgl/shader.js", ["ol.webgl.shader"], ["goog.functions", "goog.webgl", "ol.webgl"]);
 goog.addDependency("../src/ol/webgl/webgl.js", ["ol.webgl", "ol.webgl.WebGLContextEventType"], ["goog.dom", "goog.dom.TagName"]);
 goog.addDependency("/closure/goog/array/array.js", ["goog.array", "goog.array.ArrayLike"], ["goog.asserts"]);
@@ -2951,7 +2952,7 @@ ol.Attribution.prototype.intersectsAnyTileRange = function(tileRanges) {
 };
 goog.provide("ol.BrowserFeature");
 ol.ASSUME_TOUCH = false;
-ol.BrowserFeature = {HAS_TOUCH:ol.ASSUME_TOUCH || goog.global.document && "ontouchstart" in document.documentElement || !!goog.global.navigator.msPointerEnabled};
+ol.BrowserFeature = {HAS_TOUCH:ol.ASSUME_TOUCH || document && "ontouchstart" in document.documentElement || !!window.navigator.msPointerEnabled};
 goog.provide("goog.disposable.IDisposable");
 goog.disposable.IDisposable = function() {
 };
@@ -4940,7 +4941,7 @@ ol.array.linearFindNearest = function(arr, target, direction) {
           }
         }
       }
-      goog.asserts.assert(false);
+      goog.asserts.fail();
       return n - 1
     }
   }
@@ -6613,7 +6614,6 @@ ol.structs.PriorityQueue.prototype.reprioritize = function() {
 };
 goog.provide("ol.TilePriorityFunction");
 goog.provide("ol.TileQueue");
-goog.require("goog.asserts");
 goog.require("goog.events");
 goog.require("goog.events.EventType");
 goog.require("ol.Coordinate");
@@ -6639,7 +6639,6 @@ ol.TileQueue.prototype.handleTileChange = function() {
 };
 ol.TileQueue.prototype.loadMoreTiles = function(maxTotalLoading, maxNewLoads) {
   var newLoads = Math.min(maxTotalLoading - this.getTilesLoading(), maxNewLoads, this.getCount());
-  goog.asserts.assert(newLoads > 0);
   var i, tile;
   for(i = 0;i < newLoads;++i) {
     tile = this.dequeue()[0];
@@ -6858,7 +6857,7 @@ ol.projection.createProjection = function(projection, defaultCode) {
     if(goog.isString(projection)) {
       return ol.projection.get(projection)
     }else {
-      goog.asserts.assert(projection instanceof ol.Projection);
+      goog.asserts.assertInstanceof(projection, ol.Projection);
       return projection
     }
   }
@@ -6994,7 +6993,7 @@ ol.projection.getTransformFromProjections = function(sourceProjection, destinati
 };
 ol.projection.identityTransform = function(input, opt_output, opt_dimension) {
   if(goog.isDef(opt_output) && input !== opt_output) {
-    goog.asserts.assert(false, "This should not be used internally.");
+    goog.asserts.fail("This should not be used internally.");
     for(var i = 0, ii = input.length;i < ii;++i) {
       opt_output[i] = input[i]
     }
@@ -7347,7 +7346,7 @@ ol.Geolocation.prototype.handleTrackingChanged_ = function() {
     }
   }
 };
-ol.Geolocation.SUPPORTED = "geolocation" in goog.global.navigator;
+ol.Geolocation.SUPPORTED = "geolocation" in navigator;
 ol.Geolocation.prototype.positionChange_ = function(position) {
   var coords = position.coords;
   this.set(ol.GeolocationProperty.ACCURACY, coords.accuracy);
@@ -12282,6 +12281,7 @@ goog.require("ol.IView3D");
 goog.require("ol.Projection");
 goog.require("ol.ResolutionConstraint");
 goog.require("ol.RotationConstraint");
+goog.require("ol.RotationConstraintType");
 goog.require("ol.Size");
 goog.require("ol.View");
 goog.require("ol.animation");
@@ -12306,7 +12306,12 @@ ol.View2D = function(opt_options) {
   }
   values[ol.View2DProperty.ROTATION] = options.rotation;
   this.setValues(values);
-  this.constraints_ = ol.View2D.createConstraints_(options)
+  var parts = ol.View2D.createResolutionConstraint_(options);
+  this.maxResolution_ = parts[1];
+  this.minResolution_ = parts[2];
+  var resolutionConstraint = parts[0];
+  var rotationConstraint = ol.View2D.createRotationConstraint_(options);
+  this.constraints_ = new ol.Constraints(resolutionConstraint, rotationConstraint)
 };
 goog.inherits(ol.View2D, ol.View);
 ol.View2D.prototype.getCenter = function() {
@@ -12336,10 +12341,32 @@ ol.View2D.prototype.getResolutionForExtent = function(extent, size) {
   var yResolution = (extent.maxY - extent.minY) / size.height;
   return Math.max(xResolution, yResolution)
 };
+ol.View2D.prototype.getResolutionForValueFunction = function(opt_power) {
+  var power = opt_power || 2;
+  var maxResolution = this.maxResolution_;
+  var minResolution = this.minResolution_;
+  var max = Math.log(maxResolution / minResolution) / Math.log(power);
+  return function(value) {
+    var resolution = maxResolution / Math.pow(power, value * max);
+    goog.asserts.assert(resolution >= minResolution && resolution <= maxResolution);
+    return resolution
+  }
+};
 ol.View2D.prototype.getRotation = function() {
   return this.get(ol.View2DProperty.ROTATION) || 0
 };
 goog.exportProperty(ol.View2D.prototype, "getRotation", ol.View2D.prototype.getRotation);
+ol.View2D.prototype.getValueForResolutionFunction = function(opt_power) {
+  var power = opt_power || 2;
+  var maxResolution = this.maxResolution_;
+  var minResolution = this.minResolution_;
+  var max = Math.log(maxResolution / minResolution) / Math.log(power);
+  return function(resolution) {
+    var value = Math.log(maxResolution / resolution) / Math.log(power) / max;
+    goog.asserts.assert(value >= 0 && value <= 1);
+    return value
+  }
+};
 ol.View2D.prototype.getView2D = function() {
   return this
 };
@@ -12455,12 +12482,17 @@ ol.View2D.prototype.zoomWithoutConstraints = function(map, resolution, opt_ancho
     }
   }
 };
-ol.View2D.createConstraints_ = function(options) {
+ol.View2D.createResolutionConstraint_ = function(options) {
   var resolutionConstraint;
+  var maxResolution;
+  var minResolution;
   if(goog.isDef(options.resolutions)) {
-    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(options.resolutions)
+    var resolutions = options.resolutions;
+    maxResolution = resolutions[0];
+    minResolution = resolutions[resolutions.length - 1];
+    resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(resolutions)
   }else {
-    var maxResolution, numZoomLevels, zoomFactor;
+    var numZoomLevels, zoomFactor;
     if(goog.isDef(options.maxResolution) && goog.isDef(options.numZoomLevels) && goog.isDef(options.zoomFactor)) {
       maxResolution = options.maxResolution;
       numZoomLevels = options.numZoomLevels;
@@ -12471,10 +12503,13 @@ ol.View2D.createConstraints_ = function(options) {
       numZoomLevels = 29;
       zoomFactor = 2
     }
+    minResolution = maxResolution / Math.pow(zoomFactor, numZoomLevels - 1);
     resolutionConstraint = ol.ResolutionConstraint.createSnapToPower(zoomFactor, maxResolution, numZoomLevels - 1)
   }
-  var rotationConstraint = ol.RotationConstraint.createSnapToZero();
-  return new ol.Constraints(resolutionConstraint, rotationConstraint)
+  return[resolutionConstraint, maxResolution, minResolution]
+};
+ol.View2D.createRotationConstraint_ = function(options) {
+  return ol.RotationConstraint.createSnapToZero()
 };
 goog.provide("ol.control.Control");
 goog.provide("ol.control.ControlOptions");
@@ -12770,7 +12805,7 @@ ol.interaction.DblClickZoom.prototype.handleMapBrowserEvent = function(mapBrowse
     var anchor = mapBrowserEvent.getCoordinate();
     var delta = mapBrowserEvent.browserEvent.shiftKey ? -this.delta_ : this.delta_;
     var view = map.getView();
-    goog.asserts.assert(view instanceof ol.View2D);
+    goog.asserts.assertInstanceof(view, ol.View2D);
     view.zoomByDelta(map, delta, anchor, ol.interaction.DBLCLICKZOOM_ANIMATION_DURATION);
     mapBrowserEvent.preventDefault();
     browserEvent.preventDefault()
@@ -12825,18 +12860,18 @@ ol.interaction.Drag.prototype.handleMapBrowserEvent = function(mapBrowserEvent) 
   var view = map.getView();
   var browserEvent = mapBrowserEvent.browserEvent;
   if(mapBrowserEvent.type == ol.MapBrowserEvent.EventType.DOWN) {
-    goog.asserts.assert(browserEvent instanceof goog.events.BrowserEvent);
+    goog.asserts.assertInstanceof(browserEvent, goog.events.BrowserEvent);
     this.handleDown(mapBrowserEvent)
   }
   if(this.dragging_) {
     if(mapBrowserEvent.type == ol.MapBrowserEvent.EventType.DRAG) {
-      goog.asserts.assert(browserEvent instanceof goog.events.BrowserEvent);
+      goog.asserts.assertInstanceof(browserEvent, goog.events.BrowserEvent);
       this.deltaX = browserEvent.clientX - this.startX;
       this.deltaY = browserEvent.clientY - this.startY;
       this.handleDrag(mapBrowserEvent)
     }else {
       if(mapBrowserEvent.type == ol.MapBrowserEvent.EventType.DRAGEND) {
-        goog.asserts.assert(browserEvent instanceof goog.events.BrowserEvent);
+        goog.asserts.assertInstanceof(browserEvent, goog.events.BrowserEvent);
         this.deltaX = browserEvent.clientX - this.startX;
         this.deltaY = browserEvent.clientY - this.startY;
         this.handleDragEnd(mapBrowserEvent);
@@ -12845,7 +12880,7 @@ ol.interaction.Drag.prototype.handleMapBrowserEvent = function(mapBrowserEvent) 
     }
   }else {
     if(mapBrowserEvent.type == ol.MapBrowserEvent.EventType.DRAGSTART) {
-      goog.asserts.assert(browserEvent instanceof goog.events.BrowserEvent);
+      goog.asserts.assertInstanceof(browserEvent, goog.events.BrowserEvent);
       this.startX = browserEvent.clientX;
       this.startY = browserEvent.clientY;
       this.deltaX = 0;
@@ -12883,7 +12918,7 @@ ol.interaction.DragPan.prototype.handleDrag = function(mapBrowserEvent) {
   }
   var map = mapBrowserEvent.map;
   var view = map.getView();
-  goog.asserts.assert(view instanceof ol.View2D);
+  goog.asserts.assertInstanceof(view, ol.View2D);
   var resolution = view.getResolution();
   var rotation = view.getRotation();
   var newCenter = [-resolution * this.deltaX, resolution * this.deltaY];
@@ -12926,7 +12961,7 @@ ol.interaction.DragPan.prototype.handleDragStart = function(mapBrowserEvent) {
 ol.interaction.DragPan.prototype.handleDown = function(mapBrowserEvent) {
   var map = mapBrowserEvent.map;
   var view = map.getView();
-  goog.asserts.assert(view instanceof ol.View2D);
+  goog.asserts.assertInstanceof(view, ol.View2D);
   goog.asserts.assert(!goog.isNull(mapBrowserEvent.frameState));
   if(!goog.isNull(this.kineticPreRenderFn_) && map.removePreRenderFunction(this.kineticPreRenderFn_)) {
     map.requestRenderFrame();
@@ -12956,7 +12991,7 @@ ol.interaction.DragRotate.prototype.handleDrag = function(mapBrowserEvent) {
   if(goog.isDef(this.lastAngle_)) {
     var delta = theta - this.lastAngle_;
     var view = map.getView();
-    goog.asserts.assert(view instanceof ol.View2D);
+    goog.asserts.assertInstanceof(view, ol.View2D);
     map.requestRenderFrame();
     view.rotateWithoutConstraints(map, view.getRotation() - delta)
   }
@@ -12966,7 +13001,7 @@ ol.interaction.DragRotate.prototype.handleDragEnd = function(mapBrowserEvent) {
   var browserEvent = mapBrowserEvent.browserEvent;
   var map = mapBrowserEvent.map;
   var view = map.getView();
-  goog.asserts.assert(view instanceof ol.View2D);
+  goog.asserts.assertInstanceof(view, ol.View2D);
   view.rotate(map, view.getRotation(), undefined, ol.interaction.DRAGROTATE_ANIMATION_DURATION);
   view.setHint(ol.ViewHint.INTERACTING, -1)
 };
@@ -12975,7 +13010,7 @@ ol.interaction.DragRotate.prototype.handleDragStart = function(mapBrowserEvent) 
   if(browserEvent.isMouseActionButton() && this.condition_(browserEvent)) {
     var map = mapBrowserEvent.map;
     var view = map.getView();
-    goog.asserts.assert(view instanceof ol.View2D);
+    goog.asserts.assertInstanceof(view, ol.View2D);
     map.requestRenderFrame();
     this.lastAngle_ = undefined;
     view.setHint(ol.ViewHint.INTERACTING, 1);
@@ -13046,7 +13081,7 @@ ol.interaction.DragZoom.prototype.handleDragEnd = function(mapBrowserEvent) {
     var extent = ol.Extent.boundingExtent(this.startCoordinate, mapBrowserEvent.getCoordinate());
     map.withFrozenRendering(function() {
       var view = map.getView();
-      goog.asserts.assert(view instanceof ol.View2D);
+      goog.asserts.assertInstanceof(view, ol.View2D);
       var mapSize = map.getSize();
       view.fitExtent(extent, mapSize);
       view.setRotation(0)
@@ -13083,7 +13118,7 @@ ol.interaction.KeyboardPan.prototype.handleMapBrowserEvent = function(mapBrowser
     if(keyCode == goog.events.KeyCodes.DOWN || keyCode == goog.events.KeyCodes.LEFT || keyCode == goog.events.KeyCodes.RIGHT || keyCode == goog.events.KeyCodes.UP) {
       var map = mapBrowserEvent.map;
       var view = map.getView();
-      goog.asserts.assert(view instanceof ol.View2D);
+      goog.asserts.assertInstanceof(view, ol.View2D);
       var resolution = view.getResolution();
       var rotation = view.getRotation();
       var mapUnitsDelta = resolution * this.delta_;
@@ -13130,7 +13165,7 @@ ol.interaction.KeyboardZoom.prototype.handleMapBrowserEvent = function(mapBrowse
       var delta = charCode == "+".charCodeAt(0) ? this.delta_ : -this.delta_;
       map.requestRenderFrame();
       var view = map.getView();
-      goog.asserts.assert(view instanceof ol.View2D);
+      goog.asserts.assertInstanceof(view, ol.View2D);
       view.zoomByDelta(map, delta, undefined, ol.interaction.KEYBOARD_ZOOM_DURATION);
       keyEvent.preventDefault();
       mapBrowserEvent.preventDefault()
@@ -13160,7 +13195,7 @@ ol.interaction.MouseWheelZoom.prototype.handleMapBrowserEvent = function(mapBrow
   if(mapBrowserEvent.type == goog.events.MouseWheelHandler.EventType.MOUSEWHEEL) {
     var map = mapBrowserEvent.map;
     var mouseWheelEvent = mapBrowserEvent.browserEvent;
-    goog.asserts.assert(mouseWheelEvent instanceof goog.events.MouseWheelEvent);
+    goog.asserts.assertInstanceof(mouseWheelEvent, goog.events.MouseWheelEvent);
     this.lastAnchor_ = mapBrowserEvent.getCoordinate();
     this.delta_ += mouseWheelEvent.deltaY / 3;
     if(!goog.isDef(this.startTime_)) {
@@ -13178,7 +13213,7 @@ ol.interaction.MouseWheelZoom.prototype.doZoom_ = function(map) {
   var maxDelta = ol.interaction.MOUSEWHEELZOOM_MAXDELTA;
   var delta = goog.math.clamp(this.delta_, -maxDelta, maxDelta);
   var view = map.getView();
-  goog.asserts.assert(view instanceof ol.View2D);
+  goog.asserts.assertInstanceof(view, ol.View2D);
   map.requestRenderFrame();
   view.zoomByDelta(map, -delta, this.lastAnchor_, ol.interaction.MOUSEWHEELZOOM_ANIMATION_DURATION);
   this.delta_ = 0;
@@ -14546,12 +14581,12 @@ ol.layer.Vector.prototype.parseFeatures = function(data, parser, projection) {
   var callback = function(feature, type) {
     return lookup[type]
   };
-  if(typeof data === "string") {
-    goog.asserts.assert(typeof parser.readFeaturesFromString === "function", "Expected a parser with readFeaturesFromString method.");
+  if(goog.isString(data)) {
+    goog.asserts.assert(goog.isFunction(parser.readFeaturesFromString), "Expected a parser with readFeaturesFromString method.");
     features = parser.readFeaturesFromString(data, {callback:callback})
   }else {
-    if(typeof data === "object") {
-      goog.asserts.assert(typeof parser.readFeaturesFromObject === "function", "Expected a parser with a readFeaturesFromObject method.");
+    if(goog.isObject(data)) {
+      goog.asserts.assert(goog.isFunction(parser.readFeaturesFromObject), "Expected a parser with a readFeaturesFromObject method.");
       features = parser.readFeaturesFromObject(data, {callback:callback})
     }else {
       throw new Error("Data type not supported: " + data);
@@ -16006,7 +16041,7 @@ ol.renderer.canvas.Map.prototype.createLayerRenderer = function(layer) {
       if(layer instanceof ol.layer.Vector) {
         return new ol.renderer.canvas.VectorLayer(this, layer)
       }else {
-        goog.asserts.assert(false);
+        goog.asserts.fail();
         return null
       }
     }
@@ -16082,7 +16117,7 @@ goog.provide("ol.dom");
 goog.provide("ol.dom.BrowserFeature");
 goog.require("goog.asserts");
 goog.require("goog.vec.Mat4");
-ol.dom.BrowserFeature = {CAN_USE_CSS_TRANSFORM:false, CAN_USE_CSS_TRANSFORM3D:true, CAN_USE_MATRIX_FILTER:false};
+ol.dom.BrowserFeature = {CAN_USE_CSS_TRANSFORM:false, CAN_USE_CSS_TRANSFORM3D:true};
 ol.dom.setTransform = function(element, value) {
   var style = element.style;
   style.WebkitTransform = value;
@@ -16119,13 +16154,9 @@ ol.dom.transformElement2D = function(element, transform, opt_precision) {
       }
       ol.dom.setTransform(element, "matrix(" + value2D + ")")
     }else {
-      if(ol.dom.BrowserFeature.CAN_USE_MATRIX_FILTER) {
-        goog.asserts.assert(false)
-      }else {
-        var style = element.style;
-        style.left = Math.round(goog.vec.Mat4.getElement(transform, 0, 3)) + "px";
-        style.top = Math.round(goog.vec.Mat4.getElement(transform, 1, 3)) + "px"
-      }
+      var style = element.style;
+      style.left = Math.round(goog.vec.Mat4.getElement(transform, 0, 3)) + "px";
+      style.top = Math.round(goog.vec.Mat4.getElement(transform, 1, 3)) + "px"
     }
   }
 };
@@ -17126,7 +17157,7 @@ ol.renderer.webgl.tilelayer.shader.Fragment = function() {
 };
 goog.inherits(ol.renderer.webgl.tilelayer.shader.Fragment, ol.webgl.shader.Fragment);
 goog.addSingletonGetter(ol.renderer.webgl.tilelayer.shader.Fragment);
-ol.renderer.webgl.tilelayer.shader.Fragment.DEBUG_SOURCE = "precision mediump float;\n//! NAMESPACE=ol.renderer.webgl.tilelayer\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! FRAGMENT\nuniform sampler2D u_texture;\n\nvoid main(void) {\n  gl_FragColor = texture2D(u_texture, v_texCoord);\n}\n\n";
+ol.renderer.webgl.tilelayer.shader.Fragment.DEBUG_SOURCE = "precision mediump float;\n//! NAMESPACE=ol.renderer.webgl.tilelayer.shader\n//! CLASS=ol.renderer.webgl.tilelayer.shader.\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! FRAGMENT\nuniform sampler2D u_texture;\n\nvoid main(void) {\n  gl_FragColor = texture2D(u_texture, v_texCoord);\n}\n\n";
 ol.renderer.webgl.tilelayer.shader.Fragment.OPTIMIZED_SOURCE = "precision mediump float;varying vec2 a;uniform sampler2D c;void main(){gl_FragColor=texture2D(c,a);}";
 ol.renderer.webgl.tilelayer.shader.Fragment.SOURCE = goog.DEBUG ? ol.renderer.webgl.tilelayer.shader.Fragment.DEBUG_SOURCE : ol.renderer.webgl.tilelayer.shader.Fragment.OPTIMIZED_SOURCE;
 ol.renderer.webgl.tilelayer.shader.Vertex = function() {
@@ -17134,17 +17165,15 @@ ol.renderer.webgl.tilelayer.shader.Vertex = function() {
 };
 goog.inherits(ol.renderer.webgl.tilelayer.shader.Vertex, ol.webgl.shader.Vertex);
 goog.addSingletonGetter(ol.renderer.webgl.tilelayer.shader.Vertex);
-ol.renderer.webgl.tilelayer.shader.Vertex.DEBUG_SOURCE = "//! NAMESPACE=ol.renderer.webgl.tilelayer\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! VERTEX\nattribute vec2 a_position;\nattribute vec2 a_texCoord;\nuniform vec4 u_tileOffset;\n\nvoid main(void) {\n  gl_Position = vec4(a_position * u_tileOffset.xy + u_tileOffset.zw, 0., 1.);\n  v_texCoord = a_texCoord;\n}\n\n\n";
+ol.renderer.webgl.tilelayer.shader.Vertex.DEBUG_SOURCE = "//! NAMESPACE=ol.renderer.webgl.tilelayer.shader\n//! CLASS=ol.renderer.webgl.tilelayer.shader.\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! VERTEX\nattribute vec2 a_position;\nattribute vec2 a_texCoord;\nuniform vec4 u_tileOffset;\n\nvoid main(void) {\n  gl_Position = vec4(a_position * u_tileOffset.xy + u_tileOffset.zw, 0., 1.);\n  v_texCoord = a_texCoord;\n}\n\n\n";
 ol.renderer.webgl.tilelayer.shader.Vertex.OPTIMIZED_SOURCE = "varying vec2 a;attribute vec2 c,d;uniform vec4 b;void main(){gl_Position=vec4(c*b.xy+b.zw,0,1);a=d;}";
 ol.renderer.webgl.tilelayer.shader.Vertex.SOURCE = goog.DEBUG ? ol.renderer.webgl.tilelayer.shader.Vertex.DEBUG_SOURCE : ol.renderer.webgl.tilelayer.shader.Vertex.OPTIMIZED_SOURCE;
-ol.renderer.webgl.tilelayer.shader.uniform = function() {
+ol.renderer.webgl.tilelayer.shader.Locations = function(gl, program) {
+  this.u_tileOffset = gl.getUniformLocation(program, goog.DEBUG ? "u_tileOffset" : "b");
+  this.u_texture = gl.getUniformLocation(program, goog.DEBUG ? "u_texture" : "c");
+  this.a_position = gl.getAttribLocation(program, goog.DEBUG ? "a_position" : "c");
+  this.a_texCoord = gl.getAttribLocation(program, goog.DEBUG ? "a_texCoord" : "d")
 };
-ol.renderer.webgl.tilelayer.shader.uniform.u_tileOffset = goog.DEBUG ? "u_tileOffset" : "b";
-ol.renderer.webgl.tilelayer.shader.uniform.u_texture = goog.DEBUG ? "u_texture" : "c";
-ol.renderer.webgl.tilelayer.shader.attribute = function() {
-};
-ol.renderer.webgl.tilelayer.shader.attribute.a_position = goog.DEBUG ? "a_position" : "c";
-ol.renderer.webgl.tilelayer.shader.attribute.a_texCoord = goog.DEBUG ? "a_texCoord" : "d";
 goog.provide("ol.structs.IntegerSet");
 goog.require("goog.asserts");
 ol.structs.IntegerSet = function(opt_arr) {
@@ -17532,7 +17561,7 @@ ol.renderer.webgl.TileLayer.prototype.renderFrame = function(frameState, layerSt
     var program = mapRenderer.getProgram(this.fragmentShader_, this.vertexShader_);
     gl.useProgram(program);
     if(goog.isNull(this.locations_)) {
-      this.locations_ = {a_position:gl.getAttribLocation(program, ol.renderer.webgl.tilelayer.shader.attribute.a_position), a_texCoord:gl.getAttribLocation(program, ol.renderer.webgl.tilelayer.shader.attribute.a_texCoord), u_tileOffset:gl.getUniformLocation(program, ol.renderer.webgl.tilelayer.shader.uniform.u_tileOffset), u_texture:gl.getUniformLocation(program, ol.renderer.webgl.tilelayer.shader.uniform.u_texture)}
+      this.locations_ = new ol.renderer.webgl.tilelayer.shader.Locations(gl, program)
     }
     mapRenderer.bindBuffer(goog.webgl.ARRAY_BUFFER, this.arrayBuffer_);
     gl.enableVertexAttribArray(this.locations_.a_position);
@@ -17607,35 +17636,59 @@ ol.renderer.webgl.TileLayer.prototype.renderFrame = function(frameState, layerSt
   goog.vec.Mat4.scale(texCoordMatrix, frameState.size.width * view2DState.resolution / (framebufferExtent.maxX - framebufferExtent.minX), frameState.size.height * view2DState.resolution / (framebufferExtent.maxY - framebufferExtent.minY), 1);
   goog.vec.Mat4.translate(texCoordMatrix, -0.5, -0.5, 0)
 };
-goog.provide("ol.renderer.webgl.map.shader");
+goog.provide("ol.renderer.webgl.map.shader.Color");
 goog.require("ol.webgl.shader");
-ol.renderer.webgl.map.shader.Fragment = function() {
-  goog.base(this, ol.renderer.webgl.map.shader.Fragment.SOURCE)
+ol.renderer.webgl.map.shader.ColorFragment = function() {
+  goog.base(this, ol.renderer.webgl.map.shader.ColorFragment.SOURCE)
 };
-goog.inherits(ol.renderer.webgl.map.shader.Fragment, ol.webgl.shader.Fragment);
-goog.addSingletonGetter(ol.renderer.webgl.map.shader.Fragment);
-ol.renderer.webgl.map.shader.Fragment.DEBUG_SOURCE = "precision mediump float;\n//! NAMESPACE=ol.renderer.webgl.map\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! FRAGMENT\n// @see https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/platform/graphics/filters/skia/SkiaImageFilterBuilder.cpp\nuniform mat4 u_colorMatrix;\nuniform float u_opacity;\nuniform sampler2D u_texture;\n\nvoid main(void) {\n  vec4 texColor = texture2D(u_texture, v_texCoord);\n  gl_FragColor.rgb = (u_colorMatrix * vec4(texColor.rgb, 1.)).rgb;\n  gl_FragColor.a = texColor.a * u_opacity;\n}\n\n";
-ol.renderer.webgl.map.shader.Fragment.OPTIMIZED_SOURCE = "precision mediump float;varying vec2 a;uniform mat4 d;uniform float e;uniform sampler2D f;void main(){vec4 g=texture2D(f,a);gl_FragColor.rgb=(d*vec4(g.rgb,1)).rgb;gl_FragColor.a=g.a*e;}";
-ol.renderer.webgl.map.shader.Fragment.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.Fragment.DEBUG_SOURCE : ol.renderer.webgl.map.shader.Fragment.OPTIMIZED_SOURCE;
-ol.renderer.webgl.map.shader.Vertex = function() {
-  goog.base(this, ol.renderer.webgl.map.shader.Vertex.SOURCE)
+goog.inherits(ol.renderer.webgl.map.shader.ColorFragment, ol.webgl.shader.Fragment);
+goog.addSingletonGetter(ol.renderer.webgl.map.shader.ColorFragment);
+ol.renderer.webgl.map.shader.ColorFragment.DEBUG_SOURCE = "precision mediump float;\n//! NAMESPACE=ol.renderer.webgl.map.shader.Color\n//! CLASS=ol.renderer.webgl.map.shader.Color\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! FRAGMENT\n// @see https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/platform/graphics/filters/skia/SkiaImageFilterBuilder.cpp\nuniform mat4 u_colorMatrix;\nuniform float u_opacity;\nuniform sampler2D u_texture;\n\nvoid main(void) {\n  vec4 texColor = texture2D(u_texture, v_texCoord);\n  gl_FragColor.rgb = (u_colorMatrix * vec4(texColor.rgb, 1.)).rgb;\n  gl_FragColor.a = texColor.a * u_opacity;\n}\n\n";
+ol.renderer.webgl.map.shader.ColorFragment.OPTIMIZED_SOURCE = "precision mediump float;varying vec2 a;uniform mat4 d;uniform float e;uniform sampler2D f;void main(){vec4 g=texture2D(f,a);gl_FragColor.rgb=(d*vec4(g.rgb,1)).rgb;gl_FragColor.a=g.a*e;}";
+ol.renderer.webgl.map.shader.ColorFragment.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.ColorFragment.DEBUG_SOURCE : ol.renderer.webgl.map.shader.ColorFragment.OPTIMIZED_SOURCE;
+ol.renderer.webgl.map.shader.ColorVertex = function() {
+  goog.base(this, ol.renderer.webgl.map.shader.ColorVertex.SOURCE)
 };
-goog.inherits(ol.renderer.webgl.map.shader.Vertex, ol.webgl.shader.Vertex);
-goog.addSingletonGetter(ol.renderer.webgl.map.shader.Vertex);
-ol.renderer.webgl.map.shader.Vertex.DEBUG_SOURCE = "//! NAMESPACE=ol.renderer.webgl.map\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! VERTEX\nattribute vec2 a_position;\nattribute vec2 a_texCoord;\n\nuniform mat4 u_texCoordMatrix;\nuniform mat4 u_projectionMatrix;\n\nvoid main(void) {\n  gl_Position = u_projectionMatrix * vec4(a_position, 0., 1.);\n  v_texCoord = (u_texCoordMatrix * vec4(a_texCoord, 0., 1.)).st;\n}\n\n\n";
-ol.renderer.webgl.map.shader.Vertex.OPTIMIZED_SOURCE = "varying vec2 a;attribute vec2 d,e;uniform mat4 b,c;void main(){gl_Position=c*vec4(d,0,1);a=(b*vec4(e,0,1)).st;}";
-ol.renderer.webgl.map.shader.Vertex.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.Vertex.DEBUG_SOURCE : ol.renderer.webgl.map.shader.Vertex.OPTIMIZED_SOURCE;
-ol.renderer.webgl.map.shader.uniform = function() {
+goog.inherits(ol.renderer.webgl.map.shader.ColorVertex, ol.webgl.shader.Vertex);
+goog.addSingletonGetter(ol.renderer.webgl.map.shader.ColorVertex);
+ol.renderer.webgl.map.shader.ColorVertex.DEBUG_SOURCE = "//! NAMESPACE=ol.renderer.webgl.map.shader.Color\n//! CLASS=ol.renderer.webgl.map.shader.Color\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! VERTEX\nattribute vec2 a_position;\nattribute vec2 a_texCoord;\n\nuniform mat4 u_texCoordMatrix;\nuniform mat4 u_projectionMatrix;\n\nvoid main(void) {\n  gl_Position = u_projectionMatrix * vec4(a_position, 0., 1.);\n  v_texCoord = (u_texCoordMatrix * vec4(a_texCoord, 0., 1.)).st;\n}\n\n\n";
+ol.renderer.webgl.map.shader.ColorVertex.OPTIMIZED_SOURCE = "varying vec2 a;attribute vec2 d,e;uniform mat4 b,c;void main(){gl_Position=c*vec4(d,0,1);a=(b*vec4(e,0,1)).st;}";
+ol.renderer.webgl.map.shader.ColorVertex.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.ColorVertex.DEBUG_SOURCE : ol.renderer.webgl.map.shader.ColorVertex.OPTIMIZED_SOURCE;
+ol.renderer.webgl.map.shader.Color.Locations = function(gl, program) {
+  this.u_texCoordMatrix = gl.getUniformLocation(program, goog.DEBUG ? "u_texCoordMatrix" : "b");
+  this.u_projectionMatrix = gl.getUniformLocation(program, goog.DEBUG ? "u_projectionMatrix" : "c");
+  this.u_colorMatrix = gl.getUniformLocation(program, goog.DEBUG ? "u_colorMatrix" : "d");
+  this.u_opacity = gl.getUniformLocation(program, goog.DEBUG ? "u_opacity" : "e");
+  this.u_texture = gl.getUniformLocation(program, goog.DEBUG ? "u_texture" : "f");
+  this.a_position = gl.getAttribLocation(program, goog.DEBUG ? "a_position" : "d");
+  this.a_texCoord = gl.getAttribLocation(program, goog.DEBUG ? "a_texCoord" : "e")
 };
-ol.renderer.webgl.map.shader.uniform.u_texCoordMatrix = goog.DEBUG ? "u_texCoordMatrix" : "b";
-ol.renderer.webgl.map.shader.uniform.u_projectionMatrix = goog.DEBUG ? "u_projectionMatrix" : "c";
-ol.renderer.webgl.map.shader.uniform.u_colorMatrix = goog.DEBUG ? "u_colorMatrix" : "d";
-ol.renderer.webgl.map.shader.uniform.u_opacity = goog.DEBUG ? "u_opacity" : "e";
-ol.renderer.webgl.map.shader.uniform.u_texture = goog.DEBUG ? "u_texture" : "f";
-ol.renderer.webgl.map.shader.attribute = function() {
+goog.provide("ol.renderer.webgl.map.shader.Default");
+goog.require("ol.webgl.shader");
+ol.renderer.webgl.map.shader.DefaultFragment = function() {
+  goog.base(this, ol.renderer.webgl.map.shader.DefaultFragment.SOURCE)
 };
-ol.renderer.webgl.map.shader.attribute.a_position = goog.DEBUG ? "a_position" : "d";
-ol.renderer.webgl.map.shader.attribute.a_texCoord = goog.DEBUG ? "a_texCoord" : "e";
+goog.inherits(ol.renderer.webgl.map.shader.DefaultFragment, ol.webgl.shader.Fragment);
+goog.addSingletonGetter(ol.renderer.webgl.map.shader.DefaultFragment);
+ol.renderer.webgl.map.shader.DefaultFragment.DEBUG_SOURCE = "precision mediump float;\n//! NAMESPACE=ol.renderer.webgl.map.shader.Default\n//! CLASS=ol.renderer.webgl.map.shader.Default\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! FRAGMENT\nuniform float u_opacity;\nuniform sampler2D u_texture;\n\nvoid main(void) {\n  vec4 texColor = texture2D(u_texture, v_texCoord);\n  gl_FragColor.rgb = texColor.rgb;\n  gl_FragColor.a = texColor.a * u_opacity;\n}\n\n";
+ol.renderer.webgl.map.shader.DefaultFragment.OPTIMIZED_SOURCE = "precision mediump float;varying vec2 a;uniform float d;uniform sampler2D e;void main(){vec4 f=texture2D(e,a);gl_FragColor.rgb=f.rgb;gl_FragColor.a=f.a*d;}";
+ol.renderer.webgl.map.shader.DefaultFragment.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.DefaultFragment.DEBUG_SOURCE : ol.renderer.webgl.map.shader.DefaultFragment.OPTIMIZED_SOURCE;
+ol.renderer.webgl.map.shader.DefaultVertex = function() {
+  goog.base(this, ol.renderer.webgl.map.shader.DefaultVertex.SOURCE)
+};
+goog.inherits(ol.renderer.webgl.map.shader.DefaultVertex, ol.webgl.shader.Vertex);
+goog.addSingletonGetter(ol.renderer.webgl.map.shader.DefaultVertex);
+ol.renderer.webgl.map.shader.DefaultVertex.DEBUG_SOURCE = "//! NAMESPACE=ol.renderer.webgl.map.shader.Default\n//! CLASS=ol.renderer.webgl.map.shader.Default\n\n\n//! COMMON\nvarying vec2 v_texCoord;\n\n\n//! VERTEX\nattribute vec2 a_position;\nattribute vec2 a_texCoord;\n\nuniform mat4 u_texCoordMatrix;\nuniform mat4 u_projectionMatrix;\n\nvoid main(void) {\n  gl_Position = u_projectionMatrix * vec4(a_position, 0., 1.);\n  v_texCoord = (u_texCoordMatrix * vec4(a_texCoord, 0., 1.)).st;\n}\n\n\n";
+ol.renderer.webgl.map.shader.DefaultVertex.OPTIMIZED_SOURCE = "varying vec2 a;attribute vec2 d,e;uniform mat4 b,c;void main(){gl_Position=c*vec4(d,0,1);a=(b*vec4(e,0,1)).st;}";
+ol.renderer.webgl.map.shader.DefaultVertex.SOURCE = goog.DEBUG ? ol.renderer.webgl.map.shader.DefaultVertex.DEBUG_SOURCE : ol.renderer.webgl.map.shader.DefaultVertex.OPTIMIZED_SOURCE;
+ol.renderer.webgl.map.shader.Default.Locations = function(gl, program) {
+  this.u_texCoordMatrix = gl.getUniformLocation(program, goog.DEBUG ? "u_texCoordMatrix" : "b");
+  this.u_projectionMatrix = gl.getUniformLocation(program, goog.DEBUG ? "u_projectionMatrix" : "c");
+  this.u_opacity = gl.getUniformLocation(program, goog.DEBUG ? "u_opacity" : "d");
+  this.u_texture = gl.getUniformLocation(program, goog.DEBUG ? "u_texture" : "e");
+  this.a_position = gl.getAttribLocation(program, goog.DEBUG ? "a_position" : "d");
+  this.a_texCoord = gl.getAttribLocation(program, goog.DEBUG ? "a_texCoord" : "e")
+};
 goog.provide("ol.renderer.webgl.Map");
 goog.require("goog.array");
 goog.require("goog.asserts");
@@ -17655,7 +17708,8 @@ goog.require("ol.layer.TileLayer");
 goog.require("ol.renderer.Map");
 goog.require("ol.renderer.webgl.ImageLayer");
 goog.require("ol.renderer.webgl.TileLayer");
-goog.require("ol.renderer.webgl.map.shader");
+goog.require("ol.renderer.webgl.map.shader.Color");
+goog.require("ol.renderer.webgl.map.shader.Default");
 goog.require("ol.structs.Buffer");
 goog.require("ol.structs.IntegerSet");
 goog.require("ol.structs.LRUCache");
@@ -17679,7 +17733,8 @@ ol.renderer.webgl.Map = function(container, map) {
   goog.asserts.assert(!goog.isNull(this.gl_));
   goog.events.listen(this.canvas_, ol.webgl.WebGLContextEventType.LOST, this.handleWebGLContextLost, false, this);
   goog.events.listen(this.canvas_, ol.webgl.WebGLContextEventType.RESTORED, this.handleWebGLContextRestored, false, this);
-  this.locations_ = null;
+  this.colorLocations_ = null;
+  this.defaultLocations_ = null;
   this.arrayBuffer_ = new ol.structs.Buffer([-1, -1, 0, 0, 1, -1, 1, 0, -1, 1, 0, 1, 1, 1, 1, 1]);
   this.bufferCache_ = {};
   this.shaderCache_ = {};
@@ -17704,8 +17759,6 @@ ol.renderer.webgl.Map = function(container, map) {
     }
   }, this);
   this.textureCacheFrameMarkerCount_ = 0;
-  this.fragmentShader_ = ol.renderer.webgl.map.shader.Fragment.getInstance();
-  this.vertexShader_ = ol.renderer.webgl.map.shader.Vertex.getInstance();
   this.initializeGL_()
 };
 goog.inherits(ol.renderer.webgl.Map, ol.renderer.Map);
@@ -17763,7 +17816,7 @@ ol.renderer.webgl.Map.prototype.createLayerRenderer = function(layer) {
     if(layer instanceof ol.layer.ImageLayer) {
       layerRenderer = new ol.renderer.webgl.ImageLayer(this, layer)
     }else {
-      goog.asserts.assert(false)
+      goog.asserts.fail()
     }
   }
   return layerRenderer
@@ -17860,7 +17913,8 @@ ol.renderer.webgl.Map.prototype.getTileTextureQueue = function() {
 };
 ol.renderer.webgl.Map.prototype.handleWebGLContextLost = function(event) {
   event.preventDefault();
-  this.locations_ = null;
+  this.colorLocations_ = null;
+  this.defaultLocations_ = null;
   this.bufferCache_ = {};
   this.shaderCache_ = {};
   this.programCache_ = {};
@@ -17920,28 +17974,55 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
   gl.clear(goog.webgl.COLOR_BUFFER_BIT);
   gl.enable(goog.webgl.BLEND);
   gl.viewport(0, 0, size.width, size.height);
-  var program = this.getProgram(this.fragmentShader_, this.vertexShader_);
-  gl.useProgram(program);
-  if(goog.isNull(this.locations_)) {
-    this.locations_ = {a_position:gl.getAttribLocation(program, ol.renderer.webgl.map.shader.attribute.a_position), a_texCoord:gl.getAttribLocation(program, ol.renderer.webgl.map.shader.attribute.a_texCoord), u_colorMatrix:gl.getUniformLocation(program, ol.renderer.webgl.map.shader.uniform.u_colorMatrix), u_texCoordMatrix:gl.getUniformLocation(program, ol.renderer.webgl.map.shader.uniform.u_texCoordMatrix), u_projectionMatrix:gl.getUniformLocation(program, ol.renderer.webgl.map.shader.uniform.u_projectionMatrix), 
-    u_opacity:gl.getUniformLocation(program, ol.renderer.webgl.map.shader.uniform.u_opacity), u_texture:gl.getUniformLocation(program, ol.renderer.webgl.map.shader.uniform.u_texture)}
-  }
   this.bindBuffer(goog.webgl.ARRAY_BUFFER, this.arrayBuffer_);
-  gl.enableVertexAttribArray(this.locations_.a_position);
-  gl.vertexAttribPointer(this.locations_.a_position, 2, goog.webgl.FLOAT, false, 16, 0);
-  gl.enableVertexAttribArray(this.locations_.a_texCoord);
-  gl.vertexAttribPointer(this.locations_.a_texCoord, 2, goog.webgl.FLOAT, false, 16, 8);
-  gl.uniform1i(this.locations_.u_texture, 0);
+  var currentProgram = null;
+  var locations;
   goog.array.forEach(frameState.layersArray, function(layer) {
     var layerState = frameState.layerStates[goog.getUid(layer)];
     if(!layerState.visible || !layerState.ready) {
       return
     }
+    var useColor = layerState.brightness || layerState.contrast != 1 || layerState.hue || layerState.saturation != 1;
+    var fragmentShader, vertexShader;
+    if(useColor) {
+      fragmentShader = ol.renderer.webgl.map.shader.ColorFragment.getInstance();
+      vertexShader = ol.renderer.webgl.map.shader.ColorVertex.getInstance()
+    }else {
+      fragmentShader = ol.renderer.webgl.map.shader.DefaultFragment.getInstance();
+      vertexShader = ol.renderer.webgl.map.shader.DefaultVertex.getInstance()
+    }
+    var program = this.getProgram(fragmentShader, vertexShader);
+    if(program != currentProgram) {
+      gl.useProgram(program);
+      currentProgram = program;
+      if(useColor) {
+        if(goog.isNull(this.colorLocations_)) {
+          locations = new ol.renderer.webgl.map.shader.Color.Locations(gl, program);
+          this.colorLocations_ = locations
+        }else {
+          locations = this.colorLocations_
+        }
+      }else {
+        if(goog.isNull(this.defaultLocations_)) {
+          locations = new ol.renderer.webgl.map.shader.Default.Locations(gl, program);
+          this.defaultLocations_ = locations
+        }else {
+          locations = this.defaultLocations_
+        }
+      }
+      gl.enableVertexAttribArray(locations.a_position);
+      gl.vertexAttribPointer(locations.a_position, 2, goog.webgl.FLOAT, false, 16, 0);
+      gl.enableVertexAttribArray(locations.a_texCoord);
+      gl.vertexAttribPointer(locations.a_texCoord, 2, goog.webgl.FLOAT, false, 16, 8);
+      gl.uniform1i(locations.u_texture, 0)
+    }
     var layerRenderer = this.getLayerRenderer(layer);
-    gl.uniformMatrix4fv(this.locations_.u_texCoordMatrix, false, layerRenderer.getTexCoordMatrix());
-    gl.uniformMatrix4fv(this.locations_.u_projectionMatrix, false, layerRenderer.getProjectionMatrix());
-    gl.uniformMatrix4fv(this.locations_.u_colorMatrix, false, layerRenderer.getColorMatrix());
-    gl.uniform1f(this.locations_.u_opacity, layer.getOpacity());
+    gl.uniformMatrix4fv(locations.u_texCoordMatrix, false, layerRenderer.getTexCoordMatrix());
+    gl.uniformMatrix4fv(locations.u_projectionMatrix, false, layerRenderer.getProjectionMatrix());
+    if(useColor) {
+      gl.uniformMatrix4fv(locations.u_colorMatrix, false, layerRenderer.getColorMatrix())
+    }
+    gl.uniform1f(locations.u_opacity, layer.getOpacity());
     gl.bindTexture(goog.webgl.TEXTURE_2D, layerRenderer.getTexture());
     gl.drawArrays(goog.webgl.TRIANGLE_STRIP, 0, 4)
   }, this);
@@ -18359,7 +18440,7 @@ ol.Map.createOptionsInternal = function(options) {
     if(goog.isArray(options.layers)) {
       layers = new ol.Collection(goog.array.clone(options.layers))
     }else {
-      goog.asserts.assert(options.layers instanceof ol.Collection);
+      goog.asserts.assertInstanceof(options.layers, ol.Collection);
       layers = options.layers
     }
   }else {
@@ -18854,7 +18935,7 @@ ol.control.ScaleLine.prototype.updateElement_ = function(frameState) {
               }
             }
           }else {
-            goog.asserts.assert(false)
+            goog.asserts.fail()
           }
         }
       }
@@ -19294,7 +19375,6 @@ goog.fx.DragEvent = function(type, dragobj, clientX, clientY, browserEvent, opt_
 goog.inherits(goog.fx.DragEvent, goog.events.Event);
 goog.provide("ol.control.ZoomSlider");
 goog.require("goog.array");
-goog.require("goog.asserts");
 goog.require("goog.dom");
 goog.require("goog.dom.TagName");
 goog.require("goog.events");
@@ -19306,11 +19386,8 @@ goog.require("goog.math.Rect");
 goog.require("goog.style");
 goog.require("ol.control.Control");
 goog.require("ol.css");
+ol.control.ZOOMSLIDER_ANIMATION_DURATION = 200;
 ol.control.ZoomSlider = function(options) {
-  this.maxResolution_ = goog.isDef(options.maxResolution) ? options.maxResolution : ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION;
-  this.minResolution_ = goog.isDef(options.minResolution) ? options.minResolution : ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION;
-  goog.asserts.assert(this.minResolution_ < this.maxResolution_, "minResolution must be smaller than maxResolution.");
-  this.range_ = this.maxResolution_ - this.minResolution_;
   this.currentResolution_;
   this.direction_ = ol.control.ZoomSlider.direction.VERTICAL;
   this.draggerListenerKeys_ = null;
@@ -19323,13 +19400,14 @@ goog.inherits(ol.control.ZoomSlider, ol.control.Control);
 ol.control.ZoomSlider.direction = {VERTICAL:0, HORIZONTAL:1};
 ol.control.ZoomSlider.CSS_CLASS_CONTAINER = "ol-zoomslider";
 ol.control.ZoomSlider.CSS_CLASS_THUMB = ol.control.ZoomSlider.CSS_CLASS_CONTAINER + "-thumb";
-ol.control.ZoomSlider.DEFAULT_MIN_RESOLUTION = 0.5971642833948135;
-ol.control.ZoomSlider.DEFAULT_MAX_RESOLUTION = 156543.0339;
 ol.control.ZoomSlider.prototype.setMap = function(map) {
   goog.base(this, "setMap", map);
-  this.currentResolution_ = map.getView().getResolution();
   this.initSlider_();
-  this.positionThumbForResolution_(this.currentResolution_)
+  var resolution = map.getView().getView2D().getResolution();
+  if(goog.isDef(resolution)) {
+    this.currentResolution_ = resolution;
+    this.positionThumbForResolution_(resolution)
+  }
 };
 ol.control.ZoomSlider.prototype.initSlider_ = function() {
   var container = this.element, thumb = goog.dom.getFirstElementChild(container), elemSize = goog.style.getContentBoxSize(container), thumbBounds = goog.style.getBounds(thumb), thumbMargins = goog.style.getMarginBox(thumb), thumbBorderBox = goog.style.getBorderBox(thumb), w = elemSize.width - thumbMargins.left - thumbMargins.right - thumbBorderBox.left - thumbBorderBox.right - thumbBounds.width, h = elemSize.height - thumbMargins.top - thumbMargins.bottom - thumbBorderBox.top - thumbBorderBox.bottom - 
@@ -19372,19 +19450,24 @@ ol.control.ZoomSlider.prototype.amountDragged_ = function(e) {
   return amount
 };
 ol.control.ZoomSlider.prototype.resolutionForAmount_ = function(amount) {
-  var saneAmount = goog.math.clamp(amount, 0, 1);
-  return this.minResolution_ + this.range_ * saneAmount
+  amount = (goog.math.clamp(amount, 0, 1) - 1) * -1;
+  var fn = this.getMap().getView().getView2D().getResolutionForValueFunction();
+  return fn(amount)
 };
 ol.control.ZoomSlider.prototype.amountForResolution_ = function(res) {
-  var saneRes = goog.math.clamp(res, this.minResolution_, this.maxResolution_);
-  return(saneRes - this.minResolution_) / this.range_
+  var fn = this.getMap().getView().getView2D().getValueForResolutionFunction();
+  var value = fn(res);
+  return(value - 1) * -1
 };
 ol.control.ZoomSlider.prototype.handleSliderChange_ = function(e) {
   var map = this.getMap(), amountDragged = this.amountDragged_(e), res = this.resolutionForAmount_(amountDragged);
-  goog.asserts.assert(res >= this.minResolution_ && res <= this.maxResolution_, "calculated new resolution is in allowed bounds.");
-  if(res !== this.currentResolution_) {
-    this.currentResolution_ = res;
-    map.getView().setResolution(res)
+  if(e.type === goog.fx.Dragger.EventType.DRAG) {
+    if(res !== this.currentResolution_) {
+      this.currentResolution_ = res;
+      map.getView().getView2D().zoomWithoutConstraints(map, res)
+    }
+  }else {
+    map.getView().getView2D().zoom(map, this.currentResolution_, undefined, ol.control.ZOOMSLIDER_ANIMATION_DURATION)
   }
 };
 ol.control.ZoomSlider.prototype.createDraggable_ = function(elem) {
@@ -19573,7 +19656,7 @@ ol.interaction.DragRotateAndZoom.prototype.handleDrag = function(mapBrowserEvent
   var theta = Math.atan2(delta.y, delta.x);
   var magnitude = delta.magnitude();
   var view = map.getView();
-  goog.asserts.assert(view instanceof ol.View2D);
+  goog.asserts.assertInstanceof(view, ol.View2D);
   map.requestRenderFrame();
   if(goog.isDef(this.lastAngle_)) {
     var angleDelta = theta - this.lastAngle_;
@@ -20006,7 +20089,7 @@ ol.parser.ogc.ExceptionReport = function() {
 };
 goog.inherits(ol.parser.ogc.ExceptionReport, ol.parser.XML);
 ol.parser.ogc.ExceptionReport.prototype.read = function(data) {
-  if(typeof data == "string") {
+  if(goog.isString(data)) {
     data = goog.dom.xml.loadXml(data)
   }
   var exceptionInfo = {};
@@ -20197,12 +20280,12 @@ ol.parser.ogc.Versioned = function(opt_options) {
   this.defaultVersion = options.defaultVersion || null;
   this.version = options.version;
   this.profile = options.profile;
-  if(options.allowFallback !== undefined) {
+  if(goog.isDef(options.allowFallback)) {
     this.allowFallback = options.allowFallback
   }else {
     this.allowFallback = false
   }
-  if(options.stringifyOutput !== undefined) {
+  if(goog.isDef(options.stringifyOutput)) {
     this.stringifyOutput = options.stringifyOutput
   }else {
     this.stringifyOutput = false
@@ -20252,7 +20335,7 @@ ol.parser.ogc.Versioned.prototype.write = function(obj, opt_options) {
   }
 };
 ol.parser.ogc.Versioned.prototype.read = function(data, opt_options) {
-  if(typeof data == "string") {
+  if(goog.isString(data)) {
     data = goog.dom.xml.loadXml(data)
   }
   var root = data.documentElement;
@@ -20412,10 +20495,10 @@ ol.parser.ogc.WMSCapabilities_v1 = function() {
         layer["prefix"] = parts[0]
       }
       capability["layers"].push(layer);
-      if(layer["formats"] === undefined) {
+      if(!goog.isDef(layer["formats"])) {
         layer["formats"] = request["getmap"]["formats"]
       }
-      if(layer["infoFormats"] === undefined && gfi) {
+      if(!goog.isDef(layer["infoFormats"]) && gfi) {
         layer["infoFormats"] = gfi["formats"]
       }
     }
@@ -20460,7 +20543,7 @@ ol.parser.ogc.WMSCapabilities_v1 = function() {
 };
 goog.inherits(ol.parser.ogc.WMSCapabilities_v1, ol.parser.XML);
 ol.parser.ogc.WMSCapabilities_v1.prototype.read = function(data) {
-  if(typeof data == "string") {
+  if(goog.isString(data)) {
     data = goog.dom.xml.loadXml(data)
   }
   if(data && data.nodeType == 9) {
@@ -20828,7 +20911,7 @@ ol.parser.ogc.WMTSCapabilities_v1_0_0 = function() {
 };
 goog.inherits(ol.parser.ogc.WMTSCapabilities_v1_0_0, ol.parser.XML);
 ol.parser.ogc.WMTSCapabilities_v1_0_0.prototype.read = function(data) {
-  if(typeof data == "string") {
+  if(goog.isString(data)) {
     data = goog.dom.xml.loadXml(data)
   }
   if(data && data.nodeType == 9) {
@@ -22155,7 +22238,7 @@ ol.source.WMTS.optionsFromCapabilities = function(wmtsCap, layer) {
       goog.asserts.assert(urls.length > 0);
       break;
     default:
-      goog.asserts.assert(false)
+      goog.asserts.fail()
   }
   return{urls:urls, layer:layer, matrixSet:matrixSet, format:format, projection:projection, requestEncoding:requestEncoding, tileGrid:tileGrid, style:style, dimensions:dimensions}
 };
@@ -22343,7 +22426,8 @@ goog.require("ol.renderer.webgl.Layer");
 goog.require("ol.renderer.webgl.Map");
 goog.require("ol.renderer.webgl.SUPPORTED");
 goog.require("ol.renderer.webgl.TileLayer");
-goog.require("ol.renderer.webgl.map.shader");
+goog.require("ol.renderer.webgl.map.shader.Color");
+goog.require("ol.renderer.webgl.map.shader.Default");
 goog.require("ol.renderer.webgl.tilelayer.shader");
 goog.require("ol.source.BingMaps");
 goog.require("ol.source.DebugTileSource");
