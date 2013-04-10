@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpenLayers: Class: ol.tilegrid.TileGrid</title>
+    <title>OpenLayers 3 API Documentation - Class: ol.tilegrid.TileGrid</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -11,14 +11,29 @@
     <![endif]-->
     <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../resources/layout.css" type="text/css">
+    <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
 </head>
 
 <body>
 
-<div id="main">
-    
-    <h1 class="page-title">Class: ol.tilegrid.TileGrid</h1>
-    
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.tilegrid.TileGrid</a>
+      <ul class="nav pull-right">
+        <li><iframe class="github-watch-button" src="http://ghbtns.com/github-btn.html?user=openlayers&repo=ol3&type=watch&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></iframe></li>
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-hashtags="openlayers">&nbsp;</a></li>
+        <li><div class="g-plusone-wrapper"><div class="g-plusone" data-size="medium" data-annotation="none"></div></div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="container-fluid">
+<div id="main">    
     
 
 
@@ -27,6 +42,8 @@
     
 <header>
     <h2>
+        <span class="ancestors"><a href="ol.html">ol</a><a href="ol.tilegrid.html">.tilegrid</a>.</span>
+    
     ol.tilegrid.TileGrid
     </h2>
     
@@ -77,13 +94,13 @@
 	
         <tr>
             
-                <td class="name"><code>tileGridOptions</code></td>
+                <td class="name"><code>options</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">ol.tilegrid.TileGridOptions</span>
+<span class="param-type"><a href="ol.tilegrid.html#TileGridOptions">ol.tilegrid.TileGridOptions</a></span>
 
 
             
@@ -93,7 +110,7 @@
             
             
             
-            <td class="description last">Tile grid options.</td>
+            <td class="description last"><p>Tile grid options.</p></td>
         </tr>
 	
 	
@@ -226,7 +243,7 @@
             
             
             
-            <td class="description last">Tile coordinate.</td>
+            <td class="description last"><p>Tile coordinate.</p></td>
         </tr>
 	
 	
@@ -239,7 +256,7 @@
             <td class="type">
             
                 
-<span class="param-type">function(this: T, number, ol.TileRange): boolean</span>
+<span class="param-type">function</span>
 
 
             
@@ -255,7 +272,7 @@
             
             
             
-            <td class="description last">Callback.</td>
+            <td class="description last"><p>Callback.</p></td>
         </tr>
 	
 	
@@ -286,7 +303,69 @@
             
             
             
-            <td class="description last">(Optional) Object.</td>
+            <td class="description last">(Optional) <p>Object.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileRange</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileRange.html">ol.TileRange</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary ol.TileRange object.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>extent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary ol.Extent object.</p></td>
         </tr>
 	
 	
@@ -316,7 +395,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 102</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 111</li></ul></dd>
 	
     
     
@@ -332,6 +411,28 @@
     
     
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Callback succeeded.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">boolean</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
 </dd>
@@ -393,7 +494,7 @@
             
             
             
-            <td class="description last">Z.</td>
+            <td class="description last"><p>Z.</p></td>
         </tr>
 	
 	
@@ -423,7 +524,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 120</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 130</li></ul></dd>
 	
     
     
@@ -443,7 +544,7 @@
     
             
 <div class="param-desc">
-    Origin.
+    <p>Origin.</p>
 </div>
 
 
@@ -454,7 +555,7 @@
 	</dt>
 	<dd>
 		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">ol.Coordinate</span>
 
 
 	</dd>
@@ -522,7 +623,7 @@
             
             
             
-            <td class="description last">Tile coordinate.</td>
+            <td class="description last"><p>Tile coordinate.</p></td>
         </tr>
 	
 	
@@ -545,7 +646,7 @@
             
             
             
-            <td class="description last">Resolution.</td>
+            <td class="description last"><p>Resolution.</p></td>
         </tr>
 	
 	
@@ -575,7 +676,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 136</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 146</li></ul></dd>
 	
     
     
@@ -595,7 +696,7 @@
     
             
 <div class="param-desc">
-    Pixel bounds.
+    <p>Pixel bounds.</p>
 </div>
 
 
@@ -674,7 +775,7 @@
             
             
             
-            <td class="description last">Z.</td>
+            <td class="description last"><p>Z.</p></td>
         </tr>
 	
 	
@@ -704,7 +805,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 155</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 164</li></ul></dd>
 	
     
     
@@ -724,7 +825,7 @@
     
             
 <div class="param-desc">
-    Resolution.
+    <p>Resolution.</p>
 </div>
 
 
@@ -785,7 +886,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 164</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 173</li></ul></dd>
 	
     
     
@@ -805,7 +906,7 @@
     
             
 <div class="param-desc">
-    Resolutions.
+    <p>Resolutions.</p>
 </div>
 
 
@@ -884,7 +985,7 @@
             
             
             
-            <td class="description last">Tile coordinate.</td>
+            <td class="description last"><p>Tile coordinate.</p></td>
         </tr>
 	
 	
@@ -914,7 +1015,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 216</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 253</li></ul></dd>
 	
     
     
@@ -934,7 +1035,7 @@
     
             
 <div class="param-desc">
-    Tile center.
+    <p>Tile center.</p>
 </div>
 
 
@@ -945,7 +1046,206 @@
 	</dt>
 	<dd>
 		
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">ol.Coordinate</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getTileCoordChildTileRange"><span class="type-signature"></span>getTileCoordChildTileRange</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileCoord</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileCoord.html">ol.TileCoord</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"><p>Tile coordinate.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileRange</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileRange.html">ol.TileRange</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary ol.TileRange object.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>extent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary ol.Extent object.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 184</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Tile range.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type"><a href="ol.TileRange.html">ol.TileRange</a></span>
 
 
 	</dd>
@@ -985,6 +1285,8 @@
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1010,10 +1312,47 @@
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Tile coordinate.</td>
+            
+            <td class="description last"><p>Tile coordinate.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>extent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary extent object.</p></td>
         </tr>
 	
 	
@@ -1043,7 +1382,7 @@
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 230</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 269</li></ul></dd>
 	
     
     
@@ -1063,7 +1402,7 @@
     
             
 <div class="param-desc">
-    Extent.
+    <p>Extent.</p>
 </div>
 
 
@@ -1096,9 +1435,9 @@
     
     
     <div class="description">
-        Get the tile coordinate for the given map coordinate and resolution.  This
+        <p>Get the tile coordinate for the given map coordinate and resolution.  This
 method considers that coordinates that intersect tile boundaries should be
-assigned the higher tile coordinate.
+assigned the higher tile coordinate.</p>
     </div>
     
 
@@ -1120,6 +1459,8 @@ assigned the higher tile coordinate.
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1138,17 +1479,23 @@ assigned the higher tile coordinate.
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">ol.Coordinate</span>
 
 
             
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Coordinate.</td>
+            
+            <td class="description last"><p>Coordinate.</p></td>
         </tr>
 	
 	
@@ -1168,10 +1515,47 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Resolution.</td>
+            
+            <td class="description last"><p>Resolution.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileCoord</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileCoord.html">ol.TileCoord</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Destination ol.TileCoord object.</p></td>
         </tr>
 	
 	
@@ -1201,7 +1585,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 251</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 292</li></ul></dd>
 	
     
     
@@ -1221,7 +1605,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile coordinate.
+    <p>Tile coordinate.</p>
 </div>
 
 
@@ -1272,6 +1656,8 @@ assigned the higher tile coordinate.
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1290,17 +1676,23 @@ assigned the higher tile coordinate.
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.Coordinate.html">ol.Coordinate</a></span>
+<span class="param-type">ol.Coordinate</span>
 
 
             
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Coordinate.</td>
+            
+            <td class="description last"><p>Coordinate.</p></td>
         </tr>
 	
 	
@@ -1320,10 +1712,47 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Z.</td>
+            
+            <td class="description last"><p>Z.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileCoord</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileCoord.html">ol.TileCoord</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Destination ol.TileCoord object.</p></td>
         </tr>
 	
 	
@@ -1353,7 +1782,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 293</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 338</li></ul></dd>
 	
     
     
@@ -1373,7 +1802,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile coordinate.
+    <p>Tile coordinate.</p>
 </div>
 
 
@@ -1452,7 +1881,7 @@ assigned the higher tile coordinate.
             
             
             
-            <td class="description last">Tile coordinate.</td>
+            <td class="description last"><p>Tile coordinate.</p></td>
         </tr>
 	
 	
@@ -1482,7 +1911,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 304</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 350</li></ul></dd>
 	
     
     
@@ -1502,7 +1931,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile resolution.
+    <p>Tile resolution.</p>
 </div>
 
 
@@ -1553,6 +1982,8 @@ assigned the higher tile coordinate.
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1578,10 +2009,16 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Z.</td>
+            
+            <td class="description last"><p>Z.</p></td>
         </tr>
 	
 	
@@ -1601,10 +2038,47 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Tile range.</td>
+            
+            <td class="description last"><p>Tile range.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>extent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.Extent.html">ol.Extent</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary ol.Extent object.</p></td>
         </tr>
 	
 	
@@ -1634,7 +2108,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 174</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 202</li></ul></dd>
 	
     
     
@@ -1654,7 +2128,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Extent.
+    <p>Extent.</p>
 </div>
 
 
@@ -1705,6 +2179,8 @@ assigned the higher tile coordinate.
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1730,10 +2206,16 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Extent.</td>
+            
+            <td class="description last"><p>Extent.</p></td>
         </tr>
 	
 	
@@ -1753,10 +2235,47 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Resolution.</td>
+            
+            <td class="description last"><p>Resolution.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileRange</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileRange.html">ol.TileRange</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary tile range object.</p></td>
         </tr>
 	
 	
@@ -1786,7 +2305,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 191</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 221</li></ul></dd>
 	
     
     
@@ -1806,7 +2325,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile range.
+    <p>Tile range.</p>
 </div>
 
 
@@ -1857,6 +2376,8 @@ assigned the higher tile coordinate.
 		<th>Type</th>
 		
 		
+		<th>Argument</th>
+		
 		
 		
 		
@@ -1882,10 +2403,16 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Extent.</td>
+            
+            <td class="description last"><p>Extent.</p></td>
         </tr>
 	
 	
@@ -1905,10 +2432,47 @@ assigned the higher tile coordinate.
             </td>
             
             
+                <td class="attributes">
+                
+                    
+                
+                </td>
             
             
             
-            <td class="description last">Z.</td>
+            
+            <td class="description last"><p>Z.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tileRange</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.TileRange.html">ol.TileRange</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Temporary tile range object.</p></td>
         </tr>
 	
 	
@@ -1938,7 +2502,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 206</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 241</li></ul></dd>
 	
     
     
@@ -1958,7 +2522,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile range.
+    <p>Tile range.</p>
 </div>
 
 
@@ -2037,7 +2601,7 @@ assigned the higher tile coordinate.
             
             
             
-            <td class="description last">Z.</td>
+            <td class="description last"><p>Z.</p></td>
         </tr>
 	
 	
@@ -2067,7 +2631,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 314</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 360</li></ul></dd>
 	
     
     
@@ -2087,7 +2651,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Tile size.
+    <p>Tile size.</p>
 </div>
 
 
@@ -2166,7 +2730,7 @@ assigned the higher tile coordinate.
             
             
             
-            <td class="description last">Resolution.</td>
+            <td class="description last"><p>Resolution.</p></td>
         </tr>
 	
 	
@@ -2196,7 +2760,7 @@ assigned the higher tile coordinate.
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 329</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>tilegrid.js, line 375</li></ul></dd>
 	
     
     
@@ -2216,7 +2780,7 @@ assigned the higher tile coordinate.
     
             
 <div class="param-desc">
-    Z.
+    <p>Z.</p>
 </div>
 
 
@@ -2254,17 +2818,17 @@ assigned the higher tile coordinate.
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="112d994edd.html">Implements a Least-Recently-Used cache where the keys do not conflict with
-Object's properties (e.g. 'hasOwnProperty' is not allowed as a key). Expiring
-items from the cache is the responsibility of the user.</a></li><li><a href="ol.AnchoredElement.html">ol.AnchoredElement</a></li><li><a href="ol.Attribution.html">ol.Attribution</a></li><li><a href="ol.Collection.html">ol.Collection</a></li><li><a href="ol.CollectionEvent.html">ol.CollectionEvent</a></li><li><a href="ol.Color.html">ol.Color</a></li><li><a href="ol.Constraints.html">ol.Constraints</a></li><li><a href="ol.Coordinate.html">ol.Coordinate</a></li><li><a href="ol.Ellipsoid.html">ol.Ellipsoid</a></li><li><a href="ol.Expression.html">ol.Expression</a></li><li><a href="ol.ExpressionLiteral.html">ol.ExpressionLiteral</a></li><li><a href="ol.Extent.html">ol.Extent</a></li><li><a href="ol.Feature.html">ol.Feature</a></li><li><a href="ol.Geolocation.html">ol.Geolocation</a></li><li><a href="ol.Image.html">ol.Image</a></li><li><a href="ol.ImageTile.html">ol.ImageTile</a></li><li><a href="ol.Kinetic.html">ol.Kinetic</a></li><li><a href="ol.Map.html">ol.Map</a></li><li><a href="ol.MapBrowserEvent.html">ol.MapBrowserEvent</a></li><li><a href="ol.MapBrowserEventHandler.html">ol.MapBrowserEventHandler</a></li><li><a href="ol.MapEvent.html">ol.MapEvent</a></li><li><a href="ol.Object.html">ol.Object</a></li><li><a href="ol.Pixel.html">ol.Pixel</a></li><li><a href="ol.PixelBounds.html">ol.PixelBounds</a></li><li><a href="ol.Projection.html">ol.Projection</a></li><li><a href="ol.Rectangle.html">ol.Rectangle</a></li><li><a href="ol.Size.html">ol.Size</a></li><li><a href="ol.Sphere.html">ol.Sphere</a></li><li><a href="ol.Tile.html">ol.Tile</a></li><li><a href="ol.TileCache.html">ol.TileCache</a></li><li><a href="ol.TileCoord.html">ol.TileCoord</a></li><li><a href="ol.TileQueue.html">ol.TileQueue</a></li><li><a href="ol.TileRange.html">ol.TileRange</a></li><li><a href="ol.View.html">ol.View</a></li><li><a href="ol.View2D.html">ol.View2D</a></li><li><a href="ol.control.Attribution.html">ol.control.Attribution</a></li><li><a href="ol.control.Control.html">ol.control.Control</a></li><li><a href="ol.control.DragBox.html">ol.control.DragBox</a></li><li><a href="ol.control.MousePosition.html">ol.control.MousePosition</a></li><li><a href="ol.control.ScaleLine.html">ol.control.ScaleLine</a></li><li><a href="ol.control.Zoom.html">ol.control.Zoom</a></li><li><a href="ol.control.ZoomSlider.html">ol.control.ZoomSlider</a></li><li><a href="ol.dom.Input.html">ol.dom.Input</a></li><li><a href="ol.filter.Extent.html">ol.filter.Extent</a></li><li><a href="ol.filter.Filter.html">ol.filter.Filter</a></li><li><a href="ol.filter.Geometry.html">ol.filter.Geometry</a></li><li><a href="ol.filter.Logical.html">ol.filter.Logical</a></li><li><a href="ol.geom.AbstractCollection.html">ol.geom.AbstractCollection</a></li><li><a href="ol.geom.Geometry.html">ol.geom.Geometry</a></li><li><a href="ol.geom.GeometryCollection.html">ol.geom.GeometryCollection</a></li><li><a href="ol.geom.LineString.html">ol.geom.LineString</a></li><li><a href="ol.geom.LinearRing.html">ol.geom.LinearRing</a></li><li><a href="ol.geom.MultiLineString.html">ol.geom.MultiLineString</a></li><li><a href="ol.geom.MultiPoint.html">ol.geom.MultiPoint</a></li><li><a href="ol.geom.MultiPolygon.html">ol.geom.MultiPolygon</a></li><li><a href="ol.geom.Point.html">ol.geom.Point</a></li><li><a href="ol.geom.Polygon.html">ol.geom.Polygon</a></li><li><a href="ol.geom.SharedVertices.html">ol.geom.SharedVertices</a></li><li><a href="ol.interaction.DblClickZoom.html">ol.interaction.DblClickZoom</a></li><li><a href="ol.interaction.Drag.html">ol.interaction.Drag</a></li><li><a href="ol.interaction.DragPan.html">ol.interaction.DragPan</a></li><li><a href="ol.interaction.DragRotate.html">ol.interaction.DragRotate</a></li><li><a href="ol.interaction.DragRotateAndZoom.html">ol.interaction.DragRotateAndZoom</a></li><li><a href="ol.interaction.DragZoom.html">ol.interaction.DragZoom</a></li><li><a href="ol.interaction.Interaction.html">ol.interaction.Interaction</a></li><li><a href="ol.interaction.Keyboard.html">ol.interaction.Keyboard</a></li><li><a href="ol.interaction.KeyboardPan.html">ol.interaction.KeyboardPan</a></li><li><a href="ol.interaction.KeyboardZoom.html">ol.interaction.KeyboardZoom</a></li><li><a href="ol.interaction.MouseWheelZoom.html">ol.interaction.MouseWheelZoom</a></li><li><a href="ol.interaction.Touch.html">ol.interaction.Touch</a></li><li><a href="ol.interaction.TouchPan.html">ol.interaction.TouchPan</a></li><li><a href="ol.interaction.TouchRotate.html">ol.interaction.TouchRotate</a></li><li><a href="ol.interaction.TouchZoom.html">ol.interaction.TouchZoom</a></li><li><a href="ol.layer.FeatureCache.html">ol.layer.FeatureCache</a></li><li><a href="ol.layer.ImageLayer.html">ol.layer.ImageLayer</a></li><li><a href="ol.layer.Layer.html">ol.layer.Layer</a></li><li><a href="ol.layer.TileLayer.html">ol.layer.TileLayer</a></li><li><a href="ol.layer.Vector.html">ol.layer.Vector</a></li><li><a href="ol.parser.GeoJSON.html">ol.parser.GeoJSON</a></li><li><a href="ol.parser.Parser.html">ol.parser.Parser</a></li><li><a href="ol.parser.XML.html">ol.parser.XML</a></li><li><a href="ol.parser.ogc.ExceptionReport.html">ol.parser.ogc.ExceptionReport</a></li><li><a href="ol.parser.ogc.OWSCommon_v1.html">ol.parser.ogc.OWSCommon_v1</a></li><li><a href="ol.parser.ogc.OWSCommon_v1_1_0.html">ol.parser.ogc.OWSCommon_v1_1_0</a></li><li><a href="ol.parser.ogc.Versioned.html">ol.parser.ogc.Versioned</a></li><li><a href="ol.parser.ogc.WMSCapabilities.html">ol.parser.ogc.WMSCapabilities</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1.html">ol.parser.ogc.WMSCapabilities_v1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_0_0.html">ol.parser.ogc.WMSCapabilities_v1_0_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1.html">ol.parser.ogc.WMSCapabilities_v1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_0.html">ol.parser.ogc.WMSCapabilities_v1_1_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1.html">ol.parser.ogc.WMSCapabilities_v1_1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC.html">ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_3_0.html">ol.parser.ogc.WMSCapabilities_v1_3_0</a></li><li><a href="ol.parser.ogc.WMTSCapabilities.html">ol.parser.ogc.WMTSCapabilities</a></li><li><a href="ol.parser.ogc.WMTSCapabilities_v1_0_0.html">ol.parser.ogc.WMTSCapabilities_v1_0_0</a></li><li><a href="ol.projection.EPSG3857.html">ol.projection.EPSG3857</a></li><li><a href="ol.projection.EPSG4326.html">ol.projection.EPSG4326</a></li><li><a href="ol.renderer.Layer.html">ol.renderer.Layer</a></li><li><a href="ol.renderer.Map.html">ol.renderer.Map</a></li><li><a href="ol.renderer.canvas.ImageLayer.html">ol.renderer.canvas.ImageLayer</a></li><li><a href="ol.renderer.canvas.Layer.html">ol.renderer.canvas.Layer</a></li><li><a href="ol.renderer.canvas.Map.html">ol.renderer.canvas.Map</a></li><li><a href="ol.renderer.canvas.TileLayer.html">ol.renderer.canvas.TileLayer</a></li><li><a href="ol.renderer.canvas.VectorLayer.html">ol.renderer.canvas.VectorLayer</a></li><li><a href="ol.renderer.canvas.VectorRenderer.html">ol.renderer.canvas.VectorRenderer</a></li><li><a href="ol.renderer.dom.ImageLayer.html">ol.renderer.dom.ImageLayer</a></li><li><a href="ol.renderer.dom.Layer.html">ol.renderer.dom.Layer</a></li><li><a href="ol.renderer.dom.Map.html">ol.renderer.dom.Map</a></li><li><a href="ol.renderer.dom.TileLayer.html">ol.renderer.dom.TileLayer</a></li><li><a href="ol.renderer.webgl.FragmentShader.html">ol.renderer.webgl.FragmentShader</a></li><li><a href="ol.renderer.webgl.ImageLayer.html">ol.renderer.webgl.ImageLayer</a></li><li><a href="ol.renderer.webgl.Layer.html">ol.renderer.webgl.Layer</a></li><li><a href="ol.renderer.webgl.Map.html">ol.renderer.webgl.Map</a></li><li><a href="ol.renderer.webgl.Shader.html">ol.renderer.webgl.Shader</a></li><li><a href="ol.renderer.webgl.TileLayer.html">ol.renderer.webgl.TileLayer</a></li><li><a href="ol.renderer.webgl.VertexShader.html">ol.renderer.webgl.VertexShader</a></li><li><a href="ol.renderer.webgl.map.shader.Fragment.html">ol.renderer.webgl.map.shader.Fragment</a></li><li><a href="ol.renderer.webgl.map.shader.Vertex.html">ol.renderer.webgl.map.shader.Vertex</a></li><li><a href="ol.renderer.webgl.tilelayerrenderer.shader.Fragment.html">ol.renderer.webgl.tilelayerrenderer.shader.Fragment</a></li><li><a href="ol.renderer.webgl.tilelayerrenderer.shader.Vertex.html">ol.renderer.webgl.tilelayerrenderer.shader.Vertex</a></li><li><a href="ol.source.BingMaps.html">ol.source.BingMaps</a></li><li><a href="ol.source.DebugTileSource.html">ol.source.DebugTileSource</a></li><li><a href="ol.source.ImageSource.html">ol.source.ImageSource</a></li><li><a href="ol.source.ImageTileSource.html">ol.source.ImageTileSource</a></li><li><a href="ol.source.MapQuestOSM.html">ol.source.MapQuestOSM</a></li><li><a href="ol.source.MapQuestOpenAerial.html">ol.source.MapQuestOpenAerial</a></li><li><a href="ol.source.OpenStreetMap.html">ol.source.OpenStreetMap</a></li><li><a href="ol.source.SingleImageWMS.html">ol.source.SingleImageWMS</a></li><li><a href="ol.source.Source.html">ol.source.Source</a></li><li><a href="ol.source.Stamen.html">ol.source.Stamen</a></li><li><a href="ol.source.StaticImage.html">ol.source.StaticImage</a></li><li><a href="ol.source.TileJSON.html">ol.source.TileJSON</a></li><li><a href="ol.source.TileSource.html">ol.source.TileSource</a></li><li><a href="ol.source.TiledWMS.html">ol.source.TiledWMS</a></li><li><a href="ol.source.Vector.html">ol.source.Vector</a></li><li><a href="ol.source.WMTS.html">ol.source.WMTS</a></li><li><a href="ol.source.XYZ.html">ol.source.XYZ</a></li><li><a href="ol.structs.RTree.html">ol.structs.RTree</a></li><li><a href="ol.style.Icon.html">ol.style.Icon</a></li><li><a href="ol.style.IconLiteral.html">ol.style.IconLiteral</a></li><li><a href="ol.style.Line.html">ol.style.Line</a></li><li><a href="ol.style.LineLiteral.html">ol.style.LineLiteral</a></li><li><a href="ol.style.Point.html">ol.style.Point</a></li><li><a href="ol.style.PointLiteral.html">ol.style.PointLiteral</a></li><li><a href="ol.style.Polygon.html">ol.style.Polygon</a></li><li><a href="ol.style.PolygonLiteral.html">ol.style.PolygonLiteral</a></li><li><a href="ol.style.Rule.html">ol.style.Rule</a></li><li><a href="ol.style.Shape.html">ol.style.Shape</a></li><li><a href="ol.style.ShapeLiteral.html">ol.style.ShapeLiteral</a></li><li><a href="ol.style.Style.html">ol.style.Style</a></li><li><a href="ol.style.Symbolizer.html">ol.style.Symbolizer</a></li><li><a href="ol.style.SymbolizerLiteral.html">ol.style.SymbolizerLiteral</a></li><li><a href="ol.tilegrid.TileGrid.html">ol.tilegrid.TileGrid</a></li><li><a href="ol.tilegrid.WMTS.html">ol.tilegrid.WMTS</a></li><li><a href="ol.tilegrid.XYZ.html">ol.tilegrid.XYZ</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Have Proj4js.">Have Proj4js.</a></li><li><a href="global.html#Meters per unit lookup table.">Meters per unit lookup table.</a></li><li><a href="global.html#grid">grid</a></li><li><a href="global.html#{number}">{number}</a></li><li><a href="global.html#{string}">{string}</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="ol.Attribution.html">ol.Attribution</a></li><li><a href="ol.Collection.html">ol.Collection</a></li><li><a href="ol.CollectionEvent.html">ol.CollectionEvent</a></li><li><a href="ol.Color.html">ol.Color</a></li><li><a href="ol.Constraints.html">ol.Constraints</a></li><li><a href="ol.Ellipsoid.html">ol.Ellipsoid</a></li><li><a href="ol.Expression.html">ol.Expression</a></li><li><a href="ol.ExpressionLiteral.html">ol.ExpressionLiteral</a></li><li><a href="ol.Extent.html">ol.Extent</a></li><li><a href="ol.Feature.html">ol.Feature</a></li><li><a href="ol.Geolocation.html">ol.Geolocation</a></li><li><a href="ol.Image.html">ol.Image</a></li><li><a href="ol.ImageTile.html">ol.ImageTile</a></li><li><a href="ol.Kinetic.html">ol.Kinetic</a></li><li><a href="ol.Map.html">ol.Map</a></li><li><a href="ol.MapBrowserEvent.html">ol.MapBrowserEvent</a></li><li><a href="ol.MapBrowserEventHandler.html">ol.MapBrowserEventHandler</a></li><li><a href="ol.MapEvent.html">ol.MapEvent</a></li><li><a href="ol.Object.html">ol.Object</a></li><li><a href="ol.Overlay.html">ol.Overlay</a></li><li><a href="ol.Pixel.html">ol.Pixel</a></li><li><a href="ol.PixelBounds.html">ol.PixelBounds</a></li><li><a href="ol.Projection.html">ol.Projection</a></li><li><a href="ol.Rectangle.html">ol.Rectangle</a></li><li><a href="ol.Size.html">ol.Size</a></li><li><a href="ol.Sphere.html">ol.Sphere</a></li><li><a href="ol.Tile.html">ol.Tile</a></li><li><a href="ol.TileCache.html">ol.TileCache</a></li><li><a href="ol.TileCoord.html">ol.TileCoord</a></li><li><a href="ol.TileQueue.html">ol.TileQueue</a></li><li><a href="ol.TileRange.html">ol.TileRange</a></li><li><a href="ol.View.html">ol.View</a></li><li><a href="ol.View2D.html">ol.View2D</a></li><li><a href="ol.control.Attribution.html">ol.control.Attribution</a></li><li><a href="ol.control.Control.html">ol.control.Control</a></li><li><a href="ol.control.DragBox.html">ol.control.DragBox</a></li><li><a href="ol.control.Logo.html">ol.control.Logo</a></li><li><a href="ol.control.MousePosition.html">ol.control.MousePosition</a></li><li><a href="ol.control.ScaleLine.html">ol.control.ScaleLine</a></li><li><a href="ol.control.Zoom.html">ol.control.Zoom</a></li><li><a href="ol.control.ZoomSlider.html">ol.control.ZoomSlider</a></li><li><a href="ol.dom.Input.html">ol.dom.Input</a></li><li><a href="ol.filter.Extent.html">ol.filter.Extent</a></li><li><a href="ol.filter.Filter.html">ol.filter.Filter</a></li><li><a href="ol.filter.Geometry.html">ol.filter.Geometry</a></li><li><a href="ol.filter.Logical.html">ol.filter.Logical</a></li><li><a href="ol.geom.AbstractCollection.html">ol.geom.AbstractCollection</a></li><li><a href="ol.geom.Geometry.html">ol.geom.Geometry</a></li><li><a href="ol.geom.GeometryCollection.html">ol.geom.GeometryCollection</a></li><li><a href="ol.geom.LineString.html">ol.geom.LineString</a></li><li><a href="ol.geom.LinearRing.html">ol.geom.LinearRing</a></li><li><a href="ol.geom.MultiLineString.html">ol.geom.MultiLineString</a></li><li><a href="ol.geom.MultiPoint.html">ol.geom.MultiPoint</a></li><li><a href="ol.geom.MultiPolygon.html">ol.geom.MultiPolygon</a></li><li><a href="ol.geom.Point.html">ol.geom.Point</a></li><li><a href="ol.geom.Polygon.html">ol.geom.Polygon</a></li><li><a href="ol.geom.SharedVertices.html">ol.geom.SharedVertices</a></li><li><a href="ol.interaction.DblClickZoom.html">ol.interaction.DblClickZoom</a></li><li><a href="ol.interaction.Drag.html">ol.interaction.Drag</a></li><li><a href="ol.interaction.DragPan.html">ol.interaction.DragPan</a></li><li><a href="ol.interaction.DragRotate.html">ol.interaction.DragRotate</a></li><li><a href="ol.interaction.DragRotateAndZoom.html">ol.interaction.DragRotateAndZoom</a></li><li><a href="ol.interaction.DragZoom.html">ol.interaction.DragZoom</a></li><li><a href="ol.interaction.Interaction.html">ol.interaction.Interaction</a></li><li><a href="ol.interaction.Keyboard.html">ol.interaction.Keyboard</a></li><li><a href="ol.interaction.KeyboardPan.html">ol.interaction.KeyboardPan</a></li><li><a href="ol.interaction.KeyboardZoom.html">ol.interaction.KeyboardZoom</a></li><li><a href="ol.interaction.MouseWheelZoom.html">ol.interaction.MouseWheelZoom</a></li><li><a href="ol.interaction.Touch.html">ol.interaction.Touch</a></li><li><a href="ol.interaction.TouchPan.html">ol.interaction.TouchPan</a></li><li><a href="ol.interaction.TouchRotate.html">ol.interaction.TouchRotate</a></li><li><a href="ol.interaction.TouchZoom.html">ol.interaction.TouchZoom</a></li><li><a href="ol.layer.FeatureCache.html">ol.layer.FeatureCache</a></li><li><a href="ol.layer.ImageLayer.html">ol.layer.ImageLayer</a></li><li><a href="ol.layer.Layer.html">ol.layer.Layer</a></li><li><a href="ol.layer.TileLayer.html">ol.layer.TileLayer</a></li><li><a href="ol.layer.Vector.html">ol.layer.Vector</a></li><li><a href="ol.parser.GeoJSON.html">ol.parser.GeoJSON</a></li><li><a href="ol.parser.Parser.html">ol.parser.Parser</a></li><li><a href="ol.parser.XML.html">ol.parser.XML</a></li><li><a href="ol.parser.ogc.ExceptionReport.html">ol.parser.ogc.ExceptionReport</a></li><li><a href="ol.parser.ogc.OWSCommon_v1.html">ol.parser.ogc.OWSCommon_v1</a></li><li><a href="ol.parser.ogc.OWSCommon_v1_1_0.html">ol.parser.ogc.OWSCommon_v1_1_0</a></li><li><a href="ol.parser.ogc.Versioned.html">ol.parser.ogc.Versioned</a></li><li><a href="ol.parser.ogc.WMSCapabilities.html">ol.parser.ogc.WMSCapabilities</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1.html">ol.parser.ogc.WMSCapabilities_v1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_0_0.html">ol.parser.ogc.WMSCapabilities_v1_0_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1.html">ol.parser.ogc.WMSCapabilities_v1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_0.html">ol.parser.ogc.WMSCapabilities_v1_1_0</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1.html">ol.parser.ogc.WMSCapabilities_v1_1_1</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC.html">ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC</a></li><li><a href="ol.parser.ogc.WMSCapabilities_v1_3_0.html">ol.parser.ogc.WMSCapabilities_v1_3_0</a></li><li><a href="ol.parser.ogc.WMTSCapabilities.html">ol.parser.ogc.WMTSCapabilities</a></li><li><a href="ol.parser.ogc.WMTSCapabilities_v1_0_0.html">ol.parser.ogc.WMTSCapabilities_v1_0_0</a></li><li><a href="ol.projection.EPSG3857.html">ol.projection.EPSG3857</a></li><li><a href="ol.projection.EPSG4326.html">ol.projection.EPSG4326</a></li><li><a href="ol.renderer.Layer.html">ol.renderer.Layer</a></li><li><a href="ol.renderer.Map.html">ol.renderer.Map</a></li><li><a href="ol.renderer.canvas.ImageLayer.html">ol.renderer.canvas.ImageLayer</a></li><li><a href="ol.renderer.canvas.Layer.html">ol.renderer.canvas.Layer</a></li><li><a href="ol.renderer.canvas.Map.html">ol.renderer.canvas.Map</a></li><li><a href="ol.renderer.canvas.TileLayer.html">ol.renderer.canvas.TileLayer</a></li><li><a href="ol.renderer.canvas.VectorLayer.html">ol.renderer.canvas.VectorLayer</a></li><li><a href="ol.renderer.canvas.VectorRenderer.html">ol.renderer.canvas.VectorRenderer</a></li><li><a href="ol.renderer.dom.ImageLayer.html">ol.renderer.dom.ImageLayer</a></li><li><a href="ol.renderer.dom.Layer.html">ol.renderer.dom.Layer</a></li><li><a href="ol.renderer.dom.Map.html">ol.renderer.dom.Map</a></li><li><a href="ol.renderer.dom.TileLayer.html">ol.renderer.dom.TileLayer</a></li><li><a href="ol.renderer.webgl.ImageLayer.html">ol.renderer.webgl.ImageLayer</a></li><li><a href="ol.renderer.webgl.Layer.html">ol.renderer.webgl.Layer</a></li><li><a href="ol.renderer.webgl.Map.html">ol.renderer.webgl.Map</a></li><li><a href="ol.renderer.webgl.TileLayer.html">ol.renderer.webgl.TileLayer</a></li><li><a href="ol.renderer.webgl.map.shader.Color.Locations.html">ol.renderer.webgl.map.shader.Color.Locations</a></li><li><a href="ol.renderer.webgl.map.shader.ColorFragment.html">ol.renderer.webgl.map.shader.ColorFragment</a></li><li><a href="ol.renderer.webgl.map.shader.ColorVertex.html">ol.renderer.webgl.map.shader.ColorVertex</a></li><li><a href="ol.renderer.webgl.map.shader.Default.Locations.html">ol.renderer.webgl.map.shader.Default.Locations</a></li><li><a href="ol.renderer.webgl.map.shader.DefaultFragment.html">ol.renderer.webgl.map.shader.DefaultFragment</a></li><li><a href="ol.renderer.webgl.map.shader.DefaultVertex.html">ol.renderer.webgl.map.shader.DefaultVertex</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Fragment.html">ol.renderer.webgl.tilelayer.shader.Fragment</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Locations.html">ol.renderer.webgl.tilelayer.shader.Locations</a></li><li><a href="ol.renderer.webgl.tilelayer.shader.Vertex.html">ol.renderer.webgl.tilelayer.shader.Vertex</a></li><li><a href="ol.source.BingMaps.html">ol.source.BingMaps</a></li><li><a href="ol.source.DebugTileSource.html">ol.source.DebugTileSource</a></li><li><a href="ol.source.ImageSource.html">ol.source.ImageSource</a></li><li><a href="ol.source.ImageTileSource.html">ol.source.ImageTileSource</a></li><li><a href="ol.source.MapQuestOSM.html">ol.source.MapQuestOSM</a></li><li><a href="ol.source.MapQuestOpenAerial.html">ol.source.MapQuestOpenAerial</a></li><li><a href="ol.source.OpenStreetMap.html">ol.source.OpenStreetMap</a></li><li><a href="ol.source.SingleImageWMS.html">ol.source.SingleImageWMS</a></li><li><a href="ol.source.Source.html">ol.source.Source</a></li><li><a href="ol.source.Stamen.html">ol.source.Stamen</a></li><li><a href="ol.source.StaticImage.html">ol.source.StaticImage</a></li><li><a href="ol.source.TileJSON.html">ol.source.TileJSON</a></li><li><a href="ol.source.TileSource.html">ol.source.TileSource</a></li><li><a href="ol.source.TiledWMS.html">ol.source.TiledWMS</a></li><li><a href="ol.source.Vector.html">ol.source.Vector</a></li><li><a href="ol.source.WMTS.html">ol.source.WMTS</a></li><li><a href="ol.source.XYZ.html">ol.source.XYZ</a></li><li><a href="ol.structs.Buffer.html">ol.structs.Buffer</a></li><li><a href="ol.structs.IntegerSet.html">ol.structs.IntegerSet</a></li><li><a href="ol.structs.LRUCache.html">ol.structs.LRUCache</a></li><li><a href="ol.structs.PriorityQueue.html">ol.structs.PriorityQueue</a></li><li><a href="ol.structs.RTree.html">ol.structs.RTree</a></li><li><a href="ol.style.Icon.html">ol.style.Icon</a></li><li><a href="ol.style.IconLiteral.html">ol.style.IconLiteral</a></li><li><a href="ol.style.Line.html">ol.style.Line</a></li><li><a href="ol.style.LineLiteral.html">ol.style.LineLiteral</a></li><li><a href="ol.style.Point.html">ol.style.Point</a></li><li><a href="ol.style.PointLiteral.html">ol.style.PointLiteral</a></li><li><a href="ol.style.Polygon.html">ol.style.Polygon</a></li><li><a href="ol.style.PolygonLiteral.html">ol.style.PolygonLiteral</a></li><li><a href="ol.style.Rule.html">ol.style.Rule</a></li><li><a href="ol.style.Shape.html">ol.style.Shape</a></li><li><a href="ol.style.ShapeLiteral.html">ol.style.ShapeLiteral</a></li><li><a href="ol.style.Style.html">ol.style.Style</a></li><li><a href="ol.style.Symbolizer.html">ol.style.Symbolizer</a></li><li><a href="ol.style.SymbolizerLiteral.html">ol.style.SymbolizerLiteral</a></li><li><a href="ol.tilegrid.TileGrid.html">ol.tilegrid.TileGrid</a></li><li><a href="ol.tilegrid.WMTS.html">ol.tilegrid.WMTS</a></li><li><a href="ol.tilegrid.XYZ.html">ol.tilegrid.XYZ</a></li><li><a href="ol.webgl.Shader.html">ol.webgl.Shader</a></li><li><a href="ol.webgl.shader.Fragment.html">ol.webgl.shader.Fragment</a></li><li><a href="ol.webgl.shader.Vertex.html">ol.webgl.shader.Vertex</a></li></ul><h3>Namespaces</h3><ul><li><a href="ol.html">ol</a></li><li><a href="ol.animation.html">ol.animation</a></li><li><a href="ol.control.html">ol.control</a></li><li><a href="ol.layer.html">ol.layer</a></li><li><a href="ol.source.html">ol.source</a></li><li><a href="ol.style.html">ol.style</a></li><li><a href="ol.tilegrid.html">ol.tilegrid</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-ol3.html">OpenLayers 3 Architecture</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Meters per unit lookup table.">Meters per unit lookup table.</a></li><li><a href="global.html#grid">grid</a></li><li>{boolean}</li><li>{number}</li><li>{string}</li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Wed Mar 20 2013 16:03:24 GMT-0600 (MDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3</a> on Wed Apr 10 2013 14:35:06 GMT+0200 (CEST)
 </footer>
+</div>
 
 <script> prettyPrint(); </script>
+<script src="../resources/social-links.js" type="text/javascript"></script>
 </body>
 </html>
