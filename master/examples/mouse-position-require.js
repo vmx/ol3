@@ -5,4 +5,4 @@ goog.require('ol.control.MousePosition');
 goog.require('ol.control.defaults');
 goog.require('ol.coordinate');
 goog.require('ol.layer.TileLayer');
-goog.require('ol.source.OpenStreetMap');
+goog.require('ol.source.OSM');

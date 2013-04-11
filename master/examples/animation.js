@@ -19,7 +19,7 @@ var map = new ol.Map({
   layers: [
     new ol.layer.TileLayer({
       preload: 4,
-      source: new ol.source.OpenStreetMap()
+      source: new ol.source.OSM()
     })
   ],
   renderers: ol.RendererHints.createFromQueryData(),

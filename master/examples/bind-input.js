@@ -1,5 +1,5 @@
 var layer = new ol.layer.TileLayer({
-  source: new ol.source.OpenStreetMap()
+  source: new ol.source.OSM()
 });
 var map = new ol.Map({
   layers: [layer],

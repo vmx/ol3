@@ -134,11 +134,11 @@ goog.addDependency('../../../ol/ol/source/bingmapssource.js', ['ol.source.BingMa
 goog.addDependency('../../../ol/ol/source/debugtilesource.js', ['ol.source.DebugTileSource'], ['goog.dom', 'goog.dom.TagName', 'ol.Size', 'ol.Tile', 'ol.TileCache', 'ol.TileCoord', 'ol.TileState', 'ol.source.TileSource', 'ol.tilegrid.TileGrid']);
 goog.addDependency('../../../ol/ol/source/imagesource.js', ['ol.source.ImageSource'], ['goog.array', 'goog.asserts', 'ol.Attribution', 'ol.Extent', 'ol.Image', 'ol.ImageUrlFunction', 'ol.ImageUrlFunctionType', 'ol.Projection', 'ol.Size', 'ol.array', 'ol.source.Source']);
 goog.addDependency('../../../ol/ol/source/imagetilesource.js', ['ol.source.ImageTileSource'], ['goog.asserts', 'ol.Attribution', 'ol.Extent', 'ol.ImageTile', 'ol.Projection', 'ol.Tile', 'ol.TileCache', 'ol.TileCoord', 'ol.TileState', 'ol.TileUrlFunction', 'ol.TileUrlFunctionType', 'ol.source.TileSource', 'ol.tilegrid.TileGrid']);
-goog.addDependency('../../../ol/ol/source/mapquestsource.js', ['ol.source.MapQuestOSM', 'ol.source.MapQuestOpenAerial'], ['ol.Attribution', 'ol.source.OpenStreetMap', 'ol.source.XYZ']);
-goog.addDependency('../../../ol/ol/source/openstreetmapsource.js', ['ol.source.OpenStreetMap'], ['ol.Attribution', 'ol.source.XYZ']);
+goog.addDependency('../../../ol/ol/source/mapquestsource.js', ['ol.source.MapQuestOSM', 'ol.source.MapQuestOpenAerial'], ['ol.Attribution', 'ol.source.OSM', 'ol.source.XYZ']);
+goog.addDependency('../../../ol/ol/source/osmsource.js', ['ol.source.OSM'], ['ol.Attribution', 'ol.source.XYZ']);
 goog.addDependency('../../../ol/ol/source/singleimagewmssource.js', ['ol.source.SingleImageWMS'], ['ol.Extent', 'ol.Image', 'ol.ImageUrlFunction', 'ol.Size', 'ol.source.ImageSource', 'ol.source.wms']);
 goog.addDependency('../../../ol/ol/source/source.js', ['ol.source.Source'], ['goog.events.EventTarget', 'goog.events.EventType', 'goog.functions', 'ol.Attribution', 'ol.Extent', 'ol.projection']);
-goog.addDependency('../../../ol/ol/source/stamensource.js', ['ol.source.Stamen'], ['goog.asserts', 'ol.Attribution', 'ol.source.OpenStreetMap', 'ol.source.XYZ']);
+goog.addDependency('../../../ol/ol/source/stamensource.js', ['ol.source.Stamen'], ['goog.asserts', 'ol.Attribution', 'ol.source.OSM', 'ol.source.XYZ']);
 goog.addDependency('../../../ol/ol/source/staticimagesource.js', ['ol.source.StaticImage'], ['ol.Image', 'ol.ImageUrlFunctionType', 'ol.projection', 'ol.source.ImageSource']);
 goog.addDependency('../../../ol/ol/source/tiledwmssource.js', ['ol.source.TiledWMS'], ['goog.array', 'goog.math', 'ol.Extent', 'ol.TileCoord', 'ol.TileUrlFunction', 'ol.source.ImageTileSource', 'ol.source.wms']);
 goog.addDependency('../../../ol/ol/source/tilejsonsource.js', ['ol.source.TileJSON', 'ol.tilejson'], ['goog.asserts', 'goog.math', 'goog.net.jsloader', 'ol.Attribution', 'ol.Extent', 'ol.TileCoord', 'ol.TileRange', 'ol.TileUrlFunction', 'ol.projection', 'ol.source.ImageTileSource', 'ol.tilegrid.XYZ']);
