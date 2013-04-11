@@ -504,8 +504,8 @@ goog.scope = function(fn) {
 };
 goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol.Attribution", "ol.BrowserFeature", "ol.Collection", "ol.CollectionEvent", "ol.CollectionEventType", "ol.Color", "ol.Constraints", "ol.Coordinate", "ol.CoordinateFormatType", "ol.Ellipsoid", "ol.Expression", "ol.ExpressionLiteral", "ol.Extent", "ol.Feature", "ol.FrameState", "ol.Geolocation", "ol.GeolocationProperty", "ol.IView", "ol.IView2D", "ol.IView3D", "ol.Image", "ol.ImageState", "ol.ImageTile", "ol.ImageUrlFunction", "ol.ImageUrlFunctionType", 
 "ol.Kinetic", "ol.Map", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler", "ol.MapEvent", "ol.MapEventType", "ol.MapProperty", "ol.Object", "ol.ObjectEventType", "ol.Overlay", "ol.OverlayPositioning", "ol.OverlayProperty", "ol.Pixel", "ol.PixelBounds", "ol.PostRenderFunction", "ol.PreRenderFunction", "ol.Projection", "ol.ProjectionLike", "ol.ProjectionUnits", "ol.Rectangle", "ol.RendererHint", "ol.RendererHints", "ol.ResolutionConstraint", "ol.ResolutionConstraintType", 
-"ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.Sphere", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TilePriorityFunction", "ol.TileQueue", "ol.TileRange", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.TransformFunction", "ol.View", "ol.View2D", "ol.View2DProperty", "ol.View2DState", "ol.ViewHint", "ol.animation", "ol.array", "ol.canvas", "ol.control.Attribution", "ol.control.Control", "ol.control.ControlOptions", "ol.control.DragBox", "ol.control.Logo", 
-"ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or", "ol.geom.AbstractCollection", 
+"ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.Sphere", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TilePriorityFunction", "ol.TileQueue", "ol.TileRange", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.TransformFunction", "ol.View", "ol.View2D", "ol.View2DProperty", "ol.View2DState", "ol.ViewHint", "ol.animation", "ol.array", "ol.canvas", "ol.control.Attribution", "ol.control.Control", "ol.control.ControlOptions", "ol.control.DragBox", "ol.control.FullScreen", 
+"ol.control.Logo", "ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or", "ol.geom.AbstractCollection", 
 "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", 
 "ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", 
 "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", 
@@ -513,9 +513,9 @@ goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol.Attributi
 "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", 
 "ol.source.OSM", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", 
 "ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
-goog.addDependency("../build/src/internal/src/types.js", ["ol.MapOptions", "ol.OverlayOptions", "ol.Proj4jsProjectionOptions", "ol.ProjectionOptions", "ol.View2DOptions", "ol.animation.BounceOptions", "ol.animation.PanOptions", "ol.animation.RotateOptions", "ol.animation.ZoomOptions", "ol.control.AttributionOptions", "ol.control.DefaultsOptions", "ol.control.LogoOptions", "ol.control.MousePositionOptions", "ol.control.ScaleLineOptions", "ol.control.ZoomOptions", "ol.control.ZoomSliderOptions", "ol.interaction.DefaultsOptions", 
-"ol.interaction.KeyboardPanOptions", "ol.interaction.KeyboardZoomOptions", "ol.layer.LayerOptions", "ol.layer.TileLayerOptions", "ol.layer.VectorLayerOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OSMOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", "ol.style.LineOptions", 
-"ol.style.PolygonOptions", "ol.style.RuleOptions", "ol.style.ShapeOptions", "ol.style.StyleOptions", "ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
+goog.addDependency("../build/src/internal/src/types.js", ["ol.MapOptions", "ol.OverlayOptions", "ol.Proj4jsProjectionOptions", "ol.ProjectionOptions", "ol.View2DOptions", "ol.animation.BounceOptions", "ol.animation.PanOptions", "ol.animation.RotateOptions", "ol.animation.ZoomOptions", "ol.control.AttributionOptions", "ol.control.DefaultsOptions", "ol.control.FullScreenOptions", "ol.control.LogoOptions", "ol.control.MousePositionOptions", "ol.control.ScaleLineOptions", "ol.control.ZoomOptions", "ol.control.ZoomSliderOptions", 
+"ol.interaction.DefaultsOptions", "ol.interaction.KeyboardPanOptions", "ol.interaction.KeyboardZoomOptions", "ol.layer.LayerOptions", "ol.layer.TileLayerOptions", "ol.layer.VectorLayerOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OSMOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", 
+"ol.style.LineOptions", "ol.style.PolygonOptions", "ol.style.RuleOptions", "ol.style.ShapeOptions", "ol.style.StyleOptions", "ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
 goog.addDependency("../src/ol/animation.js", ["ol.animation"], ["ol.PreRenderFunction", "ol.ViewHint", "ol.easing"]);
 goog.addDependency("../src/ol/array.js", ["ol.array"], ["goog.array", "goog.asserts"]);
 goog.addDependency("../src/ol/attribution.js", ["ol.Attribution"], ["ol.TileRange"]);
@@ -528,6 +528,7 @@ goog.addDependency("../src/ol/control/attributioncontrol.js", ["ol.control.Attri
 goog.addDependency("../src/ol/control/control.js", ["ol.control.Control", "ol.control.ControlOptions"], ["goog.Disposable", "goog.array", "goog.dom", "goog.events", "ol.MapEventType"]);
 goog.addDependency("../src/ol/control/defaults.js", ["ol.control.defaults"], ["goog.array", "ol.control.Attribution", "ol.control.Logo", "ol.control.Zoom"]);
 goog.addDependency("../src/ol/control/dragboxcontrol.js", ["ol.control.DragBox"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.style", "ol.Coordinate", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.Pixel", "ol.Size", "ol.control.Control"]);
+goog.addDependency("../src/ol/control/fullscreencontrol.js", ["ol.control.FullScreen"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.dom.classes", "goog.dom.fullscreen", "goog.dom.fullscreen.EventType", "goog.events", "goog.events.EventType", "ol.control.Control", "ol.css"]);
 goog.addDependency("../src/ol/control/logocontrol.js", ["ol.control.Logo"], ["goog.dom", "goog.dom.TagName", "goog.object", "goog.style", "ol.FrameState", "ol.control.Control", "ol.css"]);
 goog.addDependency("../src/ol/control/mousepositioncontrol.js", ["ol.control.MousePosition"], ["goog.array", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.style", "ol.CoordinateFormatType", "ol.Pixel", "ol.Projection", "ol.TransformFunction", "ol.control.Control", "ol.projection"]);
 goog.addDependency("../src/ol/control/scalelinecontrol.js", ["ol.control.ScaleLine", "ol.control.ScaleLineUnits"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.math", "goog.style", "ol.FrameState", "ol.ProjectionUnits", "ol.TransformFunction", "ol.control.Control", "ol.css", "ol.projection", "ol.sphere.NORMAL"]);
@@ -12540,6 +12541,7 @@ ol.control.Control.prototype.setMap = function(map) {
 };
 goog.provide("ol.css");
 ol.css.CLASS_UNSELECTABLE = "ol-unselectable";
+ol.css.CLASS_UNSUPPORTED = "ol-unsupported";
 goog.provide("ol.control.Attribution");
 goog.require("goog.array");
 goog.require("goog.asserts");
@@ -18872,6 +18874,169 @@ ol.TileUrlFunction.expandUrl = function(url) {
   }
   return urls
 };
+goog.provide("goog.userAgent.product");
+goog.require("goog.userAgent");
+goog.userAgent.product.ASSUME_FIREFOX = false;
+goog.userAgent.product.ASSUME_CAMINO = false;
+goog.userAgent.product.ASSUME_IPHONE = false;
+goog.userAgent.product.ASSUME_IPAD = false;
+goog.userAgent.product.ASSUME_ANDROID = false;
+goog.userAgent.product.ASSUME_CHROME = false;
+goog.userAgent.product.ASSUME_SAFARI = false;
+goog.userAgent.product.PRODUCT_KNOWN_ = goog.userAgent.ASSUME_IE || goog.userAgent.ASSUME_OPERA || goog.userAgent.product.ASSUME_FIREFOX || goog.userAgent.product.ASSUME_CAMINO || goog.userAgent.product.ASSUME_IPHONE || goog.userAgent.product.ASSUME_IPAD || goog.userAgent.product.ASSUME_ANDROID || goog.userAgent.product.ASSUME_CHROME || goog.userAgent.product.ASSUME_SAFARI;
+goog.userAgent.product.init_ = function() {
+  goog.userAgent.product.detectedFirefox_ = false;
+  goog.userAgent.product.detectedCamino_ = false;
+  goog.userAgent.product.detectedIphone_ = false;
+  goog.userAgent.product.detectedIpad_ = false;
+  goog.userAgent.product.detectedAndroid_ = false;
+  goog.userAgent.product.detectedChrome_ = false;
+  goog.userAgent.product.detectedSafari_ = false;
+  var ua = goog.userAgent.getUserAgentString();
+  if(!ua) {
+    return
+  }
+  if(ua.indexOf("Firefox") != -1) {
+    goog.userAgent.product.detectedFirefox_ = true
+  }else {
+    if(ua.indexOf("Camino") != -1) {
+      goog.userAgent.product.detectedCamino_ = true
+    }else {
+      if(ua.indexOf("iPhone") != -1 || ua.indexOf("iPod") != -1) {
+        goog.userAgent.product.detectedIphone_ = true
+      }else {
+        if(ua.indexOf("iPad") != -1) {
+          goog.userAgent.product.detectedIpad_ = true
+        }else {
+          if(ua.indexOf("Android") != -1) {
+            goog.userAgent.product.detectedAndroid_ = true
+          }else {
+            if(ua.indexOf("Chrome") != -1) {
+              goog.userAgent.product.detectedChrome_ = true
+            }else {
+              if(ua.indexOf("Safari") != -1) {
+                goog.userAgent.product.detectedSafari_ = true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
+if(!goog.userAgent.product.PRODUCT_KNOWN_) {
+  goog.userAgent.product.init_()
+}
+goog.userAgent.product.OPERA = goog.userAgent.OPERA;
+goog.userAgent.product.IE = goog.userAgent.IE;
+goog.userAgent.product.FIREFOX = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_FIREFOX : goog.userAgent.product.detectedFirefox_;
+goog.userAgent.product.CAMINO = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_CAMINO : goog.userAgent.product.detectedCamino_;
+goog.userAgent.product.IPHONE = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_IPHONE : goog.userAgent.product.detectedIphone_;
+goog.userAgent.product.IPAD = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_IPAD : goog.userAgent.product.detectedIpad_;
+goog.userAgent.product.ANDROID = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_ANDROID : goog.userAgent.product.detectedAndroid_;
+goog.userAgent.product.CHROME = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_CHROME : goog.userAgent.product.detectedChrome_;
+goog.userAgent.product.SAFARI = goog.userAgent.product.PRODUCT_KNOWN_ ? goog.userAgent.product.ASSUME_SAFARI : goog.userAgent.product.detectedSafari_;
+goog.provide("goog.dom.fullscreen");
+goog.provide("goog.dom.fullscreen.EventType");
+goog.require("goog.dom");
+goog.require("goog.userAgent");
+goog.require("goog.userAgent.product");
+goog.dom.fullscreen.EventType = {CHANGE:goog.userAgent.WEBKIT ? "webkitfullscreenchange" : "mozfullscreenchange"};
+goog.dom.fullscreen.isSupported = function(opt_domHelper) {
+  var doc = goog.dom.fullscreen.getDocument_(opt_domHelper);
+  var body = doc.body;
+  return!!body.webkitRequestFullScreen || !!body.mozRequestFullScreen && doc.mozFullScreenEnabled
+};
+goog.dom.fullscreen.requestFullScreen = function(element) {
+  if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen()
+  }else {
+    if(element.mozRequestFullScreen) {
+      element.mozRequestFullScreen()
+    }
+  }
+};
+goog.dom.fullscreen.requestFullScreenWithKeys = function(element) {
+  if(element.mozRequestFullScreenWithKeys) {
+    element.mozRequestFullScreenWithKeys()
+  }else {
+    if(element.webkitRequestFullScreen && element.ALLOW_KEYBOARD_INPUT && goog.userAgent.product.CHROME) {
+      element.webkitRequestFullScreen(element.ALLOW_KEYBOARD_INPUT)
+    }else {
+      goog.dom.fullscreen.requestFullScreen(element)
+    }
+  }
+};
+goog.dom.fullscreen.exitFullScreen = function(opt_domHelper) {
+  var doc = goog.dom.fullscreen.getDocument_(opt_domHelper);
+  if(doc.webkitCancelFullScreen) {
+    doc.webkitCancelFullScreen()
+  }else {
+    if(doc.mozCancelFullScreen) {
+      doc.mozCancelFullScreen()
+    }
+  }
+};
+goog.dom.fullscreen.isFullScreen = function(opt_domHelper) {
+  var doc = goog.dom.fullscreen.getDocument_(opt_domHelper);
+  return!!doc.webkitIsFullScreen || !!doc.mozFullScreen
+};
+goog.dom.fullscreen.getDocument_ = function(opt_domHelper) {
+  return opt_domHelper ? opt_domHelper.getDocument() : goog.dom.getDomHelper().getDocument()
+};
+goog.provide("ol.control.FullScreen");
+goog.require("goog.asserts");
+goog.require("goog.dom");
+goog.require("goog.dom.TagName");
+goog.require("goog.dom.classes");
+goog.require("goog.dom.fullscreen");
+goog.require("goog.dom.fullscreen.EventType");
+goog.require("goog.events");
+goog.require("goog.events.EventType");
+goog.require("ol.control.Control");
+goog.require("ol.css");
+ol.control.FullScreen = function(opt_options) {
+  var options = goog.isDef(opt_options) ? opt_options : {};
+  this.cssClassName_ = "ol-full-screen";
+  var aElement = goog.dom.createDom(goog.dom.TagName.A, {"href":"#fullScreen", "class":this.cssClassName_ + "-" + goog.dom.fullscreen.isFullScreen()});
+  goog.events.listen(aElement, [goog.events.EventType.CLICK, goog.events.EventType.TOUCHEND], this.handleClick_, false, this);
+  goog.events.listen(goog.global.document, goog.dom.fullscreen.EventType.CHANGE, this.handleFullScreenChange_, false, this);
+  var element = goog.dom.createDom(goog.dom.TagName.DIV, {"class":this.cssClassName_ + " " + ol.css.CLASS_UNSELECTABLE + (!goog.dom.fullscreen.isSupported() ? ol.css.CLASS_UNSUPPORTED : "")}, aElement);
+  goog.base(this, {element:element, map:options.map, target:options.target});
+  this.keys_ = goog.isDef(options.keys) ? options.keys : false
+};
+goog.inherits(ol.control.FullScreen, ol.control.Control);
+ol.control.FullScreen.prototype.handleClick_ = function(browserEvent) {
+  if(!goog.dom.fullscreen.isSupported()) {
+    return
+  }
+  browserEvent.preventDefault();
+  var map = this.getMap();
+  if(goog.isNull(map)) {
+    return
+  }
+  if(goog.dom.fullscreen.isFullScreen()) {
+    goog.dom.fullscreen.exitFullScreen()
+  }else {
+    var element = map.getTarget();
+    goog.asserts.assert(!goog.isNull(element));
+    if(this.keys_) {
+      goog.dom.fullscreen.requestFullScreenWithKeys(element)
+    }else {
+      goog.dom.fullscreen.requestFullScreen(element)
+    }
+  }
+};
+ol.control.FullScreen.prototype.handleFullScreenChange_ = function() {
+  var opened = this.cssClassName_ + "-true";
+  var closed = this.cssClassName_ + "-false";
+  var anchor = goog.dom.getFirstElementChild(this.element);
+  if(goog.dom.fullscreen.isFullScreen()) {
+    goog.dom.classes.swap(anchor, closed, opened)
+  }else {
+    goog.dom.classes.swap(anchor, opened, closed)
+  }
+};
 goog.provide("ol.control.MousePosition");
 goog.require("goog.array");
 goog.require("goog.dom");
@@ -22487,6 +22652,7 @@ goog.require("ol.control.Attribution");
 goog.require("ol.control.Control");
 goog.require("ol.control.ControlOptions");
 goog.require("ol.control.DragBox");
+goog.require("ol.control.FullScreen");
 goog.require("ol.control.Logo");
 goog.require("ol.control.MousePosition");
 goog.require("ol.control.ScaleLine");
@@ -22661,6 +22827,7 @@ goog.provide("ol.animation.RotateOptions");
 goog.provide("ol.animation.ZoomOptions");
 goog.provide("ol.control.AttributionOptions");
 goog.provide("ol.control.DefaultsOptions");
+goog.provide("ol.control.FullScreenOptions");
 goog.provide("ol.control.LogoOptions");
 goog.provide("ol.control.MousePositionOptions");
 goog.provide("ol.control.ScaleLineOptions");
@@ -22702,6 +22869,7 @@ ol.animation.RotateOptions;
 ol.animation.ZoomOptions;
 ol.control.AttributionOptions;
 ol.control.DefaultsOptions;
+ol.control.FullScreenOptions;
 ol.control.LogoOptions;
 ol.control.MousePositionOptions;
 ol.control.ScaleLineOptions;
