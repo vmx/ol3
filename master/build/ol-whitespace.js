@@ -507,12 +507,13 @@ goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol.Attributi
 "ol.RotationConstraint", "ol.RotationConstraintType", "ol.Size", "ol.Sphere", "ol.Tile", "ol.TileCache", "ol.TileCoord", "ol.TilePriorityFunction", "ol.TileQueue", "ol.TileRange", "ol.TileState", "ol.TileUrlFunction", "ol.TileUrlFunctionType", "ol.TransformFunction", "ol.View", "ol.View2D", "ol.View2DProperty", "ol.View2DState", "ol.ViewHint", "ol.animation", "ol.array", "ol.canvas", "ol.control.Attribution", "ol.control.Control", "ol.control.ControlOptions", "ol.control.DragBox", "ol.control.FullScreen", 
 "ol.control.Logo", "ol.control.MousePosition", "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or", "ol.geom.AbstractCollection", 
 "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DblClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", 
-"ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", "ol.parser.ObjectFeatureParser", 
-"ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", 
-"ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", 
-"ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", 
-"ol.source.OSM", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", 
-"ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
+"ol.interaction.Keyboard", "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.AsyncObjectFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.GeoJSON", 
+"ol.parser.KML", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", 
+"ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", 
+"ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", 
+"ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", "ol.source.OSM", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", 
+"ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", 
+"ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
 goog.addDependency("../build/src/internal/src/types.js", ["ol.MapOptions", "ol.OverlayOptions", "ol.Proj4jsProjectionOptions", "ol.ProjectionOptions", "ol.View2DOptions", "ol.animation.BounceOptions", "ol.animation.PanOptions", "ol.animation.RotateOptions", "ol.animation.ZoomOptions", "ol.control.AttributionOptions", "ol.control.DefaultsOptions", "ol.control.FullScreenOptions", "ol.control.LogoOptions", "ol.control.MousePositionOptions", "ol.control.ScaleLineOptions", "ol.control.ZoomOptions", "ol.control.ZoomSliderOptions", 
 "ol.interaction.DefaultsOptions", "ol.interaction.KeyboardPanOptions", "ol.interaction.KeyboardZoomOptions", "ol.layer.LayerOptions", "ol.layer.TileLayerOptions", "ol.layer.VectorLayerOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OSMOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", 
 "ol.style.LineOptions", "ol.style.PolygonOptions", "ol.style.RuleOptions", "ol.style.ShapeOptions", "ol.style.StyleOptions", "ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
@@ -580,8 +581,8 @@ goog.addDependency("../src/ol/interaction/keyboardzoominteraction.js", ["ol.inte
 goog.addDependency("../src/ol/interaction/mousewheelzoominteraction.js", ["ol.interaction.MouseWheelZoom"], ["goog.asserts", "goog.events.MouseWheelEvent", "goog.events.MouseWheelHandler.EventType", "goog.math", "ol.Coordinate", "ol.interaction.Interaction"]);
 goog.addDependency("../src/ol/interaction/touchinteraction.js", ["ol.interaction.Touch"], ["goog.functions", "goog.object", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.Pixel", "ol.interaction.Interaction"]);
 goog.addDependency("../src/ol/interaction/touchpaninteraction.js", ["ol.interaction.TouchPan"], ["goog.asserts", "ol.Kinetic", "ol.Pixel", "ol.PreRenderFunction", "ol.View", "ol.ViewHint", "ol.coordinate", "ol.interaction.Touch"]);
-goog.addDependency("../src/ol/interaction/touchrotateinteraction.js", ["ol.interaction.TouchRotate"], ["goog.asserts", "goog.style", "ol.View", "ol.ViewHint", "ol.interaction.Interaction", "ol.interaction.Touch"]);
-goog.addDependency("../src/ol/interaction/touchzoominteraction.js", ["ol.interaction.TouchZoom"], ["goog.asserts", "goog.style", "ol.View", "ol.ViewHint", "ol.interaction.Interaction", "ol.interaction.Touch"]);
+goog.addDependency("../src/ol/interaction/touchrotateinteraction.js", ["ol.interaction.TouchRotate"], ["goog.asserts", "goog.style", "ol.Coordinate", "ol.View", "ol.ViewHint", "ol.interaction.Interaction", "ol.interaction.Touch"]);
+goog.addDependency("../src/ol/interaction/touchzoominteraction.js", ["ol.interaction.TouchZoom"], ["goog.asserts", "goog.style", "ol.Coordinate", "ol.View", "ol.ViewHint", "ol.interaction.Interaction", "ol.interaction.Touch"]);
 goog.addDependency("../src/ol/iview.js", ["ol.IView"], ["ol.IView2D", "ol.IView3D"]);
 goog.addDependency("../src/ol/iview2d.js", ["ol.IView2D", "ol.View2DState"], ["ol.Coordinate", "ol.Projection"]);
 goog.addDependency("../src/ol/iview3d.js", ["ol.IView3D"], []);
@@ -598,8 +599,10 @@ goog.addDependency("../src/ol/mapevent.js", ["ol.MapEvent", "ol.MapEventType"], 
 goog.addDependency("../src/ol/math.js", ["ol.math"], ["goog.asserts"]);
 goog.addDependency("../src/ol/object.js", ["ol.Object", "ol.ObjectEventType"], ["goog.array", "goog.events", "goog.events.EventTarget", "goog.object"]);
 goog.addDependency("../src/ol/overlay.js", ["ol.Overlay", "ol.OverlayPositioning", "ol.OverlayProperty"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.style", "ol.Coordinate", "ol.Map", "ol.MapEventType", "ol.Object"]);
-goog.addDependency("../src/ol/parser/featureparser.js", ["ol.parser.DomFeatureParser", "ol.parser.ObjectFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"], ["ol.Feature"]);
+goog.addDependency("../src/ol/parser/featureparser.js", ["ol.parser.AsyncObjectFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.ObjectFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"], ["ol.Feature"]);
 goog.addDependency("../src/ol/parser/geojson.js", ["ol.parser.GeoJSON"], ["goog.asserts", "ol.Feature", "ol.geom.Geometry", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"]);
+goog.addDependency("../src/ol/parser/kml.js", ["ol.parser.KML"], ["goog.array", "goog.async.Deferred", "goog.async.DeferredList", "goog.date", "goog.dom.xml", "goog.events", "goog.net.EventType", "goog.net.XhrIo", "goog.object", "goog.string", "ol.Feature", "ol.geom.AbstractCollection", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.parser.AsyncObjectFeatureParser", 
+"ol.parser.DomFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.style.Icon", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral"]);
 goog.addDependency("../src/ol/parser/ogc/exceptionreport.js", ["ol.parser.ogc.ExceptionReport"], ["goog.dom.xml", "ol.parser.XML"]);
 goog.addDependency("../src/ol/parser/ogc/owscommon_v1.js", ["ol.parser.ogc.OWSCommon_v1"], ["ol.Extent", "ol.parser.XML"]);
 goog.addDependency("../src/ol/parser/ogc/owscommon_v1_1_0.js", ["ol.parser.ogc.OWSCommon_v1_1_0"], ["goog.object", "ol.parser.ogc.OWSCommon_v1"]);
@@ -7638,7 +7641,8 @@ ol.View.prototype.getView3D = goog.abstractMethod;
 ol.View.prototype.setHint = function(hint, delta) {
   goog.asserts.assert(0 <= hint && hint < this.hints_.length);
   this.hints_[hint] += delta;
-  goog.asserts.assert(this.hints_[hint] >= 0)
+  goog.asserts.assert(this.hints_[hint] >= 0);
+  return this.hints_[hint]
 };
 goog.provide("goog.fx.easing");
 goog.fx.easing.easeIn = function(t) {
@@ -12476,19 +12480,21 @@ ol.View2D.createResolutionConstraint_ = function(options) {
     minResolution = resolutions[resolutions.length - 1];
     resolutionConstraint = ol.ResolutionConstraint.createSnapToResolutions(resolutions)
   }else {
-    var numZoomLevels, zoomFactor;
-    if(goog.isDef(options.maxResolution) && goog.isDef(options.numZoomLevels) && goog.isDef(options.zoomFactor)) {
-      maxResolution = options.maxResolution;
-      numZoomLevels = options.numZoomLevels;
-      zoomFactor = options.zoomFactor
-    }else {
+    maxResolution = options.maxResolution;
+    if(!goog.isDef(maxResolution)) {
       var projectionExtent = ol.projection.createProjection(options.projection, "EPSG:3857").getExtent();
-      maxResolution = Math.max(projectionExtent.maxX - projectionExtent.minX, projectionExtent.maxY - projectionExtent.minY) / ol.DEFAULT_TILE_SIZE;
-      numZoomLevels = 29;
+      maxResolution = Math.max(projectionExtent.maxX - projectionExtent.minX, projectionExtent.maxY - projectionExtent.minY) / ol.DEFAULT_TILE_SIZE
+    }
+    var maxZoom = options.maxZoom;
+    if(!goog.isDef(maxZoom)) {
+      maxZoom = 28
+    }
+    var zoomFactor = options.zoomFactor;
+    if(!goog.isDef(zoomFactor)) {
       zoomFactor = 2
     }
-    minResolution = maxResolution / Math.pow(zoomFactor, numZoomLevels - 1);
-    resolutionConstraint = ol.ResolutionConstraint.createSnapToPower(zoomFactor, maxResolution, numZoomLevels - 1)
+    minResolution = maxResolution / Math.pow(zoomFactor, maxZoom);
+    resolutionConstraint = ol.ResolutionConstraint.createSnapToPower(zoomFactor, maxResolution, maxZoom)
   }
   return[resolutionConstraint, maxResolution, minResolution]
 };
@@ -12992,7 +12998,7 @@ ol.interaction.DragPan.prototype.handleDrag = function(mapBrowserEvent) {
 ol.interaction.DragPan.prototype.handleDragEnd = function(mapBrowserEvent) {
   var map = mapBrowserEvent.map;
   var view = map.getView();
-  view.setHint(ol.ViewHint.INTERACTING, -1);
+  var interacting = view.setHint(ol.ViewHint.INTERACTING, -1);
   if(this.kinetic_ && this.kinetic_.end()) {
     var distance = this.kinetic_.getDistance();
     var angle = this.kinetic_.getAngle();
@@ -13003,6 +13009,10 @@ ol.interaction.DragPan.prototype.handleDragEnd = function(mapBrowserEvent) {
     var destpx = new ol.Pixel(centerpx.x - distance * Math.cos(angle), centerpx.y - distance * Math.sin(angle));
     var dest = map.getCoordinateFromPixel(destpx);
     view.setCenter(dest)
+  }else {
+    if(interacting === 0) {
+      map.requestRenderFrame()
+    }
   }
 };
 ol.interaction.DragPan.prototype.handleDragStart = function(mapBrowserEvent) {
@@ -13377,7 +13387,7 @@ ol.interaction.TouchPan.prototype.handleTouchEnd = function(mapBrowserEvent) {
   var map = mapBrowserEvent.map;
   var view = map.getView();
   if(this.targetTouches.length == 0) {
-    view.setHint(ol.ViewHint.INTERACTING, -1);
+    var interacting = view.setHint(ol.ViewHint.INTERACTING, -1);
     if(!this.noKinetic_ && this.kinetic_ && this.kinetic_.end()) {
       var distance = this.kinetic_.getDistance();
       var angle = this.kinetic_.getAngle();
@@ -13388,6 +13398,10 @@ ol.interaction.TouchPan.prototype.handleTouchEnd = function(mapBrowserEvent) {
       var destpx = new ol.Pixel(centerpx.x - distance * Math.cos(angle), centerpx.y - distance * Math.sin(angle));
       var dest = map.getCoordinateFromPixel(destpx);
       view.setCenter(dest)
+    }else {
+      if(interacting === 0) {
+        map.requestRenderFrame()
+      }
     }
     return false
   }else {
@@ -13418,6 +13432,7 @@ ol.interaction.TouchPan.prototype.handleTouchStart = function(mapBrowserEvent) {
 goog.provide("ol.interaction.TouchRotate");
 goog.require("goog.asserts");
 goog.require("goog.style");
+goog.require("ol.Coordinate");
 goog.require("ol.View");
 goog.require("ol.ViewHint");
 goog.require("ol.interaction.Interaction");
@@ -13425,6 +13440,7 @@ goog.require("ol.interaction.Touch");
 ol.interaction.TOUCHROTATE_ANIMATION_DURATION = 250;
 ol.interaction.TouchRotate = function(opt_threshold) {
   goog.base(this);
+  this.anchor_ = null;
   this.lastAngle_;
   this.rotating_ = false;
   this.rotationDelta_ = 0;
@@ -13453,11 +13469,11 @@ ol.interaction.TouchRotate.prototype.handleTouchMove = function(mapBrowserEvent)
   var centroid = ol.interaction.Touch.centroid(this.targetTouches);
   centroid.x -= viewportPosition.x;
   centroid.y -= viewportPosition.y;
-  var anchor = map.getCoordinateFromPixel(centroid);
+  this.anchor_ = map.getCoordinateFromPixel(centroid);
   if(this.rotating_) {
     var view = map.getView().getView2D();
     map.requestRenderFrame();
-    ol.interaction.Interaction.rotateWithoutConstraints(map, view, view.getRotation() + rotationDelta, anchor)
+    ol.interaction.Interaction.rotateWithoutConstraints(map, view, view.getRotation() + rotationDelta, this.anchor_)
   }
 };
 ol.interaction.TouchRotate.prototype.handleTouchEnd = function(mapBrowserEvent) {
@@ -13465,7 +13481,7 @@ ol.interaction.TouchRotate.prototype.handleTouchEnd = function(mapBrowserEvent) 
     var map = mapBrowserEvent.map;
     var view = map.getView().getView2D();
     if(this.rotating_) {
-      ol.interaction.Interaction.rotate(map, view, view.getRotation(), undefined, ol.interaction.TOUCHROTATE_ANIMATION_DURATION)
+      ol.interaction.Interaction.rotate(map, view, view.getRotation(), this.anchor_, ol.interaction.TOUCHROTATE_ANIMATION_DURATION)
     }
     view.setHint(ol.ViewHint.INTERACTING, -1);
     return false
@@ -13477,6 +13493,7 @@ ol.interaction.TouchRotate.prototype.handleTouchStart = function(mapBrowserEvent
   if(this.targetTouches.length >= 2) {
     var map = mapBrowserEvent.map;
     var view = map.getView();
+    this.anchor_ = null;
     this.lastAngle_ = undefined;
     this.rotating_ = false;
     this.rotationDelta_ = 0;
@@ -13490,6 +13507,7 @@ ol.interaction.TouchRotate.prototype.handleTouchStart = function(mapBrowserEvent
 goog.provide("ol.interaction.TouchZoom");
 goog.require("goog.asserts");
 goog.require("goog.style");
+goog.require("ol.Coordinate");
 goog.require("ol.View");
 goog.require("ol.ViewHint");
 goog.require("ol.interaction.Interaction");
@@ -13497,6 +13515,7 @@ goog.require("ol.interaction.Touch");
 ol.interaction.TOUCHZOOM_ANIMATION_DURATION = 400;
 ol.interaction.TouchZoom = function() {
   goog.base(this);
+  this.anchor_ = null;
   this.lastDistance_;
   this.lastScaleDelta_ = 1
 };
@@ -13522,16 +13541,16 @@ ol.interaction.TouchZoom.prototype.handleTouchMove = function(mapBrowserEvent) {
   var centroid = ol.interaction.Touch.centroid(this.targetTouches);
   centroid.x -= viewportPosition.x;
   centroid.y -= viewportPosition.y;
-  var anchor = map.getCoordinateFromPixel(centroid);
+  this.anchor_ = map.getCoordinateFromPixel(centroid);
   map.requestRenderFrame();
-  ol.interaction.Interaction.zoomWithoutConstraints(map, view, view.getResolution() * scaleDelta, anchor)
+  ol.interaction.Interaction.zoomWithoutConstraints(map, view, view.getResolution() * scaleDelta, this.anchor_)
 };
 ol.interaction.TouchZoom.prototype.handleTouchEnd = function(mapBrowserEvent) {
   if(this.targetTouches.length < 2) {
     var map = mapBrowserEvent.map;
     var view = map.getView().getView2D();
     var direction = this.lastScaleDelta_ - 1;
-    ol.interaction.Interaction.zoom(map, view, view.getResolution(), undefined, ol.interaction.TOUCHZOOM_ANIMATION_DURATION, direction);
+    ol.interaction.Interaction.zoom(map, view, view.getResolution(), this.anchor_, ol.interaction.TOUCHZOOM_ANIMATION_DURATION, direction);
     view.setHint(ol.ViewHint.INTERACTING, -1);
     return false
   }else {
@@ -13542,6 +13561,7 @@ ol.interaction.TouchZoom.prototype.handleTouchStart = function(mapBrowserEvent) 
   if(this.targetTouches.length >= 2) {
     var map = mapBrowserEvent.map;
     var view = map.getView();
+    this.anchor_ = null;
     this.lastDistance_ = undefined;
     this.lastScaleDelta_ = 1;
     map.requestRenderFrame();
@@ -14117,16 +14137,16 @@ goog.require("ol.renderer.Layer");
 ol.renderer.Map = function(container, map) {
   goog.base(this);
   this.container_ = container;
-  this.map = map;
-  this.layerRenderers = {};
-  this.mapLayersChangedListenerKey_ = goog.events.listen(map, ol.Object.getChangedEventType(ol.MapProperty.LAYERS), this.handleLayersChanged, false, this);
+  this.map_ = map;
+  this.layerRenderers_ = {};
+  this.mapLayersChangedListenerKey_ = goog.events.listen(map, ol.Object.getChangedEventType(ol.MapProperty.LAYERS), this.handleLayersChanged_, false, this);
   this.layersListenerKeys_ = null;
   this.layerRendererChangeListenKeys_ = {}
 };
 goog.inherits(ol.renderer.Map, goog.Disposable);
-ol.renderer.Map.prototype.addLayer = function(layer) {
+ol.renderer.Map.prototype.addLayer_ = function(layer) {
   var layerRenderer = this.createLayerRenderer(layer);
-  this.setLayerRenderer(layer, layerRenderer);
+  this.setLayerRenderer_(layer, layerRenderer);
   this.getMap().render()
 };
 ol.renderer.Map.prototype.calculateMatrices2D = function(frameState) {
@@ -14144,7 +14164,7 @@ ol.renderer.Map.prototype.createLayerRenderer = function(layer) {
   return new ol.renderer.Layer(this, layer)
 };
 ol.renderer.Map.prototype.disposeInternal = function() {
-  goog.object.forEach(this.layerRenderers, function(layerRenderer) {
+  goog.object.forEach(this.layerRenderers_, function(layerRenderer) {
     goog.dispose(layerRenderer)
   });
   goog.events.unlistenByKey(this.mapLayersChangedListenerKey_);
@@ -14156,46 +14176,49 @@ ol.renderer.Map.prototype.disposeInternal = function() {
 ol.renderer.Map.prototype.getCanvas = goog.functions.NULL;
 ol.renderer.Map.prototype.getLayerRenderer = function(layer) {
   var layerKey = goog.getUid(layer);
-  var layerRenderer = this.layerRenderers[layerKey];
+  var layerRenderer = this.layerRenderers_[layerKey];
   goog.asserts.assert(goog.isDef(layerRenderer));
   return layerRenderer
 };
-ol.renderer.Map.prototype.getMap = function() {
-  return this.map
+ol.renderer.Map.prototype.getLayerRenderers = function() {
+  return this.layerRenderers_
 };
-ol.renderer.Map.prototype.handleLayerRendererChange = function(event) {
+ol.renderer.Map.prototype.getMap = function() {
+  return this.map_
+};
+ol.renderer.Map.prototype.handleLayerRendererChange_ = function(event) {
   this.getMap().render()
 };
-ol.renderer.Map.prototype.handleLayersAdd = function(collectionEvent) {
+ol.renderer.Map.prototype.handleLayersAdd_ = function(collectionEvent) {
   var layer = collectionEvent.elem;
-  this.addLayer(layer)
+  this.addLayer_(layer)
 };
-ol.renderer.Map.prototype.handleLayersChanged = function() {
-  goog.disposeAll(goog.object.getValues(this.layerRenderers));
-  this.layerRenderers = {};
+ol.renderer.Map.prototype.handleLayersChanged_ = function() {
+  goog.disposeAll(goog.object.getValues(this.layerRenderers_));
+  this.layerRenderers_ = {};
   if(!goog.isNull(this.layersListenerKeys_)) {
     goog.array.forEach(this.layersListenerKeys_, goog.events.unlistenByKey);
     this.layersListenerKeys_ = null
   }
-  var layers = this.map.getLayers();
+  var layers = this.getMap().getLayers();
   if(goog.isDefAndNotNull(layers)) {
-    layers.forEach(this.addLayer, this);
-    this.layersListenerKeys_ = [goog.events.listen(layers, ol.CollectionEventType.ADD, this.handleLayersAdd, false, this), goog.events.listen(layers, ol.CollectionEventType.REMOVE, this.handleLayersRemove, false, this)]
+    layers.forEach(this.addLayer_, this);
+    this.layersListenerKeys_ = [goog.events.listen(layers, ol.CollectionEventType.ADD, this.handleLayersAdd_, false, this), goog.events.listen(layers, ol.CollectionEventType.REMOVE, this.handleLayersRemove_, false, this)]
   }
 };
-ol.renderer.Map.prototype.handleLayersRemove = function(collectionEvent) {
+ol.renderer.Map.prototype.handleLayersRemove_ = function(collectionEvent) {
   var layer = collectionEvent.elem;
-  this.removeLayer(layer)
+  this.removeLayer_(layer)
 };
-ol.renderer.Map.prototype.removeLayer = function(layer) {
-  goog.dispose(this.removeLayerRenderer(layer));
+ol.renderer.Map.prototype.removeLayer_ = function(layer) {
+  goog.dispose(this.removeLayerRenderer_(layer));
   this.getMap().render()
 };
-ol.renderer.Map.prototype.removeLayerRenderer = function(layer) {
+ol.renderer.Map.prototype.removeLayerRenderer_ = function(layer) {
   var layerKey = goog.getUid(layer);
-  if(layerKey in this.layerRenderers) {
-    var layerRenderer = this.layerRenderers[layerKey];
-    delete this.layerRenderers[layerKey];
+  if(layerKey in this.layerRenderers_) {
+    var layerRenderer = this.layerRenderers_[layerKey];
+    delete this.layerRenderers_[layerKey];
     goog.events.unlistenByKey(this.layerRendererChangeListenKeys_[layerKey]);
     delete this.layerRendererChangeListenKeys_[layerKey];
     return layerRenderer
@@ -14204,12 +14227,12 @@ ol.renderer.Map.prototype.removeLayerRenderer = function(layer) {
   }
 };
 ol.renderer.Map.prototype.renderFrame = goog.nullFunction;
-ol.renderer.Map.prototype.setLayerRenderer = function(layer, layerRenderer) {
+ol.renderer.Map.prototype.setLayerRenderer_ = function(layer, layerRenderer) {
   var layerKey = goog.getUid(layer);
-  goog.asserts.assert(!(layerKey in this.layerRenderers));
-  this.layerRenderers[layerKey] = layerRenderer;
+  goog.asserts.assert(!(layerKey in this.layerRenderers_));
+  this.layerRenderers_[layerKey] = layerRenderer;
   goog.asserts.assert(!(layerKey in this.layerRendererChangeListenKeys_));
-  this.layerRendererChangeListenKeys_[layerKey] = goog.events.listen(layerRenderer, goog.events.EventType.CHANGE, this.handleLayerRendererChange, false, this)
+  this.layerRendererChangeListenKeys_[layerKey] = goog.events.listen(layerRenderer, goog.events.EventType.CHANGE, this.handleLayerRendererChange_, false, this)
 };
 goog.provide("ol.source.ImageSource");
 goog.require("goog.array");
@@ -14692,23 +14715,31 @@ ol.layer.Vector.prototype.parseFeatures = function(data, parser, projection) {
   var callback = function(feature, type) {
     return lookup[type]
   };
+  var addFeatures = function(features) {
+    var sourceProjection = this.getSource().getProjection();
+    var transform = ol.projection.getTransform(sourceProjection, projection);
+    transform(this.pointVertices_.coordinates, this.pointVertices_.coordinates, this.pointVertices_.getDimension());
+    transform(this.lineVertices_.coordinates, this.lineVertices_.coordinates, this.lineVertices_.getDimension());
+    transform(this.polygonVertices_.coordinates, this.polygonVertices_.coordinates, this.polygonVertices_.getDimension());
+    this.addFeatures(features)
+  };
   if(goog.isString(data)) {
     goog.asserts.assert(goog.isFunction(parser.readFeaturesFromString), "Expected a parser with readFeaturesFromString method.");
-    features = parser.readFeaturesFromString(data, {callback:callback})
+    features = parser.readFeaturesFromString(data, {callback:callback});
+    addFeatures.call(this, features)
   }else {
     if(goog.isObject(data)) {
-      goog.asserts.assert(goog.isFunction(parser.readFeaturesFromObject), "Expected a parser with a readFeaturesFromObject method.");
-      features = parser.readFeaturesFromObject(data, {callback:callback})
+      if(goog.isFunction(parser.readFeaturesFromObjectAsync)) {
+        parser.readFeaturesFromObjectAsync(data, goog.bind(addFeatures, this), {callback:callback})
+      }else {
+        goog.asserts.assert(goog.isFunction(parser.readFeaturesFromObject), "Expected a parser with a readFeaturesFromObject method.");
+        features = parser.readFeaturesFromObject(data, {callback:callback});
+        addFeatures.call(this, features)
+      }
     }else {
       throw new Error("Data type not supported: " + data);
     }
   }
-  var sourceProjection = this.getSource().getProjection();
-  var transform = ol.projection.getTransform(sourceProjection, projection);
-  transform(this.pointVertices_.coordinates, this.pointVertices_.coordinates, this.pointVertices_.getDimension());
-  transform(this.lineVertices_.coordinates, this.lineVertices_.coordinates, this.lineVertices_.getDimension());
-  transform(this.polygonVertices_.coordinates, this.polygonVertices_.coordinates, this.polygonVertices_.getDimension());
-  this.addFeatures(features)
 };
 goog.require("ol.filter.Extent");
 goog.require("ol.filter.Geometry");
@@ -15511,7 +15542,7 @@ ol.style.Icon = function(options) {
   this.rotation_ = !goog.isDef(options.rotation) ? new ol.ExpressionLiteral(ol.style.IconDefaults.rotation) : options.rotation instanceof ol.Expression ? options.rotation : new ol.ExpressionLiteral(options.rotation)
 };
 ol.style.Icon.prototype.createLiteral = function(feature) {
-  var attrs = feature.getAttributes();
+  var attrs = feature && feature.getAttributes();
   var url = this.url_.evaluate(feature, attrs);
   goog.asserts.assert(goog.isString(url) && url != "#", "url must be a string");
   var width = goog.isNull(this.width_) ? undefined : this.width_.evaluate(feature, attrs);
@@ -16369,12 +16400,12 @@ ol.renderer.dom.ImageLayer.prototype.renderFrame = function(frameState, layerSta
       goog.dom.appendChild(this.target, imageElement);
       this.image_ = image
     }
-    this.setTransform(transform);
+    this.setTransform_(transform);
     this.updateAttributions(frameState.attributions, image.getAttributions());
     this.updateLogos(frameState, imageSource)
   }
 };
-ol.renderer.dom.ImageLayer.prototype.setTransform = function(transform) {
+ol.renderer.dom.ImageLayer.prototype.setTransform_ = function(transform) {
   if(!goog.vec.Mat4.equals(transform, this.transform_)) {
     ol.dom.transformElement2D(this.target, transform, 6);
     goog.vec.Mat4.setFromArray(this.transform_, transform)
@@ -16637,9 +16668,11 @@ ol.renderer.dom.Map.prototype.createLayerRenderer = function(layer) {
   }else {
     if(layer instanceof ol.layer.ImageLayer) {
       layerRenderer = new ol.renderer.dom.ImageLayer(this, layer)
+    }else {
+      goog.asserts.fail();
+      return null
     }
   }
-  goog.asserts.assert(goog.isDef(layerRenderer));
   goog.dom.appendChild(this.layersPane_, layerRenderer.getTarget());
   return layerRenderer
 };
@@ -17956,17 +17989,16 @@ ol.renderer.webgl.Map.prototype.bindTileTexture = function(tile, magFilter, minF
   }
 };
 ol.renderer.webgl.Map.prototype.createLayerRenderer = function(layer) {
-  var layerRenderer = null;
   if(layer instanceof ol.layer.TileLayer) {
-    layerRenderer = new ol.renderer.webgl.TileLayer(this, layer)
+    return new ol.renderer.webgl.TileLayer(this, layer)
   }else {
     if(layer instanceof ol.layer.ImageLayer) {
-      layerRenderer = new ol.renderer.webgl.ImageLayer(this, layer)
+      return new ol.renderer.webgl.ImageLayer(this, layer)
     }else {
-      goog.asserts.fail()
+      goog.asserts.fail();
+      return null
     }
   }
-  return layerRenderer
 };
 ol.renderer.webgl.Map.prototype.deleteBuffer = function(buf) {
   var gl = this.getGL();
@@ -18067,7 +18099,7 @@ ol.renderer.webgl.Map.prototype.handleWebGLContextLost = function(event) {
   this.programCache_ = {};
   this.textureCache_.clear();
   this.textureCacheFrameMarkerCount_ = 0;
-  goog.object.forEach(this.layerRenderers, function(layerRenderer) {
+  goog.object.forEach(this.getLayerRenderers(), function(layerRenderer) {
     layerRenderer.handleWebGLContextLost()
   })
 };
@@ -18273,6 +18305,9 @@ ol.Map = function(options) {
   this.viewport_.style.width = "100%";
   this.viewport_.style.height = "100%";
   this.viewport_.style.msTouchAction = "none";
+  if(ol.BrowserFeature.HAS_TOUCH) {
+    this.viewport_.className = "ol-touch"
+  }
   goog.dom.appendChild(this.target_, this.viewport_);
   this.overlayContainer_ = goog.dom.createDom(goog.dom.TagName.DIV, "ol-overlaycontainer");
   goog.events.listen(this.overlayContainer_, [goog.events.EventType.CLICK, goog.events.EventType.DBLCLICK, ol.BrowserFeature.HAS_TOUCH ? goog.events.EventType.TOUCHSTART : goog.events.EventType.MOUSEDOWN], goog.events.Event.stopPropagation);
@@ -20014,6 +20049,7 @@ ol.interaction.Keyboard.prototype.handleMapBrowserEvent = function(mapBrowserEve
     }
   }
 };
+goog.provide("ol.parser.AsyncObjectFeatureParser");
 goog.provide("ol.parser.DomFeatureParser");
 goog.provide("ol.parser.ObjectFeatureParser");
 goog.provide("ol.parser.ReadFeaturesOptions");
@@ -20028,6 +20064,9 @@ ol.parser.ObjectFeatureParser.prototype.readFeaturesFromObject = goog.abstractMe
 ol.parser.StringFeatureParser = function() {
 };
 ol.parser.StringFeatureParser.prototype.readFeaturesFromString = goog.abstractMethod;
+ol.parser.AsyncObjectFeatureParser = function() {
+};
+ol.parser.AsyncObjectFeatureParser.prototype.readFeaturesFromObjectAsync = goog.abstractMethod;
 ol.parser.ReadFeaturesCallback;
 ol.parser.ReadFeaturesOptions;
 goog.provide("ol.parser.Parser");
@@ -20167,88 +20206,1697 @@ ol.parser.GeoJSON.prototype.parsePolygon_ = function(json, opt_vertices) {
   return new ol.geom.Polygon(json.coordinates, opt_vertices)
 };
 ol.parser.GeoJSON.GeometryType = {"Point":ol.geom.GeometryType.POINT, "LineString":ol.geom.GeometryType.LINESTRING, "Polygon":ol.geom.GeometryType.POLYGON, "MultiPoint":ol.geom.GeometryType.MULTIPOINT, "MultiLineString":ol.geom.GeometryType.MULTILINESTRING, "MultiPolygon":ol.geom.GeometryType.MULTIPOLYGON, "GeometryCollection":ol.geom.GeometryType.GEOMETRYCOLLECTION};
-goog.provide("ol.parser.XML");
-goog.require("ol.parser.Parser");
-ol.parser.XML = function() {
-  this.regExes = {trimSpace:/^\s*|\s*$/g, removeSpace:/\s*/g, splitSpace:/\s+/, trimComma:/\s*,\s*/g}
+/*
+ Portions of this code are from MochiKit, received by
+ The Closure Authors under the MIT license. All other code is Copyright
+ 2005-2009 The Closure Authors. All Rights Reserved.
+*/
+goog.provide("goog.async.Deferred");
+goog.provide("goog.async.Deferred.AlreadyCalledError");
+goog.provide("goog.async.Deferred.CancelledError");
+goog.require("goog.array");
+goog.require("goog.asserts");
+goog.require("goog.debug.Error");
+goog.async.Deferred = function(opt_canceller, opt_defaultScope) {
+  this.chain_ = [];
+  this.canceller_ = opt_canceller;
+  this.defaultScope_ = opt_defaultScope || null
 };
-goog.inherits(ol.parser.XML, ol.parser.Parser);
-ol.parser.XML.prototype.readNode = function(node, obj) {
-  if(!obj) {
-    obj = {}
-  }
-  var group = this.readers[node.namespaceURI] || this.readers[this.defaultNamespaceURI];
-  if(group) {
-    var local = node.localName || node.nodeName.split(":").pop();
-    var reader = group[local] || group["*"];
-    if(reader) {
-      reader.apply(this, [node, obj])
-    }
-  }
-  return obj
-};
-ol.parser.XML.prototype.readChildNodes = function(node, obj) {
-  if(!obj) {
-    obj = {}
-  }
-  var children = node.childNodes;
-  var child;
-  for(var i = 0, len = children.length;i < len;++i) {
-    child = children[i];
-    if(child.nodeType == 1) {
-      this.readNode(child, obj)
-    }
-  }
-  return obj
-};
-ol.parser.XML.prototype.getChildValue = function(node, def) {
-  var value = def || "";
-  if(node) {
-    for(var child = node.firstChild;child;child = child.nextSibling) {
-      switch(child.nodeType) {
-        case 3:
-        ;
-        case 4:
-          value += child.nodeValue;
-          break;
-        default:
-          break
+goog.async.Deferred.prototype.fired_ = false;
+goog.async.Deferred.prototype.hadError_ = false;
+goog.async.Deferred.prototype.result_;
+goog.async.Deferred.prototype.paused_ = 0;
+goog.async.Deferred.prototype.silentlyCancelled_ = false;
+goog.async.Deferred.prototype.chained_ = false;
+goog.async.Deferred.prototype.unhandledExceptionTimeoutId_;
+goog.async.Deferred.prototype.parent_;
+goog.async.Deferred.prototype.branches_ = 0;
+goog.async.Deferred.prototype.cancel = function(opt_deepCancel) {
+  if(!this.hasFired()) {
+    if(this.parent_) {
+      var parent = this.parent_;
+      delete this.parent_;
+      if(opt_deepCancel) {
+        parent.cancel(opt_deepCancel)
+      }else {
+        parent.branchCancel_()
       }
     }
-  }
-  return value
-};
-ol.parser.XML.prototype.getAttributeNodeNS = function(node, uri, name) {
-  var attributeNode = null;
-  if(node.getAttributeNodeNS) {
-    attributeNode = node.getAttributeNodeNS(uri, name)
+    if(this.canceller_) {
+      this.canceller_.call(this.defaultScope_, this)
+    }else {
+      this.silentlyCancelled_ = true
+    }
+    if(!this.hasFired()) {
+      this.errback(new goog.async.Deferred.CancelledError(this))
+    }
   }else {
-    var attributes = node.attributes;
-    var potentialNode, fullName;
-    for(var i = 0, len = attributes.length;i < len;++i) {
-      potentialNode = attributes[i];
-      if(potentialNode.namespaceURI == uri) {
-        fullName = potentialNode.prefix ? potentialNode.prefix + ":" + name : name;
-        if(fullName == potentialNode.nodeName) {
-          attributeNode = potentialNode;
-          break
+    if(this.result_ instanceof goog.async.Deferred) {
+      this.result_.cancel()
+    }
+  }
+};
+goog.async.Deferred.prototype.branchCancel_ = function() {
+  this.branches_--;
+  if(this.branches_ <= 0) {
+    this.cancel()
+  }
+};
+goog.async.Deferred.prototype.pause_ = function() {
+  this.paused_++
+};
+goog.async.Deferred.prototype.unpause_ = function() {
+  this.paused_--;
+  if(this.paused_ == 0 && this.hasFired()) {
+    this.fire_()
+  }
+};
+goog.async.Deferred.prototype.continue_ = function(isSuccess, res) {
+  this.resback_(isSuccess, res);
+  this.unpause_()
+};
+goog.async.Deferred.prototype.resback_ = function(isSuccess, res) {
+  this.fired_ = true;
+  this.result_ = res;
+  this.hadError_ = !isSuccess;
+  this.fire_()
+};
+goog.async.Deferred.prototype.check_ = function() {
+  if(this.hasFired()) {
+    if(!this.silentlyCancelled_) {
+      throw new goog.async.Deferred.AlreadyCalledError(this);
+    }
+    this.silentlyCancelled_ = false
+  }
+};
+goog.async.Deferred.prototype.callback = function(opt_result) {
+  this.check_();
+  this.assertNotDeferred_(opt_result);
+  this.resback_(true, opt_result)
+};
+goog.async.Deferred.prototype.errback = function(opt_result) {
+  this.check_();
+  this.assertNotDeferred_(opt_result);
+  this.resback_(false, opt_result)
+};
+goog.async.Deferred.prototype.assertNotDeferred_ = function(obj) {
+  goog.asserts.assert(!(obj instanceof goog.async.Deferred), "Deferred instances can only be chained if they are the result of a " + "callback")
+};
+goog.async.Deferred.prototype.addCallback = function(cb, opt_scope) {
+  return this.addCallbacks(cb, null, opt_scope)
+};
+goog.async.Deferred.prototype.addErrback = function(eb, opt_scope) {
+  return this.addCallbacks(null, eb, opt_scope)
+};
+goog.async.Deferred.prototype.addCallbacks = function(cb, eb, opt_scope) {
+  goog.asserts.assert(!this.chained_, "Chained Deferreds can not be re-used");
+  this.chain_.push([cb, eb, opt_scope]);
+  if(this.hasFired()) {
+    this.fire_()
+  }
+  return this
+};
+goog.async.Deferred.prototype.chainDeferred = function(otherDeferred) {
+  this.addCallbacks(otherDeferred.callback, otherDeferred.errback, otherDeferred);
+  return this
+};
+goog.async.Deferred.prototype.awaitDeferred = function(otherDeferred) {
+  return this.addCallback(goog.bind(otherDeferred.branch, otherDeferred))
+};
+goog.async.Deferred.prototype.branch = function(opt_propagateCancel) {
+  var d = new goog.async.Deferred;
+  this.chainDeferred(d);
+  if(opt_propagateCancel) {
+    d.parent_ = this;
+    this.branches_++
+  }
+  return d
+};
+goog.async.Deferred.prototype.addBoth = function(f, opt_scope) {
+  return this.addCallbacks(f, f, opt_scope)
+};
+goog.async.Deferred.prototype.hasFired = function() {
+  return this.fired_
+};
+goog.async.Deferred.prototype.isError = function(res) {
+  return res instanceof Error
+};
+goog.async.Deferred.prototype.hasErrback_ = function() {
+  return goog.array.some(this.chain_, function(chainRow) {
+    return goog.isFunction(chainRow[1])
+  })
+};
+goog.async.Deferred.prototype.fire_ = function() {
+  if(this.unhandledExceptionTimeoutId_ && this.hasFired() && this.hasErrback_()) {
+    goog.global.clearTimeout(this.unhandledExceptionTimeoutId_);
+    delete this.unhandledExceptionTimeoutId_
+  }
+  if(this.parent_) {
+    this.parent_.branches_--;
+    delete this.parent_
+  }
+  var res = this.result_;
+  var unhandledException = false;
+  var isChained = false;
+  while(this.chain_.length && this.paused_ == 0) {
+    var chainEntry = this.chain_.shift();
+    var callback = chainEntry[0];
+    var errback = chainEntry[1];
+    var scope = chainEntry[2];
+    var f = this.hadError_ ? errback : callback;
+    if(f) {
+      try {
+        var ret = f.call(scope || this.defaultScope_, res);
+        if(goog.isDef(ret)) {
+          this.hadError_ = this.hadError_ && (ret == res || this.isError(ret));
+          this.result_ = res = ret
+        }
+        if(res instanceof goog.async.Deferred) {
+          isChained = true;
+          this.pause_()
+        }
+      }catch(ex) {
+        res = ex;
+        this.hadError_ = true;
+        if(!this.hasErrback_()) {
+          unhandledException = true
         }
       }
     }
   }
-  return attributeNode
+  this.result_ = res;
+  if(isChained && this.paused_) {
+    res.addCallbacks(goog.bind(this.continue_, this, true), goog.bind(this.continue_, this, false));
+    res.chained_ = true
+  }
+  if(unhandledException) {
+    this.unhandledExceptionTimeoutId_ = goog.global.setTimeout(function() {
+      throw res;
+    }, 0)
+  }
 };
-ol.parser.XML.prototype.getAttributeNS = function(node, uri, name) {
-  var attributeValue = "";
-  if(node.getAttributeNS) {
-    attributeValue = node.getAttributeNS(uri, name) || ""
+goog.async.Deferred.succeed = function(res) {
+  var d = new goog.async.Deferred;
+  d.callback(res);
+  return d
+};
+goog.async.Deferred.fail = function(res) {
+  var d = new goog.async.Deferred;
+  d.errback(res);
+  return d
+};
+goog.async.Deferred.cancelled = function() {
+  var d = new goog.async.Deferred;
+  d.cancel();
+  return d
+};
+goog.async.Deferred.when = function(value, callback, opt_scope) {
+  if(value instanceof goog.async.Deferred) {
+    return value.branch(true).addCallback(callback, opt_scope)
   }else {
-    var attributeNode = this.getAttributeNodeNS(node, uri, name);
-    if(attributeNode) {
-      attributeValue = attributeNode.nodeValue
+    return goog.async.Deferred.succeed(value).addCallback(callback, opt_scope)
+  }
+};
+goog.async.Deferred.AlreadyCalledError = function(deferred) {
+  goog.debug.Error.call(this);
+  this.deferred = deferred
+};
+goog.inherits(goog.async.Deferred.AlreadyCalledError, goog.debug.Error);
+goog.async.Deferred.AlreadyCalledError.prototype.message = "Deferred has already fired";
+goog.async.Deferred.AlreadyCalledError.prototype.name = "AlreadyCalledError";
+goog.async.Deferred.CancelledError = function(deferred) {
+  goog.debug.Error.call(this);
+  this.deferred = deferred
+};
+goog.inherits(goog.async.Deferred.CancelledError, goog.debug.Error);
+goog.async.Deferred.CancelledError.prototype.message = "Deferred was cancelled";
+goog.async.Deferred.CancelledError.prototype.name = "CancelledError";
+goog.provide("goog.async.DeferredList");
+goog.require("goog.array");
+goog.require("goog.async.Deferred");
+goog.async.DeferredList = function(list, opt_fireOnOneCallback, opt_fireOnOneErrback, opt_consumeErrors, opt_canceller, opt_defaultScope) {
+  goog.async.Deferred.call(this, opt_canceller, opt_defaultScope);
+  this.list_ = list;
+  this.deferredResults_ = [];
+  this.fireOnOneCallback_ = !!opt_fireOnOneCallback;
+  this.fireOnOneErrback_ = !!opt_fireOnOneErrback;
+  this.consumeErrors_ = !!opt_consumeErrors;
+  for(var i = 0;i < list.length;i++) {
+    var d = list[i];
+    d.addCallbacks(goog.bind(this.handleCallback_, this, i, true), goog.bind(this.handleCallback_, this, i, false))
+  }
+  if(list.length == 0 && !this.fireOnOneCallback_) {
+    this.callback(this.deferredResults_)
+  }
+};
+goog.inherits(goog.async.DeferredList, goog.async.Deferred);
+goog.async.DeferredList.prototype.numFinished_ = 0;
+goog.async.DeferredList.prototype.handleCallback_ = function(index, success, result) {
+  this.numFinished_++;
+  this.deferredResults_[index] = [success, result];
+  if(!this.hasFired()) {
+    if(this.fireOnOneCallback_ && success) {
+      this.callback([index, result])
+    }else {
+      if(this.fireOnOneErrback_ && !success) {
+        this.errback(result)
+      }else {
+        if(this.numFinished_ == this.list_.length) {
+          this.callback(this.deferredResults_)
+        }
+      }
     }
   }
-  return attributeValue
+  if(this.consumeErrors_ && !success) {
+    result = null
+  }
+  return result
+};
+goog.async.DeferredList.prototype.errback = function(res) {
+  goog.async.DeferredList.superClass_.errback.call(this, res);
+  goog.array.forEach(this.list_, function(item) {
+    item.cancel()
+  })
+};
+goog.async.DeferredList.gatherResults = function(list) {
+  var d = new goog.async.DeferredList(list, false, true);
+  d.addCallback(function(results) {
+    return goog.array.map(results, function(res) {
+      return res[1]
+    })
+  });
+  return d
+};
+goog.provide("goog.date.DateLike");
+goog.date.DateLike;
+goog.provide("goog.i18n.DateTimeSymbols");
+goog.provide("goog.i18n.DateTimeSymbols_af");
+goog.provide("goog.i18n.DateTimeSymbols_am");
+goog.provide("goog.i18n.DateTimeSymbols_ar");
+goog.provide("goog.i18n.DateTimeSymbols_bg");
+goog.provide("goog.i18n.DateTimeSymbols_bn");
+goog.provide("goog.i18n.DateTimeSymbols_ca");
+goog.provide("goog.i18n.DateTimeSymbols_chr");
+goog.provide("goog.i18n.DateTimeSymbols_cs");
+goog.provide("goog.i18n.DateTimeSymbols_cy");
+goog.provide("goog.i18n.DateTimeSymbols_da");
+goog.provide("goog.i18n.DateTimeSymbols_de");
+goog.provide("goog.i18n.DateTimeSymbols_de_AT");
+goog.provide("goog.i18n.DateTimeSymbols_de_CH");
+goog.provide("goog.i18n.DateTimeSymbols_el");
+goog.provide("goog.i18n.DateTimeSymbols_en");
+goog.provide("goog.i18n.DateTimeSymbols_en_AU");
+goog.provide("goog.i18n.DateTimeSymbols_en_GB");
+goog.provide("goog.i18n.DateTimeSymbols_en_IE");
+goog.provide("goog.i18n.DateTimeSymbols_en_IN");
+goog.provide("goog.i18n.DateTimeSymbols_en_ISO");
+goog.provide("goog.i18n.DateTimeSymbols_en_SG");
+goog.provide("goog.i18n.DateTimeSymbols_en_US");
+goog.provide("goog.i18n.DateTimeSymbols_en_ZA");
+goog.provide("goog.i18n.DateTimeSymbols_es");
+goog.provide("goog.i18n.DateTimeSymbols_es_419");
+goog.provide("goog.i18n.DateTimeSymbols_et");
+goog.provide("goog.i18n.DateTimeSymbols_eu");
+goog.provide("goog.i18n.DateTimeSymbols_fa");
+goog.provide("goog.i18n.DateTimeSymbols_fi");
+goog.provide("goog.i18n.DateTimeSymbols_fil");
+goog.provide("goog.i18n.DateTimeSymbols_fr");
+goog.provide("goog.i18n.DateTimeSymbols_fr_CA");
+goog.provide("goog.i18n.DateTimeSymbols_gl");
+goog.provide("goog.i18n.DateTimeSymbols_gsw");
+goog.provide("goog.i18n.DateTimeSymbols_gu");
+goog.provide("goog.i18n.DateTimeSymbols_haw");
+goog.provide("goog.i18n.DateTimeSymbols_he");
+goog.provide("goog.i18n.DateTimeSymbols_hi");
+goog.provide("goog.i18n.DateTimeSymbols_hr");
+goog.provide("goog.i18n.DateTimeSymbols_hu");
+goog.provide("goog.i18n.DateTimeSymbols_id");
+goog.provide("goog.i18n.DateTimeSymbols_in");
+goog.provide("goog.i18n.DateTimeSymbols_is");
+goog.provide("goog.i18n.DateTimeSymbols_it");
+goog.provide("goog.i18n.DateTimeSymbols_iw");
+goog.provide("goog.i18n.DateTimeSymbols_ja");
+goog.provide("goog.i18n.DateTimeSymbols_kn");
+goog.provide("goog.i18n.DateTimeSymbols_ko");
+goog.provide("goog.i18n.DateTimeSymbols_ln");
+goog.provide("goog.i18n.DateTimeSymbols_lt");
+goog.provide("goog.i18n.DateTimeSymbols_lv");
+goog.provide("goog.i18n.DateTimeSymbols_ml");
+goog.provide("goog.i18n.DateTimeSymbols_mr");
+goog.provide("goog.i18n.DateTimeSymbols_ms");
+goog.provide("goog.i18n.DateTimeSymbols_mt");
+goog.provide("goog.i18n.DateTimeSymbols_nl");
+goog.provide("goog.i18n.DateTimeSymbols_no");
+goog.provide("goog.i18n.DateTimeSymbols_or");
+goog.provide("goog.i18n.DateTimeSymbols_pl");
+goog.provide("goog.i18n.DateTimeSymbols_pt");
+goog.provide("goog.i18n.DateTimeSymbols_pt_BR");
+goog.provide("goog.i18n.DateTimeSymbols_pt_PT");
+goog.provide("goog.i18n.DateTimeSymbols_ro");
+goog.provide("goog.i18n.DateTimeSymbols_ru");
+goog.provide("goog.i18n.DateTimeSymbols_sk");
+goog.provide("goog.i18n.DateTimeSymbols_sl");
+goog.provide("goog.i18n.DateTimeSymbols_sq");
+goog.provide("goog.i18n.DateTimeSymbols_sr");
+goog.provide("goog.i18n.DateTimeSymbols_sv");
+goog.provide("goog.i18n.DateTimeSymbols_sw");
+goog.provide("goog.i18n.DateTimeSymbols_ta");
+goog.provide("goog.i18n.DateTimeSymbols_te");
+goog.provide("goog.i18n.DateTimeSymbols_th");
+goog.provide("goog.i18n.DateTimeSymbols_tl");
+goog.provide("goog.i18n.DateTimeSymbols_tr");
+goog.provide("goog.i18n.DateTimeSymbols_uk");
+goog.provide("goog.i18n.DateTimeSymbols_ur");
+goog.provide("goog.i18n.DateTimeSymbols_vi");
+goog.provide("goog.i18n.DateTimeSymbols_zh");
+goog.provide("goog.i18n.DateTimeSymbols_zh_CN");
+goog.provide("goog.i18n.DateTimeSymbols_zh_HK");
+goog.provide("goog.i18n.DateTimeSymbols_zh_TW");
+goog.provide("goog.i18n.DateTimeSymbols_zu");
+goog.i18n.DateTimeSymbols_en_ISO = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, y MMMM dd", "y MMMM d", "y MMM d", "yyyy-MM-dd"], TIMEFORMATS:["HH:mm:ss v", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], AVAILABLEFORMATS:{"Md":"M/d", "MMMMd":"MMMM d", "MMMd":"MMM d"}, FIRSTDAYOFWEEK:0, 
+WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_af = {ERAS:["v.C.", "n.C."], ERANAMES:["voor Christus", "na Christus"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januarie", "Februarie", "Maart", "April", "Mei", "Junie", "Julie", "Augustus", "September", "Oktober", "November", "Desember"], STANDALONEMONTHS:["Januarie", "Februarie", "Maart", "April", "Mei", "Junie", "Julie", "Augustus", "September", 
+"Oktober", "November", "Desember"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Des"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Des"], WEEKDAYS:["Sondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrydag", "Saterdag"], STANDALONEWEEKDAYS:["Sondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrydag", "Saterdag"], SHORTWEEKDAYS:["So", "Ma", "Di", "Wo", "Do", "Vr", "Sa"], STANDALONESHORTWEEKDAYS:["So", 
+"Ma", "Di", "Wo", "Do", "Vr", "Sa"], NARROWWEEKDAYS:["S", "M", "D", "W", "D", "V", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "D", "W", "D", "V", "S"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1ste kwartaal", "2de kwartaal", "3de kwartaal", "4de kwartaal"], AMPMS:["vm.", "nm."], DATEFORMATS:["EEEE dd MMMM y", "dd MMMM y", "dd MMM y", "yyyy-MM-dd"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_am = {ERAS:["\u12d3/\u12d3", "\u12d3/\u121d"], ERANAMES:["\u12d3\u1218\u1270 \u12d3\u1208\u121d", "\u12d3\u1218\u1270 \u121d\u1215\u1228\u1275"], NARROWMONTHS:["\u1303", "\u134c", "\u121b", "\u12a4", "\u121c", "\u1301", "\u1301", "\u12a6", "\u1234", "\u12a6", "\u1296", "\u12f2"], STANDALONENARROWMONTHS:["\u1303", "\u134c", "\u121b", "\u12a4", "\u121c", "\u1301", "\u1301", "\u12a6", "\u1234", "\u12a6", "\u1296", "\u12f2"], MONTHS:["\u1303\u1295\u12e9\u12c8\u122a", "\u134c\u1265\u1229\u12c8\u122a", 
+"\u121b\u122d\u127d", "\u12a4\u1355\u1228\u120d", "\u121c\u12ed", "\u1301\u1295", "\u1301\u120b\u12ed", "\u12a6\u1308\u1235\u1275", "\u1234\u1355\u1274\u121d\u1260\u122d", "\u12a6\u12ad\u1270\u12cd\u1260\u122d", "\u1296\u126c\u121d\u1260\u122d", "\u12f2\u1234\u121d\u1260\u122d"], STANDALONEMONTHS:["\u1303\u1295\u12e9\u12c8\u122a", "\u134c\u1265\u1229\u12c8\u122a", "\u121b\u122d\u127d", "\u12a4\u1355\u1228\u120d", "\u121c\u12ed", "\u1301\u1295", "\u1301\u120b\u12ed", "\u12a6\u1308\u1235\u1275", "\u1234\u1355\u1274\u121d\u1260\u122d", 
+"\u12a6\u12ad\u1270\u12cd\u1260\u122d", "\u1296\u126c\u121d\u1260\u122d", "\u12f2\u1234\u121d\u1260\u122d"], SHORTMONTHS:["\u1303\u1295\u12e9", "\u134c\u1265\u1229", "\u121b\u122d\u127d", "\u12a4\u1355\u1228", "\u121c\u12ed", "\u1301\u1295", "\u1301\u120b\u12ed", "\u12a6\u1308\u1235", "\u1234\u1355\u1274", "\u12a6\u12ad\u1270", "\u1296\u126c\u121d", "\u12f2\u1234\u121d"], STANDALONESHORTMONTHS:["\u1303\u1295\u12e9", "\u134c\u1265\u1229", "\u121b\u122d\u127d", "\u12a4\u1355\u1228", "\u121c\u12ed", 
+"\u1301\u1295", "\u1301\u120b\u12ed", "\u12a6\u1308\u1235", "\u1234\u1355\u1274", "\u12a6\u12ad\u1270", "\u1296\u126c\u121d", "\u12f2\u1234\u121d"], WEEKDAYS:["\u12a5\u1211\u12f5", "\u1230\u129e", "\u121b\u12ad\u1230\u129e", "\u1228\u1261\u12d5", "\u1210\u1219\u1235", "\u12d3\u122d\u1265", "\u1245\u12f3\u121c"], STANDALONEWEEKDAYS:["\u12a5\u1211\u12f5", "\u1230\u129e", "\u121b\u12ad\u1230\u129e", "\u1228\u1261\u12d5", "\u1210\u1219\u1235", "\u12d3\u122d\u1265", "\u1245\u12f3\u121c"], SHORTWEEKDAYS:["\u12a5\u1211\u12f5", 
+"\u1230\u129e", "\u121b\u12ad\u1230", "\u1228\u1261\u12d5", "\u1210\u1219\u1235", "\u12d3\u122d\u1265", "\u1245\u12f3\u121c"], STANDALONESHORTWEEKDAYS:["\u12a5\u1211\u12f5", "\u1230\u129e", "\u121b\u12ad\u1230", "\u1228\u1261\u12d5", "\u1210\u1219\u1235", "\u12d3\u122d\u1265", "\u1245\u12f3\u121c"], NARROWWEEKDAYS:["\u12a5", "\u1230", "\u121b", "\u1228", "\u1210", "\u12d3", "\u1245"], STANDALONENARROWWEEKDAYS:["\u12a5", "\u1230", "\u121b", "\u1228", "\u1210", "\u12d3", "\u1245"], SHORTQUARTERS:["Q1", 
+"Q2", "Q3", "Q4"], QUARTERS:["1\u129b\u12cd \u1229\u1265", "\u1201\u1208\u1270\u129b\u12cd \u1229\u1265", "3\u129b\u12cd \u1229\u1265", "4\u129b\u12cd \u1229\u1265"], AMPMS:["\u1321\u12cb\u1275", "\u12a8\u1233\u12d3\u1275"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yyyy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_ar = {ZERODIGIT:1632, ERAS:["\u0642.\u0645", "\u0645"], ERANAMES:["\u0642\u0628\u0644 \u0627\u0644\u0645\u064a\u0644\u0627\u062f", "\u0645\u064a\u0644\u0627\u062f\u064a"], NARROWMONTHS:["\u064a", "\u0641", "\u0645", "\u0623", "\u0648", "\u0646", "\u0644", "\u063a", "\u0633", "\u0643", "\u0628", "\u062f"], STANDALONENARROWMONTHS:["\u064a", "\u0641", "\u0645", "\u0623", "\u0648", "\u0646", "\u0644", "\u063a", "\u0633", "\u0643", "\u0628", "\u062f"], MONTHS:["\u064a\u0646\u0627\u064a\u0631", 
+"\u0641\u0628\u0631\u0627\u064a\u0631", "\u0645\u0627\u0631\u0633", "\u0623\u0628\u0631\u064a\u0644", "\u0645\u0627\u064a\u0648", "\u064a\u0648\u0646\u064a\u0648", "\u064a\u0648\u0644\u064a\u0648", "\u0623\u063a\u0633\u0637\u0633", "\u0633\u0628\u062a\u0645\u0628\u0631", "\u0623\u0643\u062a\u0648\u0628\u0631", "\u0646\u0648\u0641\u0645\u0628\u0631", "\u062f\u064a\u0633\u0645\u0628\u0631"], STANDALONEMONTHS:["\u064a\u0646\u0627\u064a\u0631", "\u0641\u0628\u0631\u0627\u064a\u0631", "\u0645\u0627\u0631\u0633", 
+"\u0623\u0628\u0631\u064a\u0644", "\u0645\u0627\u064a\u0648", "\u064a\u0648\u0646\u064a\u0648", "\u064a\u0648\u0644\u064a\u0648", "\u0623\u063a\u0633\u0637\u0633", "\u0633\u0628\u062a\u0645\u0628\u0631", "\u0623\u0643\u062a\u0648\u0628\u0631", "\u0646\u0648\u0641\u0645\u0628\u0631", "\u062f\u064a\u0633\u0645\u0628\u0631"], SHORTMONTHS:["\u064a\u0646\u0627\u064a\u0631", "\u0641\u0628\u0631\u0627\u064a\u0631", "\u0645\u0627\u0631\u0633", "\u0623\u0628\u0631\u064a\u0644", "\u0645\u0627\u064a\u0648", 
+"\u064a\u0648\u0646\u064a\u0648", "\u064a\u0648\u0644\u064a\u0648", "\u0623\u063a\u0633\u0637\u0633", "\u0633\u0628\u062a\u0645\u0628\u0631", "\u0623\u0643\u062a\u0648\u0628\u0631", "\u0646\u0648\u0641\u0645\u0628\u0631", "\u062f\u064a\u0633\u0645\u0628\u0631"], STANDALONESHORTMONTHS:["\u064a\u0646\u0627\u064a\u0631", "\u0641\u0628\u0631\u0627\u064a\u0631", "\u0645\u0627\u0631\u0633", "\u0623\u0628\u0631\u064a\u0644", "\u0645\u0627\u064a\u0648", "\u064a\u0648\u0646\u064a\u0648", "\u064a\u0648\u0644\u064a\u0648", 
+"\u0623\u063a\u0633\u0637\u0633", "\u0633\u0628\u062a\u0645\u0628\u0631", "\u0623\u0643\u062a\u0648\u0628\u0631", "\u0646\u0648\u0641\u0645\u0628\u0631", "\u062f\u064a\u0633\u0645\u0628\u0631"], WEEKDAYS:["\u0627\u0644\u0623\u062d\u062f", "\u0627\u0644\u0627\u062b\u0646\u064a\u0646", "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621", "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621", "\u0627\u0644\u062e\u0645\u064a\u0633", "\u0627\u0644\u062c\u0645\u0639\u0629", "\u0627\u0644\u0633\u0628\u062a"], 
+STANDALONEWEEKDAYS:["\u0627\u0644\u0623\u062d\u062f", "\u0627\u0644\u0627\u062b\u0646\u064a\u0646", "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621", "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621", "\u0627\u0644\u062e\u0645\u064a\u0633", "\u0627\u0644\u062c\u0645\u0639\u0629", "\u0627\u0644\u0633\u0628\u062a"], SHORTWEEKDAYS:["\u0627\u0644\u0623\u062d\u062f", "\u0627\u0644\u0627\u062b\u0646\u064a\u0646", "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621", "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621", 
+"\u0627\u0644\u062e\u0645\u064a\u0633", "\u0627\u0644\u062c\u0645\u0639\u0629", "\u0627\u0644\u0633\u0628\u062a"], STANDALONESHORTWEEKDAYS:["\u0627\u0644\u0623\u062d\u062f", "\u0627\u0644\u0627\u062b\u0646\u064a\u0646", "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621", "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621", "\u0627\u0644\u062e\u0645\u064a\u0633", "\u0627\u0644\u062c\u0645\u0639\u0629", "\u0627\u0644\u0633\u0628\u062a"], NARROWWEEKDAYS:["\u062d", "\u0646", "\u062b", "\u0631", "\u062e", 
+"\u062c", "\u0633"], STANDALONENARROWWEEKDAYS:["\u062d", "\u0646", "\u062b", "\u0631", "\u062e", "\u062c", "\u0633"], SHORTQUARTERS:["\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0623\u0648\u0644", "\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0646\u064a", "\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0644\u062b", "\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0631\u0627\u0628\u0639"], QUARTERS:["\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0623\u0648\u0644", "\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0646\u064a", 
+"\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u062b\u0627\u0644\u062b", "\u0627\u0644\u0631\u0628\u0639 \u0627\u0644\u0631\u0627\u0628\u0639"], AMPMS:["\u0635", "\u0645"], DATEFORMATS:["EEEE\u060c d MMMM\u060c y", "d MMMM\u060c y", "dd\u200f/MM\u200f/yyyy", "d\u200f/M\u200f/yyyy"], TIMEFORMATS:["zzzz h:mm:ss a", "z h:mm:ss a", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:5, WEEKENDRANGE:[4, 5], FIRSTWEEKCUTOFFDAY:4};
+goog.i18n.DateTimeSymbols_bg = {ERAS:["\u043f\u0440. \u043d. \u0435.", "\u043e\u0442 \u043d. \u0435."], ERANAMES:["\u043f\u0440.\u0425\u0440.", "\u0441\u043b.\u0425\u0440."], NARROWMONTHS:["\u044f", "\u0444", "\u043c", "\u0430", "\u043c", "\u044e", "\u044e", "\u0430", "\u0441", "\u043e", "\u043d", "\u0434"], STANDALONENARROWMONTHS:["\u044f", "\u0444", "\u043c", "\u0430", "\u043c", "\u044e", "\u044e", "\u0430", "\u0441", "\u043e", "\u043d", "\u0434"], MONTHS:["\u044f\u043d\u0443\u0430\u0440\u0438", 
+"\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438", "\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440\u0438\u043b", "\u043c\u0430\u0439", "\u044e\u043d\u0438", "\u044e\u043b\u0438", "\u0430\u0432\u0433\u0443\u0441\u0442", "\u0441\u0435\u043f\u0442\u0435\u043c\u0432\u0440\u0438", "\u043e\u043a\u0442\u043e\u043c\u0432\u0440\u0438", "\u043d\u043e\u0435\u043c\u0432\u0440\u0438", "\u0434\u0435\u043a\u0435\u043c\u0432\u0440\u0438"], STANDALONEMONTHS:["\u044f\u043d\u0443\u0430\u0440\u0438", "\u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438", 
+"\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440\u0438\u043b", "\u043c\u0430\u0439", "\u044e\u043d\u0438", "\u044e\u043b\u0438", "\u0430\u0432\u0433\u0443\u0441\u0442", "\u0441\u0435\u043f\u0442\u0435\u043c\u0432\u0440\u0438", "\u043e\u043a\u0442\u043e\u043c\u0432\u0440\u0438", "\u043d\u043e\u0435\u043c\u0432\u0440\u0438", "\u0434\u0435\u043a\u0435\u043c\u0432\u0440\u0438"], SHORTMONTHS:["\u044f\u043d.", "\u0444\u0435\u0432\u0440.", "\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440.", "\u043c\u0430\u0439", 
+"\u044e\u043d\u0438", "\u044e\u043b\u0438", "\u0430\u0432\u0433.", "\u0441\u0435\u043f\u0442.", "\u043e\u043a\u0442.", "\u043d\u043e\u0435\u043c.", "\u0434\u0435\u043a."], STANDALONESHORTMONTHS:["\u044f\u043d.", "\u0444\u0435\u0432\u0440.", "\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440.", "\u043c\u0430\u0439", "\u044e\u043d\u0438", "\u044e\u043b\u0438", "\u0430\u0432\u0433.", "\u0441\u0435\u043f\u0442.", "\u043e\u043a\u0442.", "\u043d\u043e\u0435\u043c.", "\u0434\u0435\u043a."], WEEKDAYS:["\u043d\u0435\u0434\u0435\u043b\u044f", 
+"\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u043d\u0438\u043a", "\u0432\u0442\u043e\u0440\u043d\u0438\u043a", "\u0441\u0440\u044f\u0434\u0430", "\u0447\u0435\u0442\u0432\u044a\u0440\u0442\u044a\u043a", "\u043f\u0435\u0442\u044a\u043a", "\u0441\u044a\u0431\u043e\u0442\u0430"], STANDALONEWEEKDAYS:["\u043d\u0435\u0434\u0435\u043b\u044f", "\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u043d\u0438\u043a", "\u0432\u0442\u043e\u0440\u043d\u0438\u043a", "\u0441\u0440\u044f\u0434\u0430", "\u0447\u0435\u0442\u0432\u044a\u0440\u0442\u044a\u043a", 
+"\u043f\u0435\u0442\u044a\u043a", "\u0441\u044a\u0431\u043e\u0442\u0430"], SHORTWEEKDAYS:["\u043d\u0434", "\u043f\u043d", "\u0432\u0442", "\u0441\u0440", "\u0447\u0442", "\u043f\u0442", "\u0441\u0431"], STANDALONESHORTWEEKDAYS:["\u043d\u0434", "\u043f\u043d", "\u0432\u0442", "\u0441\u0440", "\u0447\u0442", "\u043f\u0442", "\u0441\u0431"], NARROWWEEKDAYS:["\u043d", "\u043f", "\u0432", "\u0441", "\u0447", "\u043f", "\u0441"], STANDALONENARROWWEEKDAYS:["\u043d", "\u043f", "\u0432", "\u0441", "\u0447", 
+"\u043f", "\u0441"], SHORTQUARTERS:["I \u0442\u0440\u0438\u043c.", "II \u0442\u0440\u0438\u043c.", "III \u0442\u0440\u0438\u043c.", "IV \u0442\u0440\u0438\u043c."], QUARTERS:["1-\u0432\u043e \u0442\u0440\u0438\u043c\u0435\u0441\u0435\u0447\u0438\u0435", "2-\u0440\u043e \u0442\u0440\u0438\u043c\u0435\u0441\u0435\u0447\u0438\u0435", "3-\u0442\u043e \u0442\u0440\u0438\u043c\u0435\u0441\u0435\u0447\u0438\u0435", "4-\u0442\u043e \u0442\u0440\u0438\u043c\u0435\u0441\u0435\u0447\u0438\u0435"], AMPMS:["\u043f\u0440. \u043e\u0431.", 
+"\u0441\u043b. \u043e\u0431."], DATEFORMATS:["dd MMMM y, EEEE", "dd MMMM y", "dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_bn = {ZERODIGIT:2534, ERAS:["\u0996\u09c3\u09b7\u09cd\u099f\u09aa\u09c2\u09b0\u09cd\u09ac", "\u0996\u09c3\u09b7\u09cd\u099f\u09be\u09ac\u09cd\u09a6"], ERANAMES:["\u0996\u09c3\u09b7\u09cd\u099f\u09aa\u09c2\u09b0\u09cd\u09ac", "\u0996\u09c3\u09b7\u09cd\u099f\u09be\u09ac\u09cd\u09a6"], NARROWMONTHS:["\u099c\u09be", "\u09ab\u09c7", "\u09ae\u09be", "\u098f", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1", "\u0986", "\u09b8\u09c7", "\u0985", "\u09a8", "\u09a1\u09bf"], STANDALONENARROWMONTHS:["\u099c\u09be", 
+"\u09ab\u09c7", "\u09ae\u09be", "\u098f", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1", "\u0986", "\u09b8\u09c7", "\u0985", "\u09a8", "\u09a1\u09bf"], MONTHS:["\u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ab\u09c7\u09ac\u09cd\u09b0\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ae\u09be\u09b0\u09cd\u099a", "\u098f\u09aa\u09cd\u09b0\u09bf\u09b2", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1\u09b2\u09be\u0987", "\u0986\u0997\u09b8\u09cd\u099f", "\u09b8\u09c7\u09aa\u09cd\u099f\u09c7\u09ae\u09cd\u09ac\u09b0", 
+"\u0985\u0995\u09cd\u099f\u09cb\u09ac\u09b0", "\u09a8\u09ad\u09c7\u09ae\u09cd\u09ac\u09b0", "\u09a1\u09bf\u09b8\u09c7\u09ae\u09cd\u09ac\u09b0"], STANDALONEMONTHS:["\u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ab\u09c7\u09ac\u09cd\u09b0\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ae\u09be\u09b0\u09cd\u099a", "\u098f\u09aa\u09cd\u09b0\u09bf\u09b2", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1\u09b2\u09be\u0987", "\u0986\u0997\u09b8\u09cd\u099f", "\u09b8\u09c7\u09aa\u09cd\u099f\u09c7\u09ae\u09cd\u09ac\u09b0", 
+"\u0985\u0995\u09cd\u099f\u09cb\u09ac\u09b0", "\u09a8\u09ad\u09c7\u09ae\u09cd\u09ac\u09b0", "\u09a1\u09bf\u09b8\u09c7\u09ae\u09cd\u09ac\u09b0"], SHORTMONTHS:["\u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ab\u09c7\u09ac\u09cd\u09b0\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ae\u09be\u09b0\u09cd\u099a", "\u098f\u09aa\u09cd\u09b0\u09bf\u09b2", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1\u09b2\u09be\u0987", "\u0986\u0997\u09b8\u09cd\u099f", "\u09b8\u09c7\u09aa\u09cd\u099f\u09c7\u09ae\u09cd\u09ac\u09b0", 
+"\u0985\u0995\u09cd\u099f\u09cb\u09ac\u09b0", "\u09a8\u09ad\u09c7\u09ae\u09cd\u09ac\u09b0", "\u09a1\u09bf\u09b8\u09c7\u09ae\u09cd\u09ac\u09b0"], STANDALONESHORTMONTHS:["\u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ab\u09c7\u09ac\u09cd\u09b0\u09c1\u09af\u09bc\u09be\u09b0\u09c0", "\u09ae\u09be\u09b0\u09cd\u099a", "\u098f\u09aa\u09cd\u09b0\u09bf\u09b2", "\u09ae\u09c7", "\u099c\u09c1\u09a8", "\u099c\u09c1\u09b2\u09be\u0987", "\u0986\u0997\u09b8\u09cd\u099f", "\u09b8\u09c7\u09aa\u09cd\u099f\u09c7\u09ae\u09cd\u09ac\u09b0", 
+"\u0985\u0995\u09cd\u099f\u09cb\u09ac\u09b0", "\u09a8\u09ad\u09c7\u09ae\u09cd\u09ac\u09b0", "\u09a1\u09bf\u09b8\u09c7\u09ae\u09cd\u09ac\u09b0"], WEEKDAYS:["\u09b0\u09ac\u09bf\u09ac\u09be\u09b0", "\u09b8\u09cb\u09ae\u09ac\u09be\u09b0", "\u09ae\u0999\u09cd\u0997\u09b2\u09ac\u09be\u09b0", "\u09ac\u09c1\u09a7\u09ac\u09be\u09b0", "\u09ac\u09c3\u09b9\u09b7\u09cd\u09aa\u09a4\u09bf\u09ac\u09be\u09b0", "\u09b6\u09c1\u0995\u09cd\u09b0\u09ac\u09be\u09b0", "\u09b6\u09a8\u09bf\u09ac\u09be\u09b0"], STANDALONEWEEKDAYS:["\u09b0\u09ac\u09bf\u09ac\u09be\u09b0", 
+"\u09b8\u09cb\u09ae\u09ac\u09be\u09b0", "\u09ae\u0999\u09cd\u0997\u09b2\u09ac\u09be\u09b0", "\u09ac\u09c1\u09a7\u09ac\u09be\u09b0", "\u09ac\u09c3\u09b9\u09b7\u09cd\u09aa\u09a4\u09bf\u09ac\u09be\u09b0", "\u09b6\u09c1\u0995\u09cd\u09b0\u09ac\u09be\u09b0", "\u09b6\u09a8\u09bf\u09ac\u09be\u09b0"], SHORTWEEKDAYS:["\u09b0\u09ac\u09bf", "\u09b8\u09cb\u09ae", "\u09ae\u0999\u09cd\u0997\u09b2", "\u09ac\u09c1\u09a7", "\u09ac\u09c3\u09b9\u09b8\u09cd\u09aa\u09a4\u09bf", "\u09b6\u09c1\u0995\u09cd\u09b0", "\u09b6\u09a8\u09bf"], 
+STANDALONESHORTWEEKDAYS:["\u09b0\u09ac\u09bf", "\u09b8\u09cb\u09ae", "\u09ae\u0999\u09cd\u0997\u09b2", "\u09ac\u09c1\u09a7", "\u09ac\u09c3\u09b9\u09b8\u09cd\u09aa\u09a4\u09bf", "\u09b6\u09c1\u0995\u09cd\u09b0", "\u09b6\u09a8\u09bf"], NARROWWEEKDAYS:["\u09b0", "\u09b8\u09cb", "\u09ae", "\u09ac\u09c1", "\u09ac\u09c3", "\u09b6\u09c1", "\u09b6"], STANDALONENARROWWEEKDAYS:["\u09b0", "\u09b8\u09cb", "\u09ae", "\u09ac\u09c1", "\u09ac\u09c3", "\u09b6\u09c1", "\u09b6"], SHORTQUARTERS:["\u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6 \u09e7", 
+"\u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6 \u09e8", "\u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6 \u09e9", "\u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6 \u09ea"], QUARTERS:["\u09aa\u09cd\u09b0\u09a5\u09ae \u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6", "\u09a6\u09cd\u09ac\u09bf\u09a4\u09c0\u09af\u09bc \u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6", "\u09a4\u09c3\u09a4\u09c0\u09af\u09bc \u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6", "\u099a\u09a4\u09c1\u09b0\u09cd\u09a5 \u099a\u09a4\u09c1\u09b0\u09cd\u09a5\u09be\u0982\u09b6"], 
+AMPMS:["am", "pm"], DATEFORMATS:["EEEE, d MMMM, y", "d MMMM, y", "d MMM, y", "d/M/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:4, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_ca = {ERAS:["aC", "dC"], ERANAMES:["abans de Crist", "despr\u00e9s de Crist"], NARROWMONTHS:["G", "F", "M", "A", "M", "J", "G", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["g", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"], MONTHS:["de gener", "de febrer", "de mar\u00e7", "d\u2019abril", "de maig", "de juny", "de juliol", "d\u2019agost", "de setembre", "d\u2019octubre", "de novembre", "de desembre"], STANDALONEMONTHS:["gener", "febrer", "mar\u00e7", "abril", 
+"maig", "juny", "juliol", "agost", "setembre", "octubre", "novembre", "desembre"], SHORTMONTHS:["de gen.", "de febr.", "de mar\u00e7", "d\u2019abr.", "de maig", "de juny", "de jul.", "d\u2019ag.", "de set.", "d\u2019oct.", "de nov.", "de des."], STANDALONESHORTMONTHS:["gen.", "febr.", "mar\u00e7", "abr.", "maig", "juny", "jul.", "ag.", "set.", "oct.", "nov.", "des."], WEEKDAYS:["diumenge", "dilluns", "dimarts", "dimecres", "dijous", "divendres", "dissabte"], STANDALONEWEEKDAYS:["Diumenge", "Dilluns", 
+"Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"], SHORTWEEKDAYS:["dg.", "dl.", "dt.", "dc.", "dj.", "dv.", "ds."], STANDALONESHORTWEEKDAYS:["dg", "dl", "dt", "dc", "dj", "dv", "ds"], NARROWWEEKDAYS:["G", "l", "T", "C", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["g", "l", "t", "c", "j", "v", "s"], SHORTQUARTERS:["1T", "2T", "3T", "4T"], QUARTERS:["1r trimestre", "2n trimestre", "3r trimestre", "4t trimestre"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE d MMMM 'de' y", "d MMMM 'de' y", "dd/MM/yyyy", 
+"dd/MM/yy"], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_chr = {ERAS:["\u13a4\u13d3\u13b7\u13b8", "\u13a4\u13b6\u13d0\u13c5"], ERANAMES:["\u13cf \u13e5\u13cc \u13be\u13d5\u13b2\u13cd\u13ac\u13be", "\u13a0\u13a9\u13c3\u13ae\u13b5\u13d3\u13cd\u13d7\u13f1 \u13a0\u13d5\u13d8\u13f1\u13cd\u13ac \u13f1\u13b0\u13e9 \u13e7\u13d3\u13c2\u13b8\u13a2\u13cd\u13d7"], NARROWMONTHS:["\u13a4", "\u13a7", "\u13a0", "\u13a7", "\u13a0", "\u13d5", "\u13ab", "\u13a6", "\u13da", "\u13da", "\u13c5", "\u13a4"], STANDALONENARROWMONTHS:["\u13a4", "\u13a7", 
+"\u13a0", "\u13a7", "\u13a0", "\u13d5", "\u13ab", "\u13a6", "\u13da", "\u13da", "\u13c5", "\u13a4"], MONTHS:["\u13a4\u13c3\u13b8\u13d4\u13c5", "\u13a7\u13a6\u13b5", "\u13a0\u13c5\u13f1", "\u13a7\u13ec\u13c2", "\u13a0\u13c2\u13cd\u13ac\u13d8", "\u13d5\u13ad\u13b7\u13f1", "\u13ab\u13f0\u13c9\u13c2", "\u13a6\u13b6\u13c2", "\u13da\u13b5\u13cd\u13d7", "\u13da\u13c2\u13c5\u13d7", "\u13c5\u13d3\u13d5\u13c6", "\u13a4\u13cd\u13a9\u13f1"], STANDALONEMONTHS:["\u13a4\u13c3\u13b8\u13d4\u13c5", "\u13a7\u13a6\u13b5", 
+"\u13a0\u13c5\u13f1", "\u13a7\u13ec\u13c2", "\u13a0\u13c2\u13cd\u13ac\u13d8", "\u13d5\u13ad\u13b7\u13f1", "\u13ab\u13f0\u13c9\u13c2", "\u13a6\u13b6\u13c2", "\u13da\u13b5\u13cd\u13d7", "\u13da\u13c2\u13c5\u13d7", "\u13c5\u13d3\u13d5\u13c6", "\u13a4\u13cd\u13a9\u13f1"], SHORTMONTHS:["\u13a4\u13c3", "\u13a7\u13a6", "\u13a0\u13c5", "\u13a7\u13ec", "\u13a0\u13c2", "\u13d5\u13ad", "\u13ab\u13f0", "\u13a6\u13b6", "\u13da\u13b5", "\u13da\u13c2", "\u13c5\u13d3", "\u13a4\u13cd"], STANDALONESHORTMONTHS:["\u13a4\u13c3", 
+"\u13a7\u13a6", "\u13a0\u13c5", "\u13a7\u13ec", "\u13a0\u13c2", "\u13d5\u13ad", "\u13ab\u13f0", "\u13a6\u13b6", "\u13da\u13b5", "\u13da\u13c2", "\u13c5\u13d3", "\u13a4\u13cd"], WEEKDAYS:["\u13a4\u13be\u13d9\u13d3\u13c6\u13cd\u13ac", "\u13a4\u13be\u13d9\u13d3\u13c9\u13c5\u13af", "\u13d4\u13b5\u13c1\u13a2\u13a6", "\u13e6\u13a2\u13c1\u13a2\u13a6", "\u13c5\u13a9\u13c1\u13a2\u13a6", "\u13e7\u13be\u13a9\u13b6\u13cd\u13d7", "\u13a4\u13be\u13d9\u13d3\u13c8\u13d5\u13be"], STANDALONEWEEKDAYS:["\u13a4\u13be\u13d9\u13d3\u13c6\u13cd\u13ac", 
+"\u13a4\u13be\u13d9\u13d3\u13c9\u13c5\u13af", "\u13d4\u13b5\u13c1\u13a2\u13a6", "\u13e6\u13a2\u13c1\u13a2\u13a6", "\u13c5\u13a9\u13c1\u13a2\u13a6", "\u13e7\u13be\u13a9\u13b6\u13cd\u13d7", "\u13a4\u13be\u13d9\u13d3\u13c8\u13d5\u13be"], SHORTWEEKDAYS:["\u13c6\u13cd\u13ac", "\u13c9\u13c5\u13af", "\u13d4\u13b5\u13c1", "\u13e6\u13a2\u13c1", "\u13c5\u13a9\u13c1", "\u13e7\u13be\u13a9", "\u13c8\u13d5\u13be"], STANDALONESHORTWEEKDAYS:["\u13c6\u13cd\u13ac", "\u13c9\u13c5\u13af", "\u13d4\u13b5\u13c1", "\u13e6\u13a2\u13c1", 
+"\u13c5\u13a9\u13c1", "\u13e7\u13be\u13a9", "\u13c8\u13d5\u13be"], NARROWWEEKDAYS:["\u13c6", "\u13c9", "\u13d4", "\u13e6", "\u13c5", "\u13e7", "\u13a4"], STANDALONENARROWWEEKDAYS:["\u13c6", "\u13c9", "\u13d4", "\u13e6", "\u13c5", "\u13e7", "\u13a4"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["Q1", "Q2", "Q3", "Q4"], AMPMS:["\u13cc\u13be\u13b4", "\u13d2\u13af\u13f1\u13a2\u13d7\u13e2"], DATEFORMATS:["EEEE, MMMM d, y", "MMMM d, y", "MMM d, y", "M/d/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", 
+"h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_cs = {ERAS:["p\u0159. n. l.", "n. l."], ERANAMES:["p\u0159. n. l.", "n. l."], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["l", "\u00fa", "b", "d", "k", "\u010d", "\u010d", "s", "z", "\u0159", "l", "p"], MONTHS:["ledna", "\u00fanora", "b\u0159ezna", "dubna", "kv\u011btna", "\u010dervna", "\u010dervence", "srpna", "z\u00e1\u0159\u00ed", "\u0159\u00edjna", "listopadu", "prosince"], STANDALONEMONTHS:["leden", "\u00fanor", 
+"b\u0159ezen", "duben", "kv\u011bten", "\u010derven", "\u010dervenec", "srpen", "z\u00e1\u0159\u00ed", "\u0159\u00edjen", "listopad", "prosinec"], SHORTMONTHS:["Led", "\u00dano", "B\u0159e", "Dub", "Kv\u011b", "\u010cer", "\u010cvc", "Srp", "Z\u00e1\u0159", "\u0158\u00edj", "Lis", "Pro"], STANDALONESHORTMONTHS:["1.", "2.", "3.", "4.", "5.", "6.", "7.", "8.", "9.", "10.", "11.", "12."], WEEKDAYS:["ned\u011ble", "pond\u011bl\u00ed", "\u00fater\u00fd", "st\u0159eda", "\u010dtvrtek", "p\u00e1tek", "sobota"], 
+STANDALONEWEEKDAYS:["ned\u011ble", "pond\u011bl\u00ed", "\u00fater\u00fd", "st\u0159eda", "\u010dtvrtek", "p\u00e1tek", "sobota"], SHORTWEEKDAYS:["ne", "po", "\u00fat", "st", "\u010dt", "p\u00e1", "so"], STANDALONESHORTWEEKDAYS:["ne", "po", "\u00fat", "st", "\u010dt", "p\u00e1", "so"], NARROWWEEKDAYS:["N", "P", "\u00da", "S", "\u010c", "P", "S"], STANDALONENARROWWEEKDAYS:["N", "P", "\u00da", "S", "\u010c", "P", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. \u010dtvrtlet\u00ed", "2. \u010dtvrtlet\u00ed", 
+"3. \u010dtvrtlet\u00ed", "4. \u010dtvrtlet\u00ed"], AMPMS:["dop.", "odp."], DATEFORMATS:["EEEE, d. MMMM y", "d. MMMM y", "d. M. yyyy", "dd.MM.yy"], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_cy = {ERAS:["CC", "OC"], ERANAMES:["Cyn Crist", "Oed Crist"], NARROWMONTHS:["I", "C", "M", "E", "M", "M", "G", "A", "M", "H", "T", "R"], STANDALONENARROWMONTHS:["I", "C", "M", "E", "M", "M", "G", "A", "M", "H", "T", "R"], MONTHS:["Ionawr", "Chwefror", "Mawrth", "Ebrill", "Mai", "Mehefin", "Gorffenaf", "Awst", "Medi", "Hydref", "Tachwedd", "Rhagfyr"], STANDALONEMONTHS:["Ionawr", "Chwefror", "Mawrth", "Ebrill", "Mai", "Mehefin", "Gorffennaf", "Awst", "Medi", "Hydref", "Tachwedd", 
+"Rhagfyr"], SHORTMONTHS:["Ion", "Chwef", "Mawrth", "Ebrill", "Mai", "Meh", "Gorff", "Awst", "Medi", "Hyd", "Tach", "Rhag"], STANDALONESHORTMONTHS:["Ion", "Chwe", "Maw", "Ebr", "Mai", "Meh", "Gor", "Awst", "Medi", "Hyd", "Tach", "Rhag"], WEEKDAYS:["Dydd Sul", "Dydd Llun", "Dydd Mawrth", "Dydd Mercher", "Dydd Iau", "Dydd Gwener", "Dydd Sadwrn"], STANDALONEWEEKDAYS:["Dydd Sul", "Dydd Llun", "Dydd Mawrth", "Dydd Mercher", "Dydd Iau", "Dydd Gwener", "Dydd Sadwrn"], SHORTWEEKDAYS:["Sul", "Llun", "Maw", 
+"Mer", "Iau", "Gwen", "Sad"], STANDALONESHORTWEEKDAYS:["Sul", "Llun", "Maw", "Mer", "Iau", "Gwe", "Sad"], NARROWWEEKDAYS:["S", "L", "M", "M", "I", "G", "S"], STANDALONENARROWWEEKDAYS:["S", "L", "M", "M", "I", "G", "S"], SHORTQUARTERS:["Ch1", "Ch2", "Ch3", "Ch4"], QUARTERS:["Chwarter 1af", "2il chwarter", "3ydd chwarter", "4ydd chwarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, 
+WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_da = {ERAS:["f.Kr.", "e.Kr."], ERANAMES:["f.Kr.", "e.Kr."], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"], STANDALONEMONTHS:["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", 
+"december"], SHORTMONTHS:["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sep", "okt", "nov", "dec"], WEEKDAYS:["s\u00f8ndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "l\u00f8rdag"], STANDALONEWEEKDAYS:["s\u00f8ndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "l\u00f8rdag"], SHORTWEEKDAYS:["s\u00f8n", "man", "tir", "ons", "tor", "fre", "l\u00f8r"], 
+STANDALONESHORTWEEKDAYS:["s\u00f8n", "man", "tir", "ons", "tor", "fre", "l\u00f8r"], NARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1. kvartal", "2. kvartal", "3. kvartal", "4. kvartal"], AMPMS:["f.m.", "e.m."], DATEFORMATS:["EEEE 'den' d. MMMM y", "d. MMM y", "dd/MM/yyyy", "dd/MM/yy"], TIMEFORMATS:["HH.mm.ss zzzz", "HH.mm.ss z", "HH.mm.ss", "HH.mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 
+6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_de = {ERAS:["v. Chr.", "n. Chr."], ERANAMES:["v. Chr.", "n. Chr."], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januar", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"], STANDALONEMONTHS:["Januar", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", 
+"November", "Dezember"], SHORTMONTHS:["Jan", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], STANDALONESHORTMONTHS:["Jan", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], WEEKDAYS:["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], STANDALONEWEEKDAYS:["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], SHORTWEEKDAYS:["So.", "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa."], STANDALONESHORTWEEKDAYS:["So", 
+"Mo", "Di", "Mi", "Do", "Fr", "Sa"], NARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. Quartal", "2. Quartal", "3. Quartal", "4. Quartal"], AMPMS:["vorm.", "nachm."], DATEFORMATS:["EEEE, d. MMMM y", "d. MMMM y", "dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_de_AT = {ERAS:["v. Chr.", "n. Chr."], ERANAMES:["v. Chr.", "n. Chr."], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["J\u00e4nner", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"], STANDALONEMONTHS:["J\u00e4nner", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "August", "September", 
+"Oktober", "November", "Dezember"], SHORTMONTHS:["J\u00e4n", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], STANDALONESHORTMONTHS:["J\u00e4n", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], WEEKDAYS:["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], STANDALONEWEEKDAYS:["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"], SHORTWEEKDAYS:["So.", "Mo.", "Di.", "Mi.", "Do.", 
+"Fr.", "Sa."], STANDALONESHORTWEEKDAYS:["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"], NARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. Quartal", "2. Quartal", "3. Quartal", "4. Quartal"], AMPMS:["vorm.", "nachm."], DATEFORMATS:["EEEE, dd. MMMM y", "dd. MMMM y", "dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 
+6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_de_CH = goog.i18n.DateTimeSymbols_de;
+goog.i18n.DateTimeSymbols_el = {ERAS:["\u03c0.\u03a7.", "\u03bc.\u03a7."], ERANAMES:["\u03c0.\u03a7.", "\u03bc.\u03a7."], NARROWMONTHS:["\u0399", "\u03a6", "\u039c", "\u0391", "\u039c", "\u0399", "\u0399", "\u0391", "\u03a3", "\u039f", "\u039d", "\u0394"], STANDALONENARROWMONTHS:["\u0399", "\u03a6", "\u039c", "\u0391", "\u039c", "\u0399", "\u0399", "\u0391", "\u03a3", "\u039f", "\u039d", "\u0394"], MONTHS:["\u0399\u03b1\u03bd\u03bf\u03c5\u03b1\u03c1\u03af\u03bf\u03c5", "\u03a6\u03b5\u03b2\u03c1\u03bf\u03c5\u03b1\u03c1\u03af\u03bf\u03c5", 
+"\u039c\u03b1\u03c1\u03c4\u03af\u03bf\u03c5", "\u0391\u03c0\u03c1\u03b9\u03bb\u03af\u03bf\u03c5", "\u039c\u03b1\u0390\u03bf\u03c5", "\u0399\u03bf\u03c5\u03bd\u03af\u03bf\u03c5", "\u0399\u03bf\u03c5\u03bb\u03af\u03bf\u03c5", "\u0391\u03c5\u03b3\u03bf\u03cd\u03c3\u03c4\u03bf\u03c5", "\u03a3\u03b5\u03c0\u03c4\u03b5\u03bc\u03b2\u03c1\u03af\u03bf\u03c5", "\u039f\u03ba\u03c4\u03c9\u03b2\u03c1\u03af\u03bf\u03c5", "\u039d\u03bf\u03b5\u03bc\u03b2\u03c1\u03af\u03bf\u03c5", "\u0394\u03b5\u03ba\u03b5\u03bc\u03b2\u03c1\u03af\u03bf\u03c5"], 
+STANDALONEMONTHS:["\u0399\u03b1\u03bd\u03bf\u03c5\u03ac\u03c1\u03b9\u03bf\u03c2", "\u03a6\u03b5\u03b2\u03c1\u03bf\u03c5\u03ac\u03c1\u03b9\u03bf\u03c2", "\u039c\u03ac\u03c1\u03c4\u03b9\u03bf\u03c2", "\u0391\u03c0\u03c1\u03af\u03bb\u03b9\u03bf\u03c2", "\u039c\u03ac\u03b9\u03bf\u03c2", "\u0399\u03bf\u03cd\u03bd\u03b9\u03bf\u03c2", "\u0399\u03bf\u03cd\u03bb\u03b9\u03bf\u03c2", "\u0391\u03cd\u03b3\u03bf\u03c5\u03c3\u03c4\u03bf\u03c2", "\u03a3\u03b5\u03c0\u03c4\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf\u03c2", 
+"\u039f\u03ba\u03c4\u03ce\u03b2\u03c1\u03b9\u03bf\u03c2", "\u039d\u03bf\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf\u03c2", "\u0394\u03b5\u03ba\u03ad\u03bc\u03b2\u03c1\u03b9\u03bf\u03c2"], SHORTMONTHS:["\u0399\u03b1\u03bd", "\u03a6\u03b5\u03b2", "\u039c\u03b1\u03c1", "\u0391\u03c0\u03c1", "\u039c\u03b1\u03ca", "\u0399\u03bf\u03c5\u03bd", "\u0399\u03bf\u03c5\u03bb", "\u0391\u03c5\u03b3", "\u03a3\u03b5\u03c0", "\u039f\u03ba\u03c4", "\u039d\u03bf\u03b5", "\u0394\u03b5\u03ba"], STANDALONESHORTMONTHS:["\u0399\u03b1\u03bd", 
+"\u03a6\u03b5\u03b2", "\u039c\u03ac\u03c1", "\u0391\u03c0\u03c1", "\u039c\u03ac\u03b9", "\u0399\u03bf\u03cd\u03bd", "\u0399\u03bf\u03cd\u03bb", "\u0391\u03c5\u03b3", "\u03a3\u03b5\u03c0", "\u039f\u03ba\u03c4", "\u039d\u03bf\u03ad", "\u0394\u03b5\u03ba"], WEEKDAYS:["\u039a\u03c5\u03c1\u03b9\u03b1\u03ba\u03ae", "\u0394\u03b5\u03c5\u03c4\u03ad\u03c1\u03b1", "\u03a4\u03c1\u03af\u03c4\u03b7", "\u03a4\u03b5\u03c4\u03ac\u03c1\u03c4\u03b7", "\u03a0\u03ad\u03bc\u03c0\u03c4\u03b7", "\u03a0\u03b1\u03c1\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae", 
+"\u03a3\u03ac\u03b2\u03b2\u03b1\u03c4\u03bf"], STANDALONEWEEKDAYS:["\u039a\u03c5\u03c1\u03b9\u03b1\u03ba\u03ae", "\u0394\u03b5\u03c5\u03c4\u03ad\u03c1\u03b1", "\u03a4\u03c1\u03af\u03c4\u03b7", "\u03a4\u03b5\u03c4\u03ac\u03c1\u03c4\u03b7", "\u03a0\u03ad\u03bc\u03c0\u03c4\u03b7", "\u03a0\u03b1\u03c1\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae", "\u03a3\u03ac\u03b2\u03b2\u03b1\u03c4\u03bf"], SHORTWEEKDAYS:["\u039a\u03c5\u03c1", "\u0394\u03b5\u03c5", "\u03a4\u03c1\u03b9", "\u03a4\u03b5\u03c4", "\u03a0\u03b5\u03bc", 
+"\u03a0\u03b1\u03c1", "\u03a3\u03b1\u03b2"], STANDALONESHORTWEEKDAYS:["\u039a\u03c5\u03c1", "\u0394\u03b5\u03c5", "\u03a4\u03c1\u03af", "\u03a4\u03b5\u03c4", "\u03a0\u03ad\u03bc", "\u03a0\u03b1\u03c1", "\u03a3\u03ac\u03b2"], NARROWWEEKDAYS:["\u039a", "\u0394", "\u03a4", "\u03a4", "\u03a0", "\u03a0", "\u03a3"], STANDALONENARROWWEEKDAYS:["\u039a", "\u0394", "\u03a4", "\u03a4", "\u03a0", "\u03a0", "\u03a3"], SHORTQUARTERS:["\u03a41", "\u03a42", "\u03a43", "\u03a44"], QUARTERS:["1\u03bf \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf", 
+"2\u03bf \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf", "3\u03bf \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf", "4\u03bf \u03c4\u03c1\u03af\u03bc\u03b7\u03bd\u03bf"], AMPMS:["\u03c0.\u03bc.", "\u03bc.\u03bc."], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "d/M/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_en = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, MMMM d, y", "MMMM d, y", "MMM d, y", "M/d/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_en_AU = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "dd/MM/yyyy", "d/MM/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_en_GB = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_en_IE = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yyyy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_en_IN = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "dd-MMM-y", "dd/MM/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_en_SG = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM, y", "d MMMM, y", "d MMM, y", "d/M/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_en_US = goog.i18n.DateTimeSymbols_en;
+goog.i18n.DateTimeSymbols_en_ZA = {ERAS:["BC", "AD"], ERANAMES:["Before Christ", "Anno Domini"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], STANDALONEMONTHS:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 
+"November", "December"], SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], WEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], STANDALONEWEEKDAYS:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], SHORTWEEKDAYS:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], STANDALONESHORTWEEKDAYS:["Sun", 
+"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], NARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "W", "T", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE dd MMMM y", "dd MMMM y", "dd MMM y", "yyyy/MM/dd"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_es = {ERAS:["a.C.", "d.C."], ERANAMES:["antes de Cristo", "anno D\u00f3mini"], NARROWMONTHS:["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"], STANDALONEMONTHS:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", 
+"octubre", "noviembre", "diciembre"], SHORTMONTHS:["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"], STANDALONESHORTMONTHS:["ene", "feb", "mar", "abr", "mayo", "jun", "jul", "ago", "sep", "oct", "nov", "dic"], WEEKDAYS:["domingo", "lunes", "martes", "mi\u00e9rcoles", "jueves", "viernes", "s\u00e1bado"], STANDALONEWEEKDAYS:["domingo", "lunes", "martes", "mi\u00e9rcoles", "jueves", "viernes", "s\u00e1bado"], SHORTWEEKDAYS:["dom", "lun", "mar", "mi\u00e9", "jue", "vie", 
+"s\u00e1b"], STANDALONESHORTWEEKDAYS:["dom", "lun", "mar", "mi\u00e9", "jue", "vie", "s\u00e1b"], NARROWWEEKDAYS:["D", "L", "M", "X", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "X", "J", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1er trimestre", "2\u00ba trimestre", "3er trimestre", "4\u00ba trimestre"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE, d 'de' MMMM 'de' y", "d 'de' MMMM 'de' y", "dd/MM/yyyy", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", 
+"HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_es_419 = {ERAS:["a.C.", "d.C."], ERANAMES:["antes de Cristo", "anno D\u00f3mini"], NARROWMONTHS:["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"], STANDALONEMONTHS:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", 
+"octubre", "noviembre", "diciembre"], SHORTMONTHS:["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"], STANDALONESHORTMONTHS:["ene", "feb", "mar", "abr", "mayo", "jun", "jul", "ago", "sep", "oct", "nov", "dic"], WEEKDAYS:["domingo", "lunes", "martes", "mi\u00e9rcoles", "jueves", "viernes", "s\u00e1bado"], STANDALONEWEEKDAYS:["domingo", "lunes", "martes", "mi\u00e9rcoles", "jueves", "viernes", "s\u00e1bado"], SHORTWEEKDAYS:["dom", "lun", "mar", "mi\u00e9", "jue", "vie", 
+"s\u00e1b"], STANDALONESHORTWEEKDAYS:["dom", "lun", "mar", "mi\u00e9", "jue", "vie", "s\u00e1b"], NARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1er trimestre", "2\u00ba trimestre", "3er trimestre", "4\u00ba trimestre"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE, d 'de' MMMM 'de' y", "d 'de' MMMM 'de' y", "dd/MM/yyyy", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", 
+"HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_et = {ERAS:["e.m.a.", "m.a.j."], ERANAMES:["enne meie aega", "meie aja j\u00e4rgi"], NARROWMONTHS:["J", "V", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "V", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["jaanuar", "veebruar", "m\u00e4rts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"], STANDALONEMONTHS:["jaanuar", "veebruar", "m\u00e4rts", "aprill", "mai", "juuni", "juuli", 
+"august", "september", "oktoober", "november", "detsember"], SHORTMONTHS:["jaan", "veebr", "m\u00e4rts", "apr", "mai", "juuni", "juuli", "aug", "sept", "okt", "nov", "dets"], STANDALONESHORTMONTHS:["jaan", "veebr", "m\u00e4rts", "apr", "mai", "juuni", "juuli", "aug", "sept", "okt", "nov", "dets"], WEEKDAYS:["p\u00fchap\u00e4ev", "esmasp\u00e4ev", "teisip\u00e4ev", "kolmap\u00e4ev", "neljap\u00e4ev", "reede", "laup\u00e4ev"], STANDALONEWEEKDAYS:["p\u00fchap\u00e4ev", "esmasp\u00e4ev", "teisip\u00e4ev", 
+"kolmap\u00e4ev", "neljap\u00e4ev", "reede", "laup\u00e4ev"], SHORTWEEKDAYS:["P", "E", "T", "K", "N", "R", "L"], STANDALONESHORTWEEKDAYS:["P", "E", "T", "K", "N", "R", "L"], NARROWWEEKDAYS:["P", "E", "T", "K", "N", "R", "L"], STANDALONENARROWWEEKDAYS:["P", "E", "T", "K", "N", "R", "L"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1. kvartal", "2. kvartal", "3. kvartal", "4. kvartal"], AMPMS:["enne keskp\u00e4eva", "p\u00e4rast keskp\u00e4eva"], DATEFORMATS:["EEEE, d. MMMM y", "d. MMMM y", 
+"dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["H:mm.ss zzzz", "H:mm.ss z", "H:mm.ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_eu = {ERAS:["K.a.", "K.o."], ERANAMES:["K.a.", "K.o."], NARROWMONTHS:["U", "O", "M", "A", "M", "E", "U", "A", "I", "U", "A", "A"], STANDALONENARROWMONTHS:["U", "O", "M", "A", "M", "E", "U", "A", "I", "U", "A", "A"], MONTHS:["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua", "iraila", "urria", "azaroa", "abendua"], STANDALONEMONTHS:["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua", "iraila", "urria", 
+"azaroa", "abendua"], SHORTMONTHS:["urt", "ots", "mar", "api", "mai", "eka", "uzt", "abu", "ira", "urr", "aza", "abe"], STANDALONESHORTMONTHS:["urt", "ots", "mar", "api", "mai", "eka", "uzt", "abu", "ira", "urr", "aza", "abe"], WEEKDAYS:["igandea", "astelehena", "asteartea", "asteazkena", "osteguna", "ostirala", "larunbata"], STANDALONEWEEKDAYS:["igandea", "astelehena", "asteartea", "asteazkena", "osteguna", "ostirala", "larunbata"], SHORTWEEKDAYS:["ig", "al", "as", "az", "og", "or", "lr"], STANDALONESHORTWEEKDAYS:["ig", 
+"al", "as", "az", "og", "or", "lr"], NARROWWEEKDAYS:["I", "M", "A", "A", "A", "O", "I"], STANDALONENARROWWEEKDAYS:["I", "M", "A", "L", "A", "O", "I"], SHORTQUARTERS:["1Hh", "2Hh", "3Hh", "4Hh"], QUARTERS:["1. hiruhilekoa", "2. hiruhilekoa", "3. hiruhilekoa", "4. hiruhilekoa"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, y'eko' MMMM'ren' dd'a'", "y'eko' MMM'ren' dd'a'", "y MMM d", "yyyy-MM-dd"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_fa = {ZERODIGIT:1776, ERAS:["\u0642.\u0645.", "\u0645."], ERANAMES:["\u0642\u0628\u0644 \u0627\u0632 \u0645\u06cc\u0644\u0627\u062f", "\u0645\u06cc\u0644\u0627\u062f\u06cc"], NARROWMONTHS:["\u0698", "\u0641", "\u0645", "\u0622", "\u0645", "\u0698", "\u0698", "\u0627", "\u0633", "\u0627", "\u0646", "\u062f"], STANDALONENARROWMONTHS:["\u0698", "\u0641", "\u0645", "\u0622", "\u0645", "\u0698", "\u0698", "\u0627", "\u0633", "\u0627", "\u0646", "\u062f"], MONTHS:["\u0698\u0627\u0646\u0648\u06cc\u0647\u0654", 
+"\u0641\u0648\u0631\u06cc\u0647\u0654", "\u0645\u0627\u0631\u0633", "\u0622\u0648\u0631\u06cc\u0644", "\u0645\u0647\u0654", "\u0698\u0648\u0626\u0646", "\u0698\u0648\u0626\u06cc\u0647\u0654", "\u0627\u0648\u062a", "\u0633\u067e\u062a\u0627\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0628\u0631", "\u0646\u0648\u0627\u0645\u0628\u0631", "\u062f\u0633\u0627\u0645\u0628\u0631"], STANDALONEMONTHS:["\u0698\u0627\u0646\u0648\u06cc\u0647", "\u0641\u0648\u0631\u06cc\u0647", "\u0645\u0627\u0631\u0633", "\u0622\u0648\u0631\u06cc\u0644", 
+"\u0645\u0647", "\u0698\u0648\u0626\u0646", "\u0698\u0648\u0626\u06cc\u0647", "\u0627\u0648\u062a", "\u0633\u067e\u062a\u0627\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0628\u0631", "\u0646\u0648\u0627\u0645\u0628\u0631", "\u062f\u0633\u0627\u0645\u0628\u0631"], SHORTMONTHS:["\u0698\u0627\u0646\u0648\u06cc\u0647\u0654", "\u0641\u0648\u0631\u06cc\u0647\u0654", "\u0645\u0627\u0631\u0633", "\u0622\u0648\u0631\u06cc\u0644", "\u0645\u0647\u0654", "\u0698\u0648\u0626\u0646", "\u0698\u0648\u0626\u06cc\u0647\u0654", 
+"\u0627\u0648\u062a", "\u0633\u067e\u062a\u0627\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0628\u0631", "\u0646\u0648\u0627\u0645\u0628\u0631", "\u062f\u0633\u0627\u0645\u0628\u0631"], STANDALONESHORTMONTHS:["\u0698\u0627\u0646\u0648\u06cc\u0647", "\u0641\u0648\u0631\u06cc\u0647", "\u0645\u0627\u0631\u0633", "\u0622\u0648\u0631\u06cc\u0644", "\u0645\u0647", "\u0698\u0648\u0626\u0646", "\u0698\u0648\u0626\u06cc\u0647", "\u0627\u0648\u062a", "\u0633\u067e\u062a\u0627\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0628\u0631", 
+"\u0646\u0648\u0627\u0645\u0628\u0631", "\u062f\u0633\u0627\u0645\u0628\u0631"], WEEKDAYS:["\u06cc\u06a9\u0634\u0646\u0628\u0647", "\u062f\u0648\u0634\u0646\u0628\u0647", "\u0633\u0647\u200c\u0634\u0646\u0628\u0647", "\u0686\u0647\u0627\u0631\u0634\u0646\u0628\u0647", "\u067e\u0646\u062c\u0634\u0646\u0628\u0647", "\u062c\u0645\u0639\u0647", "\u0634\u0646\u0628\u0647"], STANDALONEWEEKDAYS:["\u06cc\u06a9\u0634\u0646\u0628\u0647", "\u062f\u0648\u0634\u0646\u0628\u0647", "\u0633\u0647\u200c\u0634\u0646\u0628\u0647", 
+"\u0686\u0647\u0627\u0631\u0634\u0646\u0628\u0647", "\u067e\u0646\u062c\u0634\u0646\u0628\u0647", "\u062c\u0645\u0639\u0647", "\u0634\u0646\u0628\u0647"], SHORTWEEKDAYS:["\u06cc\u06a9\u0634\u0646\u0628\u0647", "\u062f\u0648\u0634\u0646\u0628\u0647", "\u0633\u0647\u200c\u0634\u0646\u0628\u0647", "\u0686\u0647\u0627\u0631\u0634\u0646\u0628\u0647", "\u067e\u0646\u062c\u0634\u0646\u0628\u0647", "\u062c\u0645\u0639\u0647", "\u0634\u0646\u0628\u0647"], STANDALONESHORTWEEKDAYS:["\u06cc\u06a9\u0634\u0646\u0628\u0647", 
+"\u062f\u0648\u0634\u0646\u0628\u0647", "\u0633\u0647\u200c\u0634\u0646\u0628\u0647", "\u0686\u0647\u0627\u0631\u0634\u0646\u0628\u0647", "\u067e\u0646\u062c\u0634\u0646\u0628\u0647", "\u062c\u0645\u0639\u0647", "\u0634\u0646\u0628\u0647"], NARROWWEEKDAYS:["\u06cc", "\u062f", "\u0633", "\u0686", "\u067e", "\u062c", "\u0634"], STANDALONENARROWWEEKDAYS:["\u06cc", "\u062f", "\u0633", "\u0686", "\u067e", "\u062c", "\u0634"], SHORTQUARTERS:["\u0633\u200c\u0645\u06f1", "\u0633\u200c\u0645\u06f2", "\u0633\u200c\u0645\u06f3", 
+"\u0633\u200c\u0645\u06f4"], QUARTERS:["\u0633\u0647\u200c\u0645\u0627\u0647\u0647\u0654 \u0627\u0648\u0644", "\u0633\u0647\u200c\u0645\u0627\u0647\u0647\u0654 \u062f\u0648\u0645", "\u0633\u0647\u200c\u0645\u0627\u0647\u0647\u0654 \u0633\u0648\u0645", "\u0633\u0647\u200c\u0645\u0627\u0647\u0647\u0654 \u0686\u0647\u0627\u0631\u0645"], AMPMS:["\u0642\u0628\u0644\u200c\u0627\u0632\u0638\u0647\u0631", "\u0628\u0639\u062f\u0627\u0632\u0638\u0647\u0631"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", 
+"yyyy/M/d"], TIMEFORMATS:["H:mm:ss (zzzz)", "H:mm:ss (z)", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:5, WEEKENDRANGE:[3, 4], FIRSTWEEKCUTOFFDAY:4};
+goog.i18n.DateTimeSymbols_fi = {ERAS:["eKr.", "jKr."], ERANAMES:["ennen Kristuksen syntym\u00e4\u00e4", "j\u00e4lkeen Kristuksen syntym\u00e4n"], NARROWMONTHS:["T", "H", "M", "H", "T", "K", "H", "E", "S", "L", "M", "J"], STANDALONENARROWMONTHS:["T", "H", "M", "H", "T", "K", "H", "E", "S", "L", "M", "J"], MONTHS:["tammikuuta", "helmikuuta", "maaliskuuta", "huhtikuuta", "toukokuuta", "kes\u00e4kuuta", "hein\u00e4kuuta", "elokuuta", "syyskuuta", "lokakuuta", "marraskuuta", "joulukuuta"], STANDALONEMONTHS:["tammikuu", 
+"helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kes\u00e4kuu", "hein\u00e4kuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu"], SHORTMONTHS:["tammikuuta", "helmikuuta", "maaliskuuta", "huhtikuuta", "toukokuuta", "kes\u00e4kuuta", "hein\u00e4kuuta", "elokuuta", "syyskuuta", "lokakuuta", "marraskuuta", "joulukuuta"], STANDALONESHORTMONTHS:["tammi", "helmi", "maalis", "huhti", "touko", "kes\u00e4", "hein\u00e4", "elo", "syys", "loka", "marras", "joulu"], WEEKDAYS:["sunnuntaina", "maanantaina", 
+"tiistaina", "keskiviikkona", "torstaina", "perjantaina", "lauantaina"], STANDALONEWEEKDAYS:["sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"], SHORTWEEKDAYS:["su", "ma", "ti", "ke", "to", "pe", "la"], STANDALONESHORTWEEKDAYS:["su", "ma", "ti", "ke", "to", "pe", "la"], NARROWWEEKDAYS:["S", "M", "T", "K", "T", "P", "L"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "K", "T", "P", "L"], SHORTQUARTERS:["1. nelj.", "2. nelj.", "3. nelj.", "4. nelj."], QUARTERS:["1. nelj\u00e4nnes", 
+"2. nelj\u00e4nnes", "3. nelj\u00e4nnes", "4. nelj\u00e4nnes"], AMPMS:["ap.", "ip."], DATEFORMATS:["cccc, d. MMMM y", "d. MMMM y", "d.M.yyyy", "d.M.yyyy"], TIMEFORMATS:["H.mm.ss zzzz", "H.mm.ss z", "H.mm.ss", "H.mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_fil = {ERAS:["BC", "AD"], ERANAMES:["BC", "AD"], NARROWMONTHS:["E", "P", "M", "A", "M", "H", "H", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["E", "P", "M", "A", "M", "H", "H", "A", "S", "O", "N", "D"], MONTHS:["Enero", "Pebrero", "Marso", "Abril", "Mayo", "Hunyo", "Hulyo", "Agosto", "Setyembre", "Oktubre", "Nobyembre", "Disyembre"], STANDALONEMONTHS:["Enero", "Pebrero", "Marso", "Abril", "Mayo", "Hunyo", "Hulyo", "Agosto", "Setyembre", "Oktubre", "Nobyembre", "Disyembre"], 
+SHORTMONTHS:["Ene", "Peb", "Mar", "Abr", "May", "Hun", "Hul", "Ago", "Set", "Okt", "Nob", "Dis"], STANDALONESHORTMONTHS:["Ene", "Peb", "Mar", "Abr", "May", "Hun", "Hul", "Ago", "Set", "Okt", "Nob", "Dis"], WEEKDAYS:["Linggo", "Lunes", "Martes", "Miyerkules", "Huwebes", "Biyernes", "Sabado"], STANDALONEWEEKDAYS:["Linggo", "Lunes", "Martes", "Miyerkules", "Huwebes", "Biyernes", "Sabado"], SHORTWEEKDAYS:["Lin", "Lun", "Mar", "Mye", "Huw", "Bye", "Sab"], STANDALONESHORTWEEKDAYS:["Lin", "Lun", "Mar", 
+"Miy", "Huw", "Biy", "Sab"], NARROWWEEKDAYS:["L", "L", "M", "M", "H", "B", "S"], STANDALONENARROWWEEKDAYS:["L", "L", "M", "M", "H", "B", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["ika-1 sangkapat", "ika-2 sangkapat", "ika-3 quarter", "ika-4 na quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, MMMM dd y", "MMMM d, y", "MMM d, y", "M/d/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_fr = {ERAS:["av. J.-C.", "ap. J.-C."], ERANAMES:["avant J\u00e9sus-Christ", "apr\u00e8s J\u00e9sus-Christ"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], STANDALONEMONTHS:["janvier", "f\u00e9vrier", "mars", "avril", 
+"mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], SHORTMONTHS:["janv.", "f\u00e9vr.", "mars", "avr.", "mai", "juin", "juil.", "ao\u00fbt", "sept.", "oct.", "nov.", "d\u00e9c."], STANDALONESHORTMONTHS:["janv.", "f\u00e9vr.", "mars", "avr.", "mai", "juin", "juil.", "ao\u00fbt", "sept.", "oct.", "nov.", "d\u00e9c."], WEEKDAYS:["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], STANDALONEWEEKDAYS:["dimanche", "lundi", "mardi", "mercredi", 
+"jeudi", "vendredi", "samedi"], SHORTWEEKDAYS:["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."], STANDALONESHORTWEEKDAYS:["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."], NARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1er trimestre", "2e trimestre", "3e trimestre", "4e trimestre"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yy"], 
+TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_fr_CA = {ERAS:["av. J.-C.", "ap. J.-C."], ERANAMES:["avant J\u00e9sus-Christ", "apr\u00e8s J\u00e9sus-Christ"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], STANDALONEMONTHS:["janvier", "f\u00e9vrier", "mars", "avril", 
+"mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], SHORTMONTHS:["janv.", "f\u00e9vr.", "mars", "avr.", "mai", "juin", "juil.", "ao\u00fbt", "sept.", "oct.", "nov.", "d\u00e9c."], STANDALONESHORTMONTHS:["janv.", "f\u00e9vr.", "mars", "avr.", "mai", "juin", "juil.", "ao\u00fbt", "sept.", "oct.", "nov.", "d\u00e9c."], WEEKDAYS:["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], STANDALONEWEEKDAYS:["dimanche", "lundi", "mardi", "mercredi", 
+"jeudi", "vendredi", "samedi"], SHORTWEEKDAYS:["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."], STANDALONESHORTWEEKDAYS:["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."], NARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1er trimestre", "2e trimestre", "3e trimestre", "4e trimestre"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "yyyy-MM-dd", "yy-MM-dd"], 
+TIMEFORMATS:["HH 'h' mm 'min' ss 's' zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_gl = {ERAS:["a.C.", "d.C."], ERANAMES:["antes de Cristo", "despois de Cristo"], NARROWMONTHS:["X", "F", "M", "A", "M", "X", "X", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["X", "F", "M", "A", "M", "X", "X", "A", "S", "O", "N", "D"], MONTHS:["Xaneiro", "Febreiro", "Marzo", "Abril", "Maio", "Xu\u00f1o", "Xullo", "Agosto", "Setembro", "Outubro", "Novembro", "Decembro"], STANDALONEMONTHS:["Xaneiro", "Febreiro", "Marzo", "Abril", "Maio", "Xu\u00f1o", "Xullo", "Agosto", 
+"Setembro", "Outubro", "Novembro", "Decembro"], SHORTMONTHS:["Xan", "Feb", "Mar", "Abr", "Mai", "Xu\u00f1", "Xul", "Ago", "Set", "Out", "Nov", "Dec"], STANDALONESHORTMONTHS:["Xan", "Feb", "Mar", "Abr", "Mai", "Xu\u00f1", "Xul", "Ago", "Set", "Out", "Nov", "Dec"], WEEKDAYS:["Domingo", "Luns", "Martes", "M\u00e9rcores", "Xoves", "Venres", "S\u00e1bado"], STANDALONEWEEKDAYS:["Domingo", "Luns", "Martes", "M\u00e9rcores", "Xoves", "Venres", "S\u00e1bado"], SHORTWEEKDAYS:["Dom", "Lun", "Mar", "M\u00e9r", 
+"Xov", "Ven", "S\u00e1b"], STANDALONESHORTWEEKDAYS:["Dom", "Lun", "Mar", "M\u00e9r", "Xov", "Ven", "S\u00e1b"], NARROWWEEKDAYS:["D", "L", "M", "M", "X", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "X", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1o trimestre", "2o trimestre", "3o trimestre", "4o trimestre"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE dd MMMM y", "dd MMMM y", "d MMM, y", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, 
+WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_gsw = {ERAS:["v. Chr.", "n. Chr."], ERANAMES:["v. Chr.", "n. Chr."], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januar", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "Auguscht", "Sept\u00e4mber", "Oktoober", "Nov\u00e4mber", "Dez\u00e4mber"], STANDALONEMONTHS:["Januar", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli", "Auguscht", 
+"Sept\u00e4mber", "Oktoober", "Nov\u00e4mber", "Dez\u00e4mber"], SHORTMONTHS:["Jan", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], STANDALONESHORTMONTHS:["Jan", "Feb", "M\u00e4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], WEEKDAYS:["Sunntig", "M\u00e4\u00e4ntig", "Ziischtig", "Mittwuch", "Dunschtig", "Friitig", "Samschtig"], STANDALONEWEEKDAYS:["Sunntig", "M\u00e4\u00e4ntig", "Ziischtig", "Mittwuch", "Dunschtig", "Friitig", "Samschtig"], 
+SHORTWEEKDAYS:["Su.", "M\u00e4.", "Zi.", "Mi.", "Du.", "Fr.", "Sa."], STANDALONESHORTWEEKDAYS:["Su.", "M\u00e4.", "Zi.", "Mi.", "Du.", "Fr.", "Sa."], NARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], STANDALONENARROWWEEKDAYS:["S", "M", "D", "M", "D", "F", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. Quartal", "2. Quartal", "3. Quartal", "4. Quartal"], AMPMS:["vorm.", "nam."], DATEFORMATS:["EEEE, d. MMMM y", "d. MMMM y", "dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", 
+"HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_gu = {ERAS:["\u0a88\u0ab2\u0ac1\u0aa8\u0abe \u0a9c\u0aa8\u0acd\u0aae \u0aaa\u0ab9\u0ac7\u0ab8\u0abe\u0a82", "\u0a87\u0ab8\u0ab5\u0ac0\u0ab8\u0aa8"], ERANAMES:["\u0a88\u0ab8\u0ab5\u0ac0\u0ab8\u0aa8 \u0aaa\u0ac2\u0ab0\u0acd\u0ab5\u0ac7", "\u0a87\u0ab8\u0ab5\u0ac0\u0ab8\u0aa8"], NARROWMONTHS:["\u0a9c\u0abe", "\u0aab\u0ac7", "\u0aae\u0abe", "\u0a8f", "\u0aae\u0ac7", "\u0a9c\u0ac2", "\u0a9c\u0ac1", "\u0a91", "\u0ab8", "\u0a91", "\u0aa8", "\u0aa1\u0abf"], STANDALONENARROWMONTHS:["\u0a9c\u0abe", 
+"\u0aab\u0ac7", "\u0aae\u0abe", "\u0a8f", "\u0aae\u0ac7", "\u0a9c\u0ac2", "\u0a9c\u0ac1", "\u0a91", "\u0ab8", "\u0a91", "\u0aa8", "\u0aa1\u0abf"], MONTHS:["\u0a9c\u0abe\u0aa8\u0acd\u0aaf\u0ac1\u0a86\u0ab0\u0ac0", "\u0aab\u0ac7\u0aac\u0acd\u0ab0\u0ac1\u0a86\u0ab0\u0ac0", "\u0aae\u0abe\u0ab0\u0acd\u0a9a", "\u0a8f\u0aaa\u0acd\u0ab0\u0abf\u0ab2", "\u0aae\u0ac7", "\u0a9c\u0ac2\u0aa8", "\u0a9c\u0ac1\u0ab2\u0abe\u0a88", "\u0a91\u0a97\u0ab8\u0acd\u0a9f", "\u0ab8\u0aaa\u0acd\u0a9f\u0ac7\u0aae\u0acd\u0aac\u0ab0", 
+"\u0a91\u0a95\u0acd\u0a9f\u0acb\u0aac\u0ab0", "\u0aa8\u0ab5\u0ac7\u0aae\u0acd\u0aac\u0ab0", "\u0aa1\u0abf\u0ab8\u0ac7\u0aae\u0acd\u0aac\u0ab0"], STANDALONEMONTHS:["\u0a9c\u0abe\u0aa8\u0acd\u0aaf\u0ac1\u0a86\u0ab0\u0ac0", "\u0aab\u0ac7\u0aac\u0acd\u0ab0\u0ac1\u0a86\u0ab0\u0ac0", "\u0aae\u0abe\u0ab0\u0acd\u0a9a", "\u0a8f\u0aaa\u0acd\u0ab0\u0abf\u0ab2", "\u0aae\u0ac7", "\u0a9c\u0ac2\u0aa8", "\u0a9c\u0ac1\u0ab2\u0abe\u0a88", "\u0a91\u0a97\u0ab8\u0acd\u0a9f", "\u0ab8\u0aaa\u0acd\u0a9f\u0ac7\u0aae\u0acd\u0aac\u0ab0", 
+"\u0a91\u0a95\u0acd\u0a9f\u0acb\u0aac\u0ab0", "\u0aa8\u0ab5\u0ac7\u0aae\u0acd\u0aac\u0ab0", "\u0aa1\u0abf\u0ab8\u0ac7\u0aae\u0acd\u0aac\u0ab0"], SHORTMONTHS:["\u0a9c\u0abe\u0aa8\u0acd\u0aaf\u0ac1", "\u0aab\u0ac7\u0aac\u0acd\u0ab0\u0ac1", "\u0aae\u0abe\u0ab0\u0acd\u0a9a", "\u0a8f\u0aaa\u0acd\u0ab0\u0abf\u0ab2", "\u0aae\u0ac7", "\u0a9c\u0ac2\u0aa8", "\u0a9c\u0ac1\u0ab2\u0abe\u0a88", "\u0a91\u0a97\u0ab8\u0acd\u0a9f", "\u0ab8\u0aaa\u0acd\u0a9f\u0ac7", "\u0a91\u0a95\u0acd\u0a9f\u0acb", "\u0aa8\u0ab5\u0ac7", 
+"\u0aa1\u0abf\u0ab8\u0ac7"], STANDALONESHORTMONTHS:["\u0a9c\u0abe\u0aa8\u0acd\u0aaf\u0ac1", "\u0aab\u0ac7\u0aac\u0acd\u0ab0\u0ac1", "\u0aae\u0abe\u0ab0\u0acd\u0a9a", "\u0a8f\u0aaa\u0acd\u0ab0\u0abf\u0ab2", "\u0aae\u0ac7", "\u0a9c\u0ac2\u0aa8", "\u0a9c\u0ac1\u0ab2\u0abe\u0a88", "\u0a91\u0a97\u0ab8\u0acd\u0a9f", "\u0ab8\u0aaa\u0acd\u0a9f\u0ac7", "\u0a91\u0a95\u0acd\u0a9f\u0acb", "\u0aa8\u0ab5\u0ac7", "\u0aa1\u0abf\u0ab8\u0ac7"], WEEKDAYS:["\u0ab0\u0ab5\u0abf\u0ab5\u0abe\u0ab0", "\u0ab8\u0acb\u0aae\u0ab5\u0abe\u0ab0", 
+"\u0aae\u0a82\u0a97\u0ab3\u0ab5\u0abe\u0ab0", "\u0aac\u0ac1\u0aa7\u0ab5\u0abe\u0ab0", "\u0a97\u0ac1\u0ab0\u0ac1\u0ab5\u0abe\u0ab0", "\u0ab6\u0ac1\u0a95\u0acd\u0ab0\u0ab5\u0abe\u0ab0", "\u0ab6\u0aa8\u0abf\u0ab5\u0abe\u0ab0"], STANDALONEWEEKDAYS:["\u0ab0\u0ab5\u0abf\u0ab5\u0abe\u0ab0", "\u0ab8\u0acb\u0aae\u0ab5\u0abe\u0ab0", "\u0aae\u0a82\u0a97\u0ab3\u0ab5\u0abe\u0ab0", "\u0aac\u0ac1\u0aa7\u0ab5\u0abe\u0ab0", "\u0a97\u0ac1\u0ab0\u0ac1\u0ab5\u0abe\u0ab0", "\u0ab6\u0ac1\u0a95\u0acd\u0ab0\u0ab5\u0abe\u0ab0", 
+"\u0ab6\u0aa8\u0abf\u0ab5\u0abe\u0ab0"], SHORTWEEKDAYS:["\u0ab0\u0ab5\u0abf", "\u0ab8\u0acb\u0aae", "\u0aae\u0a82\u0a97\u0ab3", "\u0aac\u0ac1\u0aa7", "\u0a97\u0ac1\u0ab0\u0ac1", "\u0ab6\u0ac1\u0a95\u0acd\u0ab0", "\u0ab6\u0aa8\u0abf"], STANDALONESHORTWEEKDAYS:["\u0ab0\u0ab5\u0abf", "\u0ab8\u0acb\u0aae", "\u0aae\u0a82\u0a97\u0ab3", "\u0aac\u0ac1\u0aa7", "\u0a97\u0ac1\u0ab0\u0ac1", "\u0ab6\u0ac1\u0a95\u0acd\u0ab0", "\u0ab6\u0aa8\u0abf"], NARROWWEEKDAYS:["\u0ab0", "\u0ab8\u0acb", "\u0aae\u0a82", "\u0aac\u0ac1", 
+"\u0a97\u0ac1", "\u0ab6\u0ac1", "\u0ab6"], STANDALONENARROWWEEKDAYS:["\u0ab0", "\u0ab8\u0acb", "\u0aae\u0a82", "\u0aac\u0ac1", "\u0a97\u0ac1", "\u0ab6\u0ac1", "\u0ab6"], SHORTQUARTERS:["\u0aaa\u0ac7\u0ab9\u0ab2\u0abe \u0ab9\u0a82\u0aa4 1", "Q2", "Q3", "\u0a9a\u0acc\u0aa4\u0abe \u0ab9\u0a82\u0aa4 4"], QUARTERS:["\u0aaa\u0ac7\u0ab9\u0ab2\u0abe \u0ab9\u0a82\u0aa4 1", "\u0aa1\u0ac2\u0ab8\u0a8b\u0abe \u0ab9\u0a82\u0aa4 2", "\u0aa4\u0ac0\u0ab8\u0a8b\u0abe \u0ab9\u0a82\u0aa4 3", "\u0a9a\u0acc\u0aa4\u0abe \u0ab9\u0a82\u0aa4 4"], 
+AMPMS:["am", "pm"], DATEFORMATS:["EEEE, d MMMM, y", "d MMMM, y", "d MMM, y", "d-MM-yy"], TIMEFORMATS:["hh:mm:ss a zzzz", "hh:mm:ss a z", "hh:mm:ss a", "hh:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_haw = {ERAS:["BCE", "CE"], ERANAMES:["BCE", "CE"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["Ianuali", "Pepeluali", "Malaki", "\u02bbApelila", "Mei", "Iune", "Iulai", "\u02bbAukake", "Kepakemapa", "\u02bbOkakopa", "Nowemapa", "Kekemapa"], STANDALONEMONTHS:["Ianuali", "Pepeluali", "Malaki", "\u02bbApelila", "Mei", "Iune", "Iulai", "\u02bbAukake", 
+"Kepakemapa", "\u02bbOkakopa", "Nowemapa", "Kekemapa"], SHORTMONTHS:["Ian.", "Pep.", "Mal.", "\u02bbAp.", "Mei", "Iun.", "Iul.", "\u02bbAu.", "Kep.", "\u02bbOk.", "Now.", "Kek."], STANDALONESHORTMONTHS:["Ian.", "Pep.", "Mal.", "\u02bbAp.", "Mei", "Iun.", "Iul.", "\u02bbAu.", "Kep.", "\u02bbOk.", "Now.", "Kek."], WEEKDAYS:["L\u0101pule", "Po\u02bbakahi", "Po\u02bbalua", "Po\u02bbakolu", "Po\u02bbah\u0101", "Po\u02bbalima", "Po\u02bbaono"], STANDALONEWEEKDAYS:["L\u0101pule", "Po\u02bbakahi", "Po\u02bbalua", 
+"Po\u02bbakolu", "Po\u02bbah\u0101", "Po\u02bbalima", "Po\u02bbaono"], SHORTWEEKDAYS:["LP", "P1", "P2", "P3", "P4", "P5", "P6"], STANDALONESHORTWEEKDAYS:["LP", "P1", "P2", "P3", "P4", "P5", "P6"], NARROWWEEKDAYS:["1", "2", "3", "4", "5", "6", "7"], STANDALONENARROWWEEKDAYS:["1", "2", "3", "4", "5", "6", "7"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["Q1", "Q2", "Q3", "Q4"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "d/M/yy"], TIMEFORMATS:["h:mm:ss a zzzz", 
+"h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_he = {ERAS:["\u05dc\u05e4\u05e0\u05d4\u05f4\u05e1", "\u05dc\u05e1\u05d4\u05f4\u05e0"], ERANAMES:["\u05dc\u05e4\u05e0\u05d9 \u05d4\u05e1\u05e4\u05d9\u05e8\u05d4", "\u05dc\u05e1\u05e4\u05d9\u05e8\u05d4"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["\u05d9\u05e0\u05d5\u05d0\u05e8", "\u05e4\u05d1\u05e8\u05d5\u05d0\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05d9\u05dc", 
+"\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05d9", "\u05d9\u05d5\u05dc\u05d9", "\u05d0\u05d5\u05d2\u05d5\u05e1\u05d8", "\u05e1\u05e4\u05d8\u05de\u05d1\u05e8", "\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8", "\u05e0\u05d5\u05d1\u05de\u05d1\u05e8", "\u05d3\u05e6\u05de\u05d1\u05e8"], STANDALONEMONTHS:["\u05d9\u05e0\u05d5\u05d0\u05e8", "\u05e4\u05d1\u05e8\u05d5\u05d0\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05d9\u05dc", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05d9", "\u05d9\u05d5\u05dc\u05d9", 
+"\u05d0\u05d5\u05d2\u05d5\u05e1\u05d8", "\u05e1\u05e4\u05d8\u05de\u05d1\u05e8", "\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8", "\u05e0\u05d5\u05d1\u05de\u05d1\u05e8", "\u05d3\u05e6\u05de\u05d1\u05e8"], SHORTMONTHS:["\u05d9\u05e0\u05d5", "\u05e4\u05d1\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0", "\u05d9\u05d5\u05dc", "\u05d0\u05d5\u05d2", "\u05e1\u05e4\u05d8", "\u05d0\u05d5\u05e7", "\u05e0\u05d5\u05d1", "\u05d3\u05e6\u05de"], STANDALONESHORTMONTHS:["\u05d9\u05e0\u05d5\u05f3", 
+"\u05e4\u05d1\u05e8\u05f3", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05f3", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05f3", "\u05d9\u05d5\u05dc\u05f3", "\u05d0\u05d5\u05d2\u05f3", "\u05e1\u05e4\u05d8\u05f3", "\u05d0\u05d5\u05e7\u05f3", "\u05e0\u05d5\u05d1\u05f3", "\u05d3\u05e6\u05de\u05f3"], WEEKDAYS:["\u05d9\u05d5\u05dd \u05e8\u05d0\u05e9\u05d5\u05df", "\u05d9\u05d5\u05dd \u05e9\u05e0\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05dc\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e8\u05d1\u05d9\u05e2\u05d9", 
+"\u05d9\u05d5\u05dd \u05d7\u05de\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d1\u05ea"], STANDALONEWEEKDAYS:["\u05d9\u05d5\u05dd \u05e8\u05d0\u05e9\u05d5\u05df", "\u05d9\u05d5\u05dd \u05e9\u05e0\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05dc\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e8\u05d1\u05d9\u05e2\u05d9", "\u05d9\u05d5\u05dd \u05d7\u05de\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d1\u05ea"], 
+SHORTWEEKDAYS:["\u05d9\u05d5\u05dd \u05d0\u05f3", "\u05d9\u05d5\u05dd \u05d1\u05f3", "\u05d9\u05d5\u05dd \u05d2\u05f3", "\u05d9\u05d5\u05dd \u05d3\u05f3", "\u05d9\u05d5\u05dd \u05d4\u05f3", "\u05d9\u05d5\u05dd \u05d5\u05f3", "\u05e9\u05d1\u05ea"], STANDALONESHORTWEEKDAYS:["\u05d9\u05d5\u05dd \u05d0\u05f3", "\u05d9\u05d5\u05dd \u05d1\u05f3", "\u05d9\u05d5\u05dd \u05d2\u05f3", "\u05d9\u05d5\u05dd \u05d3\u05f3", "\u05d9\u05d5\u05dd \u05d4\u05f3", "\u05d9\u05d5\u05dd \u05d5\u05f3", "\u05e9\u05d1\u05ea"], 
+NARROWWEEKDAYS:["\u05d0", "\u05d1", "\u05d2", "\u05d3", "\u05d4", "\u05d5", "\u05e9"], STANDALONENARROWWEEKDAYS:["\u05d0", "\u05d1", "\u05d2", "\u05d3", "\u05d4", "\u05d5", "\u05e9"], SHORTQUARTERS:["\u05e8\u05d1\u05e2\u05d5\u05df 1", "\u05e8\u05d1\u05e2\u05d5\u05df 2", "\u05e8\u05d1\u05e2\u05d5\u05df 3", "\u05e8\u05d1\u05e2\u05d5\u05df 4"], QUARTERS:["\u05e8\u05d1\u05e2\u05d5\u05df 1", "\u05e8\u05d1\u05e2\u05d5\u05df 2", "\u05e8\u05d1\u05e2\u05d5\u05df 3", "\u05e8\u05d1\u05e2\u05d5\u05df 4"], AMPMS:["\u05dc\u05e4\u05e0\u05d4\u05f4\u05e6", 
+"\u05d0\u05d7\u05d4\u05f4\u05e6"], DATEFORMATS:["EEEE, d \u05d1MMMM y", "d \u05d1MMMM y", "d \u05d1MMM yyyy", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[4, 5], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_hi = {ERAS:["\u0908\u0938\u093e\u092a\u0942\u0930\u094d\u0935", "\u0938\u0928"], ERANAMES:["\u0908\u0938\u093e\u092a\u0942\u0930\u094d\u0935", "\u0938\u0928"], NARROWMONTHS:["\u091c", "\u092b\u093c", "\u092e\u093e", "\u0905", "\u092e", "\u091c\u0942", "\u091c\u0941", "\u0905", "\u0938\u093f", "\u0905", "\u0928", "\u0926\u093f"], STANDALONENARROWMONTHS:["\u091c", "\u092b\u093c", "\u092e\u093e", "\u0905", "\u092e", "\u091c\u0942", "\u091c\u0941", "\u0905", "\u0938\u093f", 
+"\u0905", "\u0928", "\u0926\u093f"], MONTHS:["\u091c\u0928\u0935\u0930\u0940", "\u092b\u0930\u0935\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", "\u0905\u092a\u094d\u0930\u0948\u0932", "\u092e\u0908", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u093e\u0908", "\u0905\u0917\u0938\u094d\u0924", "\u0938\u093f\u0924\u092e\u094d\u092c\u0930", "\u0905\u0915\u094d\u0924\u0942\u092c\u0930", "\u0928\u0935\u092e\u094d\u092c\u0930", "\u0926\u093f\u0938\u092e\u094d\u092c\u0930"], STANDALONEMONTHS:["\u091c\u0928\u0935\u0930\u0940", 
+"\u092b\u0930\u0935\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", "\u0905\u092a\u094d\u0930\u0948\u0932", "\u092e\u0908", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u093e\u0908", "\u0905\u0917\u0938\u094d\u0924", "\u0938\u093f\u0924\u092e\u094d\u092c\u0930", "\u0905\u0915\u094d\u0924\u0942\u092c\u0930", "\u0928\u0935\u092e\u094d\u092c\u0930", "\u0926\u093f\u0938\u092e\u094d\u092c\u0930"], SHORTMONTHS:["\u091c\u0928\u0935\u0930\u0940", "\u092b\u0930\u0935\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", 
+"\u0905\u092a\u094d\u0930\u0948\u0932", "\u092e\u0908", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u093e\u0908", "\u0905\u0917\u0938\u094d\u0924", "\u0938\u093f\u0924\u092e\u094d\u092c\u0930", "\u0905\u0915\u094d\u0924\u0942\u092c\u0930", "\u0928\u0935\u092e\u094d\u092c\u0930", "\u0926\u093f\u0938\u092e\u094d\u092c\u0930"], STANDALONESHORTMONTHS:["\u091c\u0928\u0935\u0930\u0940", "\u092b\u0930\u0935\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", "\u0905\u092a\u094d\u0930\u0948\u0932", "\u092e\u0908", 
+"\u091c\u0942\u0928", "\u091c\u0941\u0932\u093e\u0908", "\u0905\u0917\u0938\u094d\u0924", "\u0938\u093f\u0924\u092e\u094d\u092c\u0930", "\u0905\u0915\u094d\u0924\u0942\u092c\u0930", "\u0928\u0935\u092e\u094d\u092c\u0930", "\u0926\u093f\u0938\u092e\u094d\u092c\u0930"], WEEKDAYS:["\u0930\u0935\u093f\u0935\u093e\u0930", "\u0938\u094b\u092e\u0935\u093e\u0930", "\u092e\u0902\u0917\u0932\u0935\u093e\u0930", "\u092c\u0941\u0927\u0935\u093e\u0930", "\u092c\u0943\u0939\u0938\u094d\u092a\u0924\u093f\u0935\u093e\u0930", 
+"\u0936\u0941\u0915\u094d\u0930\u0935\u093e\u0930", "\u0936\u0928\u093f\u0935\u093e\u0930"], STANDALONEWEEKDAYS:["\u0930\u0935\u093f\u0935\u093e\u0930", "\u0938\u094b\u092e\u0935\u093e\u0930", "\u092e\u0902\u0917\u0932\u0935\u093e\u0930", "\u092c\u0941\u0927\u0935\u093e\u0930", "\u092c\u0943\u0939\u0938\u094d\u092a\u0924\u093f\u0935\u093e\u0930", "\u0936\u0941\u0915\u094d\u0930\u0935\u093e\u0930", "\u0936\u0928\u093f\u0935\u093e\u0930"], SHORTWEEKDAYS:["\u0930\u0935\u093f.", "\u0938\u094b\u092e.", 
+"\u092e\u0902\u0917\u0932.", "\u092c\u0941\u0927.", "\u092c\u0943\u0939.", "\u0936\u0941\u0915\u094d\u0930.", "\u0936\u0928\u093f."], STANDALONESHORTWEEKDAYS:["\u0930\u0935\u093f.", "\u0938\u094b\u092e.", "\u092e\u0902\u0917\u0932.", "\u092c\u0941\u0927.", "\u092c\u0943\u0939.", "\u0936\u0941\u0915\u094d\u0930.", "\u0936\u0928\u093f."], NARROWWEEKDAYS:["\u0930", "\u0938\u094b", "\u092e\u0902", "\u092c\u0941", "\u0917\u0941", "\u0936\u0941", "\u0936"], STANDALONENARROWWEEKDAYS:["\u0930", "\u0938\u094b", 
+"\u092e\u0902", "\u092c\u0941", "\u0917\u0941", "\u0936\u0941", "\u0936"], SHORTQUARTERS:["\u0924\u093f\u092e\u093e\u0939\u0940", "\u0926\u0942\u0938\u0930\u0940 \u0924\u093f\u092e\u093e\u0939\u0940", "\u0924\u0940\u0938\u0930\u0940 \u0924\u093f\u092e\u093e\u0939\u0940", "\u091a\u094c\u0925\u0940 \u0924\u093f\u092e\u093e\u0939\u0940"], QUARTERS:["\u0924\u093f\u092e\u093e\u0939\u0940", "\u0926\u0942\u0938\u0930\u0940 \u0924\u093f\u092e\u093e\u0939\u0940", "\u0924\u0940\u0938\u0930\u0940 \u0924\u093f\u092e\u093e\u0939\u0940", 
+"\u091a\u094c\u0925\u0940 \u0924\u093f\u092e\u093e\u0939\u0940"], AMPMS:["am", "pm"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "dd-MM-yyyy", "d-M-yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_hr = {ERAS:["p. n. e.", "A. D."], ERANAMES:["Prije Krista", "Poslije Krista"], NARROWMONTHS:["1.", "2.", "3.", "4.", "5.", "6.", "7.", "8.", "9.", "10.", "11.", "12."], STANDALONENARROWMONTHS:["1.", "2.", "3.", "4.", "5.", "6.", "7.", "8.", "9.", "10.", "11.", "12."], MONTHS:["sije\u010dnja", "velja\u010de", "o\u017eujka", "travnja", "svibnja", "lipnja", "srpnja", "kolovoza", "rujna", "listopada", "studenoga", "prosinca"], STANDALONEMONTHS:["sije\u010danj", "velja\u010da", 
+"o\u017eujak", "travanj", "svibanj", "lipanj", "srpanj", "kolovoz", "rujan", "listopad", "studeni", "prosinac"], SHORTMONTHS:["sij", "velj", "o\u017eu", "tra", "svi", "lip", "srp", "kol", "ruj", "lis", "stu", "pro"], STANDALONESHORTMONTHS:["sij", "velj", "o\u017eu", "tra", "svi", "lip", "srp", "kol", "ruj", "lis", "stu", "pro"], WEEKDAYS:["nedjelja", "ponedjeljak", "utorak", "srijeda", "\u010detvrtak", "petak", "subota"], STANDALONEWEEKDAYS:["nedjelja", "ponedjeljak", "utorak", "srijeda", "\u010detvrtak", 
+"petak", "subota"], SHORTWEEKDAYS:["ned", "pon", "uto", "sri", "\u010det", "pet", "sub"], STANDALONESHORTWEEKDAYS:["ned", "pon", "uto", "sri", "\u010det", "pet", "sub"], NARROWWEEKDAYS:["N", "P", "U", "S", "\u010c", "P", "S"], STANDALONENARROWWEEKDAYS:["n", "p", "u", "s", "\u010d", "p", "s"], SHORTQUARTERS:["1kv", "2kv", "3kv", "4kv"], QUARTERS:["1. kvartal", "2. kvartal", "3. kvartal", "4. kvartal"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d. MMMM y.", "d. MMMM y.", "d. M. y.", "d.M.y."], TIMEFORMATS:["HH:mm:ss zzzz", 
+"HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_hu = {ERAS:["i. e.", "i. sz."], ERANAMES:["id\u0151sz\u00e1m\u00edt\u00e1sunk el\u0151tt", "id\u0151sz\u00e1m\u00edt\u00e1sunk szerint"], NARROWMONTHS:["J", "F", "M", "\u00c1", "M", "J", "J", "\u00c1", "Sz", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "\u00c1", "M", "J", "J", "A", "Sz", "O", "N", "D"], MONTHS:["janu\u00e1r", "febru\u00e1r", "m\u00e1rcius", "\u00e1prilis", "m\u00e1jus", "j\u00fanius", "j\u00falius", "augusztus", "szeptember", "okt\u00f3ber", "november", 
+"december"], STANDALONEMONTHS:["janu\u00e1r", "febru\u00e1r", "m\u00e1rcius", "\u00e1prilis", "m\u00e1jus", "j\u00fanius", "j\u00falius", "augusztus", "szeptember", "okt\u00f3ber", "november", "december"], SHORTMONTHS:["jan.", "febr.", "m\u00e1rc.", "\u00e1pr.", "m\u00e1j.", "j\u00fan.", "j\u00fal.", "aug.", "szept.", "okt.", "nov.", "dec."], STANDALONESHORTMONTHS:["jan.", "febr.", "m\u00e1rc.", "\u00e1pr.", "m\u00e1j.", "j\u00fan.", "j\u00fal.", "aug.", "szept.", "okt.", "nov.", "dec."], WEEKDAYS:["vas\u00e1rnap", 
+"h\u00e9tf\u0151", "kedd", "szerda", "cs\u00fct\u00f6rt\u00f6k", "p\u00e9ntek", "szombat"], STANDALONEWEEKDAYS:["vas\u00e1rnap", "h\u00e9tf\u0151", "kedd", "szerda", "cs\u00fct\u00f6rt\u00f6k", "p\u00e9ntek", "szombat"], SHORTWEEKDAYS:["V", "H", "K", "Sze", "Cs", "P", "Szo"], STANDALONESHORTWEEKDAYS:["V", "H", "K", "Sze", "Cs", "P", "Szo"], NARROWWEEKDAYS:["V", "H", "K", "Sz", "Cs", "P", "Sz"], STANDALONENARROWWEEKDAYS:["V", "H", "K", "Sz", "Cs", "P", "Sz"], SHORTQUARTERS:["N1", "N2", "N3", "N4"], 
+QUARTERS:["I. negyed\u00e9v", "II. negyed\u00e9v", "III. negyed\u00e9v", "IV. negyed\u00e9v"], AMPMS:["de.", "du."], DATEFORMATS:["y. MMMM d., EEEE", "y. MMMM d.", "yyyy.MM.dd.", "yyyy.MM.dd."], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_id = {ERAS:["SM", "M"], ERANAMES:["SM", "M"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], STANDALONEMONTHS:["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], 
+SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agt", "Sep", "Okt", "Nov", "Des"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agt", "Sep", "Okt", "Nov", "Des"], WEEKDAYS:["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], STANDALONEWEEKDAYS:["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], SHORTWEEKDAYS:["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"], STANDALONESHORTWEEKDAYS:["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"], 
+NARROWWEEKDAYS:["M", "S", "S", "R", "K", "J", "S"], STANDALONENARROWWEEKDAYS:["M", "S", "S", "R", "K", "J", "S"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["kuartal pertama", "kuartal kedua", "kuartal ketiga", "kuartal keempat"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, dd MMMM yyyy", "d MMMM yyyy", "d MMM yyyy", "dd/MM/yy"], TIMEFORMATS:["H:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_in = {ERAS:["SM", "M"], ERANAMES:["SM", "M"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], STANDALONEMONTHS:["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], 
+SHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agt", "Sep", "Okt", "Nov", "Des"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agt", "Sep", "Okt", "Nov", "Des"], WEEKDAYS:["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], STANDALONEWEEKDAYS:["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], SHORTWEEKDAYS:["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"], STANDALONESHORTWEEKDAYS:["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"], 
+NARROWWEEKDAYS:["M", "S", "S", "R", "K", "J", "S"], STANDALONENARROWWEEKDAYS:["M", "S", "S", "R", "K", "J", "S"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["kuartal pertama", "kuartal kedua", "kuartal ketiga", "kuartal keempat"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, dd MMMM yyyy", "d MMMM yyyy", "d MMM yyyy", "dd/MM/yy"], TIMEFORMATS:["H:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_is = {ERAS:["fyrir Krist", "eftir Krist"], ERANAMES:["fyrir Krist", "eftir Krist"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "\u00c1", "L", "O", "N", "D"], STANDALONENARROWMONTHS:["j", "f", "m", "a", "m", "j", "j", "\u00e1", "s", "o", "n", "d"], MONTHS:["jan\u00faar", "febr\u00faar", "mars", "apr\u00edl", "ma\u00ed", "j\u00fan\u00ed", "j\u00fal\u00ed", "\u00e1g\u00fast", "september", "okt\u00f3ber", "n\u00f3vember", "desember"], STANDALONEMONTHS:["jan\u00faar", "febr\u00faar", 
+"mars", "apr\u00edl", "ma\u00ed", "j\u00fan\u00ed", "j\u00fal\u00ed", "\u00e1g\u00fast", "september", "okt\u00f3ber", "n\u00f3vember", "desember"], SHORTMONTHS:["jan", "feb", "mar", "apr", "ma\u00ed", "j\u00fan", "j\u00fal", "\u00e1g\u00fa", "sep", "okt", "n\u00f3v", "des"], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "ma\u00ed", "j\u00fan", "j\u00fal", "\u00e1g\u00fa", "sep", "okt", "n\u00f3v", "des"], WEEKDAYS:["sunnudagur", "m\u00e1nudagur", "\u00feri\u00f0judagur", "mi\u00f0vikudagur", 
+"fimmtudagur", "f\u00f6studagur", "laugardagur"], STANDALONEWEEKDAYS:["sunnudagur", "m\u00e1nudagur", "\u00feri\u00f0judagur", "mi\u00f0vikudagur", "fimmtudagur", "f\u00f6studagur", "laugardagur"], SHORTWEEKDAYS:["sun", "m\u00e1n", "\u00feri", "mi\u00f0", "fim", "f\u00f6s", "lau"], STANDALONESHORTWEEKDAYS:["sun", "m\u00e1n", "\u00feri", "mi\u00f0", "fim", "f\u00f6s", "lau"], NARROWWEEKDAYS:["S", "M", "\u00de", "M", "F", "F", "L"], STANDALONENARROWWEEKDAYS:["s", "m", "\u00fe", "m", "f", "f", "l"], 
+SHORTQUARTERS:["F1", "F2", "F3", "F4"], QUARTERS:["1st fj\u00f3r\u00f0ungur", "2nd fj\u00f3r\u00f0ungur", "3rd fj\u00f3r\u00f0ungur", "4th fj\u00f3r\u00f0ungur"], AMPMS:["f.h.", "e.h."], DATEFORMATS:["EEEE, d. MMMM y", "d. MMMM y", "d.M.yyyy", "d.M.yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_it = {ERAS:["aC", "dC"], ERANAMES:["a.C.", "d.C"], NARROWMONTHS:["G", "F", "M", "A", "M", "G", "L", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["G", "F", "M", "A", "M", "G", "L", "A", "S", "O", "N", "D"], MONTHS:["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"], STANDALONEMONTHS:["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", 
+"Dicembre"], SHORTMONTHS:["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"], STANDALONESHORTMONTHS:["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"], WEEKDAYS:["domenica", "luned\u00ec", "marted\u00ec", "mercoled\u00ec", "gioved\u00ec", "venerd\u00ec", "sabato"], STANDALONEWEEKDAYS:["Domenica", "Luned\u00ec", "Marted\u00ec", "Mercoled\u00ec", "Gioved\u00ec", "Venerd\u00ec", "Sabato"], SHORTWEEKDAYS:["dom", "lun", "mar", "mer", "gio", 
+"ven", "sab"], STANDALONESHORTWEEKDAYS:["dom", "lun", "mar", "mer", "gio", "ven", "sab"], NARROWWEEKDAYS:["D", "L", "M", "M", "G", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "G", "V", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1o trimestre", "2o trimestre", "3o trimestre", "4o trimestre"], AMPMS:["m.", "p."], DATEFORMATS:["EEEE d MMMM y", "dd MMMM y", "dd/MMM/y", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 
+6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_iw = {ERAS:["\u05dc\u05e4\u05e0\u05d4\u05f4\u05e1", "\u05dc\u05e1\u05d4\u05f4\u05e0"], ERANAMES:["\u05dc\u05e4\u05e0\u05d9 \u05d4\u05e1\u05e4\u05d9\u05e8\u05d4", "\u05dc\u05e1\u05e4\u05d9\u05e8\u05d4"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["\u05d9\u05e0\u05d5\u05d0\u05e8", "\u05e4\u05d1\u05e8\u05d5\u05d0\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05d9\u05dc", 
+"\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05d9", "\u05d9\u05d5\u05dc\u05d9", "\u05d0\u05d5\u05d2\u05d5\u05e1\u05d8", "\u05e1\u05e4\u05d8\u05de\u05d1\u05e8", "\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8", "\u05e0\u05d5\u05d1\u05de\u05d1\u05e8", "\u05d3\u05e6\u05de\u05d1\u05e8"], STANDALONEMONTHS:["\u05d9\u05e0\u05d5\u05d0\u05e8", "\u05e4\u05d1\u05e8\u05d5\u05d0\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05d9\u05dc", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05d9", "\u05d9\u05d5\u05dc\u05d9", 
+"\u05d0\u05d5\u05d2\u05d5\u05e1\u05d8", "\u05e1\u05e4\u05d8\u05de\u05d1\u05e8", "\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8", "\u05e0\u05d5\u05d1\u05de\u05d1\u05e8", "\u05d3\u05e6\u05de\u05d1\u05e8"], SHORTMONTHS:["\u05d9\u05e0\u05d5", "\u05e4\u05d1\u05e8", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0", "\u05d9\u05d5\u05dc", "\u05d0\u05d5\u05d2", "\u05e1\u05e4\u05d8", "\u05d0\u05d5\u05e7", "\u05e0\u05d5\u05d1", "\u05d3\u05e6\u05de"], STANDALONESHORTMONTHS:["\u05d9\u05e0\u05d5\u05f3", 
+"\u05e4\u05d1\u05e8\u05f3", "\u05de\u05e8\u05e5", "\u05d0\u05e4\u05e8\u05f3", "\u05de\u05d0\u05d9", "\u05d9\u05d5\u05e0\u05f3", "\u05d9\u05d5\u05dc\u05f3", "\u05d0\u05d5\u05d2\u05f3", "\u05e1\u05e4\u05d8\u05f3", "\u05d0\u05d5\u05e7\u05f3", "\u05e0\u05d5\u05d1\u05f3", "\u05d3\u05e6\u05de\u05f3"], WEEKDAYS:["\u05d9\u05d5\u05dd \u05e8\u05d0\u05e9\u05d5\u05df", "\u05d9\u05d5\u05dd \u05e9\u05e0\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05dc\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e8\u05d1\u05d9\u05e2\u05d9", 
+"\u05d9\u05d5\u05dd \u05d7\u05de\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d1\u05ea"], STANDALONEWEEKDAYS:["\u05d9\u05d5\u05dd \u05e8\u05d0\u05e9\u05d5\u05df", "\u05d9\u05d5\u05dd \u05e9\u05e0\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05dc\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e8\u05d1\u05d9\u05e2\u05d9", "\u05d9\u05d5\u05dd \u05d7\u05de\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d9\u05e9\u05d9", "\u05d9\u05d5\u05dd \u05e9\u05d1\u05ea"], 
+SHORTWEEKDAYS:["\u05d9\u05d5\u05dd \u05d0\u05f3", "\u05d9\u05d5\u05dd \u05d1\u05f3", "\u05d9\u05d5\u05dd \u05d2\u05f3", "\u05d9\u05d5\u05dd \u05d3\u05f3", "\u05d9\u05d5\u05dd \u05d4\u05f3", "\u05d9\u05d5\u05dd \u05d5\u05f3", "\u05e9\u05d1\u05ea"], STANDALONESHORTWEEKDAYS:["\u05d9\u05d5\u05dd \u05d0\u05f3", "\u05d9\u05d5\u05dd \u05d1\u05f3", "\u05d9\u05d5\u05dd \u05d2\u05f3", "\u05d9\u05d5\u05dd \u05d3\u05f3", "\u05d9\u05d5\u05dd \u05d4\u05f3", "\u05d9\u05d5\u05dd \u05d5\u05f3", "\u05e9\u05d1\u05ea"], 
+NARROWWEEKDAYS:["\u05d0", "\u05d1", "\u05d2", "\u05d3", "\u05d4", "\u05d5", "\u05e9"], STANDALONENARROWWEEKDAYS:["\u05d0", "\u05d1", "\u05d2", "\u05d3", "\u05d4", "\u05d5", "\u05e9"], SHORTQUARTERS:["\u05e8\u05d1\u05e2\u05d5\u05df 1", "\u05e8\u05d1\u05e2\u05d5\u05df 2", "\u05e8\u05d1\u05e2\u05d5\u05df 3", "\u05e8\u05d1\u05e2\u05d5\u05df 4"], QUARTERS:["\u05e8\u05d1\u05e2\u05d5\u05df 1", "\u05e8\u05d1\u05e2\u05d5\u05df 2", "\u05e8\u05d1\u05e2\u05d5\u05df 3", "\u05e8\u05d1\u05e2\u05d5\u05df 4"], AMPMS:["\u05dc\u05e4\u05e0\u05d4\u05f4\u05e6", 
+"\u05d0\u05d7\u05d4\u05f4\u05e6"], DATEFORMATS:["EEEE, d \u05d1MMMM y", "d \u05d1MMMM y", "d \u05d1MMM yyyy", "dd/MM/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[4, 5], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_ja = {ERAS:["\u7d00\u5143\u524d", "\u897f\u66a6"], ERANAMES:["\u7d00\u5143\u524d", "\u897f\u66a6"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONEMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", 
+"6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], SHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONESHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], WEEKDAYS:["\u65e5\u66dc\u65e5", "\u6708\u66dc\u65e5", "\u706b\u66dc\u65e5", "\u6c34\u66dc\u65e5", "\u6728\u66dc\u65e5", 
+"\u91d1\u66dc\u65e5", "\u571f\u66dc\u65e5"], STANDALONEWEEKDAYS:["\u65e5\u66dc\u65e5", "\u6708\u66dc\u65e5", "\u706b\u66dc\u65e5", "\u6c34\u66dc\u65e5", "\u6728\u66dc\u65e5", "\u91d1\u66dc\u65e5", "\u571f\u66dc\u65e5"], SHORTWEEKDAYS:["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"], STANDALONESHORTWEEKDAYS:["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"], NARROWWEEKDAYS:["\u65e5", "\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"], STANDALONENARROWWEEKDAYS:["\u65e5", 
+"\u6708", "\u706b", "\u6c34", "\u6728", "\u91d1", "\u571f"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["\u7b2c1\u56db\u534a\u671f", "\u7b2c2\u56db\u534a\u671f", "\u7b2c3\u56db\u534a\u671f", "\u7b2c4\u56db\u534a\u671f"], AMPMS:["\u5348\u524d", "\u5348\u5f8c"], DATEFORMATS:["y\u5e74M\u6708d\u65e5EEEE", "y\u5e74M\u6708d\u65e5", "yyyy/MM/dd", "yyyy/MM/dd"], TIMEFORMATS:["H\u6642mm\u5206ss\u79d2 zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_kn = {ERAS:["\u0c95\u0ccd\u0cb0\u0cbf.\u0caa\u0cc2", "\u0c9c\u0cbe\u0cb9\u0cc0"], ERANAMES:["\u0c88\u0cb8\u0caa\u0cc2\u0cb5\u0cef.", "\u0c95\u0ccd\u0cb0\u0cbf\u0cb8\u0ccd\u0ca4 \u0cb6\u0c95"], NARROWMONTHS:["\u0c9c", "\u0cab\u0cc6", "\u0cae\u0cbe", "\u0c8e", "\u0cae\u0cc7", "\u0c9c\u0cc2", "\u0c9c\u0cc1", "\u0c86", "\u0cb8\u0cc6", "\u0c85", "\u0ca8", "\u0ca1\u0cbf"], STANDALONENARROWMONTHS:["\u0c9c", "\u0cab\u0cc6", "\u0cae\u0cbe", "\u0c8e", "\u0cae\u0cc7", "\u0c9c\u0cc2", 
+"\u0c9c\u0cc1", "\u0c86", "\u0cb8\u0cc6", "\u0c85", "\u0ca8", "\u0ca1\u0cbf"], MONTHS:["\u0c9c\u0ca8\u0cb5\u0cb0\u0cc0", "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cc0", "\u0cae\u0cbe\u0cb0\u0ccd\u0c9a\u0ccd", "\u0c8e\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd", "\u0cae\u0cc6", "\u0c9c\u0cc2\u0ca8\u0ccd", "\u0c9c\u0cc1\u0cb2\u0cc8", "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd", "\u0cb8\u0caa\u0ccd\u0c9f\u0cc6\u0c82\u0cac\u0cb0\u0ccd", "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd", "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd", 
+"\u0ca1\u0cbf\u0cb8\u0cc6\u0c82\u0cac\u0cb0\u0ccd"], STANDALONEMONTHS:["\u0c9c\u0ca8\u0cb5\u0cb0\u0cc0", "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cc0", "\u0cae\u0cbe\u0cb0\u0ccd\u0c9a\u0ccd", "\u0c8e\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd", "\u0cae\u0cc6", "\u0c9c\u0cc2\u0ca8\u0ccd", "\u0c9c\u0cc1\u0cb2\u0cc8", "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd", "\u0cb8\u0caa\u0ccd\u0c9f\u0cc6\u0c82\u0cac\u0cb0\u0ccd", "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd", "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd", 
+"\u0ca1\u0cbf\u0cb8\u0cc6\u0c82\u0cac\u0cb0\u0ccd"], SHORTMONTHS:["\u0c9c\u0ca8\u0cb5\u0cb0\u0cc0", "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cc0", "\u0cae\u0cbe\u0cb0\u0ccd\u0c9a\u0ccd", "\u0c8e\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd", "\u0cae\u0cc6", "\u0c9c\u0cc2\u0ca8\u0ccd", "\u0c9c\u0cc1\u0cb2\u0cc8", "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd", "\u0cb8\u0caa\u0ccd\u0c9f\u0cc6\u0c82\u0cac\u0cb0\u0ccd", "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd", "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd", 
+"\u0ca1\u0cbf\u0cb8\u0cc6\u0c82\u0cac\u0cb0\u0ccd"], STANDALONESHORTMONTHS:["\u0c9c\u0ca8\u0cb5\u0cb0\u0cc0", "\u0cab\u0cc6\u0cac\u0ccd\u0cb0\u0cb5\u0cb0\u0cc0", "\u0cae\u0cbe\u0cb0\u0ccd\u0c9a\u0ccd", "\u0c8e\u0caa\u0ccd\u0cb0\u0cbf\u0cb2\u0ccd", "\u0cae\u0cc6", "\u0c9c\u0cc2\u0ca8\u0ccd", "\u0c9c\u0cc1\u0cb2\u0cc8", "\u0c86\u0c97\u0cb8\u0ccd\u0c9f\u0ccd", "\u0cb8\u0caa\u0ccd\u0c9f\u0cc6\u0c82\u0cac\u0cb0\u0ccd", "\u0c85\u0c95\u0ccd\u0c9f\u0ccb\u0cac\u0cb0\u0ccd", "\u0ca8\u0cb5\u0cc6\u0c82\u0cac\u0cb0\u0ccd", 
+"\u0ca1\u0cbf\u0cb8\u0cc6\u0c82\u0cac\u0cb0\u0ccd"], WEEKDAYS:["\u0cb0\u0cb5\u0cbf\u0cb5\u0cbe\u0cb0", "\u0cb8\u0ccb\u0cae\u0cb5\u0cbe\u0cb0", "\u0cae\u0c82\u0c97\u0cb3\u0cb5\u0cbe\u0cb0", "\u0cac\u0cc1\u0ca7\u0cb5\u0cbe\u0cb0", "\u0c97\u0cc1\u0cb0\u0cc1\u0cb5\u0cbe\u0cb0", "\u0cb6\u0cc1\u0c95\u0ccd\u0cb0\u0cb5\u0cbe\u0cb0", "\u0cb6\u0ca8\u0cbf\u0cb5\u0cbe\u0cb0"], STANDALONEWEEKDAYS:["\u0cb0\u0cb5\u0cbf\u0cb5\u0cbe\u0cb0", "\u0cb8\u0ccb\u0cae\u0cb5\u0cbe\u0cb0", "\u0cae\u0c82\u0c97\u0cb3\u0cb5\u0cbe\u0cb0", 
+"\u0cac\u0cc1\u0ca7\u0cb5\u0cbe\u0cb0", "\u0c97\u0cc1\u0cb0\u0cc1\u0cb5\u0cbe\u0cb0", "\u0cb6\u0cc1\u0c95\u0ccd\u0cb0\u0cb5\u0cbe\u0cb0", "\u0cb6\u0ca8\u0cbf\u0cb5\u0cbe\u0cb0"], SHORTWEEKDAYS:["\u0cb0.", "\u0cb8\u0ccb.", "\u0cae\u0c82.", "\u0cac\u0cc1.", "\u0c97\u0cc1.", "\u0cb6\u0cc1.", "\u0cb6\u0ca8\u0cbf."], STANDALONESHORTWEEKDAYS:["\u0cb0.", "\u0cb8\u0ccb.", "\u0cae\u0c82.", "\u0cac\u0cc1.", "\u0c97\u0cc1.", "\u0cb6\u0cc1.", "\u0cb6\u0ca8\u0cbf."], NARROWWEEKDAYS:["\u0cb0", "\u0cb8\u0ccb", 
+"\u0cae\u0c82", "\u0cac\u0cc1", "\u0c97\u0cc1", "\u0cb6\u0cc1", "\u0cb6"], STANDALONENARROWWEEKDAYS:["\u0cb0", "\u0cb8\u0ccb", "\u0cae\u0c82", "\u0cac\u0cc1", "\u0c97\u0cc1", "\u0cb6\u0cc1", "\u0cb6"], SHORTQUARTERS:["\u0c92\u0c82\u0ca6\u0cc1 1", "\u0c8e\u0cb0\u0ca1\u0cc1 2", "\u0cae\u0cc2\u0cb0\u0cc1 3", "\u0ca8\u0cbe\u0cb2\u0cc3\u0c95 4"], QUARTERS:["\u0c92\u0c82\u0ca6\u0cc1 1", "\u0c8e\u0cb0\u0ca1\u0cc1 2", "\u0cae\u0cc2\u0cb0\u0cc1 3", "\u0ca8\u0cbe\u0cb2\u0cc3\u0c95 4"], AMPMS:["am", "pm"], 
+DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "d-M-yy"], TIMEFORMATS:["hh:mm:ss a zzzz", "hh:mm:ss a z", "hh:mm:ss a", "hh:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_ko = {ERAS:["\uae30\uc6d0\uc804", "\uc11c\uae30"], ERANAMES:["\uc11c\ub825\uae30\uc6d0\uc804", "\uc11c\ub825\uae30\uc6d0"], NARROWMONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", "4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", "8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], STANDALONENARROWMONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", "4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", "8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], MONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", 
+"4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", "8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], STANDALONEMONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", "4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", "8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], SHORTMONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", "4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", "8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], STANDALONESHORTMONTHS:["1\uc6d4", "2\uc6d4", "3\uc6d4", "4\uc6d4", "5\uc6d4", "6\uc6d4", "7\uc6d4", 
+"8\uc6d4", "9\uc6d4", "10\uc6d4", "11\uc6d4", "12\uc6d4"], WEEKDAYS:["\uc77c\uc694\uc77c", "\uc6d4\uc694\uc77c", "\ud654\uc694\uc77c", "\uc218\uc694\uc77c", "\ubaa9\uc694\uc77c", "\uae08\uc694\uc77c", "\ud1a0\uc694\uc77c"], STANDALONEWEEKDAYS:["\uc77c\uc694\uc77c", "\uc6d4\uc694\uc77c", "\ud654\uc694\uc77c", "\uc218\uc694\uc77c", "\ubaa9\uc694\uc77c", "\uae08\uc694\uc77c", "\ud1a0\uc694\uc77c"], SHORTWEEKDAYS:["\uc77c", "\uc6d4", "\ud654", "\uc218", "\ubaa9", "\uae08", "\ud1a0"], STANDALONESHORTWEEKDAYS:["\uc77c", 
+"\uc6d4", "\ud654", "\uc218", "\ubaa9", "\uae08", "\ud1a0"], NARROWWEEKDAYS:["\uc77c", "\uc6d4", "\ud654", "\uc218", "\ubaa9", "\uae08", "\ud1a0"], STANDALONENARROWWEEKDAYS:["\uc77c", "\uc6d4", "\ud654", "\uc218", "\ubaa9", "\uae08", "\ud1a0"], SHORTQUARTERS:["1\ubd84\uae30", "2\ubd84\uae30", "3\ubd84\uae30", "4\ubd84\uae30"], QUARTERS:["\uc81c 1/4\ubd84\uae30", "\uc81c 2/4\ubd84\uae30", "\uc81c 3/4\ubd84\uae30", "\uc81c 4/4\ubd84\uae30"], AMPMS:["\uc624\uc804", "\uc624\ud6c4"], DATEFORMATS:["y\ub144 M\uc6d4 d\uc77c EEEE", 
+"y\ub144 M\uc6d4 d\uc77c", "yyyy. M. d.", "yy. M. d."], TIMEFORMATS:["a h\uc2dc m\ubd84 s\ucd08 zzzz", "a h\uc2dc m\ubd84 s\ucd08 z", "a h:mm:ss", "a h:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_ln = {ERAS:["lib\u00f3so ya", "nsima ya Y"], ERANAMES:["Yambo ya Y\u00e9zu Kr\u00eds", "Nsima ya Y\u00e9zu Kr\u00eds"], NARROWMONTHS:["y", "f", "m", "a", "m", "y", "y", "a", "s", "\u0254", "n", "d"], STANDALONENARROWMONTHS:["y", "f", "m", "a", "m", "y", "y", "a", "s", "\u0254", "n", "d"], MONTHS:["s\u00e1nz\u00e1 ya yambo", "s\u00e1nz\u00e1 ya m\u00edbal\u00e9", "s\u00e1nz\u00e1 ya m\u00eds\u00e1to", "s\u00e1nz\u00e1 ya m\u00ednei", "s\u00e1nz\u00e1 ya m\u00edt\u00e1no", 
+"s\u00e1nz\u00e1 ya mot\u00f3b\u00e1", "s\u00e1nz\u00e1 ya nsambo", "s\u00e1nz\u00e1 ya mwambe", "s\u00e1nz\u00e1 ya libwa", "s\u00e1nz\u00e1 ya z\u00f3mi", "s\u00e1nz\u00e1 ya z\u00f3mi na m\u0254\u030ck\u0254\u0301", "s\u00e1nz\u00e1 ya z\u00f3mi na m\u00edbal\u00e9"], STANDALONEMONTHS:["s\u00e1nz\u00e1 ya yambo", "s\u00e1nz\u00e1 ya m\u00edbal\u00e9", "s\u00e1nz\u00e1 ya m\u00eds\u00e1to", "s\u00e1nz\u00e1 ya m\u00ednei", "s\u00e1nz\u00e1 ya m\u00edt\u00e1no", "s\u00e1nz\u00e1 ya mot\u00f3b\u00e1", 
+"s\u00e1nz\u00e1 ya nsambo", "s\u00e1nz\u00e1 ya mwambe", "s\u00e1nz\u00e1 ya libwa", "s\u00e1nz\u00e1 ya z\u00f3mi", "s\u00e1nz\u00e1 ya z\u00f3mi na m\u0254\u030ck\u0254\u0301", "s\u00e1nz\u00e1 ya z\u00f3mi na m\u00edbal\u00e9"], SHORTMONTHS:["yan", "fbl", "msi", "apl", "mai", "yun", "yul", "agt", "stb", "\u0254tb", "nvb", "dsb"], STANDALONESHORTMONTHS:["yan", "fbl", "msi", "apl", "mai", "yun", "yul", "agt", "stb", "\u0254tb", "nvb", "dsb"], WEEKDAYS:["eyenga", "mok\u0254l\u0254 mwa yambo", "mok\u0254l\u0254 mwa m\u00edbal\u00e9", 
+"mok\u0254l\u0254 mwa m\u00eds\u00e1to", "mok\u0254l\u0254 ya m\u00edn\u00e9i", "mok\u0254l\u0254 ya m\u00edt\u00e1no", "mp\u0254\u0301s\u0254"], STANDALONEWEEKDAYS:["eyenga", "mok\u0254l\u0254 mwa yambo", "mok\u0254l\u0254 mwa m\u00edbal\u00e9", "mok\u0254l\u0254 mwa m\u00eds\u00e1to", "mok\u0254l\u0254 ya m\u00edn\u00e9i", "mok\u0254l\u0254 ya m\u00edt\u00e1no", "mp\u0254\u0301s\u0254"], SHORTWEEKDAYS:["eye", "ybo", "mbl", "mst", "min", "mtn", "mps"], STANDALONESHORTWEEKDAYS:["eye", "ybo", "mbl", 
+"mst", "min", "mtn", "mps"], NARROWWEEKDAYS:["e", "y", "m", "m", "m", "m", "p"], STANDALONENARROWWEEKDAYS:["e", "y", "m", "m", "m", "m", "p"], SHORTQUARTERS:["SM1", "SM2", "SM3", "SM4"], QUARTERS:["s\u00e1nz\u00e1 m\u00eds\u00e1to ya yambo", "s\u00e1nz\u00e1 m\u00eds\u00e1to ya m\u00edbal\u00e9", "s\u00e1nz\u00e1 m\u00eds\u00e1to ya m\u00eds\u00e1to", "s\u00e1nz\u00e1 m\u00eds\u00e1to ya m\u00ednei"], AMPMS:["nt\u0254\u0301ng\u0254\u0301", "mp\u00f3kwa"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", 
+"d MMM y", "d/M/yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_lt = {ERAS:["pr. Kr.", "po Kr."], ERANAMES:["prie\u0161 Krist\u0173", "po Kristaus"], NARROWMONTHS:["S", "V", "K", "B", "G", "B", "L", "R", "R", "S", "L", "G"], STANDALONENARROWMONTHS:["S", "V", "K", "B", "G", "B", "L", "R", "R", "S", "L", "G"], MONTHS:["sausio", "vasaris", "kovas", "balandis", "gegu\u017e\u0117", "bir\u017eelis", "liepa", "rugpj\u016btis", "rugs\u0117jis", "spalis", "lapkritis", "gruodis"], STANDALONEMONTHS:["Sausis", "Vasaris", "Kovas", "Balandis", "Gegu\u017e\u0117", 
+"Bir\u017eelis", "Liepa", "Rugpj\u016btis", "Rugs\u0117jis", "Spalis", "Lapkritis", "Gruodis"], SHORTMONTHS:["Saus.", "Vas", "Kov.", "Bal.", "Geg.", "Bir.", "Liep.", "Rugp.", "Rugs.", "Spal.", "Lapkr.", "Gruod."], STANDALONESHORTMONTHS:["Saus.", "Vas.", "Kov.", "Bal.", "Geg.", "Bir.", "Liep.", "Rugp.", "Rugs.", "Spal.", "Lapkr.", "Gruod."], WEEKDAYS:["sekmadienis", "pirmadienis", "antradienis", "tre\u010diadienis", "ketvirtadienis", "penktadienis", "\u0161e\u0161tadienis"], STANDALONEWEEKDAYS:["sekmadienis", 
+"pirmadienis", "antradienis", "tre\u010diadienis", "ketvirtadienis", "penktadienis", "\u0161e\u0161tadienis"], SHORTWEEKDAYS:["Sk", "Pr", "An", "Tr", "Kt", "Pn", "\u0160t"], STANDALONESHORTWEEKDAYS:["Sk", "Pr", "An", "Tr", "Kt", "Pn", "\u0160t"], NARROWWEEKDAYS:["S", "P", "A", "T", "K", "P", "\u0160"], STANDALONENARROWWEEKDAYS:["S", "P", "A", "T", "K", "P", "\u0160"], SHORTQUARTERS:["I k.", "II k.", "III k.", "IV ketv."], QUARTERS:["I ketvirtis", "II ketvirtis", "III ketvirtis", "IV ketvirtis"], 
+AMPMS:["prie\u0161piet", "popiet"], DATEFORMATS:["y 'm'. MMMM d 'd'., EEEE", "y 'm'. MMMM d 'd'.", "y MMM d", "yyyy-MM-dd"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_lv = {ERAS:["p.m.\u0113.", "m.\u0113."], ERANAMES:["pirms m\u016bsu \u0113ras", "m\u016bsu \u0113r\u0101"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["janv\u0101ris", "febru\u0101ris", "marts", "apr\u012blis", "maijs", "j\u016bnijs", "j\u016blijs", "augusts", "septembris", "oktobris", "novembris", "decembris"], STANDALONEMONTHS:["janv\u0101ris", "febru\u0101ris", 
+"marts", "apr\u012blis", "maijs", "j\u016bnijs", "j\u016blijs", "augusts", "septembris", "oktobris", "novembris", "decembris"], SHORTMONTHS:["janv.", "febr.", "marts", "apr.", "maijs", "j\u016bn.", "j\u016bl.", "aug.", "sept.", "okt.", "nov.", "dec."], STANDALONESHORTMONTHS:["janv.", "febr.", "marts", "apr.", "maijs", "j\u016bn.", "j\u016bl.", "aug.", "sept.", "okt.", "nov.", "dec."], WEEKDAYS:["sv\u0113tdiena", "pirmdiena", "otrdiena", "tre\u0161diena", "ceturtdiena", "piektdiena", "sestdiena"], 
+STANDALONEWEEKDAYS:["sv\u0113tdiena", "pirmdiena", "otrdiena", "tre\u0161diena", "ceturtdiena", "piektdiena", "sestdiena"], SHORTWEEKDAYS:["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"], STANDALONESHORTWEEKDAYS:["Sv", "Pr", "Ot", "Tr", "Ce", "Pk", "Se"], NARROWWEEKDAYS:["S", "P", "O", "T", "C", "P", "S"], STANDALONENARROWWEEKDAYS:["S", "P", "O", "T", "C", "P", "S"], SHORTQUARTERS:["C1", "C2", "C3", "C4"], QUARTERS:["1. ceturksnis", "2. ceturksnis", "3. ceturksnis", "4. ceturksnis"], AMPMS:["priek\u0161pusdien\u0101", 
+"p\u0113cpusdien\u0101"], DATEFORMATS:["EEEE, y. 'gada' d. MMMM", "y. 'gada' d. MMMM", "y. 'gada' d. MMM", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_ml = {ERAS:["\u0d15\u0d4d\u0d30\u0d3f.\u0d2e\u0d42", "\u0d15\u0d4d\u0d30\u0d3f.\u0d2a\u0d3f."], ERANAMES:["\u0d15\u0d4d\u0d30\u0d3f\u0d38\u0d4d\u0d24\u0d41\u0d35\u0d3f\u0d28\u0d41\u0d4d \u0d2e\u0d41\u0d2e\u0d4d\u0d2a\u0d4d\u200c", "\u0d15\u0d4d\u0d30\u0d3f\u0d38\u0d4d\u0d24\u0d41\u0d35\u0d3f\u0d28\u0d4d \u0d2a\u0d3f\u0d28\u0d4d\u200d\u0d2a\u0d4d"], NARROWMONTHS:["\u0d1c", "\u0d2b\u0d46", "\u0d2e\u0d3e", "\u0d0f", "\u0d2e\u0d47", "\u0d1c\u0d42", "\u0d1c\u0d42", "\u0d13", 
+"\u0d38\u0d46", "\u0d12", "\u0d28", "\u0d21\u0d3f"], STANDALONENARROWMONTHS:["\u0d1c", "\u0d2b\u0d46", "\u0d2e\u0d3e", "\u0d0f", "\u0d2e\u0d47", "\u0d1c\u0d42", "\u0d1c\u0d42", "\u0d13", "\u0d38\u0d46", "\u0d12", "\u0d28", "\u0d21\u0d3f"], MONTHS:["\u0d1c\u0d28\u0d41\u0d35\u0d30\u0d3f", "\u0d2b\u0d46\u0d2c\u0d4d\u0d30\u0d41\u0d35\u0d30\u0d3f", "\u0d2e\u0d3e\u0d30\u0d4d\u200d\u0d1a\u0d4d\u0d1a\u0d4d", "\u0d0f\u0d2a\u0d4d\u0d30\u0d3f\u0d32\u0d4d\u200d", "\u0d2e\u0d47\u0d2f\u0d4d", "\u0d1c\u0d42\u0d23\u0d4d\u200d", 
+"\u0d1c\u0d42\u0d32\u0d48", "\u0d06\u0d17\u0d38\u0d4d\u0d31\u0d4d\u0d31\u0d4d", "\u0d38\u0d46\u0d2a\u0d4d\u0d31\u0d4d\u0d31\u0d02\u0d2c\u0d30\u0d4d\u200d", "\u0d12\u0d15\u0d4d\u0d1f\u0d4b\u0d2c\u0d30\u0d4d\u200d", "\u0d28\u0d35\u0d02\u0d2c\u0d30\u0d4d\u200d", "\u0d21\u0d3f\u0d38\u0d02\u0d2c\u0d30\u0d4d\u200d"], STANDALONEMONTHS:["\u0d1c\u0d28\u0d41\u0d35\u0d30\u0d3f", "\u0d2b\u0d46\u0d2c\u0d4d\u0d30\u0d41\u0d35\u0d30\u0d3f", "\u0d2e\u0d3e\u0d30\u0d4d\u200d\u0d1a\u0d4d\u0d1a\u0d4d", "\u0d0f\u0d2a\u0d4d\u0d30\u0d3f\u0d32\u0d4d\u200d", 
+"\u0d2e\u0d47\u0d2f\u0d4d", "\u0d1c\u0d42\u0d23\u0d4d\u200d", "\u0d1c\u0d42\u0d32\u0d48", "\u0d06\u0d17\u0d38\u0d4d\u0d31\u0d4d\u0d31\u0d4d", "\u0d38\u0d46\u0d2a\u0d4d\u0d31\u0d4d\u0d31\u0d02\u0d2c\u0d30\u0d4d\u200d", "\u0d12\u0d15\u0d4d\u0d1f\u0d4b\u0d2c\u0d30\u0d4d\u200d", "\u0d28\u0d35\u0d02\u0d2c\u0d30\u0d4d\u200d", "\u0d21\u0d3f\u0d38\u0d02\u0d2c\u0d30\u0d4d\u200d"], SHORTMONTHS:["\u0d1c\u0d28\u0d41", "\u0d2b\u0d46\u0d2c\u0d4d\u0d30\u0d41", "\u0d2e\u0d3e\u0d30\u0d4d\u200d", "\u0d0f\u0d2a\u0d4d\u0d30\u0d3f", 
+"\u0d2e\u0d47\u0d2f\u0d4d", "\u0d1c\u0d42\u0d23\u0d4d\u200d", "\u0d1c\u0d42\u0d32\u0d48", "\u0d13\u0d17", "\u0d38\u0d46\u0d2a\u0d4d\u0d31\u0d4d\u0d31\u0d02", "\u0d12\u0d15\u0d4d\u0d1f\u0d4b", "\u0d28\u0d35\u0d02", "\u0d21\u0d3f\u0d38\u0d02"], STANDALONESHORTMONTHS:["\u0d1c\u0d28\u0d41", "\u0d2b\u0d46\u0d2c\u0d4d\u0d30\u0d41", "\u0d2e\u0d3e\u0d30\u0d4d\u200d", "\u0d0f\u0d2a\u0d4d\u0d30\u0d3f", "\u0d2e\u0d47\u0d2f\u0d4d", "\u0d1c\u0d42\u0d23\u0d4d\u200d", "\u0d1c\u0d42\u0d32\u0d48", "\u0d13\u0d17", 
+"\u0d38\u0d46\u0d2a\u0d4d\u0d31\u0d4d\u0d31\u0d02", "\u0d12\u0d15\u0d4d\u0d1f\u0d4b", "\u0d28\u0d35\u0d02", "\u0d21\u0d3f\u0d38\u0d02"], WEEKDAYS:["\u0d1e\u0d3e\u0d2f\u0d31\u0d3e\u0d34\u0d4d\u0d1a", "\u0d24\u0d3f\u0d19\u0d4d\u0d15\u0d33\u0d3e\u0d34\u0d4d\u0d1a", "\u0d1a\u0d4a\u0d35\u0d4d\u0d35\u0d3e\u0d34\u0d4d\u0d1a", "\u0d2c\u0d41\u0d27\u0d28\u0d3e\u0d34\u0d4d\u0d1a", "\u0d35\u0d4d\u0d2f\u0d3e\u0d34\u0d3e\u0d34\u0d4d\u0d1a", "\u0d35\u0d46\u0d33\u0d4d\u0d33\u0d3f\u0d2f\u0d3e\u0d34\u0d4d\u0d1a", 
+"\u0d36\u0d28\u0d3f\u0d2f\u0d3e\u0d34\u0d4d\u0d1a"], STANDALONEWEEKDAYS:["\u0d1e\u0d3e\u0d2f\u0d31\u0d3e\u0d34\u0d4d\u0d1a", "\u0d24\u0d3f\u0d19\u0d4d\u0d15\u0d33\u0d3e\u0d34\u0d4d\u0d1a", "\u0d1a\u0d4a\u0d35\u0d4d\u0d35\u0d3e\u0d34\u0d4d\u0d1a", "\u0d2c\u0d41\u0d27\u0d28\u0d3e\u0d34\u0d4d\u0d1a", "\u0d35\u0d4d\u0d2f\u0d3e\u0d34\u0d3e\u0d34\u0d4d\u0d1a", "\u0d35\u0d46\u0d33\u0d4d\u0d33\u0d3f\u0d2f\u0d3e\u0d34\u0d4d\u0d1a", "\u0d36\u0d28\u0d3f\u0d2f\u0d3e\u0d34\u0d4d\u0d1a"], SHORTWEEKDAYS:["\u0d1e\u0d3e\u0d2f\u0d30\u0d4d\u200d", 
+"\u0d24\u0d3f\u0d19\u0d4d\u0d15\u0d33\u0d4d\u200d", "\u0d1a\u0d4a\u0d35\u0d4d\u0d35", "\u0d2c\u0d41\u0d27\u0d28\u0d4d\u200d", "\u0d35\u0d4d\u0d2f\u0d3e\u0d34\u0d02", "\u0d35\u0d46\u0d33\u0d4d\u0d33\u0d3f", "\u0d36\u0d28\u0d3f"], STANDALONESHORTWEEKDAYS:["\u0d1e\u0d3e\u0d2f\u0d30\u0d4d\u200d", "\u0d24\u0d3f\u0d19\u0d4d\u0d15\u0d33\u0d4d\u200d", "\u0d1a\u0d4a\u0d35\u0d4d\u0d35", "\u0d2c\u0d41\u0d27\u0d28\u0d4d\u200d", "\u0d35\u0d4d\u0d2f\u0d3e\u0d34\u0d02", "\u0d35\u0d46\u0d33\u0d4d\u0d33\u0d3f", "\u0d36\u0d28\u0d3f"], 
+NARROWWEEKDAYS:["\u0d1e\u0d3e", "\u0d24\u0d3f", "\u0d1a\u0d4a", "\u0d2c\u0d41", "\u0d35\u0d4d\u0d2f\u0d3e", "\u0d35\u0d46", "\u0d36"], STANDALONENARROWWEEKDAYS:["\u0d1e\u0d3e", "\u0d24\u0d3f", "\u0d1a\u0d4a", "\u0d2c\u0d41", "\u0d35\u0d4d\u0d2f\u0d3e", "\u0d35\u0d46", "\u0d36"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["\u0d12\u0d28\u0d4d\u0d28\u0d3e\u0d02 \u0d2a\u0d3e\u0d26\u0d02", "\u0d30\u0d23\u0d4d\u0d1f\u0d3e\u0d02 \u0d2a\u0d3e\u0d26\u0d02", "\u0d2e\u0d42\u0d28\u0d4d\u0d28\u0d3e\u0d02 \u0d2a\u0d3e\u0d26\u0d02", 
+"\u0d28\u0d3e\u0d32\u0d3e\u0d02 \u0d2a\u0d3e\u0d26\u0d02"], AMPMS:["am", "pm"], DATEFORMATS:["y, MMMM d, EEEE", "y, MMMM d", "y, MMM d", "dd/MM/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_mr = {ERAS:["\u0908\u0938\u093e\u092a\u0942\u0930\u094d\u0935", "\u0938\u0928"], ERANAMES:["\u0908\u0938\u0935\u0940\u0938\u0928\u092a\u0942\u0930\u094d\u0935", "\u0908\u0938\u0935\u0940\u0938\u0928"], NARROWMONTHS:["\u091c\u093e", "\u092b\u0947", "\u092e\u093e", "\u090f", "\u092e\u0947", "\u091c\u0942", "\u091c\u0941", "\u0911", "\u0938", "\u0911", "\u0928\u094b", "\u0921\u093f"], STANDALONENARROWMONTHS:["\u091c\u093e", "\u092b\u0947", "\u092e\u093e", "\u090f", "\u092e\u0947", 
+"\u091c\u0942", "\u091c\u0941", "\u0911", "\u0938", "\u0911", "\u0928\u094b", "\u0921\u093f"], MONTHS:["\u091c\u093e\u0928\u0947\u0935\u093e\u0930\u0940", "\u092b\u0947\u092c\u094d\u0930\u0941\u0935\u093e\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", "\u090f\u092a\u094d\u0930\u093f\u0932", "\u092e\u0947", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u0948", "\u0911\u0917\u0938\u094d\u091f", "\u0938\u092a\u094d\u091f\u0947\u0902\u092c\u0930", "\u0911\u0915\u094d\u091f\u094b\u092c\u0930", "\u0928\u094b\u0935\u094d\u0939\u0947\u0902\u092c\u0930", 
+"\u0921\u093f\u0938\u0947\u0902\u092c\u0930"], STANDALONEMONTHS:["\u091c\u093e\u0928\u0947\u0935\u093e\u0930\u0940", "\u092b\u0947\u092c\u094d\u0930\u0941\u0935\u093e\u0930\u0940", "\u092e\u093e\u0930\u094d\u091a", "\u090f\u092a\u094d\u0930\u093f\u0932", "\u092e\u0947", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u0948", "\u0911\u0917\u0938\u094d\u091f", "\u0938\u092a\u094d\u091f\u0947\u0902\u092c\u0930", "\u0911\u0915\u094d\u091f\u094b\u092c\u0930", "\u0928\u094b\u0935\u094d\u0939\u0947\u0902\u092c\u0930", 
+"\u0921\u093f\u0938\u0947\u0902\u092c\u0930"], SHORTMONTHS:["\u091c\u093e\u0928\u0947", "\u092b\u0947\u092c\u094d\u0930\u0941", "\u092e\u093e\u0930\u094d\u091a", "\u090f\u092a\u094d\u0930\u093f", "\u092e\u0947", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u0948", "\u0911\u0917", "\u0938\u0947\u092a\u094d\u091f\u0947\u0902", "\u0911\u0915\u094d\u091f\u094b\u092c\u0930", "\u0928\u094b\u0935\u094d\u0939\u0947\u0902", "\u0921\u093f\u0938\u0947\u0902"], STANDALONESHORTMONTHS:["\u091c\u093e\u0928\u0947", 
+"\u092b\u0947\u092c\u094d\u0930\u0941", "\u092e\u093e\u0930\u094d\u091a", "\u090f\u092a\u094d\u0930\u093f", "\u092e\u0947", "\u091c\u0942\u0928", "\u091c\u0941\u0932\u0948", "\u0911\u0917", "\u0938\u0947\u092a\u094d\u091f\u0947\u0902", "\u0911\u0915\u094d\u091f\u094b\u092c\u0930", "\u0928\u094b\u0935\u094d\u0939\u0947\u0902", "\u0921\u093f\u0938\u0947\u0902"], WEEKDAYS:["\u0930\u0935\u093f\u0935\u093e\u0930", "\u0938\u094b\u092e\u0935\u093e\u0930", "\u092e\u0902\u0917\u0933\u0935\u093e\u0930", "\u092c\u0941\u0927\u0935\u093e\u0930", 
+"\u0917\u0941\u0930\u0941\u0935\u093e\u0930", "\u0936\u0941\u0915\u094d\u0930\u0935\u093e\u0930", "\u0936\u0928\u093f\u0935\u093e\u0930"], STANDALONEWEEKDAYS:["\u0930\u0935\u093f\u0935\u093e\u0930", "\u0938\u094b\u092e\u0935\u093e\u0930", "\u092e\u0902\u0917\u0933\u0935\u093e\u0930", "\u092c\u0941\u0927\u0935\u093e\u0930", "\u0917\u0941\u0930\u0941\u0935\u093e\u0930", "\u0936\u0941\u0915\u094d\u0930\u0935\u093e\u0930", "\u0936\u0928\u093f\u0935\u093e\u0930"], SHORTWEEKDAYS:["\u0930\u0935\u093f", 
+"\u0938\u094b\u092e", "\u092e\u0902\u0917\u0933", "\u092c\u0941\u0927", "\u0917\u0941\u0930\u0941", "\u0936\u0941\u0915\u094d\u0930", "\u0936\u0928\u093f"], STANDALONESHORTWEEKDAYS:["\u0930\u0935\u093f", "\u0938\u094b\u092e", "\u092e\u0902\u0917\u0933", "\u092c\u0941\u0927", "\u0917\u0941\u0930\u0941", "\u0936\u0941\u0915\u094d\u0930", "\u0936\u0928\u093f"], NARROWWEEKDAYS:["\u0930", "\u0938\u094b", "\u092e\u0902", "\u092c\u0941", "\u0917\u0941", "\u0936\u0941", "\u0936"], STANDALONENARROWWEEKDAYS:["\u0930", 
+"\u0938\u094b", "\u092e\u0902", "\u092c\u0941", "\u0917\u0941", "\u0936\u0941", "\u0936"], SHORTQUARTERS:["\u0924\u093f 1", "2 \u0930\u0940 \u0924\u093f\u092e\u093e\u0939\u0940", "\u0924\u093f 3", "\u0924\u093f 4"], QUARTERS:["\u092a\u094d\u0930\u0925\u092e \u0924\u093f\u092e\u093e\u0939\u0940", "\u0926\u094d\u0935\u093f\u0924\u0940\u092f \u0924\u093f\u092e\u093e\u0939\u0940", "\u0924\u0943\u0924\u0940\u092f \u0924\u093f\u092e\u093e\u0939\u0940", "\u091a\u0924\u0941\u0930\u094d\u0925 \u0924\u093f\u092e\u093e\u0939\u0940"], 
+AMPMS:["am", "pm"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "d-M-yy"], TIMEFORMATS:["h-mm-ss a zzzz", "h-mm-ss a z", "h-mm-ss a", "h-mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_ms = {ERAS:["S.M.", "TM"], ERANAMES:["S.M.", "TM"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "O", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "O", "S", "O", "N", "D"], MONTHS:["Januari", "Februari", "Mac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "Disember"], STANDALONEMONTHS:["Januari", "Februari", "Mac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "Disember"], 
+SHORTMONTHS:["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogos", "Sep", "Okt", "Nov", "Dis"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogos", "Sep", "Okt", "Nov", "Dis"], WEEKDAYS:["Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu"], STANDALONEWEEKDAYS:["Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu"], SHORTWEEKDAYS:["Ahd", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"], STANDALONESHORTWEEKDAYS:["Ahd", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"], 
+NARROWWEEKDAYS:["A", "I", "S", "R", "K", "J", "S"], STANDALONENARROWWEEKDAYS:["A", "I", "S", "R", "K", "J", "S"], SHORTQUARTERS:["Suku 1", "Suku Ke-2", "Suku Ke-3", "Suku Ke-4"], QUARTERS:["Suku pertama", "Suku Ke-2", "Suku Ke-3", "Suku Ke-4"], AMPMS:["PG", "PTG"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "dd/MM/yyyy", "d/MM/yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_mt = {ERAS:["QK", "WK"], ERANAMES:["Qabel Kristu", "Wara Kristu"], NARROWMONTHS:["J", "F", "M", "A", "M", "\u0120", "L", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "\u0120", "L", "A", "S", "O", "N", "D"], MONTHS:["Jannar", "Frar", "Marzu", "April", "Mejju", "\u0120unju", "Lulju", "Awwissu", "Settembru", "Ottubru", "Novembru", "Di\u010bembru"], STANDALONEMONTHS:["Jannar", "Frar", "Marzu", "April", "Mejju", "\u0120unju", "Lulju", "Awwissu", 
+"Settembru", "Ottubru", "Novembru", "Di\u010bembru"], SHORTMONTHS:["Jan", "Fra", "Mar", "Apr", "Mej", "\u0120un", "Lul", "Aww", "Set", "Ott", "Nov", "Di\u010b"], STANDALONESHORTMONTHS:["Jan", "Fra", "Mar", "Apr", "Mej", "\u0120un", "Lul", "Aww", "Set", "Ott", "Nov", "Di\u010b"], WEEKDAYS:["Il-\u0126add", "It-Tnejn", "It-Tlieta", "L-Erbg\u0127a", "Il-\u0126amis", "Il-\u0120img\u0127a", "Is-Sibt"], STANDALONEWEEKDAYS:["Il-\u0126add", "It-Tnejn", "It-Tlieta", "L-Erbg\u0127a", "Il-\u0126amis", "Il-\u0120img\u0127a", 
+"Is-Sibt"], SHORTWEEKDAYS:["\u0126ad", "Tne", "Tli", "Erb", "\u0126am", "\u0120im", "Sib"], STANDALONESHORTWEEKDAYS:["\u0126ad", "Tne", "Tli", "Erb", "\u0126am", "\u0120im", "Sib"], NARROWWEEKDAYS:["\u0126", "T", "T", "E", "\u0126", "\u0120", "S"], STANDALONENARROWWEEKDAYS:["\u0126", "T", "T", "E", "\u0126", "\u0120", "S"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["K1", "K2", "K3", "K4"], AMPMS:["QN", "WN"], DATEFORMATS:["EEEE, d 'ta'\u2019 MMMM y", "d 'ta'\u2019 MMMM y", "dd MMM y", "dd/MM/yyyy"], 
+TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_nl = {ERAS:["v. Chr.", "n. Chr."], ERANAMES:["Voor Christus", "na Christus"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"], STANDALONEMONTHS:["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", 
+"oktober", "november", "december"], SHORTMONTHS:["jan.", "feb.", "mrt.", "apr.", "mei", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."], STANDALONESHORTMONTHS:["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"], WEEKDAYS:["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"], STANDALONEWEEKDAYS:["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"], SHORTWEEKDAYS:["zo", "ma", "di", "wo", "do", "vr", "za"], 
+STANDALONESHORTWEEKDAYS:["zo", "ma", "di", "wo", "do", "vr", "za"], NARROWWEEKDAYS:["Z", "M", "D", "W", "D", "V", "Z"], STANDALONENARROWWEEKDAYS:["Z", "M", "D", "W", "D", "V", "Z"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1e kwartaal", "2e kwartaal", "3e kwartaal", "4e kwartaal"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "dd-MM-yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_no = {ERAS:["f.Kr.", "e.Kr."], ERANAMES:["f.Kr.", "e.Kr."], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"], STANDALONEMONTHS:["januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"], 
+SHORTMONTHS:["jan.", "feb.", "mars", "apr.", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "des"], WEEKDAYS:["s\u00f8ndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "l\u00f8rdag"], STANDALONEWEEKDAYS:["s\u00f8ndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "l\u00f8rdag"], SHORTWEEKDAYS:["s\u00f8n.", "man.", "tir.", "ons.", "tor.", "fre.", "l\u00f8r."], STANDALONESHORTWEEKDAYS:["s\u00f8.", 
+"ma.", "ti.", "on.", "to.", "fr.", "l\u00f8."], NARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1. kvartal", "2. kvartal", "3. kvartal", "4. kvartal"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE d. MMMM y", "d. MMMM y", "d. MMM y", "dd.MM.yy"], TIMEFORMATS:["'kl'. HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_or = {ERAS:["BCE", "CE"], ERANAMES:["BCE", "CE"], NARROWMONTHS:["\u0b1c\u0b3e", "\u0b2b\u0b47", "\u0b2e\u0b3e", "\u0b05", "\u0b2e\u0b47", "\u0b1c\u0b41", "\u0b1c\u0b41", "\u0b05", "\u0b38\u0b47", "\u0b05", "\u0b28", "\u0b21\u0b3f"], STANDALONENARROWMONTHS:["\u0b1c\u0b3e", "\u0b2b\u0b47", "\u0b2e\u0b3e", "\u0b05", "\u0b2e\u0b47", "\u0b1c\u0b41", "\u0b1c\u0b41", "\u0b05", "\u0b38\u0b47", "\u0b05", "\u0b28", "\u0b21\u0b3f"], MONTHS:["\u0b1c\u0b3e\u0b28\u0b41\u0b06\u0b30\u0b40", 
+"\u0b2b\u0b47\u0b2c\u0b4d\u0b30\u0b41\u0b5f\u0b3e\u0b30\u0b40", "\u0b2e\u0b3e\u0b30\u0b4d\u0b1a\u0b4d\u0b1a", "\u0b05\u0b2a\u0b4d\u0b30\u0b47\u0b32", "\u0b2e\u0b47", "\u0b1c\u0b41\u0b28", "\u0b1c\u0b41\u0b32\u0b3e\u0b07", "\u0b05\u0b17\u0b37\u0b4d\u0b1f", "\u0b38\u0b47\u0b2a\u0b4d\u0b1f\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b05\u0b15\u0b4d\u0b1f\u0b4b\u0b2c\u0b30", "\u0b28\u0b2d\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b21\u0b3f\u0b38\u0b47\u0b2e\u0b4d\u0b2c\u0b30"], STANDALONEMONTHS:["\u0b1c\u0b3e\u0b28\u0b41\u0b06\u0b30\u0b40", 
+"\u0b2b\u0b47\u0b2c\u0b4d\u0b30\u0b41\u0b5f\u0b3e\u0b30\u0b40", "\u0b2e\u0b3e\u0b30\u0b4d\u0b1a\u0b4d\u0b1a", "\u0b05\u0b2a\u0b4d\u0b30\u0b47\u0b32", "\u0b2e\u0b47", "\u0b1c\u0b41\u0b28", "\u0b1c\u0b41\u0b32\u0b3e\u0b07", "\u0b05\u0b17\u0b37\u0b4d\u0b1f", "\u0b38\u0b47\u0b2a\u0b4d\u0b1f\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b05\u0b15\u0b4d\u0b1f\u0b4b\u0b2c\u0b30", "\u0b28\u0b2d\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b21\u0b3f\u0b38\u0b47\u0b2e\u0b4d\u0b2c\u0b30"], SHORTMONTHS:["\u0b1c\u0b3e\u0b28\u0b41\u0b06\u0b30\u0b40", 
+"\u0b2b\u0b47\u0b2c\u0b4d\u0b30\u0b41\u0b5f\u0b3e\u0b30\u0b40", "\u0b2e\u0b3e\u0b30\u0b4d\u0b1a\u0b4d\u0b1a", "\u0b05\u0b2a\u0b4d\u0b30\u0b47\u0b32", "\u0b2e\u0b47", "\u0b1c\u0b41\u0b28", "\u0b1c\u0b41\u0b32\u0b3e\u0b07", "\u0b05\u0b17\u0b37\u0b4d\u0b1f", "\u0b38\u0b47\u0b2a\u0b4d\u0b1f\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b05\u0b15\u0b4d\u0b1f\u0b4b\u0b2c\u0b30", "\u0b28\u0b2d\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b21\u0b3f\u0b38\u0b47\u0b2e\u0b4d\u0b2c\u0b30"], STANDALONESHORTMONTHS:["\u0b1c\u0b3e\u0b28\u0b41\u0b06\u0b30\u0b40", 
+"\u0b2b\u0b47\u0b2c\u0b4d\u0b30\u0b41\u0b5f\u0b3e\u0b30\u0b40", "\u0b2e\u0b3e\u0b30\u0b4d\u0b1a\u0b4d\u0b1a", "\u0b05\u0b2a\u0b4d\u0b30\u0b47\u0b32", "\u0b2e\u0b47", "\u0b1c\u0b41\u0b28", "\u0b1c\u0b41\u0b32\u0b3e\u0b07", "\u0b05\u0b17\u0b37\u0b4d\u0b1f", "\u0b38\u0b47\u0b2a\u0b4d\u0b1f\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b05\u0b15\u0b4d\u0b1f\u0b4b\u0b2c\u0b30", "\u0b28\u0b2d\u0b47\u0b2e\u0b4d\u0b2c\u0b30", "\u0b21\u0b3f\u0b38\u0b47\u0b2e\u0b4d\u0b2c\u0b30"], WEEKDAYS:["\u0b30\u0b2c\u0b3f\u0b2c\u0b3e\u0b30", 
+"\u0b38\u0b4b\u0b2e\u0b2c\u0b3e\u0b30", "\u0b2e\u0b19\u0b4d\u0b17\u0b33\u0b2c\u0b3e\u0b30", "\u0b2c\u0b41\u0b27\u0b2c\u0b3e\u0b30", "\u0b17\u0b41\u0b30\u0b41\u0b2c\u0b3e\u0b30", "\u0b36\u0b41\u0b15\u0b4d\u0b30\u0b2c\u0b3e\u0b30", "\u0b36\u0b28\u0b3f\u0b2c\u0b3e\u0b30"], STANDALONEWEEKDAYS:["\u0b30\u0b2c\u0b3f\u0b2c\u0b3e\u0b30", "\u0b38\u0b4b\u0b2e\u0b2c\u0b3e\u0b30", "\u0b2e\u0b19\u0b4d\u0b17\u0b33\u0b2c\u0b3e\u0b30", "\u0b2c\u0b41\u0b27\u0b2c\u0b3e\u0b30", "\u0b17\u0b41\u0b30\u0b41\u0b2c\u0b3e\u0b30", 
+"\u0b36\u0b41\u0b15\u0b4d\u0b30\u0b2c\u0b3e\u0b30", "\u0b36\u0b28\u0b3f\u0b2c\u0b3e\u0b30"], SHORTWEEKDAYS:["\u0b30\u0b2c\u0b3f", "\u0b38\u0b4b\u0b2e", "\u0b2e\u0b19\u0b4d\u0b17\u0b33", "\u0b2c\u0b41\u0b27", "\u0b17\u0b41\u0b30\u0b41", "\u0b36\u0b41\u0b15\u0b4d\u0b30", "\u0b36\u0b28\u0b3f"], STANDALONESHORTWEEKDAYS:["\u0b30\u0b2c\u0b3f", "\u0b38\u0b4b\u0b2e", "\u0b2e\u0b19\u0b4d\u0b17\u0b33", "\u0b2c\u0b41\u0b27", "\u0b17\u0b41\u0b30\u0b41", "\u0b36\u0b41\u0b15\u0b4d\u0b30", "\u0b36\u0b28\u0b3f"], 
+NARROWWEEKDAYS:["\u0b30", "\u0b38\u0b4b", "\u0b2e", "\u0b2c\u0b41", "\u0b17\u0b41", "\u0b36\u0b41", "\u0b36"], STANDALONENARROWWEEKDAYS:["\u0b30", "\u0b38\u0b4b", "\u0b2e", "\u0b2c\u0b41", "\u0b17\u0b41", "\u0b36\u0b41", "\u0b36"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["Q1", "Q2", "Q3", "Q4"], AMPMS:["am", "pm"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "d-M-yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], 
+FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_pl = {ERAS:["p.n.e.", "n.e."], ERANAMES:["p.n.e.", "n.e."], NARROWMONTHS:["s", "l", "m", "k", "m", "c", "l", "s", "w", "p", "l", "g"], STANDALONENARROWMONTHS:["s", "l", "m", "k", "m", "c", "l", "s", "w", "p", "l", "g"], MONTHS:["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "wrze\u015bnia", "pa\u017adziernika", "listopada", "grudnia"], STANDALONEMONTHS:["stycze\u0144", "luty", "marzec", "kwiecie\u0144", "maj", "czerwiec", "lipiec", "sierpie\u0144", 
+"wrzesie\u0144", "pa\u017adziernik", "listopad", "grudzie\u0144"], SHORTMONTHS:["sty", "lut", "mar", "kwi", "maj", "cze", "lip", "sie", "wrz", "pa\u017a", "lis", "gru"], STANDALONESHORTMONTHS:["sty", "lut", "mar", "kwi", "maj", "cze", "lip", "sie", "wrz", "pa\u017a", "lis", "gru"], WEEKDAYS:["niedziela", "poniedzia\u0142ek", "wtorek", "\u015broda", "czwartek", "pi\u0105tek", "sobota"], STANDALONEWEEKDAYS:["niedziela", "poniedzia\u0142ek", "wtorek", "\u015broda", "czwartek", "pi\u0105tek", "sobota"], 
+SHORTWEEKDAYS:["niedz.", "pon.", "wt.", "\u015br.", "czw.", "pt.", "sob."], STANDALONESHORTWEEKDAYS:["niedz.", "pon.", "wt.", "\u015br.", "czw.", "pt.", "sob."], NARROWWEEKDAYS:["N", "P", "W", "\u015a", "C", "P", "S"], STANDALONENARROWWEEKDAYS:["N", "P", "W", "\u015a", "C", "P", "S"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["I kwarta\u0142", "II kwarta\u0142", "III kwarta\u0142", "IV kwarta\u0142"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "dd.MM.yyyy"], 
+TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_pt = {ERAS:["a.C.", "d.C."], ERANAMES:["Antes de Cristo", "Ano do Senhor"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["janeiro", "fevereiro", "mar\u00e7o", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"], STANDALONEMONTHS:["janeiro", "fevereiro", "mar\u00e7o", "abril", "maio", "junho", "julho", "agosto", 
+"setembro", "outubro", "novembro", "dezembro"], SHORTMONTHS:["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"], STANDALONESHORTMONTHS:["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"], WEEKDAYS:["domingo", "segunda-feira", "ter\u00e7a-feira", "quarta-feira", "quinta-feira", "sexta-feira", "s\u00e1bado"], STANDALONEWEEKDAYS:["domingo", "segunda-feira", "ter\u00e7a-feira", "quarta-feira", "quinta-feira", "sexta-feira", "s\u00e1bado"], 
+SHORTWEEKDAYS:["dom", "seg", "ter", "qua", "qui", "sex", "s\u00e1b"], STANDALONESHORTWEEKDAYS:["dom", "seg", "ter", "qua", "qui", "sex", "s\u00e1b"], NARROWWEEKDAYS:["D", "S", "T", "Q", "Q", "S", "S"], STANDALONENARROWWEEKDAYS:["D", "S", "T", "Q", "Q", "S", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1\u00ba trimestre", "2\u00ba trimestre", "3\u00ba trimestre", "4\u00ba trimestre"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d 'de' MMMM 'de' y", "d 'de' MMMM 'de' y", "dd/MM/yyyy", "dd/MM/yy"], 
+TIMEFORMATS:["HH'h'mm'min'ss's' zzzz", "HH'h'mm'min'ss's' z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_pt_BR = goog.i18n.DateTimeSymbols_pt;
+goog.i18n.DateTimeSymbols_pt_PT = {ERAS:["a.C.", "d.C."], ERANAMES:["Antes de Cristo", "Ano do Senhor"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Janeiro", "Fevereiro", "Mar\u00e7o", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"], STANDALONEMONTHS:["Janeiro", "Fevereiro", "Mar\u00e7o", "Abril", "Maio", "Junho", "Julho", "Agosto", 
+"Setembro", "Outubro", "Novembro", "Dezembro"], SHORTMONTHS:["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"], STANDALONESHORTMONTHS:["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"], WEEKDAYS:["Domingo", "Segunda-feira", "Ter\u00e7a-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "S\u00e1bado"], STANDALONEWEEKDAYS:["Domingo", "Segunda-feira", "Ter\u00e7a-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "S\u00e1bado"], 
+SHORTWEEKDAYS:["dom", "seg", "ter", "qua", "qui", "sex", "s\u00e1b"], STANDALONESHORTWEEKDAYS:["dom", "seg", "ter", "qua", "qui", "sex", "s\u00e1b"], NARROWWEEKDAYS:["D", "S", "T", "Q", "Q", "S", "S"], STANDALONENARROWWEEKDAYS:["D", "S", "T", "Q", "Q", "S", "S"], SHORTQUARTERS:["T1", "T2", "T3", "T4"], QUARTERS:["1.\u00ba trimestre", "2.\u00ba trimestre", "3.\u00ba trimestre", "4.\u00ba trimestre"], AMPMS:["a.m.", "p.m."], DATEFORMATS:["EEEE, d 'de' MMMM 'de' y", "d 'de' MMMM 'de' y", "dd/MM/yyyy", 
+"dd/MM/yy"], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_ro = {ERAS:["\u00ee.Hr.", "d.Hr."], ERANAMES:["\u00eenainte de Hristos", "dup\u0103 Hristos"], NARROWMONTHS:["I", "F", "M", "A", "M", "I", "I", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["I", "F", "M", "A", "M", "I", "I", "A", "S", "O", "N", "D"], MONTHS:["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"], STANDALONEMONTHS:["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", 
+"iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"], SHORTMONTHS:["ian.", "feb.", "mar.", "apr.", "mai", "iun.", "iul.", "aug.", "sept.", "oct.", "nov.", "dec."], STANDALONESHORTMONTHS:["ian.", "feb.", "mar.", "apr.", "mai", "iun.", "iul.", "aug.", "sept.", "oct.", "nov.", "dec."], WEEKDAYS:["duminic\u0103", "luni", "mar\u021bi", "miercuri", "joi", "vineri", "s\u00e2mb\u0103t\u0103"], STANDALONEWEEKDAYS:["duminic\u0103", "luni", "mar\u021bi", "miercuri", "joi", "vineri", "s\u00e2mb\u0103t\u0103"], 
+SHORTWEEKDAYS:["Du", "Lu", "Ma", "Mi", "Jo", "Vi", "S\u00e2"], STANDALONESHORTWEEKDAYS:["Du", "Lu", "Ma", "Mi", "Jo", "Vi", "S\u00e2"], NARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], STANDALONENARROWWEEKDAYS:["D", "L", "M", "M", "J", "V", "S"], SHORTQUARTERS:["trim. I", "trim. II", "trim. III", "trim. IV"], QUARTERS:["trimestrul I", "trimestrul al II-lea", "trimestrul al III-lea", "trimestrul al IV-lea"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "dd.MM.yyyy", "dd.MM.yyyy"], 
+TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_ru = {ERAS:["\u0434\u043e \u043d.\u044d.", "\u043d.\u044d."], ERANAMES:["\u0434\u043e \u043d.\u044d.", "\u043d.\u044d."], NARROWMONTHS:["\u042f", "\u0424", "\u041c", "\u0410", "\u041c", "\u0418", "\u0418", "\u0410", "\u0421", "\u041e", "\u041d", "\u0414"], STANDALONENARROWMONTHS:["\u042f", "\u0424", "\u041c", "\u0410", "\u041c", "\u0418", "\u0418", "\u0410", "\u0421", "\u041e", "\u041d", "\u0414"], MONTHS:["\u044f\u043d\u0432\u0430\u0440\u044f", "\u0444\u0435\u0432\u0440\u0430\u043b\u044f", 
+"\u043c\u0430\u0440\u0442\u0430", "\u0430\u043f\u0440\u0435\u043b\u044f", "\u043c\u0430\u044f", "\u0438\u044e\u043d\u044f", "\u0438\u044e\u043b\u044f", "\u0430\u0432\u0433\u0443\u0441\u0442\u0430", "\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f", "\u043e\u043a\u0442\u044f\u0431\u0440\u044f", "\u043d\u043e\u044f\u0431\u0440\u044f", "\u0434\u0435\u043a\u0430\u0431\u0440\u044f"], STANDALONEMONTHS:["\u042f\u043d\u0432\u0430\u0440\u044c", "\u0424\u0435\u0432\u0440\u0430\u043b\u044c", "\u041c\u0430\u0440\u0442", 
+"\u0410\u043f\u0440\u0435\u043b\u044c", "\u041c\u0430\u0439", "\u0418\u044e\u043d\u044c", "\u0418\u044e\u043b\u044c", "\u0410\u0432\u0433\u0443\u0441\u0442", "\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c", "\u041e\u043a\u0442\u044f\u0431\u0440\u044c", "\u041d\u043e\u044f\u0431\u0440\u044c", "\u0414\u0435\u043a\u0430\u0431\u0440\u044c"], SHORTMONTHS:["\u044f\u043d\u0432.", "\u0444\u0435\u0432\u0440.", "\u043c\u0430\u0440\u0442\u0430", "\u0430\u043f\u0440.", "\u043c\u0430\u044f", "\u0438\u044e\u043d\u044f", 
+"\u0438\u044e\u043b\u044f", "\u0430\u0432\u0433.", "\u0441\u0435\u043d\u0442.", "\u043e\u043a\u0442.", "\u043d\u043e\u044f\u0431.", "\u0434\u0435\u043a."], STANDALONESHORTMONTHS:["\u042f\u043d\u0432.", "\u0424\u0435\u0432\u0440.", "\u041c\u0430\u0440\u0442", "\u0410\u043f\u0440.", "\u041c\u0430\u0439", "\u0418\u044e\u043d\u044c", "\u0418\u044e\u043b\u044c", "\u0410\u0432\u0433.", "\u0421\u0435\u043d\u0442.", "\u041e\u043a\u0442.", "\u041d\u043e\u044f\u0431.", "\u0414\u0435\u043a."], WEEKDAYS:["\u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435", 
+"\u043f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a", "\u0432\u0442\u043e\u0440\u043d\u0438\u043a", "\u0441\u0440\u0435\u0434\u0430", "\u0447\u0435\u0442\u0432\u0435\u0440\u0433", "\u043f\u044f\u0442\u043d\u0438\u0446\u0430", "\u0441\u0443\u0431\u0431\u043e\u0442\u0430"], STANDALONEWEEKDAYS:["\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435", "\u041f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a", "\u0412\u0442\u043e\u0440\u043d\u0438\u043a", "\u0421\u0440\u0435\u0434\u0430", 
+"\u0427\u0435\u0442\u0432\u0435\u0440\u0433", "\u041f\u044f\u0442\u043d\u0438\u0446\u0430", "\u0421\u0443\u0431\u0431\u043e\u0442\u0430"], SHORTWEEKDAYS:["\u0432\u0441", "\u043f\u043d", "\u0432\u0442", "\u0441\u0440", "\u0447\u0442", "\u043f\u0442", "\u0441\u0431"], STANDALONESHORTWEEKDAYS:["\u0412\u0441", "\u041f\u043d", "\u0412\u0442", "\u0421\u0440", "\u0427\u0442", "\u041f\u0442", "\u0421\u0431"], NARROWWEEKDAYS:["\u0412", "\u041f\u043d", "\u0412\u0442", "\u0421", "\u0427", "\u041f", "\u0421"], 
+STANDALONENARROWWEEKDAYS:["\u0412", "\u041f", "\u0412", "\u0421", "\u0427", "\u041f", "\u0421"], SHORTQUARTERS:["1-\u0439 \u043a\u0432.", "2-\u0439 \u043a\u0432.", "3-\u0439 \u043a\u0432.", "4-\u0439 \u043a\u0432."], QUARTERS:["1-\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "2-\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "3-\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "4-\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"], AMPMS:["\u0434\u043e \u043f\u043e\u043b\u0443\u0434\u043d\u044f", 
+"\u043f\u043e\u0441\u043b\u0435 \u043f\u043e\u043b\u0443\u0434\u043d\u044f"], DATEFORMATS:["EEEE, d MMMM y\u00a0'\u0433'.", "d MMMM y\u00a0'\u0433'.", "dd.MM.yyyy", "dd.MM.yy"], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_sk = {ERAS:["pred n.l.", "n.l."], ERANAMES:["pred n.l.", "n.l."], NARROWMONTHS:["j", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"], STANDALONENARROWMONTHS:["j", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"], MONTHS:["janu\u00e1ra", "febru\u00e1ra", "marca", "apr\u00edla", "m\u00e1ja", "j\u00fana", "j\u00fala", "augusta", "septembra", "okt\u00f3bra", "novembra", "decembra"], STANDALONEMONTHS:["janu\u00e1r", "febru\u00e1r", "marec", "apr\u00edl", "m\u00e1j", 
+"j\u00fan", "j\u00fal", "august", "september", "okt\u00f3ber", "november", "december"], SHORTMONTHS:["jan", "feb", "mar", "apr", "m\u00e1j", "j\u00fan", "j\u00fal", "aug", "sep", "okt", "nov", "dec"], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "m\u00e1j", "j\u00fan", "j\u00fal", "aug", "sep", "okt", "nov", "dec"], WEEKDAYS:["nede\u013ea", "pondelok", "utorok", "streda", "\u0161tvrtok", "piatok", "sobota"], STANDALONEWEEKDAYS:["nede\u013ea", "pondelok", "utorok", "streda", "\u0161tvrtok", 
+"piatok", "sobota"], SHORTWEEKDAYS:["ne", "po", "ut", "st", "\u0161t", "pi", "so"], STANDALONESHORTWEEKDAYS:["ne", "po", "ut", "st", "\u0161t", "pi", "so"], NARROWWEEKDAYS:["N", "P", "U", "S", "\u0160", "P", "S"], STANDALONENARROWWEEKDAYS:["N", "P", "U", "S", "\u0160", "P", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. \u0161tvr\u0165rok", "2. \u0161tvr\u0165rok", "3. \u0161tvr\u0165rok", "4. \u0161tvr\u0165rok"], AMPMS:["dopoludnia", "popoludn\u00ed"], DATEFORMATS:["EEEE, d. MMMM y", 
+"d. MMMM y", "d.M.yyyy", "d.M.yyyy"], TIMEFORMATS:["H:mm:ss zzzz", "H:mm:ss z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_sl = {ERAS:["pr. n. \u0161t.", "po Kr."], ERANAMES:["pred na\u0161im \u0161tetjem", "na\u0161e \u0161tetje"], NARROWMONTHS:["j", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"], STANDALONENARROWMONTHS:["j", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"], MONTHS:["januar", "februar", "marec", "april", "maj", "junij", "julij", "avgust", "september", "oktober", "november", "december"], STANDALONEMONTHS:["januar", "februar", "marec", "april", "maj", "junij", "julij", 
+"avgust", "september", "oktober", "november", "december"], SHORTMONTHS:["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "avg.", "sep.", "okt.", "nov.", "dec."], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "maj", "jun", "jul", "avg", "sep", "okt", "nov", "dec"], WEEKDAYS:["nedelja", "ponedeljek", "torek", "sreda", "\u010detrtek", "petek", "sobota"], STANDALONEWEEKDAYS:["nedelja", "ponedeljek", "torek", "sreda", "\u010detrtek", "petek", "sobota"], SHORTWEEKDAYS:["ned.", "pon.", "tor.", 
+"sre.", "\u010det.", "pet.", "sob."], STANDALONESHORTWEEKDAYS:["ned", "pon", "tor", "sre", "\u010det", "pet", "sob"], NARROWWEEKDAYS:["n", "p", "t", "s", "\u010d", "p", "s"], STANDALONENARROWWEEKDAYS:["n", "p", "t", "s", "\u010d", "p", "s"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["1. \u010detrtletje", "2. \u010detrtletje", "3. \u010detrtletje", "4. \u010detrtletje"], AMPMS:["dop.", "pop."], DATEFORMATS:["EEEE, dd. MMMM y", "dd. MMMM y", "d. MMM yyyy", "d. MM. yy"], TIMEFORMATS:["HH:mm:ss zzzz", 
+"HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_sq = {ERAS:["p.e.r.", "n.e.r."], ERANAMES:["p.e.r.", "n.e.r."], NARROWMONTHS:["J", "S", "M", "P", "M", "Q", "K", "G", "S", "T", "N", "D"], STANDALONENARROWMONTHS:["J", "S", "M", "P", "M", "Q", "K", "G", "S", "T", "N", "D"], MONTHS:["janar", "shkurt", "mars", "prill", "maj", "qershor", "korrik", "gusht", "shtator", "tetor", "n\u00ebntor", "dhjetor"], STANDALONEMONTHS:["janar", "shkurt", "mars", "prill", "maj", "qershor", "korrik", "gusht", "shtator", "tetor", "n\u00ebntor", 
+"dhjetor"], SHORTMONTHS:["Jan", "Shk", "Mar", "Pri", "Maj", "Qer", "Kor", "Gsh", "Sht", "Tet", "N\u00ebn", "Dhj"], STANDALONESHORTMONTHS:["Jan", "Shk", "Mar", "Pri", "Maj", "Qer", "Kor", "Gsh", "Sht", "Tet", "N\u00ebn", "Dhj"], WEEKDAYS:["e diel", "e h\u00ebn\u00eb", "e mart\u00eb", "e m\u00ebrkur\u00eb", "e enjte", "e premte", "e shtun\u00eb"], STANDALONEWEEKDAYS:["e diel", "e h\u00ebn\u00eb", "e mart\u00eb", "e m\u00ebrkur\u00eb", "e enjte", "e premte", "e shtun\u00eb"], SHORTWEEKDAYS:["Die", "H\u00ebn", 
+"Mar", "M\u00ebr", "Enj", "Pre", "Sht"], STANDALONESHORTWEEKDAYS:["Die", "H\u00ebn", "Mar", "M\u00ebr", "Enj", "Pre", "Sht"], NARROWWEEKDAYS:["D", "H", "M", "M", "E", "P", "S"], STANDALONENARROWWEEKDAYS:["D", "H", "M", "M", "E", "P", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["Q1", "Q2", "Q3", "Q4"], AMPMS:["PD", "MD"], DATEFORMATS:["EEEE, dd MMMM y", "dd MMMM y", "yyyy-MM-dd", "yy-MM-dd"], TIMEFORMATS:["h.mm.ss.a zzzz", "h.mm.ss.a z", "h.mm.ss.a", "h.mm.a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 
+6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_sr = {ERAS:["\u043f. \u043d. \u0435.", "\u043d. \u0435."], ERANAMES:["\u041f\u0440\u0435 \u043d\u043e\u0432\u0435 \u0435\u0440\u0435", "\u041d\u043e\u0432\u0435 \u0435\u0440\u0435"], NARROWMONTHS:["\u0458", "\u0444", "\u043c", "\u0430", "\u043c", "\u0458", "\u0458", "\u0430", "\u0441", "\u043e", "\u043d", "\u0434"], STANDALONENARROWMONTHS:["\u0458", "\u0444", "\u043c", "\u0430", "\u043c", "\u0458", "\u0458", "\u0430", "\u0441", "\u043e", "\u043d", "\u0434"], MONTHS:["\u0458\u0430\u043d\u0443\u0430\u0440", 
+"\u0444\u0435\u0431\u0440\u0443\u0430\u0440", "\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440\u0438\u043b", "\u043c\u0430\u0458", "\u0458\u0443\u043d", "\u0458\u0443\u043b", "\u0430\u0432\u0433\u0443\u0441\u0442", "\u0441\u0435\u043f\u0442\u0435\u043c\u0431\u0430\u0440", "\u043e\u043a\u0442\u043e\u0431\u0430\u0440", "\u043d\u043e\u0432\u0435\u043c\u0431\u0430\u0440", "\u0434\u0435\u0446\u0435\u043c\u0431\u0430\u0440"], STANDALONEMONTHS:["\u0458\u0430\u043d\u0443\u0430\u0440", "\u0444\u0435\u0431\u0440\u0443\u0430\u0440", 
+"\u043c\u0430\u0440\u0442", "\u0430\u043f\u0440\u0438\u043b", "\u043c\u0430\u0458", "\u0458\u0443\u043d", "\u0458\u0443\u043b", "\u0430\u0432\u0433\u0443\u0441\u0442", "\u0441\u0435\u043f\u0442\u0435\u043c\u0431\u0430\u0440", "\u043e\u043a\u0442\u043e\u0431\u0430\u0440", "\u043d\u043e\u0432\u0435\u043c\u0431\u0430\u0440", "\u0434\u0435\u0446\u0435\u043c\u0431\u0430\u0440"], SHORTMONTHS:["\u0458\u0430\u043d", "\u0444\u0435\u0431", "\u043c\u0430\u0440", "\u0430\u043f\u0440", "\u043c\u0430\u0458", "\u0458\u0443\u043d", 
+"\u0458\u0443\u043b", "\u0430\u0432\u0433", "\u0441\u0435\u043f", "\u043e\u043a\u0442", "\u043d\u043e\u0432", "\u0434\u0435\u0446"], STANDALONESHORTMONTHS:["\u0458\u0430\u043d", "\u0444\u0435\u0431", "\u043c\u0430\u0440", "\u0430\u043f\u0440", "\u043c\u0430\u0458", "\u0458\u0443\u043d", "\u0458\u0443\u043b", "\u0430\u0432\u0433", "\u0441\u0435\u043f", "\u043e\u043a\u0442", "\u043d\u043e\u0432", "\u0434\u0435\u0446"], WEEKDAYS:["\u043d\u0435\u0434\u0435\u0459\u0430", "\u043f\u043e\u043d\u0435\u0434\u0435\u0459\u0430\u043a", 
+"\u0443\u0442\u043e\u0440\u0430\u043a", "\u0441\u0440\u0435\u0434\u0430", "\u0447\u0435\u0442\u0432\u0440\u0442\u0430\u043a", "\u043f\u0435\u0442\u0430\u043a", "\u0441\u0443\u0431\u043e\u0442\u0430"], STANDALONEWEEKDAYS:["\u043d\u0435\u0434\u0435\u0459\u0430", "\u043f\u043e\u043d\u0435\u0434\u0435\u0459\u0430\u043a", "\u0443\u0442\u043e\u0440\u0430\u043a", "\u0441\u0440\u0435\u0434\u0430", "\u0447\u0435\u0442\u0432\u0440\u0442\u0430\u043a", "\u043f\u0435\u0442\u0430\u043a", "\u0441\u0443\u0431\u043e\u0442\u0430"], 
+SHORTWEEKDAYS:["\u043d\u0435\u0434", "\u043f\u043e\u043d", "\u0443\u0442\u043e", "\u0441\u0440\u0435", "\u0447\u0435\u0442", "\u043f\u0435\u0442", "\u0441\u0443\u0431"], STANDALONESHORTWEEKDAYS:["\u043d\u0435\u0434", "\u043f\u043e\u043d", "\u0443\u0442\u043e", "\u0441\u0440\u0435", "\u0447\u0435\u0442", "\u043f\u0435\u0442", "\u0441\u0443\u0431"], NARROWWEEKDAYS:["\u043d", "\u043f", "\u0443", "\u0441", "\u0447", "\u043f", "\u0441"], STANDALONENARROWWEEKDAYS:["\u043d", "\u043f", "\u0443", "\u0441", 
+"\u0447", "\u043f", "\u0441"], SHORTQUARTERS:["\u041a1", "\u041a2", "\u041a3", "\u041a4"], QUARTERS:["\u041f\u0440\u0432\u043e \u0442\u0440\u043e\u043c\u0435\u0441\u0435\u0447\u0458\u0435", "\u0414\u0440\u0443\u0433\u043e \u0442\u0440\u043e\u043c\u0435\u0441\u0435\u0447\u0458\u0435", "\u0422\u0440\u0435\u045b\u0435 \u0442\u0440\u043e\u043c\u0435\u0441\u0435\u0447\u0458\u0435", "\u0427\u0435\u0442\u0432\u0440\u0442\u043e \u0442\u0440\u043e\u043c\u0435\u0441\u0435\u0447\u0458\u0435"], AMPMS:["\u043f\u0440\u0435 \u043f\u043e\u0434\u043d\u0435", 
+"\u043f\u043e\u043f\u043e\u0434\u043d\u0435"], DATEFORMATS:["EEEE, dd. MMMM y.", "dd. MMMM y.", "dd.MM.y.", "d.M.yy."], TIMEFORMATS:["HH.mm.ss zzzz", "HH.mm.ss z", "HH.mm.ss", "HH.mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_sv = {ERAS:["f.Kr.", "e.Kr."], ERANAMES:["f\u00f6re Kristus", "efter Kristus"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"], STANDALONEMONTHS:["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", 
+"oktober", "november", "december"], SHORTMONTHS:["jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sep", "okt", "nov", "dec"], STANDALONESHORTMONTHS:["jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sep", "okt", "nov", "dec"], WEEKDAYS:["s\u00f6ndag", "m\u00e5ndag", "tisdag", "onsdag", "torsdag", "fredag", "l\u00f6rdag"], STANDALONEWEEKDAYS:["s\u00f6ndag", "m\u00e5ndag", "tisdag", "onsdag", "torsdag", "fredag", "l\u00f6rdag"], SHORTWEEKDAYS:["s\u00f6n", "m\u00e5n", "tis", "ons", "tors", 
+"fre", "l\u00f6r"], STANDALONESHORTWEEKDAYS:["s\u00f6n", "m\u00e5n", "tis", "ons", "tor", "fre", "l\u00f6r"], NARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], STANDALONENARROWWEEKDAYS:["S", "M", "T", "O", "T", "F", "L"], SHORTQUARTERS:["K1", "K2", "K3", "K4"], QUARTERS:["1:a kvartalet", "2:a kvartalet", "3:e kvartalet", "4:e kvartalet"], AMPMS:["fm", "em"], DATEFORMATS:["EEEE'en' 'den' d:'e' MMMM y", "d MMMM y", "d MMM y", "yyyy-MM-dd"], TIMEFORMATS:["'kl'. HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", 
+"HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:3};
+goog.i18n.DateTimeSymbols_sw = {ERAS:["KK", "BK"], ERANAMES:["Kabla ya Kristo", "Baada ya Kristo"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januari", "Februari", "Machi", "Aprili", "Mei", "Juni", "Julai", "Agosti", "Septemba", "Oktoba", "Novemba", "Desemba"], STANDALONEMONTHS:["Januari", "Februari", "Machi", "Aprili", "Mei", "Juni", "Julai", "Agosti", "Septemba", "Oktoba", 
+"Novemba", "Desemba"], SHORTMONTHS:["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ago", "Sep", "Okt", "Nov", "Des"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ago", "Sep", "Okt", "Nov", "Des"], WEEKDAYS:["Jumapili", "Jumatatu", "Jumanne", "Jumatano", "Alhamisi", "Ijumaa", "Jumamosi"], STANDALONEWEEKDAYS:["Jumapili", "Jumatatu", "Jumanne", "Jumatano", "Alhamisi", "Ijumaa", "Jumamosi"], SHORTWEEKDAYS:["J2", "J3", "J4", "J5", "Alh", "Ij", "J1"], STANDALONESHORTWEEKDAYS:["J2", 
+"J3", "J4", "J5", "Alh", "Ij", "J1"], NARROWWEEKDAYS:["2", "3", "4", "5", "A", "I", "1"], STANDALONENARROWWEEKDAYS:["2", "3", "4", "5", "A", "I", "1"], SHORTQUARTERS:["R1", "R2", "R3", "R4"], QUARTERS:["Robo 1", "Robo 2", "Robo 3", "Robo 4"], AMPMS:["asubuhi", "alasiri"], DATEFORMATS:["EEEE, d MMMM y", "d MMMM y", "d MMM y", "dd/MM/yyyy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_ta = {ERAS:["\u0b95\u0bbf.\u0bae\u0bc1.", "\u0b95\u0bbf.\u0baa\u0bbf."], ERANAMES:["\u0b95\u0bbf\u0bb1\u0bbf\u0bb8\u0bcd\u0ba4\u0bc1\u0bb5\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0bae\u0bc1\u0ba9\u0bcd", "\u0b85\u0ba9\u0bcb \u0b9f\u0bcb\u0bae\u0bbf\u0ba9\u0bbf"], NARROWMONTHS:["\u0b9c", "\u0baa\u0bbf", "\u0bae\u0bbe", "\u0b8f", "\u0bae\u0bc7", "\u0b9c\u0bc2", "\u0b9c\u0bc2", "\u0b86", "\u0b9a\u0bc6", "\u0b85", "\u0ba8", "\u0b9f\u0bbf"], STANDALONENARROWMONTHS:["\u0b9c", "\u0baa\u0bbf", 
+"\u0bae\u0bbe", "\u0b8f", "\u0bae\u0bc7", "\u0b9c\u0bc2", "\u0b9c\u0bc2", "\u0b86", "\u0b9a\u0bc6", "\u0b85", "\u0ba8", "\u0b9f\u0bbf"], MONTHS:["\u0b9c\u0ba9\u0bb5\u0bb0\u0bbf", "\u0baa\u0bbf\u0baa\u0bcd\u0bb0\u0bb5\u0bb0\u0bbf", "\u0bae\u0bbe\u0bb0\u0bcd\u0b9a\u0bcd", "\u0b8f\u0baa\u0bcd\u0bb0\u0bb2\u0bcd", "\u0bae\u0bc7", "\u0b9c\u0bc2\u0ba9\u0bcd", "\u0b9c\u0bc2\u0bb2\u0bc8", "\u0b86\u0b95\u0bb8\u0bcd\u0b9f\u0bcd", "\u0b9a\u0bc6\u0baa\u0bcd\u0b9f\u0bae\u0bcd\u0baa\u0bb0\u0bcd", "\u0b85\u0b95\u0bcd\u0b9f\u0bcb\u0baa\u0bb0\u0bcd", 
+"\u0ba8\u0bb5\u0bae\u0bcd\u0baa\u0bb0\u0bcd", "\u0b9f\u0bbf\u0b9a\u0bae\u0bcd\u0baa\u0bb0\u0bcd"], STANDALONEMONTHS:["\u0b9c\u0ba9\u0bb5\u0bb0\u0bbf", "\u0baa\u0bbf\u0baa\u0bcd\u0bb0\u0bb5\u0bb0\u0bbf", "\u0bae\u0bbe\u0bb0\u0bcd\u0b9a\u0bcd", "\u0b8f\u0baa\u0bcd\u0bb0\u0bb2\u0bcd", "\u0bae\u0bc7", "\u0b9c\u0bc2\u0ba9\u0bcd", "\u0b9c\u0bc2\u0bb2\u0bc8", "\u0b86\u0b95\u0bb8\u0bcd\u0b9f\u0bc1", "\u0b9a\u0bc6\u0baa\u0bcd\u0b9f\u0bae\u0bcd\u0baa\u0bb0\u0bcd", "\u0b85\u0b95\u0bcd\u0b9f\u0bcb\u0baa\u0bb0\u0bcd", 
+"\u0ba8\u0bb5\u0bae\u0bcd\u0baa\u0bb0\u0bcd", "\u0b9f\u0bbf\u0b9a\u0bae\u0bcd\u0baa\u0bb0\u0bcd"], SHORTMONTHS:["\u0b9c\u0ba9.", "\u0baa\u0bbf\u0baa\u0bcd.", "\u0bae\u0bbe\u0bb0\u0bcd.", "\u0b8f\u0baa\u0bcd.", "\u0bae\u0bc7", "\u0b9c\u0bc2\u0ba9\u0bcd", "\u0b9c\u0bc2\u0bb2\u0bc8", "\u0b86\u0b95.", "\u0b9a\u0bc6\u0baa\u0bcd.", "\u0b85\u0b95\u0bcd.", "\u0ba8\u0bb5.", "\u0b9f\u0bbf\u0b9a."], STANDALONESHORTMONTHS:["\u0b9c\u0ba9.", "\u0baa\u0bbf\u0baa\u0bcd.", "\u0bae\u0bbe\u0bb0\u0bcd.", "\u0b8f\u0baa\u0bcd.", 
+"\u0bae\u0bc7", "\u0b9c\u0bc2\u0ba9\u0bcd", "\u0b9c\u0bc2\u0bb2\u0bc8", "\u0b86\u0b95.", "\u0b9a\u0bc6\u0baa\u0bcd.", "\u0b85\u0b95\u0bcd.", "\u0ba8\u0bb5.", "\u0b9f\u0bbf\u0b9a."], WEEKDAYS:["\u0b9e\u0bbe\u0baf\u0bbf\u0bb1\u0bc1", "\u0ba4\u0bbf\u0b99\u0bcd\u0b95\u0bb3\u0bcd", "\u0b9a\u0bc6\u0bb5\u0bcd\u0bb5\u0bbe\u0baf\u0bcd", "\u0baa\u0bc1\u0ba4\u0ba9\u0bcd", "\u0bb5\u0bbf\u0baf\u0bbe\u0bb4\u0ba9\u0bcd", "\u0bb5\u0bc6\u0bb3\u0bcd\u0bb3\u0bbf", "\u0b9a\u0ba9\u0bbf"], STANDALONEWEEKDAYS:["\u0b9e\u0bbe\u0baf\u0bbf\u0bb1\u0bc1", 
+"\u0ba4\u0bbf\u0b99\u0bcd\u0b95\u0bb3\u0bcd", "\u0b9a\u0bc6\u0bb5\u0bcd\u0bb5\u0bbe\u0baf\u0bcd", "\u0baa\u0bc1\u0ba4\u0ba9\u0bcd", "\u0bb5\u0bbf\u0baf\u0bbe\u0bb4\u0ba9\u0bcd", "\u0bb5\u0bc6\u0bb3\u0bcd\u0bb3\u0bbf", "\u0b9a\u0ba9\u0bbf"], SHORTWEEKDAYS:["\u0b9e\u0bbe", "\u0ba4\u0bbf", "\u0b9a\u0bc6", "\u0baa\u0bc1", "\u0bb5\u0bbf", "\u0bb5\u0bc6", "\u0b9a"], STANDALONESHORTWEEKDAYS:["\u0b9e\u0bbe", "\u0ba4\u0bbf", "\u0b9a\u0bc6", "\u0baa\u0bc1", "\u0bb5\u0bbf", "\u0bb5\u0bc6", "\u0b9a"], NARROWWEEKDAYS:["\u0b9e\u0bbe", 
+"\u0ba4\u0bbf", "\u0b9a\u0bc6", "\u0baa\u0bc1", "\u0bb5\u0bbf", "\u0bb5\u0bc6", "\u0b9a"], STANDALONENARROWWEEKDAYS:["\u0b9e\u0bbe", "\u0ba4\u0bbf", "\u0b9a\u0bc6", "\u0baa\u0bc1", "\u0bb5\u0bbf", "\u0bb5\u0bc6", "\u0b9a"], SHORTQUARTERS:["\u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc11", "\u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc12", "\u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc13", "\u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc14"], QUARTERS:["\u0bae\u0bc1\u0ba4\u0bb2\u0bcd \u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc1", 
+"\u0b87\u0bb0\u0ba3\u0bcd\u0b9f\u0bbe\u0bae\u0bcd \u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc1", "\u0bae\u0bc2\u0ba9\u0bcd\u0bb1\u0bbe\u0bae\u0bcd \u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc1", "\u0ba8\u0bbe\u0ba9\u0bcd\u0b95\u0bbe\u0bae\u0bcd \u0b95\u0bbe\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bc1"], AMPMS:["am", "pm"], DATEFORMATS:["EEEE, d MMMM, y", "d MMMM, y", "d MMM, y", "d-M-yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], 
+FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_te = {ERAS:["\u0c08\u0c38\u0c3e\u0c2a\u0c42\u0c30\u0c4d\u0c35.", "\u0c38\u0c28\u0c4d."], ERANAMES:["\u0c08\u0c38\u0c3e\u0c2a\u0c42\u0c30\u0c4d\u0c35.", "\u0c38\u0c28\u0c4d."], NARROWMONTHS:["\u0c1c", "\u0c2b\u0c3f", "\u0c2e\u0c3e", "\u0c0f", "\u0c2e\u0c46", "\u0c1c\u0c41", "\u0c1c\u0c41", "\u0c06", "\u0c38\u0c46", "\u0c05", "\u0c28", "\u0c21\u0c3f"], STANDALONENARROWMONTHS:["\u0c1c", "\u0c2b\u0c3f", "\u0c2e", "\u0c0e", "\u0c2e\u0c46", "\u0c1c\u0c41", "\u0c1c\u0c41", "\u0c06", 
+"\u0c38\u0c46", "\u0c05", "\u0c28", "\u0c21\u0c3f"], MONTHS:["\u0c1c\u0c28\u0c35\u0c30\u0c3f", "\u0c2b\u0c3f\u0c2c\u0c4d\u0c30\u0c35\u0c30\u0c3f", "\u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c3f", "\u0c0e\u0c2a\u0c4d\u0c30\u0c3f\u0c32\u0c4d", "\u0c2e\u0c47", "\u0c1c\u0c42\u0c28\u0c4d", "\u0c1c\u0c42\u0c32\u0c48", "\u0c06\u0c17\u0c38\u0c4d\u0c1f\u0c41", "\u0c38\u0c46\u0c2a\u0c4d\u0c1f\u0c46\u0c02\u0c2c\u0c30\u0c4d", "\u0c05\u0c15\u0c4d\u0c1f\u0c4b\u0c2c\u0c30\u0c4d", "\u0c28\u0c35\u0c02\u0c2c\u0c30\u0c4d", 
+"\u0c21\u0c3f\u0c38\u0c46\u0c02\u0c2c\u0c30\u0c4d"], STANDALONEMONTHS:["\u0c1c\u0c28\u0c35\u0c30\u0c3f", "\u0c2b\u0c3f\u0c2c\u0c4d\u0c30\u0c35\u0c30\u0c3f", "\u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c3f", "\u0c0e\u0c2a\u0c4d\u0c30\u0c3f\u0c32\u0c4d", "\u0c2e\u0c47", "\u0c1c\u0c42\u0c28\u0c4d", "\u0c1c\u0c42\u0c32\u0c48", "\u0c06\u0c17\u0c38\u0c4d\u0c1f\u0c41", "\u0c38\u0c46\u0c2a\u0c4d\u0c1f\u0c46\u0c02\u0c2c\u0c30\u0c4d", "\u0c05\u0c15\u0c4d\u0c1f\u0c4b\u0c2c\u0c30\u0c4d", "\u0c28\u0c35\u0c02\u0c2c\u0c30\u0c4d", 
+"\u0c21\u0c3f\u0c38\u0c46\u0c02\u0c2c\u0c30\u0c4d"], SHORTMONTHS:["\u0c1c\u0c28", "\u0c2b\u0c3f\u0c2c\u0c4d\u0c30", "\u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c3f", "\u0c0f\u0c2a\u0c4d\u0c30\u0c3f", "\u0c2e\u0c47", "\u0c1c\u0c42\u0c28\u0c4d", "\u0c1c\u0c42\u0c32\u0c48", "\u0c06\u0c17\u0c38\u0c4d\u0c1f\u0c41", "\u0c38\u0c46\u0c2a\u0c4d\u0c1f\u0c46\u0c02\u0c2c\u0c30\u0c4d", "\u0c05\u0c15\u0c4d\u0c1f\u0c4b\u0c2c\u0c30\u0c4d", "\u0c28\u0c35\u0c02\u0c2c\u0c30\u0c4d", "\u0c21\u0c3f\u0c38\u0c46\u0c02\u0c2c\u0c30\u0c4d"], 
+STANDALONESHORTMONTHS:["\u0c1c\u0c28", "\u0c2b\u0c3f\u0c2c\u0c4d\u0c30", "\u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c3f", "\u0c0f\u0c2a\u0c4d\u0c30\u0c3f", "\u0c2e\u0c47", "\u0c1c\u0c42\u0c28\u0c4d", "\u0c1c\u0c42\u0c32\u0c48", "\u0c06\u0c17\u0c38\u0c4d\u0c1f\u0c41", "\u0c38\u0c46\u0c2a\u0c4d\u0c1f\u0c46\u0c02\u0c2c\u0c30\u0c4d", "\u0c05\u0c15\u0c4d\u0c1f\u0c4b\u0c2c\u0c30\u0c4d", "\u0c28\u0c35\u0c02\u0c2c\u0c30\u0c4d", "\u0c21\u0c3f\u0c38\u0c46\u0c02\u0c2c\u0c30\u0c4d"], WEEKDAYS:["\u0c06\u0c26\u0c3f\u0c35\u0c3e\u0c30\u0c02", 
+"\u0c38\u0c4b\u0c2e\u0c35\u0c3e\u0c30\u0c02", "\u0c2e\u0c02\u0c17\u0c33\u0c35\u0c3e\u0c30\u0c02", "\u0c2c\u0c41\u0c27\u0c35\u0c3e\u0c30\u0c02", "\u0c17\u0c41\u0c30\u0c41\u0c35\u0c3e\u0c30\u0c02", "\u0c36\u0c41\u0c15\u0c4d\u0c30\u0c35\u0c3e\u0c30\u0c02", "\u0c36\u0c28\u0c3f\u0c35\u0c3e\u0c30\u0c02"], STANDALONEWEEKDAYS:["\u0c06\u0c26\u0c3f\u0c35\u0c3e\u0c30\u0c02", "\u0c38\u0c4b\u0c2e\u0c35\u0c3e\u0c30\u0c02", "\u0c2e\u0c02\u0c17\u0c33\u0c35\u0c3e\u0c30\u0c02", "\u0c2c\u0c41\u0c27\u0c35\u0c3e\u0c30\u0c02", 
+"\u0c17\u0c41\u0c30\u0c41\u0c35\u0c3e\u0c30\u0c02", "\u0c36\u0c41\u0c15\u0c4d\u0c30\u0c35\u0c3e\u0c30\u0c02", "\u0c36\u0c28\u0c3f\u0c35\u0c3e\u0c30\u0c02"], SHORTWEEKDAYS:["\u0c06\u0c26\u0c3f", "\u0c38\u0c4b\u0c2e", "\u0c2e\u0c02\u0c17\u0c33", "\u0c2c\u0c41\u0c27", "\u0c17\u0c41\u0c30\u0c41", "\u0c36\u0c41\u0c15\u0c4d\u0c30", "\u0c36\u0c28\u0c3f"], STANDALONESHORTWEEKDAYS:["\u0c06\u0c26\u0c3f", "\u0c38\u0c4b\u0c2e", "\u0c2e\u0c02\u0c17\u0c33", "\u0c2c\u0c41\u0c27", "\u0c17\u0c41\u0c30\u0c41", "\u0c36\u0c41\u0c15\u0c4d\u0c30", 
+"\u0c36\u0c28\u0c3f"], NARROWWEEKDAYS:["\u0c06", "\u0c38\u0c4b", "\u0c2e", "\u0c2c\u0c41", "\u0c17\u0c41", "\u0c36\u0c41", "\u0c36"], STANDALONENARROWWEEKDAYS:["\u0c06", "\u0c38\u0c4b", "\u0c2e", "\u0c2c\u0c41", "\u0c17\u0c41", "\u0c36\u0c41", "\u0c36"], SHORTQUARTERS:["\u0c12\u0c15\u0c1f\u0c3f 1", "\u0c30\u0c46\u0c02\u0c21\u0c41 2", "\u0c2e\u0c42\u0c21\u0c41 3", "\u0c28\u0c3e\u0c32\u0c41\u0c17\u0c41 4"], QUARTERS:["\u0c12\u0c15\u0c1f\u0c3f 1", "\u0c30\u0c46\u0c02\u0c21\u0c41 2", "\u0c2e\u0c42\u0c21\u0c41 3", 
+"\u0c28\u0c3e\u0c32\u0c41\u0c17\u0c41 4"], AMPMS:["am", "pm"], DATEFORMATS:["EEEE d MMMM y", "d MMMM y", "d MMM y", "dd-MM-yy"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[6, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_th = {ERAS:["\u0e1b\u0e35\u0e01\u0e48\u0e2d\u0e19 \u0e04.\u0e28.", "\u0e04.\u0e28."], ERANAMES:["\u0e1b\u0e35\u0e01\u0e48\u0e2d\u0e19\u0e04\u0e23\u0e34\u0e2a\u0e15\u0e4c\u0e28\u0e31\u0e01\u0e23\u0e32\u0e0a", "\u0e04\u0e23\u0e34\u0e2a\u0e15\u0e4c\u0e28\u0e31\u0e01\u0e23\u0e32\u0e0a"], NARROWMONTHS:["\u0e21.\u0e04.", "\u0e01.\u0e1e.", "\u0e21\u0e35.\u0e04.", "\u0e40\u0e21.\u0e22.", "\u0e1e.\u0e04.", "\u0e21\u0e34.\u0e22", "\u0e01.\u0e04.", "\u0e2a.\u0e04.", "\u0e01.\u0e22.", 
+"\u0e15.\u0e04.", "\u0e1e.\u0e22.", "\u0e18.\u0e04."], STANDALONENARROWMONTHS:["\u0e21.\u0e04.", "\u0e01.\u0e1e.", "\u0e21\u0e35.\u0e04.", "\u0e40\u0e21.\u0e22.", "\u0e1e.\u0e04.", "\u0e21\u0e34.\u0e22.", "\u0e01.\u0e04.", "\u0e2a.\u0e04.", "\u0e01.\u0e22.", "\u0e15.\u0e04.", "\u0e1e.\u0e22.", "\u0e18.\u0e04."], MONTHS:["\u0e21\u0e01\u0e23\u0e32\u0e04\u0e21", "\u0e01\u0e38\u0e21\u0e20\u0e32\u0e1e\u0e31\u0e19\u0e18\u0e4c", "\u0e21\u0e35\u0e19\u0e32\u0e04\u0e21", "\u0e40\u0e21\u0e29\u0e32\u0e22\u0e19", 
+"\u0e1e\u0e24\u0e29\u0e20\u0e32\u0e04\u0e21", "\u0e21\u0e34\u0e16\u0e38\u0e19\u0e32\u0e22\u0e19", "\u0e01\u0e23\u0e01\u0e0e\u0e32\u0e04\u0e21", "\u0e2a\u0e34\u0e07\u0e2b\u0e32\u0e04\u0e21", "\u0e01\u0e31\u0e19\u0e22\u0e32\u0e22\u0e19", "\u0e15\u0e38\u0e25\u0e32\u0e04\u0e21", "\u0e1e\u0e24\u0e28\u0e08\u0e34\u0e01\u0e32\u0e22\u0e19", "\u0e18\u0e31\u0e19\u0e27\u0e32\u0e04\u0e21"], STANDALONEMONTHS:["\u0e21\u0e01\u0e23\u0e32\u0e04\u0e21", "\u0e01\u0e38\u0e21\u0e20\u0e32\u0e1e\u0e31\u0e19\u0e18\u0e4c", 
+"\u0e21\u0e35\u0e19\u0e32\u0e04\u0e21", "\u0e40\u0e21\u0e29\u0e32\u0e22\u0e19", "\u0e1e\u0e24\u0e29\u0e20\u0e32\u0e04\u0e21", "\u0e21\u0e34\u0e16\u0e38\u0e19\u0e32\u0e22\u0e19", "\u0e01\u0e23\u0e01\u0e0e\u0e32\u0e04\u0e21", "\u0e2a\u0e34\u0e07\u0e2b\u0e32\u0e04\u0e21", "\u0e01\u0e31\u0e19\u0e22\u0e32\u0e22\u0e19", "\u0e15\u0e38\u0e25\u0e32\u0e04\u0e21", "\u0e1e\u0e24\u0e28\u0e08\u0e34\u0e01\u0e32\u0e22\u0e19", "\u0e18\u0e31\u0e19\u0e27\u0e32\u0e04\u0e21"], SHORTMONTHS:["\u0e21.\u0e04.", "\u0e01.\u0e1e.", 
+"\u0e21\u0e35.\u0e04.", "\u0e40\u0e21.\u0e22.", "\u0e1e.\u0e04.", "\u0e21\u0e34.\u0e22.", "\u0e01.\u0e04.", "\u0e2a.\u0e04.", "\u0e01.\u0e22.", "\u0e15.\u0e04.", "\u0e1e.\u0e22.", "\u0e18.\u0e04."], STANDALONESHORTMONTHS:["\u0e21.\u0e04.", "\u0e01.\u0e1e.", "\u0e21\u0e35.\u0e04.", "\u0e40\u0e21.\u0e22.", "\u0e1e.\u0e04.", "\u0e21\u0e34.\u0e22.", "\u0e01.\u0e04.", "\u0e2a.\u0e04.", "\u0e01.\u0e22.", "\u0e15.\u0e04.", "\u0e1e.\u0e22.", "\u0e18.\u0e04."], WEEKDAYS:["\u0e27\u0e31\u0e19\u0e2d\u0e32\u0e17\u0e34\u0e15\u0e22\u0e4c", 
+"\u0e27\u0e31\u0e19\u0e08\u0e31\u0e19\u0e17\u0e23\u0e4c", "\u0e27\u0e31\u0e19\u0e2d\u0e31\u0e07\u0e04\u0e32\u0e23", "\u0e27\u0e31\u0e19\u0e1e\u0e38\u0e18", "\u0e27\u0e31\u0e19\u0e1e\u0e24\u0e2b\u0e31\u0e2a\u0e1a\u0e14\u0e35", "\u0e27\u0e31\u0e19\u0e28\u0e38\u0e01\u0e23\u0e4c", "\u0e27\u0e31\u0e19\u0e40\u0e2a\u0e32\u0e23\u0e4c"], STANDALONEWEEKDAYS:["\u0e27\u0e31\u0e19\u0e2d\u0e32\u0e17\u0e34\u0e15\u0e22\u0e4c", "\u0e27\u0e31\u0e19\u0e08\u0e31\u0e19\u0e17\u0e23\u0e4c", "\u0e27\u0e31\u0e19\u0e2d\u0e31\u0e07\u0e04\u0e32\u0e23", 
+"\u0e27\u0e31\u0e19\u0e1e\u0e38\u0e18", "\u0e27\u0e31\u0e19\u0e1e\u0e24\u0e2b\u0e31\u0e2a\u0e1a\u0e14\u0e35", "\u0e27\u0e31\u0e19\u0e28\u0e38\u0e01\u0e23\u0e4c", "\u0e27\u0e31\u0e19\u0e40\u0e2a\u0e32\u0e23\u0e4c"], SHORTWEEKDAYS:["\u0e2d\u0e32.", "\u0e08.", "\u0e2d.", "\u0e1e.", "\u0e1e\u0e24.", "\u0e28.", "\u0e2a."], STANDALONESHORTWEEKDAYS:["\u0e2d\u0e32.", "\u0e08.", "\u0e2d.", "\u0e1e.", "\u0e1e\u0e24.", "\u0e28.", "\u0e2a."], NARROWWEEKDAYS:["\u0e2d", "\u0e08", "\u0e2d", "\u0e1e", "\u0e1e", 
+"\u0e28", "\u0e2a"], STANDALONENARROWWEEKDAYS:["\u0e2d", "\u0e08", "\u0e2d", "\u0e1e", "\u0e1e", "\u0e28", "\u0e2a"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a 1", "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a 2", "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a 3", "\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a 4"], AMPMS:["\u0e01\u0e48\u0e2d\u0e19\u0e40\u0e17\u0e35\u0e48\u0e22\u0e07", "\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e17\u0e35\u0e48\u0e22\u0e07"], DATEFORMATS:["EEEE\u0e17\u0e35\u0e48 d MMMM G y", 
+"d MMMM y", "d MMM y", "d/M/yyyy"], TIMEFORMATS:["H \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32 m \u0e19\u0e32\u0e17\u0e35 ss \u0e27\u0e34\u0e19\u0e32\u0e17\u0e35 zzzz", "H \u0e19\u0e32\u0e2c\u0e34\u0e01\u0e32 m \u0e19\u0e32\u0e17\u0e35 ss \u0e27\u0e34\u0e19\u0e32\u0e17\u0e35 z", "H:mm:ss", "H:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_tl = {ERAS:["BC", "AD"], ERANAMES:["BC", "AD"], NARROWMONTHS:["E", "P", "M", "A", "M", "H", "H", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["E", "P", "M", "A", "M", "H", "H", "A", "S", "O", "N", "D"], MONTHS:["Enero", "Pebrero", "Marso", "Abril", "Mayo", "Hunyo", "Hulyo", "Agosto", "Setyembre", "Oktubre", "Nobyembre", "Disyembre"], STANDALONEMONTHS:["Enero", "Pebrero", "Marso", "Abril", "Mayo", "Hunyo", "Hulyo", "Agosto", "Setyembre", "Oktubre", "Nobyembre", "Disyembre"], 
+SHORTMONTHS:["Ene", "Peb", "Mar", "Abr", "May", "Hun", "Hul", "Ago", "Set", "Okt", "Nob", "Dis"], STANDALONESHORTMONTHS:["Ene", "Peb", "Mar", "Abr", "May", "Hun", "Hul", "Ago", "Set", "Okt", "Nob", "Dis"], WEEKDAYS:["Linggo", "Lunes", "Martes", "Miyerkules", "Huwebes", "Biyernes", "Sabado"], STANDALONEWEEKDAYS:["Linggo", "Lunes", "Martes", "Miyerkules", "Huwebes", "Biyernes", "Sabado"], SHORTWEEKDAYS:["Lin", "Lun", "Mar", "Mye", "Huw", "Bye", "Sab"], STANDALONESHORTWEEKDAYS:["Lin", "Lun", "Mar", 
+"Miy", "Huw", "Biy", "Sab"], NARROWWEEKDAYS:["L", "L", "M", "M", "H", "B", "S"], STANDALONENARROWWEEKDAYS:["L", "L", "M", "M", "H", "B", "S"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["ika-1 sangkapat", "ika-2 sangkapat", "ika-3 quarter", "ika-4 na quarter"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE, MMMM dd y", "MMMM d, y", "MMM d, y", "M/d/yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_tr = {ERAS:["M\u00d6", "MS"], ERANAMES:["Milattan \u00d6nce", "Milattan Sonra"], NARROWMONTHS:["O", "\u015e", "M", "N", "M", "H", "T", "A", "E", "E", "K", "A"], STANDALONENARROWMONTHS:["O", "\u015e", "M", "N", "M", "H", "T", "A", "E", "E", "K", "A"], MONTHS:["Ocak", "\u015eubat", "Mart", "Nisan", "May\u0131s", "Haziran", "Temmuz", "A\u011fustos", "Eyl\u00fcl", "Ekim", "Kas\u0131m", "Aral\u0131k"], STANDALONEMONTHS:["Ocak", "\u015eubat", "Mart", "Nisan", "May\u0131s", "Haziran", 
+"Temmuz", "A\u011fustos", "Eyl\u00fcl", "Ekim", "Kas\u0131m", "Aral\u0131k"], SHORTMONTHS:["Oca", "\u015eub", "Mar", "Nis", "May", "Haz", "Tem", "A\u011fu", "Eyl", "Eki", "Kas", "Ara"], STANDALONESHORTMONTHS:["Oca", "\u015eub", "Mar", "Nis", "May", "Haz", "Tem", "A\u011fu", "Eyl", "Eki", "Kas", "Ara"], WEEKDAYS:["Pazar", "Pazartesi", "Sal\u0131", "\u00c7ar\u015famba", "Per\u015fembe", "Cuma", "Cumartesi"], STANDALONEWEEKDAYS:["Pazar", "Pazartesi", "Sal\u0131", "\u00c7ar\u015famba", "Per\u015fembe", 
+"Cuma", "Cumartesi"], SHORTWEEKDAYS:["Paz", "Pzt", "Sal", "\u00c7ar", "Per", "Cum", "Cmt"], STANDALONESHORTWEEKDAYS:["Paz", "Pzt", "Sal", "\u00c7ar", "Per", "Cum", "Cmt"], NARROWWEEKDAYS:["P", "P", "S", "\u00c7", "P", "C", "C"], STANDALONENARROWWEEKDAYS:["P", "P", "S", "\u00c7", "P", "C", "C"], SHORTQUARTERS:["\u00c71", "\u00c72", "\u00c73", "\u00c74"], QUARTERS:["1. \u00e7eyrek", "2. \u00e7eyrek", "3. \u00e7eyrek", "4. \u00e7eyrek"], AMPMS:["AM", "PM"], DATEFORMATS:["d MMMM y EEEE", "d MMMM y", 
+"d MMM y", "dd MM yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_uk = {ERAS:["\u0434\u043e \u043d.\u0435.", "\u043d.\u0435."], ERANAMES:["\u0434\u043e \u043d\u0430\u0448\u043e\u0457 \u0435\u0440\u0438", "\u043d\u0430\u0448\u043e\u0457 \u0435\u0440\u0438"], NARROWMONTHS:["\u0421", "\u041b", "\u0411", "\u041a", "\u0422", "\u0427", "\u041b", "\u0421", "\u0412", "\u0416", "\u041b", "\u0413"], STANDALONENARROWMONTHS:["\u0421", "\u041b", "\u0411", "\u041a", "\u0422", "\u0427", "\u041b", "\u0421", "\u0412", "\u0416", "\u041b", "\u0413"], MONTHS:["\u0441\u0456\u0447\u043d\u044f", 
+"\u043b\u044e\u0442\u043e\u0433\u043e", "\u0431\u0435\u0440\u0435\u0437\u043d\u044f", "\u043a\u0432\u0456\u0442\u043d\u044f", "\u0442\u0440\u0430\u0432\u043d\u044f", "\u0447\u0435\u0440\u0432\u043d\u044f", "\u043b\u0438\u043f\u043d\u044f", "\u0441\u0435\u0440\u043f\u043d\u044f", "\u0432\u0435\u0440\u0435\u0441\u043d\u044f", "\u0436\u043e\u0432\u0442\u043d\u044f", "\u043b\u0438\u0441\u0442\u043e\u043f\u0430\u0434\u0430", "\u0433\u0440\u0443\u0434\u043d\u044f"], STANDALONEMONTHS:["\u0421\u0456\u0447\u0435\u043d\u044c", 
+"\u041b\u044e\u0442\u0438\u0439", "\u0411\u0435\u0440\u0435\u0437\u0435\u043d\u044c", "\u041a\u0432\u0456\u0442\u0435\u043d\u044c", "\u0422\u0440\u0430\u0432\u0435\u043d\u044c", "\u0427\u0435\u0440\u0432\u0435\u043d\u044c", "\u041b\u0438\u043f\u0435\u043d\u044c", "\u0421\u0435\u0440\u043f\u0435\u043d\u044c", "\u0412\u0435\u0440\u0435\u0441\u0435\u043d\u044c", "\u0416\u043e\u0432\u0442\u0435\u043d\u044c", "\u041b\u0438\u0441\u0442\u043e\u043f\u0430\u0434", "\u0413\u0440\u0443\u0434\u0435\u043d\u044c"], 
+SHORTMONTHS:["\u0441\u0456\u0447.", "\u043b\u044e\u0442.", "\u0431\u0435\u0440.", "\u043a\u0432\u0456\u0442.", "\u0442\u0440\u0430\u0432.", "\u0447\u0435\u0440\u0432.", "\u043b\u0438\u043f.", "\u0441\u0435\u0440\u043f.", "\u0432\u0435\u0440.", "\u0436\u043e\u0432\u0442.", "\u043b\u0438\u0441\u0442.", "\u0433\u0440\u0443\u0434."], STANDALONESHORTMONTHS:["\u0421\u0456\u0447", "\u041b\u044e\u0442", "\u0411\u0435\u0440", "\u041a\u0432\u0456", "\u0422\u0440\u0430", "\u0427\u0435\u0440", "\u041b\u0438\u043f", 
+"\u0421\u0435\u0440", "\u0412\u0435\u0440", "\u0416\u043e\u0432", "\u041b\u0438\u0441", "\u0413\u0440\u0443"], WEEKDAYS:["\u041d\u0435\u0434\u0456\u043b\u044f", "\u041f\u043e\u043d\u0435\u0434\u0456\u043b\u043e\u043a", "\u0412\u0456\u0432\u0442\u043e\u0440\u043e\u043a", "\u0421\u0435\u0440\u0435\u0434\u0430", "\u0427\u0435\u0442\u0432\u0435\u0440", "\u041f\u02bc\u044f\u0442\u043d\u0438\u0446\u044f", "\u0421\u0443\u0431\u043e\u0442\u0430"], STANDALONEWEEKDAYS:["\u041d\u0435\u0434\u0456\u043b\u044f", 
+"\u041f\u043e\u043d\u0435\u0434\u0456\u043b\u043e\u043a", "\u0412\u0456\u0432\u0442\u043e\u0440\u043e\u043a", "\u0421\u0435\u0440\u0435\u0434\u0430", "\u0427\u0435\u0442\u0432\u0435\u0440", "\u041f\u02bc\u044f\u0442\u043d\u0438\u0446\u044f", "\u0421\u0443\u0431\u043e\u0442\u0430"], SHORTWEEKDAYS:["\u041d\u0434", "\u041f\u043d", "\u0412\u0442", "\u0421\u0440", "\u0427\u0442", "\u041f\u0442", "\u0421\u0431"], STANDALONESHORTWEEKDAYS:["\u041d\u0434", "\u041f\u043d", "\u0412\u0442", "\u0421\u0440", "\u0427\u0442", 
+"\u041f\u0442", "\u0421\u0431"], NARROWWEEKDAYS:["\u041d", "\u041f", "\u0412", "\u0421", "\u0427", "\u041f", "\u0421"], STANDALONENARROWWEEKDAYS:["\u041d", "\u041f", "\u0412", "\u0421", "\u0427", "\u041f", "\u0421"], SHORTQUARTERS:["I \u043a\u0432.", "II \u043a\u0432.", "III \u043a\u0432.", "IV \u043a\u0432."], QUARTERS:["I \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "II \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "III \u043a\u0432\u0430\u0440\u0442\u0430\u043b", "IV \u043a\u0432\u0430\u0440\u0442\u0430\u043b"], 
+AMPMS:["\u0434\u043f", "\u043f\u043f"], DATEFORMATS:["EEEE, d MMMM y '\u0440'.", "d MMMM y '\u0440'.", "d MMM y", "dd.MM.yy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_ur = {ERAS:["\u0642 \u0645", "\u0639\u064a\u0633\u0648\u06cc \u0633\u0646"], ERANAMES:["\u0642\u0628\u0644 \u0645\u0633\u064a\u062d", "\u0639\u064a\u0633\u0648\u06cc \u0633\u0646"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["\u062c\u0646\u0648\u0631\u06cc", "\u0641\u0631\u0648\u0631\u06cc", "\u0645\u0627\u0631\u0686", "\u0627\u067e\u0631\u064a\u0644", 
+"\u0645\u0626", "\u062c\u0648\u0646", "\u062c\u0648\u0644\u0627\u0626", "\u0627\u06af\u0633\u062a", "\u0633\u062a\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0648\u0628\u0631", "\u0646\u0648\u0645\u0628\u0631", "\u062f\u0633\u0645\u0628\u0631"], STANDALONEMONTHS:["\u062c\u0646\u0648\u0631\u06cc", "\u0641\u0631\u0648\u0631\u06cc", "\u0645\u0627\u0631\u0686", "\u0627\u067e\u0631\u064a\u0644", "\u0645\u0626", "\u062c\u0648\u0646", "\u062c\u0648\u0644\u0627\u0626", "\u0627\u06af\u0633\u062a", "\u0633\u062a\u0645\u0628\u0631", 
+"\u0627\u06a9\u062a\u0648\u0628\u0631", "\u0646\u0648\u0645\u0628\u0631", "\u062f\u0633\u0645\u0628\u0631"], SHORTMONTHS:["\u062c\u0646\u0648\u0631\u06cc", "\u0641\u0631\u0648\u0631\u06cc", "\u0645\u0627\u0631\u0686", "\u0627\u067e\u0631\u064a\u0644", "\u0645\u0626", "\u062c\u0648\u0646", "\u062c\u0648\u0644\u0627\u0626", "\u0627\u06af\u0633\u062a", "\u0633\u062a\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0648\u0628\u0631", "\u0646\u0648\u0645\u0628\u0631", "\u062f\u0633\u0645\u0628\u0631"], STANDALONESHORTMONTHS:["\u062c\u0646\u0648\u0631\u06cc", 
+"\u0641\u0631\u0648\u0631\u06cc", "\u0645\u0627\u0631\u0686", "\u0627\u067e\u0631\u064a\u0644", "\u0645\u0626", "\u062c\u0648\u0646", "\u062c\u0648\u0644\u0627\u0626", "\u0627\u06af\u0633\u062a", "\u0633\u062a\u0645\u0628\u0631", "\u0627\u06a9\u062a\u0648\u0628\u0631", "\u0646\u0648\u0645\u0628\u0631", "\u062f\u0633\u0645\u0628\u0631"], WEEKDAYS:["\u0627\u062a\u0648\u0627\u0631", "\u067e\u064a\u0631", "\u0645\u0646\u06af\u0644", "\u0628\u062f\u0647", "\u062c\u0645\u0639\u0631\u0627\u062a", "\u062c\u0645\u0639\u06c1", 
+"\u06c1\u0641\u062a\u06c1"], STANDALONEWEEKDAYS:["\u0627\u062a\u0648\u0627\u0631", "\u067e\u064a\u0631", "\u0645\u0646\u06af\u0644", "\u0628\u062f\u0647", "\u062c\u0645\u0639\u0631\u0627\u062a", "\u062c\u0645\u0639\u06c1", "\u06c1\u0641\u062a\u06c1"], SHORTWEEKDAYS:["\u0627\u062a\u0648\u0627\u0631", "\u067e\u064a\u0631", "\u0645\u0646\u06af\u0644", "\u0628\u062f\u0647", "\u062c\u0645\u0639\u0631\u0627\u062a", "\u062c\u0645\u0639\u06c1", "\u06c1\u0641\u062a\u06c1"], STANDALONESHORTWEEKDAYS:["\u0627\u062a\u0648\u0627\u0631", 
+"\u067e\u064a\u0631", "\u0645\u0646\u06af\u0644", "\u0628\u062f\u0647", "\u062c\u0645\u0639\u0631\u0627\u062a", "\u062c\u0645\u0639\u06c1", "\u06c1\u0641\u062a\u06c1"], NARROWWEEKDAYS:["1", "2", "3", "4", "5", "6", "7"], STANDALONENARROWWEEKDAYS:["1", "2", "3", "4", "5", "6", "7"], SHORTQUARTERS:["\u067e\u06c1\u0644\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", "\u062f\u0648\u0633\u0631\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", "\u062a\u064a\u0633\u0631\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", 
+"\u0686\u0648\u062a\u0647\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc"], QUARTERS:["\u067e\u06c1\u0644\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", "\u062f\u0648\u0633\u0631\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", "\u062a\u064a\u0633\u0631\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc", "\u0686\u0648\u062a\u0647\u06cc \u0633\u06c1 \u0645\u0627\u06c1\u06cc"], AMPMS:["\u062f\u0646", "\u0631\u0627\u062a"], DATEFORMATS:["EEEE\u060d d\u060d MMMM y", "d\u060d MMMM y", "d\u060d MMM y", "d/M/yy"], TIMEFORMATS:["h:mm:ss a zzzz", 
+"h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_vi = {ERAS:["tr. CN", "sau CN"], ERANAMES:["tr. CN", "sau CN"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["th\u00e1ng m\u1ed9t", "th\u00e1ng hai", "th\u00e1ng ba", "th\u00e1ng t\u01b0", "th\u00e1ng n\u0103m", "th\u00e1ng s\u00e1u", "th\u00e1ng b\u1ea3y", "th\u00e1ng t\u00e1m", "th\u00e1ng ch\u00edn", "th\u00e1ng m\u01b0\u1eddi", "th\u00e1ng m\u01b0\u1eddi m\u1ed9t", 
+"th\u00e1ng m\u01b0\u1eddi hai"], STANDALONEMONTHS:["th\u00e1ng m\u1ed9t", "th\u00e1ng hai", "th\u00e1ng ba", "th\u00e1ng t\u01b0", "th\u00e1ng n\u0103m", "th\u00e1ng s\u00e1u", "th\u00e1ng b\u1ea3y", "th\u00e1ng t\u00e1m", "th\u00e1ng ch\u00edn", "th\u00e1ng m\u01b0\u1eddi", "th\u00e1ng m\u01b0\u1eddi m\u1ed9t", "th\u00e1ng m\u01b0\u1eddi hai"], SHORTMONTHS:["thg 1", "thg 2", "thg 3", "thg 4", "thg 5", "thg 6", "thg 7", "thg 8", "thg 9", "thg 10", "thg 11", "thg 12"], STANDALONESHORTMONTHS:["thg 1", 
+"thg 2", "thg 3", "thg 4", "thg 5", "thg 6", "thg 7", "thg 8", "thg 9", "thg 10", "thg 11", "thg 12"], WEEKDAYS:["Ch\u1ee7 nh\u1eadt", "Th\u1ee9 hai", "Th\u1ee9 ba", "Th\u1ee9 t\u01b0", "Th\u1ee9 n\u0103m", "Th\u1ee9 s\u00e1u", "Th\u1ee9 b\u1ea3y"], STANDALONEWEEKDAYS:["Ch\u1ee7 nh\u1eadt", "Th\u1ee9 hai", "Th\u1ee9 ba", "Th\u1ee9 t\u01b0", "Th\u1ee9 n\u0103m", "Th\u1ee9 s\u00e1u", "Th\u1ee9 b\u1ea3y"], SHORTWEEKDAYS:["CN", "Th 2", "Th 3", "Th 4", "Th 5", "Th 6", "Th 7"], STANDALONESHORTWEEKDAYS:["CN", 
+"Th 2", "Th 3", "Th 4", "Th 5", "Th 6", "Th 7"], NARROWWEEKDAYS:["CN", "T2", "T3", "T4", "T5", "T6", "T7"], STANDALONENARROWWEEKDAYS:["CN", "T2", "T3", "T4", "T5", "T6", "T7"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["Qu\u00fd 1", "Qu\u00fd 2", "Qu\u00fd 3", "Qu\u00fd 4"], AMPMS:["SA", "CH"], DATEFORMATS:["EEEE, 'ng\u00e0y' dd MMMM 'n\u0103m' y", "'Ng\u00e0y' dd 'th\u00e1ng' M 'n\u0103m' y", "dd-MM-yyyy", "dd/MM/yyyy"], TIMEFORMATS:["HH:mm:ss zzzz", "HH:mm:ss z", "HH:mm:ss", "HH:mm"], FIRSTDAYOFWEEK:0, 
+WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:6};
+goog.i18n.DateTimeSymbols_zh = {ERAS:["\u516c\u5143\u524d", "\u516c\u5143"], ERANAMES:["\u516c\u5143\u524d", "\u516c\u5143"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], MONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], 
+STANDALONEMONTHS:["\u4e00\u6708", "\u4e8c\u6708", "\u4e09\u6708", "\u56db\u6708", "\u4e94\u6708", "\u516d\u6708", "\u4e03\u6708", "\u516b\u6708", "\u4e5d\u6708", "\u5341\u6708", "\u5341\u4e00\u6708", "\u5341\u4e8c\u6708"], SHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONESHORTMONTHS:["\u4e00\u6708", "\u4e8c\u6708", "\u4e09\u6708", "\u56db\u6708", "\u4e94\u6708", "\u516d\u6708", "\u4e03\u6708", 
+"\u516b\u6708", "\u4e5d\u6708", "\u5341\u6708", "\u5341\u4e00\u6708", "\u5341\u4e8c\u6708"], WEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", "\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], STANDALONEWEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", "\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], SHORTWEEKDAYS:["\u5468\u65e5", "\u5468\u4e00", "\u5468\u4e8c", "\u5468\u4e09", 
+"\u5468\u56db", "\u5468\u4e94", "\u5468\u516d"], STANDALONESHORTWEEKDAYS:["\u5468\u65e5", "\u5468\u4e00", "\u5468\u4e8c", "\u5468\u4e09", "\u5468\u56db", "\u5468\u4e94", "\u5468\u516d"], NARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], STANDALONENARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], SHORTQUARTERS:["1\u5b63", "2\u5b63", "3\u5b63", "4\u5b63"], QUARTERS:["\u7b2c1\u5b63\u5ea6", "\u7b2c2\u5b63\u5ea6", "\u7b2c3\u5b63\u5ea6", 
+"\u7b2c4\u5b63\u5ea6"], AMPMS:["\u4e0a\u5348", "\u4e0b\u5348"], DATEFORMATS:["y\u5e74M\u6708d\u65e5EEEE", "y\u5e74M\u6708d\u65e5", "yyyy-M-d", "yy-M-d"], TIMEFORMATS:["zzzzah\u65f6mm\u5206ss\u79d2", "zah\u65f6mm\u5206ss\u79d2", "ah:mm:ss", "ah:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_zh_CN = goog.i18n.DateTimeSymbols_zh;
+goog.i18n.DateTimeSymbols_zh_HK = {ERAS:["\u897f\u5143\u524d", "\u897f\u5143"], ERANAMES:["\u897f\u5143\u524d", "\u897f\u5143"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONEMONTHS:["\u4e00\u6708", "\u4e8c\u6708", "\u4e09\u6708", 
+"\u56db\u6708", "\u4e94\u6708", "\u516d\u6708", "\u4e03\u6708", "\u516b\u6708", "\u4e5d\u6708", "\u5341\u6708", "\u5341\u4e00\u6708", "\u5341\u4e8c\u6708"], SHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONESHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], WEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", 
+"\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], STANDALONEWEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", "\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], SHORTWEEKDAYS:["\u9031\u65e5", "\u9031\u4e00", "\u9031\u4e8c", "\u9031\u4e09", "\u9031\u56db", "\u9031\u4e94", "\u9031\u516d"], STANDALONESHORTWEEKDAYS:["\u5468\u65e5", "\u5468\u4e00", "\u5468\u4e8c", "\u5468\u4e09", 
+"\u5468\u56db", "\u5468\u4e94", "\u5468\u516d"], NARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], STANDALONENARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], SHORTQUARTERS:["1\u5b63", "2\u5b63", "3\u5b63", "4\u5b63"], QUARTERS:["\u7b2c1\u5b63", "\u7b2c2\u5b63", "\u7b2c3\u5b63", "\u7b2c4\u5b63"], AMPMS:["\u4e0a\u5348", "\u4e0b\u5348"], DATEFORMATS:["y\u5e74M\u6708d\u65e5EEEE", "y\u5e74M\u6708d\u65e5", "y\u5e74M\u6708d\u65e5", 
+"yy\u5e74M\u6708d\u65e5"], TIMEFORMATS:["ah:mm:ss [zzzz]", "ah:mm:ss [z]", "ahh:mm:ss", "ah:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_zh_TW = {ERAS:["\u897f\u5143\u524d", "\u897f\u5143"], ERANAMES:["\u897f\u5143\u524d", "\u897f\u5143"], NARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], STANDALONENARROWMONTHS:["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], MONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONEMONTHS:["\u4e00\u6708", "\u4e8c\u6708", "\u4e09\u6708", 
+"\u56db\u6708", "\u4e94\u6708", "\u516d\u6708", "\u4e03\u6708", "\u516b\u6708", "\u4e5d\u6708", "\u5341\u6708", "\u5341\u4e00\u6708", "\u5341\u4e8c\u6708"], SHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], STANDALONESHORTMONTHS:["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708", "7\u6708", "8\u6708", "9\u6708", "10\u6708", "11\u6708", "12\u6708"], WEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", 
+"\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], STANDALONEWEEKDAYS:["\u661f\u671f\u65e5", "\u661f\u671f\u4e00", "\u661f\u671f\u4e8c", "\u661f\u671f\u4e09", "\u661f\u671f\u56db", "\u661f\u671f\u4e94", "\u661f\u671f\u516d"], SHORTWEEKDAYS:["\u9031\u65e5", "\u9031\u4e00", "\u9031\u4e8c", "\u9031\u4e09", "\u9031\u56db", "\u9031\u4e94", "\u9031\u516d"], STANDALONESHORTWEEKDAYS:["\u5468\u65e5", "\u5468\u4e00", "\u5468\u4e8c", "\u5468\u4e09", 
+"\u5468\u56db", "\u5468\u4e94", "\u5468\u516d"], NARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], STANDALONENARROWWEEKDAYS:["\u65e5", "\u4e00", "\u4e8c", "\u4e09", "\u56db", "\u4e94", "\u516d"], SHORTQUARTERS:["1\u5b63", "2\u5b63", "3\u5b63", "4\u5b63"], QUARTERS:["\u7b2c1\u5b63", "\u7b2c2\u5b63", "\u7b2c3\u5b63", "\u7b2c4\u5b63"], AMPMS:["\u4e0a\u5348", "\u4e0b\u5348"], DATEFORMATS:["y\u5e74M\u6708d\u65e5EEEE", "y\u5e74M\u6708d\u65e5", "yyyy/M/d", "y/M/d"], 
+TIMEFORMATS:["zzzzah\u6642mm\u5206ss\u79d2", "zah\u6642mm\u5206ss\u79d2", "ah:mm:ss", "ah:mm"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], FIRSTWEEKCUTOFFDAY:5};
+goog.i18n.DateTimeSymbols_zu = {ERAS:["BC", "AD"], ERANAMES:["BC", "AD"], NARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], STANDALONENARROWMONTHS:["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], MONTHS:["Januwari", "Februwari", "Mashi", "Apreli", "Meyi", "Juni", "Julayi", "Agasti", "Septhemba", "Okthoba", "Novemba", "Disemba"], STANDALONEMONTHS:["uJanuwari", "uFebruwari", "uMashi", "u-Apreli", "uMeyi", "uJuni", "uJulayi", "uAgasti", "uSepthemba", "u-Okthoba", 
+"uNovemba", "uDisemba"], SHORTMONTHS:["Jan", "Feb", "Mas", "Apr", "Mey", "Jun", "Jul", "Aga", "Sep", "Okt", "Nov", "Dis"], STANDALONESHORTMONTHS:["Jan", "Feb", "Mas", "Apr", "Mey", "Jun", "Jul", "Aga", "Sep", "Okt", "Nov", "Dis"], WEEKDAYS:["Sonto", "Msombuluko", "Lwesibili", "Lwesithathu", "uLwesine", "Lwesihlanu", "Mgqibelo"], STANDALONEWEEKDAYS:["Sonto", "Msombuluko", "Lwesibili", "Lwesithathu", "uLwesine", "Lwesihlanu", "Mgqibelo"], SHORTWEEKDAYS:["Son", "Mso", "Bil", "Tha", "Sin", "Hla", "Mgq"], 
+STANDALONESHORTWEEKDAYS:["Son", "Mso", "Bil", "Tha", "Sin", "Hla", "Mgq"], NARROWWEEKDAYS:["S", "M", "B", "T", "S", "H", "M"], STANDALONENARROWWEEKDAYS:["S", "M", "B", "T", "S", "H", "M"], SHORTQUARTERS:["Q1", "Q2", "Q3", "Q4"], QUARTERS:["ikota yoku-1", "ikota yesi-2", "ikota yesi-3", "ikota yesi-4"], AMPMS:["AM", "PM"], DATEFORMATS:["EEEE dd MMMM y", "d MMMM y", "d MMM y", "yyyy-MM-dd"], TIMEFORMATS:["h:mm:ss a zzzz", "h:mm:ss a z", "h:mm:ss a", "h:mm a"], FIRSTDAYOFWEEK:6, WEEKENDRANGE:[5, 6], 
+FIRSTWEEKCUTOFFDAY:5};
+if(goog.LOCALE == "af") {
+  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_af
+}else {
+  if(goog.LOCALE == "am") {
+    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_am
+  }else {
+    if(goog.LOCALE == "ar") {
+      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ar
+    }else {
+      if(goog.LOCALE == "bg") {
+        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_bg
+      }else {
+        if(goog.LOCALE == "bn") {
+          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_bn
+        }else {
+          if(goog.LOCALE == "ca") {
+            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ca
+          }else {
+            if(goog.LOCALE == "chr") {
+              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_chr
+            }else {
+              if(goog.LOCALE == "cs") {
+                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_cs
+              }else {
+                if(goog.LOCALE == "cy") {
+                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_cy
+                }else {
+                  if(goog.LOCALE == "da") {
+                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_da
+                  }else {
+                    if(goog.LOCALE == "de") {
+                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_de
+                    }else {
+                      if(goog.LOCALE == "de_AT" || goog.LOCALE == "de-AT") {
+                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_de_AT
+                      }else {
+                        if(goog.LOCALE == "de_CH" || goog.LOCALE == "de-CH") {
+                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_de
+                        }else {
+                          if(goog.LOCALE == "el") {
+                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_el
+                          }else {
+                            if(goog.LOCALE == "en") {
+                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en
+                            }else {
+                              if(goog.LOCALE == "en_AU" || goog.LOCALE == "en-AU") {
+                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_AU
+                              }else {
+                                if(goog.LOCALE == "en_GB" || goog.LOCALE == "en-GB") {
+                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_GB
+                                }else {
+                                  if(goog.LOCALE == "en_IE" || goog.LOCALE == "en-IE") {
+                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_IE
+                                  }else {
+                                    if(goog.LOCALE == "en_IN" || goog.LOCALE == "en-IN") {
+                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_IN
+                                    }else {
+                                      if(goog.LOCALE == "en_SG" || goog.LOCALE == "en-SG") {
+                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_SG
+                                      }else {
+                                        if(goog.LOCALE == "en_US" || goog.LOCALE == "en-US") {
+                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en
+                                        }else {
+                                          if(goog.LOCALE == "en_ZA" || goog.LOCALE == "en-ZA") {
+                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en_ZA
+                                          }else {
+                                            if(goog.LOCALE == "es") {
+                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_es
+                                            }else {
+                                              if(goog.LOCALE == "es_419" || goog.LOCALE == "es-419") {
+                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_es_419
+                                              }else {
+                                                if(goog.LOCALE == "et") {
+                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_et
+                                                }else {
+                                                  if(goog.LOCALE == "eu") {
+                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_eu
+                                                  }else {
+                                                    if(goog.LOCALE == "fa") {
+                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_fa
+                                                    }else {
+                                                      if(goog.LOCALE == "fi") {
+                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_fi
+                                                      }else {
+                                                        if(goog.LOCALE == "fil") {
+                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_fil
+                                                        }else {
+                                                          if(goog.LOCALE == "fr") {
+                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_fr
+                                                          }else {
+                                                            if(goog.LOCALE == "fr_CA" || goog.LOCALE == "fr-CA") {
+                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_fr_CA
+                                                            }else {
+                                                              if(goog.LOCALE == "gl") {
+                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_gl
+                                                              }else {
+                                                                if(goog.LOCALE == "gsw") {
+                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_gsw
+                                                                }else {
+                                                                  if(goog.LOCALE == "gu") {
+                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_gu
+                                                                  }else {
+                                                                    if(goog.LOCALE == "haw") {
+                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_haw
+                                                                    }else {
+                                                                      if(goog.LOCALE == "he") {
+                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_he
+                                                                      }else {
+                                                                        if(goog.LOCALE == "hi") {
+                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_hi
+                                                                        }else {
+                                                                          if(goog.LOCALE == "hr") {
+                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_hr
+                                                                          }else {
+                                                                            if(goog.LOCALE == "hu") {
+                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_hu
+                                                                            }else {
+                                                                              if(goog.LOCALE == "id") {
+                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_id
+                                                                              }else {
+                                                                                if(goog.LOCALE == "in") {
+                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_in
+                                                                                }else {
+                                                                                  if(goog.LOCALE == "is") {
+                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_is
+                                                                                  }else {
+                                                                                    if(goog.LOCALE == "it") {
+                                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_it
+                                                                                    }else {
+                                                                                      if(goog.LOCALE == "iw") {
+                                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_iw
+                                                                                      }else {
+                                                                                        if(goog.LOCALE == "ja") {
+                                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ja
+                                                                                        }else {
+                                                                                          if(goog.LOCALE == "kn") {
+                                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_kn
+                                                                                          }else {
+                                                                                            if(goog.LOCALE == "ko") {
+                                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ko
+                                                                                            }else {
+                                                                                              if(goog.LOCALE == "ln") {
+                                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ln
+                                                                                              }else {
+                                                                                                if(goog.LOCALE == "lt") {
+                                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_lt
+                                                                                                }else {
+                                                                                                  if(goog.LOCALE == "lv") {
+                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_lv
+                                                                                                  }else {
+                                                                                                    if(goog.LOCALE == "ml") {
+                                                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ml
+                                                                                                    }else {
+                                                                                                      if(goog.LOCALE == "mr") {
+                                                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_mr
+                                                                                                      }else {
+                                                                                                        if(goog.LOCALE == "ms") {
+                                                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ms
+                                                                                                        }else {
+                                                                                                          if(goog.LOCALE == "mt") {
+                                                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_mt
+                                                                                                          }else {
+                                                                                                            if(goog.LOCALE == "nl") {
+                                                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_nl
+                                                                                                            }else {
+                                                                                                              if(goog.LOCALE == "no") {
+                                                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_no
+                                                                                                              }else {
+                                                                                                                if(goog.LOCALE == "or") {
+                                                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_or
+                                                                                                                }else {
+                                                                                                                  if(goog.LOCALE == "pl") {
+                                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_pl
+                                                                                                                  }else {
+                                                                                                                    if(goog.LOCALE == "pt") {
+                                                                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_pt
+                                                                                                                    }else {
+                                                                                                                      if(goog.LOCALE == "pt_BR" || goog.LOCALE == "pt-BR") {
+                                                                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_pt
+                                                                                                                      }else {
+                                                                                                                        if(goog.LOCALE == "pt_PT" || goog.LOCALE == "pt-PT") {
+                                                                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_pt_PT
+                                                                                                                        }else {
+                                                                                                                          if(goog.LOCALE == "ro") {
+                                                                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ro
+                                                                                                                          }else {
+                                                                                                                            if(goog.LOCALE == "ru") {
+                                                                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ru
+                                                                                                                            }else {
+                                                                                                                              if(goog.LOCALE == "sk") {
+                                                                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sk
+                                                                                                                              }else {
+                                                                                                                                if(goog.LOCALE == "sl") {
+                                                                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sl
+                                                                                                                                }else {
+                                                                                                                                  if(goog.LOCALE == "sq") {
+                                                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sq
+                                                                                                                                  }else {
+                                                                                                                                    if(goog.LOCALE == "sr") {
+                                                                                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sr
+                                                                                                                                    }else {
+                                                                                                                                      if(goog.LOCALE == "sv") {
+                                                                                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sv
+                                                                                                                                      }else {
+                                                                                                                                        if(goog.LOCALE == "sw") {
+                                                                                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_sw
+                                                                                                                                        }else {
+                                                                                                                                          if(goog.LOCALE == "ta") {
+                                                                                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ta
+                                                                                                                                          }else {
+                                                                                                                                            if(goog.LOCALE == "te") {
+                                                                                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_te
+                                                                                                                                            }else {
+                                                                                                                                              if(goog.LOCALE == "th") {
+                                                                                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_th
+                                                                                                                                              }else {
+                                                                                                                                                if(goog.LOCALE == "tl") {
+                                                                                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_tl
+                                                                                                                                                }else {
+                                                                                                                                                  if(goog.LOCALE == "tr") {
+                                                                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_tr
+                                                                                                                                                  }else {
+                                                                                                                                                    if(goog.LOCALE == "uk") {
+                                                                                                                                                      goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_uk
+                                                                                                                                                    }else {
+                                                                                                                                                      if(goog.LOCALE == "ur") {
+                                                                                                                                                        goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_ur
+                                                                                                                                                      }else {
+                                                                                                                                                        if(goog.LOCALE == "vi") {
+                                                                                                                                                          goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_vi
+                                                                                                                                                        }else {
+                                                                                                                                                          if(goog.LOCALE == "zh") {
+                                                                                                                                                            goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_zh
+                                                                                                                                                          }else {
+                                                                                                                                                            if(goog.LOCALE == "zh_CN" || goog.LOCALE == "zh-CN") {
+                                                                                                                                                              goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_zh
+                                                                                                                                                            }else {
+                                                                                                                                                              if(goog.LOCALE == "zh_HK" || goog.LOCALE == "zh-HK") {
+                                                                                                                                                                goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_zh_HK
+                                                                                                                                                              }else {
+                                                                                                                                                                if(goog.LOCALE == "zh_TW" || goog.LOCALE == "zh-TW") {
+                                                                                                                                                                  goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_zh_TW
+                                                                                                                                                                }else {
+                                                                                                                                                                  if(goog.LOCALE == "zu") {
+                                                                                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_zu
+                                                                                                                                                                  }else {
+                                                                                                                                                                    goog.i18n.DateTimeSymbols = goog.i18n.DateTimeSymbols_en
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+;goog.provide("goog.date");
+goog.provide("goog.date.Date");
+goog.provide("goog.date.DateTime");
+goog.provide("goog.date.Interval");
+goog.provide("goog.date.month");
+goog.provide("goog.date.weekDay");
+goog.require("goog.asserts");
+goog.require("goog.date.DateLike");
+goog.require("goog.i18n.DateTimeSymbols");
+goog.require("goog.string");
+goog.date.weekDay = {MON:0, TUE:1, WED:2, THU:3, FRI:4, SAT:5, SUN:6};
+goog.date.month = {JAN:0, FEB:1, MAR:2, APR:3, MAY:4, JUN:5, JUL:6, AUG:7, SEP:8, OCT:9, NOV:10, DEC:11};
+goog.date.formatMonthAndYear = function(monthName, yearNum) {
+  var MSG_MONTH_AND_YEAR = goog.getMsg("{$monthName} {$yearNum}", {"monthName":monthName, "yearNum":yearNum});
+  return MSG_MONTH_AND_YEAR
+};
+goog.date.splitDateStringRegex_ = new RegExp("^(\\d{4})(?:(?:-?(\\d{2})(?:-?(\\d{2}))?)|" + "(?:-?(\\d{3}))|(?:-?W(\\d{2})(?:-?([1-7]))?))?$");
+goog.date.splitTimeStringRegex_ = /^(\d{2})(?::?(\d{2})(?::?(\d{2})(\.\d+)?)?)?$/;
+goog.date.splitTimezoneStringRegex_ = /Z|(?:([-+])(\d{2})(?::?(\d{2}))?)$/;
+goog.date.splitDurationRegex_ = new RegExp("^(-)?P(?:(\\d+)Y)?(?:(\\d+)M)?(?:(\\d+)D)?" + "(T(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?)?$");
+goog.date.isLeapYear = function(year) {
+  return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
+};
+goog.date.isLongIsoYear = function(year) {
+  var n = 5 * year + 12 - 4 * (Math.floor(year / 100) - Math.floor(year / 400));
+  n += Math.floor((year - 100) / 400) - Math.floor((year - 102) / 400);
+  n += Math.floor((year - 200) / 400) - Math.floor((year - 199) / 400);
+  return n % 28 < 5
+};
+goog.date.getNumberOfDaysInMonth = function(year, month) {
+  switch(month) {
+    case goog.date.month.FEB:
+      return goog.date.isLeapYear(year) ? 29 : 28;
+    case goog.date.month.JUN:
+    ;
+    case goog.date.month.SEP:
+    ;
+    case goog.date.month.NOV:
+    ;
+    case goog.date.month.APR:
+      return 30
+  }
+  return 31
+};
+goog.date.isSameDay = function(date, opt_now) {
+  var now = opt_now || new Date(goog.now());
+  return date.getDate() == now.getDate() && goog.date.isSameMonth(date, now)
+};
+goog.date.isSameMonth = function(date, opt_now) {
+  var now = opt_now || new Date(goog.now());
+  return date.getMonth() == now.getMonth() && goog.date.isSameYear(date, now)
+};
+goog.date.isSameYear = function(date, opt_now) {
+  var now = opt_now || new Date(goog.now());
+  return date.getFullYear() == now.getFullYear()
+};
+goog.date.getWeekNumber = function(year, month, date, opt_weekDay, opt_firstDayOfWeek) {
+  var d = new Date(year, month, date);
+  var cutoff = opt_weekDay || goog.date.weekDay.THU;
+  var firstday = opt_firstDayOfWeek || goog.date.weekDay.MON;
+  var ONE_DAY = 24 * 60 * 60 * 1E3;
+  var isoday = (d.getDay() + 6) % 7;
+  var daypos = (isoday - firstday + 7) % 7;
+  var cutoffpos = (cutoff - firstday + 7) % 7;
+  var cutoffSameWeek = d.valueOf() + (cutoffpos - daypos) * ONE_DAY;
+  var jan1 = (new Date((new Date(cutoffSameWeek)).getFullYear(), 0, 1)).valueOf();
+  return Math.floor(Math.round((cutoffSameWeek - jan1) / ONE_DAY) / 7) + 1
+};
+goog.date.fromIsoString = function(formatted) {
+  var ret = new goog.date.DateTime(2E3);
+  return goog.date.setIso8601DateTime(ret, formatted) ? ret : null
+};
+goog.date.setIso8601DateTime = function(dateTime, formatted) {
+  formatted = goog.string.trim(formatted);
+  var delim = formatted.indexOf("T") == -1 ? " " : "T";
+  var parts = formatted.split(delim);
+  return goog.date.setIso8601DateOnly_(dateTime, parts[0]) && (parts.length < 2 || goog.date.setIso8601TimeOnly_(dateTime, parts[1]))
+};
+goog.date.setIso8601DateOnly_ = function(d, formatted) {
+  var parts = formatted.match(goog.date.splitDateStringRegex_);
+  if(!parts) {
+    return false
+  }
+  var year = Number(parts[1]);
+  var month = Number(parts[2]);
+  var date = Number(parts[3]);
+  var dayOfYear = Number(parts[4]);
+  var week = Number(parts[5]);
+  var dayOfWeek = Number(parts[6]) || 1;
+  d.setFullYear(year);
+  if(dayOfYear) {
+    d.setDate(1);
+    d.setMonth(0);
+    var offset = dayOfYear - 1;
+    d.add(new goog.date.Interval(goog.date.Interval.DAYS, offset))
+  }else {
+    if(week) {
+      goog.date.setDateFromIso8601Week_(d, week, dayOfWeek)
+    }else {
+      if(month) {
+        d.setDate(1);
+        d.setMonth(month - 1)
+      }
+      if(date) {
+        d.setDate(date)
+      }
+    }
+  }
+  return true
+};
+goog.date.setDateFromIso8601Week_ = function(d, week, dayOfWeek) {
+  d.setMonth(0);
+  d.setDate(1);
+  var jsDay = d.getDay();
+  var jan1WeekDay = jsDay || 7;
+  var THURSDAY = 4;
+  if(jan1WeekDay <= THURSDAY) {
+    var startDelta = 1 - jan1WeekDay
+  }else {
+    startDelta = 8 - jan1WeekDay
+  }
+  var absoluteDays = Number(dayOfWeek) + 7 * (Number(week) - 1);
+  var delta = startDelta + absoluteDays - 1;
+  var interval = new goog.date.Interval(goog.date.Interval.DAYS, delta);
+  d.add(interval)
+};
+goog.date.setIso8601TimeOnly_ = function(d, formatted) {
+  var parts = formatted.match(goog.date.splitTimezoneStringRegex_);
+  var offset = 0;
+  if(parts) {
+    if(parts[0] != "Z") {
+      offset = parts[2] * 60 + Number(parts[3]);
+      offset *= parts[1] == "-" ? 1 : -1
+    }
+    offset -= d.getTimezoneOffset();
+    formatted = formatted.substr(0, formatted.length - parts[0].length)
+  }
+  parts = formatted.match(goog.date.splitTimeStringRegex_);
+  if(!parts) {
+    return false
+  }
+  d.setHours(Number(parts[1]));
+  d.setMinutes(Number(parts[2]) || 0);
+  d.setSeconds(Number(parts[3]) || 0);
+  d.setMilliseconds(parts[4] ? parts[4] * 1E3 : 0);
+  if(offset != 0) {
+    d.setTime(d.getTime() + offset * 6E4)
+  }
+  return true
+};
+goog.date.Interval = function(opt_years, opt_months, opt_days, opt_hours, opt_minutes, opt_seconds) {
+  if(goog.isString(opt_years)) {
+    var type = opt_years;
+    var interval = opt_months;
+    this.years = type == goog.date.Interval.YEARS ? interval : 0;
+    this.months = type == goog.date.Interval.MONTHS ? interval : 0;
+    this.days = type == goog.date.Interval.DAYS ? interval : 0;
+    this.hours = type == goog.date.Interval.HOURS ? interval : 0;
+    this.minutes = type == goog.date.Interval.MINUTES ? interval : 0;
+    this.seconds = type == goog.date.Interval.SECONDS ? interval : 0
+  }else {
+    this.years = opt_years || 0;
+    this.months = opt_months || 0;
+    this.days = opt_days || 0;
+    this.hours = opt_hours || 0;
+    this.minutes = opt_minutes || 0;
+    this.seconds = opt_seconds || 0
+  }
+};
+goog.date.Interval.fromIsoString = function(duration) {
+  var parts = duration.match(goog.date.splitDurationRegex_);
+  if(!parts) {
+    return null
+  }
+  var timeEmpty = !(parts[6] || parts[7] || parts[8]);
+  var dateTimeEmpty = timeEmpty && !(parts[2] || parts[3] || parts[4]);
+  if(dateTimeEmpty || timeEmpty && parts[5]) {
+    return null
+  }
+  var negative = parts[1];
+  var years = parseInt(parts[2], 10) || 0;
+  var months = parseInt(parts[3], 10) || 0;
+  var days = parseInt(parts[4], 10) || 0;
+  var hours = parseInt(parts[6], 10) || 0;
+  var minutes = parseInt(parts[7], 10) || 0;
+  var seconds = parseFloat(parts[8]) || 0;
+  return negative ? new goog.date.Interval(-years, -months, -days, -hours, -minutes, -seconds) : new goog.date.Interval(years, months, days, hours, minutes, seconds)
+};
+goog.date.Interval.prototype.toIsoString = function(opt_verbose) {
+  var minField = Math.min(this.years, this.months, this.days, this.hours, this.minutes, this.seconds);
+  var maxField = Math.max(this.years, this.months, this.days, this.hours, this.minutes, this.seconds);
+  if(minField < 0 && maxField > 0) {
+    return null
+  }
+  if(!opt_verbose && minField == 0 && maxField == 0) {
+    return"PT0S"
+  }
+  var res = [];
+  if(minField < 0) {
+    res.push("-")
+  }
+  res.push("P");
+  if(this.years || opt_verbose) {
+    res.push(Math.abs(this.years) + "Y")
+  }
+  if(this.months || opt_verbose) {
+    res.push(Math.abs(this.months) + "M")
+  }
+  if(this.days || opt_verbose) {
+    res.push(Math.abs(this.days) + "D")
+  }
+  if(this.hours || this.minutes || this.seconds || opt_verbose) {
+    res.push("T");
+    if(this.hours || opt_verbose) {
+      res.push(Math.abs(this.hours) + "H")
+    }
+    if(this.minutes || opt_verbose) {
+      res.push(Math.abs(this.minutes) + "M")
+    }
+    if(this.seconds || opt_verbose) {
+      res.push(Math.abs(this.seconds) + "S")
+    }
+  }
+  return res.join("")
+};
+goog.date.Interval.prototype.equals = function(other) {
+  return other.years == this.years && other.months == this.months && other.days == this.days && other.hours == this.hours && other.minutes == this.minutes && other.seconds == this.seconds
+};
+goog.date.Interval.prototype.clone = function() {
+  return new goog.date.Interval(this.years, this.months, this.days, this.hours, this.minutes, this.seconds)
+};
+goog.date.Interval.YEARS = "y";
+goog.date.Interval.MONTHS = "m";
+goog.date.Interval.DAYS = "d";
+goog.date.Interval.HOURS = "h";
+goog.date.Interval.MINUTES = "n";
+goog.date.Interval.SECONDS = "s";
+goog.date.Interval.prototype.isZero = function() {
+  return this.years == 0 && this.months == 0 && this.days == 0 && this.hours == 0 && this.minutes == 0 && this.seconds == 0
+};
+goog.date.Interval.prototype.getInverse = function() {
+  return this.times(-1)
+};
+goog.date.Interval.prototype.times = function(n) {
+  return new goog.date.Interval(this.years * n, this.months * n, this.days * n, this.hours * n, this.minutes * n, this.seconds * n)
+};
+goog.date.Interval.prototype.getTotalSeconds = function() {
+  goog.asserts.assert(this.years == 0 && this.months == 0);
+  return((this.days * 24 + this.hours) * 60 + this.minutes) * 60 + this.seconds
+};
+goog.date.Interval.prototype.add = function(interval) {
+  this.years += interval.years;
+  this.months += interval.months;
+  this.days += interval.days;
+  this.hours += interval.hours;
+  this.minutes += interval.minutes;
+  this.seconds += interval.seconds
+};
+goog.date.Date = function(opt_year, opt_month, opt_date) {
+  if(goog.isNumber(opt_year)) {
+    this.date_ = new Date(opt_year, opt_month || 0, opt_date || 1);
+    this.maybeFixDst_(opt_date || 1)
+  }else {
+    if(goog.isObject(opt_year)) {
+      this.date_ = new Date(opt_year.getFullYear(), opt_year.getMonth(), opt_year.getDate());
+      this.maybeFixDst_(opt_year.getDate())
+    }else {
+      this.date_ = new Date(goog.now());
+      this.date_.setHours(0);
+      this.date_.setMinutes(0);
+      this.date_.setSeconds(0);
+      this.date_.setMilliseconds(0)
+    }
+  }
+};
+goog.date.Date.prototype.firstDayOfWeek_ = goog.i18n.DateTimeSymbols.FIRSTDAYOFWEEK;
+goog.date.Date.prototype.firstWeekCutOffDay_ = goog.i18n.DateTimeSymbols.FIRSTWEEKCUTOFFDAY;
+goog.date.Date.prototype.clone = function() {
+  var date = new goog.date.Date(this.date_);
+  date.firstDayOfWeek_ = this.firstDayOfWeek_;
+  date.firstWeekCutOffDay_ = this.firstWeekCutOffDay_;
+  return date
+};
+goog.date.Date.prototype.getFullYear = function() {
+  return this.date_.getFullYear()
+};
+goog.date.Date.prototype.getYear = function() {
+  return this.getFullYear()
+};
+goog.date.Date.prototype.getMonth = function() {
+  return this.date_.getMonth()
+};
+goog.date.Date.prototype.getDate = function() {
+  return this.date_.getDate()
+};
+goog.date.Date.prototype.getTime = function() {
+  return this.date_.getTime()
+};
+goog.date.Date.prototype.getDay = function() {
+  return this.date_.getDay()
+};
+goog.date.Date.prototype.getIsoWeekday = function() {
+  return(this.getDay() + 6) % 7
+};
+goog.date.Date.prototype.getWeekday = function() {
+  return(this.getIsoWeekday() - this.firstDayOfWeek_ + 7) % 7
+};
+goog.date.Date.prototype.getUTCFullYear = function() {
+  return this.date_.getUTCFullYear()
+};
+goog.date.Date.prototype.getUTCMonth = function() {
+  return this.date_.getUTCMonth()
+};
+goog.date.Date.prototype.getUTCDate = function() {
+  return this.date_.getUTCDate()
+};
+goog.date.Date.prototype.getUTCDay = function() {
+  return this.date_.getDay()
+};
+goog.date.Date.prototype.getUTCHours = function() {
+  return this.date_.getUTCHours()
+};
+goog.date.Date.prototype.getUTCMinutes = function() {
+  return this.date_.getUTCMinutes()
+};
+goog.date.Date.prototype.getUTCIsoWeekday = function() {
+  return(this.date_.getUTCDay() + 6) % 7
+};
+goog.date.Date.prototype.getUTCWeekday = function() {
+  return(this.getUTCIsoWeekday() - this.firstDayOfWeek_ + 7) % 7
+};
+goog.date.Date.prototype.getFirstDayOfWeek = function() {
+  return this.firstDayOfWeek_
+};
+goog.date.Date.prototype.getFirstWeekCutOffDay = function() {
+  return this.firstWeekCutOffDay_
+};
+goog.date.Date.prototype.getNumberOfDaysInMonth = function() {
+  return goog.date.getNumberOfDaysInMonth(this.getFullYear(), this.getMonth())
+};
+goog.date.Date.prototype.getWeekNumber = function() {
+  return goog.date.getWeekNumber(this.getFullYear(), this.getMonth(), this.getDate(), this.firstWeekCutOffDay_, this.firstDayOfWeek_)
+};
+goog.date.Date.prototype.getDayOfYear = function() {
+  var dayOfYear = this.getDate();
+  var year = this.getFullYear();
+  for(var m = this.getMonth() - 1;m >= 0;m--) {
+    dayOfYear += goog.date.getNumberOfDaysInMonth(year, m)
+  }
+  return dayOfYear
+};
+goog.date.Date.prototype.getTimezoneOffset = function() {
+  return this.date_.getTimezoneOffset()
+};
+goog.date.Date.prototype.getTimezoneOffsetString = function() {
+  var tz;
+  var offset = this.getTimezoneOffset();
+  if(offset == 0) {
+    tz = "Z"
+  }else {
+    var n = Math.abs(offset) / 60;
+    var h = Math.floor(n);
+    var m = (n - h) * 60;
+    tz = (offset > 0 ? "-" : "+") + goog.string.padNumber(h, 2) + ":" + goog.string.padNumber(m, 2)
+  }
+  return tz
+};
+goog.date.Date.prototype.set = function(date) {
+  this.date_ = new Date(date.getFullYear(), date.getMonth(), date.getDate())
+};
+goog.date.Date.prototype.setFullYear = function(year) {
+  this.date_.setFullYear(year)
+};
+goog.date.Date.prototype.setYear = function(year) {
+  this.setFullYear(year)
+};
+goog.date.Date.prototype.setMonth = function(month) {
+  this.date_.setMonth(month)
+};
+goog.date.Date.prototype.setDate = function(date) {
+  this.date_.setDate(date)
+};
+goog.date.Date.prototype.setTime = function(ms) {
+  this.date_.setTime(ms)
+};
+goog.date.Date.prototype.setUTCFullYear = function(year) {
+  this.date_.setUTCFullYear(year)
+};
+goog.date.Date.prototype.setUTCMonth = function(month) {
+  this.date_.setUTCMonth(month)
+};
+goog.date.Date.prototype.setUTCDate = function(date) {
+  this.date_.setUTCDate(date)
+};
+goog.date.Date.prototype.setFirstDayOfWeek = function(day) {
+  this.firstDayOfWeek_ = day
+};
+goog.date.Date.prototype.setFirstWeekCutOffDay = function(day) {
+  this.firstWeekCutOffDay_ = day
+};
+goog.date.Date.prototype.add = function(interval) {
+  if(interval.years || interval.months) {
+    var month = this.getMonth() + interval.months + interval.years * 12;
+    var year = this.getYear() + Math.floor(month / 12);
+    month %= 12;
+    if(month < 0) {
+      month += 12
+    }
+    var daysInTargetMonth = goog.date.getNumberOfDaysInMonth(year, month);
+    var date = Math.min(daysInTargetMonth, this.getDate());
+    this.setDate(1);
+    this.setFullYear(year);
+    this.setMonth(month);
+    this.setDate(date)
+  }
+  if(interval.days) {
+    var noon = new Date(this.getYear(), this.getMonth(), this.getDate(), 12);
+    var result = new Date(noon.getTime() + interval.days * 864E5);
+    this.setDate(1);
+    this.setFullYear(result.getFullYear());
+    this.setMonth(result.getMonth());
+    this.setDate(result.getDate());
+    this.maybeFixDst_(result.getDate())
+  }
+};
+goog.date.Date.prototype.toIsoString = function(opt_verbose, opt_tz) {
+  var str = [this.getFullYear(), goog.string.padNumber(this.getMonth() + 1, 2), goog.string.padNumber(this.getDate(), 2)];
+  return str.join(opt_verbose ? "-" : "") + (opt_tz ? this.getTimezoneOffsetString() : "")
+};
+goog.date.Date.prototype.toUTCIsoString = function(opt_verbose, opt_tz) {
+  var str = [this.getUTCFullYear(), goog.string.padNumber(this.getUTCMonth() + 1, 2), goog.string.padNumber(this.getUTCDate(), 2)];
+  return str.join(opt_verbose ? "-" : "") + (opt_tz ? "Z" : "")
+};
+goog.date.Date.prototype.equals = function(other) {
+  return this.getYear() == other.getYear() && this.getMonth() == other.getMonth() && this.getDate() == other.getDate()
+};
+goog.date.Date.prototype.toString = function() {
+  return this.toIsoString()
+};
+goog.date.Date.prototype.maybeFixDst_ = function(expected) {
+  if(this.getDate() != expected) {
+    var dir = this.getDate() < expected ? 1 : -1;
+    this.date_.setUTCHours(this.date_.getUTCHours() + dir)
+  }
+};
+goog.date.Date.prototype.valueOf = function() {
+  return this.date_.valueOf()
+};
+goog.date.Date.compare = function(date1, date2) {
+  return date1.getTime() - date2.getTime()
+};
+goog.date.DateTime = function(opt_year, opt_month, opt_date, opt_hours, opt_minutes, opt_seconds, opt_milliseconds) {
+  if(goog.isNumber(opt_year)) {
+    this.date_ = new Date(opt_year, opt_month || 0, opt_date || 1, opt_hours || 0, opt_minutes || 0, opt_seconds || 0, opt_milliseconds || 0)
+  }else {
+    this.date_ = new Date(opt_year ? opt_year.getTime() : goog.now())
+  }
+};
+goog.inherits(goog.date.DateTime, goog.date.Date);
+goog.date.DateTime.fromRfc822String = function(formatted) {
+  var date = new Date(formatted);
+  return!isNaN(date.getTime()) ? new goog.date.DateTime(date) : null
+};
+goog.date.DateTime.prototype.getHours = function() {
+  return this.date_.getHours()
+};
+goog.date.DateTime.prototype.getMinutes = function() {
+  return this.date_.getMinutes()
+};
+goog.date.DateTime.prototype.getSeconds = function() {
+  return this.date_.getSeconds()
+};
+goog.date.DateTime.prototype.getMilliseconds = function() {
+  return this.date_.getMilliseconds()
+};
+goog.date.DateTime.prototype.getUTCDay = function() {
+  return this.date_.getUTCDay()
+};
+goog.date.DateTime.prototype.getUTCHours = function() {
+  return this.date_.getUTCHours()
+};
+goog.date.DateTime.prototype.getUTCMinutes = function() {
+  return this.date_.getUTCMinutes()
+};
+goog.date.DateTime.prototype.getUTCSeconds = function() {
+  return this.date_.getUTCSeconds()
+};
+goog.date.DateTime.prototype.getUTCMilliseconds = function() {
+  return this.date_.getUTCMilliseconds()
+};
+goog.date.DateTime.prototype.setHours = function(hours) {
+  this.date_.setHours(hours)
+};
+goog.date.DateTime.prototype.setMinutes = function(minutes) {
+  this.date_.setMinutes(minutes)
+};
+goog.date.DateTime.prototype.setSeconds = function(seconds) {
+  this.date_.setSeconds(seconds)
+};
+goog.date.DateTime.prototype.setMilliseconds = function(ms) {
+  this.date_.setMilliseconds(ms)
+};
+goog.date.DateTime.prototype.setUTCHours = function(hours) {
+  this.date_.setUTCHours(hours)
+};
+goog.date.DateTime.prototype.setUTCMinutes = function(minutes) {
+  this.date_.setUTCMinutes(minutes)
+};
+goog.date.DateTime.prototype.setUTCSeconds = function(seconds) {
+  this.date_.setUTCSeconds(seconds)
+};
+goog.date.DateTime.prototype.setUTCMilliseconds = function(ms) {
+  this.date_.setUTCMilliseconds(ms)
+};
+goog.date.DateTime.prototype.add = function(interval) {
+  goog.date.Date.prototype.add.call(this, interval);
+  if(interval.hours) {
+    this.setHours(this.date_.getHours() + interval.hours)
+  }
+  if(interval.minutes) {
+    this.setMinutes(this.date_.getMinutes() + interval.minutes)
+  }
+  if(interval.seconds) {
+    this.setSeconds(this.date_.getSeconds() + interval.seconds)
+  }
+};
+goog.date.DateTime.prototype.toIsoString = function(opt_verbose, opt_tz) {
+  var dateString = goog.date.Date.prototype.toIsoString.call(this, opt_verbose);
+  if(opt_verbose) {
+    return dateString + " " + goog.string.padNumber(this.getHours(), 2) + ":" + goog.string.padNumber(this.getMinutes(), 2) + ":" + goog.string.padNumber(this.getSeconds(), 2) + (opt_tz ? this.getTimezoneOffsetString() : "")
+  }
+  return dateString + "T" + goog.string.padNumber(this.getHours(), 2) + goog.string.padNumber(this.getMinutes(), 2) + goog.string.padNumber(this.getSeconds(), 2) + (opt_tz ? this.getTimezoneOffsetString() : "")
+};
+goog.date.DateTime.prototype.toXmlDateTime = function(opt_timezone) {
+  return goog.date.Date.prototype.toIsoString.call(this, true) + "T" + goog.string.padNumber(this.getHours(), 2) + ":" + goog.string.padNumber(this.getMinutes(), 2) + ":" + goog.string.padNumber(this.getSeconds(), 2) + (opt_timezone ? this.getTimezoneOffsetString() : "")
+};
+goog.date.DateTime.prototype.toUTCIsoString = function(opt_verbose, opt_tz) {
+  var dateStr = goog.date.Date.prototype.toUTCIsoString.call(this, opt_verbose);
+  if(opt_verbose) {
+    return dateStr + " " + goog.string.padNumber(this.getUTCHours(), 2) + ":" + goog.string.padNumber(this.getUTCMinutes(), 2) + ":" + goog.string.padNumber(this.getUTCSeconds(), 2) + (opt_tz ? "Z" : "")
+  }
+  return dateStr + "T" + goog.string.padNumber(this.getUTCHours(), 2) + goog.string.padNumber(this.getUTCMinutes(), 2) + goog.string.padNumber(this.getUTCSeconds(), 2) + (opt_tz ? "Z" : "")
+};
+goog.date.DateTime.prototype.equals = function(other) {
+  return this.getTime() == other.getTime()
+};
+goog.date.DateTime.prototype.toString = function() {
+  return this.toIsoString()
+};
+goog.date.DateTime.prototype.toUsTimeString = function(opt_padHours, opt_showAmPm, opt_omitZeroMinutes) {
+  var hours = this.getHours();
+  if(!goog.isDef(opt_showAmPm)) {
+    opt_showAmPm = true
+  }
+  var isPM = hours == 12;
+  if(hours > 12) {
+    hours -= 12;
+    isPM = true
+  }
+  if(hours == 0 && opt_showAmPm) {
+    hours = 12
+  }
+  var label = opt_padHours ? goog.string.padNumber(hours, 2) : String(hours);
+  var minutes = this.getMinutes();
+  if(!opt_omitZeroMinutes || minutes > 0) {
+    label += ":" + goog.string.padNumber(minutes, 2)
+  }
+  if(opt_showAmPm) {
+    var MSG_TIME_AM = goog.getMsg("am");
+    var MSG_TIME_PM = goog.getMsg("pm");
+    label += isPM ? MSG_TIME_PM : MSG_TIME_AM
+  }
+  return label
+};
+goog.date.DateTime.prototype.toIsoTimeString = function(opt_showSeconds) {
+  var hours = this.getHours();
+  var label = goog.string.padNumber(hours, 2) + ":" + goog.string.padNumber(this.getMinutes(), 2);
+  if(!goog.isDef(opt_showSeconds) || opt_showSeconds) {
+    label += ":" + goog.string.padNumber(this.getSeconds(), 2)
+  }
+  return label
+};
+goog.date.DateTime.prototype.clone = function() {
+  var date = new goog.date.DateTime(this.date_);
+  date.setFirstDayOfWeek(this.getFirstDayOfWeek());
+  date.setFirstWeekCutOffDay(this.getFirstWeekCutOffDay());
+  return date
 };
 goog.provide("goog.dom.xml");
 goog.require("goog.dom");
@@ -20356,6 +22004,2310 @@ goog.dom.xml.createMsXmlDocument_ = function() {
     }
   }
   return doc
+};
+goog.provide("goog.net.EventType");
+goog.net.EventType = {COMPLETE:"complete", SUCCESS:"success", ERROR:"error", ABORT:"abort", READY:"ready", READY_STATE_CHANGE:"readystatechange", TIMEOUT:"timeout", INCREMENTAL_DATA:"incrementaldata", PROGRESS:"progress"};
+goog.provide("goog.structs.Collection");
+goog.structs.Collection = function() {
+};
+goog.structs.Collection.prototype.add;
+goog.structs.Collection.prototype.remove;
+goog.structs.Collection.prototype.contains;
+goog.structs.Collection.prototype.getCount;
+goog.provide("goog.structs.Set");
+goog.require("goog.structs");
+goog.require("goog.structs.Collection");
+goog.require("goog.structs.Map");
+goog.structs.Set = function(opt_values) {
+  this.map_ = new goog.structs.Map;
+  if(opt_values) {
+    this.addAll(opt_values)
+  }
+};
+goog.structs.Set.getKey_ = function(val) {
+  var type = typeof val;
+  if(type == "object" && val || type == "function") {
+    return"o" + goog.getUid(val)
+  }else {
+    return type.substr(0, 1) + val
+  }
+};
+goog.structs.Set.prototype.getCount = function() {
+  return this.map_.getCount()
+};
+goog.structs.Set.prototype.add = function(element) {
+  this.map_.set(goog.structs.Set.getKey_(element), element)
+};
+goog.structs.Set.prototype.addAll = function(col) {
+  var values = goog.structs.getValues(col);
+  var l = values.length;
+  for(var i = 0;i < l;i++) {
+    this.add(values[i])
+  }
+};
+goog.structs.Set.prototype.removeAll = function(col) {
+  var values = goog.structs.getValues(col);
+  var l = values.length;
+  for(var i = 0;i < l;i++) {
+    this.remove(values[i])
+  }
+};
+goog.structs.Set.prototype.remove = function(element) {
+  return this.map_.remove(goog.structs.Set.getKey_(element))
+};
+goog.structs.Set.prototype.clear = function() {
+  this.map_.clear()
+};
+goog.structs.Set.prototype.isEmpty = function() {
+  return this.map_.isEmpty()
+};
+goog.structs.Set.prototype.contains = function(element) {
+  return this.map_.containsKey(goog.structs.Set.getKey_(element))
+};
+goog.structs.Set.prototype.containsAll = function(col) {
+  return goog.structs.every(col, this.contains, this)
+};
+goog.structs.Set.prototype.intersection = function(col) {
+  var result = new goog.structs.Set;
+  var values = goog.structs.getValues(col);
+  for(var i = 0;i < values.length;i++) {
+    var value = values[i];
+    if(this.contains(value)) {
+      result.add(value)
+    }
+  }
+  return result
+};
+goog.structs.Set.prototype.difference = function(col) {
+  var result = this.clone();
+  result.removeAll(col);
+  return result
+};
+goog.structs.Set.prototype.getValues = function() {
+  return this.map_.getValues()
+};
+goog.structs.Set.prototype.clone = function() {
+  return new goog.structs.Set(this)
+};
+goog.structs.Set.prototype.equals = function(col) {
+  return this.getCount() == goog.structs.getCount(col) && this.isSubsetOf(col)
+};
+goog.structs.Set.prototype.isSubsetOf = function(col) {
+  var colCount = goog.structs.getCount(col);
+  if(this.getCount() > colCount) {
+    return false
+  }
+  if(!(col instanceof goog.structs.Set) && colCount > 5) {
+    col = new goog.structs.Set(col)
+  }
+  return goog.structs.every(this, function(value) {
+    return goog.structs.contains(col, value)
+  })
+};
+goog.structs.Set.prototype.__iterator__ = function(opt_keys) {
+  return this.map_.__iterator__(false)
+};
+goog.provide("goog.debug");
+goog.require("goog.array");
+goog.require("goog.string");
+goog.require("goog.structs.Set");
+goog.require("goog.userAgent");
+goog.debug.catchErrors = function(logFunc, opt_cancel, opt_target) {
+  var target = opt_target || goog.global;
+  var oldErrorHandler = target.onerror;
+  var retVal = !!opt_cancel;
+  if(goog.userAgent.WEBKIT && !goog.userAgent.isVersion("535.3")) {
+    retVal = !retVal
+  }
+  target.onerror = function(message, url, line) {
+    if(oldErrorHandler) {
+      oldErrorHandler(message, url, line)
+    }
+    logFunc({message:message, fileName:url, line:line});
+    return retVal
+  }
+};
+goog.debug.expose = function(obj, opt_showFn) {
+  if(typeof obj == "undefined") {
+    return"undefined"
+  }
+  if(obj == null) {
+    return"NULL"
+  }
+  var str = [];
+  for(var x in obj) {
+    if(!opt_showFn && goog.isFunction(obj[x])) {
+      continue
+    }
+    var s = x + " = ";
+    try {
+      s += obj[x]
+    }catch(e) {
+      s += "*** " + e + " ***"
+    }
+    str.push(s)
+  }
+  return str.join("\n")
+};
+goog.debug.deepExpose = function(obj, opt_showFn) {
+  var previous = new goog.structs.Set;
+  var str = [];
+  var helper = function(obj, space) {
+    var nestspace = space + "  ";
+    var indentMultiline = function(str) {
+      return str.replace(/\n/g, "\n" + space)
+    };
+    try {
+      if(!goog.isDef(obj)) {
+        str.push("undefined")
+      }else {
+        if(goog.isNull(obj)) {
+          str.push("NULL")
+        }else {
+          if(goog.isString(obj)) {
+            str.push('"' + indentMultiline(obj) + '"')
+          }else {
+            if(goog.isFunction(obj)) {
+              str.push(indentMultiline(String(obj)))
+            }else {
+              if(goog.isObject(obj)) {
+                if(previous.contains(obj)) {
+                  str.push("*** reference loop detected ***")
+                }else {
+                  previous.add(obj);
+                  str.push("{");
+                  for(var x in obj) {
+                    if(!opt_showFn && goog.isFunction(obj[x])) {
+                      continue
+                    }
+                    str.push("\n");
+                    str.push(nestspace);
+                    str.push(x + " = ");
+                    helper(obj[x], nestspace)
+                  }
+                  str.push("\n" + space + "}")
+                }
+              }else {
+                str.push(obj)
+              }
+            }
+          }
+        }
+      }
+    }catch(e) {
+      str.push("*** " + e + " ***")
+    }
+  };
+  helper(obj, "");
+  return str.join("")
+};
+goog.debug.exposeArray = function(arr) {
+  var str = [];
+  for(var i = 0;i < arr.length;i++) {
+    if(goog.isArray(arr[i])) {
+      str.push(goog.debug.exposeArray(arr[i]))
+    }else {
+      str.push(arr[i])
+    }
+  }
+  return"[ " + str.join(", ") + " ]"
+};
+goog.debug.exposeException = function(err, opt_fn) {
+  try {
+    var e = goog.debug.normalizeErrorObject(err);
+    var error = "Message: " + goog.string.htmlEscape(e.message) + '\nUrl: <a href="view-source:' + e.fileName + '" target="_new">' + e.fileName + "</a>\nLine: " + e.lineNumber + "\n\nBrowser stack:\n" + goog.string.htmlEscape(e.stack + "-> ") + "[end]\n\nJS stack traversal:\n" + goog.string.htmlEscape(goog.debug.getStacktrace(opt_fn) + "-> ");
+    return error
+  }catch(e2) {
+    return"Exception trying to expose exception! You win, we lose. " + e2
+  }
+};
+goog.debug.normalizeErrorObject = function(err) {
+  var href = goog.getObjectByName("window.location.href");
+  if(goog.isString(err)) {
+    return{"message":err, "name":"Unknown error", "lineNumber":"Not available", "fileName":href, "stack":"Not available"}
+  }
+  var lineNumber, fileName;
+  var threwError = false;
+  try {
+    lineNumber = err.lineNumber || err.line || "Not available"
+  }catch(e) {
+    lineNumber = "Not available";
+    threwError = true
+  }
+  try {
+    fileName = err.fileName || err.filename || err.sourceURL || href
+  }catch(e) {
+    fileName = "Not available";
+    threwError = true
+  }
+  if(threwError || !err.lineNumber || !err.fileName || !err.stack) {
+    return{"message":err.message, "name":err.name, "lineNumber":lineNumber, "fileName":fileName, "stack":err.stack || "Not available"}
+  }
+  return err
+};
+goog.debug.enhanceError = function(err, opt_message) {
+  var error = typeof err == "string" ? Error(err) : err;
+  if(!error.stack) {
+    error.stack = goog.debug.getStacktrace(arguments.callee.caller)
+  }
+  if(opt_message) {
+    var x = 0;
+    while(error["message" + x]) {
+      ++x
+    }
+    error["message" + x] = String(opt_message)
+  }
+  return error
+};
+goog.debug.getStacktraceSimple = function(opt_depth) {
+  var sb = [];
+  var fn = arguments.callee.caller;
+  var depth = 0;
+  while(fn && (!opt_depth || depth < opt_depth)) {
+    sb.push(goog.debug.getFunctionName(fn));
+    sb.push("()\n");
+    try {
+      fn = fn.caller
+    }catch(e) {
+      sb.push("[exception trying to get caller]\n");
+      break
+    }
+    depth++;
+    if(depth >= goog.debug.MAX_STACK_DEPTH) {
+      sb.push("[...long stack...]");
+      break
+    }
+  }
+  if(opt_depth && depth >= opt_depth) {
+    sb.push("[...reached max depth limit...]")
+  }else {
+    sb.push("[end]")
+  }
+  return sb.join("")
+};
+goog.debug.MAX_STACK_DEPTH = 50;
+goog.debug.getStacktrace = function(opt_fn) {
+  return goog.debug.getStacktraceHelper_(opt_fn || arguments.callee.caller, [])
+};
+goog.debug.getStacktraceHelper_ = function(fn, visited) {
+  var sb = [];
+  if(goog.array.contains(visited, fn)) {
+    sb.push("[...circular reference...]")
+  }else {
+    if(fn && visited.length < goog.debug.MAX_STACK_DEPTH) {
+      sb.push(goog.debug.getFunctionName(fn) + "(");
+      var args = fn.arguments;
+      for(var i = 0;i < args.length;i++) {
+        if(i > 0) {
+          sb.push(", ")
+        }
+        var argDesc;
+        var arg = args[i];
+        switch(typeof arg) {
+          case "object":
+            argDesc = arg ? "object" : "null";
+            break;
+          case "string":
+            argDesc = arg;
+            break;
+          case "number":
+            argDesc = String(arg);
+            break;
+          case "boolean":
+            argDesc = arg ? "true" : "false";
+            break;
+          case "function":
+            argDesc = goog.debug.getFunctionName(arg);
+            argDesc = argDesc ? argDesc : "[fn]";
+            break;
+          case "undefined":
+          ;
+          default:
+            argDesc = typeof arg;
+            break
+        }
+        if(argDesc.length > 40) {
+          argDesc = argDesc.substr(0, 40) + "..."
+        }
+        sb.push(argDesc)
+      }
+      visited.push(fn);
+      sb.push(")\n");
+      try {
+        sb.push(goog.debug.getStacktraceHelper_(fn.caller, visited))
+      }catch(e) {
+        sb.push("[exception trying to get caller]\n")
+      }
+    }else {
+      if(fn) {
+        sb.push("[...long stack...]")
+      }else {
+        sb.push("[end]")
+      }
+    }
+  }
+  return sb.join("")
+};
+goog.debug.setFunctionResolver = function(resolver) {
+  goog.debug.fnNameResolver_ = resolver
+};
+goog.debug.getFunctionName = function(fn) {
+  if(goog.debug.fnNameCache_[fn]) {
+    return goog.debug.fnNameCache_[fn]
+  }
+  if(goog.debug.fnNameResolver_) {
+    var name = goog.debug.fnNameResolver_(fn);
+    if(name) {
+      goog.debug.fnNameCache_[fn] = name;
+      return name
+    }
+  }
+  var functionSource = String(fn);
+  if(!goog.debug.fnNameCache_[functionSource]) {
+    var matches = /function ([^\(]+)/.exec(functionSource);
+    if(matches) {
+      var method = matches[1];
+      goog.debug.fnNameCache_[functionSource] = method
+    }else {
+      goog.debug.fnNameCache_[functionSource] = "[Anonymous]"
+    }
+  }
+  return goog.debug.fnNameCache_[functionSource]
+};
+goog.debug.makeWhitespaceVisible = function(string) {
+  return string.replace(/ /g, "[_]").replace(/\f/g, "[f]").replace(/\n/g, "[n]\n").replace(/\r/g, "[r]").replace(/\t/g, "[t]")
+};
+goog.debug.fnNameCache_ = {};
+goog.debug.fnNameResolver_;
+goog.provide("goog.debug.LogRecord");
+goog.debug.LogRecord = function(level, msg, loggerName, opt_time, opt_sequenceNumber) {
+  this.reset(level, msg, loggerName, opt_time, opt_sequenceNumber)
+};
+goog.debug.LogRecord.prototype.time_;
+goog.debug.LogRecord.prototype.level_;
+goog.debug.LogRecord.prototype.msg_;
+goog.debug.LogRecord.prototype.loggerName_;
+goog.debug.LogRecord.prototype.sequenceNumber_ = 0;
+goog.debug.LogRecord.prototype.exception_ = null;
+goog.debug.LogRecord.prototype.exceptionText_ = null;
+goog.debug.LogRecord.ENABLE_SEQUENCE_NUMBERS = true;
+goog.debug.LogRecord.nextSequenceNumber_ = 0;
+goog.debug.LogRecord.prototype.reset = function(level, msg, loggerName, opt_time, opt_sequenceNumber) {
+  if(goog.debug.LogRecord.ENABLE_SEQUENCE_NUMBERS) {
+    this.sequenceNumber_ = typeof opt_sequenceNumber == "number" ? opt_sequenceNumber : goog.debug.LogRecord.nextSequenceNumber_++
+  }
+  this.time_ = opt_time || goog.now();
+  this.level_ = level;
+  this.msg_ = msg;
+  this.loggerName_ = loggerName;
+  delete this.exception_;
+  delete this.exceptionText_
+};
+goog.debug.LogRecord.prototype.getLoggerName = function() {
+  return this.loggerName_
+};
+goog.debug.LogRecord.prototype.getException = function() {
+  return this.exception_
+};
+goog.debug.LogRecord.prototype.setException = function(exception) {
+  this.exception_ = exception
+};
+goog.debug.LogRecord.prototype.getExceptionText = function() {
+  return this.exceptionText_
+};
+goog.debug.LogRecord.prototype.setExceptionText = function(text) {
+  this.exceptionText_ = text
+};
+goog.debug.LogRecord.prototype.setLoggerName = function(loggerName) {
+  this.loggerName_ = loggerName
+};
+goog.debug.LogRecord.prototype.getLevel = function() {
+  return this.level_
+};
+goog.debug.LogRecord.prototype.setLevel = function(level) {
+  this.level_ = level
+};
+goog.debug.LogRecord.prototype.getMessage = function() {
+  return this.msg_
+};
+goog.debug.LogRecord.prototype.setMessage = function(msg) {
+  this.msg_ = msg
+};
+goog.debug.LogRecord.prototype.getMillis = function() {
+  return this.time_
+};
+goog.debug.LogRecord.prototype.setMillis = function(time) {
+  this.time_ = time
+};
+goog.debug.LogRecord.prototype.getSequenceNumber = function() {
+  return this.sequenceNumber_
+};
+goog.provide("goog.debug.LogBuffer");
+goog.require("goog.asserts");
+goog.require("goog.debug.LogRecord");
+goog.debug.LogBuffer = function() {
+  goog.asserts.assert(goog.debug.LogBuffer.isBufferingEnabled(), "Cannot use goog.debug.LogBuffer without defining " + "goog.debug.LogBuffer.CAPACITY.");
+  this.clear()
+};
+goog.debug.LogBuffer.getInstance = function() {
+  if(!goog.debug.LogBuffer.instance_) {
+    goog.debug.LogBuffer.instance_ = new goog.debug.LogBuffer
+  }
+  return goog.debug.LogBuffer.instance_
+};
+goog.debug.LogBuffer.CAPACITY = 0;
+goog.debug.LogBuffer.prototype.buffer_;
+goog.debug.LogBuffer.prototype.curIndex_;
+goog.debug.LogBuffer.prototype.isFull_;
+goog.debug.LogBuffer.prototype.addRecord = function(level, msg, loggerName) {
+  var curIndex = (this.curIndex_ + 1) % goog.debug.LogBuffer.CAPACITY;
+  this.curIndex_ = curIndex;
+  if(this.isFull_) {
+    var ret = this.buffer_[curIndex];
+    ret.reset(level, msg, loggerName);
+    return ret
+  }
+  this.isFull_ = curIndex == goog.debug.LogBuffer.CAPACITY - 1;
+  return this.buffer_[curIndex] = new goog.debug.LogRecord(level, msg, loggerName)
+};
+goog.debug.LogBuffer.isBufferingEnabled = function() {
+  return goog.debug.LogBuffer.CAPACITY > 0
+};
+goog.debug.LogBuffer.prototype.clear = function() {
+  this.buffer_ = new Array(goog.debug.LogBuffer.CAPACITY);
+  this.curIndex_ = -1;
+  this.isFull_ = false
+};
+goog.debug.LogBuffer.prototype.forEachRecord = function(func) {
+  var buffer = this.buffer_;
+  if(!buffer[0]) {
+    return
+  }
+  var curIndex = this.curIndex_;
+  var i = this.isFull_ ? curIndex : -1;
+  do {
+    i = (i + 1) % goog.debug.LogBuffer.CAPACITY;
+    func(buffer[i])
+  }while(i != curIndex)
+};
+goog.provide("goog.debug.LogManager");
+goog.provide("goog.debug.Logger");
+goog.provide("goog.debug.Logger.Level");
+goog.require("goog.array");
+goog.require("goog.asserts");
+goog.require("goog.debug");
+goog.require("goog.debug.LogBuffer");
+goog.require("goog.debug.LogRecord");
+goog.debug.Logger = function(name) {
+  this.name_ = name
+};
+goog.debug.Logger.prototype.parent_ = null;
+goog.debug.Logger.prototype.level_ = null;
+goog.debug.Logger.prototype.children_ = null;
+goog.debug.Logger.prototype.handlers_ = null;
+goog.debug.Logger.ENABLE_HIERARCHY = true;
+if(!goog.debug.Logger.ENABLE_HIERARCHY) {
+  goog.debug.Logger.rootHandlers_ = [];
+  goog.debug.Logger.rootLevel_
+}
+goog.debug.Logger.Level = function(name, value) {
+  this.name = name;
+  this.value = value
+};
+goog.debug.Logger.Level.prototype.toString = function() {
+  return this.name
+};
+goog.debug.Logger.Level.OFF = new goog.debug.Logger.Level("OFF", Infinity);
+goog.debug.Logger.Level.SHOUT = new goog.debug.Logger.Level("SHOUT", 1200);
+goog.debug.Logger.Level.SEVERE = new goog.debug.Logger.Level("SEVERE", 1E3);
+goog.debug.Logger.Level.WARNING = new goog.debug.Logger.Level("WARNING", 900);
+goog.debug.Logger.Level.INFO = new goog.debug.Logger.Level("INFO", 800);
+goog.debug.Logger.Level.CONFIG = new goog.debug.Logger.Level("CONFIG", 700);
+goog.debug.Logger.Level.FINE = new goog.debug.Logger.Level("FINE", 500);
+goog.debug.Logger.Level.FINER = new goog.debug.Logger.Level("FINER", 400);
+goog.debug.Logger.Level.FINEST = new goog.debug.Logger.Level("FINEST", 300);
+goog.debug.Logger.Level.ALL = new goog.debug.Logger.Level("ALL", 0);
+goog.debug.Logger.Level.PREDEFINED_LEVELS = [goog.debug.Logger.Level.OFF, goog.debug.Logger.Level.SHOUT, goog.debug.Logger.Level.SEVERE, goog.debug.Logger.Level.WARNING, goog.debug.Logger.Level.INFO, goog.debug.Logger.Level.CONFIG, goog.debug.Logger.Level.FINE, goog.debug.Logger.Level.FINER, goog.debug.Logger.Level.FINEST, goog.debug.Logger.Level.ALL];
+goog.debug.Logger.Level.predefinedLevelsCache_ = null;
+goog.debug.Logger.Level.createPredefinedLevelsCache_ = function() {
+  goog.debug.Logger.Level.predefinedLevelsCache_ = {};
+  for(var i = 0, level;level = goog.debug.Logger.Level.PREDEFINED_LEVELS[i];i++) {
+    goog.debug.Logger.Level.predefinedLevelsCache_[level.value] = level;
+    goog.debug.Logger.Level.predefinedLevelsCache_[level.name] = level
+  }
+};
+goog.debug.Logger.Level.getPredefinedLevel = function(name) {
+  if(!goog.debug.Logger.Level.predefinedLevelsCache_) {
+    goog.debug.Logger.Level.createPredefinedLevelsCache_()
+  }
+  return goog.debug.Logger.Level.predefinedLevelsCache_[name] || null
+};
+goog.debug.Logger.Level.getPredefinedLevelByValue = function(value) {
+  if(!goog.debug.Logger.Level.predefinedLevelsCache_) {
+    goog.debug.Logger.Level.createPredefinedLevelsCache_()
+  }
+  if(value in goog.debug.Logger.Level.predefinedLevelsCache_) {
+    return goog.debug.Logger.Level.predefinedLevelsCache_[value]
+  }
+  for(var i = 0;i < goog.debug.Logger.Level.PREDEFINED_LEVELS.length;++i) {
+    var level = goog.debug.Logger.Level.PREDEFINED_LEVELS[i];
+    if(level.value <= value) {
+      return level
+    }
+  }
+  return null
+};
+goog.debug.Logger.getLogger = function(name) {
+  return goog.debug.LogManager.getLogger(name)
+};
+goog.debug.Logger.logToProfilers = function(msg) {
+  if(goog.global["console"]) {
+    if(goog.global["console"]["timeStamp"]) {
+      goog.global["console"]["timeStamp"](msg)
+    }else {
+      if(goog.global["console"]["markTimeline"]) {
+        goog.global["console"]["markTimeline"](msg)
+      }
+    }
+  }
+  if(goog.global["msWriteProfilerMark"]) {
+    goog.global["msWriteProfilerMark"](msg)
+  }
+};
+goog.debug.Logger.prototype.getName = function() {
+  return this.name_
+};
+goog.debug.Logger.prototype.addHandler = function(handler) {
+  if(goog.debug.Logger.ENABLE_HIERARCHY) {
+    if(!this.handlers_) {
+      this.handlers_ = []
+    }
+    this.handlers_.push(handler)
+  }else {
+    goog.asserts.assert(!this.name_, "Cannot call addHandler on a non-root logger when " + "goog.debug.Logger.ENABLE_HIERARCHY is false.");
+    goog.debug.Logger.rootHandlers_.push(handler)
+  }
+};
+goog.debug.Logger.prototype.removeHandler = function(handler) {
+  var handlers = goog.debug.Logger.ENABLE_HIERARCHY ? this.handlers_ : goog.debug.Logger.rootHandlers_;
+  return!!handlers && goog.array.remove(handlers, handler)
+};
+goog.debug.Logger.prototype.getParent = function() {
+  return this.parent_
+};
+goog.debug.Logger.prototype.getChildren = function() {
+  if(!this.children_) {
+    this.children_ = {}
+  }
+  return this.children_
+};
+goog.debug.Logger.prototype.setLevel = function(level) {
+  if(goog.debug.Logger.ENABLE_HIERARCHY) {
+    this.level_ = level
+  }else {
+    goog.asserts.assert(!this.name_, "Cannot call setLevel() on a non-root logger when " + "goog.debug.Logger.ENABLE_HIERARCHY is false.");
+    goog.debug.Logger.rootLevel_ = level
+  }
+};
+goog.debug.Logger.prototype.getLevel = function() {
+  return this.level_
+};
+goog.debug.Logger.prototype.getEffectiveLevel = function() {
+  if(!goog.debug.Logger.ENABLE_HIERARCHY) {
+    return goog.debug.Logger.rootLevel_
+  }
+  if(this.level_) {
+    return this.level_
+  }
+  if(this.parent_) {
+    return this.parent_.getEffectiveLevel()
+  }
+  goog.asserts.fail("Root logger has no level set.");
+  return null
+};
+goog.debug.Logger.prototype.isLoggable = function(level) {
+  return level.value >= this.getEffectiveLevel().value
+};
+goog.debug.Logger.prototype.log = function(level, msg, opt_exception) {
+  if(this.isLoggable(level)) {
+    this.doLogRecord_(this.getLogRecord(level, msg, opt_exception))
+  }
+};
+goog.debug.Logger.prototype.getLogRecord = function(level, msg, opt_exception) {
+  if(goog.debug.LogBuffer.isBufferingEnabled()) {
+    var logRecord = goog.debug.LogBuffer.getInstance().addRecord(level, msg, this.name_)
+  }else {
+    logRecord = new goog.debug.LogRecord(level, String(msg), this.name_)
+  }
+  if(opt_exception) {
+    logRecord.setException(opt_exception);
+    logRecord.setExceptionText(goog.debug.exposeException(opt_exception, arguments.callee.caller))
+  }
+  return logRecord
+};
+goog.debug.Logger.prototype.shout = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.SHOUT, msg, opt_exception)
+};
+goog.debug.Logger.prototype.severe = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.SEVERE, msg, opt_exception)
+};
+goog.debug.Logger.prototype.warning = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.WARNING, msg, opt_exception)
+};
+goog.debug.Logger.prototype.info = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.INFO, msg, opt_exception)
+};
+goog.debug.Logger.prototype.config = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.CONFIG, msg, opt_exception)
+};
+goog.debug.Logger.prototype.fine = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.FINE, msg, opt_exception)
+};
+goog.debug.Logger.prototype.finer = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.FINER, msg, opt_exception)
+};
+goog.debug.Logger.prototype.finest = function(msg, opt_exception) {
+  this.log(goog.debug.Logger.Level.FINEST, msg, opt_exception)
+};
+goog.debug.Logger.prototype.logRecord = function(logRecord) {
+  if(this.isLoggable(logRecord.getLevel())) {
+    this.doLogRecord_(logRecord)
+  }
+};
+goog.debug.Logger.prototype.doLogRecord_ = function(logRecord) {
+  goog.debug.Logger.logToProfilers("log:" + logRecord.getMessage());
+  if(goog.debug.Logger.ENABLE_HIERARCHY) {
+    var target = this;
+    while(target) {
+      target.callPublish_(logRecord);
+      target = target.getParent()
+    }
+  }else {
+    for(var i = 0, handler;handler = goog.debug.Logger.rootHandlers_[i++];) {
+      handler(logRecord)
+    }
+  }
+};
+goog.debug.Logger.prototype.callPublish_ = function(logRecord) {
+  if(this.handlers_) {
+    for(var i = 0, handler;handler = this.handlers_[i];i++) {
+      handler(logRecord)
+    }
+  }
+};
+goog.debug.Logger.prototype.setParent_ = function(parent) {
+  this.parent_ = parent
+};
+goog.debug.Logger.prototype.addChild_ = function(name, logger) {
+  this.getChildren()[name] = logger
+};
+goog.debug.LogManager = {};
+goog.debug.LogManager.loggers_ = {};
+goog.debug.LogManager.rootLogger_ = null;
+goog.debug.LogManager.initialize = function() {
+  if(!goog.debug.LogManager.rootLogger_) {
+    goog.debug.LogManager.rootLogger_ = new goog.debug.Logger("");
+    goog.debug.LogManager.loggers_[""] = goog.debug.LogManager.rootLogger_;
+    goog.debug.LogManager.rootLogger_.setLevel(goog.debug.Logger.Level.CONFIG)
+  }
+};
+goog.debug.LogManager.getLoggers = function() {
+  return goog.debug.LogManager.loggers_
+};
+goog.debug.LogManager.getRoot = function() {
+  goog.debug.LogManager.initialize();
+  return goog.debug.LogManager.rootLogger_
+};
+goog.debug.LogManager.getLogger = function(name) {
+  goog.debug.LogManager.initialize();
+  var ret = goog.debug.LogManager.loggers_[name];
+  return ret || goog.debug.LogManager.createLogger_(name)
+};
+goog.debug.LogManager.createFunctionForCatchErrors = function(opt_logger) {
+  return function(info) {
+    var logger = opt_logger || goog.debug.LogManager.getRoot();
+    logger.severe("Error: " + info.message + " (" + info.fileName + " @ Line: " + info.line + ")")
+  }
+};
+goog.debug.LogManager.createLogger_ = function(name) {
+  var logger = new goog.debug.Logger(name);
+  if(goog.debug.Logger.ENABLE_HIERARCHY) {
+    var lastDotIndex = name.lastIndexOf(".");
+    var parentName = name.substr(0, lastDotIndex);
+    var leafName = name.substr(lastDotIndex + 1);
+    var parentLogger = goog.debug.LogManager.getLogger(parentName);
+    parentLogger.addChild_(leafName, logger);
+    logger.setParent_(parentLogger)
+  }
+  goog.debug.LogManager.loggers_[name] = logger;
+  return logger
+};
+goog.provide("goog.json");
+goog.provide("goog.json.Serializer");
+goog.json.isValid_ = function(s) {
+  if(/^\s*$/.test(s)) {
+    return false
+  }
+  var backslashesRe = /\\["\\\/bfnrtu]/g;
+  var simpleValuesRe = /"[^"\\\n\r\u2028\u2029\x00-\x08\x10-\x1f\x80-\x9f]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g;
+  var openBracketsRe = /(?:^|:|,)(?:[\s\u2028\u2029]*\[)+/g;
+  var remainderRe = /^[\],:{}\s\u2028\u2029]*$/;
+  return remainderRe.test(s.replace(backslashesRe, "@").replace(simpleValuesRe, "]").replace(openBracketsRe, ""))
+};
+goog.json.parse = function(s) {
+  var o = String(s);
+  if(goog.json.isValid_(o)) {
+    try {
+      return eval("(" + o + ")")
+    }catch(ex) {
+    }
+  }
+  throw Error("Invalid JSON string: " + o);
+};
+goog.json.unsafeParse = function(s) {
+  return eval("(" + s + ")")
+};
+goog.json.Replacer;
+goog.json.Reviver;
+goog.json.serialize = function(object, opt_replacer) {
+  return(new goog.json.Serializer(opt_replacer)).serialize(object)
+};
+goog.json.Serializer = function(opt_replacer) {
+  this.replacer_ = opt_replacer
+};
+goog.json.Serializer.prototype.serialize = function(object) {
+  var sb = [];
+  this.serialize_(object, sb);
+  return sb.join("")
+};
+goog.json.Serializer.prototype.serialize_ = function(object, sb) {
+  switch(typeof object) {
+    case "string":
+      this.serializeString_(object, sb);
+      break;
+    case "number":
+      this.serializeNumber_(object, sb);
+      break;
+    case "boolean":
+      sb.push(object);
+      break;
+    case "undefined":
+      sb.push("null");
+      break;
+    case "object":
+      if(object == null) {
+        sb.push("null");
+        break
+      }
+      if(goog.isArray(object)) {
+        this.serializeArray(object, sb);
+        break
+      }
+      this.serializeObject_(object, sb);
+      break;
+    case "function":
+      break;
+    default:
+      throw Error("Unknown type: " + typeof object);
+  }
+};
+goog.json.Serializer.charToJsonCharCache_ = {'"':'\\"', "\\":"\\\\", "/":"\\/", "\b":"\\b", "\f":"\\f", "\n":"\\n", "\r":"\\r", "\t":"\\t", "\x0B":"\\u000b"};
+goog.json.Serializer.charsToReplace_ = /\uffff/.test("\uffff") ? /[\\\"\x00-\x1f\x7f-\uffff]/g : /[\\\"\x00-\x1f\x7f-\xff]/g;
+goog.json.Serializer.prototype.serializeString_ = function(s, sb) {
+  sb.push('"', s.replace(goog.json.Serializer.charsToReplace_, function(c) {
+    if(c in goog.json.Serializer.charToJsonCharCache_) {
+      return goog.json.Serializer.charToJsonCharCache_[c]
+    }
+    var cc = c.charCodeAt(0);
+    var rv = "\\u";
+    if(cc < 16) {
+      rv += "000"
+    }else {
+      if(cc < 256) {
+        rv += "00"
+      }else {
+        if(cc < 4096) {
+          rv += "0"
+        }
+      }
+    }
+    return goog.json.Serializer.charToJsonCharCache_[c] = rv + cc.toString(16)
+  }), '"')
+};
+goog.json.Serializer.prototype.serializeNumber_ = function(n, sb) {
+  sb.push(isFinite(n) && !isNaN(n) ? n : "null")
+};
+goog.json.Serializer.prototype.serializeArray = function(arr, sb) {
+  var l = arr.length;
+  sb.push("[");
+  var sep = "";
+  for(var i = 0;i < l;i++) {
+    sb.push(sep);
+    var value = arr[i];
+    this.serialize_(this.replacer_ ? this.replacer_.call(arr, String(i), value) : value, sb);
+    sep = ","
+  }
+  sb.push("]")
+};
+goog.json.Serializer.prototype.serializeObject_ = function(obj, sb) {
+  sb.push("{");
+  var sep = "";
+  for(var key in obj) {
+    if(Object.prototype.hasOwnProperty.call(obj, key)) {
+      var value = obj[key];
+      if(typeof value != "function") {
+        sb.push(sep);
+        this.serializeString_(key, sb);
+        sb.push(":");
+        this.serialize_(this.replacer_ ? this.replacer_.call(obj, key, value) : value, sb);
+        sep = ","
+      }
+    }
+  }
+  sb.push("}")
+};
+goog.provide("goog.net.ErrorCode");
+goog.net.ErrorCode = {NO_ERROR:0, ACCESS_DENIED:1, FILE_NOT_FOUND:2, FF_SILENT_ERROR:3, CUSTOM_ERROR:4, EXCEPTION:5, HTTP_ERROR:6, ABORT:7, TIMEOUT:8, OFFLINE:9};
+goog.net.ErrorCode.getDebugMessage = function(errorCode) {
+  switch(errorCode) {
+    case goog.net.ErrorCode.NO_ERROR:
+      return"No Error";
+    case goog.net.ErrorCode.ACCESS_DENIED:
+      return"Access denied to content document";
+    case goog.net.ErrorCode.FILE_NOT_FOUND:
+      return"File not found";
+    case goog.net.ErrorCode.FF_SILENT_ERROR:
+      return"Firefox silently errored";
+    case goog.net.ErrorCode.CUSTOM_ERROR:
+      return"Application custom error";
+    case goog.net.ErrorCode.EXCEPTION:
+      return"An exception occurred";
+    case goog.net.ErrorCode.HTTP_ERROR:
+      return"Http response at 400 or 500 level";
+    case goog.net.ErrorCode.ABORT:
+      return"Request was aborted";
+    case goog.net.ErrorCode.TIMEOUT:
+      return"Request timed out";
+    case goog.net.ErrorCode.OFFLINE:
+      return"The resource is not available offline";
+    default:
+      return"Unrecognized error code"
+  }
+};
+goog.provide("goog.net.HttpStatus");
+goog.net.HttpStatus = {CONTINUE:100, SWITCHING_PROTOCOLS:101, OK:200, CREATED:201, ACCEPTED:202, NON_AUTHORITATIVE_INFORMATION:203, NO_CONTENT:204, RESET_CONTENT:205, PARTIAL_CONTENT:206, MULTIPLE_CHOICES:300, MOVED_PERMANENTLY:301, FOUND:302, SEE_OTHER:303, NOT_MODIFIED:304, USE_PROXY:305, TEMPORARY_REDIRECT:307, BAD_REQUEST:400, UNAUTHORIZED:401, PAYMENT_REQUIRED:402, FORBIDDEN:403, NOT_FOUND:404, METHOD_NOT_ALLOWED:405, NOT_ACCEPTABLE:406, PROXY_AUTHENTICATION_REQUIRED:407, REQUEST_TIMEOUT:408, 
+CONFLICT:409, GONE:410, LENGTH_REQUIRED:411, PRECONDITION_FAILED:412, REQUEST_ENTITY_TOO_LARGE:413, REQUEST_URI_TOO_LONG:414, UNSUPPORTED_MEDIA_TYPE:415, REQUEST_RANGE_NOT_SATISFIABLE:416, EXPECTATION_FAILED:417, INTERNAL_SERVER_ERROR:500, NOT_IMPLEMENTED:501, BAD_GATEWAY:502, SERVICE_UNAVAILABLE:503, GATEWAY_TIMEOUT:504, HTTP_VERSION_NOT_SUPPORTED:505, QUIRK_IE_NO_CONTENT:1223};
+goog.net.HttpStatus.isSuccess = function(status) {
+  switch(status) {
+    case goog.net.HttpStatus.OK:
+    ;
+    case goog.net.HttpStatus.CREATED:
+    ;
+    case goog.net.HttpStatus.ACCEPTED:
+    ;
+    case goog.net.HttpStatus.NO_CONTENT:
+    ;
+    case goog.net.HttpStatus.NOT_MODIFIED:
+    ;
+    case goog.net.HttpStatus.QUIRK_IE_NO_CONTENT:
+      return true;
+    default:
+      return false
+  }
+};
+goog.provide("goog.net.XmlHttpFactory");
+goog.net.XmlHttpFactory = function() {
+};
+goog.net.XmlHttpFactory.prototype.cachedOptions_ = null;
+goog.net.XmlHttpFactory.prototype.createInstance = goog.abstractMethod;
+goog.net.XmlHttpFactory.prototype.getOptions = function() {
+  return this.cachedOptions_ || (this.cachedOptions_ = this.internalGetOptions())
+};
+goog.net.XmlHttpFactory.prototype.internalGetOptions = goog.abstractMethod;
+goog.provide("goog.net.WrapperXmlHttpFactory");
+goog.require("goog.net.XmlHttpFactory");
+goog.net.WrapperXmlHttpFactory = function(xhrFactory, optionsFactory) {
+  goog.net.XmlHttpFactory.call(this);
+  this.xhrFactory_ = xhrFactory;
+  this.optionsFactory_ = optionsFactory
+};
+goog.inherits(goog.net.WrapperXmlHttpFactory, goog.net.XmlHttpFactory);
+goog.net.WrapperXmlHttpFactory.prototype.createInstance = function() {
+  return this.xhrFactory_()
+};
+goog.net.WrapperXmlHttpFactory.prototype.getOptions = function() {
+  return this.optionsFactory_()
+};
+goog.provide("goog.net.DefaultXmlHttpFactory");
+goog.provide("goog.net.XmlHttp");
+goog.provide("goog.net.XmlHttp.OptionType");
+goog.provide("goog.net.XmlHttp.ReadyState");
+goog.require("goog.net.WrapperXmlHttpFactory");
+goog.require("goog.net.XmlHttpFactory");
+goog.net.XmlHttp = function() {
+  return goog.net.XmlHttp.factory_.createInstance()
+};
+goog.net.XmlHttp.ASSUME_NATIVE_XHR = false;
+goog.net.XmlHttp.getOptions = function() {
+  return goog.net.XmlHttp.factory_.getOptions()
+};
+goog.net.XmlHttp.OptionType = {USE_NULL_FUNCTION:0, LOCAL_REQUEST_ERROR:1};
+goog.net.XmlHttp.ReadyState = {UNINITIALIZED:0, LOADING:1, LOADED:2, INTERACTIVE:3, COMPLETE:4};
+goog.net.XmlHttp.factory_;
+goog.net.XmlHttp.setFactory = function(factory, optionsFactory) {
+  goog.net.XmlHttp.setGlobalFactory(new goog.net.WrapperXmlHttpFactory(factory, optionsFactory))
+};
+goog.net.XmlHttp.setGlobalFactory = function(factory) {
+  goog.net.XmlHttp.factory_ = factory
+};
+goog.net.DefaultXmlHttpFactory = function() {
+  goog.net.XmlHttpFactory.call(this)
+};
+goog.inherits(goog.net.DefaultXmlHttpFactory, goog.net.XmlHttpFactory);
+goog.net.DefaultXmlHttpFactory.prototype.createInstance = function() {
+  var progId = this.getProgId_();
+  if(progId) {
+    return new ActiveXObject(progId)
+  }else {
+    return new XMLHttpRequest
+  }
+};
+goog.net.DefaultXmlHttpFactory.prototype.internalGetOptions = function() {
+  var progId = this.getProgId_();
+  var options = {};
+  if(progId) {
+    options[goog.net.XmlHttp.OptionType.USE_NULL_FUNCTION] = true;
+    options[goog.net.XmlHttp.OptionType.LOCAL_REQUEST_ERROR] = true
+  }
+  return options
+};
+goog.net.DefaultXmlHttpFactory.prototype.ieProgId_;
+goog.net.DefaultXmlHttpFactory.prototype.getProgId_ = function() {
+  if(goog.net.XmlHttp.ASSUME_NATIVE_XHR) {
+    return""
+  }
+  if(!this.ieProgId_ && typeof XMLHttpRequest == "undefined" && typeof ActiveXObject != "undefined") {
+    var ACTIVE_X_IDENTS = ["MSXML2.XMLHTTP.6.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"];
+    for(var i = 0;i < ACTIVE_X_IDENTS.length;i++) {
+      var candidate = ACTIVE_X_IDENTS[i];
+      try {
+        new ActiveXObject(candidate);
+        this.ieProgId_ = candidate;
+        return candidate
+      }catch(e) {
+      }
+    }
+    throw Error("Could not create ActiveXObject. ActiveX might be disabled," + " or MSXML might not be installed");
+  }
+  return this.ieProgId_
+};
+goog.net.XmlHttp.setGlobalFactory(new goog.net.DefaultXmlHttpFactory);
+goog.provide("goog.net.XhrIo");
+goog.provide("goog.net.XhrIo.ResponseType");
+goog.require("goog.Timer");
+goog.require("goog.debug.Logger");
+goog.require("goog.debug.entryPointRegistry");
+goog.require("goog.debug.errorHandlerWeakDep");
+goog.require("goog.events.EventTarget");
+goog.require("goog.json");
+goog.require("goog.net.ErrorCode");
+goog.require("goog.net.EventType");
+goog.require("goog.net.HttpStatus");
+goog.require("goog.net.XmlHttp");
+goog.require("goog.object");
+goog.require("goog.structs");
+goog.require("goog.structs.Map");
+goog.require("goog.uri.utils");
+goog.net.XhrIo = function(opt_xmlHttpFactory) {
+  goog.events.EventTarget.call(this);
+  this.headers = new goog.structs.Map;
+  this.xmlHttpFactory_ = opt_xmlHttpFactory || null
+};
+goog.inherits(goog.net.XhrIo, goog.events.EventTarget);
+goog.net.XhrIo.ResponseType = {DEFAULT:"", TEXT:"text", DOCUMENT:"document", BLOB:"blob", ARRAY_BUFFER:"arraybuffer"};
+goog.net.XhrIo.prototype.logger_ = goog.debug.Logger.getLogger("goog.net.XhrIo");
+goog.net.XhrIo.CONTENT_TYPE_HEADER = "Content-Type";
+goog.net.XhrIo.HTTP_SCHEME_PATTERN = /^https?$/i;
+goog.net.XhrIo.FORM_CONTENT_TYPE = "application/x-www-form-urlencoded;charset=utf-8";
+goog.net.XhrIo.sendInstances_ = [];
+goog.net.XhrIo.send = function(url, opt_callback, opt_method, opt_content, opt_headers, opt_timeoutInterval) {
+  var x = new goog.net.XhrIo;
+  goog.net.XhrIo.sendInstances_.push(x);
+  if(opt_callback) {
+    goog.events.listen(x, goog.net.EventType.COMPLETE, opt_callback)
+  }
+  goog.events.listen(x, goog.net.EventType.READY, goog.partial(goog.net.XhrIo.cleanupSend_, x));
+  if(opt_timeoutInterval) {
+    x.setTimeoutInterval(opt_timeoutInterval)
+  }
+  x.send(url, opt_method, opt_content, opt_headers)
+};
+goog.net.XhrIo.cleanup = function() {
+  var instances = goog.net.XhrIo.sendInstances_;
+  while(instances.length) {
+    instances.pop().dispose()
+  }
+};
+goog.net.XhrIo.protectEntryPoints = function(errorHandler) {
+  goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_ = errorHandler.protectEntryPoint(goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_)
+};
+goog.net.XhrIo.cleanupSend_ = function(XhrIo) {
+  XhrIo.dispose();
+  goog.array.remove(goog.net.XhrIo.sendInstances_, XhrIo)
+};
+goog.net.XhrIo.prototype.active_ = false;
+goog.net.XhrIo.prototype.xhr_ = null;
+goog.net.XhrIo.prototype.xhrOptions_ = null;
+goog.net.XhrIo.prototype.lastUri_ = "";
+goog.net.XhrIo.prototype.lastMethod_ = "";
+goog.net.XhrIo.prototype.lastErrorCode_ = goog.net.ErrorCode.NO_ERROR;
+goog.net.XhrIo.prototype.lastError_ = "";
+goog.net.XhrIo.prototype.errorDispatched_ = false;
+goog.net.XhrIo.prototype.inSend_ = false;
+goog.net.XhrIo.prototype.inOpen_ = false;
+goog.net.XhrIo.prototype.inAbort_ = false;
+goog.net.XhrIo.prototype.timeoutInterval_ = 0;
+goog.net.XhrIo.prototype.timeoutId_ = null;
+goog.net.XhrIo.prototype.responseType_ = goog.net.XhrIo.ResponseType.DEFAULT;
+goog.net.XhrIo.prototype.withCredentials_ = false;
+goog.net.XhrIo.prototype.getTimeoutInterval = function() {
+  return this.timeoutInterval_
+};
+goog.net.XhrIo.prototype.setTimeoutInterval = function(ms) {
+  this.timeoutInterval_ = Math.max(0, ms)
+};
+goog.net.XhrIo.prototype.setResponseType = function(type) {
+  this.responseType_ = type
+};
+goog.net.XhrIo.prototype.getResponseType = function() {
+  return this.responseType_
+};
+goog.net.XhrIo.prototype.setWithCredentials = function(withCredentials) {
+  this.withCredentials_ = withCredentials
+};
+goog.net.XhrIo.prototype.getWithCredentials = function() {
+  return this.withCredentials_
+};
+goog.net.XhrIo.prototype.send = function(url, opt_method, opt_content, opt_headers) {
+  if(this.xhr_) {
+    throw Error("[goog.net.XhrIo] Object is active with another request");
+  }
+  var method = opt_method ? opt_method.toUpperCase() : "GET";
+  this.lastUri_ = url;
+  this.lastError_ = "";
+  this.lastErrorCode_ = goog.net.ErrorCode.NO_ERROR;
+  this.lastMethod_ = method;
+  this.errorDispatched_ = false;
+  this.active_ = true;
+  this.xhr_ = this.createXhr();
+  this.xhrOptions_ = this.xmlHttpFactory_ ? this.xmlHttpFactory_.getOptions() : goog.net.XmlHttp.getOptions();
+  this.xhr_.onreadystatechange = goog.bind(this.onReadyStateChange_, this);
+  try {
+    this.logger_.fine(this.formatMsg_("Opening Xhr"));
+    this.inOpen_ = true;
+    this.xhr_.open(method, url, true);
+    this.inOpen_ = false
+  }catch(err) {
+    this.logger_.fine(this.formatMsg_("Error opening Xhr: " + err.message));
+    this.error_(goog.net.ErrorCode.EXCEPTION, err);
+    return
+  }
+  var content = opt_content || "";
+  var headers = this.headers.clone();
+  if(opt_headers) {
+    goog.structs.forEach(opt_headers, function(value, key) {
+      headers.set(key, value)
+    })
+  }
+  var contentIsFormData = goog.global["FormData"] && content instanceof goog.global["FormData"];
+  if(method == "POST" && !headers.containsKey(goog.net.XhrIo.CONTENT_TYPE_HEADER) && !contentIsFormData) {
+    headers.set(goog.net.XhrIo.CONTENT_TYPE_HEADER, goog.net.XhrIo.FORM_CONTENT_TYPE)
+  }
+  goog.structs.forEach(headers, function(value, key) {
+    this.xhr_.setRequestHeader(key, value)
+  }, this);
+  if(this.responseType_) {
+    this.xhr_.responseType = this.responseType_
+  }
+  if(goog.object.containsKey(this.xhr_, "withCredentials")) {
+    this.xhr_.withCredentials = this.withCredentials_
+  }
+  try {
+    if(this.timeoutId_) {
+      goog.Timer.defaultTimerObject.clearTimeout(this.timeoutId_);
+      this.timeoutId_ = null
+    }
+    if(this.timeoutInterval_ > 0) {
+      this.logger_.fine(this.formatMsg_("Will abort after " + this.timeoutInterval_ + "ms if incomplete"));
+      this.timeoutId_ = goog.Timer.defaultTimerObject.setTimeout(goog.bind(this.timeout_, this), this.timeoutInterval_)
+    }
+    this.logger_.fine(this.formatMsg_("Sending request"));
+    this.inSend_ = true;
+    this.xhr_.send(content);
+    this.inSend_ = false
+  }catch(err) {
+    this.logger_.fine(this.formatMsg_("Send error: " + err.message));
+    this.error_(goog.net.ErrorCode.EXCEPTION, err)
+  }
+};
+goog.net.XhrIo.prototype.createXhr = function() {
+  return this.xmlHttpFactory_ ? this.xmlHttpFactory_.createInstance() : goog.net.XmlHttp()
+};
+goog.net.XhrIo.prototype.timeout_ = function() {
+  if(typeof goog == "undefined") {
+  }else {
+    if(this.xhr_) {
+      this.lastError_ = "Timed out after " + this.timeoutInterval_ + "ms, aborting";
+      this.lastErrorCode_ = goog.net.ErrorCode.TIMEOUT;
+      this.logger_.fine(this.formatMsg_(this.lastError_));
+      this.dispatchEvent(goog.net.EventType.TIMEOUT);
+      this.abort(goog.net.ErrorCode.TIMEOUT)
+    }
+  }
+};
+goog.net.XhrIo.prototype.error_ = function(errorCode, err) {
+  this.active_ = false;
+  if(this.xhr_) {
+    this.inAbort_ = true;
+    this.xhr_.abort();
+    this.inAbort_ = false
+  }
+  this.lastError_ = err;
+  this.lastErrorCode_ = errorCode;
+  this.dispatchErrors_();
+  this.cleanUpXhr_()
+};
+goog.net.XhrIo.prototype.dispatchErrors_ = function() {
+  if(!this.errorDispatched_) {
+    this.errorDispatched_ = true;
+    this.dispatchEvent(goog.net.EventType.COMPLETE);
+    this.dispatchEvent(goog.net.EventType.ERROR)
+  }
+};
+goog.net.XhrIo.prototype.abort = function(opt_failureCode) {
+  if(this.xhr_ && this.active_) {
+    this.logger_.fine(this.formatMsg_("Aborting"));
+    this.active_ = false;
+    this.inAbort_ = true;
+    this.xhr_.abort();
+    this.inAbort_ = false;
+    this.lastErrorCode_ = opt_failureCode || goog.net.ErrorCode.ABORT;
+    this.dispatchEvent(goog.net.EventType.COMPLETE);
+    this.dispatchEvent(goog.net.EventType.ABORT);
+    this.cleanUpXhr_()
+  }
+};
+goog.net.XhrIo.prototype.disposeInternal = function() {
+  if(this.xhr_) {
+    if(this.active_) {
+      this.active_ = false;
+      this.inAbort_ = true;
+      this.xhr_.abort();
+      this.inAbort_ = false
+    }
+    this.cleanUpXhr_(true)
+  }
+  goog.net.XhrIo.superClass_.disposeInternal.call(this)
+};
+goog.net.XhrIo.prototype.onReadyStateChange_ = function() {
+  if(!this.inOpen_ && !this.inSend_ && !this.inAbort_) {
+    this.onReadyStateChangeEntryPoint_()
+  }else {
+    this.onReadyStateChangeHelper_()
+  }
+};
+goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_ = function() {
+  this.onReadyStateChangeHelper_()
+};
+goog.net.XhrIo.prototype.onReadyStateChangeHelper_ = function() {
+  if(!this.active_) {
+    return
+  }
+  if(typeof goog == "undefined") {
+  }else {
+    if(this.xhrOptions_[goog.net.XmlHttp.OptionType.LOCAL_REQUEST_ERROR] && this.getReadyState() == goog.net.XmlHttp.ReadyState.COMPLETE && this.getStatus() == 2) {
+      this.logger_.fine(this.formatMsg_("Local request error detected and ignored"))
+    }else {
+      if(this.inSend_ && this.getReadyState() == goog.net.XmlHttp.ReadyState.COMPLETE) {
+        goog.Timer.defaultTimerObject.setTimeout(goog.bind(this.onReadyStateChange_, this), 0);
+        return
+      }
+      this.dispatchEvent(goog.net.EventType.READY_STATE_CHANGE);
+      if(this.isComplete()) {
+        this.logger_.fine(this.formatMsg_("Request complete"));
+        this.active_ = false;
+        try {
+          if(this.isSuccess()) {
+            this.dispatchEvent(goog.net.EventType.COMPLETE);
+            this.dispatchEvent(goog.net.EventType.SUCCESS)
+          }else {
+            this.lastErrorCode_ = goog.net.ErrorCode.HTTP_ERROR;
+            this.lastError_ = this.getStatusText() + " [" + this.getStatus() + "]";
+            this.dispatchErrors_()
+          }
+        }finally {
+          this.cleanUpXhr_()
+        }
+      }
+    }
+  }
+};
+goog.net.XhrIo.prototype.cleanUpXhr_ = function(opt_fromDispose) {
+  if(this.xhr_) {
+    var xhr = this.xhr_;
+    var clearedOnReadyStateChange = this.xhrOptions_[goog.net.XmlHttp.OptionType.USE_NULL_FUNCTION] ? goog.nullFunction : null;
+    this.xhr_ = null;
+    this.xhrOptions_ = null;
+    if(this.timeoutId_) {
+      goog.Timer.defaultTimerObject.clearTimeout(this.timeoutId_);
+      this.timeoutId_ = null
+    }
+    if(!opt_fromDispose) {
+      this.dispatchEvent(goog.net.EventType.READY)
+    }
+    try {
+      xhr.onreadystatechange = clearedOnReadyStateChange
+    }catch(e) {
+      this.logger_.severe("Problem encountered resetting onreadystatechange: " + e.message)
+    }
+  }
+};
+goog.net.XhrIo.prototype.isActive = function() {
+  return!!this.xhr_
+};
+goog.net.XhrIo.prototype.isComplete = function() {
+  return this.getReadyState() == goog.net.XmlHttp.ReadyState.COMPLETE
+};
+goog.net.XhrIo.prototype.isSuccess = function() {
+  var status = this.getStatus();
+  return goog.net.HttpStatus.isSuccess(status) || status === 0 && !this.isLastUriEffectiveSchemeHttp_()
+};
+goog.net.XhrIo.prototype.isLastUriEffectiveSchemeHttp_ = function() {
+  var scheme = goog.uri.utils.getEffectiveScheme(String(this.lastUri_));
+  return goog.net.XhrIo.HTTP_SCHEME_PATTERN.test(scheme)
+};
+goog.net.XhrIo.prototype.getReadyState = function() {
+  return this.xhr_ ? this.xhr_.readyState : goog.net.XmlHttp.ReadyState.UNINITIALIZED
+};
+goog.net.XhrIo.prototype.getStatus = function() {
+  try {
+    return this.getReadyState() > goog.net.XmlHttp.ReadyState.LOADED ? this.xhr_.status : -1
+  }catch(e) {
+    this.logger_.warning("Can not get status: " + e.message);
+    return-1
+  }
+};
+goog.net.XhrIo.prototype.getStatusText = function() {
+  try {
+    return this.getReadyState() > goog.net.XmlHttp.ReadyState.LOADED ? this.xhr_.statusText : ""
+  }catch(e) {
+    this.logger_.fine("Can not get status: " + e.message);
+    return""
+  }
+};
+goog.net.XhrIo.prototype.getLastUri = function() {
+  return String(this.lastUri_)
+};
+goog.net.XhrIo.prototype.getResponseText = function() {
+  try {
+    return this.xhr_ ? this.xhr_.responseText : ""
+  }catch(e) {
+    this.logger_.fine("Can not get responseText: " + e.message);
+    return""
+  }
+};
+goog.net.XhrIo.prototype.getResponseXml = function() {
+  try {
+    return this.xhr_ ? this.xhr_.responseXML : null
+  }catch(e) {
+    this.logger_.fine("Can not get responseXML: " + e.message);
+    return null
+  }
+};
+goog.net.XhrIo.prototype.getResponseJson = function(opt_xssiPrefix) {
+  if(!this.xhr_) {
+    return undefined
+  }
+  var responseText = this.xhr_.responseText;
+  if(opt_xssiPrefix && responseText.indexOf(opt_xssiPrefix) == 0) {
+    responseText = responseText.substring(opt_xssiPrefix.length)
+  }
+  return goog.json.parse(responseText)
+};
+goog.net.XhrIo.prototype.getResponse = function() {
+  try {
+    if(!this.xhr_) {
+      return null
+    }
+    if("response" in this.xhr_) {
+      return this.xhr_.response
+    }
+    switch(this.responseType_) {
+      case goog.net.XhrIo.ResponseType.DEFAULT:
+      ;
+      case goog.net.XhrIo.ResponseType.TEXT:
+        return this.xhr_.responseText;
+      case goog.net.XhrIo.ResponseType.ARRAY_BUFFER:
+        if("mozResponseArrayBuffer" in this.xhr_) {
+          return this.xhr_.mozResponseArrayBuffer
+        }
+    }
+    this.logger_.severe("Response type " + this.responseType_ + " is not " + "supported on this browser");
+    return null
+  }catch(e) {
+    this.logger_.fine("Can not get response: " + e.message);
+    return null
+  }
+};
+goog.net.XhrIo.prototype.getResponseHeader = function(key) {
+  return this.xhr_ && this.isComplete() ? this.xhr_.getResponseHeader(key) : undefined
+};
+goog.net.XhrIo.prototype.getAllResponseHeaders = function() {
+  return this.xhr_ && this.isComplete() ? this.xhr_.getAllResponseHeaders() : ""
+};
+goog.net.XhrIo.prototype.getLastErrorCode = function() {
+  return this.lastErrorCode_
+};
+goog.net.XhrIo.prototype.getLastError = function() {
+  return goog.isString(this.lastError_) ? this.lastError_ : String(this.lastError_)
+};
+goog.net.XhrIo.prototype.formatMsg_ = function(msg) {
+  return msg + " [" + this.lastMethod_ + " " + this.lastUri_ + " " + this.getStatus() + "]"
+};
+goog.debug.entryPointRegistry.register(function(transformer) {
+  goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_ = transformer(goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_)
+});
+goog.provide("ol.parser.XML");
+goog.require("ol.parser.Parser");
+ol.parser.XML = function() {
+  if(goog.global.ActiveXObject) {
+    this.xmldom = new ActiveXObject("Microsoft.XMLDOM")
+  }
+  this.regExes = {trimSpace:/^\s*|\s*$/g, removeSpace:/\s*/g, splitSpace:/\s+/, trimComma:/\s*,\s*/g}
+};
+goog.inherits(ol.parser.XML, ol.parser.Parser);
+ol.parser.XML.prototype.readNode = function(node, obj) {
+  if(!obj) {
+    obj = {}
+  }
+  var group = this.readers[node.namespaceURI] || this.readers[this.defaultNamespaceURI];
+  if(group) {
+    var local = node.localName || node.nodeName.split(":").pop();
+    var reader = group[local] || group["*"];
+    if(reader) {
+      reader.apply(this, [node, obj])
+    }
+  }
+  return obj
+};
+ol.parser.XML.prototype.readChildNodes = function(node, obj) {
+  if(!obj) {
+    obj = {}
+  }
+  var children = node.childNodes;
+  var child;
+  for(var i = 0, len = children.length;i < len;++i) {
+    child = children[i];
+    if(child.nodeType == 1) {
+      this.readNode(child, obj)
+    }
+  }
+  return obj
+};
+ol.parser.XML.prototype.getChildValue = function(node, def) {
+  var value = def || "";
+  if(node) {
+    for(var child = node.firstChild;child;child = child.nextSibling) {
+      switch(child.nodeType) {
+        case 3:
+        ;
+        case 4:
+          value += child.nodeValue;
+          break;
+        default:
+          break
+      }
+    }
+  }
+  return value
+};
+ol.parser.XML.prototype.getAttributeNodeNS = function(node, uri, name) {
+  var attributeNode = null;
+  if(node.getAttributeNodeNS) {
+    attributeNode = node.getAttributeNodeNS(uri, name)
+  }else {
+    var attributes = node.attributes;
+    var potentialNode, fullName;
+    for(var i = 0, len = attributes.length;i < len;++i) {
+      potentialNode = attributes[i];
+      if(potentialNode.namespaceURI == uri) {
+        fullName = potentialNode.prefix ? potentialNode.prefix + ":" + name : name;
+        if(fullName == potentialNode.nodeName) {
+          attributeNode = potentialNode;
+          break
+        }
+      }
+    }
+  }
+  return attributeNode
+};
+ol.parser.XML.prototype.getAttributeNS = function(node, uri, name) {
+  var attributeValue = "";
+  if(node.getAttributeNS) {
+    attributeValue = node.getAttributeNS(uri, name) || ""
+  }else {
+    var attributeNode = this.getAttributeNodeNS(node, uri, name);
+    if(attributeNode) {
+      attributeValue = attributeNode.nodeValue
+    }
+  }
+  return attributeValue
+};
+ol.parser.XML.prototype.createElementNS = function(name, opt_uri) {
+  var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
+  var element;
+  if(this.xmldom) {
+    element = this.xmldom.createNode(1, name, uri)
+  }else {
+    element = document.createElementNS(uri, name)
+  }
+  return element
+};
+ol.parser.XML.prototype.writeNode = function(name, obj, opt_uri, opt_parent) {
+  var child = null;
+  if(goog.isDef(this.writers)) {
+    var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
+    child = this.writers[uri][name].apply(this, [obj]);
+    if(opt_parent && child) {
+      opt_parent.appendChild(child)
+    }
+  }
+  return child
+};
+ol.parser.XML.prototype.createTextNode = function(text) {
+  var node;
+  if(this.xmldom) {
+    node = this.xmldom.createTextNode(text)
+  }else {
+    node = document.createTextNode(text)
+  }
+  return node
+};
+ol.parser.XML.prototype.setAttributeNS = function(node, uri, name, value) {
+  if(node.setAttributeNS) {
+    node.setAttributeNS(uri, name, value)
+  }else {
+    if(this.xmldom) {
+      if(uri) {
+        var attribute = node.ownerDocument.createNode(2, name, uri);
+        attribute.nodeValue = value;
+        node.setAttributeNode(attribute)
+      }else {
+        node.setAttribute(name, value)
+      }
+    }else {
+      throw new Error("setAttributeNS not implemented");
+    }
+  }
+};
+goog.provide("ol.parser.KML");
+goog.require("goog.array");
+goog.require("goog.async.Deferred");
+goog.require("goog.async.DeferredList");
+goog.require("goog.date");
+goog.require("goog.dom.xml");
+goog.require("goog.events");
+goog.require("goog.net.EventType");
+goog.require("goog.net.XhrIo");
+goog.require("goog.object");
+goog.require("goog.string");
+goog.require("ol.Feature");
+goog.require("ol.geom.AbstractCollection");
+goog.require("ol.geom.GeometryCollection");
+goog.require("ol.geom.GeometryType");
+goog.require("ol.geom.LineString");
+goog.require("ol.geom.MultiLineString");
+goog.require("ol.geom.MultiPoint");
+goog.require("ol.geom.MultiPolygon");
+goog.require("ol.geom.Point");
+goog.require("ol.geom.Polygon");
+goog.require("ol.geom.SharedVertices");
+goog.require("ol.parser.AsyncObjectFeatureParser");
+goog.require("ol.parser.DomFeatureParser");
+goog.require("ol.parser.ReadFeaturesOptions");
+goog.require("ol.parser.StringFeatureParser");
+goog.require("ol.parser.XML");
+goog.require("ol.style.Icon");
+goog.require("ol.style.Line");
+goog.require("ol.style.LineLiteral");
+goog.require("ol.style.Polygon");
+goog.require("ol.style.PolygonLiteral");
+ol.parser.KMLOptions;
+ol.parser.KML = function(opt_options) {
+  if(goog.isDef(opt_options)) {
+    goog.object.extend(this, opt_options)
+  }
+  if(!goog.isDef(this.extractAttributes)) {
+    this.extractAttributes = true
+  }
+  if(!goog.isDef(this.extractStyles)) {
+    this.extractStyles = false
+  }
+  if(!goog.isDef(this.dimension)) {
+    this.dimension = 3
+  }
+  if(!goog.isDef(this.maxDepth)) {
+    this.maxDepth = 0
+  }
+  this.defaultNamespaceURI = "http://www.opengis.net/kml/2.2";
+  this.readers = {"http://www.opengis.net/kml/2.2":{"kml":function(node, obj) {
+    if(!goog.isDef(obj.features)) {
+      obj.features = []
+    }
+    if(!goog.isDef(obj.links)) {
+      obj.links = []
+    }
+    this.readChildNodes(node, obj)
+  }, "Document":function(node, obj) {
+    this.readChildNodes(node, obj)
+  }, "*":function(node, obj) {
+    if(this.extractAttributes === true) {
+      var len = node.childNodes.length;
+      if((len === 1 || len === 2) && (node.firstChild.nodeType === 3 || node.firstChild.nodeType === 4)) {
+        var readers = this.readers[this.defaultNamespaceURI];
+        readers["_attribute"].apply(this, arguments)
+      }
+    }
+  }, "NetworkLink":function(node, obj) {
+    var link = {};
+    this.readChildNodes(node, link);
+    obj.links.push(link)
+  }, "Link":function(node, obj) {
+    this.readChildNodes(node, obj)
+  }, "_attribute":function(node, obj) {
+    var local = node.localName || node.nodeName.split(":").pop();
+    var value = this.getChildValue(node);
+    if(obj.properties) {
+      obj.properties[local] = value.replace(this.regExes.trimSpace, "")
+    }else {
+      obj[local] = value.replace(this.regExes.trimSpace, "")
+    }
+  }, "Placemark":function(node, obj) {
+    var container = {properties:{}};
+    var sharedVertices, callback;
+    this.readChildNodes(node, container);
+    if(goog.isDef(container.track)) {
+      var track = container.track, j, jj;
+      delete container.track;
+      for(var i = 0, ii = track.whens.length;i < ii;++i) {
+        if(this.trackAttributes) {
+          for(j = 0, jj = this.trackAttributes.length;j < jj;++j) {
+            var name = this.trackAttributes[j];
+            container.properties[name] = track.attributes[name][i]
+          }
+        }
+        container.properties["when"] = track.whens[i];
+        if(goog.isDef(track.angles[i])) {
+          container.properties["heading"] = parseFloat(track.angles[i][0]);
+          container.properties["tilt"] = parseFloat(track.angles[i][1]);
+          container.properties["roll"] = parseFloat(track.angles[i][2])
+        }
+        if(track.points[i].coordinates.length === 3) {
+          container.properties["altitude"] = track.points[i].coordinates[2]
+        }
+        var feature = new ol.Feature(container.properties);
+        var geom = track.points[i];
+        if(geom) {
+          sharedVertices = undefined;
+          if(this.readFeaturesOptions_) {
+            callback = this.readFeaturesOptions_.callback;
+            if(callback) {
+              sharedVertices = callback(feature, geom.type)
+            }
+          }
+          var geometry = this.createGeometry_({geometry:geom}, sharedVertices);
+          if(goog.isDef(geometry)) {
+            feature.setGeometry(geometry)
+          }
+        }
+        obj.features.push(feature)
+      }
+    }else {
+      if(goog.isDef(container.geometry)) {
+        var styleUrl = container.properties["styleUrl"];
+        if(goog.isDef(styleUrl)) {
+          if(!goog.string.startsWith(styleUrl, "#")) {
+            obj.links.push({href:styleUrl})
+          }
+        }
+        feature = new ol.Feature(container.properties);
+        if(container.geometry) {
+          sharedVertices = undefined;
+          if(this.readFeaturesOptions_) {
+            callback = this.readFeaturesOptions_.callback;
+            if(callback) {
+              sharedVertices = callback(feature, container.geometry.type)
+            }
+          }
+          geometry = this.createGeometry_(container, sharedVertices);
+          if(goog.isDef(geometry)) {
+            feature.setGeometry(geometry)
+          }
+        }
+        var symbolizers = undefined;
+        if(goog.isDef(container.styles)) {
+          symbolizers = container.styles[0].symbolizers
+        }
+        this.applyStyle_(feature, obj["styles"], symbolizers);
+        obj.features.push(feature)
+      }
+    }
+  }, "MultiGeometry":function(node, container) {
+    var parts = [];
+    this.readChildNodes(node, parts);
+    var buckets = goog.array.bucket(parts, function(val) {
+      return val.type
+    });
+    if(goog.object.getCount(buckets) === 1) {
+      var type = goog.object.getAnyKey(buckets);
+      switch(type) {
+        case ol.geom.GeometryType.POINT:
+          container.geometry = {type:ol.geom.GeometryType.MULTIPOINT, parts:parts};
+          break;
+        case ol.geom.GeometryType.LINESTRING:
+          container.geometry = {type:ol.geom.GeometryType.MULTILINESTRING, parts:parts};
+          break;
+        case ol.geom.GeometryType.POLYGON:
+          container.geometry = {type:ol.geom.GeometryType.MULTIPOLYGON, parts:parts};
+          break;
+        default:
+          break
+      }
+    }else {
+      container.geometry = {type:ol.geom.GeometryType.GEOMETRYCOLLECTION, parts:parts}
+    }
+  }, "Point":function(node, container) {
+    var coordinates = [];
+    this.readChildNodes(node, coordinates);
+    var point = {type:ol.geom.GeometryType.POINT, coordinates:coordinates[0][0]};
+    if(goog.isArray(container)) {
+      container.push(point)
+    }else {
+      container.geometry = point
+    }
+  }, "Polygon":function(node, container) {
+    var coordinates = [];
+    this.readChildNodes(node, coordinates);
+    var polygon = {type:ol.geom.GeometryType.POLYGON, coordinates:coordinates};
+    if(goog.isArray(container)) {
+      container.push(polygon)
+    }else {
+      container.geometry = polygon
+    }
+  }, "LineString":function(node, container) {
+    var coordinates = [];
+    this.readChildNodes(node, coordinates);
+    var linestring = {type:ol.geom.GeometryType.LINESTRING, coordinates:coordinates[0]};
+    if(goog.isArray(container)) {
+      container.push(linestring)
+    }else {
+      container.geometry = linestring
+    }
+  }, "outerBoundaryIs":function(node, coordinates) {
+    this.readChildNodes(node, coordinates)
+  }, "LinearRing":function(node, coordinates) {
+    this.readChildNodes(node, coordinates)
+  }, "coordinates":function(node, coordinates) {
+    var coordstr = this.getChildValue(node);
+    var reg = this.regExes;
+    var coords = coordstr.replace(reg.trimSpace, "").split(reg.splitSpace);
+    var coordArray = [];
+    for(var i = 0, len = coords.length;i < len;i++) {
+      var array = coords[i].replace(reg.removeSpace, "").split(",");
+      var pair = [];
+      var jj = Math.min(array.length, this.dimension);
+      for(var j = 0;j < jj;j++) {
+        pair.push(parseFloat(array[j]))
+      }
+      coordArray.push(pair)
+    }
+    coordinates.push(coordArray)
+  }, "innerBoundaryIs":function(node, coordinates) {
+    this.readChildNodes(node, coordinates)
+  }, "Folder":function(node, obj) {
+    this.readChildNodes(node, obj)
+  }, "ExtendedData":function(node, container) {
+    this.readChildNodes(node, container.properties)
+  }, "SchemaData":function(node, attributes) {
+    this.readChildNodes(node, attributes)
+  }, "SimpleData":function(node, attributes) {
+    attributes[node.getAttribute("name")] = this.getChildValue(node)
+  }, "Data":function(node, attributes) {
+    var data = {};
+    this.readChildNodes(node, data);
+    attributes[node.getAttribute("name")] = data["value"]
+  }, "when":function(node, container) {
+    var value = this.getChildValue(node);
+    var split1 = value.split("T");
+    if(split1.length === 2) {
+      var split2 = split1[1].split("-");
+      if(split2.length === 2) {
+        value += ":00"
+      }
+    }
+    container.whens.push(goog.date.fromIsoString(value).date_)
+  }, "_trackPointAttribute":function(node, container) {
+    var name = node.nodeName.split(":").pop();
+    container.attributes[name].push(this.getChildValue(node))
+  }, "Style":function(node, obj) {
+    if(this.extractStyles === true) {
+      if(!obj["styles"]) {
+        obj["styles"] = []
+      }
+      var style = {"symbolizers":[], "ids":[]};
+      var id = node.getAttribute("id");
+      if(!goog.isNull(id)) {
+        style["id"] = id
+      }
+      this.readChildNodes(node, style);
+      obj["styles"].push(style)
+    }
+  }, "LineStyle":function(node, obj) {
+    var symbolizer = {};
+    this.readChildNodes(node, symbolizer);
+    if(symbolizer.color) {
+      symbolizer.strokeColor = symbolizer.color.color;
+      symbolizer.opacity = symbolizer.color.opacity
+    }
+    if(symbolizer.width) {
+      symbolizer.strokeWidth = parseFloat(symbolizer.width)
+    }
+    delete symbolizer.color;
+    delete symbolizer.width;
+    obj["ids"].push(node.getAttribute("id"));
+    obj["symbolizers"].push(new ol.style.Line(symbolizer))
+  }, "PolyStyle":function(node, obj) {
+    var symbolizer = {};
+    this.readChildNodes(node, symbolizer);
+    if(symbolizer.color) {
+      symbolizer.fillColor = symbolizer.color.color
+    }
+    if(symbolizer.fill === "0" || symbolizer.fill === "false") {
+      symbolizer.opacity = 0
+    }else {
+      symbolizer.opacity = symbolizer.color.opacity
+    }
+    if(symbolizer.width) {
+      symbolizer.strokeWidth = parseFloat(symbolizer.width)
+    }
+    if(symbolizer.outline === "0" || symbolizer.outline === "false") {
+      symbolizer.strokeWidth = 0
+    }
+    delete symbolizer.outline;
+    delete symbolizer.width;
+    delete symbolizer.color;
+    delete symbolizer.fill;
+    obj["ids"].push(node.getAttribute("id"));
+    obj["symbolizers"].push(new ol.style.Polygon(symbolizer))
+  }, "fill":function(node, obj) {
+    obj.fill = this.getChildValue(node)
+  }, "outline":function(node, obj) {
+    obj.outline = this.getChildValue(node)
+  }, "scale":function(node, obj) {
+    obj.scale = parseFloat(this.getChildValue(node))
+  }, "Icon":function(node, obj) {
+    obj.icon = {};
+    this.readChildNodes(node, obj.icon)
+  }, "href":function(node, obj) {
+    obj.href = this.getChildValue(node)
+  }, "w":function(node, obj) {
+    obj.w = this.getChildValue(node)
+  }, "h":function(node, obj) {
+    obj.h = this.getChildValue(node)
+  }, "x":function(node, obj) {
+    obj.x = this.getChildValue(node)
+  }, "y":function(node, obj) {
+    obj.y = this.getChildValue(node)
+  }, "hotSpot":function(node, obj) {
+    obj.hotSpot = {x:parseFloat(node.getAttribute("x")), y:parseFloat(node.getAttribute("y")), xunits:node.getAttribute("xunits"), yunits:node.getAttribute("yunits")}
+  }, "IconStyle":function(node, obj) {
+    var symbolizer = {};
+    this.readChildNodes(node, symbolizer);
+    var scale = symbolizer.scale || 1;
+    var width = 32 * scale;
+    var height = 32 * scale;
+    var x, y;
+    delete symbolizer.scale;
+    if(goog.isDef(symbolizer.icon)) {
+      var href = symbolizer.icon.href;
+      if(goog.isDef(href)) {
+        var w = symbolizer.icon.w;
+        var h = symbolizer.icon.h;
+        var google = "http://maps.google.com/mapfiles/kml";
+        if(goog.string.startsWith(href, google) && !goog.isDef(w) && !goog.isDef(h)) {
+          w = 64;
+          h = 64;
+          scale = scale / 2
+        }
+        w = w || h;
+        h = h || w;
+        if(w) {
+          width = parseInt(w, 10) * scale
+        }
+        if(h) {
+          height = parseInt(h, 10) * scale
+        }
+        var matches = href.match(this.regExes.kmlIconPalette);
+        if(matches) {
+          var palette = matches[1];
+          var file_extension = matches[2];
+          x = symbolizer.icon.x;
+          y = symbolizer.icon.y;
+          var posX = x ? x / 32 : 0;
+          var posY = y ? 7 - y / 32 : 7;
+          var pos = posY * 8 + posX;
+          href = "http://maps.google.com/mapfiles/kml/pal" + palette + "/icon" + pos + file_extension
+        }
+        symbolizer.opacity = 1;
+        symbolizer.url = href
+      }
+    }
+    if(goog.isDef(symbolizer.hotSpot)) {
+      x = symbolizer.hotSpot.x;
+      y = symbolizer.hotSpot.y;
+      var xUnits = symbolizer.hotSpot.xunits, yUnits = symbolizer.hotSpot.yunits;
+      if(xUnits === "pixels") {
+        symbolizer.graphicXOffset = -x * scale
+      }else {
+        if(xUnits === "insetPixels") {
+          symbolizer.graphicXOffset = -width + x * scale
+        }else {
+          if(xUnits === "fraction") {
+            symbolizer.graphicXOffset = -width * x
+          }
+        }
+      }
+      if(yUnits == "pixels") {
+        symbolizer.graphicYOffset = -height + y * scale + 1
+      }else {
+        if(yUnits == "insetPixels") {
+          symbolizer.graphicYOffset = -(y * scale) + 1
+        }else {
+          if(yUnits == "fraction") {
+            symbolizer.graphicYOffset = -height * (1 - y) + 1
+          }
+        }
+      }
+    }
+    symbolizer.width = width;
+    symbolizer.height = height;
+    delete symbolizer.scale;
+    delete symbolizer.icon;
+    delete symbolizer.hotSpot;
+    obj["ids"].push(node.getAttribute("id"));
+    obj["symbolizers"].push(new ol.style.Icon(symbolizer))
+  }, "color":function(node, obj) {
+    var kmlColor = this.getChildValue(node);
+    if(kmlColor) {
+      var matches = kmlColor.match(this.regExes.kmlColor);
+      if(matches) {
+        obj.color = {color:"#" + matches[4] + matches[3] + matches[2], opacity:parseInt(matches[1], 16) / 255}
+      }
+    }
+  }, "width":function(node, obj) {
+    obj.width = this.getChildValue(node)
+  }}, "http://www.google.com/kml/ext/2.2":{"Track":function(node, container) {
+    container.track = {whens:[], points:[], angles:[]};
+    if(this.trackAttributes) {
+      var name;
+      container.track.attributes = {};
+      for(var i = 0, ii = this.trackAttributes.length;i < ii;++i) {
+        name = this.trackAttributes[i];
+        container.track.attributes[name] = [];
+        var readers = this.readers[this.defaultNamespaceURI];
+        if(!(name in readers)) {
+          readers[name] = readers["_trackPointAttribute"]
+        }
+      }
+    }
+    this.readChildNodes(node, container.track);
+    if(container.track.whens.length !== container.track.points.length) {
+      throw new Error("gx:Track with unequal number of when (" + container.track.whens.length + ") and gx:coord (" + container.track.points.length + ") elements.");
+    }
+    var hasAngles = container.track.angles.length > 0;
+    if(hasAngles && container.track.whens.length !== container.track.angles.length) {
+      throw new Error("gx:Track with unequal number of when (" + container.track.whens.length + ") and gx:angles (" + container.track.angles.length + ") elements.");
+    }
+  }, "coord":function(node, container) {
+    var str = this.getChildValue(node);
+    var coords = str.replace(this.regExes.trimSpace, "").split(/\s+/);
+    for(var i = 0, ii = this.dimension;i < ii;++i) {
+      coords[i] = parseFloat(coords[i])
+    }
+    var point = {type:ol.geom.GeometryType.POINT, coordinates:coords};
+    container.points.push(point)
+  }, "angles":function(node, container) {
+    var str = this.getChildValue(node);
+    var parts = str.replace(this.regExes.trimSpace, "").split(/\s+/);
+    container.angles.push(parts)
+  }}};
+  this.writers = {"http://www.opengis.net/kml/2.2":{"kml":function(options) {
+    var node = this.createElementNS("kml");
+    node.setAttribute("xmlns", this.defaultNamespaceURI);
+    this.writeNode("Document", options, null, node);
+    return node
+  }, "Document":function(options) {
+    var node = this.createElementNS("Document");
+    for(var key in options) {
+      if(options.hasOwnProperty(key) && typeof options[key] === "string") {
+        var child = this.createElementNS(key);
+        child.appendChild(this.createTextNode(options[key]));
+        node.appendChild(child)
+      }
+    }
+    var i, ii;
+    if(goog.isDef(options.styles)) {
+      for(i = 0, ii = options.styles.length;i < ii;++i) {
+        this.writeNode("_style", options.styles[i], null, node)
+      }
+    }
+    for(i = 0, ii = options.features.length;i < ii;++i) {
+      this.writeNode("_feature", options.features[i], null, node)
+    }
+    return node
+  }, "_style":function(style) {
+    var node = this.createElementNS("Style");
+    if(goog.isDef(style.id)) {
+      this.setAttributeNS(node, null, "id", style.id)
+    }
+    for(var i = 0, ii = style.symbolizers.length;i < ii;++i) {
+      this.writeNode("_symbolizer", {symbolizer:style.symbolizers[i], id:style.ids ? style.ids[i] : undefined}, null, node)
+    }
+    return node
+  }, "_symbolizer":function(symbolizerObj) {
+    var symbolizer = symbolizerObj.symbolizer;
+    if(symbolizer instanceof ol.style.Icon) {
+      return this.writeNode("IconStyle", symbolizerObj)
+    }else {
+      if(symbolizer instanceof ol.style.Line || symbolizer instanceof ol.style.LineLiteral) {
+        return this.writeNode("LineStyle", symbolizerObj)
+      }else {
+        if(symbolizer instanceof ol.style.Polygon || symbolizer instanceof ol.style.PolygonLiteral) {
+          return this.writeNode("PolyStyle", symbolizerObj)
+        }
+      }
+    }
+  }, "PolyStyle":function(symbolizerObj) {
+    var node = this.createElementNS("PolyStyle");
+    if(symbolizerObj.id) {
+      this.setAttributeNS(node, null, "id", symbolizerObj.id)
+    }
+    var symbolizer = symbolizerObj.symbolizer;
+    var literal = symbolizer instanceof ol.style.PolygonLiteral ? symbolizer : symbolizer.createLiteral();
+    if(literal.opacity !== 0) {
+      this.writeNode("fill", "1", null, node)
+    }else {
+      this.writeNode("fill", "0", null, node)
+    }
+    this.writeNode("color", {color:literal.fillColor.substring(1), opacity:literal.opacity}, null, node);
+    this.writeNode("width", literal.strokeWidth, null, node);
+    return node
+  }, "fill":function(fill) {
+    var node = this.createElementNS("fill");
+    node.appendChild(this.createTextNode(fill));
+    return node
+  }, "LineStyle":function(symbolizerObj) {
+    var node = this.createElementNS("LineStyle");
+    if(symbolizerObj.id) {
+      this.setAttributeNS(node, null, "id", symbolizerObj.id)
+    }
+    var symbolizer = symbolizerObj.symbolizer;
+    var literal = symbolizer instanceof ol.style.LineLiteral ? symbolizer : symbolizer.createLiteral();
+    this.writeNode("color", {color:literal.strokeColor.substring(1), opacity:literal.opacity}, null, node);
+    this.writeNode("width", literal.strokeWidth, null, node);
+    return node
+  }, "color":function(colorObj) {
+    var color = colorObj.color;
+    var text = (colorObj.opacity * 255).toString(16) + color.substring(4, 6) + color.substring(2, 4) + color.substring(0, 2);
+    var node = this.createElementNS("color");
+    node.appendChild(this.createTextNode(text));
+    return node
+  }, "width":function(width) {
+    var node = this.createElementNS("width");
+    node.appendChild(this.createTextNode(width));
+    return node
+  }, "IconStyle":function(symbolizerObj) {
+    var node = this.createElementNS("IconStyle");
+    this.setAttributeNS(node, null, "id", symbolizerObj.id);
+    this.writeNode("Icon", symbolizerObj.symbolizer.createLiteral().url, null, node);
+    return node
+  }, "Icon":function(url) {
+    var node = this.createElementNS("Icon");
+    this.writeNode("href", url, null, node);
+    return node
+  }, "href":function(url) {
+    var node = this.createElementNS("href");
+    node.appendChild(this.createTextNode(url));
+    return node
+  }, "_feature":function(feature) {
+    var node = this.createElementNS("Placemark");
+    this.writeNode("name", feature, null, node);
+    this.writeNode("description", feature, null, node);
+    var literals = feature.getSymbolizerLiterals();
+    if(goog.isDef(feature.get("styleUrl"))) {
+      this.writeNode("styleUrl", feature, null, node)
+    }else {
+      if(goog.isDefAndNotNull(literals)) {
+        this.writeNode("_style", {symbolizers:literals}, null, node)
+      }
+    }
+    this.writeNode("_geometry", feature.getGeometry(), null, node);
+    return node
+  }, "name":function(feature) {
+    var name = feature.get("name");
+    if(goog.isDef(name)) {
+      var node = this.createElementNS("name");
+      node.appendChild(this.createTextNode(name));
+      return node
+    }
+  }, "description":function(feature) {
+    var description = feature.get("description");
+    if(goog.isDef(description)) {
+      var node = this.createElementNS("description");
+      node.appendChild(this.createTextNode(description));
+      return node
+    }
+  }, "styleUrl":function(feature) {
+    var styleUrl = feature.get("styleUrl");
+    var node = this.createElementNS("styleUrl");
+    node.appendChild(this.createTextNode(styleUrl));
+    return node
+  }, "_geometry":function(geometry) {
+    if(geometry instanceof ol.geom.Point) {
+      return this.writeNode("Point", geometry)
+    }else {
+      if(geometry instanceof ol.geom.LineString) {
+        return this.writeNode("LineString", geometry)
+      }else {
+        if(geometry instanceof ol.geom.Polygon) {
+          return this.writeNode("Polygon", geometry)
+        }else {
+          if(geometry instanceof ol.geom.AbstractCollection) {
+            return this.writeNode("MultiGeometry", geometry)
+          }
+        }
+      }
+    }
+  }, "MultiGeometry":function(geometry) {
+    var node = this.createElementNS("MultiGeometry");
+    for(var i = 0, ii = geometry.components.length;i < ii;++i) {
+      this.writeNode("_geometry", geometry.components[i], null, node)
+    }
+    return node
+  }, "Point":function(geometry) {
+    var node = this.createElementNS("Point");
+    var coords = geometry.getCoordinates();
+    this.writeNode("coordinates", [coords], null, node);
+    return node
+  }, "LineString":function(geometry) {
+    var node = this.createElementNS("LineString");
+    this.writeNode("coordinates", geometry.getCoordinates(), null, node);
+    return node
+  }, "Polygon":function(geometry) {
+    var node = this.createElementNS("Polygon");
+    var coordinates = geometry.getCoordinates();
+    this.writeNode("outerBoundaryIs", coordinates[0], null, node);
+    for(var i = 1, ii = coordinates.length;i < ii;++i) {
+      this.writeNode("innerBoundaryIs", coordinates[i], null, node)
+    }
+    return node
+  }, "outerBoundaryIs":function(vertexArray) {
+    var node = this.createElementNS("outerBoundaryIs");
+    this.writeNode("LinearRing", vertexArray, null, node);
+    return node
+  }, "innerBoundaryIs":function(vertexArray) {
+    var node = this.createElementNS("innerBoundaryIs");
+    this.writeNode("LinearRing", vertexArray, null, node);
+    return node
+  }, "LinearRing":function(vertexArray) {
+    var node = this.createElementNS("LinearRing");
+    this.writeNode("coordinates", vertexArray, null, node);
+    return node
+  }, "coordinates":function(vertexArray) {
+    var node = this.createElementNS("coordinates");
+    var coordstr = "";
+    for(var i = 0, ii = vertexArray.length;i < ii;++i) {
+      for(var j = 0, jj = vertexArray[i].length;j < jj;++j) {
+        coordstr += vertexArray[i][j];
+        if(j < jj - 1) {
+          coordstr += ","
+        }
+      }
+      if(i < ii - 1) {
+        coordstr += " "
+      }
+    }
+    node.appendChild(this.createTextNode(coordstr));
+    return node
+  }}};
+  goog.base(this);
+  goog.object.extend(this.regExes, {kmlColor:/(\w{2})(\w{2})(\w{2})(\w{2})/, kmlIconPalette:/root:\/\/icons\/palette-(\d+)(\.\w+)/, straightBracket:/\$\[(.*?)\]/g})
+};
+goog.inherits(ol.parser.KML, ol.parser.XML);
+ol.parser.KML.prototype.readFeaturesFromObjectAsync = function(obj, callback, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  this.read(obj, callback)
+};
+ol.parser.KML.prototype.readFeaturesFromString = function(str, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(str).features
+};
+ol.parser.KML.prototype.readFeaturesFromNode = function(node, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(node).features
+};
+ol.parser.KML.prototype.readFeaturesFromObject = function(obj, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(obj).features
+};
+ol.parser.KML.prototype.parseLinks = function(deferreds, obj, done) {
+  var unvisited;
+  if(this.depth_ < this.maxDepth) {
+    this.depth_++;
+    for(var i = 0, ii = obj.links.length;i < ii;++i) {
+      var link = obj.links[i];
+      if(link.visited !== true) {
+        unvisited = true;
+        var deferred = new goog.async.Deferred;
+        var xhr = new goog.net.XhrIo;
+        var me = this;
+        goog.events.listen(xhr, goog.net.EventType.COMPLETE, function(e) {
+          if(e.target.isSuccess()) {
+            var data = e.target.getResponseXml();
+            e.target.dispose();
+            if(data && data.nodeType == 9) {
+              data = data.documentElement
+            }
+            me.readNode(data, obj);
+            me.parseLinks(deferreds, obj, done);
+            this.callback(data)
+          }
+        }, false, deferred);
+        deferreds.push(deferred);
+        xhr.send(link.href);
+        link.visited = true
+      }
+    }
+  }
+  if(unvisited !== true && this.callbackCalled_ !== true) {
+    done.call(this)
+  }
+};
+ol.parser.KML.prototype.read = function(data, opt_callback) {
+  if(typeof data == "string") {
+    data = goog.dom.xml.loadXml(data)
+  }
+  if(data && data.nodeType == 9) {
+    data = data.documentElement
+  }
+  var obj = {};
+  this.readNode(data, obj);
+  if(goog.isDef(opt_callback)) {
+    var deferreds = [];
+    this.depth_ = 0;
+    this.callbackCalled_ = false;
+    this.parseLinks(deferreds, obj, function() {
+      this.callbackCalled_ = true;
+      goog.async.DeferredList.gatherResults(deferreds).addCallbacks(function(datas) {
+        for(var i = 0, ii = obj.features.length;i < ii;++i) {
+          var feature = obj.features[i];
+          this.applyStyle_(feature, obj["styles"])
+        }
+        opt_callback.call(null, obj.features)
+      }, function() {
+        throw new Error("KML: parsing of NetworkLinks failed");
+      }, this)
+    })
+  }else {
+    return obj
+  }
+  return null
+};
+ol.parser.KML.prototype.applyStyle_ = function(feature, styles, opt_symbolizers) {
+  var symbolizers = opt_symbolizers;
+  var i, ii;
+  if(feature.get("styleUrl") && feature.getSymbolizerLiterals() === null) {
+    var styleUrl = feature.get("styleUrl");
+    styleUrl = styleUrl.substring(styleUrl.indexOf("#") + 1);
+    if(goog.isDef(styles)) {
+      for(i = 0, ii = styles.length;i < ii;++i) {
+        if(styles[i]["id"] === styleUrl) {
+          symbolizers = styles[i]["symbolizers"];
+          break
+        }
+      }
+    }
+  }
+  if(goog.isDef(symbolizers)) {
+    var geom = feature.getGeometry();
+    if(geom && geom instanceof ol.geom.LineString) {
+      for(i = 0, ii = symbolizers.length;i < ii;i++) {
+        if(symbolizers[i] instanceof ol.style.Polygon) {
+          symbolizers.splice(i, 1)
+        }
+      }
+    }
+    feature.setSymbolizers(symbolizers)
+  }
+};
+ol.parser.KML.prototype.createGeometry_ = function(container, opt_vertices) {
+  var geometry = null, coordinates, i, ii;
+  switch(container.geometry.type) {
+    case ol.geom.GeometryType.POINT:
+      geometry = new ol.geom.Point(container.geometry.coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.LINESTRING:
+      geometry = new ol.geom.LineString(container.geometry.coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.POLYGON:
+      geometry = new ol.geom.Polygon(container.geometry.coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.MULTIPOINT:
+      coordinates = [];
+      for(i = 0, ii = container.geometry.parts.length;i < ii;i++) {
+        coordinates.push(container.geometry.parts[i].coordinates)
+      }
+      geometry = ol.geom.MultiPoint.fromParts(coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.MULTILINESTRING:
+      coordinates = [];
+      for(i = 0, ii = container.geometry.parts.length;i < ii;i++) {
+        coordinates.push(container.geometry.parts[i].coordinates)
+      }
+      geometry = new ol.geom.MultiLineString(coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.MULTIPOLYGON:
+      coordinates = [];
+      for(i = 0, ii = container.geometry.parts.length;i < ii;i++) {
+        coordinates.push(container.geometry.parts[i].coordinates)
+      }
+      geometry = ol.geom.MultiPolygon.fromParts(coordinates, opt_vertices);
+      break;
+    case ol.geom.GeometryType.GEOMETRYCOLLECTION:
+      var geometries = [];
+      for(i = 0, ii = container.geometry.parts.length;i < ii;i++) {
+        geometries.push(this.createGeometry_({geometry:container.geometry.parts[i]}, opt_vertices))
+      }
+      geometry = new ol.geom.GeometryCollection(geometries);
+      break;
+    default:
+      break
+  }
+  return geometry
+};
+ol.parser.KML.prototype.write = function(obj) {
+  var root = this.writeNode("kml", obj);
+  return goog.dom.xml.serialize(root)
 };
 goog.provide("ol.parser.ogc.ExceptionReport");
 goog.require("goog.dom.xml");
@@ -21395,231 +25347,6 @@ ol.parser.polyline.decodeUnsignedInteger = function(encoded) {
   }
   return result
 };
-/*
- Portions of this code are from MochiKit, received by
- The Closure Authors under the MIT license. All other code is Copyright
- 2005-2009 The Closure Authors. All Rights Reserved.
-*/
-goog.provide("goog.async.Deferred");
-goog.provide("goog.async.Deferred.AlreadyCalledError");
-goog.provide("goog.async.Deferred.CancelledError");
-goog.require("goog.array");
-goog.require("goog.asserts");
-goog.require("goog.debug.Error");
-goog.async.Deferred = function(opt_canceller, opt_defaultScope) {
-  this.chain_ = [];
-  this.canceller_ = opt_canceller;
-  this.defaultScope_ = opt_defaultScope || null
-};
-goog.async.Deferred.prototype.fired_ = false;
-goog.async.Deferred.prototype.hadError_ = false;
-goog.async.Deferred.prototype.result_;
-goog.async.Deferred.prototype.paused_ = 0;
-goog.async.Deferred.prototype.silentlyCancelled_ = false;
-goog.async.Deferred.prototype.chained_ = false;
-goog.async.Deferred.prototype.unhandledExceptionTimeoutId_;
-goog.async.Deferred.prototype.parent_;
-goog.async.Deferred.prototype.branches_ = 0;
-goog.async.Deferred.prototype.cancel = function(opt_deepCancel) {
-  if(!this.hasFired()) {
-    if(this.parent_) {
-      var parent = this.parent_;
-      delete this.parent_;
-      if(opt_deepCancel) {
-        parent.cancel(opt_deepCancel)
-      }else {
-        parent.branchCancel_()
-      }
-    }
-    if(this.canceller_) {
-      this.canceller_.call(this.defaultScope_, this)
-    }else {
-      this.silentlyCancelled_ = true
-    }
-    if(!this.hasFired()) {
-      this.errback(new goog.async.Deferred.CancelledError(this))
-    }
-  }else {
-    if(this.result_ instanceof goog.async.Deferred) {
-      this.result_.cancel()
-    }
-  }
-};
-goog.async.Deferred.prototype.branchCancel_ = function() {
-  this.branches_--;
-  if(this.branches_ <= 0) {
-    this.cancel()
-  }
-};
-goog.async.Deferred.prototype.pause_ = function() {
-  this.paused_++
-};
-goog.async.Deferred.prototype.unpause_ = function() {
-  this.paused_--;
-  if(this.paused_ == 0 && this.hasFired()) {
-    this.fire_()
-  }
-};
-goog.async.Deferred.prototype.continue_ = function(isSuccess, res) {
-  this.resback_(isSuccess, res);
-  this.unpause_()
-};
-goog.async.Deferred.prototype.resback_ = function(isSuccess, res) {
-  this.fired_ = true;
-  this.result_ = res;
-  this.hadError_ = !isSuccess;
-  this.fire_()
-};
-goog.async.Deferred.prototype.check_ = function() {
-  if(this.hasFired()) {
-    if(!this.silentlyCancelled_) {
-      throw new goog.async.Deferred.AlreadyCalledError(this);
-    }
-    this.silentlyCancelled_ = false
-  }
-};
-goog.async.Deferred.prototype.callback = function(opt_result) {
-  this.check_();
-  this.assertNotDeferred_(opt_result);
-  this.resback_(true, opt_result)
-};
-goog.async.Deferred.prototype.errback = function(opt_result) {
-  this.check_();
-  this.assertNotDeferred_(opt_result);
-  this.resback_(false, opt_result)
-};
-goog.async.Deferred.prototype.assertNotDeferred_ = function(obj) {
-  goog.asserts.assert(!(obj instanceof goog.async.Deferred), "Deferred instances can only be chained if they are the result of a " + "callback")
-};
-goog.async.Deferred.prototype.addCallback = function(cb, opt_scope) {
-  return this.addCallbacks(cb, null, opt_scope)
-};
-goog.async.Deferred.prototype.addErrback = function(eb, opt_scope) {
-  return this.addCallbacks(null, eb, opt_scope)
-};
-goog.async.Deferred.prototype.addCallbacks = function(cb, eb, opt_scope) {
-  goog.asserts.assert(!this.chained_, "Chained Deferreds can not be re-used");
-  this.chain_.push([cb, eb, opt_scope]);
-  if(this.hasFired()) {
-    this.fire_()
-  }
-  return this
-};
-goog.async.Deferred.prototype.chainDeferred = function(otherDeferred) {
-  this.addCallbacks(otherDeferred.callback, otherDeferred.errback, otherDeferred);
-  return this
-};
-goog.async.Deferred.prototype.awaitDeferred = function(otherDeferred) {
-  return this.addCallback(goog.bind(otherDeferred.branch, otherDeferred))
-};
-goog.async.Deferred.prototype.branch = function(opt_propagateCancel) {
-  var d = new goog.async.Deferred;
-  this.chainDeferred(d);
-  if(opt_propagateCancel) {
-    d.parent_ = this;
-    this.branches_++
-  }
-  return d
-};
-goog.async.Deferred.prototype.addBoth = function(f, opt_scope) {
-  return this.addCallbacks(f, f, opt_scope)
-};
-goog.async.Deferred.prototype.hasFired = function() {
-  return this.fired_
-};
-goog.async.Deferred.prototype.isError = function(res) {
-  return res instanceof Error
-};
-goog.async.Deferred.prototype.hasErrback_ = function() {
-  return goog.array.some(this.chain_, function(chainRow) {
-    return goog.isFunction(chainRow[1])
-  })
-};
-goog.async.Deferred.prototype.fire_ = function() {
-  if(this.unhandledExceptionTimeoutId_ && this.hasFired() && this.hasErrback_()) {
-    goog.global.clearTimeout(this.unhandledExceptionTimeoutId_);
-    delete this.unhandledExceptionTimeoutId_
-  }
-  if(this.parent_) {
-    this.parent_.branches_--;
-    delete this.parent_
-  }
-  var res = this.result_;
-  var unhandledException = false;
-  var isChained = false;
-  while(this.chain_.length && this.paused_ == 0) {
-    var chainEntry = this.chain_.shift();
-    var callback = chainEntry[0];
-    var errback = chainEntry[1];
-    var scope = chainEntry[2];
-    var f = this.hadError_ ? errback : callback;
-    if(f) {
-      try {
-        var ret = f.call(scope || this.defaultScope_, res);
-        if(goog.isDef(ret)) {
-          this.hadError_ = this.hadError_ && (ret == res || this.isError(ret));
-          this.result_ = res = ret
-        }
-        if(res instanceof goog.async.Deferred) {
-          isChained = true;
-          this.pause_()
-        }
-      }catch(ex) {
-        res = ex;
-        this.hadError_ = true;
-        if(!this.hasErrback_()) {
-          unhandledException = true
-        }
-      }
-    }
-  }
-  this.result_ = res;
-  if(isChained && this.paused_) {
-    res.addCallbacks(goog.bind(this.continue_, this, true), goog.bind(this.continue_, this, false));
-    res.chained_ = true
-  }
-  if(unhandledException) {
-    this.unhandledExceptionTimeoutId_ = goog.global.setTimeout(function() {
-      throw res;
-    }, 0)
-  }
-};
-goog.async.Deferred.succeed = function(res) {
-  var d = new goog.async.Deferred;
-  d.callback(res);
-  return d
-};
-goog.async.Deferred.fail = function(res) {
-  var d = new goog.async.Deferred;
-  d.errback(res);
-  return d
-};
-goog.async.Deferred.cancelled = function() {
-  var d = new goog.async.Deferred;
-  d.cancel();
-  return d
-};
-goog.async.Deferred.when = function(value, callback, opt_scope) {
-  if(value instanceof goog.async.Deferred) {
-    return value.branch(true).addCallback(callback, opt_scope)
-  }else {
-    return goog.async.Deferred.succeed(value).addCallback(callback, opt_scope)
-  }
-};
-goog.async.Deferred.AlreadyCalledError = function(deferred) {
-  goog.debug.Error.call(this);
-  this.deferred = deferred
-};
-goog.inherits(goog.async.Deferred.AlreadyCalledError, goog.debug.Error);
-goog.async.Deferred.AlreadyCalledError.prototype.message = "Deferred has already fired";
-goog.async.Deferred.AlreadyCalledError.prototype.name = "AlreadyCalledError";
-goog.async.Deferred.CancelledError = function(deferred) {
-  goog.debug.Error.call(this);
-  this.deferred = deferred
-};
-goog.inherits(goog.async.Deferred.CancelledError, goog.debug.Error);
-goog.async.Deferred.CancelledError.prototype.message = "Deferred was cancelled";
-goog.async.Deferred.CancelledError.prototype.name = "CancelledError";
 goog.provide("goog.net.jsloader");
 goog.provide("goog.net.jsloader.Error");
 goog.require("goog.array");
@@ -22716,8 +26443,10 @@ goog.require("ol.layer.LayerState");
 goog.require("ol.layer.TileLayer");
 goog.require("ol.layer.Vector");
 goog.require("ol.math");
+goog.require("ol.parser.AsyncObjectFeatureParser");
 goog.require("ol.parser.DomFeatureParser");
 goog.require("ol.parser.GeoJSON");
+goog.require("ol.parser.KML");
 goog.require("ol.parser.ObjectFeatureParser");
 goog.require("ol.parser.Parser");
 goog.require("ol.parser.ReadFeaturesOptions");
