@@ -365,7 +365,7 @@ ol.renderer.webgl.Map.prototype.expireCache_ = function(map, frameState) {
     textureCacheEntry = /** @type {?ol.renderer.webgl.TextureCacheEntry} */
         (this.textureCache_.peekLast());
     if (goog.isNull(textureCacheEntry)) {
-      if (+this.textureCache_.peekLastKey() == frameState.time) {
+      if (+this.textureCache_.peekLastKey() == frameState.index) {
         break;
       } else {
         --this.textureCacheFrameMarkerCount_;
@@ -521,16 +521,15 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
 
   this.focus_ = frameState.focus;
 
-  this.textureCache_.set(frameState.time.toString(), null);
+  this.textureCache_.set(frameState.index.toString(), null);
   ++this.textureCacheFrameMarkerCount_;
 
   goog.array.forEach(frameState.layersArray, function(layer) {
-    var layerState = frameState.layerStates[goog.getUid(layer)];
-    if (!layerState.visible || !layerState.ready) {
-      return;
-    }
     var layerRenderer = this.getLayerRenderer(layer);
-    layerRenderer.renderFrame(frameState, layerState);
+    var layerState = frameState.layerStates[goog.getUid(layer)];
+    if (layerState.visible && layerState.ready) {
+      layerRenderer.renderFrame(frameState, layerState);
+    }
   }, this);
 
   var size = frameState.size;
@@ -640,5 +639,7 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
     frameState.postRenderFunctions.push(this.loadNextTileTexture_);
     frameState.animate = true;
   }
+
+  this.scheduleRemoveUnusedLayerRenderers(frameState);
 
 };
