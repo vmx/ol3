@@ -1,6 +1,6 @@
 var projection = ol.projection.get('EPSG:900913');
 var projectionExtent = projection.getExtent();
-var size = projectionExtent.getWidth() / 256;
+var size = ol.extent.getWidth(projectionExtent) / 256;
 var resolutions = new Array(26);
 var matrixIds = new Array(26);
 for (var z = 0; z < 26; ++z) {
@@ -23,12 +23,12 @@ var map = new ol.Map({
         format: 'image/png',
         projection: projection,
         tileGrid: new ol.tilegrid.WMTS({
-          origin: projectionExtent.getTopLeft(),
+          origin: ol.extent.getTopLeft(projectionExtent),
           resolutions: resolutions,
           matrixIds: matrixIds
         }),
         style: '_null',
-        extent: new ol.Extent(-13682835, 5204068, -13667473, 5221690)
+        extent: [-13682835, -13667473, 5204068, 5221690]
       })
     })
   ],

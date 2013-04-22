@@ -6,7 +6,7 @@ var layers = [
     source: new ol.source.TiledWMS({
       url: 'http://demo.opengeo.org/geoserver/wms',
       params: {'LAYERS': 'topp:states', 'TILED': true},
-      extent: new ol.Extent(-13884991, 2870341, -7455066, 6338219)
+      extent: [-13884991, -7455066, 2870341, 6338219]
     })
   })
 ];

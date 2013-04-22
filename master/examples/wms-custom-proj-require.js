@@ -1,5 +1,4 @@
 goog.require('ol.Attribution');
-goog.require('ol.Extent');
 goog.require('ol.Map');
 goog.require('ol.RendererHints');
 goog.require('ol.View2D');

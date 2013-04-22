@@ -33,10 +33,13 @@ ol.GeolocationProperty = {
 /**
  * @constructor
  * @extends {ol.Object}
+ * @param {ol.GeolocationOptions=} opt_options Options.
  */
-ol.Geolocation = function() {
+ol.Geolocation = function(opt_options) {
 
   goog.base(this);
+
+  var options = goog.isDef(opt_options) ? opt_options : {};
 
   /**
    * The unprojected (EPSG:4326) device position.
@@ -49,9 +52,7 @@ ol.Geolocation = function() {
    * @private
    * @type {number|undefined}
    */
-  this.watchId_;
-
-  this.setTracking(false);
+  this.watchId_ = undefined;
 
   goog.events.listen(
       this, ol.Object.getChangedEventType(ol.GeolocationProperty.PROJECTION),
@@ -59,6 +60,17 @@ ol.Geolocation = function() {
   goog.events.listen(
       this, ol.Object.getChangedEventType(ol.GeolocationProperty.TRACKING),
       this.handleTrackingChanged_, false, this);
+
+  if (goog.isDef(options.projection)) {
+    this.setProjection(ol.projection.get(options.projection));
+  }
+  if (goog.isDef(options.trackingOptions)) {
+    this.setTrackingOptions(options.trackingOptions);
+  }
+  if (goog.isDef(options.tracking)) {
+    this.setTracking(options.tracking);
+  }
+
 };
 goog.inherits(ol.Geolocation, ol.Object);
 
