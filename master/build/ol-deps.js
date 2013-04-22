@@ -100,7 +100,6 @@ goog.addDependency('../../../ol/ol/parser/parser.js', ['ol.parser.Parser'], []);
 goog.addDependency('../../../ol/ol/parser/polyline.js', ['ol.parser.polyline'], []);
 goog.addDependency('../../../ol/ol/parser/xml.js', ['ol.parser.XML'], ['ol.parser.Parser']);
 goog.addDependency('../../../ol/ol/pixel.js', ['ol.Pixel'], ['goog.math.Coordinate']);
-goog.addDependency('../../../ol/ol/pixelbounds.js', ['ol.PixelBounds'], []);
 goog.addDependency('../../../ol/ol/projection/common.js', ['ol.projection.addCommonProjections'], ['ol.projection', 'ol.projection.EPSG3857', 'ol.projection.EPSG4326']);
 goog.addDependency('../../../ol/ol/projection/epsg3857projection.js', ['ol.projection.EPSG3857'], ['goog.array', 'goog.asserts', 'ol.Projection', 'ol.ProjectionUnits', 'ol.math', 'ol.projection']);
 goog.addDependency('../../../ol/ol/projection/epsg4326projection.js', ['ol.projection.EPSG4326'], ['ol.Projection', 'ol.ProjectionUnits', 'ol.projection']);
@@ -166,7 +165,7 @@ goog.addDependency('../../../ol/ol/style/symbolizer.js', ['ol.style.Symbolizer',
 goog.addDependency('../../../ol/ol/tile.js', ['ol.Tile', 'ol.TileState'], ['goog.events', 'goog.events.EventTarget', 'goog.events.EventType', 'ol.TileCoord']);
 goog.addDependency('../../../ol/ol/tilecache.js', ['ol.TileCache'], ['ol.Tile', 'ol.TileRange', 'ol.structs.LRUCache']);
 goog.addDependency('../../../ol/ol/tilecoord.js', ['ol.TileCoord'], ['goog.array']);
-goog.addDependency('../../../ol/ol/tilegrid/tilegrid.js', ['ol.tilegrid.TileGrid'], ['goog.array', 'goog.asserts', 'ol.Coordinate', 'ol.PixelBounds', 'ol.Projection', 'ol.Size', 'ol.TileCoord', 'ol.TileRange', 'ol.array', 'ol.extent']);
+goog.addDependency('../../../ol/ol/tilegrid/tilegrid.js', ['ol.tilegrid.TileGrid'], ['goog.array', 'goog.asserts', 'ol.Coordinate', 'ol.Projection', 'ol.Size', 'ol.TileCoord', 'ol.TileRange', 'ol.array', 'ol.extent']);
 goog.addDependency('../../../ol/ol/tilegrid/wmtstilegrid.js', ['ol.tilegrid.WMTS'], ['goog.array', 'goog.asserts', 'ol.Size', 'ol.projection', 'ol.tilegrid.TileGrid']);
 goog.addDependency('../../../ol/ol/tilegrid/xyztilegrid.js', ['ol.tilegrid.XYZ'], ['ol.Size', 'ol.TileRange', 'ol.projection', 'ol.projection.EPSG3857', 'ol.tilegrid.TileGrid']);
 goog.addDependency('../../../ol/ol/tilequeue.js', ['ol.TilePriorityFunction', 'ol.TileQueue'], ['goog.events', 'goog.events.EventType', 'ol.Coordinate', 'ol.Tile', 'ol.structs.PriorityQueue']);
