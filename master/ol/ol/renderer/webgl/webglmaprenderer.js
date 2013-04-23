@@ -521,7 +521,7 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
 
   this.focus_ = frameState.focus;
 
-  this.textureCache_.set(frameState.index.toString(), null);
+  this.textureCache_.set((-frameState.index).toString(), null);
   ++this.textureCacheFrameMarkerCount_;
 
   var layerStates = frameState.layerStates;
@@ -561,7 +561,7 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
     layer = layersArray[i];
     layerState = frameState.layerStates[goog.getUid(layer)];
     if (!layerState.visible || !layerState.ready) {
-      return;
+      continue;
     }
     var useColor =
         layerState.brightness ||
