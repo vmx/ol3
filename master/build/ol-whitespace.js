@@ -18584,7 +18584,7 @@ ol.Map.prototype.removeLayer = function(layer) {
   return layers.remove(layer)
 };
 ol.Map.prototype.renderFrame_ = function(time) {
-  var i;
+  var i, ii, view2DState;
   if(this.freezeRenderingCount_ != 0) {
     return
   }
@@ -18598,12 +18598,12 @@ ol.Map.prototype.renderFrame_ = function(time) {
     var backgroundColor = this.getBackgroundColor();
     var viewHints = view.getHints();
     var layerStates = {};
-    var ii, layer;
+    var layer;
     for(i = 0, ii = layersArray.length;i < ii;++i) {
       layer = layersArray[i];
       layerStates[goog.getUid(layer)] = layer.getLayerState()
     }
-    var view2DState = view2D.getView2DState();
+    view2DState = view2D.getView2DState();
     frameState = {animate:false, attributions:{}, backgroundColor:goog.isDef(backgroundColor) ? backgroundColor : new ol.Color(255, 255, 255, 1), coordinateToPixelMatrix:this.coordinateToPixelMatrix_, extent:null, focus:goog.isNull(this.focus_) ? view2DState.center : this.focus_, index:this.frameIndex_++, layersArray:layersArray, layerStates:layerStates, logos:{}, pixelToCoordinateMatrix:this.pixelToCoordinateMatrix_, postRenderFunctions:[], size:size, tileQueue:this.tileQueue_, time:time, usedTiles:{}, 
     view2DState:view2DState, viewHints:viewHints, wantedTiles:{}}
   }
