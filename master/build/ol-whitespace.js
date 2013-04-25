@@ -550,7 +550,7 @@ goog.addDependency("../src/ol/filter/extentfilter.js", ["ol.filter.Extent"], ["o
 goog.addDependency("../src/ol/filter/filter.js", ["ol.filter.Filter"], ["ol.Feature"]);
 goog.addDependency("../src/ol/filter/geometryfilter.js", ["ol.filter.Geometry", "ol.filter.GeometryType"], ["ol.filter.Filter", "ol.geom.GeometryType"]);
 goog.addDependency("../src/ol/filter/logicalfilter.js", ["ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or"], ["goog.asserts", "ol.filter.Filter"]);
-goog.addDependency("../src/ol/framestate.js", ["ol.FrameState", "ol.PostRenderFunction", "ol.PreRenderFunction"], ["goog.vec.Mat4", "ol.Attribution", "ol.Color", "ol.Extent", "ol.Size", "ol.TileQueue", "ol.TileRange", "ol.View2DState", "ol.layer.Layer", "ol.layer.LayerState"]);
+goog.addDependency("../src/ol/framestate.js", ["ol.FrameState", "ol.PostRenderFunction", "ol.PreRenderFunction"], ["goog.vec.Mat4", "ol.Attribution", "ol.Extent", "ol.Size", "ol.TileQueue", "ol.TileRange", "ol.View2DState", "ol.layer.Layer", "ol.layer.LayerState"]);
 goog.addDependency("../src/ol/geolocation.js", ["ol.Geolocation", "ol.GeolocationProperty"], ["goog.events", "goog.functions", "goog.math", "ol.Coordinate", "ol.Object", "ol.Projection", "ol.projection"]);
 goog.addDependency("../src/ol/geom/abstractcollection.js", ["ol.geom.AbstractCollection"], ["ol.geom.Geometry"]);
 goog.addDependency("../src/ol/geom/base.js", ["ol.geom.Vertex", "ol.geom.VertexArray"], []);
@@ -592,7 +592,7 @@ goog.addDependency("../src/ol/layer/layer.js", ["ol.layer.Layer", "ol.layer.Laye
 goog.addDependency("../src/ol/layer/tilelayer.js", ["ol.layer.TileLayer"], ["ol.layer.Layer", "ol.source.TileSource"]);
 goog.addDependency("../src/ol/layer/vectorlayer.js", ["ol.layer.Vector"], ["goog.asserts", "goog.events.EventType", "goog.object", "ol.Feature", "ol.geom.SharedVertices", "ol.layer.Layer", "ol.projection", "ol.source.Vector", "ol.structs.RTree", "ol.style.Style", "ol.filter.Extent", "ol.filter.Geometry", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.geom.GeometryType"]);
 goog.addDependency("../src/ol/map.js", ["ol.Map", "ol.MapProperty", "ol.RendererHint", "ol.RendererHints"], ["goog.Uri.QueryData", "goog.array", "goog.asserts", "goog.async.AnimationDelay", "goog.async.Delay", "goog.dispose", "goog.dom", "goog.dom.TagName", "goog.dom.ViewportSizeMonitor", "goog.events", "goog.events.BrowserEvent", "goog.events.Event", "goog.events.EventType", "goog.events.KeyHandler", "goog.events.KeyHandler.EventType", "goog.events.MouseWheelHandler", "goog.events.MouseWheelHandler.EventType", 
-"goog.object", "goog.style", "goog.vec.Mat4", "ol.BrowserFeature", "ol.Collection", "ol.CollectionEvent", "ol.CollectionEventType", "ol.Color", "ol.FrameState", "ol.IView", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler", "ol.MapEvent", "ol.MapEventType", "ol.Object", "ol.ObjectEventType", "ol.Pixel", "ol.PostRenderFunction", "ol.PreRenderFunction", "ol.Size", "ol.Tile", "ol.TileQueue", "ol.View", "ol.View2D", "ol.ViewHint", "ol.control.defaults", "ol.extent", "ol.interaction.defaults", 
+"goog.object", "goog.style", "goog.vec.Mat4", "ol.BrowserFeature", "ol.Collection", "ol.CollectionEvent", "ol.CollectionEventType", "ol.FrameState", "ol.IView", "ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler", "ol.MapEvent", "ol.MapEventType", "ol.Object", "ol.ObjectEventType", "ol.Pixel", "ol.PostRenderFunction", "ol.PreRenderFunction", "ol.Size", "ol.Tile", "ol.TileQueue", "ol.View", "ol.View2D", "ol.ViewHint", "ol.control.defaults", "ol.extent", "ol.interaction.defaults", 
 "ol.layer.Layer", "ol.projection", "ol.projection.addCommonProjections", "ol.renderer.Map", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.structs.PriorityQueue", "ol.vec.Mat4"]);
 goog.addDependency("../src/ol/mapbrowserevent.js", ["ol.MapBrowserEvent", "ol.MapBrowserEvent.EventType", "ol.MapBrowserEventHandler"], ["goog.array", "goog.events", "goog.events.BrowserEvent", "goog.events.EventTarget", "goog.events.EventType", "goog.style", "ol.BrowserFeature", "ol.Coordinate", "ol.FrameState", "ol.MapEvent", "ol.Pixel"]);
 goog.addDependency("../src/ol/mapevent.js", ["ol.MapEvent", "ol.MapEventType"], ["goog.events.Event", "ol.FrameState"]);
@@ -7350,7 +7350,6 @@ goog.provide("ol.PostRenderFunction");
 goog.provide("ol.PreRenderFunction");
 goog.require("goog.vec.Mat4");
 goog.require("ol.Attribution");
-goog.require("ol.Color");
 goog.require("ol.Extent");
 goog.require("ol.Size");
 goog.require("ol.TileQueue");
@@ -16220,10 +16219,7 @@ ol.renderer.canvas.Map.prototype.renderFrame = function(frameState) {
   }
   var context = this.context_;
   context.setTransform(1, 0, 0, 1, 0, 0);
-  var backgroundColor = frameState.backgroundColor;
-  context.fillStyle = "rgb(" + backgroundColor.r.toFixed(0) + "," + backgroundColor.g.toFixed(0) + "," + backgroundColor.b.toFixed(0) + ")";
-  context.globalAlpha = 1;
-  context.fillRect(0, 0, size.width, size.height);
+  context.clearRect(0, 0, size.width, size.height);
   this.calculateMatrices2D(frameState);
   var layerStates = frameState.layerStates;
   var layersArray = frameState.layersArray;
@@ -17925,7 +17921,7 @@ ol.renderer.webgl.Map = function(container, map) {
   goog.dom.insertChildAt(container, this.canvas_, 0);
   this.renderedVisible_ = true;
   this.canvasSize_ = new ol.Size(container.clientHeight, container.clientWidth);
-  this.gl_ = ol.webgl.getContext(this.canvas_, {alpha:false, antialias:true, depth:false, preserveDrawingBuffer:false, stencil:false});
+  this.gl_ = ol.webgl.getContext(this.canvas_, {antialias:true, depth:false, preserveDrawingBuffer:false, stencil:false});
   goog.asserts.assert(!goog.isNull(this.gl_));
   goog.events.listen(this.canvas_, ol.webgl.WebGLContextEventType.LOST, this.handleWebGLContextLost, false, this);
   goog.events.listen(this.canvas_, ol.webgl.WebGLContextEventType.RESTORED, this.handleWebGLContextRestored, false, this);
@@ -18126,7 +18122,7 @@ ol.renderer.webgl.Map.prototype.handleWebGLContextRestored = function() {
 ol.renderer.webgl.Map.prototype.initializeGL_ = function() {
   var gl = this.gl_;
   gl.activeTexture(goog.webgl.TEXTURE0);
-  gl.blendFunc(goog.webgl.SRC_ALPHA, goog.webgl.ONE_MINUS_SRC_ALPHA);
+  gl.blendFuncSeparate(goog.webgl.SRC_ALPHA, goog.webgl.ONE_MINUS_SRC_ALPHA, goog.webgl.ONE, goog.webgl.ONE_MINUS_SRC_ALPHA);
   gl.disable(goog.webgl.CULL_FACE);
   gl.disable(goog.webgl.DEPTH_TEST);
   gl.disable(goog.webgl.SCISSOR_TEST)
@@ -18167,8 +18163,7 @@ ol.renderer.webgl.Map.prototype.renderFrame = function(frameState) {
     this.canvasSize_ = size
   }
   gl.bindFramebuffer(goog.webgl.FRAMEBUFFER, null);
-  var clearColor = frameState.backgroundColor;
-  gl.clearColor(clearColor.r / 255, clearColor.g / 255, clearColor.b / 255, clearColor.a);
+  gl.clearColor(0, 0, 0, 0);
   gl.clear(goog.webgl.COLOR_BUFFER_BIT);
   gl.enable(goog.webgl.BLEND);
   gl.viewport(0, 0, size.width, size.height);
@@ -18270,7 +18265,6 @@ goog.require("ol.BrowserFeature");
 goog.require("ol.Collection");
 goog.require("ol.CollectionEvent");
 goog.require("ol.CollectionEventType");
-goog.require("ol.Color");
 goog.require("ol.FrameState");
 goog.require("ol.IView");
 goog.require("ol.MapBrowserEvent");
@@ -18309,7 +18303,7 @@ ol.ENABLE_DOM = true;
 ol.ENABLE_WEBGL = true;
 ol.RendererHint = {CANVAS:"canvas", DOM:"dom", WEBGL:"webgl"};
 ol.DEFAULT_RENDERER_HINTS = [ol.RendererHint.WEBGL, ol.RendererHint.CANVAS, ol.RendererHint.DOM];
-ol.MapProperty = {BACKGROUND_COLOR:"backgroundColor", LAYERS:"layers", SIZE:"size", TARGET:"target", VIEW:"view"};
+ol.MapProperty = {LAYERS:"layers", SIZE:"size", TARGET:"target", VIEW:"view"};
 ol.Map = function(options) {
   goog.base(this);
   var optionsInternal = ol.Map.createOptionsInternal(options);
@@ -18358,7 +18352,6 @@ ol.Map = function(options) {
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.VIEW), this.handleViewChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.SIZE), this.handleSizeChanged_, false, this);
   goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.TARGET), this.handleTargetChanged_, false, this);
-  goog.events.listen(this, ol.Object.getChangedEventType(ol.MapProperty.BACKGROUND_COLOR), this.handleBackgroundColorChanged_, false, this);
   this.setValues(optionsInternal.values);
   if(goog.isDef(optionsInternal.controls)) {
     goog.array.forEach(optionsInternal.controls, function(control) {
@@ -18391,10 +18384,6 @@ ol.Map.prototype.disposeInternal = function() {
 ol.Map.prototype.freezeRendering = function() {
   ++this.freezeRenderingCount_
 };
-ol.Map.prototype.getBackgroundColor = function() {
-  return this.get(ol.MapProperty.BACKGROUND_COLOR)
-};
-goog.exportProperty(ol.Map.prototype, "getBackgroundColor", ol.Map.prototype.getBackgroundColor);
 ol.Map.prototype.getRenderer = function() {
   return this.renderer_
 };
@@ -18522,9 +18511,6 @@ ol.Map.prototype.handlePostRender = function() {
   }
   postRenderFunctions.length = 0
 };
-ol.Map.prototype.handleBackgroundColorChanged_ = function() {
-  this.render()
-};
 ol.Map.prototype.handleSizeChanged_ = function() {
   this.render()
 };
@@ -18595,7 +18581,6 @@ ol.Map.prototype.renderFrame_ = function(time) {
   var view2D = goog.isDef(view) ? this.getView().getView2D() : undefined;
   var frameState = null;
   if(goog.isDef(layersArray) && goog.isDef(size) && goog.isDef(view2D) && view2D.isDef()) {
-    var backgroundColor = this.getBackgroundColor();
     var viewHints = view.getHints();
     var layerStates = {};
     var layer;
@@ -18604,8 +18589,7 @@ ol.Map.prototype.renderFrame_ = function(time) {
       layerStates[goog.getUid(layer)] = layer.getLayerState()
     }
     view2DState = view2D.getView2DState();
-    frameState = {animate:false, attributions:{}, backgroundColor:goog.isDef(backgroundColor) ? backgroundColor : new ol.Color(255, 255, 255, 1), coordinateToPixelMatrix:this.coordinateToPixelMatrix_, extent:null, focus:goog.isNull(this.focus_) ? view2DState.center : this.focus_, index:this.frameIndex_++, layersArray:layersArray, layerStates:layerStates, logos:{}, pixelToCoordinateMatrix:this.pixelToCoordinateMatrix_, postRenderFunctions:[], size:size, tileQueue:this.tileQueue_, time:time, usedTiles:{}, 
-    view2DState:view2DState, viewHints:viewHints, wantedTiles:{}}
+    frameState = {animate:false, attributions:{}, coordinateToPixelMatrix:this.coordinateToPixelMatrix_, extent:null, focus:goog.isNull(this.focus_) ? view2DState.center : this.focus_, index:this.frameIndex_++, layersArray:layersArray, layerStates:layerStates, logos:{}, pixelToCoordinateMatrix:this.pixelToCoordinateMatrix_, postRenderFunctions:[], size:size, tileQueue:this.tileQueue_, time:time, usedTiles:{}, view2DState:view2DState, viewHints:viewHints, wantedTiles:{}}
   }
   var preRenderFunctions = this.preRenderFunctions_;
   var n = 0, preRenderFunction;
@@ -18633,10 +18617,6 @@ ol.Map.prototype.renderFrame_ = function(time) {
     this.postRenderDelay_.start()
   }
 };
-ol.Map.prototype.setBackgroundColor = function(backgroundColor) {
-  this.set(ol.MapProperty.BACKGROUND_COLOR, backgroundColor)
-};
-goog.exportProperty(ol.Map.prototype, "setBackgroundColor", ol.Map.prototype.setBackgroundColor);
 ol.Map.prototype.setLayers = function(layers) {
   this.set(ol.MapProperty.LAYERS, layers)
 };
