@@ -48,7 +48,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
         <div class="class-description"><p>The map is the core component of OpenLayers. In its minimal configuration it
 needs a view, one or more layers, and a target container:</p>
-
 <pre><code>var map = new ol.Map({
   view: new ol.View2D({
     center: [0, 0],
@@ -60,9 +59,7 @@ needs a view, one or more layers, and a target container:</p>
     })
   ],
   target: 'map'
-});
-</code></pre>
-
+});</code></pre>
 <p>The above snippet creates a map with a MapQuest OSM layer on a 2D view and
 renders it to a DOM element with the id 'map'.</p></div>
     
@@ -238,7 +235,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 280</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 293</li></ul></dd>
 	
     
     
@@ -1689,7 +1686,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 232</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 233</li></ul></dd>
 	
     
     
@@ -1705,6 +1702,231 @@ renders it to a DOM element with the id 'map'.</p></div>
     
     
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Unique key for the listener.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">number</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="onOnce"><span class="type-signature"></span>onOnce</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"><p>The event type.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"><p>The listener function.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>scope</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Object is whose scope to call
+    the listener.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#onOnce">ol.Object#onOnce</a>
+	</li></dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 245</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Unique key for the listener.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">number</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
 </dd>
@@ -1796,7 +2018,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 761</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 764</li></ul></dd>
 	
     
     
@@ -1957,7 +2179,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 241</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 254</li></ul></dd>
 	
     
     
@@ -2064,7 +2286,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 861</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 864</li></ul></dd>
 	
     
     
@@ -2176,7 +2398,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 263</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 276</li></ul></dd>
 	
     
     
@@ -2286,7 +2508,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 873</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 876</li></ul></dd>
 	
     
     
@@ -2399,7 +2621,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 885</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 888</li></ul></dd>
 	
     
     
@@ -2506,7 +2728,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>map.js, line 900</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>map.js, line 903</li></ul></dd>
 	
     
     
@@ -2687,7 +2909,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 306</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 319</li></ul></dd>
 	
     
     
@@ -2799,7 +3021,7 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 286</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 299</li></ul></dd>
 	
     
     
@@ -2867,7 +3089,129 @@ renders it to a DOM element with the id 'map'.</p></div>
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>object.js, line 314</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 335</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="unByKey"><span class="type-signature"></span>unByKey</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    
+                
+                    &lt;nullable><br>
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last"><p>Key.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	<dt class="inherited-from">Inherited From:</dt>
+	<dd class="inherited-from"><ul class="dummy"><li>
+		<a href="ol.Object.html#unByKey">ol.Object#unByKey</a>
+	</li></dd>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>object.js, line 327</li></ul></dd>
 	
     
     

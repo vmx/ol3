@@ -4219,7 +4219,10 @@ ol.Object.prototype.notifyInternal_ = function(key) {
   this.dispatchEvent(ol.ObjectEventType.CHANGED)
 };
 ol.Object.prototype.on = function(type, listener, opt_scope) {
-  goog.events.listen(this, type, listener, false, opt_scope)
+  return goog.events.listen(this, type, listener, false, opt_scope)
+};
+ol.Object.prototype.onOnce = function(type, listener, opt_scope) {
+  return goog.events.listenOnce(this, type, listener, false, opt_scope)
 };
 ol.Object.prototype.set = function(key, value) {
   var accessors = ol.Object.getAccessors(this);
@@ -4265,6 +4268,9 @@ ol.Object.prototype.unbind = function(key) {
 };
 ol.Object.prototype.un = function(type, listener, opt_scope) {
   goog.events.unlisten(this, type, listener, false, opt_scope)
+};
+ol.Object.prototype.unByKey = function(key) {
+  goog.events.unlistenByKey(key)
 };
 ol.Object.prototype.unbindAll = function() {
   for(var key in ol.Object.getListeners(this)) {
@@ -7623,7 +7629,11 @@ ol.ImageTile.prototype.handleImageError_ = function() {
   this.dispatchChangeEvent()
 };
 ol.ImageTile.prototype.handleImageLoad_ = function() {
-  this.state = ol.TileState.LOADED;
+  if(this.image_.naturalWidth && this.image_.naturalHeight) {
+    this.state = ol.TileState.LOADED
+  }else {
+    this.state = ol.TileState.EMPTY
+  }
   this.unlistenImage_();
   this.dispatchChangeEvent()
 };
@@ -14933,13 +14943,9 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame = function(frameState, layerS
     for(y = tileRange.minY;y <= tileRange.maxY;++y) {
       tile = tileSource.getTile(z, x, y, projection);
       tileState = tile.getState();
-      if(tileState == ol.TileState.LOADED || tileState == ol.TileState.EMPTY) {
+      if(tileState == ol.TileState.LOADED || tileState == ol.TileState.EMPTY || tileState == ol.TileState.ERROR) {
         tilesToDrawByZ[z][tile.tileCoord.toString()] = tile;
         continue
-      }else {
-        if(tileState == ol.TileState.ERROR) {
-          continue
-        }
       }
       allTilesLoaded = false;
       fullyLoaded = tileGrid.forEachTileCoordParentTileRange(tile.tileCoord, findLoadedTiles, null, tmpTileRange, tmpExtent);
@@ -14978,7 +14984,7 @@ ol.renderer.canvas.TileLayer.prototype.renderFrame = function(frameState, layerS
           x = tileSize.width * (tile.tileCoord.x - canvasTileRange.minX);
           y = tileSize.height * (canvasTileRange.maxY - tile.tileCoord.y);
           tileState = tile.getState();
-          if(tileState == ol.TileState.EMPTY || !opaque) {
+          if(tileState == ol.TileState.EMPTY || tileState == ol.TileState.ERROR || !opaque) {
             context.clearRect(x, y, tileSize.width, tileSize.height)
           }
           if(tileState == ol.TileState.LOADED) {
@@ -16235,9 +16241,17 @@ ol.renderer.canvas.Map.prototype.renderFrame = function(frameState) {
     image = layerRenderer.getImage();
     if(!goog.isNull(image)) {
       transform = layerRenderer.getTransform();
-      context.setTransform(goog.vec.Mat4.getElement(transform, 0, 0), goog.vec.Mat4.getElement(transform, 1, 0), goog.vec.Mat4.getElement(transform, 0, 1), goog.vec.Mat4.getElement(transform, 1, 1), goog.vec.Mat4.getElement(transform, 0, 3), goog.vec.Mat4.getElement(transform, 1, 3));
       context.globalAlpha = layerState.opacity;
-      context.drawImage(image, 0, 0)
+      if(frameState.view2DState.rotation == 0) {
+        var dx = goog.vec.Mat4.getElement(transform, 0, 3);
+        var dy = goog.vec.Mat4.getElement(transform, 1, 3);
+        var dw = image.width * goog.vec.Mat4.getElement(transform, 0, 0);
+        var dh = image.height * goog.vec.Mat4.getElement(transform, 1, 1);
+        context.drawImage(image, 0, 0, image.width, image.height, dx, dy, dw, dh)
+      }else {
+        context.setTransform(goog.vec.Mat4.getElement(transform, 0, 0), goog.vec.Mat4.getElement(transform, 1, 0), goog.vec.Mat4.getElement(transform, 0, 1), goog.vec.Mat4.getElement(transform, 1, 1), goog.vec.Mat4.getElement(transform, 0, 3), goog.vec.Mat4.getElement(transform, 1, 3));
+        context.drawImage(image, 0, 0)
+      }
     }
   }
   if(!this.renderedVisible_) {
@@ -18499,6 +18513,9 @@ ol.Map.prototype.handlePostRender = function() {
         maxNewLoads = 2
       }
     }
+    var tileSourceCount = goog.object.getCount(frameState.wantedTiles);
+    maxTotalLoading *= tileSourceCount;
+    maxNewLoads *= tileSourceCount;
     if(tileQueue.getTilesLoading() < maxTotalLoading) {
       tileQueue.reprioritize();
       tileQueue.loadMoreTiles(maxTotalLoading, maxNewLoads)
