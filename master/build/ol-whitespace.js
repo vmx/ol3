@@ -4222,7 +4222,7 @@ ol.Object.prototype.notifyInternal_ = function(key) {
 ol.Object.prototype.on = function(type, listener, opt_scope) {
   return goog.events.listen(this, type, listener, false, opt_scope)
 };
-ol.Object.prototype.onOnce = function(type, listener, opt_scope) {
+ol.Object.prototype.once = function(type, listener, opt_scope) {
   return goog.events.listenOnce(this, type, listener, false, opt_scope)
 };
 ol.Object.prototype.set = function(key, value) {
@@ -20026,11 +20026,11 @@ goog.require("ol.TileCoord");
 goog.require("ol.extent");
 ol.TileUrlFunctionType;
 ol.TileUrlFunction.createFromTemplate = function(template) {
-  return function(tileCoord) {
+  return function(tileCoord, projection) {
     if(goog.isNull(tileCoord)) {
       return undefined
     }else {
-      return template.replace("{z}", tileCoord.z).replace("{x}", tileCoord.x).replace("{y}", tileCoord.y)
+      return template.replace("{z}", "" + tileCoord.z).replace("{x}", "" + tileCoord.x).replace("{y}", "" + tileCoord.y)
     }
   }
 };
