@@ -33,7 +33,7 @@ goog.addDependency('../../../ol/ol/filter/filter.js', ['ol.filter.Filter'], ['ol
 goog.addDependency('../../../ol/ol/filter/geometryfilter.js', ['ol.filter.Geometry', 'ol.filter.GeometryType'], ['ol.filter.Filter', 'ol.geom.GeometryType']);
 goog.addDependency('../../../ol/ol/filter/logicalfilter.js', ['ol.filter.Logical', 'ol.filter.LogicalOperator', 'ol.filter.and', 'ol.filter.not', 'ol.filter.or'], ['goog.asserts', 'ol.filter.Filter']);
 goog.addDependency('../../../ol/ol/framestate.js', ['ol.FrameState', 'ol.PostRenderFunction', 'ol.PreRenderFunction'], ['goog.vec.Mat4', 'ol.Attribution', 'ol.Extent', 'ol.Size', 'ol.TileQueue', 'ol.TileRange', 'ol.View2DState', 'ol.layer.Layer', 'ol.layer.LayerState']);
-goog.addDependency('../../../ol/ol/geolocation.js', ['ol.Geolocation', 'ol.GeolocationProperty'], ['goog.events', 'goog.functions', 'goog.math', 'ol.Coordinate', 'ol.Object', 'ol.Projection', 'ol.projection']);
+goog.addDependency('../../../ol/ol/geolocation.js', ['ol.Geolocation', 'ol.GeolocationProperty'], ['goog.events', 'goog.math', 'ol.Coordinate', 'ol.Object', 'ol.Projection', 'ol.projection']);
 goog.addDependency('../../../ol/ol/geom/abstractcollection.js', ['ol.geom.AbstractCollection'], ['ol.geom.Geometry']);
 goog.addDependency('../../../ol/ol/geom/base.js', ['ol.geom.Vertex', 'ol.geom.VertexArray'], ['ol.coordinate']);
 goog.addDependency('../../../ol/ol/geom/geometry.js', ['ol.geom.Geometry', 'ol.geom.GeometryType'], ['ol.Extent', 'ol.geom.SharedVertices']);
