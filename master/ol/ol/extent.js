@@ -57,8 +57,7 @@ ol.extent.boundingExtentXYs_ = function(xs, ys, opt_extent) {
 
 
 /**
- * Checks if the passed coordinate is contained or on the edge
- * of the extent.
+ * Checks if the passed coordinate is contained or on the edge of the extent.
  *
  * @param {ol.Extent} extent Extent.
  * @param {ol.Coordinate} coordinate Coordinate.
@@ -71,8 +70,7 @@ ol.extent.containsCoordinate = function(extent, coordinate) {
 
 
 /**
- * Checks if the passed extent is contained or on the edge of the
- * extent.
+ * Checks if `extent2` is contained by or on the edge of `extent1`.
  *
  * @param {ol.Extent} extent1 Extent 1.
  * @param {ol.Extent} extent2 Extent 2.

@@ -45,22 +45,18 @@ goog.require('ol.style.PolygonLiteral');
  * @extends {ol.parser.XML}
  */
 ol.parser.KML = function(opt_options) {
-  if (goog.isDef(opt_options)) {
-    goog.object.extend(this, opt_options);
-  }
-  if (!goog.isDef(this.extractAttributes)) {
-    this.extractAttributes = true;
-  }
-  if (!goog.isDef(this.extractStyles)) {
-    this.extractStyles = false;
-  }
+  var options = /** @type {ol.parser.KMLOptions} */
+      (goog.isDef(opt_options) ? opt_options : {});
+  this.extractAttributes = goog.isDef(options.extractAttributes) ?
+      options.extractAttributes : true;
+  this.extractStyles = goog.isDef(options.extractStyles) ?
+      options.extractStyles : false;
   // TODO re-evaluate once shared structures support 3D
-  if (!goog.isDef(this.dimension)) {
-    this.dimension = 3;
-  }
-  if (!goog.isDef(this.maxDepth)) {
-    this.maxDepth = 0;
-  }
+  this.dimension = goog.isDef(options.dimension) ? options.dimension : 3;
+  this.maxDepth = goog.isDef(options.maxDepth) ? options.maxDepth : 0;
+  this.trackAttributes = goog.isDef(options.trackAttributes) ?
+      options.trackAttributes : null;
+
   this.defaultNamespaceURI = 'http://www.opengis.net/kml/2.2';
   this.readers = {
     'http://www.opengis.net/kml/2.2': {
@@ -568,7 +564,7 @@ ol.parser.KML = function(opt_options) {
       'Document': function(options) {
         var node = this.createElementNS('Document');
         for (var key in options) {
-          if (options.hasOwnProperty(key) && typeof options[key] === 'string') {
+          if (options.hasOwnProperty(key) && goog.isString(options[key])) {
             var child = this.createElementNS(key);
             child.appendChild(this.createTextNode(options[key]));
             node.appendChild(child);
@@ -881,12 +877,17 @@ ol.parser.KML.prototype.parseLinks = function(deferreds, obj, done) {
         var me = this;
         goog.events.listen(xhr, goog.net.EventType.COMPLETE, function(e) {
           if (e.target.isSuccess()) {
-            var data = e.target.getResponseXml();
-            goog.dispose(e.target);
-            if (data && data.nodeType == 9) {
-              data = data.documentElement;
+            var data = e.target.getResponseXml() || e.target.getResponseText();
+            if (goog.isString(data)) {
+              data = goog.dom.xml.loadXml(data);
             }
-            me.readNode(data, obj);
+            goog.dispose(e.target);
+            if (data) {
+              if (data.nodeType == 9) {
+                data = data.documentElement;
+              }
+              me.readNode(data, obj);
+            }
             me.parseLinks(deferreds, obj, done);
             this.callback(data);
           }
@@ -910,7 +911,7 @@ ol.parser.KML.prototype.parseLinks = function(deferreds, obj, done) {
  * @return {Object} An object representing the document.
  */
 ol.parser.KML.prototype.read = function(data, opt_callback) {
-  if (typeof data == 'string') {
+  if (goog.isString(data)) {
     data = goog.dom.xml.loadXml(data);
   }
   if (data && data.nodeType == 9) {

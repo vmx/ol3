@@ -18,7 +18,7 @@ var vector = new ol.layer.Vector({
 });
 
 var map = new ol.Map({
-  layers: new ol.Collection([raster, vector]),
+  layers: [raster, vector],
   renderer: ol.RendererHint.CANVAS,
   target: 'map',
   view: new ol.View2D({
@@ -27,13 +27,18 @@ var map = new ol.Map({
   })
 });
 
-map.on('mousemove', function(evt) {
-  var features = map.getFeatureInfoForPixel(evt.getPixel(), [vector]);
-  var info = [];
-  for (var i = 0, ii = features.length; i < ii; ++i) {
-    info.push(features[i].get('name'));
-  }
-  document.getElementById('info').innerHTML = info.join(', ') || '&nbsp;';
+map.on(['click', 'mousemove'], function(evt) {
+  map.getFeatureInfo({
+    pixel: evt.getPixel(),
+    layers: [vector],
+    success: function(features) {
+      var info = [];
+      for (var i = 0, ii = features.length; i < ii; ++i) {
+        info.push(features[i].get('name'));
+      }
+      document.getElementById('info').innerHTML = info.join(', ') || '&nbsp;';
+    }
+  });
 });
 
 

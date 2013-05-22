@@ -19,7 +19,7 @@ var vector = new ol.layer.Vector({
 });
 
 var map = new ol.Map({
-  layers: new ol.Collection([raster, vector]),
+  layers: [raster, vector],
   renderer: ol.RendererHint.CANVAS,
   target: 'map',
   view: new ol.View2D({
@@ -31,6 +31,20 @@ var map = new ol.Map({
 
 var kml = new ol.parser.KML({
   maxDepth: 1, dimension: 2, extractStyles: true, extractAttributes: true});
+
+map.on(['click', 'mousemove'], function(evt) {
+  map.getFeatureInfo({
+    pixel: evt.getPixel(),
+    layers: [vector],
+    success: function(features) {
+      var info = [];
+      for (var i = 0, ii = features.length; i < ii; ++i) {
+        info.push(features[i].get('name'));
+      }
+      document.getElementById('info').innerHTML = info.join(', ') || '&nbsp;';
+    }
+  });
+});
 
 var url = 'data/kml/lines.kml';
 var xhr = new XMLHttpRequest();
