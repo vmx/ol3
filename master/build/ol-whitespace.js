@@ -15341,7 +15341,7 @@ ol.structs.RTreeNode;
 ol.structs.RTree = function(opt_width) {
   var minWidth = 3;
   var maxWidth = 6;
-  if(!isNaN(opt_width)) {
+  if(goog.isDef(opt_width)) {
     minWidth = Math.floor(opt_width / 2);
     maxWidth = opt_width
   }
@@ -15550,7 +15550,8 @@ ol.structs.RTree = function(opt_width) {
     }
     return[{extent:t1.extent.concat(), nodes:[t1]}, {extent:t2.extent.concat(), nodes:[t2]}]
   };
-  var searchSubtree = function(rect, returnNode, result, root, opt_type) {
+  var searchSubtree = function(rect, returnNode, result, root, opt_type, opt_resultAsObject) {
+    var resultObject = {};
     var hitStack = [];
     if(!ol.extent.intersects(rect.extent, root.extent)) {
       return result
@@ -15568,7 +15569,11 @@ ol.structs.RTree = function(opt_width) {
               if(!returnNode) {
                 if(!goog.isDef(opt_type) || lTree.type == opt_type) {
                   var obj = lTree.leaf;
-                  result[goog.getUid(obj).toString()] = obj
+                  if(goog.isDef(opt_resultAsObject)) {
+                    resultObject[goog.getUid(obj).toString()] = obj
+                  }else {
+                    result.push(obj)
+                  }
                 }
               }else {
                 result.push(lTree)
@@ -15578,7 +15583,11 @@ ol.structs.RTree = function(opt_width) {
         }
       }
     }while(hitStack.length > 0);
-    return result
+    if(goog.isDef(opt_resultAsObject)) {
+      return resultObject
+    }else {
+      return result
+    }
   };
   var insertSubtree = function(node, root) {
     var bc;
@@ -15630,9 +15639,13 @@ ol.structs.RTree = function(opt_width) {
       }
     }while(treeStack.length > 0)
   };
-  this.find = function(extent, opt_type) {
+  this.search = function(extent, opt_type) {
     var rect = {extent:extent};
-    return searchSubtree.apply(this, [rect, false, {}, rootTree, opt_type])
+    return searchSubtree.apply(this, [rect, false, [], rootTree, opt_type])
+  };
+  this.searchReturningObject = function(extent, opt_type) {
+    var rect = {extent:extent};
+    return searchSubtree.apply(this, [rect, false, [], rootTree, opt_type, true])
   };
   this.remove = function(extent, opt_obj) {
     arguments[0] = {extent:extent};
@@ -15656,7 +15669,7 @@ ol.structs.RTree = function(opt_width) {
       return removeSubtree.apply(this, arguments)
     }
   };
-  this.put = function(extent, obj, opt_type) {
+  this.insert = function(extent, obj, opt_type) {
     var node = {extent:extent, leaf:obj};
     if(goog.isDef(opt_type)) {
       node.type = opt_type
@@ -15850,7 +15863,7 @@ ol.layer.FeatureCache.prototype.add = function(feature) {
   if(!goog.isNull(geometry)) {
     var geometryType = geometry.getType();
     this.geometryTypeIndex_[geometryType][id] = feature;
-    this.rTree_.put(geometry.getBounds(), feature, geometryType)
+    this.rTree_.insert(geometry.getBounds(), feature, geometryType)
   }
 };
 ol.layer.FeatureCache.prototype.getFeaturesObject = function(opt_filter) {
@@ -15862,7 +15875,7 @@ ol.layer.FeatureCache.prototype.getFeaturesObject = function(opt_filter) {
       features = this.geometryTypeIndex_[opt_filter.getType()]
     }else {
       if(opt_filter instanceof ol.filter.Extent) {
-        features = this.rTree_.find(opt_filter.getExtent())
+        features = this.rTree_.searchReturningObject(opt_filter.getExtent())
       }else {
         if(opt_filter instanceof ol.filter.Logical && opt_filter.operator === ol.filter.LogicalOperator.AND) {
           var filters = opt_filter.getFilters();
@@ -15880,7 +15893,7 @@ ol.layer.FeatureCache.prototype.getFeaturesObject = function(opt_filter) {
             }
             if(extentFilter && geometryFilter) {
               var type = geometryFilter.getType();
-              features = goog.object.isEmpty(this.geometryTypeIndex_[type]) ? {} : this.rTree_.find(extentFilter.getExtent(), type)
+              features = goog.object.isEmpty(this.geometryTypeIndex_[type]) ? {} : this.rTree_.searchReturningObject(extentFilter.getExtent(), type)
             }
           }
         }
@@ -24319,6 +24332,7 @@ ol.parser.KML = function(opt_options) {
   var options = goog.isDef(opt_options) ? opt_options : {};
   this.extractAttributes = goog.isDef(options.extractAttributes) ? options.extractAttributes : true;
   this.extractStyles = goog.isDef(options.extractStyles) ? options.extractStyles : false;
+  this.schemaLocation = "http://www.opengis.net/kml/2.2 " + "http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd";
   this.dimension = goog.isDef(options.dimension) ? options.dimension : 3;
   this.maxDepth = goog.isDef(options.maxDepth) ? options.maxDepth : 0;
   this.trackAttributes = goog.isDef(options.trackAttributes) ? options.trackAttributes : null;
@@ -24716,7 +24730,6 @@ ol.parser.KML = function(opt_options) {
   }}};
   this.writers = {"http://www.opengis.net/kml/2.2":{"kml":function(options) {
     var node = this.createElementNS("kml");
-    node.setAttribute("xmlns", this.defaultNamespaceURI);
     this.writeNode("Document", options, null, node);
     return node
   }, "Document":function(options) {
@@ -25079,7 +25092,8 @@ ol.parser.KML.prototype.createGeometry_ = function(container, opt_vertices) {
 };
 ol.parser.KML.prototype.write = function(obj) {
   var root = this.writeNode("kml", obj);
-  return goog.dom.xml.serialize(root)
+  this.setAttributeNS(root, "http://www.w3.org/2001/XMLSchema-instance", "xsi:schemaLocation", this.schemaLocation);
+  return this.serialize(root)
 };
 goog.provide("ol.parser.WKT");
 goog.require("goog.array");
