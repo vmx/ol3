@@ -601,7 +601,7 @@ goog.addDependency("../src/ol/object.js", ["ol.Object", "ol.ObjectEventType"], [
 goog.addDependency("../src/ol/ol.js", ["ol"], []);
 goog.addDependency("../src/ol/overlay.js", ["ol.Overlay", "ol.OverlayPositioning", "ol.OverlayProperty"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.style", "ol.Coordinate", "ol.Map", "ol.MapEventType", "ol.Object"]);
 goog.addDependency("../src/ol/parser/featureparser.js", ["ol.parser.AsyncObjectFeatureParser", "ol.parser.AsyncStringFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.ObjectFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"], ["ol.Feature"]);
-goog.addDependency("../src/ol/parser/geojson.js", ["ol.parser.GeoJSON"], ["goog.asserts", "ol.Feature", "ol.geom.Geometry", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"]);
+goog.addDependency("../src/ol/parser/geojson.js", ["ol.parser.GeoJSON"], ["goog.asserts", "goog.object", "ol.Feature", "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"]);
 goog.addDependency("../src/ol/parser/kml.js", ["ol.parser.KML"], ["goog.array", "goog.async.Deferred", "goog.async.DeferredList", "goog.date", "goog.dispose", "goog.dom.xml", "goog.events", "goog.net.EventType", "goog.net.XhrIo", "goog.object", "goog.string", "ol.Feature", "ol.geom.AbstractCollection", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", 
 "ol.parser.AsyncObjectFeatureParser", "ol.parser.AsyncStringFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.style.Icon", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral"]);
 goog.addDependency("../src/ol/parser/ogc/exceptionreport.js", ["ol.parser.ogc.ExceptionReport"], ["goog.dom.xml", "ol.parser.XML"]);
@@ -5449,6 +5449,7 @@ goog.require("ol.Object");
 goog.require("ol.geom.Geometry");
 ol.Feature = function(opt_values) {
   goog.base(this, opt_values);
+  this.featureId_;
   this.geometryName_;
   this.symbolizers_ = null
 };
@@ -5460,6 +5461,9 @@ ol.Feature.prototype.getAttributes = function() {
     attributes[key] = this.get(key)
   }
   return attributes
+};
+ol.Feature.prototype.getFeatureId = function() {
+  return this.featureId_
 };
 ol.Feature.prototype.getGeometry = function() {
   return goog.isDef(this.geometryName_) ? this.get(this.geometryName_) : null
@@ -5480,6 +5484,9 @@ ol.Feature.prototype.set = function(key, value) {
     this.geometryName_ = key
   }
   goog.base(this, "set", key, value)
+};
+ol.Feature.prototype.setFeatureId = function(featureId) {
+  this.featureId_ = featureId
 };
 ol.Feature.prototype.setGeometry = function(geometry) {
   if(!goog.isDef(this.geometryName_)) {
@@ -21579,8 +21586,10 @@ ol.parser.Parser = function() {
 };
 goog.provide("ol.parser.GeoJSON");
 goog.require("goog.asserts");
+goog.require("goog.object");
 goog.require("ol.Feature");
 goog.require("ol.geom.Geometry");
+goog.require("ol.geom.GeometryCollection");
 goog.require("ol.geom.GeometryType");
 goog.require("ol.geom.LineString");
 goog.require("ol.geom.MultiLineString");
@@ -21595,9 +21604,13 @@ goog.require("ol.parser.StringFeatureParser");
 ol.parser.GeoJSON = function() {
 };
 goog.inherits(ol.parser.GeoJSON, ol.parser.Parser);
+goog.addSingletonGetter(ol.parser.GeoJSON);
 ol.parser.GeoJSON.prototype.read = function(str) {
   var json = JSON.parse(str);
   return this.parse_(json)
+};
+ol.parser.GeoJSON.read = function(str) {
+  return ol.parser.GeoJSON.getInstance().read(str)
 };
 ol.parser.GeoJSON.prototype.readFeaturesFromString = function(str, opt_options) {
   var json = JSON.parse(str);
@@ -21644,6 +21657,9 @@ ol.parser.GeoJSON.prototype.parse_ = function(json) {
 ol.parser.GeoJSON.prototype.parseFeature_ = function(json, opt_options) {
   var geomJson = json.geometry, geometry = null, options = opt_options || {};
   var feature = new ol.Feature(json.properties);
+  if(goog.isDef(json.id)) {
+    feature.setFeatureId(json.id)
+  }
   if(geomJson) {
     var type = geomJson.type;
     var callback = options.callback;
@@ -21709,6 +21725,58 @@ ol.parser.GeoJSON.prototype.parsePoint_ = function(json, opt_vertices) {
 };
 ol.parser.GeoJSON.prototype.parsePolygon_ = function(json, opt_vertices) {
   return new ol.geom.Polygon(json.coordinates, opt_vertices)
+};
+ol.parser.GeoJSON.prototype.encodeGeometry_ = function(geometry) {
+  var type = geometry.getType();
+  return{type:goog.object.findKey(ol.parser.GeoJSON.GeometryType, function(value, key) {
+    return value === type
+  }), coordinates:geometry.getCoordinates()}
+};
+ol.parser.GeoJSON.prototype.encodeGeometryCollection_ = function(collection) {
+  var geometries = [];
+  for(var i = 0, ii = collection.components.length;i < ii;++i) {
+    geometries.push(this.encodeGeometry_(collection.components[i]))
+  }
+  return{type:"GeometryCollection", geometries:geometries}
+};
+ol.parser.GeoJSON.prototype.encodeFeatureCollection_ = function(collection) {
+  var features = [];
+  for(var i = 0, ii = collection.length;i < ii;++i) {
+    features.push(this.encodeFeature_(collection[i]))
+  }
+  return{type:"FeatureCollection", features:features}
+};
+ol.parser.GeoJSON.prototype.encodeFeature_ = function(feature) {
+  var geometry = feature.getGeometry(), attributes = feature.getAttributes();
+  var properties = goog.object.filter(attributes, function(element, index, array) {
+    return!(element instanceof ol.geom.Geometry)
+  });
+  return{type:"Feature", properties:properties, geometry:this.encodeGeometry_(geometry)}
+};
+ol.parser.GeoJSON.prototype.encode_ = function(obj) {
+  var result;
+  if(obj instanceof ol.geom.GeometryCollection) {
+    result = this.encodeGeometryCollection_(obj)
+  }else {
+    if(obj instanceof ol.geom.Geometry) {
+      result = this.encodeGeometry_(obj)
+    }else {
+      if(obj instanceof ol.Feature) {
+        result = this.encodeFeature_(obj)
+      }else {
+        if(goog.isArray(obj)) {
+          result = this.encodeFeatureCollection_(obj)
+        }
+      }
+    }
+  }
+  return JSON.stringify(result)
+};
+ol.parser.GeoJSON.write = function(obj) {
+  return ol.parser.GeoJSON.getInstance().write(obj)
+};
+ol.parser.GeoJSON.prototype.write = function(obj) {
+  return this.encode_(obj)
 };
 ol.parser.GeoJSON.GeometryType = {"Point":ol.geom.GeometryType.POINT, "LineString":ol.geom.GeometryType.LINESTRING, "Polygon":ol.geom.GeometryType.POLYGON, "MultiPoint":ol.geom.GeometryType.MULTIPOINT, "MultiLineString":ol.geom.GeometryType.MULTILINESTRING, "MultiPolygon":ol.geom.GeometryType.MULTIPOLYGON, "GeometryCollection":ol.geom.GeometryType.GEOMETRYCOLLECTION};
 /*
@@ -24372,6 +24440,7 @@ ol.parser.KML = function(opt_options) {
   }, "Placemark":function(node, obj) {
     var container = {properties:{}};
     var sharedVertices, callback;
+    var id = node.getAttribute("id");
     this.readChildNodes(node, container);
     if(goog.isDef(container.track)) {
       var track = container.track, j, jj;
@@ -24393,6 +24462,9 @@ ol.parser.KML = function(opt_options) {
           container.properties["altitude"] = track.points[i].coordinates[2]
         }
         var feature = new ol.Feature(container.properties);
+        if(!goog.isNull(id)) {
+          feature.setFeatureId(id)
+        }
         var geom = track.points[i];
         if(geom) {
           sharedVertices = undefined;
@@ -24418,6 +24490,9 @@ ol.parser.KML = function(opt_options) {
           }
         }
         feature = new ol.Feature(container.properties);
+        if(!goog.isNull(id)) {
+          feature.setFeatureId(id)
+        }
         if(container.geometry) {
           sharedVertices = undefined;
           if(this.readFeaturesOptions_) {
@@ -26886,7 +26961,7 @@ goog.require("ol.parser.XML");
 goog.require("ol.parser.ogc.OWSCommon_v1_1_0");
 goog.require("ol.projection");
 ol.parser.ogc.WMTSCapabilities_v1_0_0 = function() {
-  this.defaultNamespaceURI = "http://www.opengis.net/wtms/1.0";
+  this.defaultNamespaceURI = "http://www.opengis.net/wmts/1.0";
   this.errorProperty = "serviceIdentification";
   this.readers = {"http://www.opengis.net/wmts/1.0":{"Capabilities":function(node, obj) {
     this.readChildNodes(node, obj)
