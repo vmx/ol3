@@ -508,16 +508,16 @@ goog.addDependency("../build/src/internal/src/requireall.js", [], ["ol", "ol.Att
 "ol.control.ScaleLine", "ol.control.ScaleLineUnits", "ol.control.Zoom", "ol.control.ZoomSlider", "ol.control.defaults", "ol.coordinate", "ol.css", "ol.dom", "ol.dom.BrowserFeature", "ol.dom.Input", "ol.dom.InputProperty", "ol.easing", "ol.ellipsoid.WGS84", "ol.extent", "ol.filter.Extent", "ol.filter.Filter", "ol.filter.Geometry", "ol.filter.GeometryType", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or", "ol.geom.AbstractCollection", "ol.geom.Geometry", 
 "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.LinearRing", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.geom.Vertex", "ol.geom.VertexArray", "ol.interaction.ConditionType", "ol.interaction.DoubleClickZoom", "ol.interaction.Drag", "ol.interaction.DragPan", "ol.interaction.DragRotate", "ol.interaction.DragRotateAndZoom", "ol.interaction.DragZoom", "ol.interaction.Interaction", 
 "ol.interaction.KeyboardPan", "ol.interaction.KeyboardZoom", "ol.interaction.MouseWheelZoom", "ol.interaction.Touch", "ol.interaction.TouchPan", "ol.interaction.TouchRotate", "ol.interaction.TouchZoom", "ol.interaction.condition", "ol.interaction.defaults", "ol.layer.ImageLayer", "ol.layer.Layer", "ol.layer.LayerProperty", "ol.layer.LayerState", "ol.layer.TileLayer", "ol.layer.Vector", "ol.math", "ol.parser.AsyncObjectFeatureParser", "ol.parser.AsyncStringFeatureParser", "ol.parser.DomFeatureParser", 
-"ol.parser.GeoJSON", "ol.parser.KML", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.WKT", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.GML", "ol.parser.ogc.GML_v2", "ol.parser.ogc.GML_v3", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", "ol.parser.ogc.WMSCapabilities_v1_1", 
-"ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", "ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", 
-"ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", "ol.renderer.webgl.tilelayer.shader", 
-"ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", "ol.source.OSM", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", "ol.source.wms", "ol.sphere.NORMAL", 
-"ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", "ol.tilegrid.TileGrid", 
-"ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
+"ol.parser.GPX", "ol.parser.GeoJSON", "ol.parser.KML", "ol.parser.ObjectFeatureParser", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.WKT", "ol.parser.XML", "ol.parser.ogc.ExceptionReport", "ol.parser.ogc.GML", "ol.parser.ogc.GML_v2", "ol.parser.ogc.GML_v3", "ol.parser.ogc.OWSCommon_v1", "ol.parser.ogc.OWSCommon_v1_1_0", "ol.parser.ogc.Versioned", "ol.parser.ogc.WMSCapabilities", "ol.parser.ogc.WMSCapabilities_v1", "ol.parser.ogc.WMSCapabilities_v1_0_0", 
+"ol.parser.ogc.WMSCapabilities_v1_1", "ol.parser.ogc.WMSCapabilities_v1_1_0", "ol.parser.ogc.WMSCapabilities_v1_1_1", "ol.parser.ogc.WMSCapabilities_v1_1_1_WMSC", "ol.parser.ogc.WMSCapabilities_v1_3_0", "ol.parser.ogc.WMTSCapabilities", "ol.parser.ogc.WMTSCapabilities_v1_0_0", "ol.parser.polyline", "ol.projection", "ol.projection.EPSG3857", "ol.projection.EPSG4326", "ol.projection.addCommonProjections", "ol.renderer.Layer", "ol.renderer.Map", "ol.renderer.canvas.ImageLayer", "ol.renderer.canvas.Layer", 
+"ol.renderer.canvas.Map", "ol.renderer.canvas.SUPPORTED", "ol.renderer.canvas.TileLayer", "ol.renderer.canvas.VectorLayer", "ol.renderer.canvas.VectorRenderer", "ol.renderer.dom.ImageLayer", "ol.renderer.dom.Layer", "ol.renderer.dom.Map", "ol.renderer.dom.SUPPORTED", "ol.renderer.dom.TileLayer", "ol.renderer.webgl.ImageLayer", "ol.renderer.webgl.Layer", "ol.renderer.webgl.Map", "ol.renderer.webgl.SUPPORTED", "ol.renderer.webgl.TileLayer", "ol.renderer.webgl.map.shader.Color", "ol.renderer.webgl.map.shader.Default", 
+"ol.renderer.webgl.tilelayer.shader", "ol.source.BingMaps", "ol.source.DebugTileSource", "ol.source.ImageSource", "ol.source.ImageTileSource", "ol.source.MapQuestOSM", "ol.source.MapQuestOpenAerial", "ol.source.OSM", "ol.source.SingleImageWMS", "ol.source.Source", "ol.source.Stamen", "ol.source.StaticImage", "ol.source.TileJSON", "ol.source.TileSource", "ol.source.TileSourceOptions", "ol.source.TiledWMS", "ol.source.Vector", "ol.source.WMTS", "ol.source.WMTSRequestEncoding", "ol.source.XYZ", "ol.source.XYZOptions", 
+"ol.source.wms", "ol.sphere.NORMAL", "ol.sphere.WGS84", "ol.structs.Buffer", "ol.structs.IntegerSet", "ol.structs.LRUCache", "ol.structs.PriorityQueue", "ol.structs.RTree", "ol.style.Icon", "ol.style.IconLiteral", "ol.style.IconType", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Point", "ol.style.PointLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral", "ol.style.Rule", "ol.style.Shape", "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.Style", "ol.style.Symbolizer", "ol.style.SymbolizerLiteral", 
+"ol.tilegrid.TileGrid", "ol.tilegrid.WMTS", "ol.tilegrid.XYZ", "ol.tilejson", "ol.vec.Mat4", "ol.webgl", "ol.webgl.WebGLContextEventType", "ol.webgl.shader"]);
 goog.addDependency("../build/src/internal/src/types.js", ["ol.GeolocationOptions", "ol.GetFeatureInfoOptions", "ol.MapOptions", "ol.OverlayOptions", "ol.Proj4jsProjectionOptions", "ol.ProjectionOptions", "ol.View2DOptions", "ol.animation.BounceOptions", "ol.animation.PanOptions", "ol.animation.RotateOptions", "ol.animation.ZoomOptions", "ol.control.AttributionOptions", "ol.control.ControlOptions", "ol.control.DefaultsOptions", "ol.control.FullScreenOptions", "ol.control.LogoOptions", "ol.control.MousePositionOptions", 
 "ol.control.ScaleLineOptions", "ol.control.ZoomOptions", "ol.control.ZoomSliderOptions", "ol.interaction.DefaultsOptions", "ol.interaction.DoubleClickZoomOptions", "ol.interaction.DragPanOptions", "ol.interaction.DragRotateAndZoomOptions", "ol.interaction.DragRotateOptions", "ol.interaction.DragZoomOptions", "ol.interaction.KeyboardPanOptions", "ol.interaction.KeyboardZoomOptions", "ol.interaction.TouchPanOptions", "ol.interaction.TouchRotateOptions", "ol.layer.LayerOptions", "ol.layer.TileLayerOptions", 
-"ol.layer.VectorLayerOptions", "ol.parser.GMLOptions", "ol.parser.KMLOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OSMOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", "ol.style.LineOptions", "ol.style.PolygonOptions", "ol.style.RuleOptions", "ol.style.ShapeOptions", "ol.style.StyleOptions", 
-"ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
+"ol.layer.VectorLayerOptions", "ol.parser.GMLOptions", "ol.parser.GPXOptions", "ol.parser.GPXWriteOptions", "ol.parser.KMLOptions", "ol.source.BingMapsOptions", "ol.source.DebugTileSourceOptions", "ol.source.OSMOptions", "ol.source.SingleImageWMSOptions", "ol.source.SourceOptions", "ol.source.StamenOptions", "ol.source.StaticImageOptions", "ol.source.TileJSONOptions", "ol.source.TiledWMSOptions", "ol.source.WMTSOptions", "ol.style.IconOptions", "ol.style.LineOptions", "ol.style.PolygonOptions", "ol.style.RuleOptions", 
+"ol.style.ShapeOptions", "ol.style.StyleOptions", "ol.tilegrid.TileGridOptions", "ol.tilegrid.WMTSOptions", "ol.tilegrid.XYZOptions"], []);
 goog.addDependency("../src/ol/animation.js", ["ol.animation"], ["ol.PreRenderFunction", "ol.ViewHint", "ol.easing"]);
 goog.addDependency("../src/ol/array.js", ["ol.array"], ["goog.array", "goog.asserts"]);
 goog.addDependency("../src/ol/attribution.js", ["ol.Attribution"], ["ol.TileRange"]);
@@ -551,7 +551,7 @@ goog.addDependency("../src/ol/filter/filter.js", ["ol.filter.Filter"], ["ol.Feat
 goog.addDependency("../src/ol/filter/geometryfilter.js", ["ol.filter.Geometry", "ol.filter.GeometryType"], ["ol.filter.Filter", "ol.geom.GeometryType"]);
 goog.addDependency("../src/ol/filter/logicalfilter.js", ["ol.filter.Logical", "ol.filter.LogicalOperator", "ol.filter.and", "ol.filter.not", "ol.filter.or"], ["goog.asserts", "ol.filter.Filter"]);
 goog.addDependency("../src/ol/framestate.js", ["ol.FrameState", "ol.PostRenderFunction", "ol.PreRenderFunction"], ["goog.vec.Mat4", "ol.Attribution", "ol.Extent", "ol.Size", "ol.TileQueue", "ol.TileRange", "ol.View2DState", "ol.layer.Layer", "ol.layer.LayerState"]);
-goog.addDependency("../src/ol/geolocation.js", ["ol.Geolocation", "ol.GeolocationProperty"], ["goog.events", "goog.math", "ol.Coordinate", "ol.Object", "ol.Projection", "ol.projection"]);
+goog.addDependency("../src/ol/geolocation.js", ["ol.Geolocation", "ol.GeolocationProperty"], ["goog.events", "goog.events.EventType", "goog.math", "ol.Coordinate", "ol.Object", "ol.Projection", "ol.projection"]);
 goog.addDependency("../src/ol/geom/abstractcollection.js", ["ol.geom.AbstractCollection"], ["ol.geom.Geometry"]);
 goog.addDependency("../src/ol/geom/base.js", ["ol.geom.Vertex", "ol.geom.VertexArray"], ["ol.coordinate"]);
 goog.addDependency("../src/ol/geom/geometry.js", ["ol.geom.Geometry", "ol.geom.GeometryType"], ["ol.Extent", "ol.geom.SharedVertices"]);
@@ -602,6 +602,7 @@ goog.addDependency("../src/ol/ol.js", ["ol"], []);
 goog.addDependency("../src/ol/overlay.js", ["ol.Overlay", "ol.OverlayPositioning", "ol.OverlayProperty"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.style", "ol.Coordinate", "ol.Map", "ol.MapEventType", "ol.Object"]);
 goog.addDependency("../src/ol/parser/featureparser.js", ["ol.parser.AsyncObjectFeatureParser", "ol.parser.AsyncStringFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.ObjectFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"], ["ol.Feature"]);
 goog.addDependency("../src/ol/parser/geojson.js", ["ol.parser.GeoJSON"], ["goog.asserts", "goog.object", "ol.Feature", "ol.geom.Geometry", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", "ol.parser.Parser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser"]);
+goog.addDependency("../src/ol/parser/gpx.js", ["ol.parser.GPX"], ["goog.dom.xml", "ol.Feature", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.Point", "ol.geom.Polygon", "ol.parser.DomFeatureParser", "ol.parser.ObjectFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML"]);
 goog.addDependency("../src/ol/parser/kml.js", ["ol.parser.KML"], ["goog.array", "goog.async.Deferred", "goog.async.DeferredList", "goog.date", "goog.dispose", "goog.dom.xml", "goog.events", "goog.net.EventType", "goog.net.XhrIo", "goog.object", "goog.string", "ol.Feature", "ol.geom.AbstractCollection", "ol.geom.GeometryCollection", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.geom.SharedVertices", 
 "ol.parser.AsyncObjectFeatureParser", "ol.parser.AsyncStringFeatureParser", "ol.parser.DomFeatureParser", "ol.parser.ReadFeaturesOptions", "ol.parser.StringFeatureParser", "ol.parser.XML", "ol.style.Icon", "ol.style.Line", "ol.style.LineLiteral", "ol.style.Polygon", "ol.style.PolygonLiteral"]);
 goog.addDependency("../src/ol/parser/ogc/exceptionreport.js", ["ol.parser.ogc.ExceptionReport"], ["goog.dom.xml", "ol.parser.XML"]);
@@ -5243,6 +5244,11 @@ ol.extent.createOrUpdate = function(minX, maxX, minY, maxY, extent) {
     return[minX, maxX, minY, maxY]
   }
 };
+ol.extent.empty = function(extent) {
+  extent[0] = extent[2] = Infinity;
+  extent[1] = extent[3] = -Infinity;
+  return extent
+};
 ol.extent.equals = function(extent1, extent2) {
   return extent1[0] == extent2[0] && extent1[1] == extent2[1] && extent1[2] == extent2[2] && extent1[3] == extent2[3]
 };
@@ -7406,6 +7412,7 @@ ol.PreRenderFunction;
 goog.provide("ol.Geolocation");
 goog.provide("ol.GeolocationProperty");
 goog.require("goog.events");
+goog.require("goog.events.EventType");
 goog.require("goog.math");
 goog.require("ol.Coordinate");
 goog.require("ol.Object");
@@ -7474,6 +7481,8 @@ ol.Geolocation.prototype.positionChange_ = function(position) {
   this.set(ol.GeolocationProperty.SPEED, goog.isNull(coords.speed) ? undefined : coords.speed)
 };
 ol.Geolocation.prototype.positionError_ = function(error) {
+  error.type = goog.events.EventType.ERROR;
+  this.dispatchEvent(error)
 };
 ol.Geolocation.prototype.getAccuracy = function() {
   return this.get(ol.GeolocationProperty.ACCURACY)
@@ -15345,343 +15354,346 @@ goog.provide("ol.structs.RTree");
 goog.require("goog.array");
 goog.require("ol.extent");
 ol.structs.RTreeNode;
-ol.structs.RTree = function(opt_width) {
-  var minWidth = 3;
-  var maxWidth = 6;
-  if(goog.isDef(opt_width)) {
-    minWidth = Math.floor(opt_width / 2);
-    maxWidth = opt_width
+ol.structs.RTree = function(opt_maxWidth) {
+  this.maxWidth_ = goog.isDef(opt_maxWidth) ? opt_maxWidth : 6;
+  this.minWidth_ = Math.floor(this.maxWidth_ / 2);
+  this.rootTree_ = {extent:ol.extent.createEmpty(), nodes:[]}
+};
+ol.structs.RTree.recalculateExtent_ = function(node) {
+  var n = node.nodes.length;
+  var extent = node.extent;
+  if(n === 0) {
+    ol.extent.empty(extent)
+  }else {
+    var firstNodeExtent = node.nodes[0].extent;
+    extent[0] = firstNodeExtent[0];
+    extent[1] = firstNodeExtent[1];
+    extent[2] = firstNodeExtent[2];
+    extent[3] = firstNodeExtent[3];
+    var i;
+    for(i = 1;i < n;++i) {
+      ol.extent.extend(extent, node.nodes[i].extent)
+    }
   }
-  var rootTree = {extent:[0, 0, 0, 0], nodes:[]};
-  var squarifiedRatio = function(l, w, fill) {
-    var peri = (l + w) / 2;
-    var area = l * w;
-    var geo = area / (peri * peri);
-    return area * fill / geo
-  };
-  var makeMBR = function(nodes, rect) {
-    if(nodes.length < 1) {
-      return{extent:[0, 0, 0, 0]}
+};
+ol.structs.RTree.squarifiedRatio_ = function(l, w, fill) {
+  var peri = (l + w) / 2;
+  var area = l * w;
+  var geo = area / (peri * peri);
+  return area * fill / geo
+};
+ol.structs.RTree.prototype.chooseLeafSubtree_ = function(rect, root) {
+  var bestChoiceIndex = -1;
+  var bestChoiceStack = [];
+  var bestChoiceArea;
+  bestChoiceStack.push(root);
+  var nodes = root.nodes;
+  do {
+    if(bestChoiceIndex != -1) {
+      bestChoiceStack.push(nodes[bestChoiceIndex]);
+      nodes = nodes[bestChoiceIndex].nodes;
+      bestChoiceIndex = -1
     }
-    rect.extent = nodes[0].extent.concat();
-    for(var i = nodes.length - 1;i > 0;--i) {
-      ol.extent.extend(rect.extent, nodes[i].extent)
-    }
-    return rect
-  };
-  var removeSubtree = function(rect, obj, root) {
-    var hitStack = [];
-    var countStack = [];
-    var returnArray = [];
-    var currentDepth = 1;
-    if(!rect || !ol.extent.intersects(rect.extent, root.extent)) {
-      return returnArray
-    }
-    var workingObject = {extent:rect.extent.concat(), target:obj};
-    countStack.push(root.nodes.length);
-    hitStack.push(root);
-    do {
-      var tree = hitStack.pop();
-      var i = countStack.pop() - 1;
-      if(goog.isDef(workingObject.target)) {
-        while(i >= 0) {
-          var lTree = tree.nodes[i];
-          if(ol.extent.intersects(workingObject.extent, lTree.extent)) {
-            if(workingObject.target && goog.isDef(lTree.leaf) && lTree.leaf === workingObject.target || !workingObject.target && (goog.isDef(lTree.leaf) || ol.extent.containsExtent(workingObject.extent, lTree.extent))) {
-              if(goog.isDef(lTree.nodes)) {
-                returnArray = searchSubtree(lTree, true, [], lTree);
-                tree.nodes.splice(i, 1)
-              }else {
-                returnArray = tree.nodes.splice(i, 1)
-              }
-              makeMBR(tree.nodes, tree);
-              workingObject.target = undefined;
-              if(tree.nodes.length < minWidth) {
-                workingObject.nodes = searchSubtree(tree, true, [], tree)
-              }
-              break
-            }else {
-              if(goog.isDef(lTree.nodes)) {
-                currentDepth += 1;
-                countStack.push(i);
-                hitStack.push(tree);
-                tree = lTree;
-                i = lTree.nodes.length
-              }
-            }
-          }
-          i -= 1
-        }
-      }else {
-        if(goog.isDef(workingObject.nodes)) {
-          tree.nodes.splice(i + 1, 1);
-          if(tree.nodes.length > 0) {
-            makeMBR(tree.nodes, tree)
-          }
-          for(var t = 0, tt = workingObject.nodes.length;t < tt;++t) {
-            insertSubtree(workingObject.nodes[t], tree)
-          }
-          workingObject.nodes.length = 0;
-          if(hitStack.length === 0 && tree.nodes.length <= 1) {
-            workingObject.nodes = searchSubtree(tree, true, workingObject.nodes, tree);
-            tree.nodes.length = 0;
-            hitStack.push(tree);
-            countStack.push(1)
-          }else {
-            if(hitStack.length > 0 && tree.nodes.length < minWidth) {
-              workingObject.nodes = searchSubtree(tree, true, workingObject.nodes, tree);
-              tree.nodes.length = 0
-            }else {
-              workingObject.nodes = undefined
-            }
-          }
-        }else {
-          makeMBR(tree.nodes, tree)
-        }
+    for(var i = nodes.length - 1;i >= 0;--i) {
+      var lTree = nodes[i];
+      if(goog.isDef(lTree.leaf)) {
+        bestChoiceIndex = -1;
+        break
       }
-      currentDepth -= 1
-    }while(hitStack.length > 0);
-    return returnArray
-  };
-  var chooseLeafSubtree = function(rect, root) {
-    var bestChoiceIndex = -1;
-    var bestChoiceStack = [];
-    var bestChoiceArea;
-    bestChoiceStack.push(root);
-    var nodes = root.nodes;
-    do {
-      if(bestChoiceIndex != -1) {
-        bestChoiceStack.push(nodes[bestChoiceIndex]);
-        nodes = nodes[bestChoiceIndex].nodes;
-        bestChoiceIndex = -1
+      var oldLRatio = ol.structs.RTree.squarifiedRatio_(lTree.extent[1] - lTree.extent[0], lTree.extent[3] - lTree.extent[2], lTree.nodes.length + 1);
+      var nw = (lTree.extent[1] > rect.extent[1] ? lTree.extent[1] : rect.extent[1]) - (lTree.extent[0] < rect.extent[0] ? lTree.extent[0] : rect.extent[0]);
+      var nh = (lTree.extent[3] > rect.extent[3] ? lTree.extent[3] : rect.extent[3]) - (lTree.extent[2] < rect.extent[2] ? lTree.extent[2] : rect.extent[2]);
+      var lRatio = ol.structs.RTree.squarifiedRatio_(nw, nh, lTree.nodes.length + 2);
+      if(bestChoiceIndex < 0 || Math.abs(lRatio - oldLRatio) < bestChoiceArea) {
+        bestChoiceArea = Math.abs(lRatio - oldLRatio);
+        bestChoiceIndex = i
       }
-      for(var i = nodes.length - 1;i >= 0;--i) {
-        var lTree = nodes[i];
-        if(goog.isDef(lTree.leaf)) {
-          bestChoiceIndex = -1;
+    }
+  }while(bestChoiceIndex != -1);
+  return bestChoiceStack
+};
+ol.structs.RTree.prototype.insert = function(extent, obj, opt_type) {
+  var node = {extent:extent, leaf:obj};
+  if(goog.isDef(opt_type)) {
+    node.type = opt_type
+  }
+  this.insertSubtree_(node, this.rootTree_)
+};
+ol.structs.RTree.prototype.insertSubtree_ = function(node, root) {
+  var bc;
+  if(root.nodes.length === 0) {
+    root.extent = node.extent.concat();
+    root.nodes.push(node);
+    return
+  }
+  var treeStack = this.chooseLeafSubtree_(node, root);
+  var workingObject = node;
+  do {
+    if(bc && goog.isDef(bc.nodes) && bc.nodes.length === 0) {
+      var pbc = bc;
+      bc = treeStack.pop();
+      for(var t = 0, tt = bc.nodes.length;t < tt;++t) {
+        if(bc.nodes[t] === pbc || bc.nodes[t].nodes.length === 0) {
+          bc.nodes.splice(t, 1);
           break
         }
-        var oldLRatio = squarifiedRatio(lTree.extent[1] - lTree.extent[0], lTree.extent[3] - lTree.extent[2], lTree.nodes.length + 1);
-        var nw = (lTree.extent[1] > rect.extent[1] ? lTree.extent[1] : rect.extent[1]) - (lTree.extent[0] < rect.extent[0] ? lTree.extent[0] : rect.extent[0]);
-        var nh = (lTree.extent[3] > rect.extent[3] ? lTree.extent[3] : rect.extent[3]) - (lTree.extent[2] < rect.extent[2] ? lTree.extent[2] : rect.extent[2]);
-        var lRatio = squarifiedRatio(nw, nh, lTree.nodes.length + 2);
-        if(bestChoiceIndex < 0 || Math.abs(lRatio - oldLRatio) < bestChoiceArea) {
-          bestChoiceArea = Math.abs(lRatio - oldLRatio);
-          bestChoiceIndex = i
-        }
-      }
-    }while(bestChoiceIndex != -1);
-    return bestChoiceStack
-  };
-  var linearSplit = function(nodes) {
-    var n = pickLinear(nodes);
-    while(nodes.length > 0) {
-      pickNext(nodes, n[0], n[1])
-    }
-    return n
-  };
-  var pickNext = function(nodes, a, b) {
-    var areaA = squarifiedRatio(a.extent[1] - a.extent[0], a.extent[3] - a.extent[2], a.nodes.length + 1);
-    var areaB = squarifiedRatio(b.extent[1] - b.extent[0], b.extent[3] - b.extent[2], b.nodes.length + 1);
-    var highAreaDelta;
-    var highAreaNode;
-    var lowestGrowthGroup;
-    for(var i = nodes.length - 1;i >= 0;--i) {
-      var l = nodes[i];
-      var newAreaA = [a.extent[0] < l.extent[0] ? a.extent[0] : l.extent[0], a.extent[1] > l.extent[1] ? a.extent[1] : l.extent[1], a.extent[2] < l.extent[2] ? a.extent[2] : l.extent[2], a.extent[3] > l.extent[3] ? a.extent[3] : l.extent[3]];
-      var changeNewAreaA = Math.abs(squarifiedRatio(newAreaA[1] - newAreaA[0], newAreaA[3] - newAreaA[2], a.nodes.length + 2) - areaA);
-      var newAreaB = [b.extent[0] < l.extent[0] ? b.extent[0] : l.extent[0], b.extent[1] > l.extent[1] ? b.extent[1] : l.extent[1], b.extent[2] < l.extent[2] ? b.extent[2] : l.extent[2], b.extent[3] > l.extent[3] ? b.extent[3] : l.extent[3]];
-      var changeNewAreaB = Math.abs(squarifiedRatio(newAreaB[1] - newAreaB[0], newAreaB[3] - newAreaB[2], b.nodes.length + 2) - areaB);
-      var changeNewAreaDelta = Math.abs(changeNewAreaB - changeNewAreaA);
-      if(!highAreaNode || !highAreaDelta || changeNewAreaDelta < highAreaDelta) {
-        highAreaNode = i;
-        highAreaDelta = changeNewAreaDelta;
-        lowestGrowthGroup = changeNewAreaB < changeNewAreaA ? b : a
-      }
-    }
-    var tempNode = nodes.splice(highAreaNode, 1)[0];
-    if(a.nodes.length + nodes.length + 1 <= minWidth) {
-      a.nodes.push(tempNode);
-      ol.extent.extend(a.extent, tempNode.extent)
-    }else {
-      if(b.nodes.length + nodes.length + 1 <= minWidth) {
-        b.nodes.push(tempNode);
-        ol.extent.extend(b.extent, tempNode.extent)
-      }else {
-        lowestGrowthGroup.nodes.push(tempNode);
-        ol.extent.extend(lowestGrowthGroup.extent, tempNode.extent)
-      }
-    }
-  };
-  var pickLinear = function(nodes) {
-    var lowestHighX = nodes.length - 1;
-    var highestLowX = 0;
-    var lowestHighY = nodes.length - 1;
-    var highestLowY = 0;
-    var t1, t2;
-    for(var i = nodes.length - 2;i >= 0;--i) {
-      var l = nodes[i];
-      if(l.extent[0] > nodes[highestLowX].extent[0]) {
-        highestLowX = i
-      }else {
-        if(l.extent[1] < nodes[lowestHighX].extent[2]) {
-          lowestHighX = i
-        }
-      }
-      if(l.extent[2] > nodes[highestLowY].extent[2]) {
-        highestLowY = i
-      }else {
-        if(l.extent[3] < nodes[lowestHighY].extent[3]) {
-          lowestHighY = i
-        }
-      }
-    }
-    var dx = Math.abs(nodes[lowestHighX].extent[1] - nodes[highestLowX].extent[0]);
-    var dy = Math.abs(nodes[lowestHighY].extent[3] - nodes[highestLowY].extent[2]);
-    if(dx > dy) {
-      if(lowestHighX > highestLowX) {
-        t1 = nodes.splice(lowestHighX, 1)[0];
-        t2 = nodes.splice(highestLowX, 1)[0]
-      }else {
-        t2 = nodes.splice(highestLowX, 1)[0];
-        t1 = nodes.splice(lowestHighX, 1)[0]
       }
     }else {
-      if(lowestHighY > highestLowY) {
-        t1 = nodes.splice(lowestHighY, 1)[0];
-        t2 = nodes.splice(highestLowY, 1)[0]
+      bc = treeStack.pop()
+    }
+    var isArray = goog.isArray(workingObject);
+    if(goog.isDef(workingObject.leaf) || goog.isDef(workingObject.nodes) || isArray) {
+      if(isArray) {
+        for(var ai = 0, aii = workingObject.length;ai < aii;++ai) {
+          ol.extent.extend(bc.extent, workingObject[ai].extent)
+        }
+        bc.nodes = bc.nodes.concat(workingObject)
       }else {
-        t2 = nodes.splice(highestLowY, 1)[0];
-        t1 = nodes.splice(lowestHighY, 1)[0]
+        ol.extent.extend(bc.extent, workingObject.extent);
+        bc.nodes.push(workingObject)
+      }
+      if(bc.nodes.length <= this.maxWidth_) {
+        workingObject = {extent:bc.extent.concat()}
+      }else {
+        var a = this.linearSplit_(bc.nodes);
+        workingObject = a;
+        if(treeStack.length < 1) {
+          bc.nodes.push(a[0]);
+          treeStack.push(bc);
+          workingObject = a[1]
+        }
+      }
+    }else {
+      ol.extent.extend(bc.extent, workingObject.extent);
+      workingObject = {extent:bc.extent.concat()}
+    }
+  }while(treeStack.length > 0)
+};
+ol.structs.RTree.prototype.linearSplit_ = function(nodes) {
+  var n = this.pickLinear_(nodes);
+  while(nodes.length > 0) {
+    this.pickNext_(nodes, n[0], n[1])
+  }
+  return n
+};
+ol.structs.RTree.prototype.pickLinear_ = function(nodes) {
+  var lowestHighX = nodes.length - 1;
+  var highestLowX = 0;
+  var lowestHighY = nodes.length - 1;
+  var highestLowY = 0;
+  var t1, t2;
+  for(var i = nodes.length - 2;i >= 0;--i) {
+    var l = nodes[i];
+    if(l.extent[0] > nodes[highestLowX].extent[0]) {
+      highestLowX = i
+    }else {
+      if(l.extent[1] < nodes[lowestHighX].extent[2]) {
+        lowestHighX = i
       }
     }
-    return[{extent:t1.extent.concat(), nodes:[t1]}, {extent:t2.extent.concat(), nodes:[t2]}]
-  };
-  var searchSubtree = function(rect, returnNode, result, root, opt_type, opt_resultAsObject) {
-    var resultObject = {};
-    var hitStack = [];
-    if(!ol.extent.intersects(rect.extent, root.extent)) {
-      return result
+    if(l.extent[2] > nodes[highestLowY].extent[2]) {
+      highestLowY = i
+    }else {
+      if(l.extent[3] < nodes[lowestHighY].extent[3]) {
+        lowestHighY = i
+      }
     }
-    hitStack.push(root.nodes);
+  }
+  var dx = Math.abs(nodes[lowestHighX].extent[1] - nodes[highestLowX].extent[0]);
+  var dy = Math.abs(nodes[lowestHighY].extent[3] - nodes[highestLowY].extent[2]);
+  if(dx > dy) {
+    if(lowestHighX > highestLowX) {
+      t1 = nodes.splice(lowestHighX, 1)[0];
+      t2 = nodes.splice(highestLowX, 1)[0]
+    }else {
+      t2 = nodes.splice(highestLowX, 1)[0];
+      t1 = nodes.splice(lowestHighX, 1)[0]
+    }
+  }else {
+    if(lowestHighY > highestLowY) {
+      t1 = nodes.splice(lowestHighY, 1)[0];
+      t2 = nodes.splice(highestLowY, 1)[0]
+    }else {
+      t2 = nodes.splice(highestLowY, 1)[0];
+      t1 = nodes.splice(lowestHighY, 1)[0]
+    }
+  }
+  return[{extent:t1.extent.concat(), nodes:[t1]}, {extent:t2.extent.concat(), nodes:[t2]}]
+};
+ol.structs.RTree.prototype.pickNext_ = function(nodes, a, b) {
+  var areaA = ol.structs.RTree.squarifiedRatio_(a.extent[1] - a.extent[0], a.extent[3] - a.extent[2], a.nodes.length + 1);
+  var areaB = ol.structs.RTree.squarifiedRatio_(b.extent[1] - b.extent[0], b.extent[3] - b.extent[2], b.nodes.length + 1);
+  var highAreaDelta;
+  var highAreaNode;
+  var lowestGrowthGroup;
+  for(var i = nodes.length - 1;i >= 0;--i) {
+    var l = nodes[i];
+    var newAreaA = [a.extent[0] < l.extent[0] ? a.extent[0] : l.extent[0], a.extent[1] > l.extent[1] ? a.extent[1] : l.extent[1], a.extent[2] < l.extent[2] ? a.extent[2] : l.extent[2], a.extent[3] > l.extent[3] ? a.extent[3] : l.extent[3]];
+    var changeNewAreaA = Math.abs(ol.structs.RTree.squarifiedRatio_(newAreaA[1] - newAreaA[0], newAreaA[3] - newAreaA[2], a.nodes.length + 2) - areaA);
+    var newAreaB = [b.extent[0] < l.extent[0] ? b.extent[0] : l.extent[0], b.extent[1] > l.extent[1] ? b.extent[1] : l.extent[1], b.extent[2] < l.extent[2] ? b.extent[2] : l.extent[2], b.extent[3] > l.extent[3] ? b.extent[3] : l.extent[3]];
+    var changeNewAreaB = Math.abs(ol.structs.RTree.squarifiedRatio_(newAreaB[1] - newAreaB[0], newAreaB[3] - newAreaB[2], b.nodes.length + 2) - areaB);
+    var changeNewAreaDelta = Math.abs(changeNewAreaB - changeNewAreaA);
+    if(!highAreaNode || !highAreaDelta || changeNewAreaDelta < highAreaDelta) {
+      highAreaNode = i;
+      highAreaDelta = changeNewAreaDelta;
+      lowestGrowthGroup = changeNewAreaB < changeNewAreaA ? b : a
+    }
+  }
+  var tempNode = nodes.splice(highAreaNode, 1)[0];
+  if(a.nodes.length + nodes.length + 1 <= this.minWidth_) {
+    a.nodes.push(tempNode);
+    ol.extent.extend(a.extent, tempNode.extent)
+  }else {
+    if(b.nodes.length + nodes.length + 1 <= this.minWidth_) {
+      b.nodes.push(tempNode);
+      ol.extent.extend(b.extent, tempNode.extent)
+    }else {
+      lowestGrowthGroup.nodes.push(tempNode);
+      ol.extent.extend(lowestGrowthGroup.extent, tempNode.extent)
+    }
+  }
+};
+ol.structs.RTree.prototype.remove = function(extent, opt_obj) {
+  arguments[0] = {extent:extent};
+  switch(arguments.length) {
+    case 1:
+      arguments[1] = false;
+    case 2:
+      arguments[2] = this.rootTree_;
+    default:
+      arguments.length = 3
+  }
+  if(arguments[1] === false) {
+    var numberDeleted = 0;
+    var result = [];
     do {
-      var nodes = hitStack.pop();
-      for(var i = nodes.length - 1;i >= 0;--i) {
-        var lTree = nodes[i];
-        if(ol.extent.intersects(rect.extent, lTree.extent)) {
-          if(goog.isDef(lTree.nodes)) {
-            hitStack.push(lTree.nodes)
+      numberDeleted = result.length;
+      result = result.concat(this.removeSubtree_.apply(this, arguments))
+    }while(numberDeleted != result.length);
+    return result
+  }else {
+    return this.removeSubtree_.apply(this, arguments)
+  }
+};
+ol.structs.RTree.prototype.removeSubtree_ = function(rect, obj, root) {
+  var hitStack = [];
+  var countStack = [];
+  var returnArray = [];
+  var currentDepth = 1;
+  if(!rect || !ol.extent.intersects(rect.extent, root.extent)) {
+    return returnArray
+  }
+  var workingObject = {extent:rect.extent.concat(), target:obj};
+  countStack.push(root.nodes.length);
+  hitStack.push(root);
+  do {
+    var tree = hitStack.pop();
+    var i = countStack.pop() - 1;
+    if(goog.isDef(workingObject.target)) {
+      while(i >= 0) {
+        var lTree = tree.nodes[i];
+        if(ol.extent.intersects(workingObject.extent, lTree.extent)) {
+          if(workingObject.target && goog.isDef(lTree.leaf) && lTree.leaf === workingObject.target || !workingObject.target && (goog.isDef(lTree.leaf) || ol.extent.containsExtent(workingObject.extent, lTree.extent))) {
+            if(goog.isDef(lTree.nodes)) {
+              returnArray = this.searchSubtree_(lTree, true, [], lTree);
+              tree.nodes.splice(i, 1)
+            }else {
+              returnArray = tree.nodes.splice(i, 1)
+            }
+            ol.structs.RTree.recalculateExtent_(tree);
+            workingObject.target = undefined;
+            if(tree.nodes.length < this.minWidth_) {
+              workingObject.nodes = this.searchSubtree_(tree, true, [], tree)
+            }
+            break
           }else {
-            if(goog.isDef(lTree.leaf)) {
-              if(!returnNode) {
-                if(!goog.isDef(opt_type) || lTree.type == opt_type) {
-                  var obj = lTree.leaf;
-                  if(goog.isDef(opt_resultAsObject)) {
-                    resultObject[goog.getUid(obj).toString()] = obj
-                  }else {
-                    result.push(obj)
-                  }
+            if(goog.isDef(lTree.nodes)) {
+              currentDepth += 1;
+              countStack.push(i);
+              hitStack.push(tree);
+              tree = lTree;
+              i = lTree.nodes.length
+            }
+          }
+        }
+        i -= 1
+      }
+    }else {
+      if(goog.isDef(workingObject.nodes)) {
+        tree.nodes.splice(i + 1, 1);
+        if(tree.nodes.length > 0) {
+          ol.structs.RTree.recalculateExtent_(tree)
+        }
+        for(var t = 0, tt = workingObject.nodes.length;t < tt;++t) {
+          this.insertSubtree_(workingObject.nodes[t], tree)
+        }
+        workingObject.nodes.length = 0;
+        if(hitStack.length === 0 && tree.nodes.length <= 1) {
+          workingObject.nodes = this.searchSubtree_(tree, true, workingObject.nodes, tree);
+          tree.nodes.length = 0;
+          hitStack.push(tree);
+          countStack.push(1)
+        }else {
+          if(hitStack.length > 0 && tree.nodes.length < this.minWidth_) {
+            workingObject.nodes = this.searchSubtree_(tree, true, workingObject.nodes, tree);
+            tree.nodes.length = 0
+          }else {
+            workingObject.nodes = undefined
+          }
+        }
+      }else {
+        ol.structs.RTree.recalculateExtent_(tree)
+      }
+    }
+    currentDepth -= 1
+  }while(hitStack.length > 0);
+  return returnArray
+};
+ol.structs.RTree.prototype.search = function(extent, opt_type) {
+  var rect = {extent:extent};
+  return this.searchSubtree_(rect, false, [], this.rootTree_, opt_type)
+};
+ol.structs.RTree.prototype.searchReturningObject = function(extent, opt_type) {
+  var rect = {extent:extent};
+  return this.searchSubtree_(rect, false, [], this.rootTree_, opt_type, true)
+};
+ol.structs.RTree.prototype.searchSubtree_ = function(rect, returnNode, result, root, opt_type, opt_resultAsObject) {
+  var resultObject = {};
+  var hitStack = [];
+  if(!ol.extent.intersects(rect.extent, root.extent)) {
+    return result
+  }
+  hitStack.push(root.nodes);
+  do {
+    var nodes = hitStack.pop();
+    for(var i = nodes.length - 1;i >= 0;--i) {
+      var lTree = nodes[i];
+      if(ol.extent.intersects(rect.extent, lTree.extent)) {
+        if(goog.isDef(lTree.nodes)) {
+          hitStack.push(lTree.nodes)
+        }else {
+          if(goog.isDef(lTree.leaf)) {
+            if(!returnNode) {
+              if(!goog.isDef(opt_type) || lTree.type == opt_type) {
+                var obj = lTree.leaf;
+                if(goog.isDef(opt_resultAsObject)) {
+                  resultObject[goog.getUid(obj).toString()] = obj
+                }else {
+                  result.push(obj)
                 }
-              }else {
-                result.push(lTree)
               }
+            }else {
+              result.push(lTree)
             }
           }
         }
       }
-    }while(hitStack.length > 0);
-    if(goog.isDef(opt_resultAsObject)) {
-      return resultObject
-    }else {
-      return result
     }
-  };
-  var insertSubtree = function(node, root) {
-    var bc;
-    if(root.nodes.length === 0) {
-      root.extent = node.extent.concat();
-      root.nodes.push(node);
-      return
-    }
-    var treeStack = chooseLeafSubtree(node, root);
-    var workingObject = node;
-    do {
-      if(bc && goog.isDef(bc.nodes) && bc.nodes.length === 0) {
-        var pbc = bc;
-        bc = treeStack.pop();
-        for(var t = 0, tt = bc.nodes.length;t < tt;++t) {
-          if(bc.nodes[t] === pbc || bc.nodes[t].nodes.length === 0) {
-            bc.nodes.splice(t, 1);
-            break
-          }
-        }
-      }else {
-        bc = treeStack.pop()
-      }
-      var isArray = goog.isArray(workingObject);
-      if(goog.isDef(workingObject.leaf) || goog.isDef(workingObject.nodes) || isArray) {
-        if(isArray) {
-          for(var ai = 0, aii = workingObject.length;ai < aii;++ai) {
-            ol.extent.extend(bc.extent, workingObject[ai].extent)
-          }
-          bc.nodes = bc.nodes.concat(workingObject)
-        }else {
-          ol.extent.extend(bc.extent, workingObject.extent);
-          bc.nodes.push(workingObject)
-        }
-        if(bc.nodes.length <= maxWidth) {
-          workingObject = {extent:bc.extent.concat()}
-        }else {
-          var a = linearSplit(bc.nodes);
-          workingObject = a;
-          if(treeStack.length < 1) {
-            bc.nodes.push(a[0]);
-            treeStack.push(bc);
-            workingObject = a[1]
-          }
-        }
-      }else {
-        ol.extent.extend(bc.extent, workingObject.extent);
-        workingObject = {extent:bc.extent.concat()}
-      }
-    }while(treeStack.length > 0)
-  };
-  this.search = function(extent, opt_type) {
-    var rect = {extent:extent};
-    return searchSubtree.apply(this, [rect, false, [], rootTree, opt_type])
-  };
-  this.searchReturningObject = function(extent, opt_type) {
-    var rect = {extent:extent};
-    return searchSubtree.apply(this, [rect, false, [], rootTree, opt_type, true])
-  };
-  this.remove = function(extent, opt_obj) {
-    arguments[0] = {extent:extent};
-    switch(arguments.length) {
-      case 1:
-        arguments[1] = false;
-      case 2:
-        arguments[2] = rootTree;
-      default:
-        arguments.length = 3
-    }
-    if(arguments[1] === false) {
-      var numberDeleted = 0;
-      var result = [];
-      do {
-        numberDeleted = result.length;
-        result = result.concat(removeSubtree.apply(this, arguments))
-      }while(numberDeleted != result.length);
-      return result
-    }else {
-      return removeSubtree.apply(this, arguments)
-    }
-  };
-  this.insert = function(extent, obj, opt_type) {
-    var node = {extent:extent, leaf:obj};
-    if(goog.isDef(opt_type)) {
-      node.type = opt_type
-    }
-    insertSubtree(node, rootTree)
+  }while(hitStack.length > 0);
+  if(goog.isDef(opt_resultAsObject)) {
+    return resultObject
+  }else {
+    return result
   }
 };
 goog.provide("ol.filter.Filter");
@@ -21581,8 +21593,483 @@ ol.parser.AsyncObjectFeatureParser = function() {
 ol.parser.AsyncObjectFeatureParser.prototype.readFeaturesFromObjectAsync = goog.abstractMethod;
 ol.parser.ReadFeaturesCallback;
 ol.parser.ReadFeaturesOptions;
+goog.provide("goog.dom.xml");
+goog.require("goog.dom");
+goog.require("goog.dom.NodeType");
+goog.dom.xml.MAX_XML_SIZE_KB = 2 * 1024;
+goog.dom.xml.MAX_ELEMENT_DEPTH = 256;
+goog.dom.xml.createDocument = function(opt_rootTagName, opt_namespaceUri) {
+  if(opt_namespaceUri && !opt_rootTagName) {
+    throw Error("Can't create document with namespace and no root tag");
+  }
+  if(document.implementation && document.implementation.createDocument) {
+    return document.implementation.createDocument(opt_namespaceUri || "", opt_rootTagName || "", null)
+  }else {
+    if(typeof ActiveXObject != "undefined") {
+      var doc = goog.dom.xml.createMsXmlDocument_();
+      if(doc) {
+        if(opt_rootTagName) {
+          doc.appendChild(doc.createNode(goog.dom.NodeType.ELEMENT, opt_rootTagName, opt_namespaceUri || ""))
+        }
+        return doc
+      }
+    }
+  }
+  throw Error("Your browser does not support creating new documents");
+};
+goog.dom.xml.loadXml = function(xml) {
+  if(typeof DOMParser != "undefined") {
+    return(new DOMParser).parseFromString(xml, "application/xml")
+  }else {
+    if(typeof ActiveXObject != "undefined") {
+      var doc = goog.dom.xml.createMsXmlDocument_();
+      doc.loadXML(xml);
+      return doc
+    }
+  }
+  throw Error("Your browser does not support loading xml documents");
+};
+goog.dom.xml.serialize = function(xml) {
+  if(typeof XMLSerializer != "undefined") {
+    return(new XMLSerializer).serializeToString(xml)
+  }
+  var text = xml.xml;
+  if(text) {
+    return text
+  }
+  throw Error("Your browser does not support serializing XML documents");
+};
+goog.dom.xml.selectSingleNode = function(node, path) {
+  if(typeof node.selectSingleNode != "undefined") {
+    var doc = goog.dom.getOwnerDocument(node);
+    if(typeof doc.setProperty != "undefined") {
+      doc.setProperty("SelectionLanguage", "XPath")
+    }
+    return node.selectSingleNode(path)
+  }else {
+    if(document.implementation.hasFeature("XPath", "3.0")) {
+      var doc = goog.dom.getOwnerDocument(node);
+      var resolver = doc.createNSResolver(doc.documentElement);
+      var result = doc.evaluate(path, node, resolver, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+      return result.singleNodeValue
+    }
+  }
+  return null
+};
+goog.dom.xml.selectNodes = function(node, path) {
+  if(typeof node.selectNodes != "undefined") {
+    var doc = goog.dom.getOwnerDocument(node);
+    if(typeof doc.setProperty != "undefined") {
+      doc.setProperty("SelectionLanguage", "XPath")
+    }
+    return node.selectNodes(path)
+  }else {
+    if(document.implementation.hasFeature("XPath", "3.0")) {
+      var doc = goog.dom.getOwnerDocument(node);
+      var resolver = doc.createNSResolver(doc.documentElement);
+      var nodes = doc.evaluate(path, node, resolver, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+      var results = [];
+      var count = nodes.snapshotLength;
+      for(var i = 0;i < count;i++) {
+        results.push(nodes.snapshotItem(i))
+      }
+      return results
+    }else {
+      return[]
+    }
+  }
+};
+goog.dom.xml.setAttributes = function(element, attributes) {
+  for(var key in attributes) {
+    if(attributes.hasOwnProperty(key)) {
+      element.setAttribute(key, attributes[key])
+    }
+  }
+};
+goog.dom.xml.createMsXmlDocument_ = function() {
+  var doc = new ActiveXObject("MSXML2.DOMDocument");
+  if(doc) {
+    doc.resolveExternals = false;
+    doc.validateOnParse = false;
+    try {
+      doc.setProperty("ProhibitDTD", true);
+      doc.setProperty("MaxXMLSize", goog.dom.xml.MAX_XML_SIZE_KB);
+      doc.setProperty("MaxElementDepth", goog.dom.xml.MAX_ELEMENT_DEPTH)
+    }catch(e) {
+    }
+  }
+  return doc
+};
 goog.provide("ol.parser.Parser");
 ol.parser.Parser = function() {
+};
+goog.provide("ol.parser.XML");
+goog.require("goog.dom.xml");
+goog.require("ol.parser.Parser");
+ol.parser.XML = function() {
+  if(goog.global.ActiveXObject) {
+    this.xmldom = new ActiveXObject("Microsoft.XMLDOM")
+  }
+  this.regExes = {trimSpace:/^\s*|\s*$/g, removeSpace:/\s*/g, splitSpace:/\s+/, trimComma:/\s*,\s*/g}
+};
+goog.inherits(ol.parser.XML, ol.parser.Parser);
+ol.parser.XML.prototype.readNode = function(node, obj) {
+  if(!obj) {
+    obj = {}
+  }
+  var group = this.readers[node.namespaceURI] || this.readers[this.defaultNamespaceURI];
+  if(group) {
+    var local = node.localName || node.nodeName.split(":").pop();
+    var reader = group[local] || group["*"];
+    if(reader) {
+      reader.apply(this, [node, obj])
+    }
+  }
+  return obj
+};
+ol.parser.XML.prototype.readChildNodes = function(node, obj) {
+  if(!obj) {
+    obj = {}
+  }
+  var children = node.childNodes;
+  var child;
+  for(var i = 0, len = children.length;i < len;++i) {
+    child = children[i];
+    if(child.nodeType == 1) {
+      this.readNode(child, obj)
+    }
+  }
+  return obj
+};
+ol.parser.XML.prototype.getChildValue = function(node, def) {
+  var value = def || "";
+  if(node) {
+    for(var child = node.firstChild;child;child = child.nextSibling) {
+      switch(child.nodeType) {
+        case 3:
+        ;
+        case 4:
+          value += child.nodeValue;
+          break;
+        default:
+          break
+      }
+    }
+  }
+  return value
+};
+ol.parser.XML.prototype.getAttributeNodeNS = function(node, uri, name) {
+  var attributeNode = null;
+  if(node.getAttributeNodeNS) {
+    attributeNode = node.getAttributeNodeNS(uri, name)
+  }else {
+    var attributes = node.attributes;
+    var potentialNode, fullName;
+    for(var i = 0, len = attributes.length;i < len;++i) {
+      potentialNode = attributes[i];
+      if(potentialNode.namespaceURI == uri) {
+        fullName = potentialNode.prefix ? potentialNode.prefix + ":" + name : name;
+        if(fullName == potentialNode.nodeName) {
+          attributeNode = potentialNode;
+          break
+        }
+      }
+    }
+  }
+  return attributeNode
+};
+ol.parser.XML.prototype.getAttributeNS = function(node, uri, name) {
+  var attributeValue = "";
+  if(node.getAttributeNS) {
+    attributeValue = node.getAttributeNS(uri, name) || ""
+  }else {
+    var attributeNode = this.getAttributeNodeNS(node, uri, name);
+    if(attributeNode) {
+      attributeValue = attributeNode.nodeValue
+    }
+  }
+  return attributeValue
+};
+ol.parser.XML.prototype.createElementNS = function(name, opt_uri) {
+  var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
+  var element;
+  if(this.xmldom) {
+    element = this.xmldom.createNode(1, name, uri)
+  }else {
+    element = document.createElementNS(uri, name)
+  }
+  return element
+};
+ol.parser.XML.prototype.writeNode = function(name, obj, opt_uri, opt_parent) {
+  var child = null;
+  if(goog.isDef(this.writers)) {
+    var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
+    child = this.writers[uri][name].apply(this, [obj]);
+    if(opt_parent && child) {
+      opt_parent.appendChild(child)
+    }
+  }
+  return child
+};
+ol.parser.XML.prototype.createTextNode = function(text) {
+  var node;
+  if(this.xmldom) {
+    node = this.xmldom.createTextNode(text)
+  }else {
+    node = document.createTextNode(text)
+  }
+  return node
+};
+ol.parser.XML.prototype.setAttributeNS = function(node, uri, name, value) {
+  if(node.setAttributeNS) {
+    node.setAttributeNS(uri, name, value)
+  }else {
+    if(this.xmldom) {
+      if(uri) {
+        var attribute = node.ownerDocument.createNode(2, name, uri);
+        attribute.nodeValue = value;
+        node.setAttributeNode(attribute)
+      }else {
+        node.setAttribute(name, value)
+      }
+    }else {
+      throw new Error("setAttributeNS not implemented");
+    }
+  }
+};
+ol.parser.XML.prototype.serialize = function(node) {
+  if(this.xmldom) {
+    return node.xml
+  }else {
+    if(node.nodeType == 1) {
+      var doc = document.implementation.createDocument("", "", null);
+      if(doc.importNode) {
+        doc.appendChild(doc.importNode(node, true))
+      }else {
+        doc.appendChild(node)
+      }
+      return goog.dom.xml.serialize(doc)
+    }else {
+      return goog.dom.xml.serialize(node)
+    }
+  }
+};
+goog.provide("ol.parser.GPX");
+goog.require("goog.dom.xml");
+goog.require("ol.Feature");
+goog.require("ol.geom.GeometryType");
+goog.require("ol.geom.LineString");
+goog.require("ol.geom.MultiLineString");
+goog.require("ol.geom.Point");
+goog.require("ol.geom.Polygon");
+goog.require("ol.parser.DomFeatureParser");
+goog.require("ol.parser.ObjectFeatureParser");
+goog.require("ol.parser.ReadFeaturesOptions");
+goog.require("ol.parser.StringFeatureParser");
+goog.require("ol.parser.XML");
+ol.parser.GPX = function(opt_options) {
+  var options = goog.isDef(opt_options) ? opt_options : {};
+  this.extractAttributes = goog.isDef(options.extractAttributes) ? options.extractAttributes : true;
+  this.extractWaypoints = goog.isDef(options.extractWaypoints) ? options.extractWaypoints : true;
+  this.extractTracks = goog.isDef(options.extractTracks) ? options.extractTracks : true;
+  this.extractRoutes = goog.isDef(options.extractRoutes) ? options.extractRoutes : true;
+  this.creator = goog.isDef(options.creator) ? options.creator : "OpenLayers";
+  this.defaultDesc = goog.isDef(options.defaultDesc) ? options.defaultDesc : "No description available";
+  this.defaultNamespaceURI = "http://www.topografix.com/GPX/1/1";
+  this.schemaLocation = "http://www.topografix.com/GPX/1/1 " + "http://www.topografix.com/GPX/1/1/gpx.xsd";
+  this.readers = {"http://www.topografix.com/GPX/1/1":{"gpx":function(node, obj) {
+    if(!goog.isDef(obj.features)) {
+      obj.features = []
+    }
+    this.readChildNodes(node, obj)
+  }, "wpt":function(node, obj) {
+    if(this.extractWaypoints) {
+      var properties = {};
+      var coordinates = [parseFloat(node.getAttribute("lon")), parseFloat(node.getAttribute("lat"))];
+      this.readChildNodes(node, properties);
+      var feature = new ol.Feature(properties);
+      var sharedVertices;
+      if(this.readFeaturesOptions_) {
+        var callback = this.readFeaturesOptions_.callback;
+        if(callback) {
+          sharedVertices = callback(feature, ol.geom.GeometryType.POINT)
+        }
+      }
+      var geometry = new ol.geom.Point(coordinates, sharedVertices);
+      feature.setGeometry(geometry);
+      obj.features.push(feature)
+    }
+  }, "rte":function(node, obj) {
+    if(this.extractRoutes || obj.force) {
+      var type = ol.geom.GeometryType.LINESTRING;
+      var container = {properties:{}, geometry:{type:type, coordinates:[]}};
+      this.readChildNodes(node, container);
+      var feature = new ol.Feature(container.properties);
+      var sharedVertices;
+      if(this.readFeaturesOptions_) {
+        var callback = this.readFeaturesOptions_.callback;
+        if(callback) {
+          sharedVertices = callback(feature, type)
+        }
+      }
+      var geometry = new ol.geom.LineString(container.geometry.coordinates, sharedVertices);
+      feature.setGeometry(geometry);
+      obj.features.push(feature)
+    }
+  }, "rtept":function(node, container) {
+    var coordinate = [parseFloat(node.getAttribute("lon")), parseFloat(node.getAttribute("lat"))];
+    container.geometry.coordinates.push(coordinate)
+  }, "trk":function(node, obj) {
+    if(this.extractTracks) {
+      var readers = this.readers[this.defaultNamespaceURI];
+      obj.force = true;
+      readers["rte"].apply(this, arguments)
+    }
+  }, "trkseg":function(node, container) {
+    this.readChildNodes(node, container)
+  }, "trkpt":function(node, container) {
+    var readers = this.readers[this.defaultNamespaceURI];
+    readers["rtept"].apply(this, arguments)
+  }, "*":function(node, obj) {
+    if(this.extractAttributes === true) {
+      var len = node.childNodes.length;
+      if((len === 1 || len === 2) && (node.firstChild.nodeType === 3 || node.firstChild.nodeType === 4)) {
+        var readers = this.readers[this.defaultNamespaceURI];
+        readers["_attribute"].apply(this, arguments)
+      }
+    }
+  }, "_attribute":function(node, obj) {
+    var local = node.localName || node.nodeName.split(":").pop();
+    var value = this.getChildValue(node);
+    if(obj.properties) {
+      obj.properties[local] = value.replace(this.regExes.trimSpace, "")
+    }else {
+      obj[local] = value.replace(this.regExes.trimSpace, "")
+    }
+  }}};
+  this.readers["http://www.topografix.com/GPX/1/0"] = this.readers[this.defaultNamespaceURI];
+  this.writers = {"http://www.topografix.com/GPX/1/1":{"_feature":function(feature) {
+    var geom = feature.getGeometry();
+    if(geom instanceof ol.geom.Point) {
+      return this.writeNode("wpt", feature)
+    }else {
+      if(geom instanceof ol.geom.LineString || geom instanceof ol.geom.MultiLineString || geom instanceof ol.geom.Polygon) {
+        return this.writeNode("trk", feature)
+      }
+    }
+  }, "wpt":function(feature) {
+    var node = this.createElementNS("wpt");
+    var geom = feature.getGeometry();
+    var coordinates = geom.getCoordinates();
+    node.setAttribute("lon", coordinates[0]);
+    node.setAttribute("lat", coordinates[1]);
+    var attributes = feature.getAttributes();
+    var name = attributes["name"] || goog.getUid(feature).toString();
+    this.writeNode("name", name, undefined, node);
+    var desc = attributes["description"] || this.defaultDesc;
+    this.writeNode("desc", desc, undefined, node);
+    return node
+  }, "trk":function(feature) {
+    var attributes = feature.getAttributes();
+    var node = this.createElementNS("trk");
+    var name = attributes["name"] || goog.getUid(feature).toString();
+    this.writeNode("name", name, undefined, node);
+    var desc = attributes["description"] || this.defaultDesc;
+    this.writeNode("desc", desc, undefined, node);
+    var geom = feature.getGeometry();
+    var i, ii;
+    if(geom instanceof ol.geom.LineString) {
+      this.writeNode("trkseg", feature.getGeometry(), undefined, node)
+    }else {
+      if(geom instanceof ol.geom.MultiLineString) {
+        for(i = 0, ii = geom.components.length;i < ii;++i) {
+          this.writeNode("trkseg", geom.components[i], undefined, node)
+        }
+      }else {
+        if(geom instanceof ol.geom.Polygon) {
+          for(i = 0, ii = geom.rings.length;i < ii;++i) {
+            this.writeNode("trkseg", geom.rings[i], undefined, node)
+          }
+        }
+      }
+    }
+    return node
+  }, "trkseg":function(geometry) {
+    var node = this.createElementNS("trkseg");
+    var coordinates = geometry.getCoordinates();
+    for(var i = 0, ii = coordinates.length;i < ii;++i) {
+      this.writeNode("trkpt", coordinates[i], undefined, node)
+    }
+    return node
+  }, "trkpt":function(coord) {
+    var node = this.createElementNS("trkpt");
+    node.setAttribute("lon", coord[0]);
+    node.setAttribute("lat", coord[1]);
+    return node
+  }, "metadata":function(metadata) {
+    var node = this.createElementNS("metadata");
+    if(goog.isDef(metadata["name"])) {
+      this.writeNode("name", metadata["name"], undefined, node)
+    }
+    if(goog.isDef(metadata["desc"])) {
+      this.writeNode("desc", metadata["desc"], undefined, node)
+    }
+    if(goog.isDef(metadata["author"])) {
+      this.writeNode("author", metadata["author"], undefined, node)
+    }
+    return node
+  }, "name":function(name) {
+    var node = this.createElementNS("name");
+    node.appendChild(this.createTextNode(name));
+    return node
+  }, "desc":function(desc) {
+    var node = this.createElementNS("desc");
+    node.appendChild(this.createTextNode(desc));
+    return node
+  }, "author":function(author) {
+    var node = this.createElementNS("author");
+    node.appendChild(this.createTextNode(author));
+    return node
+  }}};
+  goog.base(this)
+};
+goog.inherits(ol.parser.GPX, ol.parser.XML);
+ol.parser.GPX.prototype.read = function(data) {
+  if(goog.isString(data)) {
+    data = goog.dom.xml.loadXml(data)
+  }
+  if(data && data.nodeType == 9) {
+    data = data.documentElement
+  }
+  var obj = {};
+  this.readNode(data, obj);
+  return obj
+};
+ol.parser.GPX.prototype.readFeaturesFromString = function(str, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(str).features
+};
+ol.parser.GPX.prototype.readFeaturesFromNode = function(node, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(node).features
+};
+ol.parser.GPX.prototype.readFeaturesFromObject = function(obj, opt_options) {
+  this.readFeaturesOptions_ = opt_options;
+  return this.read(obj).features
+};
+ol.parser.GPX.prototype.write = function(obj) {
+  var features = goog.isArray(obj.features) ? obj.features : [obj.features];
+  var root = this.createElementNS("gpx");
+  root.setAttribute("version", "1.1");
+  root.setAttribute("creator", this.creator);
+  this.setAttributeNS(root, "http://www.w3.org/2001/XMLSchema-instance", "xsi:schemaLocation", this.schemaLocation);
+  if(goog.isDef(obj.metadata)) {
+    this.writeNode("metadata", obj.metadata, undefined, root)
+  }
+  for(var i = 0, ii = features.length;i < ii;i++) {
+    this.writeNode("_feature", features[i], undefined, root)
+  }
+  return this.serialize(root)
 };
 goog.provide("ol.parser.GeoJSON");
 goog.require("goog.asserts");
@@ -23471,113 +23958,6 @@ goog.date.DateTime.prototype.clone = function() {
   date.setFirstWeekCutOffDay(this.getFirstWeekCutOffDay());
   return date
 };
-goog.provide("goog.dom.xml");
-goog.require("goog.dom");
-goog.require("goog.dom.NodeType");
-goog.dom.xml.MAX_XML_SIZE_KB = 2 * 1024;
-goog.dom.xml.MAX_ELEMENT_DEPTH = 256;
-goog.dom.xml.createDocument = function(opt_rootTagName, opt_namespaceUri) {
-  if(opt_namespaceUri && !opt_rootTagName) {
-    throw Error("Can't create document with namespace and no root tag");
-  }
-  if(document.implementation && document.implementation.createDocument) {
-    return document.implementation.createDocument(opt_namespaceUri || "", opt_rootTagName || "", null)
-  }else {
-    if(typeof ActiveXObject != "undefined") {
-      var doc = goog.dom.xml.createMsXmlDocument_();
-      if(doc) {
-        if(opt_rootTagName) {
-          doc.appendChild(doc.createNode(goog.dom.NodeType.ELEMENT, opt_rootTagName, opt_namespaceUri || ""))
-        }
-        return doc
-      }
-    }
-  }
-  throw Error("Your browser does not support creating new documents");
-};
-goog.dom.xml.loadXml = function(xml) {
-  if(typeof DOMParser != "undefined") {
-    return(new DOMParser).parseFromString(xml, "application/xml")
-  }else {
-    if(typeof ActiveXObject != "undefined") {
-      var doc = goog.dom.xml.createMsXmlDocument_();
-      doc.loadXML(xml);
-      return doc
-    }
-  }
-  throw Error("Your browser does not support loading xml documents");
-};
-goog.dom.xml.serialize = function(xml) {
-  if(typeof XMLSerializer != "undefined") {
-    return(new XMLSerializer).serializeToString(xml)
-  }
-  var text = xml.xml;
-  if(text) {
-    return text
-  }
-  throw Error("Your browser does not support serializing XML documents");
-};
-goog.dom.xml.selectSingleNode = function(node, path) {
-  if(typeof node.selectSingleNode != "undefined") {
-    var doc = goog.dom.getOwnerDocument(node);
-    if(typeof doc.setProperty != "undefined") {
-      doc.setProperty("SelectionLanguage", "XPath")
-    }
-    return node.selectSingleNode(path)
-  }else {
-    if(document.implementation.hasFeature("XPath", "3.0")) {
-      var doc = goog.dom.getOwnerDocument(node);
-      var resolver = doc.createNSResolver(doc.documentElement);
-      var result = doc.evaluate(path, node, resolver, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
-      return result.singleNodeValue
-    }
-  }
-  return null
-};
-goog.dom.xml.selectNodes = function(node, path) {
-  if(typeof node.selectNodes != "undefined") {
-    var doc = goog.dom.getOwnerDocument(node);
-    if(typeof doc.setProperty != "undefined") {
-      doc.setProperty("SelectionLanguage", "XPath")
-    }
-    return node.selectNodes(path)
-  }else {
-    if(document.implementation.hasFeature("XPath", "3.0")) {
-      var doc = goog.dom.getOwnerDocument(node);
-      var resolver = doc.createNSResolver(doc.documentElement);
-      var nodes = doc.evaluate(path, node, resolver, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-      var results = [];
-      var count = nodes.snapshotLength;
-      for(var i = 0;i < count;i++) {
-        results.push(nodes.snapshotItem(i))
-      }
-      return results
-    }else {
-      return[]
-    }
-  }
-};
-goog.dom.xml.setAttributes = function(element, attributes) {
-  for(var key in attributes) {
-    if(attributes.hasOwnProperty(key)) {
-      element.setAttribute(key, attributes[key])
-    }
-  }
-};
-goog.dom.xml.createMsXmlDocument_ = function() {
-  var doc = new ActiveXObject("MSXML2.DOMDocument");
-  if(doc) {
-    doc.resolveExternals = false;
-    doc.validateOnParse = false;
-    try {
-      doc.setProperty("ProhibitDTD", true);
-      doc.setProperty("MaxXMLSize", goog.dom.xml.MAX_XML_SIZE_KB);
-      doc.setProperty("MaxElementDepth", goog.dom.xml.MAX_ELEMENT_DEPTH)
-    }catch(e) {
-    }
-  }
-  return doc
-};
 goog.provide("goog.net.EventType");
 goog.net.EventType = {COMPLETE:"complete", SUCCESS:"success", ERROR:"error", ABORT:"abort", READY:"ready", READY_STATE_CHANGE:"readystatechange", TIMEOUT:"timeout", INCREMENTAL_DATA:"incrementaldata", PROGRESS:"progress"};
 goog.provide("goog.json");
@@ -24215,153 +24595,6 @@ goog.net.XhrIo.prototype.formatMsg_ = function(msg) {
 goog.debug.entryPointRegistry.register(function(transformer) {
   goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_ = transformer(goog.net.XhrIo.prototype.onReadyStateChangeEntryPoint_)
 });
-goog.provide("ol.parser.XML");
-goog.require("goog.dom.xml");
-goog.require("ol.parser.Parser");
-ol.parser.XML = function() {
-  if(goog.global.ActiveXObject) {
-    this.xmldom = new ActiveXObject("Microsoft.XMLDOM")
-  }
-  this.regExes = {trimSpace:/^\s*|\s*$/g, removeSpace:/\s*/g, splitSpace:/\s+/, trimComma:/\s*,\s*/g}
-};
-goog.inherits(ol.parser.XML, ol.parser.Parser);
-ol.parser.XML.prototype.readNode = function(node, obj) {
-  if(!obj) {
-    obj = {}
-  }
-  var group = this.readers[node.namespaceURI] || this.readers[this.defaultNamespaceURI];
-  if(group) {
-    var local = node.localName || node.nodeName.split(":").pop();
-    var reader = group[local] || group["*"];
-    if(reader) {
-      reader.apply(this, [node, obj])
-    }
-  }
-  return obj
-};
-ol.parser.XML.prototype.readChildNodes = function(node, obj) {
-  if(!obj) {
-    obj = {}
-  }
-  var children = node.childNodes;
-  var child;
-  for(var i = 0, len = children.length;i < len;++i) {
-    child = children[i];
-    if(child.nodeType == 1) {
-      this.readNode(child, obj)
-    }
-  }
-  return obj
-};
-ol.parser.XML.prototype.getChildValue = function(node, def) {
-  var value = def || "";
-  if(node) {
-    for(var child = node.firstChild;child;child = child.nextSibling) {
-      switch(child.nodeType) {
-        case 3:
-        ;
-        case 4:
-          value += child.nodeValue;
-          break;
-        default:
-          break
-      }
-    }
-  }
-  return value
-};
-ol.parser.XML.prototype.getAttributeNodeNS = function(node, uri, name) {
-  var attributeNode = null;
-  if(node.getAttributeNodeNS) {
-    attributeNode = node.getAttributeNodeNS(uri, name)
-  }else {
-    var attributes = node.attributes;
-    var potentialNode, fullName;
-    for(var i = 0, len = attributes.length;i < len;++i) {
-      potentialNode = attributes[i];
-      if(potentialNode.namespaceURI == uri) {
-        fullName = potentialNode.prefix ? potentialNode.prefix + ":" + name : name;
-        if(fullName == potentialNode.nodeName) {
-          attributeNode = potentialNode;
-          break
-        }
-      }
-    }
-  }
-  return attributeNode
-};
-ol.parser.XML.prototype.getAttributeNS = function(node, uri, name) {
-  var attributeValue = "";
-  if(node.getAttributeNS) {
-    attributeValue = node.getAttributeNS(uri, name) || ""
-  }else {
-    var attributeNode = this.getAttributeNodeNS(node, uri, name);
-    if(attributeNode) {
-      attributeValue = attributeNode.nodeValue
-    }
-  }
-  return attributeValue
-};
-ol.parser.XML.prototype.createElementNS = function(name, opt_uri) {
-  var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
-  var element;
-  if(this.xmldom) {
-    element = this.xmldom.createNode(1, name, uri)
-  }else {
-    element = document.createElementNS(uri, name)
-  }
-  return element
-};
-ol.parser.XML.prototype.writeNode = function(name, obj, opt_uri, opt_parent) {
-  var child = null;
-  if(goog.isDef(this.writers)) {
-    var uri = opt_uri ? opt_uri : this.defaultNamespaceURI;
-    child = this.writers[uri][name].apply(this, [obj]);
-    if(opt_parent && child) {
-      opt_parent.appendChild(child)
-    }
-  }
-  return child
-};
-ol.parser.XML.prototype.createTextNode = function(text) {
-  var node;
-  if(this.xmldom) {
-    node = this.xmldom.createTextNode(text)
-  }else {
-    node = document.createTextNode(text)
-  }
-  return node
-};
-ol.parser.XML.prototype.setAttributeNS = function(node, uri, name, value) {
-  if(node.setAttributeNS) {
-    node.setAttributeNS(uri, name, value)
-  }else {
-    if(this.xmldom) {
-      if(uri) {
-        var attribute = node.ownerDocument.createNode(2, name, uri);
-        attribute.nodeValue = value;
-        node.setAttributeNode(attribute)
-      }else {
-        node.setAttribute(name, value)
-      }
-    }else {
-      throw new Error("setAttributeNS not implemented");
-    }
-  }
-};
-ol.parser.XML.prototype.serialize = function(node) {
-  if(node.nodeType == 1) {
-    var doc = document.implementation.createDocument("", "", null);
-    if(doc.importNode) {
-      doc.appendChild(doc.importNode(node, true))
-    }else {
-      doc.appendChild(node)
-    }
-    return goog.dom.xml.serialize(doc)
-  }else {
-    return goog.dom.xml.serialize(node)
-  }
-};
 goog.provide("ol.parser.KML");
 goog.require("goog.array");
 goog.require("goog.async.Deferred");
@@ -24902,6 +25135,10 @@ ol.parser.KML = function(opt_options) {
     return node
   }, "_feature":function(feature) {
     var node = this.createElementNS("Placemark");
+    var fid = feature.getFeatureId();
+    if(goog.isDef(fid)) {
+      node.setAttribute("id", fid)
+    }
     this.writeNode("name", feature, null, node);
     this.writeNode("description", feature, null, node);
     var literals = feature.getSymbolizerLiterals();
@@ -25621,6 +25858,10 @@ ol.parser.ogc.GML = function(opt_options) {
         feature.setGeometry(geometry)
       }
     }
+    var fid = node.getAttribute("fid") || this.getAttributeNS(node, this.defaultNamespaceURI, "id");
+    if(!goog.isNull(fid)) {
+      feature.setFeatureId(fid)
+    }
     obj.features.push(feature)
   }, "_geometry":function(node, obj) {
     if(!this.geometryName) {
@@ -25689,6 +25930,10 @@ ol.parser.ogc.GML = function(opt_options) {
   }}};
   this.featureNSWiters_ = {"_typeName":function(feature) {
     var node = this.createElementNS("feature:" + this.featureType, this.featureNS);
+    var fid = feature.getFeatureId();
+    if(goog.isDef(fid)) {
+      this.setAttributeNS(node, this.defaultNamespaceURI, "fid", fid)
+    }
     if(feature.getGeometry() !== null) {
       this.writeNode("_geometry", feature.getGeometry(), this.featureNS, node)
     }
@@ -28301,6 +28546,7 @@ goog.require("ol.math");
 goog.require("ol.parser.AsyncObjectFeatureParser");
 goog.require("ol.parser.AsyncStringFeatureParser");
 goog.require("ol.parser.DomFeatureParser");
+goog.require("ol.parser.GPX");
 goog.require("ol.parser.GeoJSON");
 goog.require("ol.parser.KML");
 goog.require("ol.parser.ObjectFeatureParser");
@@ -28439,6 +28685,8 @@ goog.provide("ol.layer.LayerOptions");
 goog.provide("ol.layer.TileLayerOptions");
 goog.provide("ol.layer.VectorLayerOptions");
 goog.provide("ol.parser.GMLOptions");
+goog.provide("ol.parser.GPXOptions");
+goog.provide("ol.parser.GPXWriteOptions");
 goog.provide("ol.parser.KMLOptions");
 goog.provide("ol.source.BingMapsOptions");
 goog.provide("ol.source.DebugTileSourceOptions");
@@ -28493,6 +28741,8 @@ ol.layer.LayerOptions;
 ol.layer.TileLayerOptions;
 ol.layer.VectorLayerOptions;
 ol.parser.GMLOptions;
+ol.parser.GPXOptions;
+ol.parser.GPXWriteOptions;
 ol.parser.KMLOptions;
 ol.source.BingMapsOptions;
 ol.source.DebugTileSourceOptions;

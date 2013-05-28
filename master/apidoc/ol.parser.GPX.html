@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpenLayers 3 API Documentation - Class: ol.tilegrid.XYZ</title>
+    <title>OpenLayers 3 API Documentation - Class: ol.parser.GPX</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -21,7 +21,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.tilegrid.XYZ</a>
+      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.parser.GPX</a>
       <ul class="nav pull-right">
         <li><iframe class="github-watch-button" src="http://ghbtns.com/github-btn.html?user=openlayers&repo=ol3&type=watch&count=true"
 allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></iframe></li>
@@ -41,9 +41,9 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
 <header>
     <h2>
-        <span class="ancestors"><a href="ol.html">ol</a><a href="ol.tilegrid.html">.tilegrid</a>.</span>
+        <span class="ancestors"><a href="ol.html">ol</a><a href="ol.parser.html">.parser</a>.</span>
     
-    ol.tilegrid.XYZ
+    ol.parser.GPX
     </h2>
     
 </header>  
@@ -55,7 +55,142 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
         
 <dt>
-    <h4 class="name" id="XYZ"><span class="type-signature"></span>new XYZ</h4>
+    <h4 class="name" id="GPX"><span class="type-signature"></span>new GPX</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.parser.html#GPXOptions">ol.parser.GPXOptions</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                </td>
+            
+            
+            
+            
+            <td class="description last">(Optional) <p>Optional configuration object.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>gpx.js, line 26</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="read"><span class="type-signature"></span>read</h4>
     
     
 </dt>
@@ -93,13 +228,22 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
         <tr>
             
-                <td class="name"><code>options</code></td>
+                <td class="name"><code>data</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="ol.tilegrid.html#XYZOptions">ol.tilegrid.XYZOptions</a></span>
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Document</span>
+|
+
+<span class="param-type">Element</span>
+|
+
+<span class="param-type">Object</span>
 
 
             
@@ -109,7 +253,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
             
             
             
-            <td class="description last"><p>XYZ options.</p></td>
+            <td class="description last"><p>Data to read.</p></td>
         </tr>
 	
 	
@@ -139,7 +283,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>xyztilegrid.js, line 18</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>gpx.js, line 239</li></ul></dd>
 	
     
     
@@ -155,31 +299,163 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
     
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>An object representing the document.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Object</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
 </dd>
 
-    
-    </div>
-    
-    
-        <h3 class="subsection-title">Extends</h3>
         
-        <ul>
-            <li><a href="ol.tilegrid.TileGrid.html">ol.tilegrid.TileGrid</a></li>
-        </ul>
+            
+<dt>
+    <h4 class="name" id="write"><span class="type-signature"></span>write</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ol.parser.html#GPXWriteOptions">ol.parser.GPXWriteOptions</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Object structure to write out
+    as GPX.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>gpx.js, line 295</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
     
     
     
     
     
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>An string representing the GPX document.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">string</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
-    
-    
-    
-    
+</dd>
+
+        </dl>
     
     
     
