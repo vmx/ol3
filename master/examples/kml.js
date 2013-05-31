@@ -10,7 +10,7 @@ var raster = new ol.layer.TileLayer({
   })
 });
 
-var epsg4326 = ol.projection.get('EPSG:4326');
+var epsg4326 = ol.proj.get('EPSG:4326');
 
 var vector = new ol.layer.Vector({
   source: new ol.source.Vector({
@@ -57,7 +57,6 @@ xhr.open('GET', url, true);
 xhr.onload = function() {
   if (xhr.status == 200) {
     // this is silly to have to tell the layer the destination projection
-    var projection = map.getView().getProjection();
     vector.parseFeatures(xhr.responseText, kml, epsg4326);
   }
 };
