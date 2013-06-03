@@ -1,0 +1,3 @@
+@exportClass ol.View3D ol.View3DOptions
+@exportProperty ol.View3D.prototype.fitExtent
+@exportProperty ol.View3D.prototype.getView2D

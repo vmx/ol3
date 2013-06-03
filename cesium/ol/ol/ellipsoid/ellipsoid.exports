@@ -1,0 +1,4 @@
+@exportSymbol ol.Ellipsoid
+@exportProperty ol.Ellipsoid.prototype.getMaximumRadius
+@exportProperty ol.Ellipsoid.prototype.cartographicToCartesian
+@exportProperty ol.Ellipsoid.prototype.cartesianToCartographic
