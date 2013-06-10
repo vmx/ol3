@@ -7,7 +7,6 @@ goog.require('goog.events.EventType');
 goog.require('goog.object');
 goog.require('goog.vec.Mat4');
 goog.require('ol.Pixel');
-goog.require('ol.Size');
 goog.require('ol.TileCache');
 goog.require('ol.TileCoord');
 goog.require('ol.ViewHint');
@@ -194,17 +193,31 @@ ol.renderer.canvas.VectorLayer.prototype.getTransform = function() {
 
 /**
  * @param {ol.Pixel} pixel Pixel coordinate relative to the map viewport.
- * @param {function(Array.<ol.Feature|string>)} success Callback for
- *     successful queries. The passed argument is the resulting feature
- *     information.  Layers that are able to provide attribute data will put
- *     ol.Feature instances, other layers will put a string which can either
- *     be plain text or markup.
+ * @param {function(string, ol.layer.Layer)} success Callback for
+ *     successful queries. The passed arguments are the resulting feature
+ *     information and the layer.
  */
 ol.renderer.canvas.VectorLayer.prototype.getFeatureInfoForPixel =
+    function(pixel, success) {
+  var callback = function(features, layer) {
+    success(layer.getTransformFeatureInfo()(features), layer);
+  };
+  this.getFeaturesForPixel(pixel, callback);
+};
+
+
+/**
+ * @param {ol.Pixel} pixel Pixel coordinate relative to the map viewport.
+ * @param {function(Array.<ol.Feature>, ol.layer.Layer)} success Callback for
+ *     successful queries. The passed arguments are the resulting features
+ *     and the layer.
+ */
+ol.renderer.canvas.VectorLayer.prototype.getFeaturesForPixel =
     function(pixel, success) {
   var map = this.getMap();
   var result = [];
 
+  var layer = this.getLayer();
   var location = map.getCoordinateFromPixel(pixel);
   var tileCoord = this.tileGrid_.getTileCoordForCoordAndResolution(
       location, this.getMap().getView().getView2D().getResolution());
@@ -219,7 +232,7 @@ ol.renderer.canvas.VectorLayer.prototype.getFeatureInfoForPixel =
     var locationMax = [location[0] + halfMaxWidth, location[1] + halfMaxHeight];
     var locationBbox = ol.extent.boundingExtent([locationMin, locationMax]);
     var filter = new ol.filter.Extent(locationBbox);
-    var candidates = this.getLayer().getFeatures(filter);
+    var candidates = layer.getFeatures(filter);
 
     var candidate, geom, type, symbolBounds, symbolSize, halfWidth, halfHeight,
         coordinates, j;
@@ -262,7 +275,7 @@ ol.renderer.canvas.VectorLayer.prototype.getFeatureInfoForPixel =
       }
     }
   }
-  goog.global.setTimeout(function() { success(result); }, 0);
+  goog.global.setTimeout(function() { success(result, layer); }, 0);
 };
 
 
@@ -297,7 +310,7 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
     tileGrid = ol.tilegrid.createForProjection(
         view2DState.projection,
         22, // should be no harm in going big here - ideally, it would be ∞
-        new ol.Size(512, 512));
+        [512, 512]);
     this.tileGrid_ = tileGrid;
   }
 
@@ -313,8 +326,8 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
 
   goog.vec.Mat4.makeIdentity(transform);
   goog.vec.Mat4.translate(transform,
-      frameState.size.width / 2,
-      frameState.size.height / 2,
+      frameState.size[0] / 2,
+      frameState.size[1] / 2,
       0);
   goog.vec.Mat4.scale(transform,
       tileResolution / resolution, tileResolution / resolution, 1);
@@ -331,16 +344,15 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
    * necessary.  And look for ways to get here faster.
    */
   if (!this.dirty_ && this.renderedResolution_ === tileResolution &&
-      // TODO: extent.equals()
-      this.renderedExtent_.toString() === tileRangeExtent.toString()) {
+      ol.extent.equals(this.renderedExtent_, tileRangeExtent)) {
     return;
   }
 
   if (goog.isNull(this.tileArchetype_)) {
     this.tileArchetype_ = /** @type {HTMLCanvasElement} */
         (goog.dom.createElement(goog.dom.TagName.CANVAS));
-    this.tileArchetype_.width = tileSize.width;
-    this.tileArchetype_.height = tileSize.height;
+    this.tileArchetype_.width = tileSize[0];
+    this.tileArchetype_.height = tileSize[1];
   }
 
   /**
@@ -348,14 +360,13 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
    * and will have rendered all newly visible features.
    */
   var sketchCanvas = this.sketchCanvas_;
-  var sketchSize = new ol.Size(
-      tileSize.width * tileRange.getWidth(),
-      tileSize.height * tileRange.getHeight());
+  var sketchWidth = tileSize[0] * tileRange.getWidth();
+  var sketchHeight = tileSize[1] * tileRange.getHeight();
 
   // transform for map coords to sketch canvas pixel coords
   var sketchTransform = this.sketchTransform_;
-  var halfWidth = sketchSize.width / 2;
-  var halfHeight = sketchSize.height / 2;
+  var halfWidth = sketchWidth / 2;
+  var halfHeight = sketchHeight / 2;
   goog.vec.Mat4.makeIdentity(sketchTransform);
   goog.vec.Mat4.translate(sketchTransform,
       halfWidth,
@@ -371,16 +382,16 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
       0);
 
   // clear/resize sketch canvas
-  sketchCanvas.width = sketchSize.width;
-  sketchCanvas.height = sketchSize.height;
+  sketchCanvas.width = sketchWidth;
+  sketchCanvas.height = sketchHeight;
 
   var sketchCanvasRenderer = new ol.renderer.canvas.VectorRenderer(
       sketchCanvas, sketchTransform, undefined, this.requestMapRenderFrame_);
 
   // clear/resize final canvas
   var finalCanvas = this.canvas_;
-  finalCanvas.width = sketchSize.width;
-  finalCanvas.height = sketchSize.height;
+  finalCanvas.width = sketchWidth;
+  finalCanvas.height = sketchHeight;
   var finalContext = this.context_;
 
   var featuresToRender = {};
@@ -456,13 +467,13 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame =
       tile = /** @type {HTMLCanvasElement} */
           (this.tileArchetype_.cloneNode(false));
       tile.getContext('2d').drawImage(sketchCanvas,
-          (tileRange.minX - tileCoord.x) * tileSize.width,
-          (tileCoord.y - tileRange.maxY) * tileSize.height);
+          (tileRange.minX - tileCoord.x) * tileSize[0],
+          (tileCoord.y - tileRange.maxY) * tileSize[1]);
       this.tileCache_.set(key, [tile, symbolSizes, maxSymbolSize]);
     }
     finalContext.drawImage(tile,
-        tileSize.width * (tileCoord.x - tileRange.minX),
-        tileSize.height * (tileRange.maxY - tileCoord.y));
+        tileSize[0] * (tileCoord.x - tileRange.minX),
+        tileSize[1] * (tileRange.maxY - tileCoord.y));
   }
 
   this.renderedResolution_ = tileResolution;

@@ -78,8 +78,8 @@ ol.interaction.TouchZoom.prototype.handleTouchMove =
   // scale anchor point.
   var viewportPosition = goog.style.getClientPosition(map.getViewport());
   var centroid = ol.interaction.Touch.centroid(this.targetTouches);
-  centroid.x -= viewportPosition.x;
-  centroid.y -= viewportPosition.y;
+  centroid[0] -= viewportPosition.x;
+  centroid[1] -= viewportPosition.y;
   this.anchor_ = map.getCoordinateFromPixel(centroid);
 
   // scale, bypass the resolution constraint

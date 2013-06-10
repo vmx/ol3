@@ -421,7 +421,7 @@ ol.Map.prototype.getCoordinateFromPixel = function(pixel) {
   if (goog.isNull(frameState)) {
     return null;
   } else {
-    var vec2 = [pixel.x, pixel.y];
+    var vec2 = pixel.slice();
     return ol.vec.Mat4.multVec2(frameState.pixelToCoordinateMatrix, vec2, vec2);
   }
 };
@@ -436,6 +436,19 @@ ol.Map.prototype.getFeatureInfo = function(options) {
   var layers = goog.isDefAndNotNull(options.layers) ?
       options.layers : this.getLayers().getArray();
   this.getRenderer().getFeatureInfoForPixel(
+      options.pixel, layers, options.success, options.error);
+};
+
+
+/**
+ * Get features for a pixel on the map.
+ *
+ * @param {ol.GetFeaturesOptions} options Options.
+ */
+ol.Map.prototype.getFeatures = function(options) {
+  var layers = goog.isDefAndNotNull(options.layers) ?
+      options.layers : this.getLayers().getArray();
+  this.getRenderer().getFeaturesForPixel(
       options.pixel, layers, options.success, options.error);
 };
 
@@ -470,8 +483,7 @@ ol.Map.prototype.getPixelFromCoordinate = function(coordinate) {
     return null;
   } else {
     var vec2 = coordinate.slice(0, 2);
-    ol.vec.Mat4.multVec2(frameState.coordinateToPixelMatrix, vec2, vec2);
-    return new ol.Pixel(vec2[0], vec2[1]);
+    return ol.vec.Mat4.multVec2(frameState.coordinateToPixelMatrix, vec2, vec2);
   }
 };
 
@@ -944,7 +956,7 @@ ol.Map.prototype.updateSize = function() {
   var target = this.getTarget();
   if (goog.isDef(target)) {
     var size = goog.style.getSize(target);
-    this.setSize(new ol.Size(size.width, size.height));
+    this.setSize([size.width, size.height]);
   } else {
     this.setSize(undefined);
   }
