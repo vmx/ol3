@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OpenLayers 3 API Documentation - Class: ol.Collection</title>
+    <title>OpenLayers 3 API Documentation - Class: ol.DeviceOrientation</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -21,7 +21,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.Collection</a>
+      <a class="brand" href="./">OpenLayers 3 API Documentation - Class: ol.DeviceOrientation</a>
       <ul class="nav pull-right">
         <li><iframe class="github-watch-button" src="http://ghbtns.com/github-btn.html?user=openlayers&repo=ol3&type=watch&count=true"
 allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></iframe></li>
@@ -43,7 +43,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     <h2>
         <span class="ancestors"><a href="ol.html">ol</a>.</span>
     
-    ol.Collection
+    ol.DeviceOrientation
     </h2>
     
 </header>  
@@ -55,7 +55,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
         
 <dt>
-    <h4 class="name" id="Collection"><span class="type-signature"></span>new Collection</h4>
+    <h4 class="name" id="DeviceOrientation"><span class="type-signature"></span>new DeviceOrientation</h4>
     
     
 </dt>
@@ -95,13 +95,13 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
         <tr>
             
-                <td class="name"><code>array</code></td>
+                <td class="name"><code>options</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Array</span>
+<span class="param-type"><a href="ol.html#DeviceOrientationOptions">ol.DeviceOrientationOptions</a></span>
 
 
             
@@ -119,7 +119,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
             
             
             
-            <td class="description last">(Optional) <p>Array.</p></td>
+            <td class="description last">(Optional) <p>Options.</p></td>
         </tr>
 	
 	
@@ -149,7 +149,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 60</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 28</li></ul></dd>
 	
     
     
@@ -192,6 +192,56 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         <h3 class="subsection-title">Members</h3>
         
         <dl>
+            
+<dt class="">
+    <h4 class="name" id="SUPPORTED"><span class="type-signature">&lt;static, constant> </span>SUPPORTED<span class="type-signature"> :boolean</span></h4>
+    
+    
+</dt>
+<dd class="">
+    
+    <div class="description">
+        <p>Is supported.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 60</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+</dd>
+
+        
             
 <dt class="">
     <h4 class="name" id="setValues"><span class="type-signature"></span>setValues<span class="type-signature"></span></h4>
@@ -462,215 +512,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="clear"><span class="type-signature"></span>clear</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Remove all elements from the collection.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 79</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="forEach"><span class="type-signature"></span>forEach</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		<th>Argument</th>
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>f</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Function</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    
-                
-                </td>
-            
-            
-            
-            
-            <td class="description last"><p>Function.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>obj</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-                    
-                
-                </td>
-            
-            
-            
-            
-            <td class="description last">(Optional) <p>Object.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 101</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
     <h4 class="name" id="get"><span class="type-signature"></span>get</h4>
     
     
@@ -805,7 +646,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="getAt"><span class="type-signature"></span>getAt</h4>
+    <h4 class="name" id="getAlpha"><span class="type-signature"></span>getAlpha</h4>
     
     
 </dt>
@@ -817,54 +658,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
     
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>index</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Index.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -889,7 +682,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 118</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 92</li></ul></dd>
 	
     
     
@@ -909,7 +702,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
             
 <div class="param-desc">
-    <p>Element.</p>
+    <p>alpha.</p>
 </div>
 
 
@@ -920,7 +713,10 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	</dt>
 	<dd>
 		
-<span class="param-type">*</span>
+<span class="param-type">number</span>
+|
+
+<span class="param-type">undefined</span>
 
 
 	</dd>
@@ -934,7 +730,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="getLength"><span class="type-signature"></span>getLength</h4>
+    <h4 class="name" id="getBeta"><span class="type-signature"></span>getBeta</h4>
     
     
 </dt>
@@ -970,7 +766,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 126</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 105</li></ul></dd>
 	
     
     
@@ -990,7 +786,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
             
 <div class="param-desc">
-    <p>Length.</p>
+    <p>beta.</p>
 </div>
 
 
@@ -1002,6 +798,9 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	<dd>
 		
 <span class="param-type">number</span>
+|
+
+<span class="param-type">undefined</span>
 
 
 	</dd>
@@ -1015,7 +814,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="insertAt"><span class="type-signature"></span>insertAt</h4>
+    <h4 class="name" id="getGamma"><span class="type-signature"></span>getGamma</h4>
     
     
 </dt>
@@ -1027,77 +826,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
     
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>index</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Index.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>elem</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Element.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -1122,7 +850,7 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	
 	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 135</li></ul></dd>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 118</li></ul></dd>
 	
     
     
@@ -1138,6 +866,199 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
     
     
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>gamma.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">number</span>
+|
+
+<span class="param-type">undefined</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getHeading"><span class="type-signature"></span>getHeading</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 131</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>heading.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">number</span>
+|
+
+<span class="param-type">undefined</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getTracking"><span class="type-signature"></span>getTracking</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 144</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>tracking.</p>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">undefined</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
 </dd>
@@ -1669,478 +1590,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="pop"><span class="type-signature"></span>pop</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 146</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>Element.</p>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">*</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="push"><span class="type-signature"></span>push</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>elem</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Element.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 155</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>Length.</p>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">number</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="remove"><span class="type-signature"></span>remove</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Removes the first occurence of elem from the collection.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>elem</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Element.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 167</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>The removed element or undefined if elem was not found.</p>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">*</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="removeAt"><span class="type-signature"></span>removeAt</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>index</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Index.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 183</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>Value.</p>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">*</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
     <h4 class="name" id="set"><span class="type-signature"></span>set</h4>
     
     
@@ -2276,136 +1725,6 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
         
             
 <dt>
-    <h4 class="name" id="setAt"><span class="type-signature"></span>setAt</h4>
-    
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>index</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Index.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>elem</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Element.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source"><ul class="dummy"><li>collection.js, line 197</li></ul></dd>
-	
-    
-    
-	
-	
-	
-	
-</dl>
-
-    
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
     <h4 class="name" id="setOptions"><span class="type-signature"></span>setOptions</h4>
     
     
@@ -2496,6 +1815,113 @@ allowtransparency="true" frameborder="0" scrolling="0" height="20" width="90"></
 	
 	<dt class="tag-source">Source:</dt>
 	<dd class="tag-source"><ul class="dummy"><li>object.js, line 276</li></ul></dd>
+	
+    
+    
+	
+	
+	
+	
+</dl>
+
+    
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="setTracking"><span class="type-signature"></span>setTracking</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>tracking</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Enable or disable tracking.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source"><ul class="dummy"><li>deviceorientation.js, line 174</li></ul></dd>
 	
     
     

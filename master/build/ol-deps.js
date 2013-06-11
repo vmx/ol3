@@ -20,6 +20,7 @@ goog.addDependency('../../../ol/ol/control/zoomcontrol.js', ['ol.control.Zoom'],
 goog.addDependency('../../../ol/ol/control/zoomslidercontrol.js', ['ol.control.ZoomSlider'], ['goog.array', 'goog.asserts', 'goog.dom', 'goog.dom.TagName', 'goog.events', 'goog.events.EventType', 'goog.fx.Dragger', 'goog.fx.Dragger.EventType', 'goog.math', 'goog.math.Rect', 'goog.style', 'ol.animation', 'ol.control.Control', 'ol.css', 'ol.easing']);
 goog.addDependency('../../../ol/ol/coordinate.js', ['ol.Coordinate', 'ol.CoordinateFormatType', 'ol.coordinate'], ['goog.math']);
 goog.addDependency('../../../ol/ol/css.js', ['ol.css'], []);
+goog.addDependency('../../../ol/ol/deviceorientation.js', ['ol.DeviceOrientation', 'ol.DeviceOrientation.SUPPORTED', 'ol.DeviceOrientationProperty'], ['goog.events', 'goog.math', 'ol.Object']);
 goog.addDependency('../../../ol/ol/dom/dom.js', ['ol.dom', 'ol.dom.BrowserFeature'], ['goog.asserts', 'goog.vec.Mat4']);
 goog.addDependency('../../../ol/ol/dom/input.js', ['ol.dom.Input', 'ol.dom.InputProperty'], ['goog.events', 'goog.events.EventType', 'ol.Object']);
 goog.addDependency('../../../ol/ol/easing.js', ['ol.easing'], ['goog.fx.easing']);
