@@ -638,7 +638,7 @@ goog.addDependency("../src/ol/renderer/canvas/canvasmaprenderer.js", ["ol.render
 goog.addDependency("../src/ol/renderer/canvas/canvasrenderer.js", ["ol.renderer.canvas.SUPPORTED"], ["ol.canvas"]);
 goog.addDependency("../src/ol/renderer/canvas/canvastilelayerrenderer.js", ["ol.renderer.canvas.TileLayer"], ["goog.array", "goog.asserts", "goog.dom", "goog.dom.TagName", "goog.object", "goog.vec.Mat4", "ol.Size", "ol.Tile", "ol.TileCoord", "ol.TileRange", "ol.TileState", "ol.extent", "ol.layer.TileLayer", "ol.renderer.Map", "ol.renderer.canvas.Layer"]);
 goog.addDependency("../src/ol/renderer/canvas/canvasvectorlayerrenderer.js", ["ol.renderer.canvas.VectorLayer"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.object", "goog.vec.Mat4", "ol.Pixel", "ol.TileCache", "ol.TileCoord", "ol.ViewHint", "ol.extent", "ol.filter.Extent", "ol.filter.Geometry", "ol.filter.Logical", "ol.filter.LogicalOperator", "ol.geom.GeometryType", "ol.layer.Vector", "ol.renderer.canvas.Layer", "ol.renderer.canvas.VectorRenderer", "ol.tilegrid.TileGrid"]);
-goog.addDependency("../src/ol/renderer/canvas/canvasvectorrenderer.js", ["ol.renderer.canvas.VectorRenderer"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.vec.Mat4", "ol.Feature", "ol.Pixel", "ol.geom.Geometry", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.style.IconLiteral", "ol.style.LineLiteral", "ol.style.PointLiteral", "ol.style.PolygonLiteral", 
+goog.addDependency("../src/ol/renderer/canvas/canvasvectorrenderer.js", ["ol.renderer.canvas.VectorRenderer"], ["goog.asserts", "goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.vec.Mat4", "ol.Feature", "ol.geom.Geometry", "ol.geom.GeometryType", "ol.geom.LineString", "ol.geom.MultiLineString", "ol.geom.MultiPoint", "ol.geom.MultiPolygon", "ol.geom.Point", "ol.geom.Polygon", "ol.style.IconLiteral", "ol.style.LineLiteral", "ol.style.PointLiteral", "ol.style.PolygonLiteral", 
 "ol.style.ShapeLiteral", "ol.style.ShapeType", "ol.style.SymbolizerLiteral"]);
 goog.addDependency("../src/ol/renderer/dom/domimagelayerrenderer.js", ["ol.renderer.dom.ImageLayer"], ["goog.dom", "goog.dom.TagName", "goog.events", "goog.events.EventType", "goog.vec.Mat4", "ol.Image", "ol.ImageState", "ol.ViewHint", "ol.dom", "ol.layer.ImageLayer", "ol.renderer.dom.Layer"]);
 goog.addDependency("../src/ol/renderer/dom/domlayerrenderer.js", ["ol.renderer.dom.Layer"], ["goog.dom", "ol.layer.Layer", "ol.renderer.Layer"]);
@@ -13325,7 +13325,8 @@ ol.MapBrowserEventHandler = function(map) {
   this.touchListenerKeys_ = null;
   this.down_ = null;
   var element = this.map_.getViewport();
-  this.listenerKeys_ = [goog.events.listen(element, [goog.events.EventType.CLICK, goog.events.EventType.DBLCLICK], this.click_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEDOWN, this.handleMouseDown_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEMOVE, this.relayEvent_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEOUT, this.relayEvent_, false, this)];
+  this.listenerKeys_ = [goog.events.listen(element, [goog.events.EventType.CLICK, goog.events.EventType.DBLCLICK], this.click_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEDOWN, this.handleMouseDown_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEMOVE, this.relayEvent_, false, this), goog.events.listen(element, goog.events.EventType.MOUSEOUT, this.relayEvent_, false, this), goog.events.listen(element, goog.events.EventType.CONTEXTMENU, this.relayEvent_, 
+  false, this)];
   this.touchListenerKeys_ = [goog.events.listen(element, [goog.events.EventType.TOUCHSTART, ol.MapBrowserEvent.IEEventType.MSPOINTERDOWN], this.handleTouchStart_, false, this), goog.events.listen(element, [goog.events.EventType.TOUCHMOVE, ol.MapBrowserEvent.IEEventType.MSPOINTERMOVE], this.handleTouchMove_, false, this), goog.events.listen(element, [goog.events.EventType.TOUCHEND, ol.MapBrowserEvent.IEEventType.MSPOINTERUP], this.handleTouchEnd_, false, this)]
 };
 goog.inherits(ol.MapBrowserEventHandler, goog.events.EventTarget);
@@ -13420,7 +13421,7 @@ ol.MapBrowserEventHandler.prototype.disposeInternal = function() {
   }
   goog.base(this, "disposeInternal")
 };
-ol.MapBrowserEvent.EventType = {CLICK:goog.events.EventType.CLICK, DBLCLICK:goog.events.EventType.DBLCLICK, DOWN:"down", DRAGSTART:"dragstart", DRAG:"drag", DRAGEND:"dragend", TOUCHSTART:goog.events.EventType.TOUCHSTART, TOUCHMOVE:goog.events.EventType.TOUCHMOVE, TOUCHEND:goog.events.EventType.TOUCHEND, MOUSEMOVE:goog.events.EventType.MOUSEMOVE, MOUSEOUT:goog.events.EventType.MOUSEOUT};
+ol.MapBrowserEvent.EventType = {CLICK:goog.events.EventType.CLICK, DBLCLICK:goog.events.EventType.DBLCLICK, DOWN:"down", DRAGSTART:"dragstart", DRAG:"drag", DRAGEND:"dragend", TOUCHSTART:goog.events.EventType.TOUCHSTART, TOUCHMOVE:goog.events.EventType.TOUCHMOVE, TOUCHEND:goog.events.EventType.TOUCHEND, MOUSEMOVE:goog.events.EventType.MOUSEMOVE, MOUSEOUT:goog.events.EventType.MOUSEOUT, CONTEXTMENU:goog.events.EventType.CONTEXTMENU};
 goog.provide("ol.View2D");
 goog.provide("ol.View2DProperty");
 goog.require("goog.asserts");
@@ -17168,7 +17169,6 @@ goog.require("goog.events");
 goog.require("goog.events.EventType");
 goog.require("goog.vec.Mat4");
 goog.require("ol.Feature");
-goog.require("ol.Pixel");
 goog.require("ol.geom.Geometry");
 goog.require("ol.geom.GeometryType");
 goog.require("ol.geom.LineString");
@@ -17184,10 +17184,9 @@ goog.require("ol.style.PolygonLiteral");
 goog.require("ol.style.ShapeLiteral");
 goog.require("ol.style.ShapeType");
 goog.require("ol.style.SymbolizerLiteral");
-ol.renderer.canvas.VectorRenderer = function(canvas, transform, opt_offset, opt_iconLoadedCallback) {
-  var context = canvas.getContext("2d"), dx = goog.isDef(opt_offset) ? opt_offset[0] : 0, dy = goog.isDef(opt_offset) ? opt_offset[1] : 0;
+ol.renderer.canvas.VectorRenderer = function(canvas, transform, opt_iconLoadedCallback) {
+  var context = canvas.getContext("2d");
   this.transform_ = transform;
-  context.setTransform(goog.vec.Mat4.getElement(transform, 0, 0), goog.vec.Mat4.getElement(transform, 1, 0), goog.vec.Mat4.getElement(transform, 0, 1), goog.vec.Mat4.getElement(transform, 1, 1), goog.vec.Mat4.getElement(transform, 0, 3) + dx, goog.vec.Mat4.getElement(transform, 1, 3) + dy);
   var vec = [1, 0, 0];
   goog.vec.Mat4.multVec3NoTranslate(transform, vec, vec);
   this.inverseScale_ = 1 / Math.sqrt(vec[0] * vec[0] + vec[1] * vec[1]);
@@ -17229,18 +17228,19 @@ ol.renderer.canvas.VectorRenderer.prototype.renderFeaturesByGeometryType = funct
   return deferred
 };
 ol.renderer.canvas.VectorRenderer.prototype.renderLineStringFeatures_ = function(features, symbolizer) {
-  var context = this.context_, i, ii, feature, id, currentSize, geometry, components, j, jj, line, dim, k, kk, x, y;
+  var context = this.context_, i, ii, feature, id, currentSize, geometry, components, j, jj, line, dim, k, kk, vec, strokeSize;
   context.globalAlpha = symbolizer.opacity;
   context.strokeStyle = symbolizer.strokeColor;
-  context.lineWidth = symbolizer.strokeWidth * this.inverseScale_;
+  context.lineWidth = symbolizer.strokeWidth;
   context.lineCap = "round";
   context.lineJoin = "round";
+  strokeSize = context.lineWidth * this.inverseScale_;
   context.beginPath();
   for(i = 0, ii = features.length;i < ii;++i) {
     feature = features[i];
     id = goog.getUid(feature);
     currentSize = goog.isDef(this.symbolSizes_[id]) ? this.symbolSizes_[id] : [0];
-    currentSize[0] = Math.max(currentSize[0], context.lineWidth);
+    currentSize[0] = Math.max(currentSize[0], strokeSize);
     this.symbolSizes_[id] = currentSize;
     this.maxSymbolSize_ = [Math.max(currentSize[0], this.maxSymbolSize_[0]), Math.max(currentSize[0], this.maxSymbolSize_[1])];
     geometry = feature.getGeometry();
@@ -17254,12 +17254,12 @@ ol.renderer.canvas.VectorRenderer.prototype.renderLineStringFeatures_ = function
       line = components[j];
       dim = line.dimension;
       for(k = 0, kk = line.getCount();k < kk;++k) {
-        x = line.get(k, 0);
-        y = line.get(k, 1);
+        vec = [line.get(k, 0), line.get(k, 1), 0];
+        goog.vec.Mat4.multVec3(this.transform_, vec, vec);
         if(k === 0) {
-          context.moveTo(x, y)
+          context.moveTo(vec[0], vec[1])
         }else {
-          context.lineTo(x, y)
+          context.lineTo(vec[0], vec[1])
         }
       }
     }
@@ -17284,6 +17284,8 @@ ol.renderer.canvas.VectorRenderer.prototype.renderPointFeatures_ = function(feat
   }
   var midWidth = content.width / 2;
   var midHeight = content.height / 2;
+  var contentWidth = content.width * this.inverseScale_;
+  var contentHeight = content.height * this.inverseScale_;
   context.save();
   context.setTransform(1, 0, 0, 1, -midWidth, -midHeight);
   context.globalAlpha = alpha;
@@ -17291,7 +17293,7 @@ ol.renderer.canvas.VectorRenderer.prototype.renderPointFeatures_ = function(feat
     feature = features[i];
     id = goog.getUid(feature);
     size = this.symbolSizes_[id];
-    this.symbolSizes_[id] = goog.isDef(size) ? [Math.max(size[0], content.width * this.inverseScale_), Math.max(size[1], content.height * this.inverseScale_)] : [content.width * this.inverseScale_, content.height * this.inverseScale_];
+    this.symbolSizes_[id] = goog.isDef(size) ? [Math.max(size[0], contentWidth), Math.max(size[1], contentHeight)] : [contentWidth, contentHeight];
     this.maxSymbolSize_ = [Math.max(this.maxSymbolSize_[0], this.symbolSizes_[id][0]), Math.max(this.maxSymbolSize_[1], this.symbolSizes_[id][1])];
     geometry = feature.getGeometry();
     if(geometry instanceof ol.geom.Point) {
@@ -17302,7 +17304,8 @@ ol.renderer.canvas.VectorRenderer.prototype.renderPointFeatures_ = function(feat
     }
     for(j = 0, jj = components.length;j < jj;++j) {
       point = components[j];
-      vec = goog.vec.Mat4.multVec3(this.transform_, [point.get(0), point.get(1), 0], []);
+      vec = [point.get(0), point.get(1), 0];
+      goog.vec.Mat4.multVec3(this.transform_, vec, vec);
       context.drawImage(content, vec[0], vec[1], content.width, content.height)
     }
   }
@@ -17310,11 +17313,13 @@ ol.renderer.canvas.VectorRenderer.prototype.renderPointFeatures_ = function(feat
   return false
 };
 ol.renderer.canvas.VectorRenderer.prototype.renderPolygonFeatures_ = function(features, symbolizer) {
-  var context = this.context_, strokeColor = symbolizer.strokeColor, fillColor = symbolizer.fillColor, i, ii, geometry, components, j, jj, poly, rings, numRings, ring, dim, k, kk, x, y;
+  var context = this.context_, strokeColor = symbolizer.strokeColor, strokeWidth = symbolizer.strokeWidth, fillColor = symbolizer.fillColor, i, ii, geometry, components, j, jj, poly, rings, numRings, ring, dim, k, kk, vec;
   context.globalAlpha = symbolizer.opacity;
   if(strokeColor) {
-    context.strokeStyle = symbolizer.strokeColor;
-    context.lineWidth = symbolizer.strokeWidth * this.inverseScale_;
+    context.strokeStyle = strokeColor;
+    if(strokeWidth) {
+      context.lineWidth = strokeWidth
+    }
     context.lineCap = "round";
     context.lineJoin = "round"
   }
@@ -17338,12 +17343,12 @@ ol.renderer.canvas.VectorRenderer.prototype.renderPolygonFeatures_ = function(fe
       if(numRings > 0) {
         ring = rings[0];
         for(k = 0, kk = ring.getCount();k < kk;++k) {
-          x = ring.get(k, 0);
-          y = ring.get(k, 1);
+          vec = [ring.get(k, 0), ring.get(k, 1), 0];
+          goog.vec.Mat4.multVec3(this.transform_, vec, vec);
           if(k === 0) {
-            context.moveTo(x, y)
+            context.moveTo(vec[0], vec[1])
           }else {
-            context.lineTo(x, y)
+            context.lineTo(vec[0], vec[1])
           }
         }
         if(fillColor && strokeColor) {
@@ -17572,7 +17577,7 @@ ol.renderer.canvas.VectorLayer.prototype.handleLayerChange_ = function(event) {
 ol.renderer.canvas.VectorLayer.prototype.renderFrame = function(frameState, layerState) {
   var view2DState = frameState.view2DState, resolution = view2DState.resolution, extent = frameState.extent, layer = this.getVectorLayer(), tileGrid = this.tileGrid_;
   if(goog.isNull(tileGrid)) {
-    tileGrid = ol.tilegrid.createForProjection(view2DState.projection, 22, [512, 512]);
+    tileGrid = ol.tilegrid.createForProjection(view2DState.projection, 20, [512, 512]);
     this.tileGrid_ = tileGrid
   }
   var z = tileGrid.getZForResolution(resolution), tileResolution = tileGrid.getResolution(z), tileRange = tileGrid.getTileRangeForExtentAndResolution(extent, tileResolution), tileRangeExtent = tileGrid.getTileRangeExtent(z, tileRange), tileSize = tileGrid.getTileSize(z), sketchOrigin = ol.extent.getTopLeft(tileRangeExtent), transform = this.transform_;
@@ -17601,7 +17606,7 @@ ol.renderer.canvas.VectorLayer.prototype.renderFrame = function(frameState, laye
   goog.vec.Mat4.translate(sketchTransform, -(sketchOrigin[0] + halfWidth * tileResolution), -(sketchOrigin[1] - halfHeight * tileResolution), 0);
   sketchCanvas.width = sketchWidth;
   sketchCanvas.height = sketchHeight;
-  var sketchCanvasRenderer = new ol.renderer.canvas.VectorRenderer(sketchCanvas, sketchTransform, undefined, this.requestMapRenderFrame_);
+  var sketchCanvasRenderer = new ol.renderer.canvas.VectorRenderer(sketchCanvas, sketchTransform, this.requestMapRenderFrame_);
   var finalCanvas = this.canvas_;
   finalCanvas.width = sketchWidth;
   finalCanvas.height = sketchHeight;
