@@ -27,7 +27,7 @@ ol.ImageTile = function(tileCoord, state, src, crossOrigin) {
    * Image URI
    *
    * @private
-   * @type {string}
+   * @type {string|function(function(string))}
    */
   this.src_ = src;
 
@@ -79,14 +79,6 @@ ol.ImageTile.prototype.getImage = function(opt_context) {
 
 
 /**
- * @inheritDoc
- */
-ol.ImageTile.prototype.getKey = function() {
-  return this.src_;
-};
-
-
-/**
  * Tracks loading or read errors.
  *
  * @private
@@ -127,7 +119,13 @@ ol.ImageTile.prototype.load = function() {
       goog.events.listenOnce(this.image_, goog.events.EventType.LOAD,
           this.handleImageLoad_, false, this)
     ];
-    this.image_.src = this.src_;
+    if (goog.isFunction(this.src_)) {
+      this.src_(goog.bind(function(url) {
+        this.image_.src = url;
+      }, this));
+    } else {
+      this.image_.src = this.src_;
+    }
   }
 };
 
