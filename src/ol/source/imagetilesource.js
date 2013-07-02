@@ -96,12 +96,18 @@ ol.source.ImageTileSource.prototype.getTile = function(z, x, y, projection) {
   } else {
     goog.asserts.assert(projection);
     var tileCoord = new ol.TileCoord(z, x, y);
-    var tileUrl = this.tileUrlFunction(tileCoord, projection);
     var tile = new ol.ImageTile(
-        tileCoord,
-        goog.isDef(tileUrl) ? ol.TileState.IDLE : ol.TileState.EMPTY,
-        goog.isDef(tileUrl) ? tileUrl : '',
-        this.crossOrigin_);
+      tileCoord,
+      ol.TileState.IDLE,
+      this.crossOrigin_);
+    var tileUrl = this.tileUrlFunction(tileCoord, projection, function(src) {
+      tile.setImageSrc(src);
+    });
+    if (goog.isNull(tileUrl)) {
+      tile.state = ol.TileState.EMPTY;
+    } else if (goog.isDef(tileUrl)) {
+      tile.setImageSrc(tileUrl);
+    };
     this.tileCache_.set(tileCoordKey, tile);
     return tile;
   }

@@ -26,7 +26,7 @@ ol.TileUrlFunction.createFromTemplate = function(template) {
        */
       function(tileCoord, projection) {
         if (goog.isNull(tileCoord)) {
-          return undefined;
+          return null;
         } else {
           return template.replace('{z}', '' + tileCoord.z)
                          .replace('{x}', '' + tileCoord.x)
@@ -62,7 +62,7 @@ ol.TileUrlFunction.createFromTileUrlFunctions = function(tileUrlFunctions) {
        */
       function(tileCoord, projection) {
         if (goog.isNull(tileCoord)) {
-          return undefined;
+          return null;
         } else {
           var index =
               goog.math.modulo(tileCoord.hash(), tileUrlFunctions.length);
@@ -90,7 +90,7 @@ ol.TileUrlFunction.createFromParamsFunction =
        */
       function(tileCoord, projection) {
         if (goog.isNull(tileCoord)) {
-          return undefined;
+          return null;
         } else {
           var tileGrid = this.getTileGrid();
           if (goog.isNull(tileGrid)) {
@@ -111,7 +111,7 @@ ol.TileUrlFunction.createFromParamsFunction =
  * @return {string|undefined} Tile URL.
  */
 ol.TileUrlFunction.nullTileUrlFunction = function(tileCoord, projection) {
-  return undefined;
+  return null;
 };
 
 
@@ -132,7 +132,7 @@ ol.TileUrlFunction.withTileCoordTransform =
        */
       function(tileCoord, projection) {
         if (goog.isNull(tileCoord)) {
-          return undefined;
+          return null;
         } else {
           return tileUrlFunction.call(
               this,

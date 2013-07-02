@@ -80,7 +80,7 @@ ol.source.WMTS = function(options) {
          */
         function(tileCoord) {
           if (goog.isNull(tileCoord)) {
-            return undefined;
+            return null;
           } else {
             var localContext = {
               'TileMatrix': tileGrid.getMatrixId(tileCoord.z),

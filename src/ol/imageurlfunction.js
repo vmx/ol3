@@ -40,5 +40,5 @@ ol.ImageUrlFunction.createFromParamsFunction =
  */
 ol.ImageUrlFunction.nullImageUrlFunction =
     function(extent, size) {
-  return undefined;
+  return null;
 };

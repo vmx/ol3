@@ -96,7 +96,7 @@ ol.source.BingMaps.prototype.handleImageryMetadataResponse =
                       goog.asserts.assert(ol.proj.equivalent(
                           projection, this.getProjection()));
                       if (goog.isNull(tileCoord)) {
-                        return undefined;
+                        return null;
                       } else {
                         return imageUrl.replace(
                             '{quadkey}', tileCoord.quadKey());

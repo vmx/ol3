@@ -19,7 +19,7 @@ goog.require('ol.TileState');
  * @param {string} src Image source URI.
  * @param {?string} crossOrigin Cross origin.
  */
-ol.ImageTile = function(tileCoord, state, src, crossOrigin) {
+ol.ImageTile = function(tileCoord, state, crossOrigin) {
 
   goog.base(this, tileCoord, state);
 
@@ -29,7 +29,7 @@ ol.ImageTile = function(tileCoord, state, src, crossOrigin) {
    * @private
    * @type {string}
    */
-  this.src_ = src;
+  this.src_ = undefined;
 
   /**
    * @private
@@ -81,9 +81,9 @@ ol.ImageTile.prototype.getImage = function(opt_context) {
 /**
  * @inheritDoc
  */
-ol.ImageTile.prototype.getKey = function() {
-  return this.src_;
-};
+//ol.ImageTile.prototype.getKey = function() {
+//  return this.src_;
+//};
 
 
 /**
@@ -127,10 +127,17 @@ ol.ImageTile.prototype.load = function() {
       goog.events.listenOnce(this.image_, goog.events.EventType.LOAD,
           this.handleImageLoad_, false, this)
     ];
-    this.image_.src = this.src_;
+    if (goog.isDef(this.src_)) {
+        this.image_.src = this.src_;
+    }
   }
 };
 
+
+ol.ImageTile.prototype.setImageSrc = function(src) {
+    this.src_ = src;
+    this.image_.src = src;
+};
 
 /**
  * Discards event handlers which listen for load completion or errors.
